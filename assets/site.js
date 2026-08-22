@@ -16,6 +16,17 @@
     els.forEach(function (el) { el.classList.add('in') })
   }
 
+  // copy-to-clipboard for any [data-copy] control (works even with no mail app)
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('[data-copy]') : null
+    if (!b) return
+    e.preventDefault()
+    var val = b.getAttribute('data-copy')
+    var done = function () { var t = b.getAttribute('data-label') || b.textContent; b.textContent = 'Copied ✓'; setTimeout(function () { b.textContent = t }, 1600) }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(val).then(done, done)
+    else done()
+  })
+
   // ---- live confidentiality demo (only if present) ----
   var demoIn = document.getElementById('demo-in')
   if (!demoIn) return
