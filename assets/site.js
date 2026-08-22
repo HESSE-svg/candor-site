@@ -43,7 +43,7 @@
   var RB = new RegExp('\\b([A-Z][a-z]+)\\s+the\\s+(?:' + ROLES + ')\\b', 'gi')
   var RA = new RegExp('\\b(?:' + ROLES + ')\\s+([A-Z][a-z]+)\\b', 'gi')
   var COMMON = {}; ('the this that there dear hi hello thanks thank please our your their court company insurance policy claim law firm office attorney client matter case united states general the').split(' ').forEach(function (w) { COMMON[w] = 1 })
-  var FIRST = {}; ('alyssa jessica sarah emily michael john james david robert maria juan carlos jose ana daniel jennifer laura mark thomas anna cannon smith jones').split(' ').forEach(function (w) { FIRST[w] = 1 })
+  var FIRST = {}; ('jessica sarah emily michael john james david robert maria juan carlos jose ana daniel jennifer laura mark thomas anna jordan rivera').split(' ').forEach(function (w) { FIRST[w] = 1 })
 
   function esc(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
   function run(){
