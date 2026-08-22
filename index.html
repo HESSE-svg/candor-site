@@ -113,6 +113,42 @@ h1 em{font-style:italic}
 .body p:last-child{margin-bottom:0}
 .body strong{font-weight:500;color:var(--navy)}
 
+/* what we're building */
+.build{padding:56px 0 0}
+.build h2{
+  font-family:'Instrument Serif',Georgia,serif;
+  font-weight:400;
+  font-size:25px;
+  color:var(--navy);
+  margin-bottom:6px;
+}
+.build .sub{font-size:14px;color:var(--muted);margin-bottom:20px}
+.modules{list-style:none}
+.modules li{
+  padding:15px 0;
+  border-bottom:1px solid var(--rule);
+  font-size:15px;
+  color:var(--muted);
+  max-width:34em;
+}
+.modules li:last-child{border-bottom:0}
+.modules li b{
+  display:block;
+  font-weight:500;
+  color:var(--navy);
+  font-size:16px;
+  margin-bottom:3px;
+}
+.modules .tag{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:10px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--seal);
+  margin-left:8px;
+}
+.modules .tag.soon{color:var(--muted)}
+
 /* contact */
 .contact{
   margin:56px 0 0;
@@ -195,10 +231,23 @@ footer a{color:var(--muted)}
     <p>Candor keeps it, without slowing anyone down.</p>
   </section>
 
+  <section class="body build" aria-label="What we're building">
+    <h2>What we're building</h2>
+    <p class="sub">One connected record — from the moment AI is used to the report a carrier asks for.</p>
+    <ul class="modules">
+      <li><b>Confidentiality pre-check <span class="tag">Built</span></b>Scans text for client-identifying details before anyone pastes it into an outside AI tool, and hands back a redacted version.</li>
+      <li><b>AI use log <span class="tag">Built</span></b>A per-matter record of every AI use — tool, task, who, and when — measured against the firm's approved-tools list.</li>
+      <li><b>Attorney review &amp; sign-off <span class="tag">Built</span></b>An append-only record of attorney review. Corrections are new entries, never edits.</li>
+      <li><b>Carrier-ready reports <span class="tag">Built</span></b>A firm-wide summary and a carrier-renewal questionnaire, generated straight from the record.</li>
+      <li><b>Policy management <span class="tag soon">Planned</span></b>Adopt a written AI policy and capture staff acknowledgements, with re-acknowledgement on updates.</li>
+      <li><b>Verification layer <span class="tag soon">Planned</span></b>Flags citations and factual claims that may need a second look, before an attorney signs off.</li>
+    </ul>
+  </section>
+
   <section class="contact">
     <h2>In development</h2>
-    <p>We're building Candor alongside a small group of Florida firms. If you run a firm's operations and this sounds like a problem you have, I'd like fifteen minutes of your time — not a sales call, a research call.</p>
-    <a class="btn" href="mailto:jesse@candor.legal?subject=Candor%20%E2%80%94%20research%20call">Email jesse@candor.legal</a>
+    <p>We're building Candor alongside a small group of Florida firms. If you run a firm's operations and this is a problem you recognize, reach out — tell me how your firm handles AI today, and I'll share what we're building. All by email, on your schedule.</p>
+    <a class="btn" href="mailto:jesse@candor.legal?subject=Candor%20%E2%80%94%20from%20the%20site">Email jesse@candor.legal</a>
   </section>
 
 </main>
