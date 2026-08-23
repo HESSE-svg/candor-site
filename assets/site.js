@@ -83,3 +83,32 @@
   demoIn.addEventListener('input', run)
   run()
 })()
+
+// ---- animated browser-extension demo (product page, illustration only) ----
+(function () {
+  var stage = document.getElementById('exd')
+  if (!stage) return
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches) {
+    stage.className = 'exd open r1 r2 alert'; return
+  }
+  var runId = 0, visible = false, playing = false
+  function play() {
+    playing = true
+    var id = ++runId
+    stage.className = 'exd'
+    var add = function (t, c) { setTimeout(function () { if (id === runId) stage.classList.add(c) }, t) }
+    add(700, 'open'); add(1700, 'checking'); add(3100, 'r1'); add(3900, 'r2'); add(4300, 'alert')
+    setTimeout(function () {
+      if (id !== runId) return
+      stage.className = 'exd'; playing = false
+      if (visible) setTimeout(function () { if (visible && !playing) play() }, 900)
+    }, 8200)
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      visible = es[0].isIntersecting
+      if (visible && !playing) play()
+    }, { threshold: 0.3 })
+    io.observe(stage)
+  } else { visible = true; play() }
+})()

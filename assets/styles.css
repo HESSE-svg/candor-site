@@ -163,3 +163,40 @@ footer p{max-width:42em}
 /* 404 */
 .err{min-height:56vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
 .err .code{font-family:var(--f-mono);color:var(--ox);letter-spacing:.2em}
+
+/* animated browser-extension demo (product page) */
+.exd-wrap{max-width:760px;margin:34px auto 0}
+.exd{position:relative;border:1px solid var(--rule);border-radius:8px;overflow:hidden;background:var(--surface);font-size:14px}
+.exd-top{display:flex;align-items:center;gap:7px;background:var(--navy);padding:10px 14px}
+.exd-top .d{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.28)}
+.exd-url{margin-left:10px;color:rgba(255,255,255,.6);font-family:var(--f-mono);font-size:11px;letter-spacing:.04em}
+.exd-chat{padding:20px 18px 74px;min-height:236px}
+.exd-msg{max-width:82%;padding:11px 14px;border-radius:10px;line-height:1.5;margin-bottom:14px}
+.exd-user{margin-left:auto;background:var(--soft);color:var(--ink);border-bottom-right-radius:3px}
+.exd-ai{background:#fff;border:1px solid var(--rule);color:var(--ink);border-bottom-left-radius:3px}
+.exd-ai b{color:var(--navy);font-weight:600}
+.exd-hedge{background:rgba(138,94,23,.14);border-radius:3px;padding:0 3px}
+.exd-pill{position:absolute;right:16px;bottom:16px;display:flex;align-items:center;gap:7px;background:var(--navy);color:#fff;border:none;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;font-family:var(--f-sans);transition:background .3s}
+.exd.alert .exd-pill{background:var(--brass)}
+.exd-badge{background:rgba(255,255,255,.22);border-radius:999px;padding:1px 7px;font-size:11px;opacity:0;transform:scale(.6);transition:opacity .3s,transform .3s}
+.exd.alert .exd-badge{opacity:1;transform:none}
+.exd-panel{position:absolute;right:16px;bottom:60px;width:290px;max-width:calc(100% - 32px);background:var(--paper);border:1px solid var(--rule);border-top:2px solid var(--navy);border-radius:4px;opacity:0;transform:translateY(12px);transition:opacity .45s,transform .45s;pointer-events:none}
+.exd.open .exd-panel{opacity:1;transform:none}
+.exd-ph{font-family:var(--f-serif);font-size:16px;color:var(--navy);padding:9px 12px;border-bottom:1px solid var(--rule)}
+.exd-ph i{color:var(--ox);font-style:normal}
+.exd-pb{padding:10px 12px}
+.exd-sh{font-family:var(--f-serif);font-size:12.5px;color:var(--navy);font-weight:600;margin-bottom:6px}
+.exd-checking{font-size:12.5px;color:var(--muted);opacity:0;transition:opacity .3s}
+.exd.checking .exd-checking{opacity:1}
+.exd.r1 .exd-checking{display:none}
+.exd-res>*{opacity:0;transform:translateY(4px);transition:opacity .4s,transform .4s}
+.exd.r1 .exd-res .g1{opacity:1;transform:none}
+.exd.r2 .exd-res .g2{opacity:1;transform:none}
+.exd-vh{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:7px 0 3px}
+.exd-cite{font-size:12.5px;line-height:1.55}
+.exd-ok{color:var(--seal);font-weight:700}
+.exd-warn{color:var(--brass);font-weight:700}
+.exd-chip{display:inline-block;border:1px solid var(--rule);border-radius:999px;padding:1px 9px;font-size:11px}
+.exd-fine{font-size:10px;color:var(--faint);margin-top:8px;line-height:1.45}
+.exd-cap{text-align:center;font-size:12.5px;color:var(--muted);margin-top:12px}
+@media(prefers-reduced-motion:reduce){.exd-panel,.exd-badge,.exd-res>*{transition:none}}
