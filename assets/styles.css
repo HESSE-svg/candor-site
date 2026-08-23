@@ -230,3 +230,27 @@ footer p{max-width:42em}
 .sf-sign{margin-top:8px;font-family:var(--f-serif);color:var(--seal);font-size:14px}
 .sf-doc{display:flex;flex-direction:column;gap:7px;margin-bottom:10px}
 .sf-docline{height:7px;background:var(--soft);border-radius:2px}
+
+/* news */
+.newshero{margin-top:var(--s4)}
+.newsgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 22px;margin-top:var(--s4)}
+@media(max-width:900px){.newsgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.newsgrid{grid-template-columns:1fr}}
+.nc{display:block;color:inherit;text-decoration:none;border:1px solid var(--rule);background:var(--surface);transition:border-color .15s,transform .15s}
+.nc:hover{text-decoration:none;border-color:var(--navy);transform:translateY(-2px)}
+.nc-fig{position:relative;margin:0;aspect-ratio:16/9;overflow:hidden;background-color:var(--navy);background-size:cover;background-position:center}
+.nc-fig img{width:100%;height:100%;object-fit:cover;display:block}
+.nc-topic{position:absolute;left:0;bottom:0;background:var(--paper);color:var(--navy);font-family:var(--f-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;padding:4px 9px;border-top:1px solid var(--rule);border-right:1px solid var(--rule)}
+.nc-body{padding:15px 16px 17px}
+.nc-body h3{font-size:19px;line-height:1.22}
+.nc:hover .nc-body h3{color:var(--ox)}
+.nc-body p{font-size:14px;color:var(--muted);margin:8px 0 0;line-height:1.5}
+.nc-meta{display:flex;align-items:center;gap:7px;margin-top:11px;font-family:var(--f-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--faint)}
+.nc-src{color:var(--ox)}
+.nc-dot{opacity:.5}
+.nc.big{display:grid;grid-template-columns:1.35fr 1fr;align-items:stretch;border-top:2px solid var(--navy)}
+.nc.big .nc-fig{aspect-ratio:auto;min-height:290px;height:100%}
+.nc.big .nc-body{padding:26px 28px;align-self:center}
+.nc.big .nc-body h3{font-size:clamp(24px,3.2vw,32px);line-height:1.14}
+.nc.big .nc-body p{font-size:15.5px;margin-top:12px}
+@media(max-width:720px){.nc.big{grid-template-columns:1fr}.nc.big .nc-fig{min-height:0;aspect-ratio:16/9}.nc.big .nc-body{padding:18px}}

@@ -1,0 +1,41 @@
+
+name: Refresh news
+
+# Rebuilds /news.html from the legal-AI feeds and commits it. Pushing to main is
+# what triggers the Vercel deploy, so the public page updates on its own.
+on:
+  schedule:
+    - cron: '17 */6 * * *' # every six hours, on the 17th minute
+  workflow_dispatch: {} # and on demand, from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-news
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build the news page
+        run: node tools/fetch-news.mjs
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "candor-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- news.html assets/news.json; then
+            echo "No change in the feeds; nothing to publish."
+            exit 0
+          fi
+          git add news.html assets/news.json
+          git commit -m "News: refresh from legal AI feeds [skip ci]"
+          git push
