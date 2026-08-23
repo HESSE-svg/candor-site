@@ -2,10 +2,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Security &amp; data handling · Candor</title>
-<meta name="description" content="How Candor handles data: confidentiality screening runs in your browser, records are append-only and tamper-evident, data is isolated per firm and encrypted, and your firm owns and can export everything.">
+<meta name="description" content="How Candor handles data: confidentiality screening runs in your browser, records are append only and tamper evident, data is isolated per firm and encrypted, and your firm owns and can export everything.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="Security &amp; data handling · Candor">
-<meta property="og:description" content="Trustworthy by construction: client-side screening, append-only tamper-evident records, per-firm isolation.">
+<meta property="og:description" content="Trustworthy by construction: client side screening, append only tamper evident records, per firm isolation.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://candor.legal/security">
 <meta property="og:image" content="https://candor.legal/og.png">
@@ -34,14 +34,14 @@
     <div class="reveal"><h3>We store the fact, not the file</h3><p>By default Candor records actions, not their contents: a use was logged, a review happened, a check ran. Retaining any underlying content is an explicit choice a firm turns on, never a silent default.</p></div>
     <div class="reveal"><h3>Append only, and provably so</h3><p>Logs and sign offs are never edited in place. Corrections are new entries that reference the ones before them, and the entries are hash chained: each is sealed with a fingerprint of the one prior, so any edit, deletion, or reordering is detectable. A one click integrity check rechecks the whole record.</p></div>
     <div class="reveal"><h3>Each firm is walled off</h3><p>Every record is scoped to the firm that owns it. The design goal is that no bug could let one firm's data surface in another's account.</p></div>
-    <div class="reveal"><h3>Encrypted in transit and at rest</h3><p>Data moves over TLS and is encrypted where it's stored. Access follows least privilege, code and people get only what a task requires.</p></div>
+    <div class="reveal"><h3>Encrypted in transit and at rest</h3><p>Data moves over TLS and is encrypted where it's stored. Access follows least privilege: code and people get only what a task requires.</p></div>
     <div class="reveal"><h3>Your firm owns its record</h3><p>The whole point is a portable record you control. You can export it, and it goes with you. We don't sell data, and we don't train models on your firm's content.</p></div>
     <div class="reveal"><h3>Honest about what we are</h3><p>Candor is software, not counsel. It doesn't provide legal advice, decide whether you're compliant, or guarantee that any AI output is accurate. It gives your attorneys the record they use to make those calls.</p></div>
   </div>
 
   <div class="card reveal" style="margin-top:34px">
     <h3>Where we are</h3>
-    <p>Candor is pre launch, building with a small group of design partner firms. Before any firm's real client data is onboarded we complete a security review, and we're glad to walk a firm's IT or risk lead through the architecture in detail. Found something or have a question? Email <a href="mailto:jesse@candor.legal">jesse@candor.legal</a>.</p>
+    <p>Candor has not launched yet, and is building with a small group of design partner firms. Before any firm's real client data is onboarded we complete a security review, and we're glad to walk a firm's IT or risk lead through the architecture in detail. Found something or have a question? Email <a href="mailto:jesse@candor.legal">jesse@candor.legal</a>.</p>
   </div>
 </section>
 
