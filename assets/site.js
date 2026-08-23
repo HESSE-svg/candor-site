@@ -88,9 +88,6 @@
 (function () {
   var stage = document.getElementById('exd')
   if (!stage) return
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches) {
-    stage.className = 'exd open r1 r2 alert'; return
-  }
   var runId = 0, visible = false, playing = false
   function play() {
     playing = true
@@ -108,7 +105,9 @@
     var io = new IntersectionObserver(function (es) {
       visible = es[0].isIntersecting
       if (visible && !playing) play()
-    }, { threshold: 0.3 })
+    }, { threshold: 0.15 })
     io.observe(stage)
   } else { visible = true; play() }
+  // Safety net: if the observer never fires for any reason, start anyway.
+  setTimeout(function () { if (!playing && runId === 0) { visible = true; play() } }, 1600)
 })()
