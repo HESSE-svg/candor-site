@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-08-23T07:05:46.683Z",
-  "count": 12,
+  "builtAt": "2026-08-23T13:05:36.470Z",
+  "count": 15,
   "items": [
     {
       "title": "From capability to confidence: How CoCounsel is redefining legal AI",
@@ -68,7 +68,7 @@
       "ts": 1787308066000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -139,6 +139,48 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "2 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "A Lawyer for AI Agents",
+      "link": "https://www.artificiallawyer.com/2026/08/20/a-lawyer-for-ai-agents/",
+      "desc": "By Damien Charlotin, Yourhuman.ai There are scores of AI lawyers for humans. I want to make the case for a human lawyer for AI. In",
+      "date": "Thu, 20 Aug 2026 07:30:54 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-20-at-08.23.42.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787211054000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "3 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Zach + Richard's Excellent Legal AI Adventure",
+      "link": "https://www.artificiallawyer.com/2026/08/19/zach-richards-excellent-legal-ai-adventure-5/",
+      "desc": "Welcome to the latest episode of Zach and Richard's Excellent Legal AI Adventure – where we focus on a range of hot topics, from why",
+      "date": "Wed, 19 Aug 2026 11:19:41 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-19-at-12.08.32.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787138381000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "4 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Why General AI Alone Is Not Enough for Legal Work",
+      "link": "https://www.artificiallawyer.com/2026/08/19/why-general-ai-alone-is-not-enough-for-legal-work/",
+      "desc": "By Senne Mennes, LawVu. Few terms in legal technology have become as overused as ‘AI-powered.’ Not to mention over-hyped. Today, virtually every legal tech vendor",
+      "date": "Wed, 19 Aug 2026 07:35:30 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-19-at-08.24.37.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787124930000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
