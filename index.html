@@ -1,132 +1,69 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Candor, software that records how your law firm uses AI</title>
-<meta name="description" content="Candor is software for law firms whose staff use AI. It checks for client details before anything is sent to a tool like ChatGPT, keeps a record of each use, and turns that into a report you can hand your malpractice insurer.">
+<title>Candor, AI governance and audit trails for law firms</title>
+<meta name="description" content="Candor gives a law firm one connected record of how it uses AI: confidentiality screening, a per-matter use log, verification, attorney sign-off, and a report you can hand your malpractice carrier.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Candor, software that records how your law firm uses AI">
-<meta property="og:description" content="Screen client details out, log each use, have an attorney sign off, print the report your insurer asks for.">
+<meta property="og:title" content="Candor — the record of how your firm uses AI">
+<meta property="og:description" content="Screen, log, verify, sign off, report. AI governance built for law firms.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://candor.legal/">
 <meta property="og:image" content="https://candor.legal/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=7">
+<link rel="stylesheet" href="/assets/styles.css">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
   <a class="brand" href="/" aria-label="Candor home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#1B2A41"/><circle cx="50" cy="50" r="39" fill="none" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/><text x="50" y="52" font-family="Instrument Serif,Georgia,serif" font-size="58" fill="#FAF8F5" text-anchor="middle" dominant-baseline="central">C</text></svg><span class="name">Candor<span>.</span></span></a>
   <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
-  <nav class="navlinks"><a href="/product">How it works</a><a href="/pricing">Pricing</a><a href="/security">Your data</a><a href="/about">About</a><a class="cta" href="/demo">Try the screener</a></nav>
+  <nav class="navlinks"><a href="/product">Product</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/resources">Resources</a><a href="/about">About</a><a class="cta" href="/demo">Get a look</a></nav>
 </div></header>
 
 <main id="main">
 <section class="wrap hero">
-  <span class="tagpill">Software for law firms · in development · Florida</span>
-  <h1>Your staff already use ChatGPT.<br>Candor writes down how.</h1>
-  <p class="lede">Candor is software your firm signs into. It checks text for client details before anyone sends it to an AI tool, notes each use against the right matter, and turns all of it into a report you can hand your malpractice insurer.</p>
-  <div class="btnrow"><a class="btn" href="/demo">Try the screener, no signup</a><a class="btn ghost" href="#how">See what happens</a></div>
+  <span class="tagpill">In development · Florida firms</span>
+  <h1>Your team is already using AI.<br>Candor is the record that proves they used it <em>properly</em>.</h1>
+  <p class="lede">Confidentiality screening, a per matter use log, verification, and attorney sign off, that ends in a report you can hand your malpractice carrier.</p>
+  <div class="btnrow"><a class="btn" href="/demo">See it in action</a><a class="btn ghost" href="/product">How it works</a></div>
+
+  <div class="record" aria-label="Example Candor audit record">
+    <div class="record-head"><span>Matter <b>2026-0417</b></span><span>Entry 004</span></div>
+    <div class="rrow"><span class="k">Task</span><span class="v">Draft demand correspondence</span></div>
+    <div class="rrow"><span class="k">Tool</span><span class="v">External LLM (approved list)</span></div>
+    <div class="rrow"><span class="k">Run by</span><span class="v">D. Alvarez, paralegal</span></div>
+    <div class="rrow"><span class="k">Screening</span><span class="v flagged">2 identifiers flagged, redacted before send</span></div>
+    <div class="rrow"><span class="k">Citations</span><span class="v">Flagged for review, 1 needs a second look</span></div>
+    <div class="rrow"><span class="k">Reviewed</span><span class="v seal">M. Okonkwo, Esq., 14 Apr 2026, 09:41 EDT</span></div>
+  </div>
+  <p class="caption">One entry. Appended, never edited, and cryptographically sealed against tampering.</p>
 </section>
 
-<section class="band reveal"><div class="wrap narrow">
-  <div class="mono eyebrow">In plain terms</div>
-  <h2>What it actually is.</h2>
-  <div class="deflist" style="margin-top:20px">
-    <div>
-      <h3>A website your firm signs into</h3>
-      <p>Plus a small companion for Chrome or Edge, if you want it, that works inside the AI tools your staff already open. Nothing is installed on a server of yours.</p>
-    </div>
-    <div>
-      <h3>It is not an AI tool itself</h3>
-      <p>Candor does not write anything, answer questions, or do legal work. It sits beside whatever your team already uses and keeps track of what happened.</p>
-    </div>
-    <div>
-      <h3>You do not switch anything</h3>
-      <p>Keep ChatGPT, Claude, Copilot, whatever the firm runs today. Candor is not a replacement for any of them.</p>
-    </div>
-    <div>
-      <h3>What you end up with is a report</h3>
-      <p>That is the point of the whole thing. Everything else exists so that report is true when you hand it to someone.</p>
-    </div>
+<section class="band reveal"><div class="wrap">
+  <div class="mono eyebrow">The problem</div>
+  <h2>Adoption outran the rulebook.</h2>
+  <p class="sectionlede">Staff use it daily; leadership rarely has a log of what was run, who checked it, or how client details were handled. When someone finally asks for that proof, most firms have nothing to show.</p>
+  <div class="cards" style="margin-top:34px">
+    <div class="card reveal"><h3>Screen</h3><p>Catch client identifying details before they ever reach an outside AI tool.</p></div>
+    <div class="card reveal"><h3>Log &amp; verify</h3><p>Record each use against an approved tools list; flag shaky citations for a second look.</p></div>
+    <div class="card reveal"><h3>Sign &amp; report</h3><p>An attorney signs off; the firm exports a carrier ready summary on demand.</p></div>
   </div>
-</div></section>
-
-<section class="band reveal" id="how"><div class="wrap">
-  <div class="mono eyebrow">One afternoon at a small firm</div>
-  <h2>Here is what actually happens.</h2>
-  <p class="sectionlede">Nothing below is a metaphor. This is the software running.</p>
-
-  <div class="steps" style="margin-top:30px">
-    <div class="step reveal"><div class="num">01</div><div>
-      <h3>A paralegal needs a demand letter</h3>
-      <p>She has the client's file notes in front of her and she is about to paste them into ChatGPT, the way she did last Tuesday and the way she will again tomorrow.</p>
-    </div></div>
-
-    <div class="step reveal"><div class="num">02</div><div>
-      <h3>Candor catches the client's details first</h3>
-      <p>The name, the date of birth, the policy number. It hands back the same text with those blanked out, ready to paste. The words she typed are never uploaded or saved anywhere, by design.</p>
-    </div></div>
-
-    <div class="step reveal"><div class="num">03</div><div>
-      <h3>The use gets written down</h3>
-      <p>Which tool, which matter, who ran it, what for, and when. One line, added to a list that can be added to but never quietly changed.</p>
-    </div></div>
-
-    <div class="step reveal"><div class="num">04</div><div>
-      <h3>An attorney reads the output and signs</h3>
-      <p>Candor points out citations worth a second look and places where the AI hedged. It does not decide whether the work is right. The attorney does, and the attorney's signature is what carries weight.</p>
-    </div></div>
-
-    <div class="step reveal"><div class="num">05</div><div>
-      <h3>Renewal comes around and your insurer asks</h3>
-      <p>How does your firm use AI, and how do you supervise it. You print the answer instead of trying to remember it.</p>
-    </div></div>
-  </div>
-
-  <p style="margin-top:30px"><a href="/product">See each step in the real screens →</a></p>
-</div></section>
-
-<section class="band reveal"><div class="wrap narrow">
-  <div class="mono eyebrow">Who it is for</div>
-  <h2>This is probably you if:</h2>
-  <div class="deflist" style="margin-top:18px">
-    <div><p>You run or manage a firm of roughly one to thirty attorneys.</p></div>
-    <div><p>Your staff use AI already, or you strongly suspect they do.</p></div>
-    <div><p>If someone asked today what was run last month and who checked it, you could not answer.</p></div>
-    <div><p>Your malpractice renewal is coming, and there are questions on the form that were not there before.</p></div>
-  </div>
-  <p class="caption" style="margin-top:18px">Candor is built to work in any practice area. We are starting with insurance and property, family law, estate planning, and general practice firms in South Florida.</p>
+  <p style="margin-top:30px"><a href="/product">Walk through all six steps →</a></p>
+  <p style="margin-top:10px">Candor can also ride along in the browser, inside the AI tools your team already uses. <a href="/product#in-the-browser">See the browser companion →</a></p>
 </div></section>
 
 <section class="band reveal"><div class="wrap">
-  <div class="mono eyebrow">A record, not a memory</div>
-  <h2>What one entry looks like.</h2>
-  <p class="sectionlede">This is a single line from the log, expanded. Every AI use produces one.</p>
-
-  <div class="record" aria-label="Example Candor record for one AI use">
-    <div class="record-head"><span>Matter <b>2026-0417</b></span><span>Entry 004</span></div>
-    <div class="rrow"><span class="k">What for</span><span class="v">Draft demand correspondence</span></div>
-    <div class="rrow"><span class="k">Tool used</span><span class="v">ChatGPT, on the firm's approved list</span></div>
-    <div class="rrow"><span class="k">Run by</span><span class="v">D. Alvarez, paralegal</span></div>
-    <div class="rrow"><span class="k">Client details</span><span class="v flagged">2 found and blanked out before sending</span></div>
-    <div class="rrow"><span class="k">Citations</span><span class="v">1 flagged for a second look</span></div>
-    <div class="rrow"><span class="k">Signed off</span><span class="v seal">M. Okonkwo, Esq., 14 Apr 2026, 09:41 EDT</span></div>
-  </div>
-  <p class="caption">Entries are added, never edited. If anyone altered one after the fact, the record would show it.</p>
-</div></section>
-
-<section class="band reveal"><div class="wrap">
-  <div class="mono eyebrow">Why bother now</div>
-  <h2>Three groups started asking.</h2>
-  <p class="sectionlede">Malpractice insurers are adding AI questions at renewal. Bar regulators are publishing guidance on competence and supervision. Judges are issuing disclosure orders. All three want documentation that almost no firm keeps today, and none of it can be produced after the fact.</p>
-  <p style="margin-top:22px"><a href="/why-now">The longer case for acting now →</a></p>
+  <div class="mono eyebrow">Why it matters now</div>
+  <h2>Three forces are converging.</h2>
+  <p class="sectionlede">Malpractice carriers are adding AI questions at renewal. Bar regulators are publishing guidance on competence and supervision. Judges are issuing disclosure orders. Each one expects documentation almost no firm keeps today.</p>
+  <p style="margin-top:22px"><a href="/why-now">Read the case for acting now →</a></p>
 </div></section>
 
 <section class="band reveal"><div class="wrap narrow center">
-  <h2>Start with the screener.</h2>
-  <p class="sectionlede" style="margin:14px auto 0">It runs on this site, in your browser, with no signup and nothing sent anywhere. Paste in some text and watch what it catches. If it earns a longer conversation, write to us.</p>
-  <div class="btnrow" style="justify-content:center"><a class="btn" href="/demo">Try the screener</a><a class="btn ghost" href="/pricing">What it costs</a></div>
+  <h2>Put the record in place before you need it.</h2>
+  <p class="sectionlede" style="margin:14px auto 0">You can't document six months of AI use the afternoon a carrier asks.</p>
+  <div class="btnrow" style="justify-content:center"><a class="btn" href="/demo">Get a look</a><a class="btn ghost" href="/security">How we handle data</a></div>
 </div></section>
 </main>
 
@@ -134,7 +71,7 @@
   <div class="foot-grid">
     <div>
       <span class="name" style="font-family:var(--f-serif);font-size:22px;color:var(--navy)">Candor<span style="color:var(--ox)">.</span></span>
-      <p style="margin-top:10px;max-width:22em">Software that records how a law firm uses AI.</p>
+      <p style="margin-top:10px;max-width:22em">The record of how AI is used inside a law firm.</p>
       <!-- TODO: replace href="#" once accounts exist (@candorlegal → @usecandor → @heycandor) -->
       <div class="social">
         <a href="#" aria-label="Instagram" title="Instagram (coming soon)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
@@ -142,7 +79,7 @@
         <a href="#" aria-label="LinkedIn" title="LinkedIn (coming soon)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
       </div>
     </div>
-    <div class="foot-links"><a href="/product">How it works</a><a href="/pricing">Pricing</a><a href="/security">Your data</a><a href="/why-now">Why now</a><a href="/resources">Resources</a><a href="/news">News</a><a href="/about">About</a><a href="/demo">Contact</a></div>
+    <div class="foot-links"><a href="/product">Product</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/resources">Resources</a><a href="/about">About</a><a href="/demo">Contact</a></div>
   </div>
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
 </div></footer>

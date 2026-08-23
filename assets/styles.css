@@ -80,7 +80,7 @@ header.nav{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.92);bac
 .steps{margin-top:var(--s4);border-left:2px solid var(--rule)}
 .step{display:grid;grid-template-columns:52px 1fr;gap:2px 18px;padding:22px 0 22px 24px;border-bottom:1px solid var(--rule);margin-left:-2px;border-left:2px solid transparent}
 .step:last-child{border-bottom:0}
-.step[role="button"]:hover{border-left-color:var(--ox)}
+.step:hover{border-left-color:var(--ox)}
 .step .num{grid-row:1/3;font-family:var(--f-mono);font-size:13px;color:var(--ox);padding-top:4px}
 .step h3{font-size:20px}
 .step p{font-size:15px;color:var(--muted);max-width:42em;margin:2px 0 0}
@@ -201,11 +201,10 @@ footer p{max-width:42em}
 .exd-cap{text-align:center;font-size:12.5px;color:var(--muted);margin-top:12px}
 @media(prefers-reduced-motion:reduce){.exd-panel,.exd-badge,.exd-res>*{transition:none}}
 
-/* clickable product steps — scoped to the ones that actually open, so a
-   plain narrative step elsewhere does not advertise a click that does nothing */
-.step[role="button"]{cursor:pointer;transition:border-color .15s,background .15s}
-.step[role="button"]:hover{border-left-color:var(--ox);background:var(--soft)}
-.step[role="button"]:focus-visible{outline:2px solid var(--navy);outline-offset:-2px}
+/* clickable product steps */
+.step{cursor:pointer;transition:border-color .15s,background .15s}
+.step:hover{border-left-color:var(--ox);background:var(--soft)}
+.step:focus-visible{outline:2px solid var(--navy);outline-offset:-2px}
 .step-cue{font-family:var(--f-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ox);border:1px solid var(--rule);border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:8px;white-space:nowrap}
 .step[aria-expanded="true"] .step-cue{background:var(--ox);color:var(--paper);border-color:var(--ox)}
 .step-detail{margin-top:14px;display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:20px;align-items:start}

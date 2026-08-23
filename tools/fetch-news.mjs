@@ -216,7 +216,7 @@ function card(it, big = false) {
 function page(items, builtAt) {
   const [hero, ...rest] = items
   const stamp = builtAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
-  const nav = `<nav class="navlinks"><a href="/product">How it works</a><a href="/pricing">Pricing</a><a href="/security">Your data</a><a href="/about">About</a><a class="cta" href="/demo">Try the screener</a></nav>`
+  const nav = `<nav class="navlinks"><a href="/product">Product</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/resources">Resources</a><a href="/about">About</a><a class="cta" href="/demo">Get a look</a></nav>`
   return `<!doctype html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -231,7 +231,7 @@ function page(items, builtAt) {
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=7">
+<link rel="stylesheet" href="/assets/styles.css?v=6">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
@@ -274,7 +274,7 @@ function page(items, builtAt) {
         <a href="#" aria-label="LinkedIn" title="LinkedIn (coming soon)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
       </div>
     </div>
-    <div class="foot-links"><a href="/product">How it works</a><a href="/pricing">Pricing</a><a href="/security">Your data</a><a href="/why-now">Why now</a><a href="/resources">Resources</a><a href="/news">News</a><a href="/about">About</a><a href="/demo">Contact</a></div>
+    <div class="foot-links"><a href="/product">Product</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/resources">Resources</a><a href="/about">About</a><a href="/demo">Contact</a></div>
   </div>
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. &copy; 2026 Candor &middot; <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
 </div></footer>
