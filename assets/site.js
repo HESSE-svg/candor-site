@@ -85,7 +85,7 @@
 })()
 
 // ---- animated browser-extension demo (product page, illustration only) ----
-(function () {
+;(function () {
   var stage = document.getElementById('exd')
   if (!stage) return
   var runId = 0, visible = false, playing = false
