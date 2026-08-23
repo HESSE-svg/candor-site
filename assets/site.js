@@ -111,3 +111,21 @@
   // Safety net: if the observer never fires for any reason, start anyway.
   setTimeout(function () { if (!playing && runId === 0) { visible = true; play() } }, 1600)
 })()
+
+// ---- expandable product steps (click to reveal a mock + more detail) ----
+;(function () {
+  var steps = document.querySelectorAll('.steps .step')
+  if (!steps.length) return
+  function toggle(step) {
+    var d = step.querySelector('.step-detail'); if (!d) return
+    var open = step.getAttribute('aria-expanded') === 'true'
+    step.setAttribute('aria-expanded', open ? 'false' : 'true')
+    d.hidden = open
+  }
+  steps.forEach(function (step) {
+    step.addEventListener('click', function () { toggle(step) })
+    step.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(step) }
+    })
+  })
+})()

@@ -12,7 +12,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=2">
+<link rel="stylesheet" href="/assets/styles.css?v=4">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
@@ -29,13 +29,73 @@
 </section>
 
 <section class="wrap">
+  <p class="mono" style="margin-top:6px">Tap any step to see it.</p>
   <div class="steps">
-    <div class="step reveal"><div class="num">01</div><div><h3>Confidentiality pre-check</h3><p>Before text goes to an outside AI tool, Candor scans it for client identifying details, names, SSNs, account and policy numbers, dates, addresses, medical terms, and returns a redacted version to paste instead. Screening happens in the browser; the text itself is never stored. Try it below.</p></div></div>
-    <div class="step reveal"><div class="num">02</div><div><h3>AI use log</h3><p>Each use is recorded against the matter: which tool, what task, who ran it, when. The firm keeps an approved tools list, and anything logged outside it is flagged, quiet visibility into what's actually being used.</p></div></div>
-    <div class="step reveal"><div class="num">03</div><div><h3>Verification</h3><p>For research and drafting, Candor pulls out case citations and surfaces hedging language worth a second look, then checks each citation's existence against a public legal database. It's a prompt for the reviewer, not a verdict · Candor never claims a citation is correct.</p></div></div>
-    <div class="step reveal"><div class="num">04</div><div><h3>Attorney review &amp; sign off</h3><p>A supervising attorney marks the work reviewed and attests they independently checked the citations and assertions. Entries are append only: a change is a new record referencing the last, so the history stays intact.</p></div></div>
-    <div class="step reveal"><div class="num">05</div><div><h3>Reports</h3><p>A firm wide summary and a renewal questionnaire mapped to the questions carriers ask, generated from the record and exportable to PDF. This is the artifact you hand across the table.</p></div></div>
-    <div class="step reveal"><div class="num">06</div><div><h3>Policy management</h3><p>Adopt a written AI use policy; staff acknowledge it with a timestamp and re acknowledge whenever it changes. The acknowledgements live in the same record as everything else.</p></div></div>
+    <div class="step reveal" role="button" tabindex="0" aria-expanded="false"><div class="num">01</div><div><h3>Confidentiality pre-check <span class="step-cue">See it</span></h3><p>Before text goes to an outside AI tool, Candor scans it for client identifying details, names, SSNs, account and policy numbers, dates, addresses, medical terms, and returns a redacted version to paste instead. Screening happens in the browser; the text itself is never stored. Try it below.</p>
+      <div class="step-detail" hidden>
+        <div class="stepfig">
+          <div class="sf-cap">Confidentiality pre-check</div>
+          <div class="sf-line">Draft a demand for <span class="sf-red">[NAME]</span>, <span class="sf-red">[SSN]</span>, policy <span class="sf-red">[POLICY#]</span>, re the <span class="sf-red">[DATE]</span> collision.</div>
+          <div class="sf-chips"><span class="sf-chip">NAME 1</span><span class="sf-chip">SSN 1</span><span class="sf-chip">POLICY# 1</span><span class="sf-chip">DATE 1</span></div>
+          <div class="sf-btn">Copy safe version</div>
+        </div>
+        <p class="step-extra">The scan runs on your device and reads names in their legal role context, not just against a word list, so it flags the client without redacting the caselaw. You paste the safe version; the original never leaves the machine.</p>
+      </div>
+    </div></div>
+    <div class="step reveal" role="button" tabindex="0" aria-expanded="false"><div class="num">02</div><div><h3>AI use log <span class="step-cue">See it</span></h3><p>Each use is recorded against the matter: which tool, what task, who ran it, when. The firm keeps an approved tools list, and anything logged outside it is flagged, quiet visibility into what's actually being used.</p>
+      <div class="step-detail" hidden>
+        <div class="stepfig">
+          <div class="sf-cap">AI use log entry</div>
+          <div class="sf-row"><span>Matter</span><b>Rivera, J.</b></div>
+          <div class="sf-row"><span>Tool</span><b>ChatGPT</b> <span class="sf-ok">on approved list</span></div>
+          <div class="sf-row"><span>Task</span><b>Drafting</b></div>
+          <div class="sf-row"><span>Run by</span><b>D. Alvarez, paralegal</b></div>
+        </div>
+        <p class="step-extra">A tool that is not on the approved list is flagged the moment it is logged, so a partner can see at a glance whether staff are using sanctioned tools, without watching over anyone's shoulder.</p>
+      </div>
+    </div></div>
+    <div class="step reveal" role="button" tabindex="0" aria-expanded="false"><div class="num">03</div><div><h3>Verification <span class="step-cue">See it</span></h3><p>For research and drafting, Candor pulls out case citations and surfaces hedging language worth a second look, then checks each citation's existence against a public legal database. It's a prompt for the reviewer, not a verdict · Candor never claims a citation is correct.</p>
+      <div class="step-detail" hidden>
+        <div class="stepfig">
+          <div class="sf-cap">Citation check</div>
+          <div class="sf-cite"><span class="sf-okc">&#10003;</span> 576 U.S. 644 <span class="sf-muted">Obergefell v. Hodges</span></div>
+          <div class="sf-cite"><span class="sf-warnc">&#9888;</span> 812 F.3d 4471 <span class="sf-muted">not found, verify manually</span></div>
+          <div class="sf-chips"><span class="sf-chip">appears</span><span class="sf-chip">likely</span><span class="sf-chip">it seems</span></div>
+        </div>
+        <p class="step-extra">Only the bare citation is sent out for the existence check, never the client's text. The hedging words are the AI's own signals of uncertainty, surfaced so the reviewer knows where to look hardest.</p>
+      </div>
+    </div></div>
+    <div class="step reveal" role="button" tabindex="0" aria-expanded="false"><div class="num">04</div><div><h3>Attorney review &amp; sign off <span class="step-cue">See it</span></h3><p>A supervising attorney marks the work reviewed and attests they independently checked the citations and assertions. Entries are append only: a change is a new record referencing the last, so the history stays intact.</p>
+      <div class="step-detail" hidden>
+        <div class="stepfig">
+          <div class="sf-cap">Attorney sign off</div>
+          <div class="sf-check"><span class="sf-okc">&#9745;</span> I have independently verified all citations and factual assertions in this output.</div>
+          <div class="sf-sign">M. Okonkwo, Esq. &middot; 14 Apr 2026, 09:41 EDT</div>
+        </div>
+        <p class="step-extra">The attestation wording is fixed and deliberate. Because entries are append only, a later correction shows up as its own record, so the trail reads like a ledger, not a document someone could quietly rewrite.</p>
+      </div>
+    </div></div>
+    <div class="step reveal" role="button" tabindex="0" aria-expanded="false"><div class="num">05</div><div><h3>Reports <span class="step-cue">See it</span></h3><p>A firm wide summary and a renewal questionnaire mapped to the questions carriers ask, generated from the record and exportable to PDF. This is the artifact you hand across the table.</p>
+      <div class="step-detail" hidden>
+        <div class="stepfig">
+          <div class="sf-cap">Carrier renewal questionnaire</div>
+          <div class="sf-doc"><span class="sf-docline" style="width:88%"></span><span class="sf-docline" style="width:96%"></span><span class="sf-docline" style="width:74%"></span><span class="sf-docline" style="width:90%"></span></div>
+          <div class="sf-btn">Export PDF</div>
+        </div>
+        <p class="step-extra">Same data in, same PDF out, so two people generating the report for the same period get the identical artifact. The renewal version is mapped in advance to the AI questions carriers now ask.</p>
+      </div>
+    </div></div>
+    <div class="step reveal" role="button" tabindex="0" aria-expanded="false"><div class="num">06</div><div><h3>Policy management <span class="step-cue">See it</span></h3><p>Adopt a written AI use policy; staff acknowledge it with a timestamp and re acknowledge whenever it changes. The acknowledgements live in the same record as everything else.</p>
+      <div class="step-detail" hidden>
+        <div class="stepfig">
+          <div class="sf-cap">Policy acknowledgements</div>
+          <div class="sf-row"><span>AI use policy</span><b>Version 3, adopted</b></div>
+          <div class="sf-row"><span>D. Alvarez</span><span class="sf-ok">&#10003; 12 Mar 2026</span></div>
+          <div class="sf-row"><span>M. Okonkwo, Esq.</span><span class="sf-ok">&#10003; 12 Mar 2026</span></div>
+        </div>
+        <p class="step-extra">When the policy changes, everyone acknowledges again, and the earlier acknowledgements stay on file. You can show not just the current policy but the history of who agreed to what, and when.</p>
+      </div>
+    </div></div>
   </div>
 </section>
 
@@ -137,5 +197,5 @@
   </div>
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
 </div></footer>
-<script src="/assets/site.js?v=3"></script>
+<script src="/assets/site.js?v=4"></script>
 </body></html>
