@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-08-23T18:51:39.058Z",
-  "count": 15,
+  "builtAt": "2026-08-24T02:00:52.843Z",
+  "count": 12,
   "items": [
+    {
+      "title": "ChatGPT Experts, $700 Million Law Firms, And Frat House Felonies , See Generally",
+      "link": "https://abovethelaw.com/2026/08/chatgpt-experts-700-million-law-firms-and-frat-house-felonies-see-generally/",
+      "desc": "Expertly Flawed: An expert witness collected $90,000 from 3M to ask ChatGPT, \"show how 3M is 0% at fault.\" Plaintiffs' counsel turned the resulting 350-page prompt log into the deposition of a…",
+      "date": "Sun, 23 Aug 2026 22:57:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/01/GettyImages-667311229.jpg",
+      "source": "Above the Law",
+      "ts": 1787525820000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "From capability to confidence: How CoCounsel is redefining legal AI",
       "link": "https://blogs.thomsonreuters.com/legal-blog/from-capability-to-confidence-how-cocounsel-is-redefining-legal-ai/",
@@ -12,7 +26,7 @@
       "ts": 1787351608000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -26,7 +40,7 @@
       "ts": 1787351580000,
       "topic": "rules",
       "topicLabel": "Rules & ethics",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -40,7 +54,7 @@
       "ts": 1787348509000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -82,7 +96,7 @@
       "ts": 1787259720000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -96,21 +110,7 @@
       "ts": 1787257920000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "AI Prompt Injection Has Entered The Courtroom",
-      "link": "https://abovethelaw.com/2026/08/ai-prompt-injection-has-entered-the-courtroom/",
-      "desc": "The court did not take kindly to this. The post AI Prompt Injection Has Entered The Courtroom appeared first on Above the Law .",
-      "date": "Thu, 20 Aug 2026 20:04:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/01/artificial-intelligence-3382507_1280.jpg",
-      "source": "Above the Law",
-      "ts": 1787256240000,
-      "topic": "courts",
-      "topicLabel": "Courts & sanctions",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -139,48 +139,6 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "A Lawyer for AI Agents",
-      "link": "https://www.artificiallawyer.com/2026/08/20/a-lawyer-for-ai-agents/",
-      "desc": "By Damien Charlotin, Yourhuman.ai There are scores of AI lawyers for humans. I want to make the case for a human lawyer for AI. In",
-      "date": "Thu, 20 Aug 2026 07:30:54 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-20-at-08.23.42.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787211054000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Zach + Richard's Excellent Legal AI Adventure",
-      "link": "https://www.artificiallawyer.com/2026/08/19/zach-richards-excellent-legal-ai-adventure-5/",
-      "desc": "Welcome to the latest episode of Zach and Richard's Excellent Legal AI Adventure – where we focus on a range of hot topics, from why",
-      "date": "Wed, 19 Aug 2026 11:19:41 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-19-at-12.08.32.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787138381000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Why General AI Alone Is Not Enough for Legal Work",
-      "link": "https://www.artificiallawyer.com/2026/08/19/why-general-ai-alone-is-not-enough-for-legal-work/",
-      "desc": "By Senne Mennes, LawVu. Few terms in legal technology have become as overused as ‘AI-powered.’ Not to mention over-hyped. Today, virtually every legal tech vendor",
-      "date": "Wed, 19 Aug 2026 07:35:30 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-19-at-08.24.37.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787124930000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
