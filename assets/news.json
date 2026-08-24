@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-08-24T07:32:18.360Z",
+  "builtAt": "2026-08-24T13:17:50.922Z",
   "count": 15,
   "items": [
+    {
+      "title": "Thomson Reuters Launches Thomson, Its Own Proprietary LLM Trained on Westlaw and Practical Law Content",
+      "link": "https://www.lawnext.com/2026/08/thomson-reuters-launches-thomson-its-own-proprietary-llm-trained-on-westlaw-and-practical-law-content.html",
+      "desc": "It certainly has been no secret that Thomson Reuters has been building its own proprietary large language model. In fact, in my June interview with TR’s CEO Steve Hasker, he talked openly about…",
+      "date": "Mon, 24 Aug 2026 13:00:39 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/08/Thomson-Release-Featured-Image.png",
+      "source": "LawNext",
+      "ts": 1787576439000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Thomson Reuters and Solve Intelligence bring dedicated patent AI to IP firms",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/thomson-reuters-and-solve-intelligence-bring-dedicated-patent-ai-to-ip-firms/",
+      "desc": "Patent work is among the most technical and time-intensive in legal practice. Drafting a full patent application, responding to an The post Thomson Reuters and Solve Intelligence bring dedicated…",
+      "date": "Mon, 24 Aug 2026 13:00:13 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/08/AdobeStock_1240674892-e1787341530661-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1787576413000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Legal AI Works, Why Is the Return So Hard to Find?",
       "link": "https://www.artificiallawyer.com/2026/08/24/legal-ai-works-why-is-the-return-so-hard-to-find/",
@@ -96,20 +124,6 @@
       "ts": 1787308066000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "The new economics of AI-powered legal services: How smart law firms are redefining profit",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/the-new-economics-of-ai-powered-legal-services-how-smart-law-firms-are-redefining-profit/",
-      "desc": "As AI transforms how legal work gets done, the fundamental economics of law firm billable hours face disruption. As The post The new economics of AI-powered legal services: How smart law firms are…",
-      "date": "Thu, 20 Aug 2026 21:02:00 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/02/AdobeStock_1867986846-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1787259720000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "3 days ago",
       "strong": true,
       "promo": false
@@ -157,6 +171,20 @@
       "promo": false
     },
     {
+      "title": "Avvoka Partners With Harvey, Launches Curate For Templates",
+      "link": "https://www.artificiallawyer.com/2026/08/20/avvoka-partners-with-harvey-launches-curate-for-templates/",
+      "desc": "Avvoka, the drafting automation platform, has formed a partnership with Harvey, and it’s also just launched ‘Curate’, which ‘turns a law firm's transaction documents into",
+      "date": "Thu, 20 Aug 2026 09:04:58 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-20-at-09.52.55.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787216698000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "4 days ago",
+      "strong": false,
+      "promo": false
+    },
+    {
       "title": "A Lawyer for AI Agents",
       "link": "https://www.artificiallawyer.com/2026/08/20/a-lawyer-for-ai-agents/",
       "desc": "By Damien Charlotin, Yourhuman.ai There are scores of AI lawyers for humans. I want to make the case for a human lawyer for AI. In",
@@ -164,20 +192,6 @@
       "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-20-at-08.23.42.png",
       "source": "Artificial Lawyer",
       "ts": 1787211054000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Zach + Richard's Excellent Legal AI Adventure",
-      "link": "https://www.artificiallawyer.com/2026/08/19/zach-richards-excellent-legal-ai-adventure-5/",
-      "desc": "Welcome to the latest episode of Zach and Richard's Excellent Legal AI Adventure – where we focus on a range of hot topics, from why",
-      "date": "Wed, 19 Aug 2026 11:19:41 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-19-at-12.08.32.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787138381000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "4 days ago",
@@ -195,20 +209,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "5 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Having Already Launched A Claude Connector, Trellis Extends AI Access to Its Court Data with ChatGPT Plugin and Its Own Chat Tool",
-      "link": "https://www.lawnext.com/2026/08/having-already-launched-a-claude-connector-trellis-extends-ai-access-to-its-court-data-with-chatgpt-plugin-and-its-own-chat-tool.html",
-      "desc": "Trellis, a legal research company that provides state trial court data and insights, has expanded agentic AI access to its data with a new plugin for OpenAI's ChatGPT and a native assistant called…",
-      "date": "Mon, 17 Aug 2026 15:57:44 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/08/Trellis-ChatGPT-Featured.png",
-      "source": "LawNext",
-      "ts": 1786982264000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "6 days ago",
       "strong": true,
       "promo": false
     }
