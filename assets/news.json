@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-08-24T02:00:52.843Z",
-  "count": 12,
+  "builtAt": "2026-08-24T07:32:18.360Z",
+  "count": 15,
   "items": [
+    {
+      "title": "Legal AI Works, Why Is the Return So Hard to Find?",
+      "link": "https://www.artificiallawyer.com/2026/08/24/legal-ai-works-why-is-the-return-so-hard-to-find/",
+      "desc": "By Alejandro Castellano, CEO, Caddi. Two years ago the question in front of every management committee was whether the AI worked. That question is largely",
+      "date": "Mon, 24 Aug 2026 06:45:24 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-24-at-07.36.54.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787553924000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "ChatGPT Experts, $700 Million Law Firms, And Frat House Felonies , See Generally",
       "link": "https://abovethelaw.com/2026/08/chatgpt-experts-700-million-law-firms-and-frat-house-felonies-see-generally/",
@@ -139,6 +153,34 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "3 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "A Lawyer for AI Agents",
+      "link": "https://www.artificiallawyer.com/2026/08/20/a-lawyer-for-ai-agents/",
+      "desc": "By Damien Charlotin, Yourhuman.ai There are scores of AI lawyers for humans. I want to make the case for a human lawyer for AI. In",
+      "date": "Thu, 20 Aug 2026 07:30:54 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-20-at-08.23.42.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787211054000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "4 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Zach + Richard's Excellent Legal AI Adventure",
+      "link": "https://www.artificiallawyer.com/2026/08/19/zach-richards-excellent-legal-ai-adventure-5/",
+      "desc": "Welcome to the latest episode of Zach and Richard's Excellent Legal AI Adventure – where we focus on a range of hot topics, from why",
+      "date": "Wed, 19 Aug 2026 11:19:41 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-19-at-12.08.32.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787138381000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
