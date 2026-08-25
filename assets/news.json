@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-08-24T19:04:30.097Z",
+  "builtAt": "2026-08-25T01:56:01.117Z",
   "count": 15,
   "items": [
+    {
+      "title": "AI Contracts Are Quietly Becoming The Best Product Documentation",
+      "link": "https://abovethelaw.com/2026/08/ai-contracts-are-quietly-becoming-the-best-product-documentation/",
+      "desc": "Increasingly, the clearest answers aren't found in marketing materials or product manuals. The post AI Contracts Are Quietly Becoming The Best Product Documentation appeared first on Above the Law .",
+      "date": "Mon, 24 Aug 2026 21:33:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/02/GettyImages-2256085250.jpg",
+      "source": "Above the Law",
+      "ts": 1787607180000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "How courts are responding to AI reliability concerns",
       "link": "https://blogs.thomsonreuters.com/legal-blog/how-courts-are-responding-to-ai-reliability-concerns/",
@@ -143,20 +157,6 @@
       "promo": false
     },
     {
-      "title": "ChatGPT Experts, $700 Million Law Firms, And Frat House Felonies , See Generally",
-      "link": "https://abovethelaw.com/2026/08/chatgpt-experts-700-million-law-firms-and-frat-house-felonies-see-generally/",
-      "desc": "Expertly Flawed: An expert witness collected $90,000 from 3M to ask ChatGPT, \"show how 3M is 0% at fault.\" Plaintiffs' counsel turned the resulting 350-page prompt log into the deposition of a…",
-      "date": "Sun, 23 Aug 2026 22:57:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/01/GettyImages-667311229.jpg",
-      "source": "Above the Law",
-      "ts": 1787525820000,
-      "topic": "courts",
-      "topicLabel": "Courts & sanctions",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "From capability to confidence: How CoCounsel is redefining legal AI",
       "link": "https://blogs.thomsonreuters.com/legal-blog/from-capability-to-confidence-how-cocounsel-is-redefining-legal-ai/",
       "desc": "The night CoCounsel's team got early access to GPT-4, most people didn't yet know what large language models could The post From capability to confidence: How CoCounsel is redefining legal AI…",
@@ -166,7 +166,7 @@
       "ts": 1787351608000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
