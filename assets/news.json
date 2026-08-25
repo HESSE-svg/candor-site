@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-08-25T07:12:32.231Z",
+  "builtAt": "2026-08-25T13:15:36.476Z",
   "count": 15,
   "items": [
+    {
+      "title": "Google Launches Gemini Enterprise for Legal",
+      "link": "https://www.artificiallawyer.com/2026/08/25/google-launches-gemini-enterprise-for-legal/",
+      "desc": "As predicted by AL, another tech giant has joined the legal world. Google Cloud has unveiled Gemini Enterprise for Legal, an ‘enterprise-grade, purpose-built agentic AI",
+      "date": "Tue, 25 Aug 2026 12:18:00 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-25-at-13.09.23.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787660280000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI Adoption Isn’t the Hard Part for Legal",
       "link": "https://www.artificiallawyer.com/2026/08/25/ai-adoption-isnt-the-hard-part-for-legal/",
@@ -87,20 +101,6 @@
       "promo": false
     },
     {
-      "title": "Newcode Raises $13.5m, Relativity Invests",
-      "link": "https://www.artificiallawyer.com/2026/08/24/newcode-raises-13-5m-relativity-invests/",
-      "desc": "Newcode, a ‘configurable AI harness’ for law firms has raised $13.5m in its Series A, with Relativity’s investment arm Rel Labs joining the round. See",
-      "date": "Mon, 24 Aug 2026 14:06:34 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-24-at-11.57.21.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787580394000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": false,
-      "promo": false
-    },
-    {
       "title": "This Week In Epic News: FTC Probe, AI Agents More",
       "link": "https://medcitynews.com/2026/08/epic-ftc-agentic-ai/",
       "desc": "Epic faced an FTC antitrust probe this past week, but that didn't stop the EHR giant from unveiling a wave of new AI tools at its annual conference. The post This Week In Epic News: FTC Probe, AI…",
@@ -124,7 +124,7 @@
       "ts": 1787576439000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -138,7 +138,7 @@
       "ts": 1787576413000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -194,7 +194,7 @@
       "ts": 1787308066000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
