@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-08-25T01:56:01.117Z",
+  "builtAt": "2026-08-25T07:12:32.231Z",
   "count": 15,
   "items": [
+    {
+      "title": "AI Adoption Isn’t the Hard Part for Legal",
+      "link": "https://www.artificiallawyer.com/2026/08/25/ai-adoption-isnt-the-hard-part-for-legal/",
+      "desc": "By Neil Smith, LawVu. Ask any legal team today whether they have adopted AI, and most will say yes. Contract review tools. Drafting assistants. A",
+      "date": "Tue, 25 Aug 2026 06:45:07 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-25-at-07.29.25.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787640307000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI Contracts Are Quietly Becoming The Best Product Documentation",
       "link": "https://abovethelaw.com/2026/08/ai-contracts-are-quietly-becoming-the-best-product-documentation/",
@@ -101,20 +115,6 @@
       "promo": false
     },
     {
-      "title": "TR CEO Steve Hasker on Thomson 1.0",
-      "link": "https://www.artificiallawyer.com/2026/08/24/tr-ceo-steve-hasker-on-thomson-1-0/",
-      "desc": "As Artificial Lawyer just shared, Thomson Reuters has launched Thomson 1.0, its own open weights LLM, trained on its own data. Here, AL talks in-depth",
-      "date": "Mon, 24 Aug 2026 13:38:21 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-24-at-14.24.48.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787578701000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": false,
-      "promo": false
-    },
-    {
       "title": "Thomson Reuters Launches Thomson, Its Own Proprietary LLM Trained on Westlaw and Practical Law Content",
       "link": "https://www.lawnext.com/2026/08/thomson-reuters-launches-thomson-its-own-proprietary-llm-trained-on-westlaw-and-practical-law-content.html",
       "desc": "It certainly has been no secret that Thomson Reuters has been building its own proprietary large language model. In fact, in my June interview with TR’s CEO Steve Hasker, he talked openly about…",
@@ -152,7 +152,7 @@
       "ts": 1787553924000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
