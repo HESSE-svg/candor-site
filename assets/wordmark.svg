@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" role="img" aria-label="Candor — proof your firm did the work">
+  <!-- The horizontal lockup, for a page header rather than an app icon.
+       Oxblood period here, because on paper it has something to show against. -->
+  <text x="0" y="34" font-family="'EB Garamond', Georgia, 'Times New Roman', serif"
+        font-size="44" fill="#1B2A41" dominant-baseline="middle">Candor<tspan fill="#7A2E2E">.</tspan></text>
+  <text x="2" y="60" font-family="Inter, ui-sans-serif, system-ui, sans-serif"
+        font-size="10" letter-spacing="1.6" fill="#6B6459">PROOF YOUR FIRM DID THE WORK</text>
+</svg>
