@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-08-25T19:02:45.374Z",
+  "builtAt": "2026-08-26T02:02:11.637Z",
   "count": 15,
   "items": [
+    {
+      "title": "Law Firms Are Buying AI: But Are They Really Using It?",
+      "link": "https://abovethelaw.com/2026/08/law-firms-are-buying-ai-but-are-they-really-using-it/",
+      "desc": "Don't toss AI in the drawer alongside your gym membership card just yet. The post Law Firms Are Buying AI: But Are They Really Using It? appeared first on Above the Law .",
+      "date": "Tue, 25 Aug 2026 20:04:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/05/GettyImages-2223784896-1024x683.jpg",
+      "source": "Above the Law",
+      "ts": 1787688240000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Google Cloud unveils Gemini Enterprise for Legal",
+      "link": "https://legaltechnology.com/google-cloud-unveils-gemini-enterprise-for-legal/",
+      "desc": "Legal IT Insider is at ILTACON so sharing this press release and we'll do further analysis after the conference. Google Cloud today (25 August) unveiled Gemini Enterprise for Legal, an [] The post…",
+      "date": "Tue, 25 Aug 2026 19:08:37 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/04/google-gemini-web.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1787684917000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Voxpop: Pablo Arredondo joins Clio as SVP, Judiciary",
       "link": "https://legaltechnology.com/voxpop-pablo-arredondo-joins-clio-as-svp-judiciary/",
@@ -82,7 +110,7 @@
       "ts": 1787607180000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -110,20 +138,6 @@
       "ts": 1787587906000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Agentic AI And The QWERTY Problem",
-      "link": "https://abovethelaw.com/2026/08/agentic-ai-and-the-qwerty-problem/",
-      "desc": "AI is getting better. Human brains aren't. The post Agentic AI And The QWERTY Problem appeared first on Above the Law .",
-      "date": "Mon, 24 Aug 2026 15:39:18 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2023/11/GettyImages-1441236224.jpg",
-      "source": "Above the Law",
-      "ts": 1787585958000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "Yesterday",
       "strong": true,
       "promo": false
@@ -192,20 +206,6 @@
       "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/03/231765_566235954-400x225.webp",
       "source": "Thomson Reuters",
       "ts": 1787351608000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Tokenomics: “Use the right GenAI tool for the right job”",
-      "link": "https://legaltechnology.com/tokenomics-use-the-right-genai-tool-for-the-right-job/",
-      "desc": "\"One of the things I point out to people is how unsurprising it is that we’re in this environment, that the token subsidy era has ended,” says Rudy DeFelice, global [] The post Tokenomics: “Use…",
-      "date": "Fri, 21 Aug 2026 17:39:52 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/08/Rudy-ai-pricing.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1787333992000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "4 days ago",
