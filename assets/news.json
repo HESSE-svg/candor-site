@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-08-26T07:12:39.264Z",
+  "builtAt": "2026-08-26T13:26:53.905Z",
   "count": 15,
   "items": [
+    {
+      "title": "Gemini for Legal and the Battle for Centrality",
+      "link": "https://www.artificiallawyer.com/2026/08/26/gemini-for-legal-and-the-battle-for-centrality/",
+      "desc": "Google launching Gemini Enterprise for Legal (GEL) will have long-term ramifications for legal tech, however Artificial Lawyer can see one thing very clearly already: there",
+      "date": "Wed, 26 Aug 2026 08:38:37 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-26-at-09.11.41.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787733517000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Same Facts, Different Answer: Legal AI's Consistency Problem",
       "link": "https://www.artificiallawyer.com/2026/08/26/same-facts-different-answer-legal-ais-consistency-problem/",
@@ -96,20 +110,6 @@
       "ts": 1787660280000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "AI Adoption Isn’t the Hard Part for Legal",
-      "link": "https://www.artificiallawyer.com/2026/08/25/ai-adoption-isnt-the-hard-part-for-legal/",
-      "desc": "By Neil Smith, LawVu. Ask any legal team today whether they have adopted AI, and most will say yes. Contract review tools. Drafting assistants. A",
-      "date": "Tue, 25 Aug 2026 06:45:07 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-25-at-07.29.25.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787640307000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "Yesterday",
       "strong": true,
       "promo": false
@@ -180,7 +180,7 @@
       "ts": 1787576439000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -194,7 +194,7 @@
       "ts": 1787576413000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
