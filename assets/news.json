@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-08-26T02:02:11.637Z",
+  "builtAt": "2026-08-26T07:12:39.264Z",
   "count": 15,
   "items": [
+    {
+      "title": "Same Facts, Different Answer: Legal AI's Consistency Problem",
+      "link": "https://www.artificiallawyer.com/2026/08/26/same-facts-different-answer-legal-ais-consistency-problem/",
+      "desc": "By Shaz Aziz, Neota Logic. It is August 2026. A lawyer with no technical background can now build a working legal AI tool in a",
+      "date": "Wed, 26 Aug 2026 06:44:24 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-26-at-07.24.00.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787726664000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Law Firms Are Buying AI: But Are They Really Using It?",
       "link": "https://abovethelaw.com/2026/08/law-firms-are-buying-ai-but-are-they-really-using-it/",
@@ -96,7 +110,7 @@
       "ts": 1787640307000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -180,20 +194,6 @@
       "ts": 1787576413000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Legal AI Works, Why Is the Return So Hard to Find?",
-      "link": "https://www.artificiallawyer.com/2026/08/24/legal-ai-works-why-is-the-return-so-hard-to-find/",
-      "desc": "By Alejandro Castellano, CEO, Caddi. Two years ago the question in front of every management committee was whether the AI worked. That question is largely",
-      "date": "Mon, 24 Aug 2026 06:45:24 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-24-at-07.36.54.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787553924000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "Yesterday",
       "strong": true,
       "promo": false
