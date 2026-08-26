@@ -12,7 +12,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css?v=7">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
@@ -31,6 +31,10 @@
 <section class="wrap narrow">
   <div class="deflist">
     <div class="reveal"><h3>Screening stays on your device</h3><p>The confidentiality pre-check runs in your browser. The text you screen is not uploaded, not logged, and not stored by Candor. We keep only that a check happened and which categories of sensitive data it found, never the content itself.</p></div>
+    <div class="reveal"><h3>The record is yours to take</h3><p>Any firm can export everything Candor holds for it, at any time, without asking. A sealed export stays encrypted and restores exactly, hash chain and all. A readable export can be opened in ten years with no Candor and no software of ours, and still carries the hashes so the chain can be checked by hand. A record you cannot get out is a record you do not really own.</p></div>
+    <div class="reveal"><h3>Your case management stays yours</h3><p>When a firm connects Clio, MyCase, or another practice system, Candor reads the matter list when it needs it and does not keep it. Your client list is never copied into our storage. Access tokens are held encrypted, your administrator grants them on the platform's own site, and your firm can revoke them from your side at any time.</p></div>
+    <div class="reveal"><h3>Sign offs say who, provably</h3><p>Where a firm signs in through its own identity provider, the person recorded on an entry is the person the session proved, not a name typed into a box. If somebody enters a sign off on a partner's behalf, the record shows that too.</p></div>
+
     <div class="reveal"><h3>We store the fact, not the file</h3><p>By default Candor records actions, not their contents: a use was logged, a review happened, a check ran. Retaining any underlying content is an explicit choice a firm turns on, never a silent default.</p></div>
     <div class="reveal"><h3>Append only, and provably so</h3><p>Logs and sign offs are never edited in place. Corrections are new entries that reference the ones before them, and the entries are hash chained: each is sealed with a fingerprint of the one prior, so any edit, deletion, or reordering is detectable. A one click integrity check rechecks the whole record.</p></div>
     <div class="reveal"><h3>Each firm is walled off</h3><p>Every record is scoped to the firm that owns it. The design goal is that no bug could let one firm's data surface in another's account.</p></div>
@@ -66,5 +70,5 @@
   </div>
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
 </div></footer>
-<script src="/assets/site.js"></script>
+<script src="/assets/site.js?v=7"></script>
 </body></html>
