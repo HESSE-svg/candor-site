@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-08-26T20:09:46.880Z",
+  "builtAt": "2026-08-27T09:57:48.528Z",
   "count": 15,
   "items": [
+    {
+      "title": "Google, Weil + Gemini Enterprise for Legal",
+      "link": "https://www.artificiallawyer.com/2026/08/27/google-weil-gemini-enterprise-for-legal/",
+      "desc": "Leading US law firm, Weil, contributed to the development of Google's new Gemini Enterprise for Legal. Artificial Lawyer spoke to Andrew Simon, Weil’s Chief AI",
+      "date": "Thu, 27 Aug 2026 07:45:25 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-27-at-08.22.38.png",
+      "source": "Artificial Lawyer",
+      "ts": 1787816725000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "What legal professionals need to know about agentic AI",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/how-generative-and-agentic-ai-work-together-in-professional-grade-legal-ai/",
+      "desc": "The possibilities of using AI within legal practice have never been greater. According to recent research, 41% of law The post What legal professionals need to know about agentic AI appeared first…",
+      "date": "Wed, 26 Aug 2026 21:48:08 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/10/AdobeStock_735207924-1-scaled-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1787780888000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "$6 A Gallon Gas, A Huge Recession, Or AI Taking Your Job: Pick 2",
       "link": "https://abovethelaw.com/2026/08/6-a-gallon-gas-a-huge-recession-or-ai-taking-your-job-pick-2/",
@@ -26,7 +54,7 @@
       "ts": 1787733517000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -40,7 +68,7 @@
       "ts": 1787726664000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -115,20 +143,6 @@
       "promo": false
     },
     {
-      "title": "Google Launches Gemini Enterprise for Legal",
-      "link": "https://www.artificiallawyer.com/2026/08/25/google-launches-gemini-enterprise-for-legal/",
-      "desc": "As predicted by AL, another tech giant has joined the legal world. Google Cloud has unveiled Gemini Enterprise for Legal, an ‘enterprise-grade, purpose-built agentic AI",
-      "date": "Tue, 25 Aug 2026 12:18:00 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-25-at-13.09.23.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787660280000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "How courts are responding to AI reliability concerns",
       "link": "https://blogs.thomsonreuters.com/legal-blog/how-courts-are-responding-to-ai-reliability-concerns/",
       "desc": "Courts across the country are adapting to an entirely new reality: AI is no longer optional, and its impact shows The post How courts are responding to AI reliability concerns appeared first on…",
@@ -195,20 +209,6 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "From capability to confidence: How CoCounsel is redefining legal AI",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/from-capability-to-confidence-how-cocounsel-is-redefining-legal-ai/",
-      "desc": "The night CoCounsel's team got early access to GPT-4, most people didn't yet know what large language models could The post From capability to confidence: How CoCounsel is redefining legal AI…",
-      "date": "Fri, 21 Aug 2026 22:33:28 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/03/231765_566235954-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1787351608000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
       "strong": true,
       "promo": false
     }
