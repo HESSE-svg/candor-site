@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-08-27T22:24:48.154Z",
-  "count": 15,
+  "builtAt": "2026-08-28T11:30:42.874Z",
+  "count": 12,
   "items": [
     {
       "title": "Biglaw Is Riding The AI Boom To A Record First Half If Only They Can Collect On It",
@@ -45,20 +45,6 @@
       "promo": false
     },
     {
-      "title": "Google, Weil + Gemini Enterprise for Legal",
-      "link": "https://www.artificiallawyer.com/2026/08/27/google-weil-gemini-enterprise-for-legal/",
-      "desc": "Leading US law firm, Weil, contributed to the development of Google's new Gemini Enterprise for Legal. Artificial Lawyer spoke to Andrew Simon, Weil’s Chief AI",
-      "date": "Thu, 27 Aug 2026 07:45:25 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-27-at-08.22.38.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787816725000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "What legal professionals need to know about agentic AI",
       "link": "https://blogs.thomsonreuters.com/legal-blog/how-generative-and-agentic-ai-work-together-in-professional-grade-legal-ai/",
       "desc": "The possibilities of using AI within legal practice have never been greater. According to recent research, 41% of law The post What legal professionals need to know about agentic AI appeared first…",
@@ -66,34 +52,6 @@
       "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/10/AdobeStock_735207924-1-scaled-400x225.webp",
       "source": "Thomson Reuters",
       "ts": 1787780888000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Gemini for Legal and the Battle for Centrality",
-      "link": "https://www.artificiallawyer.com/2026/08/26/gemini-for-legal-and-the-battle-for-centrality/",
-      "desc": "Google launching Gemini Enterprise for Legal (GEL) will have long-term ramifications for legal tech, however Artificial Lawyer can see one thing very clearly already: there",
-      "date": "Wed, 26 Aug 2026 08:38:37 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-26-at-09.11.41.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787733517000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Same Facts, Different Answer: Legal AI's Consistency Problem",
-      "link": "https://www.artificiallawyer.com/2026/08/26/same-facts-different-answer-legal-ais-consistency-problem/",
-      "desc": "By Shaz Aziz, Neota Logic. It is August 2026. A lawyer with no technical background can now build a working legal AI tool in a",
-      "date": "Wed, 26 Aug 2026 06:44:24 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-26-at-07.24.00.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787726664000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Yesterday",
