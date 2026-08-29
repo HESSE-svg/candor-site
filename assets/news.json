@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-08-29T16:46:59.267Z",
+  "builtAt": "2026-08-29T20:58:54.041Z",
   "count": 14,
   "items": [
     {
@@ -12,7 +12,7 @@
       "ts": 1787944320000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -26,7 +26,7 @@
       "ts": 1787938647000,
       "topic": "rules",
       "topicLabel": "Rules & ethics",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +68,7 @@
       "ts": 1787861040000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -82,7 +82,7 @@
       "ts": 1787855640000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -138,7 +138,7 @@
       "ts": 1787684917000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
