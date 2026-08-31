@@ -17,6 +17,24 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css?v=7">
+<style>
+  /* pricing page — scoped polish */
+  .tiers.six{grid-template-columns:repeat(3,1fr);gap:18px;margin-top:var(--s4)}
+  .tiers.six .tier{position:relative;padding:22px 22px 24px}
+  .tier .tmeta{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:5px}
+  .tier .price{font-family:var(--f-serif);font-size:36px;color:var(--navy);line-height:1;margin:16px 0 0}
+  .tier .price small{font-size:15px;color:var(--muted);font-family:var(--f-sans)}
+  .tier .tmo{font-family:var(--f-mono);font-size:12px;color:var(--faint);margin-top:7px;letter-spacing:.03em}
+  .tier.feature{border:1px solid var(--navy);border-top:3px solid var(--ox);background:var(--soft)}
+  .tier.feature .price{color:var(--ox)}
+  .tbadge{position:absolute;top:-11px;left:22px;background:var(--ox);color:var(--paper);font-family:var(--f-mono);font-size:10px;text-transform:uppercase;letter-spacing:.11em;padding:3px 10px;border-radius:999px}
+  .anchor-note{margin-top:var(--s3);font-size:14px;color:var(--muted);font-style:italic}
+  /* two-column feature checklist */
+  .feat-list{list-style:none;margin:6px 0 0;columns:2;column-gap:36px;font-size:15px}
+  .feat-list li{break-inside:avoid;position:relative;padding:8px 0 8px 24px;color:var(--muted);border-bottom:1px solid var(--rule);line-height:1.45}
+  .feat-list li::before{content:'✓';position:absolute;left:0;top:8px;color:var(--seal);font-weight:700}
+  @media(max-width:640px){.feat-list{columns:1}.tiers.six{gap:14px}}
+</style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
@@ -33,26 +51,52 @@
 </section>
 
 <section class="wrap">
-  <table class="tbl">
-    <thead>
-      <tr><th>Firm</th><th>Attorneys</th><th>Per year</th><th>Works out at</th></tr>
-    </thead>
-    <tbody>
-      <tr><td><b>Solo</b></td><td>1</td><td><b>$2,400</b></td><td class="mono">$200/mo</td></tr>
-      <tr><td><b>Small</b></td><td>2 to 5</td><td><b>$4,800</b></td><td class="mono">$400/mo</td></tr>
-      <tr><td><b>Mid</b></td><td>6 to 15</td><td><b>$8,400</b></td><td class="mono">$700/mo</td></tr>
-      <tr style="background:var(--soft)"><td><b>Standard</b><div class="mono" style="font-size:11px;color:var(--muted);margin-top:2px">MOST FIRMS</div></td><td>16 to 30</td><td><b>$12,000</b></td><td class="mono">$1,000/mo</td></tr>
-      <tr><td><b>Large</b></td><td>31 to 60</td><td><b>$18,000</b></td><td class="mono">$1,500/mo</td></tr>
-      <tr><td><b>Enterprise</b></td><td>60+</td><td><b>Let's talk</b></td><td class="mono">—</td></tr>
-    </tbody>
-  </table>
+  <div class="tiers six">
+    <div class="tier">
+      <h3>Solo</h3>
+      <div class="tmeta">1 attorney</div>
+      <div class="price">$2,400<small> /yr</small></div>
+      <div class="tmo">$200 a month</div>
+    </div>
+    <div class="tier">
+      <h3>Small</h3>
+      <div class="tmeta">2 to 5 attorneys</div>
+      <div class="price">$4,800<small> /yr</small></div>
+      <div class="tmo">$400 a month</div>
+    </div>
+    <div class="tier">
+      <h3>Mid</h3>
+      <div class="tmeta">6 to 15 attorneys</div>
+      <div class="price">$8,400<small> /yr</small></div>
+      <div class="tmo">$700 a month</div>
+    </div>
+    <div class="tier feature">
+      <span class="tbadge">Most firms</span>
+      <h3>Standard</h3>
+      <div class="tmeta">16 to 30 attorneys</div>
+      <div class="price">$12,000<small> /yr</small></div>
+      <div class="tmo">$1,000 a month</div>
+    </div>
+    <div class="tier">
+      <h3>Large</h3>
+      <div class="tmeta">31 to 60 attorneys</div>
+      <div class="price">$18,000<small> /yr</small></div>
+      <div class="tmo">$1,500 a month</div>
+    </div>
+    <div class="tier">
+      <h3>Enterprise</h3>
+      <div class="tmeta">60+ attorneys</div>
+      <div class="price" style="font-size:27px">Let's talk</div>
+      <div class="tmo">Custom, per firm</div>
+    </div>
+  </div>
 
-  <p class="caption" style="margin-top:18px">Unlimited staff seats at every tier. Attorney count is the only thing that moves the price, so adding a paralegal, a legal assistant or an office manager costs nothing. Monthly billing is available if your firm needs it, though almost everyone prefers the single annual figure.</p>
+  <p class="caption" style="margin-top:20px">Unlimited staff seats at every tier. Attorney count is the only thing that moves the price, so adding a paralegal, a legal assistant or an office manager costs nothing. Monthly billing is available if your firm needs it, though almost everyone prefers the single annual figure.</p>
 
-  <div class="card reveal" style="margin-top:34px">
+  <div class="card reveal" style="margin-top:38px">
     <h3>The same product at every tier</h3>
-    <p style="margin-bottom:14px">There is no cut down edition. A solo practitioner gets what a thirty attorney firm gets, because the carrier asks a solo the same questions.</p>
-    <ul>
+    <p style="margin-bottom:16px">There is no cut down edition. A solo practitioner gets what a thirty attorney firm gets, because the carrier asks a solo the same questions.</p>
+    <ul class="feat-list">
       <li>Confidentiality pre-check, before anything reaches an outside AI tool</li>
       <li>Browser companion for ChatGPT, Claude, Gemini and Copilot</li>
       <li>AI use log, approved tools list, and attorney sign off</li>
