@@ -1,20 +1,62 @@
 {
-  "builtAt": "2026-09-01T16:44:31.575Z",
+  "builtAt": "2026-09-01T21:07:38.907Z",
   "count": 14,
   "items": [
     {
-      "title": "Saving Time Is Not The Win. Turning It Into Growth Is.",
-      "link": "https://abovethelaw.com/2026/09/saving-time-is-not-the-win-turning-it-into-growth-is/",
-      "desc": "[Sponsored] In the age of AI, the firms that win are the ones that unify how they practice law and how they grow their business. Speed alone is not the strategy. Earned intelligence is. The post…",
-      "date": "Tue, 01 Sep 2026 16:16:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/08/image-2.png",
+      "title": "Wall Street Banks Demand Law Firms Slash Rates And Just Trust AI No Way This Could Backfire!",
+      "link": "https://abovethelaw.com/2026/09/wall-street-banks-demand-law-firms-slash-rates-and-just-trust-ai-no-way-this-could-backfire/",
+      "desc": "Banks want more AI legal work. It's all fun and games until they come asking for a bailout. The post Wall Street Banks Demand Law Firms Slash Rates And Just Trust AI No Way This Could Backfire!…",
+      "date": "Tue, 01 Sep 2026 20:33:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2020/08/GettyImages-487081616.jpg",
       "source": "Above the Law",
-      "ts": 1788279360000,
+      "ts": 1788294780000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "Today",
-      "strong": false,
-      "promo": true
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "On LawNext: Why Legal AI Pioneer Pablo Arredondo Is Joining Clio to Build Technology for the Courts",
+      "link": "https://www.lawnext.com/2026/09/on-lawnext-why-legal-ai-pioneer-pablo-arredondo-is-joining-clio-to-build-technology-for-the-courts.html",
+      "desc": "Pablo Arredondo, the Casetext cofounder who helped build some of the earliest and most influential applications of AI in legal practice, is joining Clio as senior vice president, judiciary, where…",
+      "date": "Tue, 01 Sep 2026 19:27:06 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Pablo-and-Bob-LawNext-Featured.png",
+      "source": "LawNext",
+      "ts": 1788290826000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "From assessment to action: A law firm's AI transformation journey",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/from-assessment-to-action-a-law-firms-ai-transformation-journey/",
+      "desc": "This is the third in a three-part series from the Thomson Reuters Transformation Services team exploring how law firms can The post From assessment to action: A law firm's AI transformation…",
+      "date": "Tue, 01 Sep 2026 18:28:38 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/09/AdobeStock_713642270-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1788287318000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Law Reviews And AI Detection, A Letter To Law Review Editors",
+      "link": "https://abovethelaw.com/2026/09/law-reviews-and-ai-detection-a-letter-to-law-review-editors/",
+      "desc": "Law reviews potentially rejecting submissions because the journals detect AI is problematic for a variety of reasons. The post Law Reviews And AI Detection, A Letter To Law Review Editors appeared…",
+      "date": "Tue, 01 Sep 2026 17:37:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2018/10/GettyImages-851956480-620x413.jpg",
+      "source": "Above the Law",
+      "ts": 1788284220000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
     },
     {
       "title": "1/4 of Young People Use AI For Their Legal Needs",
@@ -40,7 +82,7 @@
       "ts": 1788196667000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -59,20 +101,6 @@
       "promo": false
     },
     {
-      "title": "Teenage Law Grad Thinks Getting A Tax LLM Will Be A ‘Little Vacation’",
-      "link": "https://abovethelaw.com/2026/08/teenage-law-grad-thinks-getting-a-tax-llm-will-be-a-little-vacation/",
-      "desc": "His idea of rest and relaxation involves the Internal Revenue Code. The post Teenage Law Grad Thinks Getting A Tax LLM Will Be A ‘Little Vacation’ appeared first on Above the Law .",
-      "date": "Fri, 28 Aug 2026 19:12:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/08/calculator-tax-beach-vacation-GettyImages-540008565.png",
-      "source": "Above the Law",
-      "ts": 1787944320000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "MA targets can't avoid AI disclosure much longer",
       "link": "https://blogs.thomsonreuters.com/legal-blog/ai-and-ma-deal-terms/",
       "desc": "Jump to ↓ Two ends of the spectrum Why silence won't hold up By Dan Wertman, originally published The post M&A targets can't avoid AI disclosure much longer appeared first on Thomson Reuters Law…",
@@ -82,7 +110,7 @@
       "ts": 1787938647000,
       "topic": "rules",
       "topicLabel": "Rules & ethics",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -129,20 +157,6 @@
       "promo": false
     },
     {
-      "title": "What legal professionals need to know about agentic AI",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/how-generative-and-agentic-ai-work-together-in-professional-grade-legal-ai/",
-      "desc": "The possibilities of using AI within legal practice have never been greater. According to recent research, 41% of law The post What legal professionals need to know about agentic AI appeared first…",
-      "date": "Wed, 26 Aug 2026 21:48:08 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/10/AdobeStock_735207924-1-scaled-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1787780888000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Google Cloud unveils Gemini Enterprise for Legal",
       "link": "https://legaltechnology.com/google-cloud-unveils-gemini-enterprise-for-legal/",
       "desc": "Legal IT Insider is at ILTACON so sharing this press release and we'll do further analysis after the conference. Google Cloud today (25 August) unveiled Gemini Enterprise for Legal, an [] The post…",
@@ -152,7 +166,7 @@
       "ts": 1787684917000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "6 days ago",
+      "when": "Aug 25, 2026",
       "strong": true,
       "promo": false
     },
@@ -167,20 +181,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Aug 25, 2026",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Harvey and PacerPro Announce Partnership To Connect Docket Data with AI Litigation Workflows",
-      "link": "https://www.lawnext.com/2026/08/harvey-and-pacerpro-announce-partnership-to-connect-docket-data-with-ai-litigation-workflows.html",
-      "desc": "The legal AI company Harvey and the court data company PacerPro have announced an integration partnership that gives litigation teams working in Harvey access to their firm's complete litigation…",
-      "date": "Mon, 24 Aug 2026 16:11:46 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/08/Harvey-PacerPro-Integration.png",
-      "source": "LawNext",
-      "ts": 1787587906000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Aug 24, 2026",
       "strong": true,
       "promo": false
     },
