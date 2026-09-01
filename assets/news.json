@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-01T11:46:11.149Z",
+  "builtAt": "2026-09-01T16:44:31.575Z",
   "count": 14,
   "items": [
+    {
+      "title": "Saving Time Is Not The Win. Turning It Into Growth Is.",
+      "link": "https://abovethelaw.com/2026/09/saving-time-is-not-the-win-turning-it-into-growth-is/",
+      "desc": "[Sponsored] In the age of AI, the firms that win are the ones that unify how they practice law and how they grow their business. Speed alone is not the strategy. Earned intelligence is. The post…",
+      "date": "Tue, 01 Sep 2026 16:16:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/08/image-2.png",
+      "source": "Above the Law",
+      "ts": 1788279360000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": false,
+      "promo": true
+    },
     {
       "title": "1/4 of Young People Use AI For Their Legal Needs",
       "link": "https://www.artificiallawyer.com/2026/09/01/1-4-of-young-people-use-ai-for-their-legal-needs/",
@@ -40,7 +54,7 @@
       "ts": 1788191160000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -73,20 +87,6 @@
       "promo": false
     },
     {
-      "title": "ILTACON Confirms: Gradually, Then Suddenly Legal Tech Became A Big Business",
-      "link": "https://abovethelaw.com/2026/08/iltacon-confirms-gradually-then-suddenly-legal-tech-became-a-big-business/",
-      "desc": "AI made investors and vendors take notice of an industry that could be completely disrupted by a revolutionary tool. The post ILTACON Confirms: Gradually, Then Suddenly Legal Tech Became A Big…",
-      "date": "Fri, 28 Aug 2026 14:47:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/06/lawyer-robot-by-chatgpt.png",
-      "source": "Above the Law",
-      "ts": 1787928420000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": false,
-      "promo": false
-    },
-    {
       "title": "Oz Benamram talks talent, team building and legal AI’s delivery challenge , Voxpop",
       "link": "https://legaltechnology.com/oz-benamram-talks-talent-team-building-and-legal-ais-delivery-challenge-voxpop/",
       "desc": "Caroline Hill chats with Oz Benamram, chief AI officer at Pillsbury, about his latest big name hire, plans for building his team, and what conversations the legal sector was having [] The post Oz…",
@@ -96,7 +96,7 @@
       "ts": 1787926904000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -166,7 +166,7 @@
       "ts": 1787669221000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "6 days ago",
+      "when": "Aug 25, 2026",
       "strong": true,
       "promo": false
     },
