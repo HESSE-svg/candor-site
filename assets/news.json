@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-01T05:18:34.610Z",
+  "builtAt": "2026-09-01T11:46:11.149Z",
   "count": 14,
   "items": [
+    {
+      "title": "1/4 of Young People Use AI For Their Legal Needs",
+      "link": "https://www.artificiallawyer.com/2026/09/01/1-4-of-young-people-use-ai-for-their-legal-needs/",
+      "desc": "A new survey of over 3,200 people has found that just over one quarter (26%) of 18 to 24 year olds have turned to AI",
+      "date": "Tue, 01 Sep 2026 09:35:40 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-01-at-10.10.55.png",
+      "source": "Artificial Lawyer",
+      "ts": 1788255340000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Series A Round for Newcode, An AI Harness for Legal, Brings Its Funding To $20M and Fuels U.S. Expansion",
       "link": "https://www.lawnext.com/2026/08/series-a-round-for-newcode-an-ai-harness-for-legal-brings-its-funding-to-20m-and-fuels-u-s-expansion.html",
@@ -96,7 +110,7 @@
       "ts": 1787901623000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -110,7 +124,7 @@
       "ts": 1787816725000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
@@ -122,20 +136,6 @@
       "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/10/AdobeStock_735207924-1-scaled-400x225.webp",
       "source": "Thomson Reuters",
       "ts": 1787780888000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Gemini for Legal and the Battle for Centrality",
-      "link": "https://www.artificiallawyer.com/2026/08/26/gemini-for-legal-and-the-battle-for-centrality/",
-      "desc": "Google launching Gemini Enterprise for Legal (GEL) will have long-term ramifications for legal tech, however Artificial Lawyer can see one thing very clearly already: there",
-      "date": "Wed, 26 Aug 2026 08:38:37 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/08/Screenshot-2026-08-26-at-09.11.41.png",
-      "source": "Artificial Lawyer",
-      "ts": 1787733517000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "5 days ago",
