@@ -216,7 +216,7 @@ function card(it, big = false) {
 function page(items, builtAt) {
   const [hero, ...rest] = items
   const stamp = builtAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
-  const nav = `<nav class="navlinks"><a href="/product">Product</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/resources">Resources</a><a href="/about">About</a><a class="cta" href="/demo">Get a look</a></nav>`
+  const nav = `<nav class="navlinks"><a href="/product">Product</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/demo">Get a look</a></nav>`
   return `<!doctype html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
