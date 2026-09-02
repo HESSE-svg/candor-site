@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-02T11:27:32.752Z",
+  "builtAt": "2026-09-02T16:40:28.641Z",
   "count": 14,
   "items": [
+    {
+      "title": "Filevine Takes On Shepard’s and KeyCite With Its Own AI Case Law Citator and Hallucination Checker",
+      "link": "https://www.lawnext.com/2026/09/filevine-takes-on-shepards-and-keycite-with-its-own-ai-case-law-citator-and-hallucination-checker.html",
+      "desc": "The legal technology company Filevine has launched an AI-native citator and a companion brief-checking tool inside LOIS, its Legal Operating Intelligence System AI platform, that its CEO says…",
+      "date": "Wed, 02 Sep 2026 14:24:33 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Filevine-LOIS-Featured.png",
+      "source": "LawNext",
+      "ts": 1788359073000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "15% of Large Firm Lawyers 'Now Dependent on AI’",
+      "link": "https://www.artificiallawyer.com/2026/09/02/15-of-large-firm-lawyers-now-dependent-on-ai/",
+      "desc": "15% of lawyers at large law firms are 'now dependent on AI’ to do their job, a survey by LexisNexis in the UK has found.",
+      "date": "Wed, 02 Sep 2026 11:52:02 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-12.25.35.png",
+      "source": "Artificial Lawyer",
+      "ts": 1788349922000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "ILTACON 2026: Context is king , but transformation is still the hard part",
       "link": "https://legaltechnology.com/iltacon-2026-context-is-king-but-transformation-is-still-the-hard-part/",
@@ -101,20 +129,6 @@
       "promo": false
     },
     {
-      "title": "1/4 of Young People Use AI For Their Legal Needs",
-      "link": "https://www.artificiallawyer.com/2026/09/01/1-4-of-young-people-use-ai-for-their-legal-needs/",
-      "desc": "A new survey of over 3,200 people has found that just over one quarter (26%) of 18 to 24 year olds have turned to AI",
-      "date": "Tue, 01 Sep 2026 09:35:40 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-01-at-10.10.55.png",
-      "source": "Artificial Lawyer",
-      "ts": 1788255340000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Series A Round for Newcode, An AI Harness for Legal, Brings Its Funding To $20M and Fuels U.S. Expansion",
       "link": "https://www.lawnext.com/2026/08/series-a-round-for-newcode-an-ai-harness-for-legal-brings-its-funding-to-20m-and-fuels-u-s-expansion.html",
       "desc": "Newcode, an Oslo-based legal AI company that sells law firms a configurable AI harness rather than a finished assistant, has raised a Series A led by OnDean Forward, the investment firm founded by…",
@@ -138,7 +152,7 @@
       "ts": 1788191160000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -166,7 +180,7 @@
       "ts": 1787926904000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
@@ -178,20 +192,6 @@
       "img": "https://legaltechnology.com/wp-content/uploads/2026/04/google-gemini-web.jpg",
       "source": "Legal IT Insider",
       "ts": 1787684917000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Aug 25, 2026",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Pablo Arredondo, Casetext Cofounder and Legal AI Pioneer, Joins Clio to Lead Its Expansion into the Judiciary",
-      "link": "https://www.lawnext.com/2026/08/pablo-arredondo-casetext-cofounder-and-legal-ai-pioneer-joins-clio-to-lead-its-expansion-into-the-judiciary.html",
-      "desc": "Pablo Arredondo, the Casetext cofounder who helped build some of the earliest and most influential applications of AI in legal practice, is joining Clio as senior vice president, judiciary, where…",
-      "date": "Tue, 25 Aug 2026 14:47:01 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/08/Pablo-Affredondo-Joins-Clio-Featured.png",
-      "source": "LawNext",
-      "ts": 1787669221000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Aug 25, 2026",
