@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-02T16:40:28.641Z",
+  "builtAt": "2026-09-02T21:07:46.382Z",
   "count": 14,
   "items": [
+    {
+      "title": "When Clients Ask About AI, How Should Firms Respond?",
+      "link": "https://abovethelaw.com/2026/09/when-clients-ask-about-ai-how-should-firms-respond/",
+      "desc": "[Sponsored] Lessons from elementary school. The post When Clients Ask About AI, How Should Firms Respond? appeared first on Above the Law .",
+      "date": "Wed, 02 Sep 2026 20:01:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/07/GettyImages-1488601590.jpg",
+      "source": "Above the Law",
+      "ts": 1788379260000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
+    {
+      "title": "AI ROI For Law Firms: There’s Not Any",
+      "link": "https://abovethelaw.com/2026/09/ai-roi-for-law-firms-theres-not-any/",
+      "desc": "Clients need some ownership in how their firms use the technology. Firms and clients need to design workflows together. The post AI ROI For Law Firms: There’s Not Any appeared first on Above the Law .",
+      "date": "Wed, 02 Sep 2026 18:32:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/06/GettyImages-2265191306.jpg",
+      "source": "Above the Law",
+      "ts": 1788373920000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Filevine Takes On Shepard’s and KeyCite With Its Own AI Case Law Citator and Hallucination Checker",
       "link": "https://www.lawnext.com/2026/09/filevine-takes-on-shepards-and-keycite-with-its-own-ai-case-law-citator-and-hallucination-checker.html",
@@ -82,7 +110,7 @@
       "ts": 1788294780000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -96,7 +124,7 @@
       "ts": 1788290826000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -110,21 +138,7 @@
       "ts": 1788287318000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Law Reviews And AI Detection, A Letter To Law Review Editors",
-      "link": "https://abovethelaw.com/2026/09/law-reviews-and-ai-detection-a-letter-to-law-review-editors/",
-      "desc": "Law reviews potentially rejecting submissions because the journals detect AI is problematic for a variety of reasons. The post Law Reviews And AI Detection, A Letter To Law Review Editors appeared…",
-      "date": "Tue, 01 Sep 2026 17:37:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2018/10/GettyImages-851956480-620x413.jpg",
-      "source": "Above the Law",
-      "ts": 1788284220000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -138,20 +152,6 @@
       "ts": 1788196667000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "The Next Legal AI Problem Is Not Hallucination. It Is Authorization.",
-      "link": "https://abovethelaw.com/2026/08/the-next-legal-ai-problem-is-not-hallucination-it-is-authorization/",
-      "desc": "As AI moves from answering questions to conducting transactions, accuracy is no longer enough. The post The Next Legal AI Problem Is Not Hallucination. It Is Authorization. appeared first on Above…",
-      "date": "Mon, 31 Aug 2026 15:46:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/01/artificial-intelligence-3382507_1280.jpg",
-      "source": "Above the Law",
-      "ts": 1788191160000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "2 days ago",
       "strong": true,
       "promo": false
@@ -166,7 +166,7 @@
       "ts": 1787938647000,
       "topic": "rules",
       "topicLabel": "Rules & ethics",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
