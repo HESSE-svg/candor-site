@@ -1,7 +1,49 @@
 {
-  "builtAt": "2026-09-02T04:43:48.114Z",
-  "count": 11,
+  "builtAt": "2026-09-02T11:27:32.752Z",
+  "count": 14,
   "items": [
+    {
+      "title": "ILTACON 2026: Context is king , but transformation is still the hard part",
+      "link": "https://legaltechnology.com/iltacon-2026-context-is-king-but-transformation-is-still-the-hard-part/",
+      "desc": "For the past three years the legal technology industry has moved at relative breakneck speed, from initial curiosity around generative AI to pilot programmes, firm-wide rollouts and now, agentic…",
+      "date": "Wed, 02 Sep 2026 10:08:33 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Acquired-14-1024x280.png",
+      "source": "Legal IT Insider",
+      "ts": 1788343713000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": false,
+      "promo": false
+    },
+    {
+      "title": "‘We Use AI, But We Pass on the Savings’ , Kyra Law",
+      "link": "https://www.artificiallawyer.com/2026/09/02/we-use-ai-but-we-pass-on-the-savings-kyra-law/",
+      "desc": "Kyra Law is a pioneering UK-based NewMod law firm. Artificial Lawyer spoke to co-founder Julian Ritter about leveraging AI with this new business model, the",
+      "date": "Wed, 02 Sep 2026 07:46:53 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-08.39.51.png",
+      "source": "Artificial Lawyer",
+      "ts": 1788335213000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Webinar: Why is the Legal AI ROI Conversation Still Broken?",
+      "link": "https://www.artificiallawyer.com/2026/09/02/webinar-why-is-the-legal-ai-roi-conversation-still-broken/",
+      "desc": "On Wednesday, September 16, 4 PM BST, 11 AM ET, 8 AM PT, Chamelio and Artificial Lawyer will be holding a live webinar to explore the increasingly",
+      "date": "Wed, 02 Sep 2026 06:43:15 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-07.13.24.png",
+      "source": "Artificial Lawyer",
+      "ts": 1788331395000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
     {
       "title": "Wall Street Banks Demand Law Firms Slash Rates And Just Trust AI No Way This Could Backfire!",
       "link": "https://abovethelaw.com/2026/09/wall-street-banks-demand-law-firms-slash-rates-and-just-trust-ai-no-way-this-could-backfire/",
@@ -55,6 +97,20 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "1/4 of Young People Use AI For Their Legal Needs",
+      "link": "https://www.artificiallawyer.com/2026/09/01/1-4-of-young-people-use-ai-for-their-legal-needs/",
+      "desc": "A new survey of over 3,200 people has found that just over one quarter (26%) of 18 to 24 year olds have turned to AI",
+      "date": "Tue, 01 Sep 2026 09:35:40 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-01-at-10.10.55.png",
+      "source": "Artificial Lawyer",
+      "ts": 1788255340000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -139,20 +195,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Aug 25, 2026",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Thomson Reuters launches proprietary legal LLM \"Thomson\"",
-      "link": "https://legaltechnology.com/thomson-reuters-launches-proprietary-legal-llm-thomson/",
-      "desc": "Thomson Reuters today (24 August) announced the launch of Thomson, the company's first proprietary large language model, leveraging an open-source foundation and investing $40 million to train the…",
-      "date": "Mon, 24 Aug 2026 14:28:46 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/08/Joel-thomson-reuters.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1787581726000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Aug 24, 2026",
       "strong": true,
       "promo": false
     }
