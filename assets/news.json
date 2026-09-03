@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-03T16:31:40.099Z",
+  "builtAt": "2026-09-03T21:07:29.417Z",
   "count": 13,
   "items": [
+    {
+      "title": "California Is Coming For Lawyers Who File AI-Generated Nonsense",
+      "link": "https://abovethelaw.com/2026/09/california-is-coming-for-lawyers-who-file-ai-generated-nonsense/",
+      "desc": "Lawyers may soon face additional consequences for failing to check for AI hallucinations in their filings. The post California Is Coming For Lawyers Who File AI-Generated Nonsense appeared first…",
+      "date": "Thu, 03 Sep 2026 16:44:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/04/ChatGPT-AI-Hallucinations-e1776966981771.png",
+      "source": "Above the Law",
+      "ts": 1788453840000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "‘Beyond CRM’: Wilson Sonsini and Salesforce talk AI-driven intelligence",
       "link": "https://legaltechnology.com/beyond-crm-wilson-sonsini-and-salesforce-talk-ai-driven-intelligence/",
@@ -73,20 +87,6 @@
       "promo": false
     },
     {
-      "title": "When Clients Ask About AI, How Should Firms Respond?",
-      "link": "https://abovethelaw.com/2026/09/when-clients-ask-about-ai-how-should-firms-respond/",
-      "desc": "[Sponsored] Lessons from elementary school. The post When Clients Ask About AI, How Should Firms Respond? appeared first on Above the Law .",
-      "date": "Wed, 02 Sep 2026 20:01:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/07/GettyImages-1488601590.jpg",
-      "source": "Above the Law",
-      "ts": 1788379260000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": true
-    },
-    {
       "title": "Filevine Takes On Shepard’s and KeyCite With Its Own AI Case Law Citator and Hallucination Checker",
       "link": "https://www.lawnext.com/2026/09/filevine-takes-on-shepards-and-keycite-with-its-own-ai-case-law-citator-and-hallucination-checker.html",
       "desc": "The legal technology company Filevine has launched an AI-native citator and a companion brief-checking tool inside LOIS, its Legal Operating Intelligence System AI platform, that its CEO says…",
@@ -138,7 +138,7 @@
       "ts": 1788290826000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -152,7 +152,7 @@
       "ts": 1788287318000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -166,7 +166,7 @@
       "ts": 1788196667000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
