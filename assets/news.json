@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-03T04:39:35.539Z",
+  "builtAt": "2026-09-03T11:23:52.747Z",
   "count": 13,
   "items": [
+    {
+      "title": "Building the Judgment Layer with Legal AI – Aloi",
+      "link": "https://www.artificiallawyer.com/2026/09/03/building-the-judgment-layer-with-legal-ai-aloi/",
+      "desc": "‘Legal AI can’t do judgment’, some have said, as if this were a sacrosanct area of legal work. But, AI can capture and leverage judgment",
+      "date": "Thu, 03 Sep 2026 06:42:17 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-03-at-07.21.24.png",
+      "source": "Artificial Lawyer",
+      "ts": 1788417737000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "When Clients Ask About AI, How Should Firms Respond?",
       "link": "https://abovethelaw.com/2026/09/when-clients-ask-about-ai-how-should-firms-respond/",
@@ -68,7 +82,7 @@
       "ts": 1788343713000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": false,
       "promo": false
     },
@@ -82,23 +96,9 @@
       "ts": 1788335213000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
-    },
-    {
-      "title": "Webinar: Why is the Legal AI ROI Conversation Still Broken?",
-      "link": "https://www.artificiallawyer.com/2026/09/02/webinar-why-is-the-legal-ai-roi-conversation-still-broken/",
-      "desc": "On Wednesday, September 16, 4 PM BST, 11 AM ET, 8 AM PT, Chamelio and Artificial Lawyer will be holding a live webinar to explore the increasingly",
-      "date": "Wed, 02 Sep 2026 06:43:15 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-07.13.24.png",
-      "source": "Artificial Lawyer",
-      "ts": 1788331395000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": true
     },
     {
       "title": "Wall Street Banks Demand Law Firms Slash Rates And Just Trust AI No Way This Could Backfire!",
