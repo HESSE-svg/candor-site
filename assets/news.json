@@ -1,7 +1,63 @@
 {
-  "builtAt": "2026-09-03T11:23:52.747Z",
+  "builtAt": "2026-09-03T16:31:40.099Z",
   "count": 13,
   "items": [
+    {
+      "title": "‘Beyond CRM’: Wilson Sonsini and Salesforce talk AI-driven intelligence",
+      "link": "https://legaltechnology.com/beyond-crm-wilson-sonsini-and-salesforce-talk-ai-driven-intelligence/",
+      "desc": "US multinational law firm Wilson Sonsini at ILTACON this year took to the stage with Salesforce to detail the work the pair are doing together to prepare for the agentic [] The post ‘Beyond CRM’:…",
+      "date": "Thu, 03 Sep 2026 16:12:02 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/wilson-and-salesforce.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1788451922000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "From ‘Associate’ To ‘Doppelganger’: The Evolution Of The Legal AI Persona",
+      "link": "https://abovethelaw.com/2026/09/from-associate-to-doppelganger-the-evolution-of-the-legal-ai-persona/",
+      "desc": "[Sponsored] Confronting Biglaw’s ‘snake eating its own tail’ problem. The post From ‘Associate’ To ‘Doppelganger’: The Evolution Of The Legal AI Persona appeared first on Above the Law .",
+      "date": "Thu, 03 Sep 2026 16:01:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/08/ILTACON-Logo-Featured-image-16to9-ratio-2.jpg",
+      "source": "Above the Law",
+      "ts": 1788451260000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
+    {
+      "title": "DOJ Tells Court AI Training Is Fair Use, Forgets To Mention It's Negotiating A Stake In OpenAI",
+      "link": "https://abovethelaw.com/2026/09/doj-tells-court-ai-training-is-fair-use-forgets-to-mention-its-negotiating-a-stake-in-openai/",
+      "desc": "Justice Department finally figures out that fair use exists right when it adds to the grift. The post DOJ Tells Court AI Training Is Fair Use, Forgets To Mention It's Negotiating A Stake In OpenAI…",
+      "date": "Thu, 03 Sep 2026 15:26:03 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/09/GettyImages-2204783532.jpg",
+      "source": "Above the Law",
+      "ts": 1788449163000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Orange Rag Insights: Two ways through AI pricing uncertainty",
+      "link": "https://legaltechnology.com/orange-rag-insights-two-ways-through-ai-pricing-uncertainty/",
+      "desc": "Until recently, a lot of conversations around the pricing of legal services have felt a little circular. Clients say they are sick of the billable hour. Law firms say that [] The post Orange Rag…",
+      "date": "Thu, 03 Sep 2026 14:18:54 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Invest.png",
+      "source": "Legal IT Insider",
+      "ts": 1788445134000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Building the Judgment Layer with Legal AI – Aloi",
       "link": "https://www.artificiallawyer.com/2026/09/03/building-the-judgment-layer-with-legal-ai-aloi/",
@@ -31,20 +87,6 @@
       "promo": true
     },
     {
-      "title": "AI ROI For Law Firms: There’s Not Any",
-      "link": "https://abovethelaw.com/2026/09/ai-roi-for-law-firms-theres-not-any/",
-      "desc": "Clients need some ownership in how their firms use the technology. Firms and clients need to design workflows together. The post AI ROI For Law Firms: There’s Not Any appeared first on Above the Law .",
-      "date": "Wed, 02 Sep 2026 18:32:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/06/GettyImages-2265191306.jpg",
-      "source": "Above the Law",
-      "ts": 1788373920000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Filevine Takes On Shepard’s and KeyCite With Its Own AI Case Law Citator and Hallucination Checker",
       "link": "https://www.lawnext.com/2026/09/filevine-takes-on-shepards-and-keycite-with-its-own-ai-case-law-citator-and-hallucination-checker.html",
       "desc": "The legal technology company Filevine has launched an AI-native citator and a companion brief-checking tool inside LOIS, its Legal Operating Intelligence System AI platform, that its CEO says…",
@@ -54,7 +96,7 @@
       "ts": 1788359073000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,22 +110,8 @@
       "ts": 1788349922000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "ILTACON 2026: Context is king , but transformation is still the hard part",
-      "link": "https://legaltechnology.com/iltacon-2026-context-is-king-but-transformation-is-still-the-hard-part/",
-      "desc": "For the past three years the legal technology industry has moved at relative breakneck speed, from initial curiosity around generative AI to pilot programmes, firm-wide rollouts and now, agentic…",
-      "date": "Wed, 02 Sep 2026 10:08:33 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Acquired-14-1024x280.png",
-      "source": "Legal IT Insider",
-      "ts": 1788343713000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "Yesterday",
-      "strong": false,
+      "strong": true,
       "promo": false
     },
     {
@@ -94,20 +122,6 @@
       "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-08.39.51.png",
       "source": "Artificial Lawyer",
       "ts": 1788335213000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Wall Street Banks Demand Law Firms Slash Rates And Just Trust AI No Way This Could Backfire!",
-      "link": "https://abovethelaw.com/2026/09/wall-street-banks-demand-law-firms-slash-rates-and-just-trust-ai-no-way-this-could-backfire/",
-      "desc": "Banks want more AI legal work. It's all fun and games until they come asking for a bailout. The post Wall Street Banks Demand Law Firms Slash Rates And Just Trust AI No Way This Could Backfire!…",
-      "date": "Tue, 01 Sep 2026 20:33:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2020/08/GettyImages-487081616.jpg",
-      "source": "Above the Law",
-      "ts": 1788294780000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "Yesterday",
@@ -166,21 +180,7 @@
       "ts": 1787926904000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Google Cloud unveils Gemini Enterprise for Legal",
-      "link": "https://legaltechnology.com/google-cloud-unveils-gemini-enterprise-for-legal/",
-      "desc": "Legal IT Insider is at ILTACON so sharing this press release and we'll do further analysis after the conference. Google Cloud today (25 August) unveiled Gemini Enterprise for Legal, an [] The post…",
-      "date": "Tue, 25 Aug 2026 19:08:37 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/04/google-gemini-web.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1787684917000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Aug 25, 2026",
+      "when": "6 days ago",
       "strong": true,
       "promo": false
     }
