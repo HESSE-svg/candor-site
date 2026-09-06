@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-06T04:48:20.827Z",
+  "builtAt": "2026-09-06T11:05:10.892Z",
   "count": 12,
   "items": [
     {
@@ -124,7 +124,7 @@
       "ts": 1788417737000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -166,7 +166,7 @@
       "ts": 1788335213000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     }
