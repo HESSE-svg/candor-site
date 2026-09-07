@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-09-07T04:52:18.570Z",
-  "count": 12,
+  "builtAt": "2026-09-07T12:44:31.498Z",
+  "count": 10,
   "items": [
     {
       "title": "AI And The End Of The Law Firm: We May Wind Up Being Wrong?",
@@ -68,7 +68,7 @@
       "ts": 1788522771000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,7 +124,7 @@
       "ts": 1788417737000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -138,34 +138,6 @@
       "ts": 1788359073000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "15% of Large Firm Lawyers 'Now Dependent on AI’",
-      "link": "https://www.artificiallawyer.com/2026/09/02/15-of-large-firm-lawyers-now-dependent-on-ai/",
-      "desc": "15% of lawyers at large law firms are 'now dependent on AI’ to do their job, a survey by LexisNexis in the UK has found.",
-      "date": "Wed, 02 Sep 2026 11:52:02 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-12.25.35.png",
-      "source": "Artificial Lawyer",
-      "ts": 1788349922000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "‘We Use AI, But We Pass on the Savings’ , Kyra Law",
-      "link": "https://www.artificiallawyer.com/2026/09/02/we-use-ai-but-we-pass-on-the-savings-kyra-law/",
-      "desc": "Kyra Law is a pioneering UK-based NewMod law firm. Artificial Lawyer spoke to co-founder Julian Ritter about leveraging AI with this new business model, the",
-      "date": "Wed, 02 Sep 2026 07:46:53 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-08.39.51.png",
-      "source": "Artificial Lawyer",
-      "ts": 1788335213000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "4 days ago",
       "strong": true,
       "promo": false
