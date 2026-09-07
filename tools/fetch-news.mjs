@@ -244,7 +244,7 @@ function page(items, builtAt) {
 <section class="wrap pagehead">
   <div class="mono eyebrow">News</div>
   <h1>AI is rewriting legal practice. Here is the running record.</h1>
-  <p class="lede">Court sanctions, bar guidance, firm adoption, and the money moving through legal technology, gathered from the trade press and refreshed automatically. Headlines and links only; each story opens at its publisher.</p>
+  <p class="lede">AI in the legal sector, tracked automatically. Headlines and links only; each opens at its publisher.</p>
   <p class="mono" style="margin-top:14px">Last updated ${esc(stamp)} &middot; refreshes on its own</p>
 </section>
 
@@ -326,7 +326,7 @@ async function main() {
     perSource[it.source] = (perSource[it.source] || 0) + 1
     if (it.promo) promos++
     items.push(it)
-    if (items.length >= 21) break
+    if (items.length >= 10) break
   }
   items.sort((a, b) => b.ts - a.ts)
   console.log(`kept ${items.length} of ${pool0.length} eligible (caps: ${PER_SOURCE_CAP}/source, ${PROMO_CAP} promo)`)
