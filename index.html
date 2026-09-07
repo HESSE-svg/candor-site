@@ -17,6 +17,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css?v=7">
+<style>
+  .s-hero{max-width:780px;margin:0 auto;padding:78px 24px 96px;text-align:center}
+  .s-hero h1{font-family:var(--f-serif);font-weight:400;font-size:clamp(36px,5.5vw,58px);line-height:1.08;color:var(--navy);letter-spacing:-.01em;margin:24px auto 0;max-width:16ch;text-wrap:balance}
+  .s-hero h1 em{font-style:italic;color:var(--ox)}
+  .s-lede{font-size:19px;color:var(--muted);max-width:36ch;margin:20px auto 0;line-height:1.5}
+  .s-cta{margin-top:32px}
+  .s-steps{max-width:880px;margin:0 auto;padding:0 24px 100px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+  .s-step .num{font-family:var(--f-serif);font-size:32px;color:var(--line-2,#DBD4C8);line-height:1}
+  .s-step h3{font-family:var(--f-serif);font-weight:400;font-size:22px;color:var(--navy);margin:8px 0 6px}
+  .s-step p{margin:0;font-size:15px;color:var(--muted);line-height:1.55;max-width:26ch}
+  .s-close{border-top:1px solid var(--rule,#E7E1D8);max-width:780px;margin:0 auto;padding:62px 24px;text-align:center}
+  .s-close h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(26px,4vw,34px);color:var(--navy);margin:0 auto;max-width:20ch;text-wrap:balance}
+  @media(max-width:680px){.s-steps{grid-template-columns:1fr;gap:30px}.s-hero{padding:52px 22px 66px}}
+</style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
@@ -26,71 +40,23 @@
 </div></header>
 
 <main id="main">
-<section class="wrap hero">
+<section class="s-hero">
   <span class="tagpill">In development · U.S. law firms</span>
-  <h1>Your team is already using AI.<br>Candor is the one that screens it, logs it, and <em>proves the work</em>.</h1>
-  <p class="lede">Candor is an AI workspace for law firms. Your team drafts and researches inside it, on your firm's own model, and the governance comes built in: every prompt screened before it is sent, every use logged to the matter, attorney sign off, and a report you can hand your malpractice carrier. It still catches the outside AI tools your team uses too.</p>
-  <div class="btnrow"><a class="btn" href="/demo">See it in action</a><a class="btn ghost" href="/product">How it works</a></div>
-
-  <div class="record" aria-label="Example Candor audit record">
-    <div class="record-head"><span>Matter <b>2026-0417</b></span><span>Entry 004</span></div>
-    <div class="rrow"><span class="k">Task</span><span class="v">Draft demand correspondence</span></div>
-    <div class="rrow"><span class="k">Tool</span><span class="v">External LLM (approved list)</span></div>
-    <div class="rrow"><span class="k">Run by</span><span class="v">D. Alvarez, paralegal</span></div>
-    <div class="rrow"><span class="k">Screening</span><span class="v flagged">2 identifiers flagged, redacted before send</span></div>
-    <div class="rrow"><span class="k">Citations</span><span class="v">Flagged for review, 1 needs a second look</span></div>
-    <div class="rrow"><span class="k">Reviewed</span><span class="v seal">M. Okonkwo, Esq., 14 Apr 2026, 09:41 EDT</span></div>
-  </div>
-  <p class="caption">One entry. Appended, never edited, and cryptographically sealed against tampering.</p>
+  <h1>Your team is already using AI. Candor is the one that <em>proves the work</em>.</h1>
+  <p class="s-lede">An AI workspace for law firms, on your own model. Screened, logged, and yours.</p>
+  <a class="btn s-cta" href="/demo">See it in action</a>
 </section>
 
-<section class="band reveal"><div class="wrap">
-  <div class="mono eyebrow">The problem</div>
-  <h2>Adoption outran the rulebook.</h2>
-  <p class="sectionlede">Shadow AI: the tools your people already use that the firm never approved, never configured, and cannot see. Staff use AI daily; leadership rarely has a log of what was run, who checked it, or how client details were handled. Ask a managing partner how many people at the firm are pasting client material into an outside AI tool and the answer is usually "nobody". It is very rarely nobody.</p>
-  <p class="sectionlede" style="margin-top:14px">Candor does not police anyone. It gives the firm the one thing it is missing: a record of how AI is actually being used, and the controls to keep client material out of it.</p>
-  <div class="cards" style="margin-top:34px">
-    <div class="card reveal"><h3>Screen</h3><p>Catch client identifying details before they ever reach an outside AI tool.</p></div>
-    <div class="card reveal"><h3>Log &amp; verify</h3><p>Record each use against an approved tools list; flag shaky citations for a second look.</p></div>
-    <div class="card reveal"><h3>Sign &amp; report</h3><p>An attorney signs off; the firm exports a carrier ready summary on demand.</p></div>
-  </div>
-  <p style="margin-top:30px"><a href="/product">Walk through all six steps →</a></p>
-  <p style="margin-top:10px">The workspace lives where you already work: a panel in your browser, and inside Clio. <a href="/product#in-the-browser">See the browser companion →</a></p>
-  <p style="margin-top:10px">And it files against the matters you already have: connect Clio, MyCase, Filevine, PracticePanther, or Smokeball. <a href="/product#practice-management">See the connections →</a></p>
-</div></section>
+<section class="s-steps">
+  <div class="s-step"><div class="num">01</div><h3>Screen</h3><p>Client details never reach the model.</p></div>
+  <div class="s-step"><div class="num">02</div><h3>Work</h3><p>Draft and research on your firm's own model.</p></div>
+  <div class="s-step"><div class="num">03</div><h3>Prove</h3><p>Every use logged. The record builds itself.</p></div>
+</section>
 
-<section class="band reveal"><div class="wrap">
-  <div class="mono eyebrow">More than a shield</div>
-  <h2>The same record works in your favor.</h2>
-  <p class="sectionlede">Most of Candor is defensive. It keeps client material out of the wrong places and proves the work was done. The same record earns its keep in two ways that are not defensive at all.</p>
-  <div class="cards two" style="margin-top:34px">
-    <div class="card reveal">
-      <div class="mono" style="color:var(--seal)">Leverage</div>
-      <h3 style="margin-top:6px">Verification cuts both ways.</h3>
-      <p>The citation check does not only look at your own AI's work. It surfaces discrepancies in existing authority too: a misstated holding in a cited case, an error in an opposing brief. Candor flags what appears to differ from the source, and the attorney decides what it means. Those catches are their own line in the record, not filed under problems.</p>
-      <p style="margin-top:12px"><a href="/product#how">See verification →</a></p>
-    </div>
-    <div class="card reveal">
-      <div class="mono" style="color:var(--brass)">An asset</div>
-      <h3 style="margin-top:6px">Correction is expertise. Keep it.</h3>
-      <p>Getting usable work out of an AI tool takes rounds of correction, and that correction is judgment that vanishes when the session closes. Pattern Capture keeps the shape of it as metadata, never the text, so the firm can see where its work reliably needs a second pass. It is the one part of Candor that produces something rather than preventing it.</p>
-      <p style="margin-top:12px"><a href="/pattern-capture">See Pattern Capture →</a></p>
-    </div>
-  </div>
-</div></section>
-
-<section class="band reveal"><div class="wrap">
-  <div class="mono eyebrow">Why it matters now</div>
-  <h2>Three forces are converging.</h2>
-  <p class="sectionlede">Malpractice carriers are adding AI questions at renewal. Bar regulators are publishing guidance on competence and supervision. Judges are issuing disclosure orders. Each one expects documentation almost no firm keeps today.</p>
-  <p style="margin-top:22px"><a href="/why-now">Read the case for acting now →</a></p>
-</div></section>
-
-<section class="band reveal"><div class="wrap narrow center">
+<section class="s-close">
   <h2>Put the record in place before you need it.</h2>
-  <p class="sectionlede" style="margin:14px auto 0">You can't document six months of AI use the afternoon a carrier asks.</p>
-  <div class="btnrow" style="justify-content:center"><a class="btn" href="/demo">Get a look</a><a class="btn ghost" href="/security">How we handle data</a></div>
-</div></section>
+  <a class="btn s-cta" href="/demo">Get a look</a>
+</section>
 </main>
 
 <footer><div class="wrap">
