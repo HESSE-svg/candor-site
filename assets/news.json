@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-08T16:43:09.104Z",
+  "builtAt": "2026-09-08T21:14:37.037Z",
   "count": 10,
   "items": [
+    {
+      "title": "On LawNext: Casefleet Founder Jeff Kerr on Fact Management in the Age of AI",
+      "link": "https://www.lawnext.com/2026/09/on-lawnext-casefleet-founder-jeff-kerr-on-fact-management-in-the-age-of-ai.html",
+      "desc": "Chronologies have become one of legal tech's hottest categories, with a wave of AI startups promising to turn a messy evidentiary record into a structured timeline in minutes. Jeff Kerr and his…",
+      "date": "Tue, 08 Sep 2026 18:54:33 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/jeff-jerr-thumb-lawnext.png",
+      "source": "LawNext",
+      "ts": 1788893673000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Avoiding The AI Efficiency Trap: What Biglaw Needs To Get Right",
       "link": "https://abovethelaw.com/2026/08/avoiding-the-ai-efficiency-trap-what-biglaw-needs-to-get-right/",
@@ -124,20 +138,6 @@
       "ts": 1788527054000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Startup Corner: Paravo , An AI client engagement engine for law firms",
-      "link": "https://legaltechnology.com/startup-corner-paravo-an-ai-client-engagement-engine-for-law-firms/",
-      "desc": "UK-founded startup Paravo has emerged from stealth with £450,000 in funding and customers on both sides of the Atlantic. Positioning itself as the first AI-powered revenue engine for law firms, []…",
-      "date": "Fri, 04 Sep 2026 11:52:51 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/StartUp-Corner.png",
-      "source": "Legal IT Insider",
-      "ts": 1788522771000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "4 days ago",
       "strong": true,
       "promo": false
