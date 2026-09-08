@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-08T04:48:42.244Z",
+  "builtAt": "2026-09-08T11:27:08.841Z",
   "count": 10,
   "items": [
+    {
+      "title": "Why NewMod, Not AI-First?",
+      "link": "https://www.artificiallawyer.com/2026/09/08/why-newmod-not-ai-first/",
+      "desc": "In mid-2026, to call a law firm AI-first, or even AI-native, seems out of step with present day reality. Which major law firm is not",
+      "date": "Tue, 08 Sep 2026 10:30:36 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-08-at-11.17.34.png",
+      "source": "Artificial Lawyer",
+      "ts": 1788863436000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI And The End Of The Law Firm: We May Wind Up Being Wrong?",
       "link": "https://abovethelaw.com/2026/09/ai-and-the-end-of-the-law-firm-we-may-wind-up-being-wrong/",
@@ -122,20 +136,6 @@
       "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-03-at-07.21.24.png",
       "source": "Artificial Lawyer",
       "ts": 1788417737000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Filevine Takes On Shepard’s and KeyCite With Its Own AI Case Law Citator and Hallucination Checker",
-      "link": "https://www.lawnext.com/2026/09/filevine-takes-on-shepards-and-keycite-with-its-own-ai-case-law-citator-and-hallucination-checker.html",
-      "desc": "The legal technology company Filevine has launched an AI-native citator and a companion brief-checking tool inside LOIS, its Legal Operating Intelligence System AI platform, that its CEO says…",
-      "date": "Wed, 02 Sep 2026 14:24:33 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Filevine-LOIS-Featured.png",
-      "source": "LawNext",
-      "ts": 1788359073000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "5 days ago",
