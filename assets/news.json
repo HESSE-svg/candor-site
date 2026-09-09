@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-09T11:32:51.544Z",
+  "builtAt": "2026-09-09T16:44:40.421Z",
   "count": 10,
   "items": [
+    {
+      "title": "Casepoint Launches Casepoint IQ, An AI Framework Spanning Its Full Platform, from New Autonomous Agents and Assistive AI to Legacy Predictive Coding",
+      "link": "https://www.lawnext.com/2026/09/casepoint-launches-casepoint-iq-an-ai-framework-spanning-its-full-platform-from-new-autonomous-agents-and-assistive-ai-to-legacy-predictive-coding.html",
+      "desc": "Calling it the “intelligence foundation” of its platform, Casepoint today launched Casepoint IQ, a suite of tools within a single AI framework that spans the company’s products for e-discovery,…",
+      "date": "Wed, 09 Sep 2026 13:15:03 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Casepoint-IQ-Featured-169.png",
+      "source": "LawNext",
+      "ts": 1788959703000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Bloomberg Law's AI strategy puts interoperability ahead of interface",
+      "link": "https://legaltechnology.com/bloomberg-laws-ai-strategy-puts-interoperability-ahead-of-interface/",
+      "desc": "By Caroline Hill, editor, Legal IT Insider \"When you think about the overall strategy of Bloomberg and extending into workflows using our proprietary data and intelligence, that really is what, to…",
+      "date": "Wed, 09 Sep 2026 12:50:50 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/laptop-1024x280.png",
+      "source": "Legal IT Insider",
+      "ts": 1788958250000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "SMU’s Yong Pung How School of Law becomes first in Asia to join Legora's AI scholar program",
       "link": "https://legaltechnology.com/smus-yong-pung-how-school-of-law-becomes-first-in-asia-to-join-legoras-ai-scholar-program/",
@@ -54,7 +82,7 @@
       "ts": 1788884160000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": true
     },
@@ -68,7 +96,7 @@
       "ts": 1788883265000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,23 +110,9 @@
       "ts": 1788879237000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Webinar: Moving from isolated GenAI tools to connected intelligence",
-      "link": "https://legaltechnology.com/webinar-moving-from-isolated-genai-tools-to-connected-intelligence/",
-      "desc": "Register HERE AI is everywhere in legal. Trust is another matter.Nearly half of legal organisations have now embedded AI into their workflows. Yet just 33% of senior professionals trust the [] The…",
-      "date": "Tue, 08 Sep 2026 11:26:11 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Feature-image-webinar.png",
-      "source": "Legal IT Insider",
-      "ts": 1788866771000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "Yesterday",
       "strong": true,
-      "promo": true
+      "promo": false
     },
     {
       "title": "Why NewMod, Not AI-First?",
@@ -115,20 +129,6 @@
       "promo": false
     },
     {
-      "title": "AI And The End Of The Law Firm: We May Wind Up Being Wrong?",
-      "link": "https://abovethelaw.com/2026/09/ai-and-the-end-of-the-law-firm-we-may-wind-up-being-wrong/",
-      "desc": "Remember that law firms have a pretty damn good track record when it comes to adapting. The post AI And The End Of The Law Firm: We May Wind Up Being Wrong? appeared first on Above the Law .",
-      "date": "Fri, 04 Sep 2026 15:13:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2023/07/GettyImages-1413923549.jpg",
-      "source": "Above the Law",
-      "ts": 1788534780000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "ILTACON News Round-Up Part 4, The Business of Law: Litera, Aderant, Oddr, TRĒ AI, Intapp",
       "link": "https://www.lawnext.com/2026/09/iltacon-news-round-up-part-4-the-business-of-law-litera-aderant-oddr-tre-ai-intapp.html",
       "desc": "Last week's ILTACON, the annual conference of the International Legal Technology Association, brought what may have been the busiest news cycle I can remember for this conference, with a torrent…",
@@ -138,7 +138,7 @@
       "ts": 1788533154000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     }
