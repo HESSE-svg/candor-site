@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-09T16:44:40.421Z",
+  "builtAt": "2026-09-09T20:59:56.019Z",
   "count": 10,
   "items": [
+    {
+      "title": "Vanderbilt Law School Starts Students Practicing Depositions On AI Witnesses",
+      "link": "https://abovethelaw.com/2026/09/vanderbilt-law-school-starts-students-practicing-depositions-on-ai-witnesses/",
+      "desc": "Vanderbilt and AltaClaro deploy DepoSim to deliver practical education as firms move hiring process earlier and earlier. The post Vanderbilt Law School Starts Students Practicing Depositions On AI…",
+      "date": "Wed, 09 Sep 2026 18:32:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2016/08/GettyImages-117650646.jpg",
+      "source": "Above the Law",
+      "ts": 1788978720000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Casepoint Launches Casepoint IQ, An AI Framework Spanning Its Full Platform, from New Autonomous Agents and Assistive AI to Legacy Predictive Coding",
       "link": "https://www.lawnext.com/2026/09/casepoint-launches-casepoint-iq-an-ai-framework-spanning-its-full-platform-from-new-autonomous-agents-and-assistive-ai-to-legacy-predictive-coding.html",
@@ -68,7 +82,7 @@
       "ts": 1788893673000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -125,20 +139,6 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "ILTACON News Round-Up Part 4, The Business of Law: Litera, Aderant, Oddr, TRĒ AI, Intapp",
-      "link": "https://www.lawnext.com/2026/09/iltacon-news-round-up-part-4-the-business-of-law-litera-aderant-oddr-tre-ai-intapp.html",
-      "desc": "Last week's ILTACON, the annual conference of the International Legal Technology Association, brought what may have been the busiest news cycle I can remember for this conference, with a torrent…",
-      "date": "Fri, 04 Sep 2026 14:45:54 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/LawSites-ILTACON-Roundup-Featured.jpg",
-      "source": "LawNext",
-      "ts": 1788533154000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
       "strong": true,
       "promo": false
     }
