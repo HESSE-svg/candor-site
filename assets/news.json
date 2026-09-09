@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-09T04:50:49.067Z",
+  "builtAt": "2026-09-09T11:32:51.544Z",
   "count": 10,
   "items": [
+    {
+      "title": "SMU’s Yong Pung How School of Law becomes first in Asia to join Legora's AI scholar program",
+      "link": "https://legaltechnology.com/smus-yong-pung-how-school-of-law-becomes-first-in-asia-to-join-legoras-ai-scholar-program/",
+      "desc": "Singapore Management University (SMU) today announced that SMU’s Yong Pung How School of Law is joining Legora's Legal AI Scholars Program, becoming the first university in Asia to do so. [] The…",
+      "date": "Wed, 09 Sep 2026 09:27:29 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Trumper-1024x280.png",
+      "source": "Legal IT Insider",
+      "ts": 1788946049000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Pangram Loving Law Professors Have Reached Peak AI Slop Brain",
       "link": "https://abovethelaw.com/2026/09/pangram-loving-law-professors-have-reached-peak-ai-slop-brain/",
@@ -82,7 +96,7 @@
       "ts": 1788866771000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": true
     },
@@ -96,7 +110,7 @@
       "ts": 1788863436000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -122,20 +136,6 @@
       "img": "https://www.lawnext.com/wp-content/uploads/2026/09/LawSites-ILTACON-Roundup-Featured.jpg",
       "source": "LawNext",
       "ts": 1788533154000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "ILTACON News Round-Up Part 3, Documents, Data and AI: iManage, NetDocuments, Entegrata, Wolters Kluwer, Thomson Reuters, Clio, Avvoka",
-      "link": "https://www.lawnext.com/2026/09/iltacon-news-round-up-part-3-documents-data-and-ai-imanage-netdocuments-entegrata-wolters-kluwer-thomson-reuters-clio-avvoka.html",
-      "desc": "Last week's ILTACON, the annual conference of the International Legal Technology Association, brought what may have been the busiest news cycle I can remember for this conference, with a torrent…",
-      "date": "Fri, 04 Sep 2026 13:04:14 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/LawSites-ILTACON-Roundup-Featured.jpg",
-      "source": "LawNext",
-      "ts": 1788527054000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "4 days ago",
