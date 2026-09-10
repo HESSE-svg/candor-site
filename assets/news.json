@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-10T04:52:20.700Z",
+  "builtAt": "2026-09-10T11:29:22.066Z",
   "count": 10,
   "items": [
     {
@@ -54,7 +54,7 @@
       "ts": 1788946049000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -129,16 +129,16 @@
       "promo": false
     },
     {
-      "title": "Why NewMod, Not AI-First?",
-      "link": "https://www.artificiallawyer.com/2026/09/08/why-newmod-not-ai-first/",
-      "desc": "In mid-2026, to call a law firm AI-first, or even AI-native, seems out of step with present day reality. Which major law firm is not",
-      "date": "Tue, 08 Sep 2026 10:30:36 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-08-at-11.17.34.png",
-      "source": "Artificial Lawyer",
-      "ts": 1788863436000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "title": "ILTACON News Round-Up Part 4, The Business of Law: Litera, Aderant, Oddr, TRĒ AI, Intapp",
+      "link": "https://www.lawnext.com/2026/09/iltacon-news-round-up-part-4-the-business-of-law-litera-aderant-oddr-tre-ai-intapp.html",
+      "desc": "Last week's ILTACON, the annual conference of the International Legal Technology Association, brought what may have been the busiest news cycle I can remember for this conference, with a torrent…",
+      "date": "Fri, 04 Sep 2026 14:45:54 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/LawSites-ILTACON-Roundup-Featured.jpg",
+      "source": "LawNext",
+      "ts": 1788533154000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     }
