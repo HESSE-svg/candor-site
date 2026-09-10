@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-10T11:29:22.066Z",
+  "builtAt": "2026-09-10T16:30:41.632Z",
   "count": 10,
   "items": [
+    {
+      "title": "How Young Lawyers Can Build A Career That Outlasts The Next AI Update",
+      "link": "https://abovethelaw.com/2026/09/how-young-lawyers-can-build-a-career-that-outlasts-the-next-ai-update/",
+      "desc": "Use AI where it helps, recognize where it fails, and help your colleagues understand the difference. The post How Young Lawyers Can Build A Career That Outlasts The Next AI Update appeared first…",
+      "date": "Thu, 10 Sep 2026 15:32:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/08/GettyImages-2192183415.jpg",
+      "source": "Above the Law",
+      "ts": 1789054320000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "White Case invests in Saudi legal startup Clauze.AI",
+      "link": "https://legaltechnology.com/white-case-invests-in-saudi-legal-startup-clauze-ai/",
+      "desc": "US multinational law firm White Case has made a strategic investment in Clauze.AI, an AI contract review and due diligence tool for legal and corporate clients in Saudi Arabia [] The post White…",
+      "date": "Thu, 10 Sep 2026 11:48:26 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Saudi.gif",
+      "source": "Legal IT Insider",
+      "ts": 1789040906000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Vanderbilt Law School Starts Students Practicing Depositions On AI Witnesses",
       "link": "https://abovethelaw.com/2026/09/vanderbilt-law-school-starts-students-practicing-depositions-on-ai-witnesses/",
@@ -26,7 +54,7 @@
       "ts": 1788959703000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -40,7 +68,7 @@
       "ts": 1788958250000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -87,20 +115,6 @@
       "promo": false
     },
     {
-      "title": "Avoiding The AI Efficiency Trap: What Biglaw Needs To Get Right",
-      "link": "https://abovethelaw.com/2026/08/avoiding-the-ai-efficiency-trap-what-biglaw-needs-to-get-right/",
-      "desc": "[Sponsored] Join our expert panel on Sept. 9 to hear key takeaways from ILTACON 2026 — and the implications for the law firm business model. The post Avoiding The AI Efficiency Trap: What Biglaw…",
-      "date": "Tue, 08 Sep 2026 16:16:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/08/Litera_panel_3_Webinar_sept9a.jpg",
-      "source": "Above the Law",
-      "ts": 1788884160000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": true
-    },
-    {
       "title": "Chamelio Launches ‘Always On’ AI Agent Hub",
       "link": "https://www.artificiallawyer.com/2026/09/08/chamelio-launches-always-on-ai-agent-hub/",
       "desc": "Legal intelligence platform, Chamelio, has launched Agent Hub, which lets inhouse lawyers use a suite of ‘always-on AI agents’ that can work independently, monitor what",
@@ -110,21 +124,7 @@
       "ts": 1788883265000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "OpenAI GPT-6 Astra: What legal needs to know and early reactions",
-      "link": "https://legaltechnology.com/openai-gpt-6-astra-what-legal-needs-to-know-and-early-reactions/",
-      "desc": "OpenAI has launched GPT-6 Astra, its latest frontier model, promising a significant step forward in computer use and complex, multi-step professional work. For the legal sector, early reactions…",
-      "date": "Tue, 08 Sep 2026 14:53:57 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/gpt-astra.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1788879237000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -138,7 +138,7 @@
       "ts": 1788533154000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
+      "when": "6 days ago",
       "strong": true,
       "promo": false
     }
