@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-10T16:30:41.632Z",
+  "builtAt": "2026-09-10T20:56:35.937Z",
   "count": 10,
   "items": [
+    {
+      "title": "AI Has Entered The Courthouse…Are You Ready For It?",
+      "link": "https://www.myshingle.com/2026/09/ai-has-entered-the-courthouse-are-you-ready-for-it/",
+      "desc": "How should we read and evaluate opinions that may have been AI-assisted? The post AI Has Entered The Courthouse…Are You Ready For It? appeared first on Above the Law .",
+      "date": "Thu, 10 Sep 2026 19:13:00 +0000",
+      "img": "https://images.bannerbear.com/direct/y0aJ23zRDdqMxX4OGl/requests/000/161/980/066/KZA1qL8r0zlVGPwKQepakDXbM/41c905bfacc14334c06917e3069822d2d2a6a98b.png",
+      "source": "Above the Law",
+      "ts": 1789067580000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "How AI is learning to work like a senior associate",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/how-ai-is-learning-to-work-like-a-senior-associate/",
+      "desc": "General-purpose large language models can already write code, summarize a dense article, or hold a nuanced conversation. But legal work The post How AI is learning to work like a senior associate…",
+      "date": "Thu, 10 Sep 2026 19:10:37 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/09/AdobeStock_375890070-Large-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1789067437000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "How Young Lawyers Can Build A Career That Outlasts The Next AI Update",
       "link": "https://abovethelaw.com/2026/09/how-young-lawyers-can-build-a-career-that-outlasts-the-next-ai-update/",
@@ -40,7 +68,7 @@
       "ts": 1788978720000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -87,20 +115,6 @@
       "promo": false
     },
     {
-      "title": "Pangram Loving Law Professors Have Reached Peak AI Slop Brain",
-      "link": "https://abovethelaw.com/2026/09/pangram-loving-law-professors-have-reached-peak-ai-slop-brain/",
-      "desc": "Pangram-mania is everywhere and all it proves is how little its fans care about critical thinking. The post Pangram Loving Law Professors Have Reached Peak AI Slop Brain appeared first on Above…",
-      "date": "Tue, 08 Sep 2026 21:33:48 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/09/GettyImages-2247033376.jpeg",
-      "source": "Above the Law",
-      "ts": 1788903228000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "On LawNext: Casefleet Founder Jeff Kerr on Fact Management in the Age of AI",
       "link": "https://www.lawnext.com/2026/09/on-lawnext-casefleet-founder-jeff-kerr-on-fact-management-in-the-age-of-ai.html",
       "desc": "Chronologies have become one of legal tech's hottest categories, with a wave of AI startups promising to turn a messy evidentiary record into a structured timeline in minutes. Jeff Kerr and his…",
@@ -110,7 +124,7 @@
       "ts": 1788893673000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -125,20 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "ILTACON News Round-Up Part 4, The Business of Law: Litera, Aderant, Oddr, TRĒ AI, Intapp",
-      "link": "https://www.lawnext.com/2026/09/iltacon-news-round-up-part-4-the-business-of-law-litera-aderant-oddr-tre-ai-intapp.html",
-      "desc": "Last week's ILTACON, the annual conference of the International Legal Technology Association, brought what may have been the busiest news cycle I can remember for this conference, with a torrent…",
-      "date": "Fri, 04 Sep 2026 14:45:54 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/LawSites-ILTACON-Roundup-Featured.jpg",
-      "source": "LawNext",
-      "ts": 1788533154000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "6 days ago",
       "strong": true,
       "promo": false
     }
