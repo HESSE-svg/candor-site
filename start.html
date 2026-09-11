@@ -128,6 +128,20 @@
   </div>
 </section>
 
+<section class="wrap" id="doneSection" hidden>
+  <div style="border:1px solid var(--navy);border-left:4px solid var(--seal);background:var(--soft);border-radius:8px;padding:26px 28px;max-width:680px">
+    <div class="mono eyebrow" id="doneEyebrow" style="color:var(--seal)">Almost there</div>
+    <h2 id="doneHead" style="font-family:var(--f-serif);font-size:26px;color:var(--navy);margin:6px 0 10px;line-height:1.15">One tap to start your free month.</h2>
+    <p id="doneBody" style="max-width:58ch;color:var(--ink);margin:0 0 16px"></p>
+    <div id="doneActions" style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="cta" id="gmailBtn" target="_blank" rel="noopener" style="white-space:nowrap">Send via Gmail</a>
+      <a class="btn ghost" id="mailBtn" style="white-space:nowrap">Open email app</a>
+      <button type="button" class="btn ghost" id="copyMsg">Copy my details</button>
+    </div>
+    <p id="doneFoot" style="color:var(--muted);font-size:13.5px;margin:14px 0 0">Or email <a href="mailto:jesse@candor.legal" style="color:var(--ox)">jesse@candor.legal</a> — we reply the same day.</p>
+  </div>
+</section>
+
 <section class="band reveal"><div class="wrap narrow">
   <div class="mono eyebrow">What happens next</div>
   <h2>From "start" to working, in a day.</h2>
@@ -180,6 +194,13 @@
   ];
   var byId = {}; PLANS.forEach(function(p){ byId[p.id]=p; });
   var money = function(n){ return "$" + n.toLocaleString("en-US"); };
+
+  // ── Free-month signups land in your inbox via Web3Forms. Get a free key at
+  //    web3forms.com (enter jesse@candor.legal; they email you an access key)
+  //    and paste it here. With a key set, "Start my free month" submits silently
+  //    and emails you. Empty: it shows an on-screen confirmation with send options
+  //    (Gmail / email app / copy) so it never dead-ends on a missing mail app.
+  var WEB3FORMS_KEY = "";
 
   var qs = new URLSearchParams(location.search);
   var current = byId[(qs.get("tier")||"").toLowerCase()] || byId.standard;
@@ -244,21 +265,90 @@
     return "";
   }
 
-  document.getElementById("startbtn").addEventListener("click", function(){
-    var d = collect(), err = validate(d);
-    document.getElementById("err").textContent = err;
-    if (err) return;
-    var subject = "Start Candor — " + d.firm + " (" + d.plan.name + ")";
+  function buildMsg(d){
+    var subject = "New Candor free-month signup — " + d.firm + " (" + d.plan.name + ")";
     var body =
-      "I'd like to start our free month of Candor.\n\n" +
+      "New free-month signup from candor.legal/start\n\n" +
       "Firm: " + d.firm + "\n" +
       "Contact: " + d.name + "\n" +
       "Email: " + d.email + "\n" +
       "Plan: " + d.plan.name + " (" + d.plan.range + ")\n" +
       "Attorneys (seat limit): " + d.attorneys + "\n" +
       (d.pms ? "Practice management: " + d.pms + "\n" : "") +
-      "\nStart the free month — nothing due yet.";
-    location.href = "mailto:jesse@candor.legal?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      "\nNothing due yet — start the free month.";
+    return { subject: subject, body: body };
+  }
+
+  function showConfirm(d, sent){
+    var m = buildMsg(d);
+    var first = (d.name.split(" ")[0]) || "there";
+    var eyebrow = document.getElementById("doneEyebrow");
+    var head = document.getElementById("doneHead");
+    var bodyEl = document.getElementById("doneBody");
+    var actions = document.getElementById("doneActions");
+    var foot = document.getElementById("doneFoot");
+    if (sent){
+      eyebrow.textContent = "You're all set";
+      head.textContent = "Your free month is reserved.";
+      bodyEl.textContent = "Thanks, " + first + " — we've got " + d.firm + " down for the " + d.plan.name +
+        " plan (up to " + d.attorneys + " attorneys). We'll set up your workspace and email " + d.email +
+        ", usually the same day. Nothing is due until your free month ends.";
+      actions.hidden = true;
+      foot.innerHTML = "Questions? Email <a href=\"mailto:jesse@candor.legal\" style=\"color:var(--ox)\">jesse@candor.legal</a>.";
+    } else {
+      eyebrow.textContent = "Almost there";
+      head.textContent = "One tap to start your free month.";
+      bodyEl.textContent = "We've filled out your request for " + d.firm + " on the " + d.plan.name +
+        " plan. Send it to us with one tap below and your free month begins — nothing is due yet.";
+      document.getElementById("gmailBtn").href =
+        "https://mail.google.com/mail/?view=cm&fs=1&to=jesse@candor.legal&su=" + encodeURIComponent(m.subject) + "&body=" + encodeURIComponent(m.body);
+      document.getElementById("mailBtn").href =
+        "mailto:jesse@candor.legal?subject=" + encodeURIComponent(m.subject) + "&body=" + encodeURIComponent(m.body);
+      document.getElementById("copyMsg").onclick = function(){
+        var txt = "To: jesse@candor.legal\nSubject: " + m.subject + "\n\n" + m.body;
+        try { if (navigator.clipboard) navigator.clipboard.writeText(txt); } catch(e){}
+        var self = this; self.textContent = "Copied ✓";
+        setTimeout(function(){ self.textContent = "Copy my details"; }, 1500);
+      };
+      actions.hidden = false;
+    }
+    var ph = document.querySelector(".pagehead"); if (ph) ph.hidden = true;
+    var checkoutSec = document.querySelector(".checkout") ? document.querySelector(".checkout").closest("section") : null;
+    if (checkoutSec) checkoutSec.hidden = true;
+    document.getElementById("doneSection").hidden = false;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  document.getElementById("startbtn").addEventListener("click", function(){
+    var d = collect(), err = validate(d);
+    document.getElementById("err").textContent = err;
+    if (err) return;
+    var btn = this;
+    if (WEB3FORMS_KEY){
+      btn.disabled = true; btn.textContent = "Starting…";
+      var m = buildMsg(d);
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: m.subject,
+          from_name: "Candor signups",
+          firm: d.firm, contact: d.name, email: d.email,
+          plan: d.plan.name + " (" + d.plan.range + ")",
+          attorneys: d.attorneys,
+          practice_management: d.pms || "—"
+        })
+      }).then(function(r){ return r.json(); }).then(function(j){
+        btn.disabled = false; btn.textContent = "Start my free month →";
+        showConfirm(d, !!(j && j.success));   // on API trouble, fall back to manual send
+      }).catch(function(){
+        btn.disabled = false; btn.textContent = "Start my free month →";
+        showConfirm(d, false);
+      });
+    } else {
+      showConfirm(d, false);
+    }
   });
 
   document.getElementById("paybtn").addEventListener("click", function(){
@@ -273,15 +363,9 @@
         "&prefilled_email=" + encodeURIComponent(d.email);
       return;
     }
-    // Stripe not connected yet: ask for a secure checkout link by email rather
-    // than pretending to collect a card.
-    var subject = "Pay by card — " + d.firm + " (" + d.plan.name + ")";
-    var body =
-      "We're ready to pay the annual fee by card.\n\n" +
-      "Firm: " + d.firm + "\nContact: " + d.name + "\nEmail: " + d.email + "\n" +
-      "Plan: " + d.plan.name + "\nAttorneys: " + d.attorneys + "\n\n" +
-      "Please send a secure Stripe checkout link.";
-    location.href = "mailto:jesse@candor.legal?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    // No hosted link for this plan (Enterprise is custom-priced). Don't dead-end
+    // on a mailto — point them to start the free month instead.
+    document.getElementById("err").textContent = "Enterprise is priced per firm — start the free month above and we'll send you a quote.";
   });
 
   // If Stripe links exist, the "pay now" note is accurate as written; if not,
