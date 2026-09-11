@@ -29,7 +29,12 @@
   .s-step p{margin:0;font-size:15px;color:var(--muted);line-height:1.55;max-width:26ch}
   .s-close{border-top:1px solid var(--rule,#E7E1D8);max-width:780px;margin:0 auto;padding:62px 24px;text-align:center}
   .s-close h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(26px,4vw,34px);color:var(--navy);margin:0 auto;max-width:20ch;text-wrap:balance}
-  @media(max-width:680px){.s-steps{grid-template-columns:1fr;gap:30px}.s-hero{padding:52px 22px 66px}}
+  .s-watch{max-width:940px;margin:0 auto;padding:4px 24px 88px;text-align:center}
+  .s-watch h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(26px,4vw,36px);color:var(--navy);margin:8px 0 8px}
+  .s-watchlede{font-size:16px;color:var(--muted);max-width:46ch;margin:0 auto 26px;line-height:1.5}
+  .video-frame{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--rule,#E7E1D8);border-radius:12px;overflow:hidden;background:#070a0e;box-shadow:0 34px 70px -34px rgba(11,18,28,.55)}
+  .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  @media(max-width:680px){.s-steps{grid-template-columns:1fr;gap:30px}.s-hero{padding:52px 22px 40px}.s-watch{padding:4px 18px 60px}}
 </style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -44,7 +49,15 @@
   <span class="tagpill">In development · U.S. law firms</span>
   <h1>Your team is already using AI. Candor is the one that <em>proves the work</em>.</h1>
   <p class="s-lede">An AI workspace for law firms, on your own model. Screened, logged, and yours.</p>
-  <a class="btn s-cta" href="/demo">See it in action</a>
+  <a class="btn s-cta" href="#watch">See it in action</a>
+</section>
+
+<section class="s-watch" id="watch">
+  <div class="mono eyebrow">See it in 60 seconds</div>
+  <h2>Watch Candor work.</h2>
+  <p class="s-watchlede">Screen, draft, verify, log — the whole loop, on your firm's own model, with the record building itself.</p>
+  <div class="video-frame"><iframe src="/walkthrough.html" title="Candor product walkthrough" loading="lazy" allow="autoplay"></iframe></div>
+  <a class="btn" href="/demo" style="margin-top:26px">Start free for a month</a>
 </section>
 
 <section class="s-steps">
