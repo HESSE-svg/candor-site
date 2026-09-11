@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-11T16:35:03.698Z",
+  "builtAt": "2026-09-11T21:02:23.902Z",
   "count": 10,
   "items": [
+    {
+      "title": "The Future Of Legal AI Isn't About AI",
+      "link": "https://abovethelaw.com/2026/09/the-future-of-legal-ai-isnt-about-ai/",
+      "desc": "It's about understanding how legal work actually gets done. The post The Future Of Legal AI Isn't About AI appeared first on Above the Law .",
+      "date": "Fri, 11 Sep 2026 20:44:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/09/GettyImages-1986731768-1024x683.png",
+      "source": "Above the Law",
+      "ts": 1789159440000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "When Clients Ask About AI, How Should Firms Respond?",
       "link": "https://abovethelaw.com/2026/09/when-clients-ask-about-ai-how-should-firms-respond/",
@@ -40,7 +54,7 @@
       "ts": 1789067580000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,20 +68,6 @@
       "ts": 1789067437000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "How Young Lawyers Can Build A Career That Outlasts The Next AI Update",
-      "link": "https://abovethelaw.com/2026/09/how-young-lawyers-can-build-a-career-that-outlasts-the-next-ai-update/",
-      "desc": "Use AI where it helps, recognize where it fails, and help your colleagues understand the difference. The post How Young Lawyers Can Build A Career That Outlasts The Next AI Update appeared first…",
-      "date": "Thu, 10 Sep 2026 15:32:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/08/GettyImages-2192183415.jpg",
-      "source": "Above the Law",
-      "ts": 1789054320000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "Yesterday",
       "strong": true,
       "promo": false
@@ -124,7 +124,7 @@
       "ts": 1788893673000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
