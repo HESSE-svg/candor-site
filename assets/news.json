@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-11T11:31:18.470Z",
+  "builtAt": "2026-09-11T16:35:03.698Z",
   "count": 10,
   "items": [
+    {
+      "title": "When Clients Ask About AI, How Should Firms Respond?",
+      "link": "https://abovethelaw.com/2026/09/when-clients-ask-about-ai-how-should-firms-respond/",
+      "desc": "[Sponsored] Lessons from elementary school. The post When Clients Ask About AI, How Should Firms Respond? appeared first on Above the Law .",
+      "date": "Fri, 11 Sep 2026 16:18:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/07/GettyImages-1488601590.jpg",
+      "source": "Above the Law",
+      "ts": 1789143480000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
+    {
+      "title": "Latham builds its own AI models with Nvidia GPU server investment",
+      "link": "https://legaltechnology.com/latham-builds-its-own-ai-models-with-nvidia-gpu-server-investment/",
+      "desc": "US multinational law firm Latham Watkins has bought Nvidia GPU servers and started customising its own AI models, the Financial Times revealed yesterday (11 September). Latham, the US’s…",
+      "date": "Fri, 11 Sep 2026 13:38:22 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Latham-nvidia-gpus.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1789133902000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI Has Entered The Courthouse…Are You Ready For It?",
       "link": "https://www.myshingle.com/2026/09/ai-has-entered-the-courthouse-are-you-ready-for-it/",
@@ -40,7 +68,7 @@
       "ts": 1789054320000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -52,20 +80,6 @@
       "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Saudi.gif",
       "source": "Legal IT Insider",
       "ts": 1789040906000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Vanderbilt Law School Starts Students Practicing Depositions On AI Witnesses",
-      "link": "https://abovethelaw.com/2026/09/vanderbilt-law-school-starts-students-practicing-depositions-on-ai-witnesses/",
-      "desc": "Vanderbilt and AltaClaro deploy DepoSim to deliver practical education as firms move hiring process earlier and earlier. The post Vanderbilt Law School Starts Students Practicing Depositions On AI…",
-      "date": "Wed, 09 Sep 2026 18:32:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2016/08/GettyImages-117650646.jpg",
-      "source": "Above the Law",
-      "ts": 1788978720000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "Yesterday",
@@ -82,7 +96,7 @@
       "ts": 1788959703000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -94,20 +108,6 @@
       "img": "https://legaltechnology.com/wp-content/uploads/2026/09/laptop-1024x280.png",
       "source": "Legal IT Insider",
       "ts": 1788958250000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "SMU’s Yong Pung How School of Law becomes first in Asia to join Legora's AI scholar program",
-      "link": "https://legaltechnology.com/smus-yong-pung-how-school-of-law-becomes-first-in-asia-to-join-legoras-ai-scholar-program/",
-      "desc": "Singapore Management University (SMU) today announced that SMU’s Yong Pung How School of Law is joining Legora's Legal AI Scholars Program, becoming the first university in Asia to do so. [] The…",
-      "date": "Wed, 09 Sep 2026 09:27:29 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Trumper-1024x280.png",
-      "source": "Legal IT Insider",
-      "ts": 1788946049000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "2 days ago",
@@ -138,7 +138,7 @@
       "ts": 1788883265000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     }
