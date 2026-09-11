@@ -1,0 +1,164 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI hallucination sanctions tracker · Candor</title>
+<meta name="description" content="A running list of court cases where lawyers were sanctioned for citing AI-fabricated law — case, court, penalty, and a link to each decision. Free, public, no signup.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A41">
+<meta property="og:title" content="AI hallucination sanctions tracker">
+<meta property="og:description" content="Court cases where lawyers were sanctioned for citing AI-fabricated law. Case, court, penalty, and a link to each decision.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://candor.legal/ai-sanctions">
+<meta property="og:image" content="https://candor.legal/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css?v=7">
+<style>
+  .track-controls{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;margin:var(--s3) 0 var(--s2)}
+  .track-controls label{display:block;font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:5px}
+  .track-controls select{padding:8px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink);font-size:14px;font-family:var(--f-sans)}
+  .track-count{margin-left:auto;font-family:var(--f-mono);font-size:12px;color:var(--faint)}
+  .case{border:1px solid var(--rule);border-left:3px solid var(--ox);border-radius:8px;padding:20px 22px;margin-top:16px;background:var(--surface,#fff)}
+  .case .case-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px}
+  .case h3{font-family:var(--f-serif);font-size:21px;color:var(--navy);margin:0;line-height:1.15}
+  .case .permalink{font-family:var(--f-mono);font-size:12px;color:var(--faint);text-decoration:none;opacity:0;transition:opacity .15s}
+  .case:hover .permalink{opacity:1}
+  .case .meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-top:6px;letter-spacing:.02em}
+  .case .penalty{font-family:var(--f-serif);font-size:24px;color:var(--ox);white-space:nowrap}
+  .case .what{margin:12px 0 0;color:var(--ink);line-height:1.55;font-size:15px}
+  .case .cnote{margin:8px 0 0;color:var(--muted);font-size:13.5px;line-height:1.5}
+  .case .src{margin-top:12px;font-size:13px}
+  .case:target{border-left-color:var(--seal);box-shadow:0 0 0 2px rgba(47,93,80,.12)}
+  .track-stat{border:1px solid var(--rule);border-left:4px solid var(--navy);background:var(--soft);border-radius:8px;padding:18px 22px;margin-top:var(--s2)}
+  .track-stat .big{font-family:var(--f-serif);font-size:34px;color:var(--navy);line-height:1}
+</style>
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="nav-in">
+  <a class="brand" href="/" aria-label="Candor home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#1B2A41"/><circle cx="50" cy="50" r="39" fill="none" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/><text x="50" y="52" font-family="Instrument Serif,Georgia,serif" font-size="58" fill="#FAF8F5" text-anchor="middle" dominant-baseline="central">C</text></svg><span class="name">Candor<span>.</span></span></a>
+  <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
+  <nav class="navlinks"><a href="/product">Product</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/demo">Get a look</a></nav>
+</div></header>
+
+<main id="main">
+<section class="wrap pagehead">
+  <div class="mono eyebrow">Free · public · no signup</div>
+  <h1>AI hallucination sanctions, tracked.</h1>
+  <p class="lede">Real cases where a court sanctioned lawyers for filing AI-fabricated law — the fake citations, the penalties, and a link to each decision. A curated record of the landmark ones; the comprehensive database is credited below.</p>
+</section>
+
+<section class="wrap">
+  <div class="track-stat">
+    <div class="big" id="stat-count">~1,600</div>
+    <p style="margin:6px 0 0;color:var(--ink)">documented cases worldwide where a court addressed AI-fabricated material, and climbing. The exhaustive, continuously updated database is <a href="https://www.damiencharlotin.com/hallucinations/" target="_blank" rel="noopener">Damien Charlotin's AI Hallucination Cases database</a> (a research fellow at HEC Paris; 1,598 cases as of June 2026). This page is a readable highlight of the landmark decisions.</p>
+  </div>
+
+  <div class="track-controls">
+    <div>
+      <label for="f-jur">Jurisdiction</label>
+      <select id="f-jur"><option value="">All</option></select>
+    </div>
+    <div>
+      <label for="f-sort">Sort by</label>
+      <select id="f-sort"><option value="penalty">Largest penalty</option><option value="year">Most recent</option></select>
+    </div>
+    <span class="track-count" id="track-count"></span>
+  </div>
+
+  <div id="cases"></div>
+
+  <div class="band reveal" style="margin-top:var(--s4)"><div class="wrap narrow" style="padding:0">
+    <div class="mono eyebrow">The common thread</div>
+    <h2 style="margin-top:6px">Every one of these turned on the same failure.</h2>
+    <p>Not the tool — the review. In each case a lawyer filed a citation no one had read. Courts have been consistent: the duty to verify what you file is the lawyer's, and using AI does not change it. That is the whole reason to keep a record of what AI touched and who reviewed it before it went out the door. <a href="/product">See how Candor does that →</a></p>
+  </div></div>
+
+  <p class="disc" style="margin-top:var(--s3)">This is a reference summary of publicly reported decisions, compiled from the sources linked on each entry. It is not legal advice and is not exhaustive — confirm the details against the linked primary sources, and see Charlotin's database for the full record. Entries are added over time.</p>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div>
+      <span class="name" style="font-family:var(--f-serif);font-size:22px;color:var(--navy)">Candor<span style="color:var(--ox)">.</span></span>
+      <p style="margin-top:10px;max-width:22em">The AI your firm works in, with the record built in.</p>
+    </div>
+    <div class="foot-links"><a href="/product">Product</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/about">About</a><a href="/demo">Contact</a></div>
+  </div>
+  <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
+</div></footer>
+<script src="/assets/site.js?v=7"></script>
+<script>
+// Data table — edit this array to add a case. Kept as data, not markup, so the
+// list is maintained in one place. Every entry MUST link to a primary/reported
+// source; nothing goes here that isn't documented.
+var CASES = [
+  {
+    id: 'couvrette-wisnovsky',
+    name: 'Couvrette v. Wisnovsky',
+    court: 'U.S. District Court, District of Oregon',
+    jurisdiction: 'Federal — Oregon',
+    year: 2026,
+    penalty: 110204,
+    penaltyLabel: '$110,204',
+    what: 'Three summary-judgment briefs over about five months contained 15 fabricated case citations and 8 fabricated quotations. After opposing counsel flagged the errors, the lawyer refiled without verifying the arguments that remained.',
+    note: 'The largest U.S. AI-hallucination sanction on record — split between the pro hac vice counsel and local counsel as monetary sanctions plus the opposing side’s attorney fees.',
+    source: 'https://www.abajournal.com/news/article/oregon-federal-judge-hands-down-110000-penalty-for-ai-errors',
+    sourceLabel: 'ABA Journal report',
+  },
+  {
+    id: 'mata-avianca',
+    name: 'Mata v. Avianca, Inc.',
+    court: 'U.S. District Court, S.D.N.Y. (Judge Castel)',
+    jurisdiction: 'Federal — New York',
+    year: 2023,
+    penalty: 5000,
+    penaltyLabel: '$5,000',
+    what: 'The first widely reported case. A brief opposing a motion to dismiss cited six non-existent decisions generated by ChatGPT, with fabricated names, citations and quotations. Asked to confirm, ChatGPT insisted the cases were real.',
+    note: 'The origin of the issue. The court held that attorneys have an affirmative duty to verify every citation before filing, and that using an AI tool does not change that obligation. Counsel were also ordered to send corrective letters to the judges named in the fake opinions.',
+    source: 'https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2022cv01461/575368/54/',
+    sourceLabel: 'Opinion (Justia)',
+  },
+];
+
+(function () {
+  var wrap = document.getElementById('cases');
+  var jurSel = document.getElementById('f-jur');
+  var sortSel = document.getElementById('f-sort');
+  var countEl = document.getElementById('track-count');
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); };
+
+  // populate jurisdiction filter from the data
+  var jurs = CASES.map(function (c) { return c.jurisdiction; }).filter(function (v, i, a) { return a.indexOf(v) === i; }).sort();
+  jurs.forEach(function (j) { var o = document.createElement('option'); o.value = j; o.textContent = j; jurSel.appendChild(o); });
+
+  function render() {
+    var list = CASES.slice();
+    if (jurSel.value) list = list.filter(function (c) { return c.jurisdiction === jurSel.value; });
+    list.sort(function (a, b) { return sortSel.value === 'year' ? b.year - a.year : b.penalty - a.penalty; });
+    countEl.textContent = list.length + (list.length === 1 ? ' case' : ' cases');
+    wrap.innerHTML = list.map(function (c) {
+      return '<article class="case" id="' + esc(c.id) + '">' +
+        '<div class="case-top">' +
+          '<div><h3>' + esc(c.name) + ' <a class="permalink" href="#' + esc(c.id) + '" aria-label="Link to this case">#</a></h3>' +
+          '<div class="meta">' + esc(c.court) + ' &middot; ' + esc(c.year) + ' &middot; ' + esc(c.jurisdiction) + '</div></div>' +
+          '<div class="penalty">' + esc(c.penaltyLabel) + '</div>' +
+        '</div>' +
+        '<p class="what">' + esc(c.what) + '</p>' +
+        (c.note ? '<p class="cnote">' + esc(c.note) + '</p>' : '') +
+        '<p class="src"><a href="' + esc(c.source) + '" target="_blank" rel="noopener">' + esc(c.sourceLabel) + ' &rarr;</a></p>' +
+      '</article>';
+    }).join('');
+    // if the URL has an anchor, keep it in view after re-render
+    if (location.hash) { var t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView({ block: 'center' }); }
+  }
+  jurSel.addEventListener('change', render);
+  sortSel.addEventListener('change', render);
+  render();
+})();
+</script>
+</body></html>

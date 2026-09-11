@@ -1,0 +1,160 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI ethics rules by jurisdiction · Candor</title>
+<meta name="description" content="A free tool: pick your jurisdiction and see the AI-related professional duties that apply — consent, billing, verification, court filing — each with a link to the authority that says so.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A41">
+<meta property="og:title" content="AI ethics rules by jurisdiction">
+<meta property="og:description" content="Pick your jurisdiction and see the AI-related professional duties that apply, each with a link to the authority.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://candor.legal/ai-rules">
+<meta property="og:image" content="https://candor.legal/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css?v=7">
+<style>
+  .jchooser{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;margin-top:var(--s3)}
+  .jchooser label{display:block;font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:5px}
+  .jchooser select{padding:10px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink);font-size:15px;font-family:var(--f-sans);min-width:320px;max-width:100%}
+  .jhead{margin-top:var(--s3);padding-bottom:12px;border-bottom:1px solid var(--rule)}
+  .jhead h2{font-family:var(--f-serif);font-size:24px;color:var(--navy);margin:0}
+  .jhead .auth{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);margin-top:6px}
+  .jhead .flag{display:inline-block;font-family:var(--f-mono);font-size:10px;text-transform:uppercase;letter-spacing:.08em;border-radius:999px;padding:3px 9px;margin-left:6px}
+  .flag.current{color:var(--seal);border:1px solid rgba(47,93,80,.4)}
+  .flag.pending{color:var(--ox);border:1px solid rgba(122,46,46,.4)}
+  .duty{border:1px solid var(--rule);border-radius:8px;padding:18px 20px;margin-top:14px}
+  .duty .dtop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px}
+  .duty h3{font-family:var(--f-serif);font-size:18px;color:var(--navy);margin:0}
+  .duty .verdict{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .verdict.req{color:#fff;background:var(--ox)}
+  .verdict.some{color:var(--ox);border:1px solid var(--ox)}
+  .verdict.no{color:var(--muted);border:1px solid var(--rule)}
+  .duty p{margin:10px 0 0;color:var(--ink);line-height:1.55;font-size:15px}
+  .duty .src{margin-top:10px;font-size:13px}
+  .jdisc{border:1px solid var(--rule);border-left:4px solid var(--brass,#9A6B1F);background:var(--soft);border-radius:8px;padding:16px 20px;margin-top:var(--s3);font-size:14px;line-height:1.55;color:var(--ink)}
+</style>
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="nav-in">
+  <a class="brand" href="/" aria-label="Candor home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#1B2A41"/><circle cx="50" cy="50" r="39" fill="none" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/><text x="50" y="52" font-family="Instrument Serif,Georgia,serif" font-size="58" fill="#FAF8F5" text-anchor="middle" dominant-baseline="central">C</text></svg><span class="name">Candor<span>.</span></span></a>
+  <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
+  <nav class="navlinks"><a href="/product">Product</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/demo">Get a look</a></nav>
+</div></header>
+
+<main id="main">
+<section class="wrap pagehead">
+  <div class="mono eyebrow">Free · public · no signup</div>
+  <h1>What AI rules apply to your firm?</h1>
+  <p class="lede">Pick a jurisdiction and see the AI-related professional duties that apply — client consent, billing, verification, and court filing — each with a link to the authority that says so. A reference summary of published guidance, not legal advice.</p>
+
+  <div class="jchooser">
+    <div>
+      <label for="jsel">Your jurisdiction</label>
+      <select id="jsel">
+        <option value="">Select…</option>
+        <option value="aba">National baseline (ABA)</option>
+        <option value="fl">Florida</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="result" hidden>
+  <div class="jhead">
+    <h2 id="jname"></h2>
+    <div class="auth" id="jauth"></div>
+  </div>
+  <div id="duties"></div>
+  <div class="jdisc" id="jdisc"></div>
+</section>
+
+<section class="wrap" id="intro">
+  <div class="jdisc" style="border-left-color:var(--navy)">
+    <b>Coverage so far: Florida and the national ABA baseline.</b> More states are being added, each from its own bar opinion, statute, or court rule with the source linked. If your state has not issued specific AI guidance, most firms follow the ABA baseline (Formal Opinion 512) as the starting point — select it above to see it.
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div>
+      <span class="name" style="font-family:var(--f-serif);font-size:22px;color:var(--navy)">Candor<span style="color:var(--ox)">.</span></span>
+      <p style="margin-top:10px;max-width:22em">The AI your firm works in, with the record built in.</p>
+    </div>
+    <div class="foot-links"><a href="/product">Product</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/about">About</a><a href="/demo">Contact</a></div>
+  </div>
+  <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
+</div></footer>
+<script src="/assets/site.js?v=7"></script>
+<script>
+// Jurisdiction data lives here as a maintained table — each duty carries the
+// authority and a link to the primary source. Nothing is asserted without one.
+// verdict: 'req' (required), 'some' (required in some cases), 'no' (no blanket duty).
+var JUR = {
+  aba: {
+    name: 'National baseline — ABA Formal Opinion 512',
+    authority: 'ABA Formal Opinion 512, “Generative Artificial Intelligence Tools” (July 29, 2024)',
+    url: 'https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/',
+    status: 'current',
+    duties: [
+      { key: 'consent', label: 'Client consent / disclosure', verdict: 'some', vlabel: 'Sometimes required',
+        text: 'You must protect client information (Model Rule 1.6). Before putting confidential information into a generative-AI tool, evaluate how that tool stores, uses and retains inputs. For tools that train on or could expose what you enter, the opinion indicates informed client consent may be required first.' },
+      { key: 'billing', label: 'Billing disclosure', verdict: 'req', vlabel: 'Applies',
+        text: 'Fees must be reasonable and reflect the time you actually spent (Model Rule 1.5). You may not bill for time the AI saved as though you spent it, and AI costs charged to a client should be disclosed to the client.' },
+      { key: 'verify', label: 'Verification of AI output', verdict: 'req', vlabel: 'Required',
+        text: 'Competence (Rule 1.1) and candor to the tribunal (Rule 3.3) require you to review AI output, which can be inaccurate or fabricated. Responsibility for the work stays with the lawyer regardless of what produced it.' },
+      { key: 'court', label: 'Court-filing disclosure', verdict: 'no', vlabel: 'No blanket duty',
+        text: 'Opinion 512 does not itself require disclosing AI use to a court. But many individual courts have standing orders that do — always check the rules of the specific court and judge you are filing before.' },
+    ],
+  },
+  fl: {
+    name: 'Florida',
+    authority: 'Florida Bar Ethics Opinion 24-1 (January 19, 2024)',
+    url: 'https://www.floridabar.org/etopinions/opinion-24-1/',
+    status: 'current',
+    duties: [
+      { key: 'consent', label: 'Client consent / disclosure', verdict: 'some', vlabel: 'Required in some cases',
+        text: 'Obtain the client’s informed consent before using a third-party generative-AI tool if the use would involve disclosing the client’s confidential information, and take reasonable precautions against inadvertent disclosure.' },
+      { key: 'billing', label: 'Billing disclosure', verdict: 'req', vlabel: 'Applies',
+        text: 'Efficiency gained from AI must not result in duplicate charges or inflated billable hours. Fees must be reasonable and AI-related costs transparent (Rule 4-1.5).' },
+      { key: 'verify', label: 'Verification of AI output', verdict: 'req', vlabel: 'Required',
+        text: 'A lawyer must oversee generative AI and review its work product just as the lawyer reviews the work of a nonlawyer assistant. The lawyer is responsible for the work whether AI drafted it in whole or in part.' },
+      { key: 'court', label: 'Court-filing disclosure', verdict: 'no', vlabel: 'No blanket duty',
+        text: 'Opinion 24-1 does not itself impose a court-filing disclosure duty. Individual Florida courts or judges may require it by standing order — check the specific court before filing.' },
+    ],
+  },
+};
+
+(function () {
+  var sel = document.getElementById('jsel');
+  var result = document.getElementById('result');
+  var intro = document.getElementById('intro');
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); };
+
+  function show(id) {
+    var j = JUR[id];
+    if (!j) { result.hidden = true; intro.hidden = false; return; }
+    intro.hidden = true;
+    document.getElementById('jname').innerHTML = esc(j.name) +
+      ' <span class="flag ' + (j.status === 'current' ? 'current' : 'pending') + '">' + (j.status === 'current' ? 'current' : 'pending') + '</span>';
+    document.getElementById('jauth').innerHTML = 'Authority: <a href="' + esc(j.url) + '" target="_blank" rel="noopener">' + esc(j.authority) + ' &rarr;</a>';
+    document.getElementById('duties').innerHTML = j.duties.map(function (d) {
+      return '<div class="duty">' +
+        '<div class="dtop"><h3>' + esc(d.label) + '</h3><span class="verdict ' + d.verdict + '">' + esc(d.vlabel) + '</span></div>' +
+        '<p>' + esc(d.text) + '</p>' +
+        '<p class="src"><a href="' + esc(j.url) + '" target="_blank" rel="noopener">Read ' + esc(j.authority.split('(')[0].trim()) + ' &rarr;</a></p>' +
+      '</div>';
+    }).join('');
+    document.getElementById('jdisc').innerHTML = '<b>This is a reference summary, not legal advice.</b> It paraphrases published guidance; the authoritative text is the linked source. Confirm the specifics against it, and remember that court standing orders, statutes, and later opinions can add duties this summary does not capture. Candor is software, not a law firm.';
+    result.hidden = false;
+    result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  sel.addEventListener('change', function () { show(sel.value); });
+})();
+</script>
+</body></html>
