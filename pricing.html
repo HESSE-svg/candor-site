@@ -36,6 +36,10 @@
   .feat-list{list-style:none;margin:6px 0 0;columns:2;column-gap:36px;font-size:15px}
   .feat-list li{break-inside:avoid;position:relative;padding:8px 0 8px 24px;color:var(--muted);border-bottom:1px solid var(--rule);line-height:1.45}
   .feat-list li::before{content:'✓';position:absolute;left:0;top:8px;color:var(--seal);font-weight:700}
+  .tier .tstart{display:block;margin-top:16px;text-align:center;font-family:var(--f-sans);font-weight:600;font-size:14px;color:var(--paper);background:var(--ox);border:1px solid var(--ox);border-radius:6px;padding:9px 12px;transition:background .15s,color .15s}
+  .tier .tstart:hover{background:transparent;color:var(--ox);text-decoration:none}
+  .tier .tstart.ghost{background:transparent;color:var(--navy);border-color:var(--navy)}
+  .tier .tstart.ghost:hover{background:var(--navy);color:var(--paper)}
   @media(max-width:640px){.feat-list{columns:1}.tiers.six{gap:14px}}
 </style>
 </head><body>
@@ -60,7 +64,7 @@
       <h2 style="margin:6px 0 8px">One month free, for everyone who signs up.</h2>
       <p>Every firm starts with a full month of Candor free: set up on your own model, across your whole team, with nothing due until the trial ends. No card to start, and no per-use bill ever, because you bring your own AI account.</p>
     </div>
-    <a class="cta" href="/demo" style="white-space:nowrap">Start free &rarr;</a>
+    <a class="cta" href="/start" style="white-space:nowrap">Start free &rarr;</a>
   </div>
 </section>
 
@@ -71,18 +75,21 @@
       <div class="tmeta">1 attorney</div>
       <div class="price">$3,000<small> /yr</small></div>
       <div class="tmo">$250 a month</div>
+      <a class="tstart" href="/start?tier=solo">Start free</a>
     </div>
     <div class="tier">
       <h3>Small</h3>
       <div class="tmeta">2 to 5 attorneys</div>
       <div class="price">$6,000<small> /yr</small></div>
       <div class="tmo">$500 a month</div>
+      <a class="tstart" href="/start?tier=small">Start free</a>
     </div>
     <div class="tier">
       <h3>Mid</h3>
       <div class="tmeta">6 to 15 attorneys</div>
       <div class="price">$10,000<small> /yr</small></div>
       <div class="tmo">$833 a month</div>
+      <a class="tstart" href="/start?tier=mid">Start free</a>
     </div>
     <div class="tier feature">
       <span class="tbadge">Most firms</span>
@@ -90,18 +97,21 @@
       <div class="tmeta">16 to 30 attorneys</div>
       <div class="price">$14,000<small> /yr</small></div>
       <div class="tmo">$1,167 a month</div>
+      <a class="tstart" href="/start?tier=standard">Start free</a>
     </div>
     <div class="tier">
       <h3>Large</h3>
       <div class="tmeta">31 to 60 attorneys</div>
       <div class="price">$20,000<small> /yr</small></div>
       <div class="tmo">$1,667 a month</div>
+      <a class="tstart" href="/start?tier=large">Start free</a>
     </div>
     <div class="tier">
       <h3>Enterprise</h3>
       <div class="tmeta">60+ attorneys</div>
       <div class="price" style="font-size:27px">Let's talk</div>
       <div class="tmo">Custom, per firm</div>
+      <a class="tstart ghost" href="/demo">Talk to us</a>
     </div>
   </div>
 

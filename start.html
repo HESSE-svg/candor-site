@@ -1,0 +1,288 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start your firm · Candor</title>
+<meta name="description" content="Start Candor on your firm — one month free, then a flat annual fee by attorney count. Set up today; nothing due until the trial ends.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A41">
+<meta property="og:title" content="Start your firm · Candor">
+<meta property="og:description" content="One month free, then a flat annual fee by attorney count.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://candor.legal/start">
+<meta property="og:image" content="https://candor.legal/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css?v=7">
+<style>
+  .checkout{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;margin-top:var(--s3);align-items:start}
+  @media(max-width:820px){.checkout{grid-template-columns:1fr;gap:24px}}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:6px}
+  .field input,.field select{width:100%;font-family:var(--f-sans);font-size:15px;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:11px 12px;outline:none}
+  .field input:focus,.field select:focus{border-color:var(--ox)}
+  .field .hint{font-size:12.5px;color:var(--faint);margin-top:5px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:520px){.two{grid-template-columns:1fr}}
+  .summary{border:1px solid var(--navy);border-top:3px solid var(--ox);background:var(--soft);border-radius:8px;padding:24px 24px 26px;position:sticky;top:16px}
+  .summary .tname{font-family:var(--f-serif);font-size:26px;color:var(--navy);line-height:1}
+  .summary .trange{font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-top:5px}
+  .sumrow{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:15px}
+  .sumrow.big{border-bottom:none;padding-bottom:0}
+  .sumrow .amt{font-family:var(--f-serif);color:var(--navy)}
+  .sumrow.free .amt{color:var(--seal);font-weight:600}
+  .sumrow.big .amt{font-size:24px}
+  .duenow{font-family:var(--f-mono);font-size:12px;color:var(--seal);margin-top:12px;letter-spacing:.02em}
+  .startbtn{display:block;width:100%;text-align:center;margin-top:18px;font-family:var(--f-sans);font-weight:600;font-size:15.5px;color:var(--paper);background:var(--ox);border:1px solid var(--ox);border-radius:6px;padding:14px 18px;cursor:pointer;transition:background .15s,color .15s}
+  .startbtn:hover{background:transparent;color:var(--ox)}
+  .paybtn{display:block;width:100%;text-align:center;margin-top:10px;font-family:var(--f-sans);font-weight:500;font-size:14.5px;color:var(--navy);background:transparent;border:1px solid var(--navy);border-radius:6px;padding:12px 18px;cursor:pointer}
+  .paybtn:hover{background:var(--navy);color:var(--paper)}
+  .paynote{font-size:12px;color:var(--faint);margin-top:8px;text-align:center;line-height:1.45}
+  .formerr{color:var(--ox);font-size:13.5px;margin-top:6px;min-height:1px}
+  .steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:var(--s2)}
+  @media(max-width:680px){.steps3{grid-template-columns:1fr;gap:16px}}
+  .step3 .n{font-family:var(--f-mono);font-size:12px;color:var(--ox);letter-spacing:.06em}
+  .step3 h3{font-family:var(--f-serif);font-weight:400;font-size:19px;color:var(--navy);margin:6px 0 5px}
+  .step3 p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.5}
+  .tierpick{font-family:var(--f-mono);font-size:12px;color:var(--ox);background:none;border:none;cursor:pointer;text-decoration:underline;padding:0;margin-top:14px}
+</style>
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="nav-in">
+  <a class="brand" href="/" aria-label="Candor home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#1B2A41"/><circle cx="50" cy="50" r="39" fill="none" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/><text x="50" y="52" font-family="Instrument Serif,Georgia,serif" font-size="58" fill="#FAF8F5" text-anchor="middle" dominant-baseline="central">C</text></svg><span class="name">Candor<span>.</span></span></a>
+  <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
+  <nav class="navlinks"><a href="/product">Product</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/start">Start free</a></nav>
+</div></header>
+
+<main id="main">
+<section class="wrap pagehead">
+  <div class="mono eyebrow" style="color:var(--ox)">Start your firm</div>
+  <h1>Your free month starts today.</h1>
+  <p class="lede">Set Candor up on your own model, across your whole team, with nothing due until the trial ends. Pick the plan that matches your attorney count — that count is your plan, and Candor holds you to it, so you only ever pay for the attorneys you set.</p>
+</section>
+
+<section class="wrap">
+  <div class="checkout">
+    <!-- form -->
+    <div>
+      <form id="startform" novalidate>
+        <div class="field">
+          <label for="firm">Firm name</label>
+          <input id="firm" name="firm" type="text" autocomplete="organization" placeholder="e.g. Wilson & Delgado LLP" required>
+        </div>
+        <div class="two">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="First and last" required>
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@firm.com" required>
+          </div>
+        </div>
+        <div class="two">
+          <div class="field">
+            <label for="plan">Plan</label>
+            <select id="plan" name="plan"></select>
+          </div>
+          <div class="field">
+            <label for="attorneys">Number of attorneys</label>
+            <input id="attorneys" name="attorneys" type="number" min="1" step="1" inputmode="numeric" required>
+            <div class="hint" id="attHint">This becomes your seat limit — the app won't let you add more than this.</div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="pms">Practice management system <span style="text-transform:none;letter-spacing:0;color:var(--faint)">(optional)</span></label>
+          <select id="pms" name="pms">
+            <option value="">— None / not sure —</option>
+            <option>Clio</option><option>MyCase</option><option>Filevine</option>
+            <option>PracticePanther</option><option>Smokeball</option><option>Other</option>
+          </select>
+        </div>
+        <div class="formerr" id="err"></div>
+      </form>
+    </div>
+
+    <!-- order summary -->
+    <aside class="summary" aria-live="polite">
+      <div class="tname" id="sumName">Standard</div>
+      <div class="trange" id="sumRange">16 to 30 attorneys</div>
+
+      <div style="margin-top:18px">
+        <div class="sumrow free"><span>First month</span><span class="amt">Free</span></div>
+        <div class="sumrow"><span>Then, per year</span><span class="amt" id="sumYear">$14,000</span></div>
+        <div class="sumrow"><span>Roughly per month</span><span class="amt" id="sumMonth">$1,167</span></div>
+        <div class="sumrow big"><span>Due today</span><span class="amt" style="color:var(--seal)">$0</span></div>
+      </div>
+      <div class="duenow">✓ No card required to start · unlimited staff seats · your own AI model</div>
+
+      <button class="startbtn" id="startbtn" type="button">Start my free month →</button>
+      <button class="paybtn" id="paybtn" type="button">Prefer to pay the year now?</button>
+      <div class="paynote" id="paynote">Card payment is handled securely by Stripe — Candor never sees your card.</div>
+
+      <button class="tierpick" type="button" id="changeTier">Change plan</button>
+    </aside>
+  </div>
+</section>
+
+<section class="band reveal"><div class="wrap narrow">
+  <div class="mono eyebrow">What happens next</div>
+  <h2>From "start" to working, in a day.</h2>
+  <div class="steps3">
+    <div class="step3"><div class="n">01</div><h3>You start free</h3><p>Send the details above. There's no card and nothing due — your free month begins now.</p></div>
+    <div class="step3"><div class="n">02</div><h3>We set up your firm</h3><p>We provision your firm's Candor workspace on your own model and send your sign-in, usually the same day.</p></div>
+    <div class="step3"><div class="n">03</div><h3>Your team works</h3><p>Pair the browser panel, add your attorneys — up to the number you chose — and the record starts building itself.</p></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div>
+      <span class="name" style="font-family:var(--f-serif);font-size:22px;color:var(--navy)">Candor<span style="color:var(--ox)">.</span></span>
+      <p style="margin-top:10px;max-width:22em">The AI your firm works in, with the record built in.</p>
+      <div class="social">
+        <a href="https://www.instagram.com/candor.legal" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="TikTok" title="TikTok (coming soon)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2 1.6 3.6 3.6 3.9v2.5c-1.3 0-2.6-.4-3.6-1.1v6.1c0 3-2.4 5.4-5.4 5.4S5.2 17.4 5.2 14.4 7.6 9 10.6 9c.3 0 .6 0 .9.1v2.6c-.3-.1-.6-.2-.9-.2-1.5 0-2.8 1.2-2.8 2.8s1.2 2.8 2.8 2.8 2.8-1.2 2.8-2.8V3H16z"/></svg></a>
+        <a href="https://www.linkedin.com/in/jesse-hollar-084999283" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-links"><a href="/product">Product</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/resources">Free tools</a><a href="/about">About</a><a href="/demo">Contact</a></div>
+  </div>
+  <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
+</div></footer>
+
+<script src="/assets/site.js?v=7"></script>
+<script>
+(function(){
+  // ── When you set up Stripe: paste your Payment Link URL for each plan below
+  //    (Stripe → Payment Links). Leave a plan blank and its "pay now" falls back
+  //    to email. Candor never touches card data — Stripe hosts the whole thing.
+  var STRIPE_LINKS = {
+    solo: "", small: "", mid: "", standard: "", large: "", enterprise: ""
+  };
+
+  var PLANS = [
+    { id:"solo",       name:"Solo",       min:1,  max:1,   year:3000,  month:250,  range:"1 attorney" },
+    { id:"small",      name:"Small",      min:2,  max:5,   year:6000,  month:500,  range:"2 to 5 attorneys" },
+    { id:"mid",        name:"Mid",        min:6,  max:15,  year:10000, month:833,  range:"6 to 15 attorneys" },
+    { id:"standard",   name:"Standard",   min:16, max:30,  year:14000, month:1167, range:"16 to 30 attorneys" },
+    { id:"large",      name:"Large",      min:31, max:60,  year:20000, month:1667, range:"31 to 60 attorneys" },
+    { id:"enterprise", name:"Enterprise", min:61, max:500, year:null,  month:null, range:"60+ attorneys" }
+  ];
+  var byId = {}; PLANS.forEach(function(p){ byId[p.id]=p; });
+  var money = function(n){ return "$" + n.toLocaleString("en-US"); };
+
+  var qs = new URLSearchParams(location.search);
+  var current = byId[(qs.get("tier")||"").toLowerCase()] || byId.standard;
+
+  var planSel = document.getElementById("plan");
+  PLANS.forEach(function(p){
+    var o = document.createElement("option");
+    o.value = p.id; o.textContent = p.name + " · " + p.range;
+    planSel.appendChild(o);
+  });
+
+  var att = document.getElementById("attorneys");
+  var sumName = document.getElementById("sumName"), sumRange = document.getElementById("sumRange");
+  var sumYear = document.getElementById("sumYear"), sumMonth = document.getElementById("sumMonth");
+  var paynote = document.getElementById("paynote");
+
+  function render(){
+    var p = current;
+    planSel.value = p.id;
+    sumName.textContent = p.name;
+    sumRange.textContent = p.range;
+    att.min = p.min; att.max = p.max;
+    if (Number(att.value) < p.min || Number(att.value) > p.max || !att.value) att.value = p.min;
+    if (p.year === null){
+      sumYear.textContent = "Let's talk";
+      sumMonth.textContent = "Custom";
+    } else {
+      sumYear.textContent = money(p.year) + " /yr";
+      sumMonth.textContent = "~" + money(p.month) + "/mo";
+    }
+  }
+  render();
+
+  planSel.addEventListener("change", function(){ current = byId[planSel.value] || current; render(); });
+  document.getElementById("changeTier").addEventListener("click", function(){ location.href = "/pricing"; });
+
+  // Keep the attorney count inside the chosen plan's band — the number here is
+  // the seat limit the app will enforce, so it should never be able to exceed it.
+  att.addEventListener("input", function(){
+    var v = Number(att.value);
+    if (v > current.max) att.value = current.max;
+  });
+  att.addEventListener("blur", function(){
+    var v = Number(att.value);
+    if (!v || v < current.min) att.value = current.min;
+  });
+
+  function collect(){
+    return {
+      firm: document.getElementById("firm").value.trim(),
+      name: document.getElementById("name").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      attorneys: att.value,
+      pms: document.getElementById("pms").value,
+      plan: current
+    };
+  }
+  function validate(d){
+    if (!d.firm) return "Please enter your firm name.";
+    if (!d.name) return "Please enter your name.";
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return "Please enter a valid work email.";
+    return "";
+  }
+
+  document.getElementById("startbtn").addEventListener("click", function(){
+    var d = collect(), err = validate(d);
+    document.getElementById("err").textContent = err;
+    if (err) return;
+    var subject = "Start Candor — " + d.firm + " (" + d.plan.name + ")";
+    var body =
+      "I'd like to start our free month of Candor.\n\n" +
+      "Firm: " + d.firm + "\n" +
+      "Contact: " + d.name + "\n" +
+      "Email: " + d.email + "\n" +
+      "Plan: " + d.plan.name + " (" + d.plan.range + ")\n" +
+      "Attorneys (seat limit): " + d.attorneys + "\n" +
+      (d.pms ? "Practice management: " + d.pms + "\n" : "") +
+      "\nStart the free month — nothing due yet.";
+    location.href = "mailto:jesse@candor.legal?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
+
+  document.getElementById("paybtn").addEventListener("click", function(){
+    var d = collect(), err = validate(d);
+    document.getElementById("err").textContent = err;
+    if (err) return;
+    var link = STRIPE_LINKS[d.plan.id];
+    if (link){
+      // Hosted Stripe checkout — pass the firm so the payment is easy to match.
+      location.href = link + (link.indexOf("?") > -1 ? "&" : "?") +
+        "client_reference_id=" + encodeURIComponent(d.firm) +
+        "&prefilled_email=" + encodeURIComponent(d.email);
+      return;
+    }
+    // Stripe not connected yet: ask for a secure checkout link by email rather
+    // than pretending to collect a card.
+    var subject = "Pay by card — " + d.firm + " (" + d.plan.name + ")";
+    var body =
+      "We're ready to pay the annual fee by card.\n\n" +
+      "Firm: " + d.firm + "\nContact: " + d.name + "\nEmail: " + d.email + "\n" +
+      "Plan: " + d.plan.name + "\nAttorneys: " + d.attorneys + "\n\n" +
+      "Please send a secure Stripe checkout link.";
+    location.href = "mailto:jesse@candor.legal?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
+
+  // If Stripe links exist, the "pay now" note is accurate as written; if not,
+  // say plainly what the button does today.
+  var anyStripe = Object.keys(STRIPE_LINKS).some(function(k){ return STRIPE_LINKS[k]; });
+  if (!anyStripe) paynote.textContent = "We'll email you a secure Stripe checkout link — no card is entered on this site.";
+})();
+</script>
+</body></html>
