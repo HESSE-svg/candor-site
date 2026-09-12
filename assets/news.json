@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-11T21:02:23.902Z",
+  "builtAt": "2026-09-12T04:42:34.911Z",
   "count": 10,
   "items": [
+    {
+      "title": "How To Create Authority Pages That Beat Competitors On Google And ChatGPT",
+      "link": "https://abovethelaw.com/2026/09/how-to-create-authority-pages-that-beat-competitors-on-google-and-chatgpt/",
+      "desc": "Your law firm’s ‘authority’ pages are there to showcase your expertise and establish your practice as a source of reliable information. The post How To Create Authority Pages That Beat Competitors…",
+      "date": "Fri, 11 Sep 2026 22:15:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2023/06/GettyImages-1258543820.jpg",
+      "source": "Above the Law",
+      "ts": 1789164900000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Introduction to writing effective AI legal prompts",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/writing-effective-legal-ai-prompts/",
+      "desc": "We've previously provided an overview of how large language models (LLMs) work, the benefits and limitations of these models, The post Introduction to writing effective AI legal prompts appeared…",
+      "date": "Fri, 11 Sep 2026 21:30:25 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/03/AdobeStock_273698365_GH-scaled-jpg-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1789162225000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "The Future Of Legal AI Isn't About AI",
       "link": "https://abovethelaw.com/2026/09/the-future-of-legal-ai-isnt-about-ai/",
@@ -41,20 +69,6 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "AI Has Entered The Courthouse…Are You Ready For It?",
-      "link": "https://www.myshingle.com/2026/09/ai-has-entered-the-courthouse-are-you-ready-for-it/",
-      "desc": "How should we read and evaluate opinions that may have been AI-assisted? The post AI Has Entered The Courthouse…Are You Ready For It? appeared first on Above the Law .",
-      "date": "Thu, 10 Sep 2026 19:13:00 +0000",
-      "img": "https://images.bannerbear.com/direct/y0aJ23zRDdqMxX4OGl/requests/000/161/980/066/KZA1qL8r0zlVGPwKQepakDXbM/41c905bfacc14334c06917e3069822d2d2a6a98b.png",
-      "source": "Above the Law",
-      "ts": 1789067580000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -122,20 +136,6 @@
       "img": "https://www.lawnext.com/wp-content/uploads/2026/09/jeff-jerr-thumb-lawnext.png",
       "source": "LawNext",
       "ts": 1788893673000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Chamelio Launches ‘Always On’ AI Agent Hub",
-      "link": "https://www.artificiallawyer.com/2026/09/08/chamelio-launches-always-on-ai-agent-hub/",
-      "desc": "Legal intelligence platform, Chamelio, has launched Agent Hub, which lets inhouse lawyers use a suite of ‘always-on AI agents’ that can work independently, monitor what",
-      "date": "Tue, 08 Sep 2026 16:01:05 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-08-at-16.22.24.png",
-      "source": "Artificial Lawyer",
-      "ts": 1788883265000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "3 days ago",
