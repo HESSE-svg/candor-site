@@ -254,9 +254,10 @@
       return;
     }
     // Hosted Stripe trial checkout: $0 today, 30-day free trial, then the annual
-    // fee. Pass the firm + attorney count (a reference Jesse can read at a glance)
-    // and prefill the email so the customer doesn't retype it.
-    var ref = (d.firm + " " + d.attorneys + "atty").replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 190);
+    // fee. client_reference_id carries "<plan>__<firm>__<Natty>" so the app's
+    // webhook can queue the signup with the plan/seat cap; the email is prefilled.
+    var firmSafe = d.firm.replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 120);
+    var ref = (d.plan.id + "__" + firmSafe + "__" + d.attorneys + "atty").slice(0, 190);
     location.href = link + (link.indexOf("?") > -1 ? "&" : "?") +
       "client_reference_id=" + encodeURIComponent(ref) +
       "&prefilled_email=" + encodeURIComponent(d.email);
