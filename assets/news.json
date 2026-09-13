@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-13T12:00:46.681Z",
+  "builtAt": "2026-09-13T16:25:58.585Z",
   "count": 10,
   "items": [
     {
@@ -54,7 +54,7 @@
       "ts": 1789143480000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": true
     },
@@ -68,7 +68,7 @@
       "ts": 1789133902000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -110,7 +110,7 @@
       "ts": 1788959703000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,7 +124,7 @@
       "ts": 1788958250000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
