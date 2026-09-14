@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=7">
+<link rel="stylesheet" href="/assets/styles.css?v=8">
 <style>
   .s-hero{max-width:780px;margin:0 auto;padding:78px 24px 96px;text-align:center}
   .s-hero h1{font-family:var(--f-serif);font-weight:400;font-size:clamp(36px,5.5vw,58px);line-height:1.08;color:var(--navy);letter-spacing:-.01em;margin:24px auto 0;max-width:16ch;text-wrap:balance}
@@ -35,24 +35,6 @@
   .video-frame{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--rule,#E7E1D8);border-radius:12px;overflow:hidden;background:#070a0e;box-shadow:0 34px 70px -34px rgba(11,18,28,.55)}
   .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
   @media(max-width:680px){.s-steps{grid-template-columns:1fr;gap:30px}.s-hero{padding:52px 22px 40px}.s-watch{padding:4px 18px 60px}}
-  /* dark roadmap band — a homepage echo of /plan */
-  .s-plan{background:#0c1526;border-top:1px solid #22344f;border-bottom:1px solid #22344f}
-  .s-plan .in{max-width:1000px;margin:0 auto;padding:66px 24px;text-align:center}
-  .s-plan .eye{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#5cc7a8;margin-bottom:14px}
-  .s-plan h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(26px,4vw,36px);color:#f3efea;margin:0 auto;max-width:20ch;text-wrap:balance;line-height:1.12}
-  .s-plan .sub{font-size:16px;color:#9fb0c9;max-width:46ch;margin:14px auto 0;line-height:1.55}
-  .s-plan .rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:36px auto 32px;max-width:960px}
-  .s-plan .ind{background:rgba(157,182,214,.04);border:1px solid #2c3d58;border-radius:10px;padding:16px 14px}
-  .s-plan .ind.live{border-color:#3f8f79;background:rgba(92,199,168,.06)}
-  .s-plan .ind h3{font-family:var(--f-serif);font-weight:400;font-size:18px;color:#f3efea;margin:0 0 4px}
-  .s-plan .ind .kit{font-size:11px;color:#7f90aa;margin:0 0 11px}
-  .s-plan .chip{display:inline-block;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
-  .s-plan .chip.on{color:#5cc7a8;border:1px solid #3f8f79}
-  .s-plan .chip.next{color:#d7a94e;border:1px solid #b98a3e}
-  .s-plan .chip.soon{color:#9fb0c9;border:1px solid #33496b}
-  .s-plan .btn-d{display:inline-block;font-size:15px;color:#f3efea;background:transparent;padding:12px 24px;border:1px solid #4a5f80;transition:background .15s,color .15s,border-color .15s}
-  .s-plan .btn-d:hover{background:#f3efea;color:#0c1526;border-color:#f3efea;text-decoration:none}
-  @media(max-width:680px){.s-plan .in{padding:50px 18px}}
 </style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -84,17 +66,17 @@
   <div class="s-step"><div class="num">03</div><h3>Prove</h3><p>Every use logged. The record builds itself.</p></div>
 </section>
 
-<section class="s-plan">
+<section class="band-dark">
   <div class="in">
     <div class="eye">The roadmap</div>
     <h2>One toolkit. Every profession that has to prove its work.</h2>
     <p class="sub">Candor is live for law firms today. The same governed workspace — screen, log, verify, sign off, report, policy — is on the way for the professions beside them.</p>
-    <div class="rail">
-      <div class="ind live"><h3>Law firms</h3><p class="kit">The full toolkit</p><span class="chip on">Live</span></div>
-      <div class="ind"><h3>Insurance</h3><p class="kit">The same toolkit</p><span class="chip next">Next</span></div>
-      <div class="ind"><h3>Financial advice</h3><p class="kit">The same toolkit</p><span class="chip next">Next</span></div>
-      <div class="ind"><h3>Accounting &amp; tax</h3><p class="kit">The same toolkit</p><span class="chip soon">Planned</span></div>
-      <div class="ind"><h3>Healthcare</h3><p class="kit">The same toolkit</p><span class="chip soon">Planned</span></div>
+    <div class="scards">
+      <div class="scard live"><h3>Law firms</h3><p class="kit">The full toolkit</p><span class="chip chip-live">Live</span></div>
+      <div class="scard"><h3>Insurance</h3><p class="kit">The same toolkit</p><span class="chip chip-next">Next</span></div>
+      <div class="scard"><h3>Financial advice</h3><p class="kit">The same toolkit</p><span class="chip chip-next">Next</span></div>
+      <div class="scard"><h3>Accounting &amp; tax</h3><p class="kit">The same toolkit</p><span class="chip chip-soon">Planned</span></div>
+      <div class="scard"><h3>Healthcare</h3><p class="kit">The same toolkit</p><span class="chip chip-soon">Planned</span></div>
     </div>
     <a class="btn-d" href="/plan">See the whole plan &rarr;</a>
   </div>

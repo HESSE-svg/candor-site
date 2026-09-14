@@ -254,3 +254,33 @@ footer p{max-width:42em}
 .nc.big .nc-body h3{font-size:clamp(24px,3.2vw,32px);line-height:1.14}
 .nc.big .nc-body p{font-size:15.5px;margin-top:12px}
 @media(max-width:720px){.nc.big{grid-template-columns:1fr}.nc.big .nc-fig{min-height:0;aspect-ratio:16/9}.nc.big .nc-body{padding:18px}}
+
+/* ── Roadmap accent · status chips + dark band (introduced on /plan) ─────────
+   The site's second accent, after oxblood: seal-green as a status/roadmap
+   signal, plus a recurring deep-navy "vision-mode" band. Used sparingly across
+   pages so it reads as an intentional accent, not decoration. */
+.chip{display:inline-block;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:999px;white-space:nowrap;line-height:1.5;vertical-align:middle}
+.chip-live{color:var(--seal);border:1px solid var(--seal)}
+.chip-next{color:var(--brass);border:1px solid var(--brass)}
+.chip-soon{color:var(--muted);border:1px solid var(--rule)}
+
+.band-dark{background:#0c1526;border-top:1px solid #22344f;border-bottom:1px solid #22344f}
+.band-dark .in{max-width:1000px;margin:0 auto;padding:66px 24px;text-align:center}
+.band-dark .eye{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#5cc7a8;margin-bottom:14px}
+.band-dark h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(26px,4vw,36px);color:#f3efea;margin:0 auto;max-width:22ch;text-wrap:balance;line-height:1.12}
+.band-dark .sub{font-size:16px;color:#9fb0c9;max-width:48ch;margin:14px auto 0;line-height:1.55}
+.band-dark .chip-live{color:#5cc7a8;border-color:#3f8f79}
+.band-dark .chip-next{color:#d7a94e;border-color:#b98a3e}
+.band-dark .chip-soon{color:#9fb0c9;border-color:#33496b}
+.band-dark .btn-d{display:inline-block;font-size:15px;color:#f3efea;background:transparent;padding:12px 24px;border:1px solid #4a5f80;transition:background .15s,color .15s,border-color .15s;margin-top:4px}
+.band-dark .btn-d:hover{background:#f3efea;color:#0c1526;border-color:#f3efea;text-decoration:none}
+
+.scards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:34px auto 30px;max-width:960px}
+.scard{background:rgba(157,182,214,.04);border:1px solid #2c3d58;border-radius:10px;padding:16px 14px;text-align:center}
+.scard.live{border-color:#3f8f79;background:rgba(92,199,168,.06)}
+.scard h3{font-family:var(--f-serif);font-weight:400;font-size:18px;color:#f3efea;margin:0 0 4px}
+.scard .kit{font-size:11px;color:#7f90aa;margin:0 0 11px}
+.scard .stat{font-family:var(--f-serif);font-size:32px;color:#f3efea;line-height:1.05;margin:0 0 6px}
+.scard .statlab{font-size:12.5px;color:#9fb0c9;line-height:1.45;margin:0}
+.chiprow{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:30px auto;max-width:660px}
+.band-dark .chiprow .chip{font-size:11px;padding:5px 12px;color:#cdd7e6;border-color:#33496b}
