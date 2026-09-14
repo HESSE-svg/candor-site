@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-14T05:04:51.820Z",
+  "builtAt": "2026-09-14T12:59:40.697Z",
   "count": 10,
   "items": [
+    {
+      "title": "Legora To Launch Ontology + AI Native Citator",
+      "link": "https://www.artificiallawyer.com/2026/09/14/legora-to-launch-ontology-ai-native-citator/",
+      "desc": "Legora is ramping up its legal research capabilities by offering 'a full ontology of law and an AI-native citator’. The move follows deals with Qura and",
+      "date": "Mon, 14 Sep 2026 10:33:26 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-14-at-11.21.42.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789382006000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Latham, GPUs and AI Sovereignty",
+      "link": "https://www.artificiallawyer.com/2026/09/14/latham-gpus-and-ai-sovereignty/",
+      "desc": "The more this site thinks about law firms training open weight models and renting their own GPUs, the less it seems to make sense. Here’s",
+      "date": "Mon, 14 Sep 2026 07:25:59 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-14-at-08.06.44.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789370759000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "How To Create Authority Pages That Beat Competitors On Google And ChatGPT",
       "link": "https://abovethelaw.com/2026/09/how-to-create-authority-pages-that-beat-competitors-on-google-and-chatgpt/",
@@ -96,7 +124,7 @@
       "ts": 1789040906000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -111,34 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Bloomberg Law's AI strategy puts interoperability ahead of interface",
-      "link": "https://legaltechnology.com/bloomberg-laws-ai-strategy-puts-interoperability-ahead-of-interface/",
-      "desc": "By Caroline Hill, editor, Legal IT Insider \"When you think about the overall strategy of Bloomberg and extending into workflows using our proprietary data and intelligence, that really is what, to…",
-      "date": "Wed, 09 Sep 2026 12:50:50 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/laptop-1024x280.png",
-      "source": "Legal IT Insider",
-      "ts": 1788958250000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "On LawNext: Casefleet Founder Jeff Kerr on Fact Management in the Age of AI",
-      "link": "https://www.lawnext.com/2026/09/on-lawnext-casefleet-founder-jeff-kerr-on-fact-management-in-the-age-of-ai.html",
-      "desc": "Chronologies have become one of legal tech's hottest categories, with a wave of AI startups promising to turn a messy evidentiary record into a structured timeline in minutes. Jeff Kerr and his…",
-      "date": "Tue, 08 Sep 2026 18:54:33 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/jeff-jerr-thumb-lawnext.png",
-      "source": "LawNext",
-      "ts": 1788893673000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
       "strong": true,
       "promo": false
     }
