@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-15T17:06:10.484Z",
+  "builtAt": "2026-09-15T21:27:49.818Z",
   "count": 10,
   "items": [
+    {
+      "title": "The AI Indemnity Arms Race Is Distracting Us From The Bigger Story",
+      "link": "https://abovethelaw.com/2026/09/the-ai-indemnity-arms-race-is-distracting-us-from-the-bigger-story/",
+      "desc": "Indemnities matter, but they represent only one clause in a much larger governance framework. The post The AI Indemnity Arms Race Is Distracting Us From The Bigger Story appeared first on Above…",
+      "date": "Tue, 15 Sep 2026 20:44:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/05/GettyImages-2223784896-1024x683.jpg",
+      "source": "Above the Law",
+      "ts": 1789505040000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "How do legal professionals effectively use AI for legal research?",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/how-to-effectively-use-ai-for-legal-research/",
+      "desc": "Reviewed by Kelly Griffith, Sr. Specialist Legal Editor, Thomson Reuters Artificial intelligence (AI) offers speed and accuracy, helping lawyers The post How do legal professionals effectively use…",
+      "date": "Tue, 15 Sep 2026 16:22:34 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2025/10/AdobeStock_165176766-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1789489354000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Webinar replay: Box's Tara Daisy on AI, content sprawl and connected legal workflows",
       "link": "https://legaltechnology.com/webinar-replay-boxs-tara-daisy-on-ai-content-sprawl-and-connected-legal-workflows/",
@@ -68,7 +96,7 @@
       "ts": 1789413180000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,7 +110,7 @@
       "ts": 1789410720000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -101,20 +129,6 @@
       "promo": false
     },
     {
-      "title": "Legal AI Needs An Escalation Layer",
-      "link": "https://abovethelaw.com/2026/09/legal-ai-needs-an-escalation-layer/",
-      "desc": "The legal profession has spent considerable energy teaching AI to answer. The next phase requires teaching it when an answer is not enough. The post Legal AI Needs An Escalation Layer appeared…",
-      "date": "Mon, 14 Sep 2026 15:33:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2017/09/200143_96965466.jpeg",
-      "source": "Above the Law",
-      "ts": 1789399980000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Morgan Morgan Commits to $1 Billion For Legal Tech + AI",
       "link": "https://www.artificiallawyer.com/2026/09/14/morgan-morgan-commits-to-1-billion-for-legal-tech-ai/",
       "desc": "Morgan Morgan, the largest plaintiff law firm in America, has announced it will spend at least $1 billion on legal tech and AI over",
@@ -124,20 +138,6 @@
       "ts": 1789394493000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Legora To Launch Ontology + AI Native Citator",
-      "link": "https://www.artificiallawyer.com/2026/09/14/legora-to-launch-ontology-ai-native-citator/",
-      "desc": "Legora is ramping up its legal research capabilities by offering 'a full ontology of law and an AI-native citator’. The move follows deals with Qura and",
-      "date": "Mon, 14 Sep 2026 10:33:26 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-14-at-11.21.42.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789382006000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "Yesterday",
       "strong": true,
       "promo": false
