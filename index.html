@@ -34,6 +34,13 @@
   .s-watchlede{font-size:16px;color:var(--muted);max-width:46ch;margin:0 auto 26px;line-height:1.5}
   .video-frame{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--rule,#E7E1D8);border-radius:12px;overflow:hidden;background:#070a0e;box-shadow:0 34px 70px -34px rgba(11,18,28,.55)}
   .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+  .fs-btn{position:absolute;bottom:12px;right:12px;z-index:2;display:inline-flex;align-items:center;gap:7px;font-family:Inter,system-ui,-apple-system,sans-serif;font-size:12.5px;font-weight:500;line-height:1;color:#FAF8F5;background:rgba(7,10,14,.62);border:1px solid rgba(250,248,245,.28);border-radius:8px;padding:8px 11px;cursor:pointer;opacity:.55;transition:opacity .15s,background .15s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+  .video-frame:hover .fs-btn,.fs-btn:focus-visible{opacity:1}
+  .fs-btn:hover{background:rgba(7,10,14,.88)}
+  .fs-btn svg{width:14px;height:14px;display:block}
+  .video-frame:fullscreen{width:100vw;height:100vh;aspect-ratio:auto;border:0;border-radius:0;background:#070a0e}
+  .video-frame:-webkit-full-screen{width:100vw;height:100vh;border:0;border-radius:0;background:#070a0e}
+  .video-frame:fullscreen .fs-btn{bottom:20px;right:20px;opacity:1}
   @media(max-width:680px){.s-steps{grid-template-columns:1fr;gap:30px}.s-hero{padding:52px 22px 40px}.s-watch{padding:36px 18px 60px}}
   /* static risk callout in the hero + light homepage bands (audit D1.1/D1.2/D1.4/FIT) */
   .s-risk{max-width:44ch;margin:22px auto 0;font-size:15.5px;line-height:1.55;color:var(--ink);text-align:left;border-left:3px solid var(--ox);padding:4px 0 4px 16px}
@@ -99,7 +106,30 @@
   <div class="mono eyebrow">See it in 60 seconds</div>
   <h2>Watch Candor work.</h2>
   <p class="s-watchlede">Screen, draft, verify, log — the whole loop, on your firm's own model, with the record building itself.</p>
-  <div class="video-frame"><iframe src="/walkthrough?v=3" title="Candor product walkthrough" loading="lazy" allow="autoplay"></iframe></div>
+  <div class="video-frame">
+    <iframe src="/walkthrough?v=3" title="Candor product walkthrough" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <button type="button" class="fs-btn" aria-label="Play the walkthrough full screen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+      <span class="fs-label">Full screen</span>
+    </button>
+  </div>
+  <script>
+  (function(){
+    var frame=document.querySelector('.s-watch .video-frame');if(!frame)return;
+    var btn=frame.querySelector('.fs-btn');if(!btn)return;
+    var label=btn.querySelector('.fs-label');
+    function current(){return document.fullscreenElement||document.webkitFullscreenElement;}
+    btn.addEventListener('click',function(){
+      try{
+        if(current()){(document.exitFullscreen||document.webkitExitFullscreen).call(document);}
+        else{(frame.requestFullscreen||frame.webkitRequestFullscreen).call(frame);}
+      }catch(e){}
+    });
+    function sync(){var on=current()===frame;if(label)label.textContent=on?'Exit full screen':'Full screen';btn.setAttribute('aria-label',on?'Exit full screen':'Play the walkthrough full screen');}
+    document.addEventListener('fullscreenchange',sync);
+    document.addEventListener('webkitfullscreenchange',sync);
+  })();
+  </script>
   <a class="btn" href="/start" style="margin-top:26px">Start free for a month</a>
 </section>
 
