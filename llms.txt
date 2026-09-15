@@ -1,0 +1,20 @@
+# Candor
+
+> AI governance and audit trails for U.S. law firms. Candor is the AI workspace a firm works in, on the firm's own connected model: it screens client data before it reaches a model, logs every AI use to the matter, verifies citations, captures attorney sign-off, and produces the append-only, tamper-evident record a malpractice carrier asks for at renewal. Flat annual fee priced on attorney count ($3,000–$20,000/yr); staff seats are free. Pre-launch, with a one-month free trial. Founded by Jesse Hollar, from an insurance and claims background.
+
+## Core pages
+- [Home](https://candor.legal/): what Candor is and the 60-second product walkthrough.
+- [Product](https://candor.legal/product): how it works — screen, log, verify, sign off, report, policy.
+- [Pricing](https://candor.legal/pricing): flat annual fee by attorney count; staff seats free; one month free.
+- [Security](https://candor.legal/security): hash-chained, encrypted records; the firm's own model; full export.
+- [About](https://candor.legal/about): the founder and why Candor exists.
+
+## Context
+- [Why now](https://candor.legal/why-now): carriers, bar regulators, and courts are all beginning to ask how firms use AI (ABA Formal Opinion 512; the $110,204 Oregon sanction for fabricated citations).
+- [Our plan](https://candor.legal/plan): the same governed toolkit, mapped across the professions that must prove their work.
+- [Free tools](https://candor.legal/resources): a jurisdiction AI-rules checker and an AI-hallucination sanctions tracker, free and public.
+
+## Compare
+- [vs manual tracking](https://candor.legal/vs/manual-tracking): spreadsheets vs a hash-chained record.
+- [vs Credo AI](https://candor.legal/vs/credo-ai): enterprise AI governance vs law-firm-specific governance.
+- [vs Lenavix](https://candor.legal/vs/lenavix): vendor due diligence vs a firm's own-use governance.
