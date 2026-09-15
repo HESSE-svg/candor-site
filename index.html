@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Candor, AI governance and audit trails for law firms</title>
-<meta name="description" content="Candor gives a law firm one connected record of how it uses AI: confidentiality screening, a per matter use log, verification, attorney sign off, and a report you can hand your malpractice carrier.">
+<meta name="description" content="One connected, tamper-evident record of how a law firm uses AI: screening, a per-matter use log, verification, attorney sign-off, and a carrier-ready report.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -45,6 +45,27 @@
   .duty{font-size:14px;color:var(--muted);border-left:2px solid var(--seal);padding-left:12px;line-height:1.45}
   .duty b{color:var(--navy);font-weight:600;display:block}
   @media(max-width:640px){.duties{grid-template-columns:1fr}}
+  /* audit round 2: pricing-vs-premium line, BYO-model callout, compare cards, founder + companion */
+  .s-premium{max-width:44ch;margin:12px auto 0;font-size:13.5px;line-height:1.5;color:var(--muted);text-align:left;padding-left:19px}
+  .s-premium a{color:var(--ox)}
+  .s-model{max-width:640px;margin:28px auto 0;font-size:14.5px;color:var(--muted);line-height:1.55;text-align:center;padding:0 24px}
+  .s-model b{color:var(--navy);font-weight:600}
+  .cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;max-width:960px;margin:26px auto 0;text-align:left}
+  .cmpcard{display:block;border:1px solid var(--rule);background:var(--surface);border-radius:10px;padding:14px 16px;text-decoration:none;transition:border-color .15s}
+  .cmpcard:hover{border-color:var(--navy);text-decoration:none}
+  .cmpcard b{display:block;color:var(--navy);font-size:14px}
+  .cmpcard span{display:block;color:var(--muted);font-size:12.5px;margin-top:3px;line-height:1.4}
+  .founder-home{width:84px;height:84px;border-radius:50%;object-fit:cover;display:block;margin:14px auto 8px}
+  .founder-cap{font-size:13px;color:var(--muted);margin:0 auto 4px;max-width:40ch}
+  .founder-cap a{color:var(--navy);font-weight:600}
+  .comp-ill{max-width:400px;margin:24px auto 0;border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--surface);text-align:left}
+  .comp-top{display:flex;align-items:center;gap:6px;background:var(--navy);padding:8px 12px}
+  .comp-top i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.28)}
+  .comp-url{margin-left:8px;font-family:var(--f-mono);font-size:10.5px;color:rgba(255,255,255,.6)}
+  .comp-body{padding:14px;position:relative;min-height:76px}
+  .comp-line{height:8px;background:var(--soft);border-radius:3px;margin-bottom:9px}
+  .comp-pill{position:absolute;right:12px;bottom:12px;display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:#fff;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:600}
+  .comp-pill .ok{color:var(--seal)}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Candor","url":"https://candor.legal","logo":"https://candor.legal/og.png","description":"AI governance and audit trails for law firms: confidentiality screening, a per-matter AI use log, verification, attorney sign-off, and the report a malpractice carrier asks for.","founder":{"@type":"Person","name":"Jesse Hollar"},"sameAs":["https://www.instagram.com/candor.legal","https://www.linkedin.com/in/jesse-hollar-084999283"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Candor","description":"An AI governance workspace for U.S. law firms: screen client data before it reaches a model, log every AI use to the matter, verify citations, capture attorney sign-off, and produce the record a malpractice carrier asks for at renewal. Runs on the firm's own model.","brand":{"@type":"Brand","name":"Candor"},"audience":{"@type":"Audience","audienceType":"U.S. law firms"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"3000","highPrice":"20000","offerCount":"5","url":"https://candor.legal/pricing"}}</script>
@@ -70,6 +91,7 @@
   <h1>Your team is already using AI. Candor is the one that <em>proves the work</em>.</h1>
   <p class="s-lede">An AI workspace for law firms, on your own model. Screened, logged, and yours.</p>
   <p class="s-risk">A federal court sanctioned two lawyers <strong>$110,204</strong> for fabricated citations. Your carrier is already asking about AI. Candor builds the record before they ask.</p>
+  <p class="s-premium">Candor costs a <a href="/pricing">fraction</a> of one year of your malpractice premium — and it produces the documentation your carrier is starting to ask for at renewal.</p>
   <a class="btn s-cta" href="#watch">Watch the 60-second walkthrough</a>
 </section>
 
@@ -81,11 +103,29 @@
   <a class="btn" href="/start" style="margin-top:26px">Start free for a month</a>
 </section>
 
+<section class="hband">
+  <div class="mono eyebrow">Where you already work</div>
+  <h2>Works inside ChatGPT, Claude, Gemini, and Copilot.</h2>
+  <p>No separate app to remember. A browser companion rides along in the AI tools your team already uses — screen before you paste, check the answer's citations, and log the use in one click.</p>
+  <div class="comp-ill" role="img" aria-label="Illustration of the Candor companion panel inside an AI chat tool">
+    <div class="comp-top"><i></i><i></i><i></i><span class="comp-url">chatgpt.com</span></div>
+    <div class="comp-body">
+      <div class="comp-line" style="width:82%"></div>
+      <div class="comp-line" style="width:64%"></div>
+      <div class="comp-line" style="width:73%"></div>
+      <span class="comp-pill"><span class="ok">✓</span> Candor · logged</span>
+    </div>
+  </div>
+  <p style="margin-top:14px;font-size:13px"><a href="/product" style="color:var(--ox)">See the companion in action →</a></p>
+</section>
+
 <section class="s-steps">
   <div class="s-step"><div class="num">01</div><h3>Screen</h3><p>Client details never reach the model.</p></div>
   <div class="s-step"><div class="num">02</div><h3>Work</h3><p>Draft and research on your firm's own model.</p></div>
   <div class="s-step"><div class="num">03</div><h3>Prove</h3><p>Every use logged. The record builds itself.</p></div>
 </section>
+
+<p class="s-model">Runs on your firm's own AI account. <b>No per-use markup, no token metering</b> — you already pay for ChatGPT, and Candor doesn't charge you for it again.</p>
 
 <section class="hband">
   <div class="mono eyebrow">Why now</div>
@@ -137,9 +177,21 @@
 <section class="hband">
   <div class="mono eyebrow">Pre-launch, on purpose</div>
   <h2>Why trust a pre-launch product with the record?</h2>
-  <p>The record is hash-chained and encrypted. Your data exports in full, with the chain intact, with or without us. And the founder comes from the insurance side of the table — the side that examines firms.</p>
+  <img class="founder-home" src="/assets/founder-jesse.jpg" alt="Jesse Hollar, founder of Candor" width="84" height="84" loading="lazy">
+  <p class="founder-cap"><a href="/about">Jesse Hollar</a>, founder — from the insurance side of the table, the side that examines firms.</p>
+  <p>The record is hash-chained and encrypted. Your data exports in full, with the chain intact, with or without us — so the pre-launch stage costs you nothing you can't take back.</p>
   <div class="btnrow" style="justify-content:center"><a class="btn ghost" href="/security">How the record holds up</a><a class="btn ghost" href="/about">Who’s building it</a></div>
-  <p style="margin-top:20px;font-size:13.5px;color:var(--muted)">How Candor compares: <a href="/vs/manual-tracking">manual tracking</a> · <a href="/vs/credo-ai">Credo AI</a> · <a href="/vs/lenavix">Lenavix</a></p>
+</section>
+
+<section class="hband" style="border-top:0;padding-top:0">
+  <div class="mono eyebrow">How Candor compares</div>
+  <div class="cmp">
+    <a class="cmpcard" href="/vs/manual-tracking"><b>vs manual tracking</b><span>A spreadsheet can't prove anything.</span></a>
+    <a class="cmpcard" href="/vs/credo-ai"><b>vs Credo AI</b><span>Enterprise governance, not law-firm workflow.</span></a>
+    <a class="cmpcard" href="/vs/lenavix"><b>vs Lenavix</b><span>Vendor diligence, not your own AI use.</span></a>
+    <a class="cmpcard" href="/vs/roval"><b>vs Roval</b><span>Enterprise agent governance, not law-firm workflow.</span></a>
+    <a class="cmpcard" href="/vs/intapp-celeste"><b>vs Intapp Celeste</b><span>Firm-wide and sales-led — not flat and self-serve.</span></a>
+  </div>
 </section>
 
 <section class="s-close">
