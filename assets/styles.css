@@ -203,6 +203,8 @@ footer p{max-width:42em}
 .rec-art{display:flex;justify-content:center}
 .rec-art svg{width:100%;max-width:430px;height:auto;filter:drop-shadow(0 30px 48px rgba(27,42,65,.2))}
 .rec-band.flip .rec-copy{order:2}
+/* footer brand seal (site-wide engraving accent) */
+.brand-seal{display:inline-block;width:26px;height:26px;vertical-align:-6px;margin-right:9px;background:url(/assets/seal-sm.svg) center/contain no-repeat}
 @media(max-width:760px){.rec-band{grid-template-columns:1fr;gap:28px;padding-bottom:44px;text-align:center}.rec-copy{text-align:center}.rec-copy p{margin-left:auto;margin-right:auto}.rec-band.flip .rec-copy{order:0}}
 
 /* 404 */
