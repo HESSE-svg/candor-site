@@ -106,6 +106,27 @@
   .plog{display:flex;align-items:center;gap:7px;font-size:11px;color:#A9C3B9;font-family:var(--f-mono)}
   .pcheck{flex:none;width:15px;height:15px;border-radius:50%;background:var(--seal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:9px}
   .pshot-cap{font-size:12.5px;color:var(--faint);text-align:center;margin:12px auto 0;font-family:var(--f-mono);letter-spacing:.01em}
+  /* Candor Ask interface screenshot (the workspace, not a panel bolted onto ChatGPT) */
+  .ask-shot{max-width:540px;margin:28px auto 0;border-radius:14px;overflow:hidden;background:var(--surface);border:1px solid var(--rule);text-align:left;box-shadow:0 1px 2px rgba(27,42,65,.05),0 34px 64px -34px rgba(27,42,65,.4);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+  .ask-shot:hover{transform:translateY(-4px);box-shadow:0 1px 2px rgba(27,42,65,.06),0 48px 84px -36px rgba(27,42,65,.46)}
+  .ask-top{display:flex;align-items:center;gap:8px;background:var(--navy);padding:11px 15px}
+  .ask-top .abrand{font-family:var(--f-serif);font-size:17px;color:#fff}
+  .ask-top .abrand i{color:var(--ox);font-style:normal}
+  .ask-model{margin-left:auto;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.04em;color:#A9C3B9;display:inline-flex;align-items:center;gap:6px}
+  .ask-model::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--seal);box-shadow:0 0 0 3px rgba(47,93,80,.3)}
+  .ask-tabs{display:flex;background:#F1EDE6;border-bottom:1px solid var(--rule);padding:0 12px}
+  .ask-tab{font-family:var(--f-sans);font-size:11.5px;font-weight:500;color:var(--muted);padding:9px 13px;border-bottom:2px solid transparent}
+  .ask-tab.on{color:var(--navy);border-bottom-color:var(--ox);font-weight:600}
+  .ask-body{padding:16px;background:linear-gradient(180deg,#FCFBF8,#F6F3ED);min-height:196px;display:flex;flex-direction:column;gap:11px}
+  .ask-you{align-self:flex-end;max-width:80%;background:var(--navy);color:#fff;border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:12.5px;line-height:1.5}
+  .ask-ai{align-self:flex-start;max-width:88%;background:#fff;border:1px solid var(--rule);border-radius:12px 12px 12px 3px;padding:10px 12px;font-size:12.5px;line-height:1.55;color:var(--ink)}
+  .ask-ai .atag{display:block;font-family:var(--f-mono);font-size:8.5px;letter-spacing:.06em;color:var(--faint);margin-bottom:5px}
+  .ask-foot{border-top:1px solid var(--rule);background:var(--surface);padding:11px 13px;display:flex;flex-direction:column;gap:9px}
+  .ask-input{display:flex;align-items:center;gap:8px}
+  .ask-field{flex:1;font-size:11.5px;color:var(--faint);background:var(--soft);border:1px solid var(--rule);border-radius:8px;padding:8px 11px}
+  .ask-send{background:var(--ox);color:#fff;font-size:11px;font-weight:600;font-family:var(--f-sans);border-radius:7px;padding:8px 13px}
+  .ask-status{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:10px;color:var(--seal)}
+  .ask-status .achk{flex:none;width:15px;height:15px;border-radius:50%;background:var(--seal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:9px}
   @media(max-width:560px){.pbody{grid-template-columns:1fr}.pchat{border-right:0;border-bottom:1px solid var(--rule)}}
 
   /* step cards with icons */
@@ -220,30 +241,22 @@
 </section>
 
 <section class="hband">
-  <div class="mono eyebrow">Where you already work</div>
-  <h2>Works inside ChatGPT, Claude, Gemini, and Copilot.</h2>
-  <p>No separate app to remember. A browser companion rides along in the AI tools your team already uses — screen before you paste, check the answer's citations, and log the use in one click.</p>
-  <div class="pshot reveal" role="img" aria-label="The Candor companion inside ChatGPT: it catches a client name, SSN, and date in a draft before the message is sent, offers a redacted version, and logs the use to matter 24-0417.">
-    <div class="pchrome"><span class="pdot"></span><span class="pdot"></span><span class="pdot"></span><div class="paddr">chatgpt.com</div></div>
-    <div class="pbody">
-      <div class="pchat">
-        <div class="pmsg"><div class="pavatar">JR</div><div class="pbubble">Draft a demand letter for <mark>Jordan Rivera</mark>, SSN <mark class="pmono">•••-••-6789</mark>, re: the <mark>03/14/2026</mark> collision on Route 9.</div></div>
-        <div class="pmsg"><div class="pavatar" style="background:var(--seal)">C</div><div class="pbubble" style="color:var(--muted)">Paused — Candor caught client details in that message before it left your browser.</div></div>
-      </div>
-      <aside class="ppanel">
-        <div class="ppanel-head"><span class="pmark">C</span> Candor <span class="pstatus">screening</span></div>
-        <div class="pflag">3 client details caught before send</div>
-        <ul class="pchips">
-          <li><span class="pk">Name</span> Jordan Rivera</li>
-          <li><span class="pk">SSN</span> •••-••-6789</li>
-          <li><span class="pk">Date</span> 03/14/2026</li>
-        </ul>
-        <div class="pbtn">Paste redacted version</div>
-        <div class="plog"><span class="pcheck">✓</span> Logged · matter&nbsp;#24-0417</div>
-      </aside>
+  <div class="mono eyebrow">The interface</div>
+  <h2>Your firm's AI, inside Candor.</h2>
+  <p>Plug in your firm's own model and use it right here. Every prompt is screened before it reaches the model, and the use logs itself to the matter — no trip to ChatGPT, no pasting, no separate app to remember.</p>
+  <div class="ask-shot reveal" role="img" aria-label="The Candor workspace: an attorney asks their firm's own model to draft a demand letter on the Wilson matter; Candor screens the prompt, returns the draft on the firm's model, and logs the use to matter 24-0417 — without leaving Candor.">
+    <div class="ask-top"><span class="abrand">Candor<i>.</i></span><span class="ask-model">on your firm's model</span></div>
+    <div class="ask-tabs"><span class="ask-tab on">Ask</span><span class="ask-tab">Screen</span><span class="ask-tab">Check</span></div>
+    <div class="ask-body">
+      <div class="ask-you">Draft a demand letter for the Wilson matter — re: the 03/14 collision on Route 9.</div>
+      <div class="ask-ai"><span class="atag">YOUR MODEL · SCREENED · MATTER 24-0417</span>Re: Wilson — demand for settlement. Counsel: This firm represents Mr. Wilson for injuries sustained in the March 14 collision. We write to demand…</div>
+    </div>
+    <div class="ask-foot">
+      <div class="ask-input"><span class="ask-field">Ask your model…</span><span class="ask-send">Send</span></div>
+      <div class="ask-status"><span class="achk">✓</span> Screened · logged to matter&nbsp;#24-0417</div>
     </div>
   </div>
-  <p class="pshot-cap">Screening runs in your browser — nothing is stored. <a href="/product#demo" style="color:var(--ox)">Try the companion live &rarr;</a></p>
+  <p class="pshot-cap">Prefer ChatGPT, Claude, or Clio directly? The same panel rides along there too. <a href="/product#demo" style="color:var(--ox)">Try the live screener &rarr;</a></p>
 </section>
 
 <section class="s-steps">
