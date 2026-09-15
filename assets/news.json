@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-14T21:53:53.111Z",
+  "builtAt": "2026-09-15T05:01:12.994Z",
   "count": 10,
   "items": [
     {
@@ -45,6 +45,20 @@
       "promo": false
     },
     {
+      "title": "Morgan Morgan pledges $1bn tech spend over 10 years",
+      "link": "https://legaltechnology.com/morgan-morgan-pledges-1bn-tech-spend-over-10-years/",
+      "desc": "US personal injury giant Morgan Morgan announced today (14 September) that it has committed to spend at least $1bn on legal technology and artificial intelligence over the next decade, [] The post…",
+      "date": "Mon, 14 Sep 2026 16:11:12 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/morgan-morgan.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1789402272000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": false,
+      "promo": false
+    },
+    {
       "title": "Legal AI Needs An Escalation Layer",
       "link": "https://abovethelaw.com/2026/09/legal-ai-needs-an-escalation-layer/",
       "desc": "The legal profession has spent considerable energy teaching AI to answer. The next phase requires teaching it when an answer is not enough. The post Legal AI Needs An Escalation Layer appeared…",
@@ -54,48 +68,6 @@
       "ts": 1789399980000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Morgan Morgan Commits to $1 Billion For Legal Tech + AI",
-      "link": "https://www.artificiallawyer.com/2026/09/14/morgan-morgan-commits-to-1-billion-for-legal-tech-ai/",
-      "desc": "Morgan Morgan, the largest plaintiff law firm in America, has announced it will spend at least $1 billion on legal tech and AI over",
-      "date": "Mon, 14 Sep 2026 14:01:33 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-14-at-14.43.46.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789394493000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Legora To Launch Ontology + AI Native Citator",
-      "link": "https://www.artificiallawyer.com/2026/09/14/legora-to-launch-ontology-ai-native-citator/",
-      "desc": "Legora is ramping up its legal research capabilities by offering 'a full ontology of law and an AI-native citator’. The move follows deals with Qura and",
-      "date": "Mon, 14 Sep 2026 10:33:26 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-14-at-11.21.42.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789382006000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Latham, GPUs and AI Sovereignty",
-      "link": "https://www.artificiallawyer.com/2026/09/14/latham-gpus-and-ai-sovereignty/",
-      "desc": "The more this site thinks about law firms training open weight models and renting their own GPUs, the less it seems to make sense. Here’s",
-      "date": "Mon, 14 Sep 2026 07:25:59 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-14-at-08.06.44.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789370759000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "Today",
       "strong": true,
       "promo": false
@@ -139,6 +111,34 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "4 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Casepoint Launches Casepoint IQ, An AI Framework Spanning Its Full Platform, from New Autonomous Agents and Assistive AI to Legacy Predictive Coding",
+      "link": "https://www.lawnext.com/2026/09/casepoint-launches-casepoint-iq-an-ai-framework-spanning-its-full-platform-from-new-autonomous-agents-and-assistive-ai-to-legacy-predictive-coding.html",
+      "desc": "Calling it the “intelligence foundation” of its platform, Casepoint today launched Casepoint IQ, a suite of tools within a single AI framework that spans the company’s products for e-discovery,…",
+      "date": "Wed, 09 Sep 2026 13:15:03 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Casepoint-IQ-Featured-169.png",
+      "source": "LawNext",
+      "ts": 1788959703000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "5 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "On LawNext: Casefleet Founder Jeff Kerr on Fact Management in the Age of AI",
+      "link": "https://www.lawnext.com/2026/09/on-lawnext-casefleet-founder-jeff-kerr-on-fact-management-in-the-age-of-ai.html",
+      "desc": "Chronologies have become one of legal tech's hottest categories, with a wave of AI startups promising to turn a messy evidentiary record into a structured timeline in minutes. Jeff Kerr and his…",
+      "date": "Tue, 08 Sep 2026 18:54:33 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/jeff-jerr-thumb-lawnext.png",
+      "source": "LawNext",
+      "ts": 1788893673000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "6 days ago",
       "strong": true,
       "promo": false
     }
