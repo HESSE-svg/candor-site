@@ -36,6 +36,14 @@
   .track-stat{border:1px solid var(--rule);border-left:4px solid var(--navy);background:var(--soft);border-radius:8px;padding:18px 22px;margin-top:var(--s2)}
   .track-stat .big{font-family:var(--f-serif);font-size:34px;color:var(--navy);line-height:1}
 </style>
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({
+    projectKey: 'hck_pk_43IA1CGD1lQ8Z6O1s7gsyBwGcxwWwjnA',
+    install: { agent: 'claude-code' },
+    requestBatching: false,
+  });
+</script>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">

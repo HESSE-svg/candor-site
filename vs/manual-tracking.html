@@ -21,6 +21,14 @@
 {"@type":"Question","name":"Why isn't a spreadsheet enough to track AI use?","acceptedAnswer":{"@type":"Answer","text":"A spreadsheet can be edited or back-dated after the fact, so it proves what someone typed, not what happened. Candor's record is append-only and hash-chained: any edit, deletion, or reordering is detectable, which is what makes it credible to a malpractice carrier or a court."}},
 {"@type":"Question","name":"We already log AI use by hand. What does Candor add?","acceptedAnswer":{"@type":"Answer","text":"It captures the use at the point it happens instead of relying on memory, screens client data before it reaches a model, checks cited cases, records the attorney sign-off, and produces the carrier-renewal report from the same data — none of which a spreadsheet does."}}
 ]}</script>
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({
+    projectKey: 'hck_pk_43IA1CGD1lQ8Z6O1s7gsyBwGcxwWwjnA',
+    install: { agent: 'claude-code' },
+    requestBatching: false,
+  });
+</script>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">

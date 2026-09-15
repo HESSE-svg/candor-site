@@ -57,6 +57,14 @@
     .halo{animation:none;opacity:.6}
   }
 </style>
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({
+    projectKey: 'hck_pk_43IA1CGD1lQ8Z6O1s7gsyBwGcxwWwjnA',
+    install: { agent: 'claude-code' },
+    requestBatching: false,
+  });
+</script>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">

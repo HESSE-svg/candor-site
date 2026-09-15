@@ -232,6 +232,14 @@ function page(items, builtAt) {
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css?v=8">
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({
+    projectKey: 'hck_pk_43IA1CGD1lQ8Z6O1s7gsyBwGcxwWwjnA',
+    install: { agent: 'claude-code' },
+    requestBatching: false,
+  });
+</script>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">

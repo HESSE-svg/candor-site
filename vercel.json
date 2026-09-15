@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:l([a-z0-9])",
+      "destination": "/?utm_source=heycatch&utm_campaign=:l",
+      "permanent": false
+    }
+  ]
 }
