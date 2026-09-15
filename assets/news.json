@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-15T11:52:57.736Z",
+  "builtAt": "2026-09-15T17:06:10.484Z",
   "count": 10,
   "items": [
+    {
+      "title": "Webinar replay: Box's Tara Daisy on AI, content sprawl and connected legal workflows",
+      "link": "https://legaltechnology.com/webinar-replay-boxs-tara-daisy-on-ai-content-sprawl-and-connected-legal-workflows/",
+      "desc": "Legal IT Insider recently hosted a webinar with Tara Daisy, managing director for legal at Box and former director of data delivery at Cooley, to discuss how law firms are [] The post Webinar…",
+      "date": "Tue, 15 Sep 2026 13:21:29 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Feature-image-webinar-1.png",
+      "source": "Legal IT Insider",
+      "ts": 1789478489000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
+    {
+      "title": "From AI users to builders: Akerman hires first director of AI development",
+      "link": "https://legaltechnology.com/from-ai-users-to-builders-akerman-hires-first-director-of-ai-development/",
+      "desc": "By Joanne Harris US firm Akerman has appointed its first director of AI development, hiring Charles Zerner from Texas firm Munck Wilson Mandala. Zerner, originally a litigator before moving into…",
+      "date": "Tue, 15 Sep 2026 12:57:36 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Akerman-1024x280.png",
+      "source": "Legal IT Insider",
+      "ts": 1789477056000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Ex-Simmons Solutions chief joins Purple to help law firms monetise AI , Exclusive interview",
       "link": "https://legaltechnology.com/ex-simmons-solutions-chief-joins-purple-to-help-law-firms-monetise-ai-exclusive-interview/",
@@ -68,7 +96,7 @@
       "ts": 1789404318000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,7 +110,7 @@
       "ts": 1789399980000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -96,7 +124,7 @@
       "ts": 1789394493000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -111,34 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Introduction to writing effective AI legal prompts",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/writing-effective-legal-ai-prompts/",
-      "desc": "We've previously provided an overview of how large language models (LLMs) work, the benefits and limitations of these models, The post Introduction to writing effective AI legal prompts appeared…",
-      "date": "Fri, 11 Sep 2026 21:30:25 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/03/AdobeStock_273698365_GH-scaled-jpg-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1789162225000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "How AI is learning to work like a senior associate",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/how-ai-is-learning-to-work-like-a-senior-associate/",
-      "desc": "General-purpose large language models can already write code, summarize a dense article, or hold a nuanced conversation. But legal work The post How AI is learning to work like a senior associate…",
-      "date": "Thu, 10 Sep 2026 19:10:37 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/09/AdobeStock_375890070-Large-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1789067437000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "4 days ago",
       "strong": true,
       "promo": false
     }
