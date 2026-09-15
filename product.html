@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=10">
+<link rel="stylesheet" href="/assets/styles.css?v=11">
 <script type="module">
   import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
   analytics.init({
@@ -62,8 +62,26 @@
   </div>
 </section>
 
+<section class="wrap">
+  <div class="mono eyebrow">Candor is the AI</div>
+  <h2>Your team uses AI inside Candor.</h2>
+  <p class="sectionlede">Plug in your firm's own model once. From then on your team asks it right here — every prompt screened before it reaches the model, every use logged to the matter, the record growing on its own. No trip to ChatGPT, no pasting, nothing to remember.</p>
+  <div class="ask-shot reveal" role="img" aria-label="The Candor workspace: an attorney asks the firm's own model to draft a demand letter on the Wilson matter; Candor screens the prompt, returns the draft on the firm's model, and logs the use to matter 24-0417.">
+    <div class="ask-top"><span class="abrand">Candor<i>.</i></span><span class="ask-model">on your firm's model</span></div>
+    <div class="ask-tabs"><span class="ask-tab on">Ask</span><span class="ask-tab">Screen</span><span class="ask-tab">Check</span></div>
+    <div class="ask-body">
+      <div class="ask-you">Draft a demand letter for the Wilson matter — re: the 03/14 collision on Route 9.</div>
+      <div class="ask-ai"><span class="atag">YOUR MODEL · SCREENED · MATTER 24-0417</span>Re: Wilson — demand for settlement. Counsel: This firm represents Mr. Wilson for injuries sustained in the March 14 collision. We write to demand…</div>
+    </div>
+    <div class="ask-foot">
+      <div class="ask-input"><span class="ask-field">Ask your model…</span><span class="ask-send">Send</span></div>
+      <div class="ask-status"><span class="achk">✓</span> Screened · logged to matter&nbsp;#24-0417</div>
+    </div>
+  </div>
+</section>
+
 <section class="wrap" id="how">
-  <p class="mono" style="margin-top:6px">Tap any step to see it.</p>
+  <p class="mono" style="margin-top:6px">Every use above runs through the same loop. Tap any step to see it.</p>
   <div class="steps">
     <div class="step reveal" role="button" tabindex="0" aria-expanded="false"><div class="num">01</div><div><h3>Confidentiality pre-check <span class="step-cue">See it</span></h3><p>Before text goes to an outside AI tool, Candor scans it for client identifying details: names, SSNs, account and policy numbers, dates, addresses, medical terms. It returns a redacted version to paste instead. Screening happens in the browser; the text itself is never stored. Try it below.</p>
       <div class="step-detail" hidden>
@@ -161,9 +179,9 @@
 </div></section>
 
 <section class="band reveal" id="in-the-browser"><div class="wrap">
-  <div class="mono eyebrow">In the browser</div>
-  <h2>Candor can ride along where the work happens.</h2>
-  <p class="sectionlede">An optional browser companion puts the same checks inside the AI tools your team already uses: ChatGPT, Claude, Gemini and Copilot. Nobody has to remember to open a separate app.</p>
+  <div class="mono eyebrow">Or work where you already are</div>
+  <h2>Prefer ChatGPT, Claude, or Clio? The panel rides along there too.</h2>
+  <p class="sectionlede">The same Ask · Screen · Check panel follows your team into the AI tools and practice systems they already use, so the screening, citation checks, and one-click logging come along. Nobody has to remember to open a separate app.</p>
   <div class="cards" style="margin-top:34px">
     <div class="card reveal"><h3>Screen before you send</h3><p>A quiet panel on the page redacts client identifying details before anyone pastes them into a chatbot. The text stays on the device.</p></div>
     <div class="card reveal"><h3>Check the answer for real cases</h3><p>When the AI replies, Candor reads the answer on screen and flags case citations that may not exist, checked against a public database of real court opinions. A prompt for the reviewer, never a verdict.</p></div>

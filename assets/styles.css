@@ -205,6 +205,27 @@ footer p{max-width:42em}
 .rec-band.flip .rec-copy{order:2}
 /* footer brand seal (site-wide engraving accent) */
 .brand-seal{display:inline-block;width:26px;height:26px;vertical-align:-6px;margin-right:9px;background:url(/assets/seal-sm.svg) center/contain no-repeat}
+/* Candor Ask interface screenshot (the workspace, shared) */
+.ask-shot{max-width:540px;margin:28px auto 0;border-radius:14px;overflow:hidden;background:var(--surface);border:1px solid var(--rule);text-align:left;box-shadow:0 1px 2px rgba(27,42,65,.05),0 34px 64px -34px rgba(27,42,65,.4);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+.ask-shot:hover{transform:translateY(-4px);box-shadow:0 1px 2px rgba(27,42,65,.06),0 48px 84px -36px rgba(27,42,65,.46)}
+.ask-top{display:flex;align-items:center;gap:8px;background:var(--navy);padding:11px 15px}
+.ask-top .abrand{font-family:var(--f-serif);font-size:17px;color:#fff}
+.ask-top .abrand i{color:var(--ox);font-style:normal}
+.ask-model{margin-left:auto;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.04em;color:#A9C3B9;display:inline-flex;align-items:center;gap:6px}
+.ask-model::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--seal);box-shadow:0 0 0 3px rgba(47,93,80,.3)}
+.ask-tabs{display:flex;background:#F1EDE6;border-bottom:1px solid var(--rule);padding:0 12px}
+.ask-tab{font-family:var(--f-sans);font-size:11.5px;font-weight:500;color:var(--muted);padding:9px 13px;border-bottom:2px solid transparent}
+.ask-tab.on{color:var(--navy);border-bottom-color:var(--ox);font-weight:600}
+.ask-body{padding:16px;background:linear-gradient(180deg,#FCFBF8,#F6F3ED);min-height:196px;display:flex;flex-direction:column;gap:11px}
+.ask-you{align-self:flex-end;max-width:80%;background:var(--navy);color:#fff;border-radius:12px 12px 3px 12px;padding:9px 12px;font-size:12.5px;line-height:1.5}
+.ask-ai{align-self:flex-start;max-width:88%;background:#fff;border:1px solid var(--rule);border-radius:12px 12px 12px 3px;padding:10px 12px;font-size:12.5px;line-height:1.55;color:var(--ink)}
+.ask-ai .atag{display:block;font-family:var(--f-mono);font-size:8.5px;letter-spacing:.06em;color:var(--faint);margin-bottom:5px}
+.ask-foot{border-top:1px solid var(--rule);background:var(--surface);padding:11px 13px;display:flex;flex-direction:column;gap:9px}
+.ask-input{display:flex;align-items:center;gap:8px}
+.ask-field{flex:1;font-size:11.5px;color:var(--faint);background:var(--soft);border:1px solid var(--rule);border-radius:8px;padding:8px 11px}
+.ask-send{background:var(--ox);color:#fff;font-size:11px;font-weight:600;font-family:var(--f-sans);border-radius:7px;padding:8px 13px}
+.ask-status{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:10px;color:var(--seal)}
+.ask-status .achk{flex:none;width:15px;height:15px;border-radius:50%;background:var(--seal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:9px}
 @media(max-width:760px){.rec-band{grid-template-columns:1fr;gap:28px;padding-bottom:44px;text-align:center}.rec-copy{text-align:center}.rec-copy p{margin-left:auto;margin-right:auto}.rec-band.flip .rec-copy{order:0}}
 
 /* 404 */
