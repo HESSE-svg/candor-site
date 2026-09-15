@@ -77,6 +77,58 @@
   .comp-line{height:8px;background:var(--soft);border-radius:3px;margin-bottom:9px}
   .comp-pill{position:absolute;right:12px;bottom:12px;display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:#fff;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:600}
   .comp-pill .ok{color:var(--seal)}
+
+  /* ===== funded-look pass: product screenshot, step cards, motion ===== */
+  /* high-fidelity companion screenshot */
+  .pshot{max-width:580px;margin:28px auto 0;border-radius:14px;background:var(--surface);border:1px solid var(--rule);overflow:hidden;text-align:left;box-shadow:0 1px 2px rgba(27,42,65,.05),0 34px 64px -34px rgba(27,42,65,.4);transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+  .pshot:hover{transform:translateY(-4px);box-shadow:0 1px 2px rgba(27,42,65,.06),0 48px 84px -36px rgba(27,42,65,.46)}
+  .pchrome{display:flex;align-items:center;gap:7px;padding:10px 14px;background:#F1EDE6;border-bottom:1px solid var(--rule)}
+  .pdot{width:10px;height:10px;border-radius:50%;background:#D6CFC2}
+  .paddr{margin-left:8px;flex:1;font-family:var(--f-mono);font-size:11px;color:var(--faint);background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:4px 10px}
+  .pbody{display:grid;grid-template-columns:1fr 208px;min-height:236px}
+  .pchat{padding:18px 16px;border-right:1px solid var(--rule);background:linear-gradient(180deg,#FCFBF8,#F6F3ED)}
+  .pmsg{display:flex;gap:9px;margin-bottom:12px}
+  .pmsg:last-child{margin-bottom:0}
+  .pavatar{flex:none;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:10px;font-weight:600;display:flex;align-items:center;justify-content:center;font-family:var(--f-sans)}
+  .pbubble{font-size:12.5px;line-height:1.5;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:9px 11px}
+  .pbubble mark{background:rgba(122,46,46,.12);color:var(--ox);border-radius:3px;padding:0 3px;font-weight:500;box-shadow:inset 0 -1px 0 rgba(122,46,46,.4)}
+  .pmono{font-family:var(--f-mono)}
+  .ppanel{background:var(--navy);color:#E9E5DE;padding:15px 15px 16px;display:flex;flex-direction:column;gap:11px}
+  .ppanel-head{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#fff;font-family:var(--f-sans)}
+  .pmark{width:20px;height:20px;border-radius:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-family:var(--f-serif);font-size:14px;color:#fff}
+  .pstatus{margin-left:auto;font-size:10px;font-weight:500;color:#A9C3B9;font-family:var(--f-mono);display:inline-flex;align-items:center;gap:5px}
+  .pstatus::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--seal);box-shadow:0 0 0 3px rgba(47,93,80,.3)}
+  .pflag{font-size:11.5px;color:#D5CDC2;line-height:1.4}
+  .pchips{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+  .pchips li{display:flex;align-items:center;gap:8px;font-size:11.5px;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:7px;padding:6px 9px;font-family:var(--f-mono)}
+  .pk{font-size:9px;letter-spacing:.05em;text-transform:uppercase;color:#9FB4AC;font-family:var(--f-sans);font-weight:700}
+  .pbtn{margin-top:2px;background:var(--ox);color:#fff;border-radius:8px;padding:9px;font-size:12px;font-weight:600;font-family:var(--f-sans);text-align:center}
+  .plog{display:flex;align-items:center;gap:7px;font-size:11px;color:#A9C3B9;font-family:var(--f-mono)}
+  .pcheck{flex:none;width:15px;height:15px;border-radius:50%;background:var(--seal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:9px}
+  .pshot-cap{font-size:12.5px;color:var(--faint);text-align:center;margin:12px auto 0;font-family:var(--f-mono);letter-spacing:.01em}
+  @media(max-width:560px){.pbody{grid-template-columns:1fr}.pchat{border-right:0;border-bottom:1px solid var(--rule)}}
+
+  /* step cards with icons */
+  .s-step{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:22px 22px 24px;transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s,border-color .4s}
+  .s-step:hover{transform:translateY(-4px);box-shadow:0 26px 46px -32px rgba(27,42,65,.36);border-color:#D8D1C5}
+  .s-ic{width:42px;height:42px;border-radius:12px;background:rgba(47,93,80,.08);border:1px solid rgba(47,93,80,.2);display:flex;align-items:center;justify-content:center;margin-bottom:15px}
+  .s-ic svg{width:21px;height:21px;stroke:var(--seal);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .s-step .num{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;color:var(--faint);display:block;margin:0 0 4px}
+  .s-step h3{margin-top:0}
+  .s-step p{max-width:none}
+
+  /* motion: hero settle-in + card/link micro-interactions */
+  @keyframes riseIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  .s-hero>*{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both}
+  .s-hero .tagpill{animation-delay:.02s}
+  .s-hero h1{animation-delay:.08s}
+  .s-hero .s-lede{animation-delay:.16s}
+  .s-hero .s-risk{animation-delay:.24s}
+  .s-hero .s-premium{animation-delay:.30s}
+  .s-hero .s-cta{animation-delay:.38s}
+  .cmpcard{transition:border-color .18s,transform .18s,box-shadow .18s}
+  .cmpcard:hover{transform:translateY(-2px);box-shadow:0 18px 32px -26px rgba(27,42,65,.4)}
+  @media(prefers-reduced-motion:reduce){.s-hero>*{animation:none}.pshot,.s-step,.cmpcard{transition:none}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Candor","url":"https://candor.legal","logo":"https://candor.legal/og.png","description":"AI governance and audit trails for law firms: confidentiality screening, a per-matter AI use log, verification, attorney sign-off, and the report a malpractice carrier asks for.","founder":{"@type":"Person","name":"Jesse Hollar"},"sameAs":["https://www.instagram.com/candor.legal","https://www.linkedin.com/in/jesse-hollar-084999283"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Candor","description":"An AI governance workspace for U.S. law firms: screen client data before it reaches a model, log every AI use to the matter, verify citations, capture attorney sign-off, and produce the record a malpractice carrier asks for at renewal. Runs on the firm's own model.","brand":{"@type":"Brand","name":"Candor"},"audience":{"@type":"Audience","audienceType":"U.S. law firms"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"3000","highPrice":"20000","offerCount":"5","url":"https://candor.legal/pricing"}}</script>
@@ -162,27 +214,53 @@
   <div class="mono eyebrow">Where you already work</div>
   <h2>Works inside ChatGPT, Claude, Gemini, and Copilot.</h2>
   <p>No separate app to remember. A browser companion rides along in the AI tools your team already uses — screen before you paste, check the answer's citations, and log the use in one click.</p>
-  <div class="comp-ill" role="img" aria-label="Illustration of the Candor companion panel inside an AI chat tool">
-    <div class="comp-top"><i></i><i></i><i></i><span class="comp-url">chatgpt.com</span></div>
-    <div class="comp-body">
-      <div class="comp-line" style="width:82%"></div>
-      <div class="comp-line" style="width:64%"></div>
-      <div class="comp-line" style="width:73%"></div>
-      <span class="comp-pill"><span class="ok">✓</span> Candor · logged</span>
+  <div class="pshot reveal" role="img" aria-label="The Candor companion inside ChatGPT: it catches a client name, SSN, and date in a draft before the message is sent, offers a redacted version, and logs the use to matter 24-0417.">
+    <div class="pchrome"><span class="pdot"></span><span class="pdot"></span><span class="pdot"></span><div class="paddr">chatgpt.com</div></div>
+    <div class="pbody">
+      <div class="pchat">
+        <div class="pmsg"><div class="pavatar">JR</div><div class="pbubble">Draft a demand letter for <mark>Jordan Rivera</mark>, SSN <mark class="pmono">•••-••-6789</mark>, re: the <mark>03/14/2026</mark> collision on Route 9.</div></div>
+        <div class="pmsg"><div class="pavatar" style="background:var(--seal)">C</div><div class="pbubble" style="color:var(--muted)">Paused — Candor caught client details in that message before it left your browser.</div></div>
+      </div>
+      <aside class="ppanel">
+        <div class="ppanel-head"><span class="pmark">C</span> Candor <span class="pstatus">screening</span></div>
+        <div class="pflag">3 client details caught before send</div>
+        <ul class="pchips">
+          <li><span class="pk">Name</span> Jordan Rivera</li>
+          <li><span class="pk">SSN</span> •••-••-6789</li>
+          <li><span class="pk">Date</span> 03/14/2026</li>
+        </ul>
+        <div class="pbtn">Paste redacted version</div>
+        <div class="plog"><span class="pcheck">✓</span> Logged · matter&nbsp;#24-0417</div>
+      </aside>
     </div>
   </div>
-  <p style="margin-top:14px;font-size:13px"><a href="/product#demo" style="color:var(--ox)">Try the companion live — screen a sentence yourself →</a></p>
+  <p class="pshot-cap">Screening runs in your browser — nothing is stored. <a href="/product#demo" style="color:var(--ox)">Try the companion live &rarr;</a></p>
 </section>
 
 <section class="s-steps">
-  <div class="s-step"><div class="num">01</div><h3>Screen</h3><p>Client details never reach the model.</p></div>
-  <div class="s-step"><div class="num">02</div><h3>Work</h3><p>Draft and research on your firm's own model.</p></div>
-  <div class="s-step"><div class="num">03</div><h3>Prove</h3><p>Every use logged. The record builds itself.</p></div>
+  <div class="s-step reveal">
+    <div class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 11.5l2 2 4-4"/></svg></div>
+    <span class="num">STEP 01</span>
+    <h3>Screen</h3>
+    <p>Client details are caught and redacted before they ever reach the model.</p>
+  </div>
+  <div class="s-step reveal">
+    <div class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg></div>
+    <span class="num">STEP 02</span>
+    <h3>Work</h3>
+    <p>Draft and research on your firm's own model, right where your team already works.</p>
+  </div>
+  <div class="s-step reveal">
+    <div class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9.5" r="5.5"/><path d="M9.5 9.5l1.8 1.8L15 7.6"/><path d="M8.4 14.2L7 21l5-2.2 5 2.2-1.4-6.8"/></svg></div>
+    <span class="num">STEP 03</span>
+    <h3>Prove</h3>
+    <p>Every use is logged to the matter. The tamper-evident record builds itself.</p>
+  </div>
 </section>
 
 <p class="s-model">Runs on your firm's own AI account. <b>No per-use markup, no token metering</b> — you already pay for ChatGPT, and Candor doesn't charge you for it again.</p>
 
-<section class="hband">
+<section class="hband reveal">
   <div class="mono eyebrow">Why now</div>
   <h2>ABA Formal Opinion 512, in four duties.</h2>
   <p>Opinion 512 requires attorneys to verify AI output, protect client confidentiality, and supervise staff AI use. Candor is the record that shows you did — each duty maps to a step.</p>
@@ -213,7 +291,7 @@
      blog) belongs here once the first real mention lands. Left empty on purpose — no invented press.
      Add each logo + date as it happens so recency is visible. -->
 
-<section class="band-dark">
+<section class="band-dark reveal">
   <div class="in">
     <div class="eye">The roadmap</div>
     <h2>One toolkit. Every profession that has to prove its work.</h2>
@@ -229,7 +307,7 @@
   </div>
 </section>
 
-<section class="hband">
+<section class="hband reveal">
   <div class="mono eyebrow">Pre-launch, on purpose</div>
   <h2>Why trust a pre-launch product with the record?</h2>
   <img class="founder-home" src="/assets/founder-jesse.jpg" alt="Jesse Hollar, founder of Candor" width="84" height="84" loading="lazy">
@@ -238,7 +316,7 @@
   <div class="btnrow" style="justify-content:center"><a class="btn ghost" href="/security">How the record holds up</a><a class="btn ghost" href="/about">Who’s building it</a></div>
 </section>
 
-<section class="hband" style="border-top:0;padding-top:0">
+<section class="hband reveal" style="border-top:0;padding-top:0">
   <div class="mono eyebrow">How Candor compares</div>
   <div class="cmp">
     <a class="cmpcard" href="/vs/manual-tracking"><b>vs manual tracking</b><span>A spreadsheet can't prove anything.</span></a>
