@@ -41,6 +41,10 @@
   .video-frame:fullscreen{width:100vw;height:100vh;aspect-ratio:auto;border:0;border-radius:0;background:#070a0e}
   .video-frame:-webkit-full-screen{width:100vw;height:100vh;border:0;border-radius:0;background:#070a0e}
   .video-frame:fullscreen .fs-btn{bottom:20px;right:20px;opacity:1}
+  /* Fallback for iOS Safari, which has no element Fullscreen API */
+  .video-frame.faux-fs{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:9999;margin:0;border:0;border-radius:0;background:#070a0e}
+  .video-frame.faux-fs .fs-btn{opacity:1;right:16px;bottom:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));padding:10px 13px;font-size:13.5px}
+  html.fs-lock,html.fs-lock body{overflow:hidden;touch-action:none}
   @media(max-width:680px){.s-steps{grid-template-columns:1fr;gap:30px}.s-hero{padding:52px 22px 40px}.s-watch{padding:36px 18px 60px}}
   /* static risk callout in the hero + light homepage bands (audit D1.1/D1.2/D1.4/FIT) */
   .s-risk{max-width:44ch;margin:22px auto 0;font-size:15.5px;line-height:1.55;color:var(--ink);text-align:left;border-left:3px solid var(--ox);padding:4px 0 4px 16px}
@@ -118,16 +122,37 @@
     var frame=document.querySelector('.s-watch .video-frame');if(!frame)return;
     var btn=frame.querySelector('.fs-btn');if(!btn)return;
     var label=btn.querySelector('.fs-label');
-    function current(){return document.fullscreenElement||document.webkitFullscreenElement;}
+    var root=document.documentElement;
+    var faux=false;
+
+    function nativeEl(){return document.fullscreenElement||document.webkitFullscreenElement;}
+    function nativeReq(){return frame.requestFullscreen||frame.webkitRequestFullscreen;}
+    function nativeAvail(){return (document.fullscreenEnabled||document.webkitFullscreenEnabled)&&!!nativeReq();}
+    function active(){return faux||nativeEl()===frame;}
+
+    function enterFaux(){faux=true;frame.classList.add('faux-fs');root.classList.add('fs-lock');sync();}
+    function exitFaux(){faux=false;frame.classList.remove('faux-fs');root.classList.remove('fs-lock');sync();}
+
     btn.addEventListener('click',function(){
-      try{
-        if(current()){(document.exitFullscreen||document.webkitExitFullscreen).call(document);}
-        else{(frame.requestFullscreen||frame.webkitRequestFullscreen).call(frame);}
-      }catch(e){}
+      if(active()){
+        if(faux){exitFaux();}
+        else{try{(document.exitFullscreen||document.webkitExitFullscreen).call(document);}catch(e){}}
+        return;
+      }
+      if(nativeAvail()){
+        try{
+          var p=nativeReq().call(frame);
+          if(p&&p.catch){p.catch(function(){enterFaux();});} // e.g. permission refused
+        }catch(e){enterFaux();}
+      }else{
+        enterFaux(); // iOS Safari and anything without element fullscreen
+      }
     });
-    function sync(){var on=current()===frame;if(label)label.textContent=on?'Exit full screen':'Full screen';btn.setAttribute('aria-label',on?'Exit full screen':'Play the walkthrough full screen');}
+
+    function sync(){var on=active();if(label)label.textContent=on?'Exit full screen':'Full screen';btn.setAttribute('aria-label',on?'Exit full screen':'Play the walkthrough full screen');}
     document.addEventListener('fullscreenchange',sync);
     document.addEventListener('webkitfullscreenchange',sync);
+    document.addEventListener('keydown',function(e){if(faux&&e.key==='Escape')exitFaux();});
   })();
   </script>
   <a class="btn" href="/start" style="margin-top:26px">Start free for a month</a>
