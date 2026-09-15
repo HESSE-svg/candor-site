@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-15T05:01:12.994Z",
+  "builtAt": "2026-09-15T11:52:57.736Z",
   "count": 10,
   "items": [
+    {
+      "title": "Ex-Simmons Solutions chief joins Purple to help law firms monetise AI , Exclusive interview",
+      "link": "https://legaltechnology.com/ex-simmons-solutions-chief-joins-purple-to-help-law-firms-monetise-ai-exclusive-interview/",
+      "desc": "Ben McGuire, the former managing director of Simmons Simmons Solutions, has joined legal tech build studio Purple as a venture partner. Purple was founded by Tim Pullan (former founder [] The post…",
+      "date": "Tue, 15 Sep 2026 07:30:56 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/ben-mcguire-purple.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1789457456000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Lawyers Are Burning Out, Can AI Help?",
+      "link": "https://www.artificiallawyer.com/2026/09/15/lawyers-are-burning-out-can-ai-help/",
+      "desc": "A major survey by the American Bar Association has found that ‘nearly half of all lawyers (47.4%) screened positive for high burnout, including 15.6% meeting",
+      "date": "Tue, 15 Sep 2026 07:18:18 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-15-at-07.50.27.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789456698000,
+      "topic": "rules",
+      "topicLabel": "Rules & ethics",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "The AI Workplace Gender Gap In The Legal Profession",
       "link": "https://abovethelaw.com/2026/09/the-ai-workplace-gender-gap-in-the-legal-profession/",
@@ -45,20 +73,6 @@
       "promo": false
     },
     {
-      "title": "Morgan Morgan pledges $1bn tech spend over 10 years",
-      "link": "https://legaltechnology.com/morgan-morgan-pledges-1bn-tech-spend-over-10-years/",
-      "desc": "US personal injury giant Morgan Morgan announced today (14 September) that it has committed to spend at least $1bn on legal technology and artificial intelligence over the next decade, [] The post…",
-      "date": "Mon, 14 Sep 2026 16:11:12 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/morgan-morgan.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1789402272000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": false,
-      "promo": false
-    },
-    {
       "title": "Legal AI Needs An Escalation Layer",
       "link": "https://abovethelaw.com/2026/09/legal-ai-needs-an-escalation-layer/",
       "desc": "The legal profession has spent considerable energy teaching AI to answer. The next phase requires teaching it when an answer is not enough. The post Legal AI Needs An Escalation Layer appeared…",
@@ -69,6 +83,34 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Morgan Morgan Commits to $1 Billion For Legal Tech + AI",
+      "link": "https://www.artificiallawyer.com/2026/09/14/morgan-morgan-commits-to-1-billion-for-legal-tech-ai/",
+      "desc": "Morgan Morgan, the largest plaintiff law firm in America, has announced it will spend at least $1 billion on legal tech and AI over",
+      "date": "Mon, 14 Sep 2026 14:01:33 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-14-at-14.43.46.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789394493000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Legora To Launch Ontology + AI Native Citator",
+      "link": "https://www.artificiallawyer.com/2026/09/14/legora-to-launch-ontology-ai-native-citator/",
+      "desc": "Legora is ramping up its legal research capabilities by offering 'a full ontology of law and an AI-native citator’. The move follows deals with Qura and",
+      "date": "Mon, 14 Sep 2026 10:33:26 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-14-at-11.21.42.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789382006000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -87,20 +129,6 @@
       "promo": false
     },
     {
-      "title": "Latham builds its own AI models with Nvidia GPU server investment",
-      "link": "https://legaltechnology.com/latham-builds-its-own-ai-models-with-nvidia-gpu-server-investment/",
-      "desc": "US multinational law firm Latham Watkins has bought Nvidia GPU servers and started customising its own AI models, the Financial Times revealed yesterday (11 September). Latham, the US’s…",
-      "date": "Fri, 11 Sep 2026 13:38:22 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Latham-nvidia-gpus.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1789133902000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "How AI is learning to work like a senior associate",
       "link": "https://blogs.thomsonreuters.com/legal-blog/how-ai-is-learning-to-work-like-a-senior-associate/",
       "desc": "General-purpose large language models can already write code, summarize a dense article, or hold a nuanced conversation. But legal work The post How AI is learning to work like a senior associate…",
@@ -111,34 +139,6 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Casepoint Launches Casepoint IQ, An AI Framework Spanning Its Full Platform, from New Autonomous Agents and Assistive AI to Legacy Predictive Coding",
-      "link": "https://www.lawnext.com/2026/09/casepoint-launches-casepoint-iq-an-ai-framework-spanning-its-full-platform-from-new-autonomous-agents-and-assistive-ai-to-legacy-predictive-coding.html",
-      "desc": "Calling it the “intelligence foundation” of its platform, Casepoint today launched Casepoint IQ, a suite of tools within a single AI framework that spans the company’s products for e-discovery,…",
-      "date": "Wed, 09 Sep 2026 13:15:03 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Casepoint-IQ-Featured-169.png",
-      "source": "LawNext",
-      "ts": 1788959703000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "On LawNext: Casefleet Founder Jeff Kerr on Fact Management in the Age of AI",
-      "link": "https://www.lawnext.com/2026/09/on-lawnext-casefleet-founder-jeff-kerr-on-fact-management-in-the-age-of-ai.html",
-      "desc": "Chronologies have become one of legal tech's hottest categories, with a wave of AI startups promising to turn a messy evidentiary record into a structured timeline in minutes. Jeff Kerr and his…",
-      "date": "Tue, 08 Sep 2026 18:54:33 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/jeff-jerr-thumb-lawnext.png",
-      "source": "LawNext",
-      "ts": 1788893673000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "6 days ago",
       "strong": true,
       "promo": false
     }
