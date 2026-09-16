@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-16T17:06:32.381Z",
+  "builtAt": "2026-09-16T21:24:04.541Z",
   "count": 10,
   "items": [
+    {
+      "title": "I’m Going To AI-Proof My Writing By Becoming Increasingly Unhinged In A Way No Machine Would Ever Replicate",
+      "link": "https://abovethelaw.com/2026/09/im-going-to-ai-proof-my-writing-by-becoming-increasingly-unhinged-in-a-way-no-machine-would-ever-replicate/",
+      "desc": "It just might be my most powerful tool in resisting the influence of the coming AI overlords. The post I’m Going To AI-Proof My Writing By Becoming Increasingly Unhinged In A Way No Machine Would…",
+      "date": "Wed, 16 Sep 2026 21:00:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/01/donald-trump-GettyImages-1152627372.jpg",
+      "source": "Above the Law",
+      "ts": 1789592400000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "On LawNext: Alex Su, Newly Named President of Latitude Legal, On Why AI Is Driving Demand for Flex Talent",
+      "link": "https://www.lawnext.com/2026/09/on-lawnext-alex-su-newly-named-president-of-latitude-legal-on-why-ai-is-driving-demand-for-flex-talent.html",
+      "desc": "Call it Alex Su, redux. We do not usually have the same guest on LawNext twice in the same year, but there is good reason to have Alex back, as he has just been named president of Latitude Legal,…",
+      "date": "Wed, 16 Sep 2026 18:57:44 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Alex-Su-LawNext-Featured.png",
+      "source": "LawNext",
+      "ts": 1789585064000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Smarter corporate investigations Part 1: Insurance fraud investigation in the AI era",
       "link": "https://blogs.thomsonreuters.com/legal-blog/smarter-corporate-investigations-part-1-insurance-fraud-investigation-in-the-ai-era/",
@@ -59,20 +87,6 @@
       "promo": false
     },
     {
-      "title": "Checkbox Launches ‘First Pass’ AI Contract Review",
-      "link": "https://www.artificiallawyer.com/2026/09/16/checkbox-launches-first-pass-ai-contract-review/",
-      "desc": "Checkbox, a legal front door for corporates, has launched First Pass, marking a move into contract review – and which builds upon its platform for",
-      "date": "Wed, 16 Sep 2026 13:30:06 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-16-at-14.16.19.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789565406000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "AI is changing legal delivery – but law firm pricing isn’t keeping up",
       "link": "https://legaltechnology.com/ai-is-changing-legal-delivery-but-law-firm-pricing-isnt-keeping-up/",
       "desc": "AI is changing the economics of legal work, but nearly two-thirds of law firms still rely on traditional methods when setting prices, according to new research from BigHand. The 2026 [] The post…",
@@ -101,20 +115,6 @@
       "promo": false
     },
     {
-      "title": "31% of Law Firms Say AI Improves Profitability",
-      "link": "https://www.artificiallawyer.com/2026/09/16/31-of-law-firms-say-ai-improves-profitability/",
-      "desc": "A new pricing survey by BigHand shows that 31% of law firms – which had scrutinised their data – found that AI had ‘improved profitability",
-      "date": "Wed, 16 Sep 2026 07:45:29 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-16-at-08.20.43.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789544729000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "The AI Indemnity Arms Race Is Distracting Us From The Bigger Story",
       "link": "https://abovethelaw.com/2026/09/the-ai-indemnity-arms-race-is-distracting-us-from-the-bigger-story/",
       "desc": "Indemnities matter, but they represent only one clause in a much larger governance framework. The post The AI Indemnity Arms Race Is Distracting Us From The Bigger Story appeared first on Above…",
@@ -124,7 +124,7 @@
       "ts": 1789505040000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
