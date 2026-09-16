@@ -6,6 +6,7 @@
   <url><loc>https://candor.legal/why-now</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://candor.legal/security</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://candor.legal/plan</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://candor.legal/international</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://candor.legal/resources</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://candor.legal/pattern-capture</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://candor.legal/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
