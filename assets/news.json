@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-16T04:56:25.355Z",
+  "builtAt": "2026-09-16T11:46:18.295Z",
   "count": 10,
   "items": [
+    {
+      "title": "31% of Law Firms Say AI Improves Profitability",
+      "link": "https://www.artificiallawyer.com/2026/09/16/31-of-law-firms-say-ai-improves-profitability/",
+      "desc": "A new pricing survey by BigHand shows that 31% of law firms – which had scrutinised their data – found that AI had ‘improved profitability",
+      "date": "Wed, 16 Sep 2026 07:45:29 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-16-at-08.20.43.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789544729000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "The AI Indemnity Arms Race Is Distracting Us From The Bigger Story",
       "link": "https://abovethelaw.com/2026/09/the-ai-indemnity-arms-race-is-distracting-us-from-the-bigger-story/",
@@ -68,7 +82,7 @@
       "ts": 1789457456000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,7 +96,7 @@
       "ts": 1789456698000,
       "topic": "rules",
       "topicLabel": "Rules & ethics",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -122,20 +136,6 @@
       "img": "https://www.lawnext.com/wp-content/uploads/2026/09/ILTA-2026-Survey-Cover.png",
       "source": "LawNext",
       "ts": 1789404318000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Morgan Morgan Commits to $1 Billion For Legal Tech + AI",
-      "link": "https://www.artificiallawyer.com/2026/09/14/morgan-morgan-commits-to-1-billion-for-legal-tech-ai/",
-      "desc": "Morgan Morgan, the largest plaintiff law firm in America, has announced it will spend at least $1 billion on legal tech and AI over",
-      "date": "Mon, 14 Sep 2026 14:01:33 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-14-at-14.43.46.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789394493000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "Yesterday",
