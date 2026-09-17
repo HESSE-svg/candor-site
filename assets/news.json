@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-16T21:24:04.541Z",
+  "builtAt": "2026-09-17T04:59:33.382Z",
   "count": 10,
   "items": [
     {
@@ -87,6 +87,20 @@
       "promo": false
     },
     {
+      "title": "Checkbox Launches ‘First Pass’ AI Contract Review",
+      "link": "https://www.artificiallawyer.com/2026/09/16/checkbox-launches-first-pass-ai-contract-review/",
+      "desc": "Checkbox, a legal front door for corporates, has launched First Pass, marking a move into contract review – and which builds upon its platform for",
+      "date": "Wed, 16 Sep 2026 13:30:06 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-16-at-14.16.19.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789565406000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
       "title": "AI is changing legal delivery – but law firm pricing isn’t keeping up",
       "link": "https://legaltechnology.com/ai-is-changing-legal-delivery-but-law-firm-pricing-isnt-keeping-up/",
       "desc": "AI is changing the economics of legal work, but nearly two-thirds of law firms still rely on traditional methods when setting prices, according to new research from BigHand. The 2026 [] The post…",
@@ -115,32 +129,18 @@
       "promo": false
     },
     {
-      "title": "The AI Indemnity Arms Race Is Distracting Us From The Bigger Story",
-      "link": "https://abovethelaw.com/2026/09/the-ai-indemnity-arms-race-is-distracting-us-from-the-bigger-story/",
-      "desc": "Indemnities matter, but they represent only one clause in a much larger governance framework. The post The AI Indemnity Arms Race Is Distracting Us From The Bigger Story appeared first on Above…",
-      "date": "Tue, 15 Sep 2026 20:44:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/05/GettyImages-2223784896-1024x683.jpg",
-      "source": "Above the Law",
-      "ts": 1789505040000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Webinar replay: Box's Tara Daisy on AI, content sprawl and connected legal workflows",
-      "link": "https://legaltechnology.com/webinar-replay-boxs-tara-daisy-on-ai-content-sprawl-and-connected-legal-workflows/",
-      "desc": "Legal IT Insider recently hosted a webinar with Tara Daisy, managing director for legal at Box and former director of data delivery at Cooley, to discuss how law firms are [] The post Webinar…",
-      "date": "Tue, 15 Sep 2026 13:21:29 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Feature-image-webinar-1.png",
-      "source": "Legal IT Insider",
-      "ts": 1789478489000,
+      "title": "31% of Law Firms Say AI Improves Profitability",
+      "link": "https://www.artificiallawyer.com/2026/09/16/31-of-law-firms-say-ai-improves-profitability/",
+      "desc": "A new pricing survey by BigHand shows that 31% of law firms – which had scrutinised their data – found that AI had ‘improved profitability",
+      "date": "Wed, 16 Sep 2026 07:45:29 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-16-at-08.20.43.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789544729000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "Today",
       "strong": true,
-      "promo": true
+      "promo": false
     }
   ]
 }
