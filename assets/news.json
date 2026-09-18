@@ -1,7 +1,49 @@
 {
-  "builtAt": "2026-09-18T16:31:35.321Z",
+  "builtAt": "2026-09-18T20:58:36.459Z",
   "count": 10,
   "items": [
+    {
+      "title": "‘Adventures In Legal Tech’: The Risks Of AI-Generated Legal Marketing",
+      "link": "https://abovethelaw.com/2026/09/adventures-in-legal-tech-the-risks-of-ai-generated-legal-marketing/",
+      "desc": "The compliance issue almost nobody in legal marketing is talking about. The post ‘Adventures In Legal Tech’: The Risks Of AI-Generated Legal Marketing appeared first on Above the Law .",
+      "date": "Fri, 18 Sep 2026 20:44:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/03/adventuresinlegaltech.jpg",
+      "source": "Above the Law",
+      "ts": 1789764240000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Synergy 2026: Where AI insights become action",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/synergy-2026-where-ai-insights-become-action/",
+      "desc": "Ask a law firm leader today whether AI matters, and you'll get an easy yes. Ask them whether their firm The post Synergy 2026: Where AI insights become action appeared first on Thomson Reuters Law…",
+      "date": "Fri, 18 Sep 2026 20:30:46 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/09/AdobeStock_1909949364-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1789763446000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Lane Kiffin Is EXACTLY The Guy Who Uses ChatGPT For Legal Advice",
+      "link": "https://abovethelaw.com/2026/09/lane-kiffin-is-exactly-the-guy-who-uses-chatgpt-for-legal-advice/",
+      "desc": "The SEC and the frontier AI labs are running the same broken playbook. The post Lane Kiffin Is EXACTLY The Guy Who Uses ChatGPT For Legal Advice appeared first on Above the Law .",
+      "date": "Fri, 18 Sep 2026 17:50:24 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/09/GettyImages-1437983825.jpeg",
+      "source": "Above the Law",
+      "ts": 1789753824000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Yesterday Came OpenAI's Launch Into Legal, Now Come the Litany of Vendor Integrations",
       "link": "https://www.lawnext.com/2026/09/yesterday-came-openais-launch-into-legal-now-come-the-litany-of-vendor-integrations.html",
@@ -40,7 +82,7 @@
       "ts": 1789677840000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +96,7 @@
       "ts": 1789675231000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +110,7 @@
       "ts": 1789675204000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -87,20 +129,6 @@
       "promo": false
     },
     {
-      "title": "I’m Going To AI-Proof My Writing By Becoming Increasingly Unhinged In A Way No Machine Would Ever Replicate",
-      "link": "https://abovethelaw.com/2026/09/im-going-to-ai-proof-my-writing-by-becoming-increasingly-unhinged-in-a-way-no-machine-would-ever-replicate/",
-      "desc": "It just might be my most powerful tool in resisting the influence of the coming AI overlords. The post I’m Going To AI-Proof My Writing By Becoming Increasingly Unhinged In A Way No Machine Would…",
-      "date": "Wed, 16 Sep 2026 21:00:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/01/donald-trump-GettyImages-1152627372.jpg",
-      "source": "Above the Law",
-      "ts": 1789592400000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "On LawNext: Alex Su, Newly Named President of Latitude Legal, On Why AI Is Driving Demand for Flex Talent",
       "link": "https://www.lawnext.com/2026/09/on-lawnext-alex-su-newly-named-president-of-latitude-legal-on-why-ai-is-driving-demand-for-flex-talent.html",
       "desc": "Call it Alex Su, redux. We do not usually have the same guest on LawNext twice in the same year, but there is good reason to have Alex back, as he has just been named president of Latitude Legal,…",
@@ -110,34 +138,6 @@
       "ts": 1789585064000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Smarter corporate investigations Part 1: Insurance fraud investigation in the AI era",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/smarter-corporate-investigations-part-1-insurance-fraud-investigation-in-the-ai-era/",
-      "desc": "Insurance fraud has become increasingly sophisticated, making it harder for Special Investigation Units (SIUs) to identify connections between claims, The post Smarter corporate investigations…",
-      "date": "Wed, 16 Sep 2026 15:00:33 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/05/AdobeStock_599418982-Large-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1789570833000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Why we built our own AI model — and why that matters to your legal department",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/why-we-built-our-own-ai-model-and-why-that-matters-to-your-legal-department/",
-      "desc": "Every general counsel we talk to is fielding the same pitch right now: a faster model, a sharper wrapper, The post Why we built our own AI model — and why that matters to your legal department…",
-      "date": "Wed, 16 Sep 2026 15:00:10 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/07/AdobeStock_487165078-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1789570810000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "2 days ago",
       "strong": true,
       "promo": false
