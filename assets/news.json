@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-18T04:51:54.139Z",
+  "builtAt": "2026-09-18T11:26:05.333Z",
   "count": 10,
   "items": [
     {
@@ -38,20 +38,6 @@
       "img": "https://legaltechnology.com/wp-content/uploads/2026/09/openai-jason-boehmig.jpg",
       "source": "Legal IT Insider",
       "ts": 1789675204000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Google Shows Off Cloud Legal AI Helpers + More",
-      "link": "https://www.artificiallawyer.com/2026/09/17/google-shows-off-cloud-legal-ai-helpers-more/",
-      "desc": "Yesterday, 'Google Legal' gave an inside look at how Gemini Enterprise can be deployed for lawyers, from everyday prompting, to NotebookLM use, to custom app",
-      "date": "Thu, 17 Sep 2026 06:35:05 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-17-at-06.55.01.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789626905000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Today",
@@ -136,6 +122,20 @@
       "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/10/AdobeStock_594251627-min-scaled-400x225.webp",
       "source": "Thomson Reuters",
       "ts": 1789568044000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Yesterday",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "AI is changing legal delivery – but law firm pricing isn’t keeping up",
+      "link": "https://legaltechnology.com/ai-is-changing-legal-delivery-but-law-firm-pricing-isnt-keeping-up/",
+      "desc": "AI is changing the economics of legal work, but nearly two-thirds of law firms still rely on traditional methods when setting prices, according to new research from BigHand. The 2026 [] The post…",
+      "date": "Wed, 16 Sep 2026 13:25:47 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Bighand-vid.gif",
+      "source": "Legal IT Insider",
+      "ts": 1789565147000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "Yesterday",
