@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-18T11:26:05.333Z",
+  "builtAt": "2026-09-18T16:31:35.321Z",
   "count": 10,
   "items": [
+    {
+      "title": "Yesterday Came OpenAI's Launch Into Legal, Now Come the Litany of Vendor Integrations",
+      "link": "https://www.lawnext.com/2026/09/yesterday-came-openais-launch-into-legal-now-come-the-litany-of-vendor-integrations.html",
+      "desc": "Yesterday, OpenAI released Astra for Law, a GPT-6 model tailored for legal work, as I reported here. The announcement included news of 26 new ChatGPT plugins from legal tech vendors, but it…",
+      "date": "Fri, 18 Sep 2026 12:43:24 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/OpenAI-Logo.png",
+      "source": "LawNext",
+      "ts": 1789735404000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "OpenAI Launches Astra For Law",
+      "link": "https://www.artificiallawyer.com/2026/09/18/openai-launches-astra-for-law/",
+      "desc": "After plenty of waiting, OpenAI has launched Astra for Law, a ‘new offering powered by GPT-6 Astra with tools, settings, and context to support the",
+      "date": "Fri, 18 Sep 2026 06:43:50 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-18-at-07.39.58.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789713830000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI Native Law Firms Aren’t Just For Biglaw Lawyers",
       "link": "https://www.myshingle.com/2026/09/ai-native-law-firms-arent-just-for-biglaw-lawyers/",
@@ -45,6 +73,20 @@
       "promo": false
     },
     {
+      "title": "Google Shows Off Cloud Legal AI Helpers + More",
+      "link": "https://www.artificiallawyer.com/2026/09/17/google-shows-off-cloud-legal-ai-helpers-more/",
+      "desc": "Yesterday, 'Google Legal' gave an inside look at how Gemini Enterprise can be deployed for lawyers, from everyday prompting, to NotebookLM use, to custom app",
+      "date": "Thu, 17 Sep 2026 06:35:05 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-17-at-06.55.01.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789626905000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Yesterday",
+      "strong": true,
+      "promo": false
+    },
+    {
       "title": "I’m Going To AI-Proof My Writing By Becoming Increasingly Unhinged In A Way No Machine Would Ever Replicate",
       "link": "https://abovethelaw.com/2026/09/im-going-to-ai-proof-my-writing-by-becoming-increasingly-unhinged-in-a-way-no-machine-would-ever-replicate/",
       "desc": "It just might be my most powerful tool in resisting the influence of the coming AI overlords. The post I’m Going To AI-Proof My Writing By Becoming Increasingly Unhinged In A Way No Machine Would…",
@@ -82,7 +124,7 @@
       "ts": 1789570833000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -96,49 +138,7 @@
       "ts": 1789570810000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Creativity In The Age Of AI: A Lost Art?",
-      "link": "https://abovethelaw.com/2026/09/creativity-in-the-age-of-ai-a-lost-art/",
-      "desc": "Lawyers are in the business of persuading people. That takes human skill and originality. It can’t be replicated by a bot. The post Creativity In The Age Of AI: A Lost Art? appeared first on Above…",
-      "date": "Wed, 16 Sep 2026 14:45:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2016/11/creative-creativity-lawyer-painter-painting.jpg",
-      "source": "Above the Law",
-      "ts": 1789569900000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Navigating legal drafting: A how-to guide for law firms using AI-powered tools",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/navigating-legal-drafting-a-how-to-guide-for-law-firms-using-ai-powered-tools/",
-      "desc": "Legal professionals are constantly seeking ways to maximize efficiency and profitability in today's legal landscape, all while delivering exceptional The post Navigating legal drafting: A how-to…",
-      "date": "Wed, 16 Sep 2026 14:14:04 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/10/AdobeStock_594251627-min-scaled-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1789568044000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "AI is changing legal delivery – but law firm pricing isn’t keeping up",
-      "link": "https://legaltechnology.com/ai-is-changing-legal-delivery-but-law-firm-pricing-isnt-keeping-up/",
-      "desc": "AI is changing the economics of legal work, but nearly two-thirds of law firms still rely on traditional methods when setting prices, according to new research from BigHand. The 2026 [] The post…",
-      "date": "Wed, 16 Sep 2026 13:25:47 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Bighand-vid.gif",
-      "source": "Legal IT Insider",
-      "ts": 1789565147000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     }
