@@ -1,0 +1,348 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>See the review loop · Candor</title>
+<meta name="description" content="A five-click look at what a managing partner sees when they review an associate's flagged AI use — the queue, the flag, the sign-off, and the append-only record. Sample data, in your browser.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1B2A41">
+<meta property="og:title" content="See the review loop · Candor">
+<meta property="og:description" content="Five clicks through a partner reviewing an associate's flagged AI use. Sample data, runs in your browser.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://candor.legal/review-demo">
+<meta property="og:image" content="https://candor.legal/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css?v=11">
+<style>
+/* Review walkthrough — page-scoped. Built on the shared tokens in styles.css. */
+.rv-app{margin-top:var(--s3);border:1px solid var(--rule);border-top:2px solid var(--navy);background:var(--surface)}
+.rv-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--soft)}
+.rv-bar .dot{width:9px;height:9px;border-radius:50%;background:var(--navy);opacity:.28}
+.rv-bar .lbl{font-family:var(--f-mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.rv-bar .lbl b{color:var(--navy);font-weight:500}
+.rv-bar .ex{margin-left:auto;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);border:1px solid var(--brass);border-radius:999px;padding:3px 9px}
+.rv-note{padding:11px 18px;border-bottom:1px solid var(--rule);border-left:3px solid var(--navy);background:var(--surface);font-size:13.5px;color:var(--muted)}
+.rv-note b{color:var(--navy)}
+.rv-count{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px;border-bottom:1px solid var(--rule);font-family:var(--f-mono);font-size:11.5px;letter-spacing:.04em;color:var(--muted)}
+.rv-list{padding:16px 18px;display:flex;flex-direction:column;gap:14px}
+.rv-entry{border:1px solid var(--rule);background:var(--surface);padding:15px 16px;transition:border-color .15s,box-shadow .15s}
+.rv-entry.open{border-color:var(--navy)}
+.rv-ehead{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.rv-matter{font-family:var(--f-serif);font-size:20px;color:var(--navy);line-height:1.1}
+.rv-meta{margin-top:4px;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.03em;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 10px}
+.rv-meta .who{color:var(--ink)}
+.rv-badge{font-family:var(--f-mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;padding:4px 9px;border-radius:999px;white-space:nowrap;border:1px solid}
+.rv-badge.await{color:var(--brass);border-color:var(--brass)}
+.rv-badge.ok{color:var(--seal);border-color:var(--seal)}
+.rv-badge.chg{color:var(--ox);border-color:var(--ox)}
+.rv-verify{margin-top:12px;border:1px solid var(--rule);background:var(--soft);padding:11px 13px;font-size:13px}
+.rv-verify.flag{border-color:rgba(122,46,46,.4);background:rgba(122,46,46,.05)}
+.rv-verify .vhead{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.03em}
+.rv-verify .vhead .t{color:var(--navy);font-weight:500}
+.rv-verify .vhead .c{color:var(--muted)}
+.rv-verify .vhead .warn{color:var(--ox);font-weight:500}
+.rv-verify .vhead .clean{color:var(--seal)}
+.rv-verify .vhead .hedge{color:var(--brass)}
+.rv-verify .vnote{margin-top:7px;font-size:12px;color:var(--muted);line-height:1.5}
+.rv-chain{margin-top:11px;display:flex;flex-direction:column;gap:3px}
+.rv-chain .line{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);line-height:1.5}
+.rv-chain .line .ok{color:var(--seal)}
+.rv-chain .line .chg{color:var(--ox)}
+.rv-chain .line .n{color:var(--ink)}
+.rv-actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.rv-btn{font-size:13px;font-family:var(--f-sans);cursor:pointer;padding:8px 15px;border:1px solid;transition:background .15s,color .15s}
+.rv-btn.solid{background:var(--ox);color:var(--paper);border-color:var(--ox)}
+.rv-btn.solid:hover{background:transparent;color:var(--ox)}
+.rv-btn.line{background:transparent;color:var(--navy);border-color:var(--navy)}
+.rv-btn.line:hover{background:var(--navy);color:var(--paper)}
+.rv-form{margin-top:13px;border:1px solid var(--rule);background:var(--soft);padding:13px}
+.rv-form .ftitle{font-family:var(--f-serif);font-size:17px;color:var(--navy);margin-bottom:9px}
+.rv-form label{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.rv-form input{width:100%;border:1px solid var(--rule);background:var(--surface);padding:9px 11px;font-size:14px;font-family:var(--f-sans);color:var(--ink);margin-bottom:11px}
+.rv-form input:focus{outline:none;border-color:var(--ox)}
+.rv-hidden{display:none!important}
+/* coach mark */
+.rv-pulse{position:relative;box-shadow:0 0 0 0 rgba(122,46,46,.5);animation:rvpulse 1.7s ease-out infinite}
+@keyframes rvpulse{0%{box-shadow:0 0 0 0 rgba(122,46,46,.45)}70%{box-shadow:0 0 0 7px rgba(122,46,46,0)}100%{box-shadow:0 0 0 0 rgba(122,46,46,0)}}
+@media(prefers-reduced-motion:reduce){.rv-pulse{animation:none;outline:2px solid var(--ox);outline-offset:2px}}
+.rv-coach{margin-top:var(--s3);border:1px solid var(--rule);border-left:3px solid var(--ox);background:var(--surface);padding:15px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.rv-coach .step{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ox);white-space:nowrap}
+.rv-coach .say{flex:1;min-width:220px;font-size:14.5px;color:var(--ink)}
+.rv-coach .say b{color:var(--navy)}
+.rv-coach .ctrls{display:flex;gap:8px}
+.rv-coach .ctrls button{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:transparent;border:1px solid var(--rule);color:var(--muted);padding:6px 12px;cursor:pointer}
+.rv-coach .ctrls button:hover{border-color:var(--navy);color:var(--navy)}
+.rv-done{border-left-color:var(--seal)}
+.rv-done .step{color:var(--seal)}
+</style>
+<script type="module">
+  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
+  analytics.init({
+    projectKey: 'hck_pk_43IA1CGD1lQ8Z6O1s7gsyBwGcxwWwjnA',
+    install: { agent: 'claude-code' },
+    requestBatching: false,
+  });
+</script>
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="nav-in">
+  <a class="brand" href="/" aria-label="Candor home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#1B2A41"/><circle cx="50" cy="50" r="39" fill="none" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/><text x="50" y="52" font-family="Instrument Serif,Georgia,serif" font-size="58" fill="#FAF8F5" text-anchor="middle" dominant-baseline="central">C</text></svg><span class="name">Candor<span>.</span></span></a>
+  <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
+  <nav class="navlinks"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/start">Start free</a></nav>
+</div></header>
+
+<main id="main">
+<section class="wrap pagehead">
+  <div class="mono eyebrow">Interactive · five clicks</div>
+  <h1>What the partner sees when the associate used AI.</h1>
+  <p class="lede">This is the review screen a supervising attorney opens. An associate logged AI use against a matter; one entry came back flagged. Walk the five steps to sign it off — or send it back. Sample data, running in your browser.</p>
+</section>
+
+<section class="band reveal"><div class="wrap">
+  <div class="mono eyebrow">Review · sign-off</div>
+  <h2>The review queue.</h2>
+  <p class="sectionlede">Follow the prompts below the panel. Every action here is one a real reviewer takes — the record it writes is append-only.</p>
+
+  <div class="rv-app" id="rvApp" aria-label="Candor review screen, sample data">
+    <div class="rv-bar">
+      <span class="dot"></span>
+      <span class="lbl"><b>Candor</b> &nbsp;·&nbsp; Review &amp; sign-off</span>
+      <span class="ex">Example data</span>
+    </div>
+    <div class="rv-note"><b>Append-only.</b> Sign-offs are never edited. A change of mind is a new entry that points back to the one before it, and the whole chain is kept — that's what makes the record credible to a carrier.</div>
+    <div class="rv-count"><span id="rvCount">2 awaiting review · 3 total</span><span>Reviewer: <b style="color:var(--navy)">M. Ellery (you)</b></span></div>
+    <div class="rv-list" id="rvList"><!-- entries injected --></div>
+  </div>
+
+  <div class="rv-coach" id="rvCoach">
+    <span class="step" id="rvStep">Step 1 / 5</span>
+    <span class="say" id="rvSay"></span>
+    <span class="ctrls"><button type="button" id="rvRestart">Restart</button></span>
+  </div>
+
+  <p class="caption">Sample matters and names are fictitious. The real screen runs on your firm's own logged entries — Candor stores the fact of each AI use, never the client text behind it.</p>
+</div></section>
+
+<section class="band reveal"><div class="wrap narrow">
+  <div class="mono eyebrow">What that record proves</div>
+  <h2>Not that the AI was right — that a lawyer took responsibility.</h2>
+  <div class="deflist">
+    <div><h3>The flag is a prompt, not a verdict</h3><p>Candor surfaces citations that may need a second look and the AI's own hedging. It doesn't verify accuracy or decide compliance — the attorney's sign-off carries the weight, and confirming the citation is still their job.</p></div>
+    <div><h3>Every decision is dated and attributed</h3><p>Who reviewed it, when, what they decided, and any note — kept as an append-only entry. A reversal references the original; nothing is overwritten.</p></div>
+    <div><h3>This is the artifact for the carrier</h3><p>When a malpractice carrier asks how AI is used at the firm, this loop — logged use, a flag, an attorney sign-off — is the record you hand them.</p></div>
+  </div>
+  <div class="btnrow">
+    <a class="btn" href="/start">Start your free month</a>
+    <a class="btn ghost" href="/product">See the whole product</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div>
+      <span class="brand-seal" aria-hidden="true"></span><span class="name" style="font-family:var(--f-serif);font-size:22px;color:var(--navy)">Candor<span style="color:var(--ox)">.</span></span>
+      <p style="margin-top:10px;max-width:22em">The AI your firm works in, with the record built in.</p>
+    </div>
+    <div class="foot-links"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/international">International</a><a href="/changelog">Changelog</a><a href="/about">About</a><a href="/demo">Contact</a></div>
+  </div>
+  <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
+</div></footer>
+
+<script src="/assets/site.js?v=7"></script>
+<script>
+(function () {
+  // Sample review queue. Fictitious — no real firm or client data.
+  var entries = [
+    {
+      id: 'e1', matter: 'Matter No. 2026-0412', tool: 'ChatGPT', task: 'Research',
+      who: 'A. Reyes (associate)', ago: '2 days ago',
+      verify: { found: 3, notFound: 1, hedges: 1 },
+      status: null, chain: [],
+    },
+    {
+      id: 'e2', matter: 'Matter No. 2026-0387', tool: 'Claude', task: 'Drafting',
+      who: 'A. Reyes (associate)', ago: 'yesterday',
+      verify: { found: 2, notFound: 0, hedges: 0 },
+      status: null, chain: [],
+    },
+    {
+      id: 'e3', matter: 'Matter No. 2026-0355', tool: 'Copilot', task: 'Summarization',
+      who: 'J. Okafor (associate)', ago: 'last week',
+      verify: { found: 1, notFound: 0, hedges: 0 },
+      status: 'approved',
+      chain: [{ decision: 'approved', who: 'M. Ellery', when: 'last week' }],
+    },
+  ];
+  var open = {};   // id -> bool (entry expanded)
+  var forms = {};  // id -> 'approved' | 'changes_requested' (form open)
+
+  var list = document.getElementById('rvList');
+  var countEl = document.getElementById('rvCount');
+
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
+
+  function badge(e) {
+    if (!e.status) return '<span class="rv-badge await">Awaiting review</span>';
+    if (e.status === 'approved') return '<span class="rv-badge ok">✓ Signed off</span>';
+    return '<span class="rv-badge chg">⚠ Changes requested</span>';
+  }
+
+  function verifyBlock(e) {
+    var v = e.verify, flagged = v.notFound > 0 || v.hedges > 0;
+    var warn = v.notFound > 0
+      ? '<span class="warn">⚠ ' + v.notFound + ' unconfirmed</span>'
+      : '<span class="clean">✓ none unconfirmed</span>';
+    var hedge = '<span class="hedge">' + v.hedges + ' hedge phrase' + (v.hedges === 1 ? '' : 's') + '</span>';
+    var note = flagged
+      ? 'Flagged for a second look. Candor does not verify accuracy — confirm these yourself before signing off.'
+      : 'Nothing flagged. Still an assist, not a guarantee: your independent review is what carries weight.';
+    return '<div class="rv-verify' + (v.notFound > 0 ? ' flag' : '') + '">'
+      + '<div class="vhead"><span class="t">Verification (Module F)</span>'
+      + '<span class="c">' + v.found + ' citation' + (v.found === 1 ? '' : 's') + '</span>'
+      + warn + hedge + '</div>'
+      + '<div class="vnote">' + note + '</div></div>';
+  }
+
+  function chainBlock(e) {
+    if (!e.chain.length) return '';
+    var rows = e.chain.map(function (h) {
+      var head = h.decision === 'approved'
+        ? '<span class="ok">✓ Signed off</span>'
+        : '<span class="chg">⚠ Changes requested</span>';
+      return '<div class="line">' + head + ' by <span class="n">' + esc(h.who) + '</span> · ' + esc(h.when)
+        + (h.note ? ' — “' + esc(h.note) + '”' : '') + '</div>';
+    }).join('');
+    return '<div class="rv-chain">' + rows + '</div>';
+  }
+
+  function formBlock(e) {
+    var dec = forms[e.id];
+    if (!dec) return '';
+    var title = dec === 'approved' ? 'Sign off — approve this AI use' : 'Request changes';
+    var ph = dec === 'approved' ? 'e.g. citations checked, output verified' : 'e.g. re-verify the 2nd citation before filing';
+    return '<div class="rv-form" data-form="' + e.id + '">'
+      + '<div class="ftitle">' + title + '</div>'
+      + '<label>Note (optional)</label>'
+      + '<input type="text" data-note="' + e.id + '" placeholder="' + ph + '">'
+      + '<div class="rv-actions">'
+      + '<button type="button" class="rv-btn solid" data-confirm="' + e.id + '">Confirm</button>'
+      + '<button type="button" class="rv-btn line" data-cancel="' + e.id + '">Cancel</button>'
+      + '</div></div>';
+  }
+
+  function actionsBlock(e) {
+    if (forms[e.id]) return '';
+    var signed = e.status === 'approved';
+    return '<div class="rv-actions">'
+      + '<button type="button" class="rv-btn solid" data-act="approved" data-id="' + e.id + '">' + (e.chain.length ? 'Re-sign off' : 'Sign off') + '</button>'
+      + '<button type="button" class="rv-btn line" data-act="changes_requested" data-id="' + e.id + '">Request changes</button>'
+      + '</div>';
+  }
+
+  function render() {
+    list.innerHTML = entries.map(function (e) {
+      var isOpen = !!open[e.id];
+      var body = '';
+      if (isOpen) {
+        body = verifyBlock(e) + chainBlock(e) + formBlock(e) + actionsBlock(e);
+      } else if (e.chain.length) {
+        body = chainBlock(e);
+      }
+      return '<div class="rv-entry' + (isOpen ? ' open' : '') + '" data-entry="' + e.id + '">'
+        + '<div class="rv-ehead">'
+        + '<div><div class="rv-matter">' + esc(e.matter) + '</div>'
+        + '<div class="rv-meta"><span class="who">' + esc(e.tool) + '</span><span>·</span><span>' + esc(e.task) + '</span>'
+        + '<span>·</span><span>' + esc(e.who) + '</span><span>·</span><span>' + esc(e.ago) + '</span></div></div>'
+        + badge(e) + '</div>'
+        + body + '</div>';
+    }).join('');
+    var pending = entries.filter(function (e) { return !e.status || e.status === 'changes_requested'; }).length;
+    countEl.textContent = pending + ' awaiting review · ' + entries.length + ' total';
+    applyCoach();
+  }
+
+  function byId(id) { return entries.filter(function (e) { return e.id === id; })[0]; }
+
+  list.addEventListener('click', function (ev) {
+    var t = ev.target;
+    // expand/collapse an entry by clicking its header area
+    var head = t.closest('.rv-ehead');
+    if (head && !t.closest('button')) {
+      var card = head.closest('[data-entry]'); var id = card.getAttribute('data-entry');
+      open[id] = !open[id]; render(); maybeAdvanceOpen(id); return;
+    }
+    var actBtn = t.closest('[data-act]');
+    if (actBtn) {
+      var id2 = actBtn.getAttribute('data-id'); forms[id2] = actBtn.getAttribute('data-act');
+      open[id2] = true; render(); maybeAdvanceForm(id2, forms[id2]); return;
+    }
+    var confirmBtn = t.closest('[data-confirm]');
+    if (confirmBtn) {
+      var id3 = confirmBtn.getAttribute('data-confirm'); var e = byId(id3);
+      var input = list.querySelector('[data-note="' + id3 + '"]'); var note = input ? input.value.trim() : '';
+      var dec = forms[id3];
+      e.chain.push({ decision: dec, who: 'M. Ellery', when: 'just now', note: note });
+      e.status = dec; forms[id3] = null; render(); maybeAdvanceConfirm(id3, dec); return;
+    }
+    var cancelBtn = t.closest('[data-cancel]');
+    if (cancelBtn) { forms[cancelBtn.getAttribute('data-cancel')] = null; render(); return; }
+  });
+
+  /* ---- guided five-step tour ---- */
+  var steps = [
+    { say: 'You’re the reviewing partner. Two entries are awaiting you. <b>Matter 2026-0412</b> is flagged — open it.', target: function () { return list.querySelector('[data-entry="e1"] .rv-ehead'); } },
+    { say: 'One of three citations came back <b>unconfirmed</b>, plus a hedge phrase. Candor flags it; it doesn’t decide. Send it back — click <b>Request changes</b>.', target: function () { return list.querySelector('[data-entry="e1"] [data-act="changes_requested"]'); } },
+    { say: 'Add a note if you like, then <b>Confirm</b>. This writes an append-only entry — it can be revised later, never erased.', target: function () { return list.querySelector('[data-confirm="e1"]'); } },
+    { say: 'Now the clean one. Open <b>Matter 2026-0387</b> — nothing flagged there.', target: function () { return list.querySelector('[data-entry="e2"] .rv-ehead'); } },
+    { say: 'It checks out and you take responsibility — <b>Sign off</b>, then <b>Confirm</b>. That’s the record.', target: function () { return list.querySelector('[data-confirm="e2"]') || list.querySelector('[data-entry="e2"] [data-act="approved"]'); } },
+  ];
+  var si = 0, done = false;
+  var coach = document.getElementById('rvCoach');
+  var stepEl = document.getElementById('rvStep');
+  var sayEl = document.getElementById('rvSay');
+
+  function applyCoach() {
+    // clear old pulse
+    var old = list.querySelectorAll('.rv-pulse'); for (var i = 0; i < old.length; i++) old[i].classList.remove('rv-pulse');
+    if (done) return;
+    var tgt = steps[si] && steps[si].target();
+    if (tgt) tgt.classList.add('rv-pulse');
+  }
+  function paint() {
+    if (done) {
+      coach.classList.add('rv-done');
+      stepEl.textContent = 'Done';
+      sayEl.innerHTML = 'That’s the loop: a flag raised, one entry sent back, one signed off — each dated, attributed, and append-only. <b>Restart</b> to run it again.';
+      return;
+    }
+    coach.classList.remove('rv-done');
+    stepEl.textContent = 'Step ' + (si + 1) + ' / 5';
+    sayEl.innerHTML = steps[si].say;
+  }
+  function advance() { si++; if (si >= steps.length) { done = true; } paint(); applyCoach(); }
+  function maybeAdvanceOpen(id) { if (done) return; if ((si === 0 && id === 'e1' && open.e1) || (si === 3 && id === 'e2' && open.e2)) advance(); }
+  function maybeAdvanceForm(id, dec) { if (done) return; if (si === 1 && id === 'e1' && dec === 'changes_requested') advance(); }
+  function maybeAdvanceConfirm(id, dec) {
+    if (done) return;
+    if (si === 2 && id === 'e1' && dec === 'changes_requested') advance();
+    else if (si === 4 && id === 'e2' && dec === 'approved') advance();
+  }
+
+  document.getElementById('rvRestart').addEventListener('click', function () {
+    // reset state
+    entries[0].status = null; entries[0].chain = [];
+    entries[1].status = null; entries[1].chain = [];
+    open = {}; forms = {}; si = 0; done = false;
+    render(); paint();
+  });
+
+  render();
+  paint();
+})();
+</script>
+</body></html>
