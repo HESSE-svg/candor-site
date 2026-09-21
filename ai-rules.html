@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI ethics rules by jurisdiction · Candor</title>
-<meta name="description" content="A free tool: pick your jurisdiction and see the AI-related professional duties that apply — consent, billing, verification, court filing — each with a link to the authority that says so.">
+<meta name="description" content="A free tool: pick your jurisdiction and see the AI-related professional duties that apply (consent, billing, verification, court filing), each with a link to the authority that says so.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -58,7 +58,7 @@
 <section class="wrap pagehead">
   <div class="mono eyebrow">Free · public · no signup</div>
   <h1>What AI rules apply to your firm?</h1>
-  <p class="lede">Pick a jurisdiction and see the AI-related professional duties that apply — client consent, billing, verification, and court filing — each with a link to the authority that says so. A reference summary of published guidance, not legal advice.</p>
+  <p class="lede">Pick a jurisdiction and see the AI-related professional duties that apply (client consent, billing, verification, and court filing), each with a link to the authority that says so. A reference summary of published guidance, not legal advice.</p>
 
   <div class="jchooser">
     <div>
@@ -83,7 +83,7 @@
 
 <section class="wrap" id="intro">
   <div class="jdisc" style="border-left-color:var(--navy)">
-    <b>Coverage so far: Florida and the national ABA baseline.</b> More states are being added, each from its own bar opinion, statute, or court rule with the source linked. If your state has not issued specific AI guidance, most firms follow the ABA baseline (Formal Opinion 512) as the starting point — select it above to see it.
+    <b>Coverage so far: Florida and the national ABA baseline.</b> More states are being added, each from its own bar opinion, statute, or court rule with the source linked. If your state has not issued specific AI guidance, most firms follow the ABA baseline (Formal Opinion 512) as the starting point. Select it above to see it.
   </div>
 </section>
 </main>
@@ -100,12 +100,12 @@
 </div></footer>
 <script src="/assets/site.js?v=7"></script>
 <script>
-// Jurisdiction data lives here as a maintained table — each duty carries the
+// Jurisdiction data lives here as a maintained table, each duty carries the
 // authority and a link to the primary source. Nothing is asserted without one.
 // verdict: 'req' (required), 'some' (required in some cases), 'no' (no blanket duty).
 var JUR = {
   aba: {
-    name: 'National baseline — ABA Formal Opinion 512',
+    name: 'National baseline: ABA Formal Opinion 512',
     authority: 'ABA Formal Opinion 512, “Generative Artificial Intelligence Tools” (July 29, 2024)',
     url: 'https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/',
     status: 'current',
@@ -117,7 +117,7 @@ var JUR = {
       { key: 'verify', label: 'Verification of AI output', verdict: 'req', vlabel: 'Required',
         text: 'Competence (Rule 1.1) and candor to the tribunal (Rule 3.3) require you to review AI output, which can be inaccurate or fabricated. Responsibility for the work stays with the lawyer regardless of what produced it.' },
       { key: 'court', label: 'Court-filing disclosure', verdict: 'no', vlabel: 'No blanket duty',
-        text: 'Opinion 512 does not itself require disclosing AI use to a court. But many individual courts have standing orders that do — always check the rules of the specific court and judge you are filing before.' },
+        text: 'Opinion 512 does not itself require disclosing AI use to a court. But many individual courts have standing orders that do, so always check the rules of the specific court and judge you are filing before.' },
     ],
   },
   fl: {
@@ -133,7 +133,7 @@ var JUR = {
       { key: 'verify', label: 'Verification of AI output', verdict: 'req', vlabel: 'Required',
         text: 'A lawyer must oversee generative AI and review its work product just as the lawyer reviews the work of a nonlawyer assistant. The lawyer is responsible for the work whether AI drafted it in whole or in part.' },
       { key: 'court', label: 'Court-filing disclosure', verdict: 'no', vlabel: 'No blanket duty',
-        text: 'Opinion 24-1 does not itself impose a court-filing disclosure duty. Individual Florida courts or judges may require it by standing order — check the specific court before filing.' },
+        text: 'Opinion 24-1 does not itself impose a court-filing disclosure duty. Individual Florida courts or judges may require it by standing order. Check the specific court before filing.' },
     ],
   },
 };

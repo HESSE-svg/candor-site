@@ -1,4 +1,4 @@
-# candor.legal — all crawlers welcome, including AI assistants.
+# candor.legal, all crawlers welcome, including AI assistants.
 User-agent: *
 Allow: /
 

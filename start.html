@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Start your firm · Candor</title>
-<meta name="description" content="Start Candor on your firm — one month free, then a flat annual fee by attorney count. Set up today; nothing due until the trial ends.">
+<meta name="description" content="Start Candor on your firm: one month free, then a flat annual fee by attorney count. Set up today; nothing due until the trial ends.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -69,7 +69,7 @@
 <section class="wrap pagehead">
   <div class="mono eyebrow" style="color:var(--ox)">Start your firm</div>
   <h1>Your free month starts today.</h1>
-  <p class="lede">Set Candor up on your own model, across your whole team, with nothing due until the trial ends. Pick the plan that matches your attorney count — that count is your plan, and Candor holds you to it, so you only ever pay for the attorneys you set.</p>
+  <p class="lede">Set Candor up on your own model, across your whole team, with nothing due until the trial ends. Pick the plan that matches your attorney count: that count is your plan, and Candor holds you to it, so you only ever pay for the attorneys you set.</p>
 </section>
 
 <section class="wrap">
@@ -99,13 +99,13 @@
           <div class="field">
             <label for="attorneys">Number of attorneys</label>
             <input id="attorneys" name="attorneys" type="number" min="1" step="1" inputmode="numeric" required>
-            <div class="hint" id="attHint">This becomes your seat limit — the app won't let you add more than this.</div>
+            <div class="hint" id="attHint">This becomes your seat limit; the app won't let you add more than this.</div>
           </div>
         </div>
         <div class="field">
           <label for="pms">Practice management system <span style="text-transform:none;letter-spacing:0;color:var(--faint)">(optional)</span></label>
           <select id="pms" name="pms">
-            <option value="">— None / not sure —</option>
+            <option value="">None / not sure</option>
             <option>Clio</option><option>MyCase</option><option>Filevine</option>
             <option>PracticePanther</option><option>Smokeball</option><option>Other</option>
           </select>
@@ -139,9 +139,9 @@
   <div class="mono eyebrow">What happens next</div>
   <h2>From "start" to working, in a day.</h2>
   <div class="steps3">
-    <div class="step3"><div class="n">01</div><h3>You start free</h3><p>Enter your card at Stripe's secure checkout — you're not charged for 30 days. Your free month starts now.</p></div>
+    <div class="step3"><div class="n">01</div><h3>You start free</h3><p>Enter your card at Stripe's secure checkout, and you're not charged for 30 days. Your free month starts now.</p></div>
     <div class="step3"><div class="n">02</div><h3>We set up your firm</h3><p>We provision your firm's Candor workspace on your own model and send your sign-in, usually the same day.</p></div>
-    <div class="step3"><div class="n">03</div><h3>Your team works</h3><p>Pair the browser panel, add your attorneys — up to the number you chose — and the record starts building itself.</p></div>
+    <div class="step3"><div class="n">03</div><h3>Your team works</h3><p>Pair the browser panel, add your attorneys (up to the number you chose) and the record starts building itself.</p></div>
   </div>
 </div></section>
 </main>
@@ -167,7 +167,7 @@
 (function(){
   // Free-month trial checkouts (Stripe hosted): $0 today, 30-day free trial, then
   // bills the annual fee automatically. One per plan; Enterprise is "talk to us".
-  // Candor never touches card data — Stripe hosts the whole thing.
+  // Candor never touches card data; Stripe hosts the whole thing.
   var TRIAL_LINKS = {
     solo: "https://buy.stripe.com/4gMdR9came8dbt34Ql3wQ07",
     small: "https://buy.stripe.com/9B6bJ1camgglgNn1E93wQ08",
@@ -223,7 +223,7 @@
   planSel.addEventListener("change", function(){ current = byId[planSel.value] || current; render(); });
   document.getElementById("changeTier").addEventListener("click", function(){ location.href = "/pricing"; });
 
-  // Keep the attorney count inside the chosen plan's band — the number here is
+  // Keep the attorney count inside the chosen plan's band; the number here is
   // the seat limit the app will enforce, so it should never be able to exceed it.
   att.addEventListener("input", function(){
     var v = Number(att.value);
@@ -257,8 +257,8 @@
     if (err) return;
     var link = TRIAL_LINKS[d.plan.id];
     if (!link){
-      // Enterprise is custom-priced — no self-serve trial link.
-      document.getElementById("err").textContent = "Enterprise is priced per firm — email jesse@candor.legal and we'll set you up.";
+      // Enterprise is custom-priced, no self-serve trial link.
+      document.getElementById("err").textContent = "Enterprise is priced per firm; email jesse@candor.legal and we'll set you up.";
       return;
     }
     // Hosted Stripe trial checkout: $0 today, 30-day free trial, then the annual

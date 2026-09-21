@@ -1,4 +1,4 @@
-// Candor site — nav, gentle reveal-on-scroll, and the live redaction demo.
+// Candor site: nav, gentle reveal-on-scroll, and the live redaction demo.
 (function () {
   // mobile nav
   var toggle = document.querySelector('.navtoggle')

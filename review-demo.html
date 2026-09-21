@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>See the review loop · Candor</title>
-<meta name="description" content="A five-click look at what a managing partner sees when they review an associate's flagged AI use — the queue, the flag, the sign-off, and the append-only record. Sample data, in your browser.">
+<meta name="description" content="A five-click look at what a managing partner sees when they review an associate's flagged AI use: the queue, the flag, the sign-off, and the append-only record. Sample data, in your browser.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -18,7 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css?v=11">
 <style>
-/* Review walkthrough — page-scoped. Built on the shared tokens in styles.css. */
+/* Review walkthrough, page-scoped. Built on the shared tokens in styles.css. */
 .rv-app{margin-top:var(--s3);border:1px solid var(--rule);border-top:2px solid var(--navy);background:var(--surface)}
 .rv-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--soft)}
 .rv-bar .dot{width:9px;height:9px;border-radius:50%;background:var(--navy);opacity:.28}
@@ -99,13 +99,13 @@
 <section class="wrap pagehead">
   <div class="mono eyebrow">Interactive · five clicks</div>
   <h1>What the partner sees when the associate used AI.</h1>
-  <p class="lede">This is the review screen a supervising attorney opens. An associate logged AI use against a matter; one entry came back flagged. Walk the five steps to sign it off — or send it back. Sample data, running in your browser.</p>
+  <p class="lede">This is the review screen a supervising attorney opens. An associate logged AI use against a matter; one entry came back flagged. Walk the five steps to sign it off, or send it back. Sample data, running in your browser.</p>
 </section>
 
 <section class="band reveal"><div class="wrap">
   <div class="mono eyebrow">Review · sign-off</div>
   <h2>The review queue.</h2>
-  <p class="sectionlede">Follow the prompts below the panel. Every action here is one a real reviewer takes — the record it writes is append-only.</p>
+  <p class="sectionlede">Follow the prompts below the panel. Every action here is one a real reviewer takes, and the record it writes is append-only.</p>
 
   <div class="rv-app" id="rvApp" aria-label="Candor review screen, sample data">
     <div class="rv-bar">
@@ -113,7 +113,7 @@
       <span class="lbl"><b>Candor</b> &nbsp;·&nbsp; Review &amp; sign-off</span>
       <span class="ex">Example data</span>
     </div>
-    <div class="rv-note"><b>Append-only.</b> Sign-offs are never edited. A change of mind is a new entry that points back to the one before it, and the whole chain is kept — that's what makes the record credible to a carrier.</div>
+    <div class="rv-note"><b>Append-only.</b> Sign-offs are never edited. A change of mind is a new entry that points back to the one before it, and the whole chain is kept. That's what makes the record credible to a carrier.</div>
     <div class="rv-count"><span id="rvCount">2 awaiting review · 3 total</span><span>Reviewer: <b style="color:var(--navy)">M. Ellery (you)</b></span></div>
     <div class="rv-list" id="rvList"><!-- entries injected --></div>
   </div>
@@ -124,16 +124,16 @@
     <span class="ctrls"><button type="button" id="rvRestart">Restart</button></span>
   </div>
 
-  <p class="caption">Sample matters and names are fictitious. The real screen runs on your firm's own logged entries — Candor stores the fact of each AI use, never the client text behind it.</p>
+  <p class="caption">Sample matters and names are fictitious. The real screen runs on your firm's own logged entries. Candor stores the fact of each AI use, never the client text behind it.</p>
 </div></section>
 
 <section class="band reveal"><div class="wrap narrow">
   <div class="mono eyebrow">What that record proves</div>
-  <h2>Not that the AI was right — that a lawyer took responsibility.</h2>
+  <h2>Not that the AI was right, but that a lawyer took responsibility.</h2>
   <div class="deflist">
-    <div><h3>The flag is a prompt, not a verdict</h3><p>Candor surfaces citations that may need a second look and the AI's own hedging. It doesn't verify accuracy or decide compliance — the attorney's sign-off carries the weight, and confirming the citation is still their job.</p></div>
-    <div><h3>Every decision is dated and attributed</h3><p>Who reviewed it, when, what they decided, and any note — kept as an append-only entry. A reversal references the original; nothing is overwritten.</p></div>
-    <div><h3>This is the artifact for the carrier</h3><p>When a malpractice carrier asks how AI is used at the firm, this loop — logged use, a flag, an attorney sign-off — is the record you hand them.</p></div>
+    <div><h3>The flag is a prompt, not a verdict</h3><p>Candor surfaces citations that may need a second look and the AI's own hedging. It doesn't verify accuracy or decide compliance; the attorney's sign-off carries the weight, and confirming the citation is still their job.</p></div>
+    <div><h3>Every decision is dated and attributed</h3><p>Who reviewed it, when, what they decided, and any note, kept as an append-only entry. A reversal references the original; nothing is overwritten.</p></div>
+    <div><h3>This is the artifact for the carrier</h3><p>When a malpractice carrier asks how AI is used at the firm, this loop (logged use, a flag, an attorney sign-off) is the record you hand them.</p></div>
   </div>
   <div class="btnrow">
     <a class="btn" href="/start">Start your free month</a>
@@ -156,7 +156,7 @@
 <script src="/assets/site.js?v=7"></script>
 <script>
 (function () {
-  // Sample review queue. Fictitious — no real firm or client data.
+  // Sample review queue. Fictitious, no real firm or client data.
   var entries = [
     {
       id: 'e1', matter: 'Matter No. 2026-0412', tool: 'ChatGPT', task: 'Research',
@@ -199,7 +199,7 @@
       : '<span class="clean">✓ none unconfirmed</span>';
     var hedge = '<span class="hedge">' + v.hedges + ' hedge phrase' + (v.hedges === 1 ? '' : 's') + '</span>';
     var note = flagged
-      ? 'Flagged for a second look. Candor does not verify accuracy — confirm these yourself before signing off.'
+      ? 'Flagged for a second look. Candor does not verify accuracy; confirm these yourself before signing off.'
       : 'Nothing flagged. Still an assist, not a guarantee: your independent review is what carries weight.';
     return '<div class="rv-verify' + (v.notFound > 0 ? ' flag' : '') + '">'
       + '<div class="vhead"><span class="t">Verification (Module F)</span>'
@@ -215,7 +215,7 @@
         ? '<span class="ok">✓ Signed off</span>'
         : '<span class="chg">⚠ Changes requested</span>';
       return '<div class="line">' + head + ' by <span class="n">' + esc(h.who) + '</span> · ' + esc(h.when)
-        + (h.note ? ' — “' + esc(h.note) + '”' : '') + '</div>';
+        + (h.note ? ', “' + esc(h.note) + '”' : '') + '</div>';
     }).join('');
     return '<div class="rv-chain">' + rows + '</div>';
   }
@@ -223,7 +223,7 @@
   function formBlock(e) {
     var dec = forms[e.id];
     if (!dec) return '';
-    var title = dec === 'approved' ? 'Sign off — approve this AI use' : 'Request changes';
+    var title = dec === 'approved' ? 'Sign off: approve this AI use' : 'Request changes';
     var ph = dec === 'approved' ? 'e.g. citations checked, output verified' : 'e.g. re-verify the 2nd citation before filing';
     return '<div class="rv-form" data-form="' + e.id + '">'
       + '<div class="ftitle">' + title + '</div>'
@@ -295,11 +295,11 @@
 
   /* ---- guided five-step tour ---- */
   var steps = [
-    { say: 'You’re the reviewing partner. Two entries are awaiting you. <b>Matter 2026-0412</b> is flagged — open it.', target: function () { return list.querySelector('[data-entry="e1"] .rv-ehead'); } },
-    { say: 'One of three citations came back <b>unconfirmed</b>, plus a hedge phrase. Candor flags it; it doesn’t decide. Send it back — click <b>Request changes</b>.', target: function () { return list.querySelector('[data-entry="e1"] [data-act="changes_requested"]'); } },
-    { say: 'Add a note if you like, then <b>Confirm</b>. This writes an append-only entry — it can be revised later, never erased.', target: function () { return list.querySelector('[data-confirm="e1"]'); } },
-    { say: 'Now the clean one. Open <b>Matter 2026-0387</b> — nothing flagged there.', target: function () { return list.querySelector('[data-entry="e2"] .rv-ehead'); } },
-    { say: 'It checks out and you take responsibility — <b>Sign off</b>, then <b>Confirm</b>. That’s the record.', target: function () { return list.querySelector('[data-confirm="e2"]') || list.querySelector('[data-entry="e2"] [data-act="approved"]'); } },
+    { say: 'You’re the reviewing partner. Two entries are awaiting you. <b>Matter 2026-0412</b> is flagged, so open it.', target: function () { return list.querySelector('[data-entry="e1"] .rv-ehead'); } },
+    { say: 'One of three citations came back <b>unconfirmed</b>, plus a hedge phrase. Candor flags it; it doesn’t decide. Send it back: click <b>Request changes</b>.', target: function () { return list.querySelector('[data-entry="e1"] [data-act="changes_requested"]'); } },
+    { say: 'Add a note if you like, then <b>Confirm</b>. This writes an append-only entry, and it can be revised later, never erased.', target: function () { return list.querySelector('[data-confirm="e1"]'); } },
+    { say: 'Now the clean one. Open <b>Matter 2026-0387</b>, nothing flagged there.', target: function () { return list.querySelector('[data-entry="e2"] .rv-ehead'); } },
+    { say: 'It checks out and you take responsibility: <b>Sign off</b>, then <b>Confirm</b>. That’s the record.', target: function () { return list.querySelector('[data-confirm="e2"]') || list.querySelector('[data-entry="e2"] [data-act="approved"]'); } },
   ];
   var si = 0, done = false;
   var coach = document.getElementById('rvCoach');
@@ -317,7 +317,7 @@
     if (done) {
       coach.classList.add('rv-done');
       stepEl.textContent = 'Done';
-      sayEl.innerHTML = 'That’s the loop: a flag raised, one entry sent back, one signed off — each dated, attributed, and append-only. <b>Restart</b> to run it again.';
+      sayEl.innerHTML = 'That’s the loop: a flag raised, one entry sent back, one signed off, each dated, attributed, and append-only. <b>Restart</b> to run it again.';
       return;
     }
     coach.classList.remove('rv-done');

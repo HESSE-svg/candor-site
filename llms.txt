@@ -4,7 +4,7 @@
 
 ## Core pages
 - [Home](https://candor.legal/): what Candor is and the 60-second product walkthrough.
-- [Product](https://candor.legal/product): how it works — screen, log, verify, sign off, report, policy.
+- [Product](https://candor.legal/product): how it works, covering screen, log, verify, sign off, report, policy.
 - [Pricing](https://candor.legal/pricing): flat annual fee by attorney count; staff seats free; one month free.
 - [Security](https://candor.legal/security): hash-chained, encrypted records; the firm's own model; full export.
 - [About](https://candor.legal/about): the founder and why Candor exists.
