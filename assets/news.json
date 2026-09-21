@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-21T12:58:50.045Z",
+  "builtAt": "2026-09-21T22:02:31.816Z",
   "count": 10,
   "items": [
+    {
+      "title": "Legal Ethics Roundup: Judge Warns Of Threat To Democracy, AI Slop Harms Extend Beyond Fake Cites, Philly DA Referred For Investigation, New Bill Aims To End ‘Stealth Impeachments’ More",
+      "link": "https://abovethelaw.com/2026/09/legal-ethics-roundup-judge-warns-of-threat-to-democracy-ai-slop-harms-extend-beyond-fake-cites-philly-da-referred-for-investigation-new-bill-aims-to-end-stealth-impeachments-amp/",
+      "desc": "Your tour of all things related to lawyer and judicial ethics, with University of Houston law professor Renee Knake Jefferson. The post Legal Ethics Roundup: Judge Warns Of Threat To Democracy, AI…",
+      "date": "Mon, 21 Sep 2026 16:57:08 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2021/03/iStock-484137638-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1790009828000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Guest post: The AI patent race , Why startups need to think beyond filing",
+      "link": "https://legaltechnology.com/guest-post-the-ai-patent-race-why-startups-need-to-think-beyond-filing/",
+      "desc": "For AI start-ups, filing a patent may seem like crossing the finishing line. An invention has been found, the application is ready and the company can then get on with [] The post Guest post: The…",
+      "date": "Mon, 21 Sep 2026 13:35:08 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/AI-startup.png",
+      "source": "Legal IT Insider",
+      "ts": 1789997708000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI Gains Slim for Most Staff, Is Legal Different?",
       "link": "https://www.artificiallawyer.com/2026/09/21/ai-gains-slim-for-most-staff-is-legal-different/",
@@ -40,7 +68,7 @@
       "ts": 1789764240000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -54,7 +82,7 @@
       "ts": 1789763446000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -68,7 +96,7 @@
       "ts": 1789753824000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -101,20 +129,6 @@
       "promo": false
     },
     {
-      "title": "AI Native Law Firms Aren’t Just For Biglaw Lawyers",
-      "link": "https://www.myshingle.com/2026/09/ai-native-law-firms-arent-just-for-biglaw-lawyers/",
-      "desc": "AI native firms are finally attracting Biglaw attorneys’ attention but the underlying philosophy remains relevant to more traditional solos and smalls. The post AI Native Law Firms Aren’t Just For…",
-      "date": "Thu, 17 Sep 2026 20:44:00 +0000",
-      "img": "https://images.bannerbear.com/direct/y0aJ23zRDdqMxX4OGl/requests/000/162/738/408/5nDZ3xmVezbM4gGOYy2qpdWj9/e2b84e9adc36032c2ac9ea4c3e0b8509d0d33d5e.png",
-      "source": "Above the Law",
-      "ts": 1789677840000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "OpenAI Releases Astra for Law, A GPT-6 Model Tailored for Legal Work, Targeting Large Firms and Tech Vendors",
       "link": "https://www.lawnext.com/2026/09/openai-releases-astra-for-law-a-gpt-6-model-configured-for-legal-work.html",
       "desc": "Calling it the beginning of its long-term investment in law, ChatGPT developer OpenAI today released Astra for Law, a version of its latest model, GPT-6 Astra, configured for legal work, including…",
@@ -124,21 +138,7 @@
       "ts": 1789675231000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Breaking news: OpenAI unveils Astra for Law",
-      "link": "https://legaltechnology.com/breaking-news-openai-unveils-astra-for-law/",
-      "desc": "In a major announcement involving players from across the legal tech ecosystem, OpenAI today (17 September) unveils Astra for Law – it's most powerful large language model to date configured []…",
-      "date": "Thu, 17 Sep 2026 20:00:04 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/openai-jason-boehmig.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1789675204000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     }
