@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-21T05:05:56.550Z",
+  "builtAt": "2026-09-21T12:58:50.045Z",
   "count": 10,
   "items": [
+    {
+      "title": "AI Gains Slim for Most Staff, Is Legal Different?",
+      "link": "https://www.artificiallawyer.com/2026/09/21/ai-gains-slim-for-most-staff-is-legal-different/",
+      "desc": "A major survey of 25,000 employees by Big Four firm Deloitte has found that the workforce in general has not seen significant productivity gains from",
+      "date": "Mon, 21 Sep 2026 08:23:16 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-21-at-08.57.54.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789978996000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "When Every Legal AI Has a Good Model, What Differentiates It?",
+      "link": "https://www.artificiallawyer.com/2026/09/21/when-every-legal-ai-has-a-good-model-what-differentiates-it/",
+      "desc": "By Deepak Kapoor, CEO, Manupatra. The legal AI conversation has, understandably, been dominated by models. Which model reasons better? Which has the larger context window?",
+      "date": "Mon, 21 Sep 2026 06:52:48 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-21-at-07.35.05.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789973568000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "‘Adventures In Legal Tech’: The Risks Of AI-Generated Legal Marketing",
       "link": "https://abovethelaw.com/2026/09/adventures-in-legal-tech-the-risks-of-ai-generated-legal-marketing/",
@@ -54,7 +82,7 @@
       "ts": 1789735404000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -68,7 +96,7 @@
       "ts": 1789713830000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -111,34 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Google Shows Off Cloud Legal AI Helpers + More",
-      "link": "https://www.artificiallawyer.com/2026/09/17/google-shows-off-cloud-legal-ai-helpers-more/",
-      "desc": "Yesterday, 'Google Legal' gave an inside look at how Gemini Enterprise can be deployed for lawyers, from everyday prompting, to NotebookLM use, to custom app",
-      "date": "Thu, 17 Sep 2026 06:35:05 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-17-at-06.55.01.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789626905000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "On LawNext: Alex Su, Newly Named President of Latitude Legal, On Why AI Is Driving Demand for Flex Talent",
-      "link": "https://www.lawnext.com/2026/09/on-lawnext-alex-su-newly-named-president-of-latitude-legal-on-why-ai-is-driving-demand-for-flex-talent.html",
-      "desc": "Call it Alex Su, redux. We do not usually have the same guest on LawNext twice in the same year, but there is good reason to have Alex back, as he has just been named president of Latitude Legal,…",
-      "date": "Wed, 16 Sep 2026 18:57:44 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Alex-Su-LawNext-Featured.png",
-      "source": "LawNext",
-      "ts": 1789585064000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
       "strong": true,
       "promo": false
     }
