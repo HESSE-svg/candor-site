@@ -117,6 +117,7 @@ var CASES = [
     note: 'The largest U.S. AI-hallucination sanction on record, split between the pro hac vice counsel and local counsel as monetary sanctions plus the opposing side’s attorney fees.',
     source: 'https://www.abajournal.com/news/article/oregon-federal-judge-hands-down-110000-penalty-for-ai-errors',
     sourceLabel: 'ABA Journal report',
+    detail: '/sanctions/couvrette-v-wisnovsky',
   },
   {
     id: 'mata-avianca',
@@ -130,6 +131,7 @@ var CASES = [
     note: 'The origin of the issue. The court held that attorneys have an affirmative duty to verify every citation before filing, and that using an AI tool does not change that obligation. Counsel were also ordered to send corrective letters to the judges named in the fake opinions.',
     source: 'https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2022cv01461/575368/54/',
     sourceLabel: 'Opinion (Justia)',
+    detail: '/sanctions/mata-v-avianca',
   },
 ];
 
@@ -158,7 +160,7 @@ var CASES = [
         '</div>' +
         '<p class="what">' + esc(c.what) + '</p>' +
         (c.note ? '<p class="cnote">' + esc(c.note) + '</p>' : '') +
-        '<p class="src"><a href="' + esc(c.source) + '" target="_blank" rel="noopener">' + esc(c.sourceLabel) + ' &rarr;</a></p>' +
+        '<p class="src"><a href="' + esc(c.source) + '" target="_blank" rel="noopener">' + esc(c.sourceLabel) + ' &rarr;</a>' + (c.detail ? ' &middot; <a href="' + esc(c.detail) + '">Full case &rarr;</a>' : '') + '</p>' +
       '</article>';
     }).join('');
     // if the URL has an anchor, keep it in view after re-render

@@ -13,6 +13,14 @@
   <url><loc>https://candor.legal/news</loc><changefreq>daily</changefreq><priority>0.6</priority></url>
   <url><loc>https://candor.legal/ai-rules</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://candor.legal/ai-sanctions</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://candor.legal/sanctions/couvrette-v-wisnovsky</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://candor.legal/sanctions/mata-v-avianca</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://candor.legal/rules</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://candor.legal/rules/florida</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://candor.legal/guides</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://candor.legal/guides/aba-opinion-512</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://candor.legal/guides/law-firm-ai-policy</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://candor.legal/guides/malpractice-ai-questionnaire</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://candor.legal/demo</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://candor.legal/review-demo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://candor.legal/changelog</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
