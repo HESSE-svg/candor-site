@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-22T17:02:30.205Z",
+  "builtAt": "2026-09-22T21:25:42.605Z",
   "count": 10,
   "items": [
+    {
+      "title": "Why 'We Only Use AI For Marketing' Is Still A Bar Complaint Waiting To Happen",
+      "link": "https://abovethelaw.com/2026/09/why-we-only-use-ai-for-marketing-is-still-a-bar-complaint-waiting-to-happen/",
+      "desc": "The risks of treating marketing as the place where the rules get loose. The post Why 'We Only Use AI For Marketing' Is Still A Bar Complaint Waiting To Happen appeared first on Above the Law .",
+      "date": "Tue, 22 Sep 2026 21:15:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/09/GettyImages-2215886980-1-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1790111700000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Guest post: The AI bill many law firms haven't priced in",
       "link": "https://legaltechnology.com/guest-post-the-ai-bill-many-law-firms-havent-priced-in/",
@@ -87,20 +101,6 @@
       "promo": false
     },
     {
-      "title": "‘Adventures In Legal Tech’: The Risks Of AI-Generated Legal Marketing",
-      "link": "https://abovethelaw.com/2026/09/adventures-in-legal-tech-the-risks-of-ai-generated-legal-marketing/",
-      "desc": "The compliance issue almost nobody in legal marketing is talking about. The post ‘Adventures In Legal Tech’: The Risks Of AI-Generated Legal Marketing appeared first on Above the Law .",
-      "date": "Fri, 18 Sep 2026 20:44:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/03/adventuresinlegaltech.jpg",
-      "source": "Above the Law",
-      "ts": 1789764240000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Synergy 2026: Where AI insights become action",
       "link": "https://blogs.thomsonreuters.com/legal-blog/synergy-2026-where-ai-insights-become-action/",
       "desc": "Ask a law firm leader today whether AI matters, and you'll get an easy yes. Ask them whether their firm The post Synergy 2026: Where AI insights become action appeared first on Thomson Reuters Law…",
@@ -110,21 +110,7 @@
       "ts": 1789763446000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Lane Kiffin Is EXACTLY The Guy Who Uses ChatGPT For Legal Advice",
-      "link": "https://abovethelaw.com/2026/09/lane-kiffin-is-exactly-the-guy-who-uses-chatgpt-for-legal-advice/",
-      "desc": "The SEC and the frontier AI labs are running the same broken playbook. The post Lane Kiffin Is EXACTLY The Guy Who Uses ChatGPT For Legal Advice appeared first on Above the Law .",
-      "date": "Fri, 18 Sep 2026 17:50:24 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/09/GettyImages-1437983825.jpeg",
-      "source": "Above the Law",
-      "ts": 1789753824000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -136,6 +122,20 @@
       "img": "https://www.lawnext.com/wp-content/uploads/2026/09/OpenAI-Logo.png",
       "source": "LawNext",
       "ts": 1789735404000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "4 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "OpenAI Launches Astra For Law",
+      "link": "https://www.artificiallawyer.com/2026/09/18/openai-launches-astra-for-law/",
+      "desc": "After plenty of waiting, OpenAI has launched Astra for Law, a ‘new offering powered by GPT-6 Astra with tools, settings, and context to support the",
+      "date": "Fri, 18 Sep 2026 06:43:50 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-18-at-07.39.58.png",
+      "source": "Artificial Lawyer",
+      "ts": 1789713830000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "4 days ago",
