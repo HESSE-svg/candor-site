@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-22T11:48:27.884Z",
+  "builtAt": "2026-09-22T17:02:30.205Z",
   "count": 10,
   "items": [
+    {
+      "title": "Guest post: The AI bill many law firms haven't priced in",
+      "link": "https://legaltechnology.com/guest-post-the-ai-bill-many-law-firms-havent-priced-in/",
+      "desc": "By James Harrison Most firms buying legal AI are buying on a per-seat licence. That unit is on its way out. Legora has moved its Agent [] The post Guest post: The AI bill many law firms haven't…",
+      "date": "Tue, 22 Sep 2026 13:53:17 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/AI-Bill-1-1024x280.png",
+      "source": "Legal IT Insider",
+      "ts": 1790085197000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Product demo: NetDocuments showcases new AI Tabular Review capability",
+      "link": "https://legaltechnology.com/product-demo-netdocuments-showcases-new-ai-tabular-review-capability/",
+      "desc": "In this product demonstration with Legal IT Insider, NetDocuments' director of legal AI solutions, Brandall Nelson, showcases the new AI-powered Tabular Review capability that was launched in…",
+      "date": "Tue, 22 Sep 2026 10:36:49 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/StartUp-Corner-2.png",
+      "source": "Legal IT Insider",
+      "ts": 1790073409000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Legal Ethics Roundup: Judge Warns Of Threat To Democracy, AI Slop Harms Extend Beyond Fake Cites, Philly DA Referred For Investigation, New Bill Aims To End ‘Stealth Impeachments’ More",
       "link": "https://abovethelaw.com/2026/09/legal-ethics-roundup-judge-warns-of-threat-to-democracy-ai-slop-harms-extend-beyond-fake-cites-philly-da-referred-for-investigation-new-bill-aims-to-end-stealth-impeachments-amp/",
@@ -12,7 +40,7 @@
       "ts": 1790009828000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -26,7 +54,7 @@
       "ts": 1789997708000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -110,34 +138,6 @@
       "ts": 1789735404000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "OpenAI Launches Astra For Law",
-      "link": "https://www.artificiallawyer.com/2026/09/18/openai-launches-astra-for-law/",
-      "desc": "After plenty of waiting, OpenAI has launched Astra for Law, a ‘new offering powered by GPT-6 Astra with tools, settings, and context to support the",
-      "date": "Fri, 18 Sep 2026 06:43:50 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-18-at-07.39.58.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789713830000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "OpenAI Releases Astra for Law, A GPT-6 Model Tailored for Legal Work, Targeting Large Firms and Tech Vendors",
-      "link": "https://www.lawnext.com/2026/09/openai-releases-astra-for-law-a-gpt-6-model-configured-for-legal-work.html",
-      "desc": "Calling it the beginning of its long-term investment in law, ChatGPT developer OpenAI today released Astra for Law, a version of its latest model, GPT-6 Astra, configured for legal work, including…",
-      "date": "Thu, 17 Sep 2026 20:00:31 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/OpenAI-Logo.png",
-      "source": "LawNext",
-      "ts": 1789675231000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "4 days ago",
       "strong": true,
       "promo": false
