@@ -1,0 +1,11 @@
+Name,Firm,Email,Phone,Website,Region,Status,Notes
+John Smith,Smith Insurance Group,john@smithins.com,555-0101,smithins.com,California,ready,"Partner-level broker, focuses on law firm clients"
+Sarah Chen,Legal Risk Partners,sarah@legalrisk.com,555-0102,legalrisk.com,New York,ready,"Specializes in professional liability, large firm focus"
+Michael Rodriguez,Pro Liability Brokers,michael@prolifliability.com,555-0103,prolifliability.com,Texas,ready,"Regional presence in Southwest"
+Jennifer Walsh,Knight Insurance Solutions,jennifer@knightins.com,555-0104,knightins.com,Illinois,ready,"Broad client base including solo practitioners"
+David Park,Risk Management Partners,david@riskpartners.com,555-0105,riskpartners.com,Massachusetts,pending,"Research their recent ML client list"
+Lisa Thompson,Coverage Advisors,lisa@coverageadvisors.com,555-0106,coverageadvisors.com,Florida,pending,"New prospect, cold outreach"
+Robert Johnson,National PL Group,robert@nationalpl.com,555-0107,nationalpl.com,Multi-State,ready,"Large broker network, high impact"
+Amanda Foster,Solo & Small Firm Insurance,amanda@solosmallinsurance.com,555-0108,solosmallinsurance.com,Colorado,pending,"Solo practice focus, good market fit"
+Christopher Lee,Bar Association Insurance,chris@barassoc-ins.com,555-0109,barassoc-ins.com,Washington,pending,"Access to bar association members"
+Maria Gonzalez,Texas Legal Insurance Co,maria@txlegalins.com,555-0110,txlegalins.com,Texas,ready,"Established player in Texas market"
