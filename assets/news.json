@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-23T04:52:12.929Z",
+  "builtAt": "2026-09-23T11:48:12.134Z",
   "count": 10,
   "items": [
+    {
+      "title": "Law Firm Launches Legal AI Tool For Creators",
+      "link": "https://www.artificiallawyer.com/2026/09/23/law-firm-launches-legal-ai-tool-for-creators/",
+      "desc": "Lewis Silkin, a UK-based law firm, and its LS Innovations affiliated tech company, have launched Lettu, an AI-powered platform to help ‘creators, talent managers, agencies",
+      "date": "Wed, 23 Sep 2026 09:20:16 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-23-at-09.53.22.png",
+      "source": "Artificial Lawyer",
+      "ts": 1790155216000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Why 'We Only Use AI For Marketing' Is Still A Bar Complaint Waiting To Happen",
       "link": "https://abovethelaw.com/2026/09/why-we-only-use-ai-for-marketing-is-still-a-bar-complaint-waiting-to-happen/",
@@ -40,7 +54,7 @@
       "ts": 1790073409000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,7 +96,7 @@
       "ts": 1789978996000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -96,7 +110,7 @@
       "ts": 1789973568000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -122,20 +136,6 @@
       "img": "https://www.lawnext.com/wp-content/uploads/2026/09/OpenAI-Logo.png",
       "source": "LawNext",
       "ts": 1789735404000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "OpenAI Launches Astra For Law",
-      "link": "https://www.artificiallawyer.com/2026/09/18/openai-launches-astra-for-law/",
-      "desc": "After plenty of waiting, OpenAI has launched Astra for Law, a ‘new offering powered by GPT-6 Astra with tools, settings, and context to support the",
-      "date": "Fri, 18 Sep 2026 06:43:50 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-18-at-07.39.58.png",
-      "source": "Artificial Lawyer",
-      "ts": 1789713830000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "4 days ago",
