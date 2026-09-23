@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-23T17:12:01.075Z",
+  "builtAt": "2026-09-23T21:34:43.425Z",
   "count": 10,
   "items": [
+    {
+      "title": "Law Schools Can’t Decide Whether To Teach AI Or Pretend It Doesn’t Exist",
+      "link": "https://abovethelaw.com/2026/09/law-schools-cant-decide-whether-to-teach-ai-or-pretend-it-doesnt-exist/",
+      "desc": "Students say avoiding the technology won’t prepare them for modern legal practice. The post Law Schools Can’t Decide Whether To Teach AI Or Pretend It Doesn’t Exist appeared first on Above the Law .",
+      "date": "Wed, 23 Sep 2026 20:44:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/06/GettyImages-2265191306.jpg",
+      "source": "Above the Law",
+      "ts": 1790196240000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "At Its User Conference in Las Vegas, 8am Announces MCP Integration and New AI Tools for MyCase, Plus New Law Firm Funding Program through LawPay",
       "link": "https://www.lawnext.com/2026/09/at-its-user-conference-in-las-vegas-8am-announces-mcp-integration-and-new-ai-tools-for-mycase-plus-new-law-firm-funding-program-through-lawpay.html",
@@ -40,7 +54,7 @@
       "ts": 1790111700000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -69,20 +83,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Legal Ethics Roundup: Judge Warns Of Threat To Democracy, AI Slop Harms Extend Beyond Fake Cites, Philly DA Referred For Investigation, New Bill Aims To End ‘Stealth Impeachments’ More",
-      "link": "https://abovethelaw.com/2026/09/legal-ethics-roundup-judge-warns-of-threat-to-democracy-ai-slop-harms-extend-beyond-fake-cites-philly-da-referred-for-investigation-new-bill-aims-to-end-stealth-impeachments-amp/",
-      "desc": "Your tour of all things related to lawyer and judicial ethics, with University of Houston law professor Renee Knake Jefferson. The post Legal Ethics Roundup: Judge Warns Of Threat To Democracy, AI…",
-      "date": "Mon, 21 Sep 2026 16:57:08 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2021/03/iStock-484137638-scaled.jpg",
-      "source": "Above the Law",
-      "ts": 1790009828000,
-      "topic": "courts",
-      "topicLabel": "Courts & sanctions",
-      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,7 +124,7 @@
       "ts": 1789763446000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
