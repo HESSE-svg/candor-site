@@ -1,0 +1,6 @@
+# Never publish internal files. Vercel serves every file in this repo as a
+# public URL, so anything that is not a page, asset or crawler file stays out.
+*.md
+*.csv
+tools/
+.github/
