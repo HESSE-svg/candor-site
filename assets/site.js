@@ -1,5 +1,77 @@
-// Candor site: nav, gentle reveal-on-scroll, and the live redaction demo.
+// Candor site: nav, gentle reveal-on-scroll, the live redaction demo, and
+// funnel counts.
 (function () {
+  // ---- funnel counts + (optional) Google Ads conversions ----
+  //
+  // Candor's own counter: four steps are counted, a visit (once per browser
+  // session), opening /start, clicking through to checkout, and reaching
+  // /welcome after checkout. Only the step's name is sent; this counter sets
+  // no cookie and sends no visitor id, and the app keeps only per-day totals
+  // (app/server/siteEventApi.mjs).
+  //
+  // Google Ads stays OFF until ADS.id is filled in. When on, it loads Google's
+  // tag (which does set cookies) and reports the two conversions below, except
+  // for visitors whose browser sends Global Privacy Control or Do Not Track.
+  // Before switching it on: keep "enhanced conversions" off in Google Ads (it
+  // can read the email field on /start), and make sure Stripe's redirect to
+  // /welcome carries no query string.
+  //
+  // This note covers only the counter and Google's tag. Pages that also load
+  // the Heycatch analytics script are governed by Heycatch's own behaviour.
+  var ADS = {
+    id: '',                // e.g. 'AW-123456789'
+    labels: {              // conversion labels from Google Ads, per step
+      checkout_click: '',  // "Begin checkout"
+      welcome_view: '',    // "Sign-up" (trial started)
+    },
+  }
+  var ENDPOINT = 'https://app.candor.legal/api/site/event'
+  var optedOut = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1'
+  var adsOn = !!ADS.id && !optedOut
+
+  function beacon(step) {
+    try {
+      if (navigator.sendBeacon) navigator.sendBeacon(ENDPOINT, new Blob([step], { type: 'text/plain' }))
+      else fetch(ENDPOINT, { method: 'POST', body: step, keepalive: true, mode: 'no-cors' })
+    } catch (e) { /* counting must never break the page */ }
+  }
+
+  if (adsOn) {
+    var tag = document.createElement('script')
+    tag.async = true
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ADS.id)
+    document.head.appendChild(tag)
+    window.dataLayer = window.dataLayer || []
+    window.gtag = function () { window.dataLayer.push(arguments) }
+    window.gtag('js', new Date())
+    window.gtag('config', ADS.id)
+  }
+
+  // candorTrack(step, { value, done }): count a step. `done` runs once the
+  // Google conversion is sent (or after 800ms), so a page can navigate away
+  // without losing it; with Ads off it runs straight away.
+  window.candorTrack = function (step, opts) {
+    opts = opts || {}
+    beacon(step)
+    var done = typeof opts.done === 'function' ? opts.done : null
+    var label = ADS.labels[step]
+    if (adsOn && label && window.gtag) {
+      var fired = false
+      var finish = function () { if (!fired) { fired = true; if (done) done() } }
+      var params = { send_to: ADS.id + '/' + label, event_callback: finish }
+      if (typeof opts.value === 'number') { params.value = opts.value; params.currency = 'USD' }
+      window.gtag('event', 'conversion', params)
+      setTimeout(finish, 800)
+    } else if (done) done()
+  }
+
+  try {
+    if (!sessionStorage.getItem('candor-visit')) { sessionStorage.setItem('candor-visit', '1'); beacon('visit') }
+  } catch (e) { beacon('visit') }
+  var page = location.pathname.replace(/\.html$/, '').replace(/\/+$/, '')
+  if (page === '/start') window.candorTrack('start_view')
+  if (page === '/welcome') window.candorTrack('welcome_view')
+
   // mobile nav
   var toggle = document.querySelector('.navtoggle')
   var links = document.querySelector('.navlinks')

@@ -162,7 +162,7 @@
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
 </div></footer>
 
-<script src="/assets/site.js?v=7"></script>
+<script src="/assets/site.js?v=8"></script>
 <script>
 (function(){
   // Free-month trial checkouts (Stripe hosted): $0 today, 30-day free trial, then
@@ -266,9 +266,14 @@
     // webhook can queue the signup with the plan/seat cap; the email is prefilled.
     var firmSafe = d.firm.replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 120);
     var ref = (d.plan.id + "__" + firmSafe + "__" + d.attorneys + "atty").slice(0, 190);
-    location.href = link + (link.indexOf("?") > -1 ? "&" : "?") +
+    var dest = link + (link.indexOf("?") > -1 ? "&" : "?") +
       "client_reference_id=" + encodeURIComponent(ref) +
       "&prefilled_email=" + encodeURIComponent(d.email);
+    // Count the click-through (and, if Google Ads is on, report it) before
+    // leaving for Stripe. Only the step name is sent, never the form fields.
+    var go = function(){ location.href = dest; };
+    if (window.candorTrack) window.candorTrack("checkout_click", { value: d.plan.year || undefined, done: go });
+    else go();
   });
 })();
 </script>
