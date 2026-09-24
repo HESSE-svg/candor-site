@@ -15,9 +15,7 @@
   // Before switching it on: keep "enhanced conversions" off in Google Ads (it
   // can read the email field on /start), and make sure Stripe's redirect to
   // /welcome carries no query string.
-  //
-  // This note covers only the counter and Google's tag. Pages that also load
-  // the Heycatch analytics script are governed by Heycatch's own behaviour.
+
   var ADS = {
     id: '',                // e.g. 'AW-123456789'
     labels: {              // conversion labels from Google Ads, per step

@@ -18,6 +18,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css?v=11">
 <style>
+  .jall{border:1px solid var(--rule);border-radius:8px;padding:12px 16px;margin:10px 0;background:var(--paper)}
+  .jall summary{cursor:pointer}
+  .jall ul{margin:8px 0 0;padding-left:20px;line-height:1.6}
+  .jall li{margin:6px 0}
+  #all-jur h2{font-family:var(--f-serif);font-weight:400;color:var(--navy);margin-top:var(--s4)}
   .jchooser{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;margin-top:var(--s3)}
   .jchooser label{display:block;font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:5px}
   .jchooser select{padding:10px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink);font-size:15px;font-family:var(--f-sans);min-width:320px;max-width:100%}
@@ -38,14 +43,7 @@
   .duty .src{margin-top:10px;font-size:13px}
   .jdisc{border:1px solid var(--rule);border-left:4px solid var(--brass,#9A6B1F);background:var(--soft);border-radius:8px;padding:16px 20px;margin-top:var(--s3);font-size:14px;line-height:1.55;color:var(--ink)}
 </style>
-<script type="module">
-  import { analytics } from 'https://esm.sh/@heycatch/sdk@0.7.0';
-  analytics.init({
-    projectKey: 'hck_pk_43IA1CGD1lQ8Z6O1s7gsyBwGcxwWwjnA',
-    install: { agent: 'claude-code' },
-    requestBatching: false,
-  });
-</script>
+<link rel="canonical" href="https://candor.legal/ai-rules">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
@@ -81,6 +79,8 @@
   <div class="jdisc" id="jdisc"></div>
 </section>
 
+<section class="wrap narrow" id="all-jur"><!--prerender:jur--><h2>Every jurisdiction covered, in full</h2><details class="jall" open><summary><b>National baseline: ABA Formal Opinion 512</b></summary><p class="auth"><a href="https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/" target="_blank" rel="noopener">ABA Formal Opinion 512, “Generative Artificial Intelligence Tools” (July 29, 2024)</a></p><ul><li><b>Client consent / disclosure: Sometimes required.</b> You must protect client information (Model Rule 1.6). Before putting confidential information into a generative-AI tool, evaluate how that tool stores, uses and retains inputs. For tools that train on or could expose what you enter, the opinion indicates informed client consent may be required first.</li><li><b>Billing disclosure: Applies.</b> Fees must be reasonable and reflect the time you actually spent (Model Rule 1.5). You may not bill for time the AI saved as though you spent it, and AI costs charged to a client should be disclosed to the client.</li><li><b>Verification of AI output: Required.</b> Competence (Rule 1.1) and candor to the tribunal (Rule 3.3) require you to review AI output, which can be inaccurate or fabricated. Responsibility for the work stays with the lawyer regardless of what produced it.</li><li><b>Court-filing disclosure: No blanket duty.</b> Opinion 512 does not itself require disclosing AI use to a court. But many individual courts have standing orders that do, so always check the rules of the specific court and judge you are filing before.</li></ul></details><details class="jall"><summary><b>Florida</b></summary><p class="auth"><a href="https://www.floridabar.org/etopinions/opinion-24-1/" target="_blank" rel="noopener">Florida Bar Ethics Opinion 24-1 (January 19, 2024)</a></p><ul><li><b>Client consent / disclosure: Required in some cases.</b> Obtain the client’s informed consent before using a third-party generative-AI tool if the use would involve disclosing the client’s confidential information, and take reasonable precautions against inadvertent disclosure.</li><li><b>Billing disclosure: Applies.</b> Efficiency gained from AI must not result in duplicate charges or inflated billable hours. Fees must be reasonable and AI-related costs transparent (Rule 4-1.5).</li><li><b>Verification of AI output: Required.</b> A lawyer must oversee generative AI and review its work product just as the lawyer reviews the work of a nonlawyer assistant. The lawyer is responsible for the work whether AI drafted it in whole or in part.</li><li><b>Court-filing disclosure: No blanket duty.</b> Opinion 24-1 does not itself impose a court-filing disclosure duty. Individual Florida courts or judges may require it by standing order. Check the specific court before filing.</li></ul></details><!--/prerender:jur--></section>
+
 <section class="wrap" id="intro">
   <div class="jdisc" style="border-left-color:var(--navy)">
     <b>Coverage so far: Florida and the national ABA baseline.</b> More states are being added, each from its own bar opinion, statute, or court rule with the source linked. If your state has not issued specific AI guidance, most firms follow the ABA baseline (Formal Opinion 512) as the starting point. Select it above to see it.
@@ -94,7 +94,7 @@
       <span class="brand-seal" aria-hidden="true"></span><span class="name" style="font-family:var(--f-serif);font-size:22px;color:var(--navy)">Candor<span style="color:var(--ox)">.</span></span>
       <p style="margin-top:10px;max-width:22em">The AI your firm works in, with the record built in.</p>
     </div>
-    <div class="foot-links"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/international">International</a><a href="/changelog">Changelog</a><a href="/about">About</a><a href="/demo">Contact</a></div>
+    <div class="foot-links"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/international">International</a><a href="/changelog">Changelog</a><a href="/about">About</a><a href="/demo">Contact</a><a href="/privacy">Privacy</a></div>
   </div>
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
 </div></footer>

@@ -1,6 +1,6 @@
 # Candor
 
-> AI governance and audit trails for U.S. law firms. Candor is the AI workspace a firm works in, on the firm's own connected model: it screens client data before it reaches a model, logs every AI use to the matter, verifies citations, captures attorney sign-off, and produces the append-only, tamper-evident record a malpractice carrier asks for at renewal. Flat annual fee priced on attorney count ($3,000–$20,000/yr); staff seats are free. Pre-launch, with a one-month free trial. Founded by Jesse Hollar, from an insurance and claims background.
+> AI governance and audit trails for U.S. law firms. Candor is the AI workspace a firm works in, on the firm's own connected model: it screens client data before it reaches a model, logs every AI use to the matter, verifies citations, captures attorney sign-off, and produces the append-only, tamper-evident record a malpractice carrier asks for at renewal. Flat annual fee priced on attorney count ($3,000–$20,000/yr); staff seats are free. Every firm can start a one-month free trial at candor.legal/start. Founded by Jesse Hollar, from an insurance and claims background.
 
 ## Core pages
 - [Home](https://candor.legal/): what Candor is and the 60-second product walkthrough.
@@ -8,13 +8,33 @@
 - [Pricing](https://candor.legal/pricing): flat annual fee by attorney count; staff seats free; one month free.
 - [Security](https://candor.legal/security): hash-chained, encrypted records; the firm's own model; full export.
 - [About](https://candor.legal/about): the founder and why Candor exists.
+- [Start a free month](https://candor.legal/start): self-serve trial, whole team, the firm's own model.
+- [Privacy](https://candor.legal/privacy): what the website and the software collect, and how to have it deleted.
 
 ## Context
 - [Why now](https://candor.legal/why-now): carriers, bar regulators, and courts are all beginning to ask how firms use AI (ABA Formal Opinion 512; the $110,204 Oregon sanction for fabricated citations).
 - [Our plan](https://candor.legal/plan): the same governed toolkit, mapped across the professions that must prove their work.
 - [Free tools](https://candor.legal/resources): a jurisdiction AI-rules checker and an AI-hallucination sanctions tracker, free and public.
+- [News](https://candor.legal/news): a running record of legal-AI developments, refreshed daily.
+
+## Reference: AI rules for lawyers
+- [AI rules checker](https://candor.legal/ai-rules): consent, billing, verification and court-disclosure duties by jurisdiction, with the source linked.
+- [AI rules by state](https://candor.legal/rules): state-by-state guidance for lawyers using AI.
+- [Florida](https://candor.legal/rules/florida): Florida Bar Ethics Opinion 24-1 and what it requires of Florida lawyers.
+
+## Reference: AI hallucination sanctions
+- [Sanctions tracker](https://candor.legal/ai-sanctions): court decisions sanctioning lawyers for AI-fabricated citations, with penalties and sources.
+- [Couvrette v. Wisnovsky (D. Or. 2026)](https://candor.legal/sanctions/couvrette-v-wisnovsky): the $110,204 sanction, the largest U.S. AI-hallucination penalty on record.
+- [Mata v. Avianca (S.D.N.Y. 2023)](https://candor.legal/sanctions/mata-v-avianca): the first widely reported case of ChatGPT-fabricated citations.
+
+## Guides
+- [ABA Formal Opinion 512, explained](https://candor.legal/guides/aba-opinion-512): the six duties it applies to generative AI.
+- [Law firm AI policy](https://candor.legal/guides/law-firm-ai-policy): what a firm AI-use policy should cover.
+- [Malpractice renewal AI questionnaire](https://candor.legal/guides/malpractice-ai-questionnaire): the AI questions carriers ask at renewal and how to answer them.
 
 ## Compare
 - [vs manual tracking](https://candor.legal/vs/manual-tracking): spreadsheets vs a hash-chained record.
 - [vs Credo AI](https://candor.legal/vs/credo-ai): enterprise AI governance vs law-firm-specific governance.
 - [vs Lenavix](https://candor.legal/vs/lenavix): vendor due diligence vs a firm's own-use governance.
+- [vs Intapp Celeste](https://candor.legal/vs/intapp-celeste): an enterprise platform vs purpose-built AI-use records for law firms.
+- [vs Roval](https://candor.legal/vs/roval): governing enterprise AI agents vs recording a law firm's own AI use.
