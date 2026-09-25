@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-25T17:18:25.368Z",
+  "builtAt": "2026-09-25T21:39:57.162Z",
   "count": 10,
   "items": [
+    {
+      "title": "‘Adventures In Legal Tech’: How One Litigator Uses Claude To Build His Case Strategy",
+      "link": "https://abovethelaw.com/2026/09/adventures-in-legal-tech-how-one-litigator-uses-claude-to-build-his-case-strategy/",
+      "desc": "Targeting your argument's weak spot with AI, in this episode of \"Adventures in Legal Tech.\" The post ‘Adventures In Legal Tech’: How One Litigator Uses Claude To Build His Case Strategy appeared…",
+      "date": "Fri, 25 Sep 2026 21:34:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/03/adventuresinlegaltech.jpg",
+      "source": "Above the Law",
+      "ts": 1790372040000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "How to improve writing a legal brief with AI",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/how-to-write-a-legal-brief-better-and-faster-with-ai/",
+      "desc": "Crafting a compelling legal brief requires precision, relevance, and a deep understanding of current legal research and facts. Legal The post How to improve writing a legal brief with AI appeared…",
+      "date": "Fri, 25 Sep 2026 19:10:45 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2025/06/AdobeStock_862604959-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1790363445000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "FT Innovative Lawyers Awards for Europe 2026: AI accelerates the pace of change",
       "link": "https://legaltechnology.com/ft-innovative-lawyers-awards-for-europe-2026-ai-accelerates-the-pace-of-change/",
@@ -31,6 +59,20 @@
       "promo": false
     },
     {
+      "title": "How CoCounsel Legal's purpose-built, Fiduciary-Grade AI™ drafts defensible briefs faster",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/purpose-built-fiduciary-grade-ai-drafts-defensible-briefs/",
+      "desc": "A filing deadline that isn't moving. An argument that has to land. No room for a citation error. Litigators The post How CoCounsel Legal's purpose-built, Fiduciary-Grade AI™ drafts defensible…",
+      "date": "Thu, 24 Sep 2026 19:30:57 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/02/litigation2-scaled-jpeg-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1790278257000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Yesterday",
+      "strong": true,
+      "promo": false
+    },
+    {
       "title": "Biglaw’s Latest AI Strategy: Teach Lawyers How To Be Human",
       "link": "https://abovethelaw.com/2026/09/biglaws-latest-ai-strategy-teach-lawyers-how-to-be-human/",
       "desc": "When clients can outsource the work to AI, human connection becomes the real selling point. The post Biglaw’s Latest AI Strategy: Teach Lawyers How To Be Human appeared first on Above the Law .",
@@ -40,21 +82,7 @@
       "ts": 1790277120000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "How CoCounsel Legal's purpose-built, Fiduciary-grade AI™ drafts defensible briefs faster",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/how-to-write-a-legal-brief-better-and-faster-with-ai/",
-      "desc": "A filing deadline that isn't moving. An argument that has to land. No room for a citation error. Litigators need The post How CoCounsel Legal's purpose-built, Fiduciary-grade AI™ drafts defensible…",
-      "date": "Thu, 24 Sep 2026 19:10:45 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2025/06/AdobeStock_862604959-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1790277045000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -111,34 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Law Schools Can’t Decide Whether To Teach AI Or Pretend It Doesn’t Exist",
-      "link": "https://abovethelaw.com/2026/09/law-schools-cant-decide-whether-to-teach-ai-or-pretend-it-doesnt-exist/",
-      "desc": "Students say avoiding the technology won’t prepare them for modern legal practice. The post Law Schools Can’t Decide Whether To Teach AI Or Pretend It Doesn’t Exist appeared first on Above the Law .",
-      "date": "Wed, 23 Sep 2026 20:44:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/06/GettyImages-2265191306.jpg",
-      "source": "Above the Law",
-      "ts": 1790196240000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "At Its User Conference in Las Vegas, 8am Announces MCP Integration and New AI Tools for MyCase, Plus New Law Firm Funding Program through LawPay",
-      "link": "https://www.lawnext.com/2026/09/at-its-user-conference-in-las-vegas-8am-announces-mcp-integration-and-new-ai-tools-for-mycase-plus-new-law-firm-funding-program-through-lawpay.html",
-      "desc": "At its second-annual Kaleidoscope customer conference in Las Vegas today, 8am announced new generative AI features, a new Claude MCP connector, and new financial products, including a law firm…",
-      "date": "Wed, 23 Sep 2026 16:06:27 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/8am-Kaleidoscope-Featured.png",
-      "source": "LawNext",
-      "ts": 1790179587000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "2 days ago",
       "strong": true,
       "promo": false
     }
