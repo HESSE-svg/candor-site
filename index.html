@@ -159,6 +159,19 @@
   .rec-art{display:flex;justify-content:center}
   .rec-art svg{width:100%;max-width:430px;height:auto;filter:drop-shadow(0 30px 48px rgba(27,42,65,.2))}
   @media(max-width:760px){.rec-band{grid-template-columns:1fr;gap:28px;padding-bottom:68px;text-align:center}.rec-copy{text-align:center}.rec-copy p{margin-left:auto;margin-right:auto}}
+  /* Works with: one line of tool names that drifts sideways. Two identical
+     rows side by side, moved by exactly one row's width, so the loop has no
+     seam. Pauses on hover or focus; holds still for reduced motion. */
+  .s-works{max-width:980px;margin:-40px auto 0;padding:0 24px 56px;text-align:center}
+  .works-track{display:flex;overflow:hidden;margin-top:16px}
+  .works-row{display:flex;flex:none;gap:0;margin:0;padding:0;list-style:none;animation:works-slide 48s linear infinite}
+  .works-row li{flex:none;padding:0 22px;font-family:var(--f-serif);font-size:22px;color:var(--navy);white-space:nowrap;border-right:1px solid var(--rule)}
+  .works-track:hover .works-row,.works-track:focus-within .works-row{animation-play-state:paused}
+  @keyframes works-slide{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+  .works-cap{font-size:15px;color:var(--muted);max-width:58ch;margin:18px auto 0;line-height:1.6}
+  .works-tm{font-size:11.5px;color:var(--muted);opacity:.8;margin:8px auto 0}
+  @media (prefers-reduced-motion: reduce){.works-track{flex-wrap:wrap;justify-content:center}.works-row{animation:none;flex:1 1 100%;flex-wrap:wrap;justify-content:center;row-gap:8px}.works-row[aria-hidden]{display:none}}
+  @media(max-width:680px){.s-works{margin-top:-12px}.works-row li{font-size:19px;padding:0 16px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Candor","url":"https://candor.legal","logo":"https://candor.legal/og.png","description":"AI governance and audit trails for law firms: confidentiality screening, a per-matter AI use log, verification, attorney sign-off, and the report a malpractice carrier asks for.","founder":{"@type":"Person","name":"Jesse Hollar"},"sameAs":["https://www.instagram.com/candor.legal","https://www.linkedin.com/in/jesse-hollar-084999283"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Candor","description":"An AI governance workspace for U.S. law firms: screen client data before it reaches a model, log every AI use to the matter, verify citations, capture attorney sign-off, and produce the record a malpractice carrier asks for at renewal. Runs on the firm's own model.","brand":{"@type":"Brand","name":"Candor"},"audience":{"@type":"Audience","audienceType":"U.S. law firms"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"3000","highPrice":"20000","offerCount":"5","url":"https://candor.legal/pricing"}}</script>
@@ -180,6 +193,16 @@
   <p class="s-risk">A federal court sanctioned two lawyers <strong>$110,204</strong> for fabricated citations. Your carrier is already asking about AI. Candor builds the record before they ask.</p>
   <p class="s-premium">Candor costs a <a href="/pricing">fraction</a> of one year of your malpractice premium, and it produces the documentation your carrier is starting to ask for at renewal.</p>
   <a class="btn s-cta" href="#watch">Watch the 60-second walkthrough</a>
+</section>
+
+<section class="s-works" aria-labelledby="works-h">
+  <div class="mono eyebrow" id="works-h">Works with the AI your firm already uses</div>
+  <div class="works-track">
+    <ul class="works-row"><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Microsoft Copilot</li><li>Microsoft 365 Copilot</li><li>Azure OpenAI</li><li>Perplexity</li><li>Grok</li><li>Meta AI</li><li>DeepSeek</li><li>Mistral</li><li>Poe</li><li>Clio</li></ul>
+    <ul class="works-row" aria-hidden="true"><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Microsoft Copilot</li><li>Microsoft 365 Copilot</li><li>Azure OpenAI</li><li>Perplexity</li><li>Grok</li><li>Meta AI</li><li>DeepSeek</li><li>Mistral</li><li>Poe</li><li>Clio</li></ul>
+  </div>
+  <p class="works-cap">No switching, no lost history. Candor sits on the AI tools your staff already open, and its own workspace runs on your firm&rsquo;s account with most of them. Anything else can still be logged by hand.</p>
+  <p class="works-tm">Product names are trademarks of their owners. Candor is not affiliated with or endorsed by them.</p>
 </section>
 
 <section class="s-watch" id="watch">
