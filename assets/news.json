@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-25T11:58:36.095Z",
+  "builtAt": "2026-09-25T17:18:25.368Z",
   "count": 10,
   "items": [
+    {
+      "title": "FT Innovative Lawyers Awards for Europe 2026: AI accelerates the pace of change",
+      "link": "https://legaltechnology.com/ft-innovative-lawyers-awards-for-europe-2026-ai-accelerates-the-pace-of-change/",
+      "desc": "By Yasmin Lambert Innovation in the legal sector is not synonymous with artificial intelligence, or even with technology more broadly. But AI has visibly accelerated the pace of change, bringing…",
+      "date": "Fri, 25 Sep 2026 16:33:37 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/FTILE-awards-winners.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1790354017000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Startup Corner: From digital binders to AI research – meet Align",
       "link": "https://legaltechnology.com/startup-corner-from-digital-binders-to-ai-research-meet-align/",
@@ -54,7 +68,7 @@
       "ts": 1790258640000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +82,7 @@
       "ts": 1790257260000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": true
     },
@@ -122,20 +136,6 @@
       "img": "https://www.lawnext.com/wp-content/uploads/2026/09/8am-Kaleidoscope-Featured.png",
       "source": "LawNext",
       "ts": 1790179587000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Law Firm Launches Legal AI Tool For Creators",
-      "link": "https://www.artificiallawyer.com/2026/09/23/law-firm-launches-legal-ai-tool-for-creators/",
-      "desc": "Lewis Silkin, a UK-based law firm, and its LS Innovations affiliated tech company, have launched Lettu, an AI-powered platform to help ‘creators, talent managers, agencies",
-      "date": "Wed, 23 Sep 2026 09:20:16 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/09/Screenshot-2026-09-23-at-09.53.22.png",
-      "source": "Artificial Lawyer",
-      "ts": 1790155216000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "2 days ago",
