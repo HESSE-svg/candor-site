@@ -42,6 +42,11 @@
   .paybtn:hover{background:var(--navy);color:var(--paper)}
   .paynote{font-size:12px;color:var(--faint);margin-top:8px;text-align:center;line-height:1.45}
   .formerr{color:var(--ox);font-size:13.5px;margin-top:6px;min-height:1px}
+  .field input.bad{border-color:var(--ox);border-left:4px solid var(--ox)}
+  .btnerr{color:var(--ox);font-size:13.5px;margin-top:10px;line-height:1.45}
+  .btnerr:empty{display:none}
+  .btnerr a{color:var(--ox)}
+  .startbtn[disabled]{opacity:.7;cursor:progress}
   .steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:var(--s2)}
   @media(max-width:680px){.steps3{grid-template-columns:1fr;gap:16px}}
   .step3 .n{font-family:var(--f-mono);font-size:12px;color:var(--ox);letter-spacing:.06em}
@@ -121,6 +126,7 @@
       <div class="duenow">✓ No card needed to start · 30 days free · your own AI model</div>
 
       <button class="startbtn" id="startbtn" type="button">Start my free month →</button>
+      <div class="btnerr" id="btnerr" role="alert"></div>
       <div class="paynote" id="paynote">Secure signup by Stripe · $0 today, no card required · add one any time before the month ends to keep going.</div>
 
       <button class="tierpick" type="button" id="changeTier">Change plan</button>
@@ -238,20 +244,43 @@
     };
   }
   function validate(d){
-    if (!d.firm) return "Please enter your firm name.";
-    if (!d.name) return "Please enter your name.";
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return "Please enter a valid work email.";
-    return "";
+    if (!d.firm) return { msg: "Please enter your firm name.", field: "firm" };
+    if (!d.name) return { msg: "Please enter your name.", field: "name" };
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) return { msg: "Please enter a valid work email.", field: "email" };
+    return null;
   }
 
-  document.getElementById("startbtn").addEventListener("click", function(){
-    var d = collect(), err = validate(d);
-    document.getElementById("err").textContent = err;
-    if (err) return;
+  // Errors show next to the button as well as under the form, and the field
+  // that needs attention is marked and brought into view, so a click never
+  // looks like it did nothing.
+  var btn = document.getElementById("startbtn");
+  var btnerr = document.getElementById("btnerr");
+  function showErr(msg, field){
+    document.getElementById("err").textContent = msg;
+    btnerr.textContent = msg;
+    if (field){
+      var el = document.getElementById(field);
+      el.classList.add("bad");
+      el.scrollIntoView({ block: "center", behavior: "smooth" });
+      el.focus({ preventScroll: true });
+    }
+  }
+  // Coming Back from Stripe restores the page as it was left: reset the button.
+  window.addEventListener("pageshow", function(e){
+    if (e.persisted){ btn.disabled = false; btn.textContent = "Start my free month →"; btnerr.textContent = ""; }
+  });
+  ["firm","name","email"].forEach(function(id){
+    document.getElementById(id).addEventListener("input", function(){ this.classList.remove("bad"); });
+  });
+
+  btn.addEventListener("click", function(){
+    var d = collect(), bad = validate(d);
+    document.getElementById("err").textContent = ""; btnerr.textContent = "";
+    if (bad) return showErr(bad.msg, bad.field);
     var link = TRIAL_LINKS[d.plan.id];
     if (!link){
       // Enterprise is custom-priced, no self-serve trial link.
-      document.getElementById("err").textContent = "Enterprise is priced per firm; email jesse@candor.legal and we'll set you up.";
+      showErr("Enterprise is priced per firm; email jesse@candor.legal and we'll set you up.");
       return;
     }
     // Hosted Stripe trial checkout: $0 today, 30-day free trial, then the annual
@@ -265,6 +294,18 @@
     // Count the click-through (and, if Google Ads is on, report it) before
     // leaving for Stripe. Only the step name is sent, never the form fields.
     var go = function(){ location.href = dest; };
+    btn.disabled = true;
+    btn.textContent = "Opening secure signup…";
+    // If the browser has not left for Stripe after a few seconds (an in-app
+    // browser or a blocker), say so and offer the link directly.
+    setTimeout(function(){
+      btn.disabled = false;
+      btn.textContent = "Start my free month →";
+      btnerr.textContent = "";
+      btnerr.appendChild(document.createTextNode("If Stripe didn't open, "));
+      var a = document.createElement("a"); a.href = dest; a.textContent = "continue to secure signup";
+      btnerr.appendChild(a); btnerr.appendChild(document.createTextNode("."));
+    }, 4000);
     if (window.candorTrack) window.candorTrack("checkout_click", { value: d.plan.year || undefined, done: go });
     else go();
   });
