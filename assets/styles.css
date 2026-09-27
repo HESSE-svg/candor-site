@@ -101,6 +101,7 @@ table.tbl{width:100%;border-collapse:collapse;margin-top:var(--s3);font-size:15p
 table.tbl th,table.tbl td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--rule);vertical-align:top}
 table.tbl th{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:500}
 table.tbl td b{color:var(--navy)}
+@media(max-width:600px){table.tbl{font-size:13.5px;table-layout:fixed}table.tbl th,table.tbl td{padding:9px 7px;overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}table.tbl th{font-size:10px;letter-spacing:.03em}}
 
 /* pricing */
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:var(--s4)}

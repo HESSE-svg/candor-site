@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Security: hash-chained records for law-firm AI governance</title>
-<meta name="description" content="How Candor handles data: confidentiality screening runs in your browser, records are append only and tamper evident, data is isolated per firm and encrypted, and your firm owns and can export everything.">
+<meta name="description" content="How Candor handles data: screening runs in your browser, records are append-only and tamper-evident, each firm is isolated and encrypted, and you own it all.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=11">
+<link rel="stylesheet" href="/assets/styles.css?v=12">
 <link rel="canonical" href="https://candor.legal/security">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -97,6 +97,7 @@
 
     <div class="reveal"><h3>We store the fact, not the file</h3><p>By default Candor records actions, not their contents: a use was logged, a review happened, a check ran. Retaining any underlying content is an explicit choice a firm turns on, never a silent default.</p></div>
     <div class="reveal"><h3>Append only, and provably so</h3><p>Logs and sign offs are never edited in place. Corrections are new entries that reference the ones before them, and the entries are hash chained: each is sealed with a fingerprint of the one prior, so any edit, deletion, or reordering is detectable. A one click integrity check rechecks the whole record.</p></div>
+    <div class="reveal"><h3>Matter walls, from your own system</h3><p>Turn on matter walls and each person sees only the matters their own Clio login can see. Access comes from your practice management system, not a second permission list kept in Candor, and it fails closed: no connection, no matters. Admins see everything.</p></div>
     <div class="reveal"><h3>Each firm is walled off</h3><p>Every record is scoped to the firm that owns it. The design goal is that no bug could let one firm's data surface in another's account.</p></div>
     <div class="reveal"><h3>Encrypted in transit and at rest</h3><p>Data moves over TLS and is encrypted where it's stored. Access follows least privilege: code and people get only what a task requires.</p></div>
     <div class="reveal"><h3>Honest about what we are</h3><p>Candor is software, not counsel. It doesn't provide legal advice, decide whether you're compliant, or guarantee that any AI output is accurate. It gives your attorneys the record they use to make those calls.</p></div>
