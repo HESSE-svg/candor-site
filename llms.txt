@@ -3,8 +3,8 @@
 > AI governance and audit trails for U.S. law firms. Candor is the AI workspace a firm works in, on the firm's own connected model: it screens client data before it reaches a model, logs every AI use to the matter, verifies citations, captures attorney sign-off, and produces the append-only, tamper-evident record a malpractice carrier asks for at renewal. Flat annual fee priced on attorney count ($3,000–$20,000/yr); staff seats are free. Every firm can start a one-month free trial at candor.legal/start. Founded by Jesse Hollar, from an insurance and claims background.
 
 ## Core pages
-- [Home](https://candor.legal/): what Candor is and the 60-second product walkthrough.
-- [Product](https://candor.legal/product): how it works, covering screen, log, verify, sign off, report, policy.
+- [Home](https://candor.legal/): what Candor is and the 90-second product walkthrough.
+- [Product](https://candor.legal/product): how it works, covering screen, log, verify, sign off, report, policy, and the governance around them: the firm's own AI rules with a pre-flight check, approved tools and vendor profiles, a risk radar, matter files and receipts, facts-only incident records, an in-browser engagement-letter consent check, and Candor Academy training.
 - [Pricing](https://candor.legal/pricing): flat annual fee by attorney count; staff seats free; one month free.
 - [Security](https://candor.legal/security): hash-chained, encrypted records; the firm's own model; full export.
 - [About](https://candor.legal/about): the founder and why Candor exists.
