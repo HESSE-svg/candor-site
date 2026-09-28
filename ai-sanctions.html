@@ -79,6 +79,40 @@
     <p>Not the tool, the review. In each case a lawyer filed a citation no one had read. Courts have been consistent: the duty to verify what you file is the lawyer's, and using AI does not change it. That is the whole reason to keep a record of what AI touched and who reviewed it before it went out the door. <a href="/product">See how Candor does that →</a></p>
   </div></div>
 
+  <div class="card reveal" id="updates" style="margin-top:var(--s4)">
+    <div class="mono eyebrow">Tracker updates</div>
+    <h3 style="margin-top:6px">Get an email when a new sanction is added.</h3>
+    <p>One short email per new decision, with the penalty and a link to the source. We send a confirmation first, and every email has a one-click unsubscribe.</p>
+    <form id="subscribe-form" class="btnrow" style="margin-top:14px" novalidate>
+      <label for="sub-email" class="sr-only" style="position:absolute;left:-9999px">Email address</label>
+      <input id="sub-email" type="email" required autocomplete="email" placeholder="you@yourfirm.com" style="flex:1;min-width:220px;font:inherit;font-size:15px;padding:11px 12px;border:1px solid var(--rule);background:var(--paper);color:var(--ink)">
+      <input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <button class="btn" type="submit">Send me updates</button>
+    </form>
+    <p id="subscribe-msg" role="status" style="margin-top:10px;font-size:14px"></p>
+    <p style="margin-top:8px;font-size:12.5px;color:var(--muted)">We keep only your address and when you signed up. See the <a href="/privacy">privacy policy</a>.</p>
+  </div>
+  <script>
+  (function () {
+    var f = document.getElementById('subscribe-form'); if (!f) return
+    var msg = document.getElementById('subscribe-msg')
+    f.addEventListener('submit', function (e) {
+      e.preventDefault()
+      var email = document.getElementById('sub-email').value.trim()
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.textContent = 'Please enter an email address.'; msg.style.color = 'var(--ox)'; return }
+      var btn = f.querySelector('button'); btn.disabled = true; msg.textContent = 'Sending…'; msg.style.color = ''
+      fetch('https://app.candor.legal/api/site/subscribe', { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify({ email: email, hp: f.hp.value }) })
+        .then(function (r) { return r.json().catch(function () { return { ok: false } }) })
+        .then(function (d) {
+          if (d && d.ok) { msg.textContent = 'Check your inbox: press Confirm in the email we just sent.'; msg.style.color = 'var(--seal)'; f.reset() }
+          else { msg.textContent = (d && d.error) || 'That did not work. Please try again later.'; msg.style.color = 'var(--ox)' }
+        })
+        .catch(function () { msg.textContent = 'That did not work. Please try again later.'; msg.style.color = 'var(--ox)' })
+        .then(function () { btn.disabled = false })
+    })
+  })()
+  </script>
+
   <p class="disc" style="margin-top:var(--s3)">This is a reference summary of publicly reported decisions, compiled from the sources linked on each entry. It is not legal advice and is not exhaustive. Confirm the details against the linked primary sources, and see Charlotin's database for the full record. Entries are added over time.</p>
 </section>
 </main>
