@@ -196,10 +196,38 @@
   @media(max-width:900px){.mw{padding:22px 20px}.mw-list{font-size:18px}}
   .hb h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(34px,4.4vw,54px);line-height:1.06;margin:16px 0 0;color:var(--paper);letter-spacing:-.012em;text-wrap:balance}
   .hb h2 em{font-style:italic;color:#E9B8A8}
-  .hb-warn{margin-bottom:0}
+  .hb-warn{margin-bottom:0;background:#F1EDE6;color:var(--ink);border-bottom:1px solid var(--rule)}
+  .hb-warn .eyebrow{color:var(--ox)}
+  .hb-warn h2{color:var(--navy)}
+  .hb-warn h2 em{color:var(--ox)}
+  .hb-warn .hb-lede{color:var(--muted)}
+  .hb-warn .mw{border-color:var(--navy);background:#fff}
   .hb-warn+.s-watch{padding-top:72px}
   .hb-pause{margin-left:12px;font:inherit;font-size:12px;color:#D6DCE5;background:none;border:1px solid rgba(250,248,245,.4);border-radius:999px;padding:2px 11px;cursor:pointer}
   @media (prefers-reduced-motion: reduce){.hb-pause{display:none}}
+  /* homepage v4: hero, problem, one loop, watch, learn more */
+  .loop{max-width:1100px;margin:0 auto;padding:88px 28px 40px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+  .loop h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(34px,4.4vw,52px);color:var(--navy);line-height:1.05;margin:12px 0 0}
+  .loop h2 em{font-style:italic;color:var(--ox)}
+  .loop-steps{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:18px}
+  .loop-steps li{display:flex;gap:16px;align-items:flex-start}
+  .loop-steps .s-ic{flex:none;margin:0}
+  .loop-steps h3{font-family:var(--f-serif);font-weight:400;font-size:22px;color:var(--navy);margin:0}
+  .loop-steps p{margin:4px 0 0;font-size:15.5px;color:var(--muted);line-height:1.5;max-width:40ch}
+  .loop-more{margin:24px 0 0}.loop-more a{color:var(--ox)}
+  .loop-art .ask-shot{margin:0 auto}
+  .more{max-width:1040px;margin:0 auto;padding:24px 24px 72px;text-align:center}
+  .more h2{margin:0}
+  .more-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px;text-align:left}
+  .more-card{display:block;border:1px solid var(--rule);background:var(--surface);border-radius:10px;padding:16px 18px;text-decoration:none;transition:border-color .15s}
+  .more-card:hover{border-color:var(--navy);text-decoration:none}
+  .more-card b{display:block;font-family:var(--f-serif);font-weight:400;font-size:19px;color:var(--navy)}
+  .more-card span{display:block;margin-top:4px;font-size:14px;color:var(--muted);line-height:1.5}
+  .more-card b::after{content:" \2192";color:var(--ox)}
+  @media(max-width:900px){.loop{grid-template-columns:minmax(0,1fr);gap:36px;padding-top:64px}.more-grid{grid-template-columns:minmax(0,1fr)}}
+  @media(min-width:901px) and (max-width:1040px){.more-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .loop+.s-works{margin-top:0;padding-top:40px}
+  .hb-warn+.loop{padding-top:88px}
   /* motion: hero settle-in + card/link micro-interactions */
   @keyframes riseIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
   .s-hero>*{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both}
@@ -274,24 +302,13 @@
   </div>
 </section>
 
-
-<section class="s-works" aria-labelledby="works-h">
-  <div class="mono eyebrow" id="works-h">Works with the AI your firm already uses</div>
-  <div class="works-track">
-    <ul class="works-row"><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Microsoft Copilot</li><li>Microsoft 365 Copilot</li><li>Azure OpenAI</li><li>Perplexity</li><li>Grok</li><li>Meta AI</li><li>DeepSeek</li><li>Mistral</li><li>Poe</li><li>Clio</li></ul>
-    <ul class="works-row" aria-hidden="true"><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Microsoft Copilot</li><li>Microsoft 365 Copilot</li><li>Azure OpenAI</li><li>Perplexity</li><li>Grok</li><li>Meta AI</li><li>DeepSeek</li><li>Mistral</li><li>Poe</li><li>Clio</li></ul>
-  </div>
-  <p class="works-cap">No switching, no lost history. Candor sits on the AI tools your staff already open, and its own workspace runs on your firm&rsquo;s account with most of them. Anything else can still be logged by hand.</p>
-  <p class="works-tm">Product names are trademarks of their owners. Candor is not affiliated with or endorsed by them.</p>
-</section>
-
 <section class="hb hb-warn" aria-labelledby="warn-h">
   <div class="hb-in">
     <div>
       <div class="mono eyebrow">The paste warning</div>
       <h2 id="warn-h">Anything you paste can and will be used <em>outside the firm</em>.</h2>
       <p class="hb-lede">Candor stops it at the paste. Client names, dates of birth, policy and account numbers are caught before they reach ChatGPT or any other AI tool, and every use is filed to its matter with the attorney&rsquo;s sign-off.</p>
-      <div class="hb-cta"><a class="btn ghost" href="/product">See how screening works</a></div>
+      
     </div>
     <figure class="hb-fig" aria-label="Illustration: a wallet card titled The Paste Warning, reading: you have the right to use AI at the firm; anything you paste can and will be used outside it; you have the right to have client details caught first; if you cannot afford an IT department, one will be provided.">
       <div class="mw" aria-hidden="true">
@@ -308,11 +325,47 @@
   </div>
 </section>
 
+<section class="loop" aria-labelledby="loop-h">
+  <div class="loop-copy">
+    <div class="mono eyebrow">How it works</div>
+    <h2 id="loop-h">Screen. Work. <em>Prove.</em></h2>
+    <ol class="loop-steps">
+      <li><div class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 11.5l2 2 4-4"/></svg></div><div><h3>Screen</h3><p>Client details are caught and swapped out before a prompt reaches the model.</p></div></li>
+      <li><div class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg></div><div><h3>Work</h3><p>Draft and research on your firm&rsquo;s own AI account, in Candor or in the tool your staff already use.</p></div></li>
+      <li><div class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9.5" r="5.5"/><path d="M9.5 9.5l1.8 1.8L15 7.6"/><path d="M8.4 14.2L7 21l5-2.2 5 2.2-1.4-6.8"/></svg></div><div><h3>Prove</h3><p>Each use is filed to its matter with the attorney&rsquo;s sign-off, on a record that shows if anyone changes it.</p></div></li>
+    </ol>
+    <p class="loop-more"><a href="/product">Everything Candor does &rarr;</a></p>
+  </div>
+  <div class="loop-art">
+  <div class="ask-shot reveal" role="img" aria-label="The Candor workspace: an attorney asks their firm's own model to draft a demand letter on the Wilson matter; Candor screens the prompt, returns the draft on the firm's model, and logs the use to matter 24-0417, without leaving Candor.">
+    <div class="ask-top"><span class="abrand">Candor<i>.</i></span><span class="ask-model">on your firm's model</span></div>
+    <div class="ask-tabs"><span class="ask-tab on">Ask</span><span class="ask-tab">Screen</span><span class="ask-tab">Check</span></div>
+    <div class="ask-body">
+      <div class="ask-you">Draft a demand letter for the Wilson matter, re: the 03/14 collision on Route 9.</div>
+      <div class="ask-ai"><span class="atag">YOUR MODEL · SCREENED · MATTER 24-0417</span>Re: Wilson, demand for settlement. Counsel: This firm represents Mr. Wilson for injuries sustained in the March 14 collision. We write to demand…</div>
+    </div>
+    <div class="ask-foot">
+      <div class="ask-input"><span class="ask-field">Ask your model…</span><span class="ask-send">Send</span></div>
+      <div class="ask-status"><span class="achk">✓</span> Screened · logged to matter&nbsp;#24-0417</div>
+    </div>
+  </div>
+    </div>
+</section>
+
+<section class="s-works" aria-labelledby="works-h">
+  <div class="mono eyebrow" id="works-h">Works with the AI your firm already uses</div>
+  <div class="works-track">
+    <ul class="works-row"><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Microsoft Copilot</li><li>Microsoft 365 Copilot</li><li>Azure OpenAI</li><li>Perplexity</li><li>Grok</li><li>Meta AI</li><li>DeepSeek</li><li>Mistral</li><li>Poe</li><li>Clio</li></ul>
+    <ul class="works-row" aria-hidden="true"><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Microsoft Copilot</li><li>Microsoft 365 Copilot</li><li>Azure OpenAI</li><li>Perplexity</li><li>Grok</li><li>Meta AI</li><li>DeepSeek</li><li>Mistral</li><li>Poe</li><li>Clio</li></ul>
+  </div>
+  <p class="works-cap">No switching, no lost history. Candor sits on the AI tools your staff already open, and its own workspace runs on your firm&rsquo;s account with most of them. Anything else can still be logged by hand.</p>
+  <p class="works-tm">Product names are trademarks of their owners. Candor is not affiliated with or endorsed by them.</p>
+</section>
 
 <section class="s-watch" id="watch">
   <div class="mono eyebrow">See it in 90 seconds</div>
   <h2>Watch Candor work.</h2>
-  <p class="s-watchlede">Screen, draft, check, log: the whole loop on your firm's own model. Then the rules, vendors, incidents and training that sit around it, all on the same record.</p>
+  <p class="s-watchlede">Screen, draft, check, log: the whole loop on your firm's own model, in ninety seconds.</p>
   <div class="video-frame">
     <iframe src="/walkthrough?v=4" title="Candor product walkthrough" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
     <button type="button" class="fs-btn" aria-label="Play the walkthrough full screen">
@@ -364,195 +417,15 @@
   </div>
 </section>
 
-<section class="hband reveal">
-  <div class="mono eyebrow">Who it&rsquo;s for</div>
-  <h2>Large firms buy enterprise software to keep client details out of ChatGPT. Most firms have a written policy and good intentions.</h2>
-  <p>Candor is the layer in between. It catches client details before they're pasted into an AI tool, files each use to the matter at the moment it happens, and keeps a record your carrier can actually read. Built and priced for firms without an IT department. <a href="/ai-governance-software">What AI governance software for a law firm covers &rarr;</a></p>
-</section>
-
-<section class="hband">
-  <div class="mono eyebrow">The interface</div>
-  <h2>Your firm's AI, inside Candor.</h2>
-  <p>Plug in your firm's own model and use it right here. Every prompt is screened before it reaches the model, and the use logs itself to the matter, with no trip to ChatGPT, no pasting, no separate app to remember.</p>
-  <div class="ask-shot reveal" role="img" aria-label="The Candor workspace: an attorney asks their firm's own model to draft a demand letter on the Wilson matter; Candor screens the prompt, returns the draft on the firm's model, and logs the use to matter 24-0417, without leaving Candor.">
-    <div class="ask-top"><span class="abrand">Candor<i>.</i></span><span class="ask-model">on your firm's model</span></div>
-    <div class="ask-tabs"><span class="ask-tab on">Ask</span><span class="ask-tab">Screen</span><span class="ask-tab">Check</span></div>
-    <div class="ask-body">
-      <div class="ask-you">Draft a demand letter for the Wilson matter, re: the 03/14 collision on Route 9.</div>
-      <div class="ask-ai"><span class="atag">YOUR MODEL · SCREENED · MATTER 24-0417</span>Re: Wilson, demand for settlement. Counsel: This firm represents Mr. Wilson for injuries sustained in the March 14 collision. We write to demand…</div>
-    </div>
-    <div class="ask-foot">
-      <div class="ask-input"><span class="ask-field">Ask your model…</span><span class="ask-send">Send</span></div>
-      <div class="ask-status"><span class="achk">✓</span> Screened · logged to matter&nbsp;#24-0417</div>
-    </div>
-  </div>
-  <p class="pshot-cap">Prefer ChatGPT, Claude, or Clio directly? The same panel rides along there too. <a href="/product#demo" style="color:var(--ox)">Try the live screener &rarr;</a></p>
-</section>
-
-<section class="s-steps">
-  <div class="s-step reveal">
-    <div class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6l7-3z"/><path d="M9 11.5l2 2 4-4"/></svg></div>
-    <span class="num">STEP 01</span>
-    <h3>Screen</h3>
-    <p>Client details are caught and redacted before they ever reach the model.</p>
-  </div>
-  <div class="s-step reveal">
-    <div class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg></div>
-    <span class="num">STEP 02</span>
-    <h3>Work</h3>
-    <p>Draft and research on your firm's own model, right where your team already works.</p>
-  </div>
-  <div class="s-step reveal">
-    <div class="s-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9.5" r="5.5"/><path d="M9.5 9.5l1.8 1.8L15 7.6"/><path d="M8.4 14.2L7 21l5-2.2 5 2.2-1.4-6.8"/></svg></div>
-    <span class="num">STEP 03</span>
-    <h3>Prove</h3>
-    <p>Every use is logged to the matter. The tamper-evident record builds itself.</p>
-  </div>
-</section>
-
-<section class="hband reveal" id="governance" style="max-width:1040px">
-  <div class="mono eyebrow">Around the work</div>
-  <h2>Your firm's AI policy, applied every time someone uses AI.</h2>
-  <p>A written policy says what should happen. These put it into the work, and every one of them lands on the same record.</p>
-  <div class="gov-grid">
-    <div class="card reveal"><h3>Rules and pre-flight</h3><p>Write the firm's rules once: which tools, which tasks, how sensitive the material. Before each use, Candor says go ahead, needs review first, or not permitted, and the entry records what the rules said.</p></div>
-    <div class="card reveal"><h3>AI vendor profiles</h3><p>For each tool: whether it trains on what it is sent, how long it keeps it, whether an agreement is on file, and a review date. An overdue review is flagged before the next use.</p></div>
-    <div class="card reveal"><h3>Risk radar</h3><p>The last 30 days against the 30 before, for the managing partner: uses your rules flagged, unapproved tools, sensitive material, work waiting on sign-off, open incidents. Counts, not a score.</p></div>
-    <div class="card reveal"><h3>Matter files and receipts</h3><p>One page per matter with every AI use, its sign-off and the client's consent, plus a one-page receipt for any single use. Never the prompt, never the answer.</p></div>
-    <div class="card reveal"><h3>Incidents</h3><p>When something goes wrong with AI, record it when it is found and each step after: contained, client told, carrier told, closed. Facts only, and nothing is edited later.</p></div>
-    <div class="card reveal"><h3>Consent and training</h3><p>Find the AI clause in an engagement letter, read in your browser and never uploaded. Short Academy courses with a quiz, and rules that can hold risky work until a course is passed.</p></div>
-  </div>
-  <p style="margin-top:22px"><a href="/product#governance" style="color:var(--ox)">How each one works &rarr;</a></p>
-</section>
-
-<section class="rec-band reveal">
-  <div class="rec-copy">
-    <div class="mono eyebrow">The record</div>
-    <h2>Every use sealed into a record that can't be quietly changed.</h2>
-    <p>Each entry is hash-chained to the one before it and closed with the attorney's sign-off. Edit, delete, or reorder anything and the chain breaks, visibly. It's the artifact a carrier or a court can actually rely on.</p>
-    <div class="btnrow" style="margin-top:6px">
-      <a class="btn" href="/review-demo">Click through a review &rarr;</a>
-      <a class="btn ghost" href="/security">How the record holds up &rarr;</a>
-    </div>
-  </div>
-  <div class="rec-art">
-    <svg viewBox="0 0 460 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An engraved ledger of AI-use entries, each hash-chained to the one before it and closed with a wax seal of attorney sign-off.">
-      <defs>
-        <pattern id="rg" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#1B2A41" stroke-width="0.4"/></pattern>
-        <radialGradient id="rwax" cx="42%" cy="36%" r="72%"><stop offset="0%" stop-color="#9C3D3D"/><stop offset="100%" stop-color="#6C2525"/></radialGradient>
-      </defs>
-      <rect x="10" y="10" width="440" height="320" rx="5" fill="#FDFBF7" stroke="#E3DED6"/>
-      <rect x="10" y="10" width="440" height="320" rx="5" fill="url(#rg)" opacity="0.2"/>
-      <rect x="22" y="22" width="416" height="296" fill="none" stroke="#1B2A41" stroke-width="1.3"/>
-      <rect x="27" y="27" width="406" height="286" fill="none" stroke="#1B2A41" stroke-width="0.6" opacity="0.45"/>
-      <path d="M22 42 L22 22 L42 22 M438 42 L438 22 L418 22 M22 298 L22 318 L42 318 M438 298 L438 318 L418 318" fill="none" stroke="#8A5E17" stroke-width="1.3"/>
-      <text x="46" y="58" font-family="'Instrument Serif',Georgia,serif" font-size="22" fill="#1B2A41">Record of AI Use</text>
-      <text x="46" y="74" font-family="'IBM Plex Mono',ui-monospace,monospace" font-size="7.5" letter-spacing="2" fill="#8A857C">APPEND-ONLY · HASH-CHAINED · SIGNED</text>
-      <line x1="46" y1="84" x2="414" y2="84" stroke="#1B2A41" stroke-width="0.8" opacity="0.4"/>
-      <!-- row 1 -->
-      <rect x="46" y="101" width="34" height="22" rx="3" fill="#FFFFFF" stroke="#1B2A41" stroke-width="0.9"/>
-      <text x="63" y="115" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5F5A52">a3f9c1</text>
-      <text x="94" y="109" font-family="'Instrument Serif',Georgia,serif" font-size="13" fill="#22201D">Wilson: demand letter</text>
-      <text x="94" y="120" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#8A857C">MATTER 24-0417 · CHATGPT · 03/14</text>
-      <circle cx="404" cy="112" r="8" fill="#2F5D50"/><path d="M400.5 112 l2.4 2.4 l4.6 -5" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-      <rect x="60" y="125" width="6" height="16" rx="3" fill="none" stroke="#8A5E17" stroke-width="1.1"/>
-      <!-- row 2 -->
-      <rect x="46" y="145" width="34" height="22" rx="3" fill="#FFFFFF" stroke="#1B2A41" stroke-width="0.9"/>
-      <text x="63" y="159" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5F5A52">7b21e8</text>
-      <text x="94" y="153" font-family="'Instrument Serif',Georgia,serif" font-size="13" fill="#22201D">Ramirez: research memo</text>
-      <text x="94" y="164" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#8A857C">MATTER 24-0392 · CLAUDE · 03/15</text>
-      <circle cx="404" cy="156" r="8" fill="#2F5D50"/><path d="M400.5 156 l2.4 2.4 l4.6 -5" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-      <rect x="60" y="169" width="6" height="16" rx="3" fill="none" stroke="#8A5E17" stroke-width="1.1"/>
-      <!-- row 3 -->
-      <rect x="46" y="189" width="34" height="22" rx="3" fill="#FFFFFF" stroke="#1B2A41" stroke-width="0.9"/>
-      <text x="63" y="203" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5F5A52">f04d9a</text>
-      <text x="94" y="197" font-family="'Instrument Serif',Georgia,serif" font-size="13" fill="#22201D">Okafor: deposition prep</text>
-      <text x="94" y="208" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#8A857C">MATTER 24-0418 · COPILOT · 03/15</text>
-      <circle cx="404" cy="200" r="8" fill="#2F5D50"/><path d="M400.5 200 l2.4 2.4 l4.6 -5" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-      <!-- sign-off -->
-      <text x="60" y="246" font-family="'Instrument Serif',Georgia,serif" font-style="italic" font-size="18" fill="#1B2A41">J. Hollar</text>
-      <line x1="46" y1="252" x2="250" y2="252" stroke="#1B2A41" stroke-width="0.8" opacity="0.5"/>
-      <text x="46" y="266" font-family="'IBM Plex Mono',monospace" font-size="7.5" letter-spacing="1.5" fill="#8A857C">ATTORNEY SIGN-OFF · 03/15/2026</text>
-      <!-- wax seal -->
-      <g transform="translate(390,270)">
-        <path d="M-11 20 L-19 46 L-6 39 L-1 23 Z" fill="#5A1F1F"/>
-        <path d="M11 20 L19 46 L6 39 L1 23 Z" fill="#5A1F1F"/>
-        <circle r="30" fill="url(#rwax)"/>
-        <circle r="30" fill="none" stroke="#5A1F1F" stroke-width="1.4" stroke-dasharray="2 3.2"/>
-        <circle r="23.5" fill="none" stroke="#E8CFC0" stroke-width="0.8" opacity="0.55"/>
-        <text x="0" y="6" text-anchor="middle" font-family="'Instrument Serif',Georgia,serif" font-size="30" fill="#F6E7DD">C</text>
-        <text x="0" y="18" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="5.5" letter-spacing="1.5" fill="#E8CFC0" opacity="0.85">CANDOR</text>
-      </g>
-    </svg>
-  </div>
-</section>
-
-<p class="s-model">Runs on your firm's own AI account. <b>No per-use markup, no token metering</b>. You already pay for ChatGPT, and Candor doesn't charge you for it again.</p>
-
-<section class="hband reveal">
-  <div class="mono eyebrow">Why now</div>
-  <h2>ABA Formal Opinion 512, in four duties.</h2>
-  <p>Opinion 512 requires attorneys to verify AI output, protect client confidentiality, and supervise staff AI use. Candor is the record that shows you did, and each duty maps to a step.</p>
-  <div class="duties">
-    <div class="duty"><b>Verify AI output</b> Verification checks and attorney sign-off, on the record.</div>
-    <div class="duty"><b>Protect confidentiality</b> The confidentiality screen catches client details before they reach a model.</div>
-    <div class="duty"><b>Supervise staff use</b> A per-matter AI use log and review queue.</div>
-    <div class="duty"><b>Show the work</b> An append-only report laid out for your carrier&rsquo;s questions, ready when they ask.</div>
-  </div>
-</section>
-
-<!-- FLAGGED FOR JESSE: TESTIMONIAL WALL (audit D3.1 1/4, D3.2 1/7, the single largest trust gap).
-     This is the section the audit wants here, between the 3-step summary and the roadmap. It is left
-     empty on purpose: shipping invented quotes on a trust product is exactly the fake-record risk to
-     avoid. To fill it, collect one-line quotes from the firms already using Candor: first name, role,
-     firm size, photo (with permission), or role + firm-size descriptors if they prefer anonymity
-     ("Managing partner, 22-attorney PI firm"), plus a firm count, then build the section below and
-     delete this comment. Do NOT populate with anything not said by a real, consenting firm.
-<section class="hband">
-  <div class="mono eyebrow">Early firms</div>
-  <h2>What the firms using it say</h2>
-  <div class="quotes"><!-- named quotes + small avatar grid + firm count --></div>
-</section>
--->
-
-<!-- FLAGGED FOR JESSE: "AS SEEN IN" STRIP (audit D3.5 0/3, third-party / recency signals).
-     A dated strip of external validation (Product Hunt, a bar-association newsletter, a legal-tech
-     blog) belongs here once the first real mention lands. Left empty on purpose, no invented press.
-     Add each logo + date as it happens so recency is visible. -->
-
-<section class="band-dark reveal">
-  <div class="in">
-    <div class="eye">The roadmap</div>
-    <h2>One toolkit. Every profession that has to prove its work.</h2>
-    <p class="sub">Candor is live for law firms today. The same governed workspace (screen, log, check, sign off, report, policy) is on the way for the professions beside them.</p>
-    <div class="scards">
-      <div class="scard live"><h3>Law firms</h3><p class="kit">The full toolkit</p><span class="chip chip-live">Live</span></div>
-      <div class="scard"><h3>Insurance</h3><p class="kit">The same toolkit</p><span class="chip chip-next">Next</span></div>
-      <div class="scard"><h3>Financial advice</h3><p class="kit">The same toolkit</p><span class="chip chip-next">Next</span></div>
-      <div class="scard"><h3>Accounting &amp; tax</h3><p class="kit">The same toolkit</p><span class="chip chip-soon">Planned</span></div>
-      <div class="scard"><h3>Healthcare</h3><p class="kit">The same toolkit</p><span class="chip chip-soon">Planned</span></div>
-    </div>
-    <a class="btn-d" href="/plan">See the whole plan &rarr;</a>
-  </div>
-</section>
-
-<section class="hband reveal">
-  <div class="mono eyebrow">Pre-launch, on purpose</div>
-  <h2>Why trust a pre-launch product with the record?</h2>
-  <img class="founder-home" src="/assets/founder-jesse.jpg" alt="Jesse Hollar, founder of Candor" width="84" height="84" loading="lazy">
-  <p class="founder-cap"><a href="/about">Jesse Hollar</a>, founder, from the insurance side of the table, the side that examines firms.</p>
-  <p>The record is hash-chained and encrypted. Your data exports in full, with the chain intact, with or without us, so the pre-launch stage costs you nothing you can't take back.</p>
-  <div class="btnrow" style="justify-content:center"><a class="btn ghost" href="/security">How the record holds up</a><a class="btn ghost" href="/about">Who’s building it</a></div>
-</section>
-
-<section class="hband reveal" style="border-top:0;padding-top:0">
-  <div class="mono eyebrow">How Candor compares</div>
-  <div class="cmp">
-    <a class="cmpcard" href="/vs/manual-tracking"><b>vs manual tracking</b><span>A spreadsheet can't prove anything.</span></a>
-    <a class="cmpcard" href="/vs/credo-ai"><b>vs Credo AI</b><span>Enterprise governance, not law-firm workflow.</span></a>
-    <a class="cmpcard" href="/vs/lenavix"><b>vs Lenavix</b><span>Vendor diligence, not your own AI use.</span></a>
-    <a class="cmpcard" href="/vs/roval"><b>vs Roval</b><span>Enterprise agent governance, not law-firm workflow.</span></a>
-    <a class="cmpcard" href="/vs/intapp-celeste"><b>vs Intapp Celeste</b><span>Firm-wide and sales-led, not flat and self-serve.</span></a>
+<section class="more" aria-labelledby="more-h">
+  <h2 id="more-h" class="mono eyebrow">Learn more</h2>
+  <div class="more-grid">
+    <a class="more-card" href="/product#governance"><b>Your AI policy, applied</b><span>Rules and pre-flight checks, vendor profiles, incidents, consent and training, all on the same record.</span></a>
+    <a class="more-card" href="/security"><b>A record that holds up</b><span>Hash-chained and encrypted, and your firm can export all of it at any time.</span></a>
+    <a class="more-card" href="/guides/aba-opinion-512"><b>What ABA Opinion 512 asks</b><span>The duties it applies to generative AI, and what each one looks like on paper.</span></a>
+    <a class="more-card" href="/pricing"><b>One flat fee a year</b><span>From $3,000, priced on attorneys. Staff included, and no markup on your AI account.</span></a>
+    <a class="more-card" href="/vs/manual-tracking"><b>How Candor compares</b><span>Against spreadsheets, enterprise governance suites and vendor-diligence tools.</span></a>
+    <a class="more-card" href="/about"><b>Who&rsquo;s building it</b><span>A former claims adjuster, who spent years reading the file after something went wrong.</span></a>
   </div>
 </section>
 
