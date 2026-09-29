@@ -16,10 +16,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=13">
+<link rel="stylesheet" href="/assets/styles.css?v=14">
 <style>
   .s-hero{max-width:780px;margin:0 auto;padding:78px 24px 96px;text-align:center}
-  .s-hero h1{font-family:var(--f-serif);font-weight:400;font-size:clamp(36px,5.5vw,58px);line-height:1.08;color:var(--navy);letter-spacing:-.01em;margin:24px auto 0;max-width:16ch;text-wrap:balance}
+  .s-hero h1{font-family:var(--f-serif);font-weight:400;font-size:clamp(36px,5.5vw,58px);line-height:1.08;color:var(--navy);letter-spacing:-.01em;margin:24px auto 0;max-width:20ch;text-wrap:balance}
   .s-hero h1 em{font-style:italic;color:var(--ox)}
   .s-lede{font-size:19px;color:var(--muted);max-width:36ch;margin:20px auto 0;line-height:1.5}
   .s-cta{margin-top:32px}
@@ -142,6 +142,14 @@
   .s-step h3{margin-top:0}
   .s-step p{max-width:none}
 
+  .s-does{list-style:none;padding:0;margin:26px auto 0;max-width:620px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 22px;text-align:left}
+  .s-does li{font-size:15px;line-height:1.45;color:var(--ink);padding-left:16px;border-left:2px solid var(--navy)}
+  .s-does strong{color:var(--navy);font-weight:600}
+  .s-ctarow{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+  .s-origin{max-width:52ch;margin:24px auto 0;font-size:14px;line-height:1.5;color:var(--muted)}
+  .s-origin a{color:var(--ox)}
+  @media(max-width:560px){.s-does{grid-template-columns:minmax(0,1fr)}}
+  .s-hero .s-does{animation-delay:.2s}.s-hero .s-origin{animation-delay:.44s}
   /* motion: hero settle-in + card/link micro-interactions */
   @keyframes riseIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
   .s-hero>*{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both}
@@ -188,18 +196,24 @@
 <header class="nav"><div class="nav-in">
   <a class="brand" href="/" aria-label="Candor home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#1B2A41"/><circle cx="50" cy="50" r="39" fill="none" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/><text x="50" y="52" font-family="Instrument Serif,Georgia,serif" font-size="58" fill="#FAF8F5" text-anchor="middle" dominant-baseline="central">C</text></svg><span class="name">Candor<span>.</span></span></a>
   <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
-  <nav class="navlinks"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/start">Start free</a></nav>
+  <nav class="navlinks"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/start">Start free</a></nav>
 </div></header>
 
 <main id="main">
 <section class="s-hero">
-  <div class="mono eyebrow">Built from the claims side of the table</div>
+  <div class="mono eyebrow">AI governance software for law firms</div>
   <span class="tagpill">In development · U.S. law firms</span>
-  <h1>Built by the side that reads the file <em>afterward</em>.</h1>
-  <p class="s-lede">Jesse Hollar was a claims adjuster, where a firm&rsquo;s word counts for less than its records. Candor screens client details before they reach an AI tool, logs each use to its matter with the attorney&rsquo;s sign-off, and keeps a record that shows if anyone changes it.</p>
+  <h1>Use AI on client work. Keep the <em>proof</em>.</h1>
+  <p class="s-lede">Candor is the AI workspace your firm works in. It catches client details before they reach ChatGPT or any other AI tool, files every use to its matter, and records the attorney&rsquo;s sign-off on a record nobody can quietly edit.</p>
+  <ul class="s-does" aria-label="What Candor does">
+    <li><strong>Screen</strong> client details out before anything is pasted</li>
+    <li><strong>Log</strong> each AI use to the matter, as it happens</li>
+    <li><strong>Check</strong> citations that may need a second look</li>
+    <li><strong>Sign off</strong> and hand your carrier the record</li>
+  </ul>
   <p class="s-risk">A federal court sanctioned two lawyers <strong>$110,204</strong> for fabricated citations. Carriers have begun asking about AI at renewal. When yours does, you hand them the record.</p>
-  <p class="s-premium">For most firms, Candor costs a <a href="/pricing">fraction</a> of one year&rsquo;s malpractice premium, and it keeps the documentation carriers have begun asking about at renewal.</p>
-  <a class="btn s-cta" href="#watch">Watch the 90-second walkthrough</a>
+  <div class="s-ctarow s-cta"><a class="btn" href="/start">Start free for a month</a><a class="btn ghost" href="#watch">Watch the 90-second walkthrough</a></div>
+  <p class="s-origin">Built by Jesse Hollar, a former claims adjuster: the person who opens the file after something goes wrong. <a href="/about">Why that matters</a></p>
 </section>
 
 <section class="s-works" aria-labelledby="works-h">
@@ -268,7 +282,7 @@
 </section>
 
 <section class="hband reveal">
-  <div class="mono eyebrow">AI governance software for law firms</div>
+  <div class="mono eyebrow">Who it&rsquo;s for</div>
   <h2>Large firms buy enterprise software to keep client details out of ChatGPT. Most firms have a written policy and good intentions.</h2>
   <p>Candor is the layer in between. It catches client details before they're pasted into an AI tool, files each use to the matter at the moment it happens, and keeps a record your carrier can actually read. Built and priced for firms without an IT department. <a href="/ai-governance-software">What AI governance software for a law firm covers &rarr;</a></p>
 </section>
