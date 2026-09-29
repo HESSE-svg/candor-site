@@ -216,7 +216,7 @@ function card(it, big = false) {
 function page(items, builtAt) {
   const [hero, ...rest] = items
   const stamp = builtAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
-  const nav = `<nav class="navlinks"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/start">Start free</a></nav>`
+  const nav = `<nav class="navlinks"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/news" aria-current="page">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/start">Start free</a></nav>`
   return `<!doctype html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -232,7 +232,7 @@ function page(items, builtAt) {
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=13">
+<link rel="stylesheet" href="/assets/styles.css?v=14">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">

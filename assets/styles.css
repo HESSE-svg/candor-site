@@ -40,16 +40,18 @@ header.nav{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.92);bac
 .brand .name{font-family:var(--f-serif);font-size:25px;color:var(--navy);line-height:1}
 .brand .name span{color:var(--ox)}
 .navlinks{display:flex;gap:22px;align-items:center}
-.navlinks a{color:var(--ink);font-size:14.5px}
+.navlinks a{color:var(--ink);font-size:14.5px;white-space:nowrap}
 .navlinks a:hover{color:var(--ox);text-decoration:none}
 .navlinks a.cta{background:var(--ox);color:var(--paper);padding:8px 15px;border:1px solid var(--ox)}
 .navlinks a.cta:hover{background:transparent;color:var(--ox)}
+.navlinks a[aria-current="page"]{color:var(--navy);font-weight:600;border-bottom:2px solid var(--ox);padding-bottom:3px}
 .navtoggle{display:none;background:none;border:1px solid var(--rule);border-radius:3px;padding:6px 9px;font-size:16px;color:var(--navy);cursor:pointer}
-@media(max-width:760px){
+@media(max-width:1000px){
   .navlinks{position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--rule);flex-direction:column;align-items:stretch;gap:0;padding:8px 0;display:none}
   .navlinks.open{display:flex}
   .navlinks a{padding:11px 28px}
   .navlinks a.cta{margin:8px 28px;text-align:center}
+  .navlinks a[aria-current="page"]{border-bottom:0;padding:11px 28px 11px 24px;border-left:4px solid var(--ox);background:#F1EDE6}
   .navtoggle{display:block}
 }
 
@@ -361,3 +363,6 @@ footer p{max-width:42em}
 /* a clear focus ring for keyboard users, everywhere */
 :focus-visible{outline:2px solid var(--navy);outline-offset:2px}
 .btn:focus-visible,.cta:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+/* in-page anchors land below the sticky nav */
+[id]{scroll-margin-top:84px}
+.design-h{font-family:var(--f-serif);font-weight:400;color:var(--navy);margin:0 0 18px}
