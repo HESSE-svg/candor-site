@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-29T05:51:22.924Z",
+  "builtAt": "2026-09-29T13:03:23.399Z",
   "count": 10,
   "items": [
+    {
+      "title": "Product Demo: Morae unveils AI-powered spend management platform",
+      "link": "https://legaltechnology.com/product-demo-morae-unveils-ai-powered-spend-management-platform/",
+      "desc": "In our latest TalkingTech product demo, Legal IT Insider's editor Caroline Hill sat down with Peter Fisher, chief product officer at Morae, for a first look at MorAI Spend, the [] The post Product…",
+      "date": "Tue, 29 Sep 2026 13:00:17 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/StartUp-Corner-5.png",
+      "source": "Legal IT Insider",
+      "ts": 1790686817000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Morae unveils Legal Intelligence Platform, starting with AI-powered Spend Intelligence",
+      "link": "https://legaltechnology.com/morae-unveils-legal-intelligence-platform-starting-with-ai-powered-spend-intelligence/",
+      "desc": "Morae today (29 September) formally unveils a new Legal Intelligence Platform, with its first module , MorAI Spend Intelligence – providing a tech + managed services offering that connects ELM, []…",
+      "date": "Tue, 29 Sep 2026 11:00:09 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Morae-intelligence.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1790679609000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI Will Expose How Little Legal Judgment Companies Have Made Explicit",
       "link": "https://abovethelaw.com/2026/09/ai-will-expose-how-little-legal-judgment-companies-have-made-explicit/",
@@ -68,7 +96,7 @@
       "ts": 1790600304000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,7 +110,7 @@
       "ts": 1790591246000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -96,7 +124,7 @@
       "ts": 1790582955000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -110,35 +138,7 @@
       "ts": 1790578004000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "How to improve writing a legal brief with AI",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/how-to-write-a-legal-brief-better-and-faster-with-ai/",
-      "desc": "Crafting a compelling legal brief requires precision, relevance, and a deep understanding of current legal research and facts. Legal The post How to improve writing a legal brief with AI appeared…",
-      "date": "Fri, 25 Sep 2026 19:10:45 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2025/06/AdobeStock_862604959-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1790363445000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "FT Innovative Lawyers Awards for Europe 2026: AI accelerates the pace of change",
-      "link": "https://legaltechnology.com/ft-innovative-lawyers-awards-for-europe-2026-ai-accelerates-the-pace-of-change/",
-      "desc": "By Yasmin Lambert Innovation in the legal sector is not synonymous with artificial intelligence, or even with technology more broadly. But AI has visibly accelerated the pace of change, bringing…",
-      "date": "Fri, 25 Sep 2026 16:33:37 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/FTILE-awards-winners.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1790354017000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     }
