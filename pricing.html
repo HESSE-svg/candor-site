@@ -56,6 +56,22 @@
   @media(max-width:640px){.feat-list{columns:1}.tiers.six{grid-template-columns:1fr;gap:14px}}
 </style>
 <link rel="canonical" href="https://candor.legal/pricing">
+<style>
+  .tally-wrap{background:var(--navy);color:var(--paper);padding:48px 28px 44px;margin:8px 0 48px}
+  .tally{list-style:none;margin:0 auto;padding:0;max-width:880px}
+  .tally li{display:flex;align-items:baseline;gap:14px;padding:14px 0;border-bottom:1px solid rgba(250,248,245,.14);font-size:18px;opacity:0;transform:translateY(8px);transition:opacity .5s,transform .5s}
+  .tally li.on{opacity:1;transform:none}
+  .t-what{color:#D6DCE5;flex:0 1 auto}
+  .t-dots{flex:1 1 40px;border-bottom:2px dotted rgba(250,248,245,.3);transform:translateY(-5px);min-width:24px}
+  .t-amt{font-family:var(--f-serif);font-size:clamp(28px,3.6vw,40px);color:var(--paper);white-space:nowrap;line-height:1}
+  .t-last .t-what{color:var(--paper);font-weight:600}
+  .t-last .t-amt em{font-style:italic;color:#E9B8A8}
+  .t-last{border-bottom:0}
+  .t-note{max-width:880px;margin:16px auto 0;font-size:13px;color:#AEB8C6;line-height:1.5}
+  .t-note a{color:#E9B8A8}
+  @media(max-width:640px){.tally li{flex-wrap:wrap;gap:4px 10px;font-size:16px}.t-dots{display:none}.t-amt{width:100%}}
+  @media(prefers-reduced-motion:reduce){.tally li{opacity:1;transform:none;transition:none}}
+</style>
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
@@ -68,7 +84,17 @@
 <section class="wrap pagehead">
   <div class="mono eyebrow">Pricing</div>
   <h1>One flat fee a year. Priced on attorneys, not seats.</h1>
-  <p class="lede">One flat fee a year, priced on attorneys, not seats. Staff are included at every tier. And Candor runs on your firm's own model, so there is no AI markup: you bring your own account, and its usage bills to you.</p>
+  <p class="lede">Staff are included at every tier. And Candor runs on your firm's own model, so there is no AI markup: you bring your own account, and its usage bills to you.</p>
+</section>
+
+<section class="tally-wrap" aria-labelledby="tally-h">
+  <h2 id="tally-h" class="sr-only">What the numbers look like</h2>
+  <ol class="tally">
+    <li><span class="t-what">Fake citations in one federal case, sanctions and fees</span><span class="t-dots" aria-hidden="true"></span><span class="t-amt">$110,204</span></li>
+    <li><span class="t-what">A year of Candor for a solo attorney, staff included</span><span class="t-dots" aria-hidden="true"></span><span class="t-amt">$3,000</span></li>
+    <li class="t-last"><span class="t-what">A record that shows your firm did the work</span><span class="t-dots" aria-hidden="true"></span><span class="t-amt"><em>Yours to keep.</em></span></li>
+  </ol>
+  <p class="t-note">The sanction is the one imposed in <a href="/sanctions/couvrette-v-wisnovsky">Couvrette v. Wisnovsky</a> (D. Or. 2026). Candor does not prevent sanctions; it keeps the record of how your firm used AI, and you can export all of it at any time.</p>
 </section>
 
 <section class="wrap">
@@ -237,5 +263,11 @@
   </div>
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
 </div></footer>
+<script>
+(function(){var li=[].slice.call(document.querySelectorAll('.tally li'));if(!li.length)return
+function show(){li.forEach(function(x,i){setTimeout(function(){x.classList.add('on')},i*700)})}
+if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){li.forEach(function(x){x.classList.add('on')});return}
+var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();show()}},{threshold:.4});io.observe(document.querySelector('.tally'))})()
+</script>
 <script src="/assets/site.js?v=9"></script>
 </body></html>
