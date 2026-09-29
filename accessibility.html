@@ -1,31 +1,26 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome · Candor</title>
-<meta name="description" content="Your firm's free month of Candor has started. Here is what happens next.">
-<meta name="robots" content="noindex">
+<title>Accessibility statement · Candor</title>
+<meta name="description" content="How candor.legal is built and tested to work for everyone, and how to tell us about a barrier.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1B2A41">
-<meta property="og:title" content="Welcome · Candor">
-<meta property="og:description" content="One month free, then a flat annual fee by attorney count.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://candor.legal/welcome">
-<meta property="og:image" content="https://candor.legal/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css?v=13">
 <style>
-  .steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:var(--s2)}
-  @media(max-width:680px){.steps3{grid-template-columns:1fr;gap:16px}}
-  .step3 .n{font-family:var(--f-mono);font-size:12px;color:var(--ox);letter-spacing:.06em}
-  .step3 h3{font-family:var(--f-serif);font-weight:400;font-size:19px;color:var(--navy);margin:6px 0 5px}
-  .step3 p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.5}
+  .body h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(23px,3.4vw,28px);color:var(--navy);margin:var(--s4) 0 8px}
+  .body h3{font-size:18px;color:var(--navy);margin:var(--s3) 0 4px}
+  .body p{max-width:40em;color:var(--ink);line-height:1.65}
+  .body ul{max-width:40em;margin:0 0 var(--s2);padding-left:20px;color:var(--ink);line-height:1.6}
+  .body li{margin:6px 0}
+  .lead-in{border-left:4px solid var(--seal);background:var(--soft);border-radius:8px;padding:14px 18px;font-size:14.5px;margin-top:var(--s3)}
 </style>
-<link rel="canonical" href="https://candor.legal/welcome">
+<link rel="canonical" href="https://candor.legal/accessibility">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
@@ -36,21 +31,27 @@
 
 <main id="main">
 <section class="wrap pagehead">
-  <div class="mono eyebrow" style="color:var(--seal)">You're in</div>
-  <h1>Your free month has started.</h1>
-  <p class="lede">Thank you for trying Candor. We're setting up your firm's workspace now. Watch your inbox for your sign-in link. It usually arrives the same day.</p>
+  <div class="mono eyebrow">Accessibility</div>
+  <h1>Accessibility statement</h1>
 </section>
-
-<section class="band reveal"><div class="wrap narrow">
-  <div class="mono eyebrow">What happens next</div>
-  <h2>Three steps to a working record.</h2>
-  <div class="steps3">
-    <div class="step3"><div class="n">01</div><h3>Sign in</h3><p>Open the email from Candor and sign in. You're the admin for your firm's workspace.</p></div>
-    <div class="step3"><div class="n">02</div><h3>Connect your model</h3><p>Add your firm's own AI account in Settings. Candor runs on your model, not one of ours.</p></div>
-    <div class="step3"><div class="n">03</div><h3>Bring your team</h3><p>Invite your attorneys and staff, and pair the browser panel. Each AI use lands on its matter from then on.</p></div>
-  </div>
-  <p class="lede" style="margin-top:28px">Nothing by tomorrow, or a question in the meantime? Write to <a href="mailto:jesse@candor.legal">jesse@candor.legal</a> and you'll hear back from a person.</p>
-</div></section>
+<section class="wrap narrow body">
+  <p class="lede">We want candor.legal and the Candor app to work for everyone, including people who use a screen reader, a keyboard instead of a mouse, magnification, or reduced motion.</p>
+  <h2>Our target</h2>
+  <p>We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA.</p>
+  <h2>How we check</h2>
+  <ul>
+    <li>Every page of this site was last tested on September 29, 2026 with axe-core, the open-source accessibility engine, at desktop and phone sizes, with no violations found.</li>
+    <li>We also check by hand: every page can be used with a keyboard alone, shows where the keyboard focus is, reads correctly at 400% zoom without sideways scrolling, and respects your device&rsquo;s reduced-motion setting.</li>
+    <li>Anything that moves on its own can be paused.</li>
+  </ul>
+  <h2>Known limits</h2>
+  <ul>
+    <li>The product walkthrough is an animation with on-screen text and no sound. It can be paused, replayed and slowed down, and the same information is written out on the <a href="/product">product page</a>.</li>
+    <li>Automated tools cannot catch everything, and we are a small team. If something here or in the app gets in your way, we want to know.</li>
+  </ul>
+  <h2>Tell us about a barrier</h2>
+  <p>Email <a href="mailto:jesse@candor.legal?subject=Accessibility">jesse@candor.legal</a> with the page and what happened. A person will reply, usually within two business days, and we will help you get what you need in another way while we fix it.</p>
+</section>
 </main>
 
 <footer><div class="wrap">
@@ -63,7 +64,7 @@
         <a href="https://www.linkedin.com/in/jesse-hollar-084999283" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
       </div>
     </div>
-    <div class="foot-links"><a href="/product">Product</a><a href="/ai-governance-software">AI governance software</a><a href="/plan">Our plan</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/international">International</a><a href="/changelog">Changelog</a><a href="/about">About</a><a href="/demo">Contact</a><a href="/privacy">Privacy</a><a href="/accessibility">Accessibility</a></div>
+    <div class="foot-links"><a href="/product">Product</a><a href="/ai-governance-software">AI governance software</a><a href="/plan">Our plan</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/international">International</a><a href="/changelog">Changelog</a><a href="/about">About</a><a href="/demo">Contact</a><a href="/privacy">Privacy</a></div>
   </div>
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
 </div></footer>

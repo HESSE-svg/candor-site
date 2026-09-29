@@ -2,7 +2,7 @@
    shadows kept to one hairline, no stock imagery. Restraint executed carefully. */
 :root{
   --navy:#1B2A41; --navy-soft:#2A3B54;
-  --paper:#FAF8F5; --ink:#22201D; --muted:#5F5A52; --faint:#8A857C;
+  --paper:#FAF8F5; --ink:#22201D; --muted:#5F5A52; --faint:#6F6A62;
   --ox:#7A2E2E; --seal:#2F5D50; --brass:#8A5E17;
   --rule:#E3DED6; --soft:#F2EEE7; --surface:#fff;
   /* type scale */
@@ -353,3 +353,11 @@ footer p{max-width:42em}
 .scard .statlab{font-size:12.5px;color:#9fb0c9;line-height:1.45;margin:0}
 .chiprow{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:30px auto;max-width:660px}
 .band-dark .chiprow .chip{font-size:11px;padding:5px 12px;color:#cdd7e6;border-color:#33496b}
+
+/* accessibility */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* links inside running text are underlined, not told apart by colour alone */
+:where(p,li,dd,td,figcaption,.disc,.caption,.lede,.lead-in) a:not(.btn):not(.cta){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+/* a clear focus ring for keyboard users, everywhere */
+:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.btn:focus-visible,.cta:focus-visible{outline:2px solid var(--navy);outline-offset:3px}

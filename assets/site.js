@@ -73,7 +73,30 @@
   // mobile nav
   var toggle = document.querySelector('.navtoggle')
   var links = document.querySelector('.navlinks')
-  if (toggle && links) toggle.addEventListener('click', function () { links.classList.toggle('open') })
+  if (toggle && links) {
+    if (!links.id) links.id = 'site-nav'
+    toggle.setAttribute('aria-controls', links.id)
+    toggle.setAttribute('aria-expanded', 'false')
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open')
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false')
+    })
+  }
+
+  // Moving content can be paused (WCAG 2.2.2): a button on each scrolling strip.
+  document.querySelectorAll('.works-track').forEach(function (track) {
+    var b = document.createElement('button')
+    b.type = 'button'
+    b.className = 'works-pause'
+    b.setAttribute('aria-pressed', 'false')
+    b.textContent = 'Pause'
+    b.addEventListener('click', function () {
+      var paused = track.classList.toggle('paused')
+      b.setAttribute('aria-pressed', paused ? 'true' : 'false')
+      b.textContent = paused ? 'Play' : 'Pause'
+    })
+    track.parentNode.insertBefore(b, track.nextSibling)
+  })
 
   // reveal on scroll (skipped for reduced-motion via CSS)
   var els = document.querySelectorAll('.reveal')
