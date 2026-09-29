@@ -66,7 +66,7 @@ header.nav{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.92);bac
 .band{padding:var(--s6) 0;border-top:1px solid var(--rule)}
 .eyebrow{margin-bottom:var(--s2)}
 .sectionlede{margin-top:var(--s2);color:var(--muted);max-width:36em}
-.pagehead{padding:60px 0 var(--s3)}
+.pagehead{padding:60px 28px var(--s3)}
 
 /* cards */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:var(--s4)}

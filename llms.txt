@@ -1,6 +1,6 @@
 # Candor
 
-> AI governance and audit trails for U.S. law firms. Candor is the AI workspace a firm works in, on the firm's own connected model: it screens client data before it reaches a model, logs every AI use to the matter, verifies citations, captures attorney sign-off, and produces the append-only, tamper-evident record a malpractice carrier asks for at renewal. Flat annual fee priced on attorney count ($3,000–$20,000/yr); staff seats are free. Every firm can start a one-month free trial at candor.legal/start. Founded by Jesse Hollar, from an insurance and claims background.
+> AI governance software for U.S. law firms. Candor is the AI workspace a firm works in, on the firm's own connected model: it screens client data before it reaches a model, logs every AI use to the matter, flags citations that may need a second look, captures attorney sign-off, and keeps the append-only, tamper-evident record carriers have begun asking about at renewal. Flat annual fee priced on attorney count ($3,000–$20,000/yr); staff seats are free. Every firm can start a one-month free trial at candor.legal/start. Built by Jesse Hollar, a former claims adjuster: the person who examines the file after a loss and works out what can actually be shown. Most AI governance tools come from legal tech or compliance; Candor was built from the side that reads the file afterward.
 
 ## Core pages
 - [Home](https://candor.legal/): what Candor is and the 90-second product walkthrough.
@@ -38,3 +38,6 @@
 - [vs Lenavix](https://candor.legal/vs/lenavix): vendor due diligence vs a firm's own-use governance.
 - [vs Intapp Celeste](https://candor.legal/vs/intapp-celeste): an enterprise platform vs purpose-built AI-use records for law firms.
 - [vs Roval](https://candor.legal/vs/roval): governing enterprise AI agents vs recording a law firm's own AI use.
+
+## Category
+- [AI governance software for law firms](https://candor.legal/ai-governance-software): what the category is, what Candor covers, how it works with Clio, Filevine and other practice management systems, comparisons and pricing.
