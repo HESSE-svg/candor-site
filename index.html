@@ -202,6 +202,9 @@
   .hb-warn h2 em{color:var(--ox)}
   .hb-warn .hb-lede{color:var(--muted)}
   .hb-warn .mw{border-color:var(--navy);background:#fff}
+  .hb-warn .hb-in{grid-template-columns:minmax(0,1fr);max-width:640px;gap:28px;padding:64px 24px 72px;text-align:center}
+  .hb-warn .mw{text-align:left}
+  .hb-warn h2{font-size:clamp(30px,3.6vw,42px)}
   .hb-warn+.s-watch{padding-top:72px}
   .hb-pause{margin-left:12px;font:inherit;font-size:12px;color:#D6DCE5;background:none;border:1px solid rgba(250,248,245,.4);border-radius:999px;padding:2px 11px;cursor:pointer}
   @media (prefers-reduced-motion: reduce){.hb-pause{display:none}}
@@ -284,15 +287,15 @@
     <div>
       <div class="mono eyebrow">AI governance software for law firms</div>
       <h1 class="sr-only">Candor catches the client details, doubtful citations and unlogged AI use that put a firm at risk.</h1>
-      <p class="vq" aria-hidden="true"><span id="vq">&ldquo;I&rsquo;m your client&rsquo;s date of birth. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span></p>
+      <p class="vq" aria-hidden="true"><span id="vq">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span></p>
       <p class="hb-lede"><strong>Candor catches all three:</strong> the client detail before it&rsquo;s sent, the citation that needs a second look, and the AI use nobody wrote down. Every use is filed to its matter with the attorney&rsquo;s sign-off.</p>
       <div class="hb-cta"><a class="btn" href="/start">Start free for a month</a><a class="btn ghost" href="#watch">Watch it in 90 seconds</a></div>
       <p class="hb-origin">Built by Jesse Hollar, a former claims adjuster: the person who opens the file after something goes wrong.</p>
     </div>
-    <figure class="hb-fig" aria-label="Illustration: a draft sent to an AI tool. Candor swaps out the client's name and date of birth, flags an unfamiliar citation for a second look, and logs the use to the matter.">
+    <figure class="hb-fig" aria-label="Illustration: a draft sent to an AI tool. Candor swaps out the client's name and Social Security number in a privileged email, flags an unfamiliar citation for a second look, and logs the use to the matter.">
       <div class="doc" aria-hidden="true">
         <div class="doc-head mono">Draft &middot; to AI tool &middot; Matter 2026-0142</div>
-        <p>Summarize the claim file for <span class="v v0">Jane Roe</span>, born <span class="v v0">04/12/1978</span>. The carrier denied the roof claim after the storm.</p>
+        <p>Summarize this privileged email from <span class="v v0">Jane Roe</span>, SSN <span class="v v0">000-12-3456</span>, about her denied roof claim.</p>
         <p>Draft a demand letter. Rely on <span class="v v1">Hargrove v. Delmont, 512 F.3d 1104 (11th Cir. 2019)</span> for bad faith.</p>
         <div class="doc-log"><span class="v v2">AI use &middot; not logged</span></div>
         <div class="tags"><span class="tag t0">Caught &middot; swapped for placeholders</span><span class="tag t1">Flagged &middot; may need a second look</span><span class="tag t2">Logged &middot; signed off by the attorney</span></div>
@@ -304,11 +307,9 @@
 
 <section class="hb hb-warn" aria-labelledby="warn-h">
   <div class="hb-in">
-    <div>
-      <div class="mono eyebrow">The paste warning</div>
-      <h2 id="warn-h">Anything you paste can and will be used <em>outside the firm</em>.</h2>
-      <p class="hb-lede">Candor stops it at the paste. Client names, dates of birth, policy and account numbers are caught before they reach ChatGPT or any other AI tool, and every use is filed to its matter with the attorney&rsquo;s sign-off.</p>
-      
+    <div class="warn-copy">
+      <div class="mono eyebrow">The problem</div>
+      <h2 id="warn-h">Before anyone pastes, they should <em>hear this</em>.</h2>
     </div>
     <figure class="hb-fig" aria-label="Illustration: a wallet card titled The Paste Warning, reading: you have the right to use AI at the firm; anything you paste can and will be used outside it; you have the right to have client details caught first; if you cannot afford an IT department, one will be provided.">
       <div class="mw" aria-hidden="true">
@@ -453,7 +454,7 @@
 // Hero: the three risks speak in turn while the draft beside them is screened,
 // flagged and logged. Pausable; still with reduced motion.
 (function(){var q=document.getElementById('vq');
-var lines=['&ldquo;I&rsquo;m your client&rsquo;s date of birth. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;','&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;','&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;'];
+var lines=['&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;','&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;','&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;'];
 function all(c,f){[].forEach.call(document.querySelectorAll(c),f)}
 function fin(){all('.v0',function(x){x.classList.add('done')});all('.v1',function(x){x.classList.add('done')});all('.v2',function(x){x.classList.add('done');x.textContent='AI use · logged to Matter 2026-0142'});all('.tag',function(x){x.classList.add('on')})}
 if(matchMedia('(prefers-reduced-motion: reduce)').matches){fin();return}
