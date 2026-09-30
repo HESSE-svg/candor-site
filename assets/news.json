@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-09-30T12:45:06.367Z",
+  "builtAt": "2026-09-30T22:22:03.510Z",
   "count": 10,
   "items": [
+    {
+      "title": "AI Can Read Between The Redacted Lines",
+      "link": "https://abovethelaw.com/2026/09/ai-can-read-between-the-redacted-lines/",
+      "desc": "Our very own investigation into Judge Elanor Ross shows how quickly artificial intelligence can uncover what courts tried to conceal. The post AI Can Read Between The Redacted Lines appeared first…",
+      "date": "Wed, 30 Sep 2026 20:44:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/12/GettyImages-1465926877-e1734032437874.jpg",
+      "source": "Above the Law",
+      "ts": 1790801040000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "What agencies should look for before buying an AI investigation solution",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/ai-investigation-solution-law-enforcement/",
+      "desc": "Artificial intelligence has moved fast into everyday life, and law enforcement is no exception. Automated tools with machine learning features The post What agencies should look for before buying…",
+      "date": "Wed, 30 Sep 2026 17:58:15 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2023/03/TR3030867_01A_2500x1406-jpg-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1790791095000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Thomson Reuters wins AI copyright appeal against Ross Intelligence, Reuters says",
       "link": "https://legaltechnology.com/thomson-reuters-wins-ai-copyright-appeal-against-ross-intelligence-reuters-says/",
@@ -26,7 +54,7 @@
       "ts": 1790714640000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -40,7 +68,7 @@
       "ts": 1790710058000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +82,7 @@
       "ts": 1790699353000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +96,7 @@
       "ts": 1790697838000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,7 +110,7 @@
       "ts": 1790690700000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -96,7 +124,7 @@
       "ts": 1790686817000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -108,34 +136,6 @@
       "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Morae-intelligence.jpg",
       "source": "Legal IT Insider",
       "ts": 1790679609000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "AI Will Expose How Little Legal Judgment Companies Have Made Explicit",
-      "link": "https://abovethelaw.com/2026/09/ai-will-expose-how-little-legal-judgment-companies-have-made-explicit/",
-      "desc": "Humans have been quietly compensating for this gap for years. AI will make it visible. The post AI Will Expose How Little Legal Judgment Companies Have Made Explicit appeared first on Above the Law .",
-      "date": "Mon, 28 Sep 2026 21:33:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/09/GettyImages-2204783532.jpg",
-      "source": "Above the Law",
-      "ts": 1790631180000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "In A Marriage of Two ALSPs, Repario Acquires UnitedLex to Strengthen Its AI Offerings",
-      "link": "https://www.lawnext.com/2026/09/in-a-marriage-of-two-alsps-repario-acquires-unitedlex-to-strengthen-its-ai-offerings.html",
-      "desc": "In a marriage of two alternative legal services providers, Repario, a company with a focus on e-discovery and managed review, has acquired UnitedLex, a global company that provides a broader range…",
-      "date": "Mon, 28 Sep 2026 15:08:03 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Repario-Acquires-UnitedLex.png",
-      "source": "LawNext",
-      "ts": 1790608083000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Yesterday",
