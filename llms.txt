@@ -5,6 +5,7 @@
 ## Core pages
 - [Home](https://candor.legal/): what Candor is and the 90-second product walkthrough.
 - [Product](https://candor.legal/product): how it works, covering screen, log, verify, sign off, report, policy, and the governance around them: the firm's own AI rules with a pre-flight check, approved tools and vendor profiles, a risk radar, matter files and receipts, facts-only incident records, an in-browser engagement-letter consent check, and Candor Academy training.
+- [Carrier renewal packet](https://candor.legal/renewal-packet): the AI questions malpractice carriers ask at renewal, answered from the firm's own record for any date range.
 - [Pricing](https://candor.legal/pricing): flat annual fee by attorney count; staff seats free; one month free.
 - [Security](https://candor.legal/security): hash-chained, encrypted records; the firm's own model; full export.
 - [About](https://candor.legal/about): the founder and why Candor exists.
@@ -37,6 +38,8 @@
 - [vs Credo AI](https://candor.legal/vs/credo-ai): enterprise AI governance vs law-firm-specific governance.
 - [vs Lenavix](https://candor.legal/vs/lenavix): vendor due diligence vs a firm's own-use governance.
 - [vs Intapp Celeste](https://candor.legal/vs/intapp-celeste): an enterprise platform vs purpose-built AI-use records for law firms.
+- [vs Claire](https://candor.legal/vs/claire): a multi-industry AI compliance platform vs a record built only for law firms.
+- [vs AI data-loss prevention tools](https://candor.legal/vs/ai-dlp): blocking sensitive data vs the matter log, sign-off and carrier record.
 - [vs Roval](https://candor.legal/vs/roval): governing enterprise AI agents vs recording a law firm's own AI use.
 
 ## Category
