@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-09-30T05:41:49.757Z",
+  "builtAt": "2026-09-30T12:45:06.367Z",
   "count": 10,
   "items": [
+    {
+      "title": "Thomson Reuters wins AI copyright appeal against Ross Intelligence, Reuters says",
+      "link": "https://legaltechnology.com/thomson-reuters-wins-ai-copyright-appeal-against-ross-intelligence-reuters-says/",
+      "desc": "The 3rd Circuit Court of Appeals yesterday (29 September) upheld a ruling for Thomson Reuters in its copyright dispute with former legal-research rival Ross Intelligence over Ross' alleged misuse…",
+      "date": "Wed, 30 Sep 2026 10:41:24 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2025/11/Trumper-2025-11-13T120037.490.png",
+      "source": "Legal IT Insider",
+      "ts": 1790764884000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "This Legal Writing Expert Wants Lawyers To Embrace AI",
       "link": "https://abovethelaw.com/2026/09/this-legal-writing-expert-wants-lawyers-to-embrace-ai/",
@@ -96,7 +110,7 @@
       "ts": 1790679609000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -124,20 +138,6 @@
       "ts": 1790608083000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Exclusive: Alesis, a sovereign AI assistant for UK law firms, goes live",
-      "link": "https://legaltechnology.com/exclusive-alesis-a-sovereign-ai-assistant-for-uk-law-firms-goes-live/",
-      "desc": "Alesis, an AI assistant grounded solely in the laws of England and Wales, Scotland and Northern Ireland, and which checks its answers “exhaustively” against primary sources, has gone live, we []…",
-      "date": "Mon, 28 Sep 2026 12:58:24 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/Trumper-5-1024x280.png",
-      "source": "Legal IT Insider",
-      "ts": 1790600304000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "Yesterday",
       "strong": true,
       "promo": false
