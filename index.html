@@ -70,8 +70,10 @@ h1,h2,h3,h4{font-family:var(--f-serif);font-weight:400;margin:0}
 .navtoggle{display:none;margin-left:auto;align-items:center;justify-content:center;width:40px;height:36px;border-radius:10px;border:1px solid var(--line-2);background:transparent;color:var(--text);cursor:pointer}
 .navtoggle svg{width:18px;height:18px}
 /* rotating announcement pill */
-.pill-t{display:inline-block;transition:opacity .35s,transform .35s}
-.pill.out .pill-t{opacity:0;transform:translateY(4px)}
+.pill-set{display:inline-grid;text-align:left;overflow:hidden}
+.pill-set>span{grid-area:1/1;opacity:0;transform:translateY(70%);transition:opacity .5s ease,transform .5s cubic-bezier(.2,.8,.2,1);white-space:nowrap}
+.pill-set>span.on{opacity:1;transform:none}
+.pill-set>span.gone{transform:translateY(-70%)}
 /* video */
 .frame{display:block}
 .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
@@ -107,11 +109,11 @@ html.fs-lock,html.fs-lock body{overflow:hidden;touch-action:none}
 .pill b{font-weight:500;color:var(--text)}
 .pill i{font-style:normal;display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--text);background:var(--card-2);border:1px solid var(--line-2);border-radius:999px;padding:2px 10px}
 .eyebrow{display:block;margin-top:20px;color:var(--text-3)}
-.vq{font-family:var(--f-serif);font-size:clamp(46px,5.4vw,78px);line-height:.98;letter-spacing:-.03em;margin:12px auto 0;max-width:17ch;min-height:3em;display:flex;align-items:center;justify-content:center;text-wrap:balance}
-.vq>span{padding-bottom:.08em;background:linear-gradient(180deg,#FFFFFF 30%,#8E8E96 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.vq{font-family:var(--f-serif);font-size:clamp(46px,5.4vw,78px);line-height:.98;letter-spacing:-.03em;margin:12px auto 0;max-width:17ch;display:grid;text-wrap:balance}
+.vq .q{grid-area:1/1;align-self:center;opacity:0;transition:opacity .7s ease}
+.vq .q.on{opacity:1}
+.vq .q{padding-bottom:.08em;background:linear-gradient(180deg,#FFFFFF 30%,#8E8E96 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .vq em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(--gilt));-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.06em}
-#vq{transition:opacity .45s,filter .45s,transform .45s}
-#vq.out{opacity:0;filter:blur(8px);transform:translateY(8px)}
 .lede{font-size:18.5px;line-height:1.6;color:var(--text-2);max-width:58ch;margin:20px auto 0}
 .lede strong{color:var(--text);font-weight:600}
 .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:28px}
@@ -476,7 +478,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 @media(max-width:640px){
   .wrap{padding:0 16px}
   .nav-r .btn{display:none}
-  .vq{font-size:40px;min-height:4.1em}
+  .vq{font-size:40px}
+  .pill-set>span{white-space:normal}
   .cta .btn{flex:1 1 100%}
   .win-grid,.sc-shot .win-grid{grid-template-columns:minmax(0,1fr);min-height:0}
   .sb,.win-url{display:none}.win-model{margin-left:auto}
@@ -542,6 +545,34 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 .prob .mono{color:#DE6B55}
 .entry{opacity:1;color:var(--text-3);border-style:dashed}
 .signed .entry{border-style:solid}
+
+/* ===== Product pictures in the Ink look (2026-10-01). Colours scoped to the app windows,
+   so the Paste Warning card keeps its own. ===== */
+.win,.ext,.rep{--paper:#111114;--ink:#E4E4E7;--navy:#FAFAF9;--muted:#8B8B94;--rule:#2A2A30;--soft:#1F1F23;--seal:#86CDB4;--brass:#E3B866;--ox:#C4523F}
+.win{border:1px solid #2A2A30}
+.win-top{background:#16161A;border-bottom-color:#1F1F23}
+.win-url{background:#0E0E11;border-color:#2A2A30;color:#A8A8B0}
+.sb{background:#0C0C0E;border-right:1px solid #1F1F23;color:#A8A8B0}
+.sb .g{color:#8B8B94}
+.sb .it.on{background:linear-gradient(90deg,rgba(242,196,181,.14),rgba(242,196,181,.03))}
+.box{background:#16161A}
+.tok{background:rgba(196,82,63,.16);color:#F2C4B5;border:1px solid rgba(196,82,63,.4)}
+.chip.ok{background:rgba(134,205,180,.12)}
+.chip.fl{background:rgba(227,184,102,.13);color:#E3B866}
+.bt{background:#C4523F}
+.bt.gh{background:transparent;color:#FAFAF9;border-color:#2A2A30}
+.att{background:#16161A}
+.att.done i{color:#09090B}
+.anim .pane.on .att i{animation-name:tickInk}
+@keyframes tickInk{to{background:#FAFAF9;color:#09090B}}
+.newrow td{background:rgba(134,205,180,.08)}
+.ext-chat{background:#111114}
+.ext-panel{background:#0C0C0E;border-left:1px solid #1F1F23}
+.ext-panel .act.on{background:#C4523F;border-color:#C4523F}
+.ext-panel .note{color:#86CDB4}
+.rep{background:#111114}
+.qa>svg{color:#09090B}
+.sc-shot .win .box.me{background:#1F1F23;color:#FAFAF9;border-color:#2A2A30}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Candor","url":"https://candor.legal","logo":"https://candor.legal/og.png","description":"AI governance software for law firms: confidentiality screening before AI, a per-matter AI use log, citation flags, attorney sign-off, and a tamper-evident record for carriers and courts. Built by Jesse Hollar, a former claims adjuster.","founder":{"@type":"Person","name":"Jesse Hollar","description":"Former claims adjuster"},"knowsAbout":["AI governance software for law firms","Legal AI risk","Malpractice carrier AI questionnaires"],"sameAs":["https://www.instagram.com/candor.legal","https://www.linkedin.com/in/jesse-hollar-084999283"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Candor","url":"https://candor.legal/ai-governance-software","description":"AI governance software for U.S. law firms: screen client data before it reaches a model, log every AI use to the matter, check citations, capture attorney sign-off, apply the firm's own AI-use rules before each use, keep a profile and review date for every AI vendor, record incidents, train staff, and produce the record a malpractice carrier asks for at renewal. Runs on the firm's own model.","audience":{"@type":"Audience","audienceType":"U.S. law firms"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"3000","highPrice":"20000","offerCount":"5","url":"https://candor.legal/pricing"},"serviceType":"AI governance software for law firms","provider":{"@type":"Organization","name":"Candor","url":"https://candor.legal"},"areaServed":"US"}</script>
@@ -574,10 +605,10 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 <section class="hero">
   <div class="wrap">
     <div class="obj" aria-hidden="true"><div class="cube"><i class="f1"><span class="c">C</span></i><i class="f2"><span class="t">Screened</span></i><i class="f3"><span class="t">Checked</span></i><i class="f4"><span class="t">Signed off</span></i><i class="f5"></i><i class="f6"></i></div></div>
-    <a class="pill" id="pill" href="/changelog#2026-10-01"><b>New</b> <span class="pill-t" id="pillT">The browser panel on Eve, Harvey, CoCounsel and Lexis+ AI</span> <i>Read <svg width="10" height="10" aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
+    <a class="pill" id="pill" href="/changelog#2026-10-01"><b>New</b> <span class="pill-set" id="pillSet"><span class="on">The browser panel on Eve, Harvey, CoCounsel and Lexis+ AI</span><span>Share your renewal questionnaire with an underwriter by link</span><span>Log an AI agent run as one use, step by step</span><span>A public AI trust page your firm can link to</span></span> <i>Read <svg width="10" height="10" aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
     <span class="mono eyebrow">AI governance software for law firms</span>
     <h1 class="sr-only">Candor catches the client details, doubtful citations and unlogged AI use that put a firm at risk.</h1>
-    <p class="vq" aria-hidden="true"><span id="vq">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span></p>
+    <p class="vq" id="vq" aria-hidden="true"><span class="q on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span class="q">&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span class="q">&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
     <p class="lede"><strong>Candor catches all three:</strong> the client detail before it&rsquo;s sent, the citation that needs a second look, and the AI use nobody wrote down. Every use is filed to its matter with the attorney&rsquo;s sign-off.</p>
     <div class="cta"><a class="btn btn-w" href="/start">Start free for a month<svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-g" href="#watch"><span class="play" aria-hidden="true"><svg><use href="#i-play"/></svg></span>Watch it in 90 seconds</a></div>
     <p class="origin"><span class="sig" aria-hidden="true">J</span>Built by Jesse Hollar, a former claims adjuster: the person who opens the file after something goes wrong.</p>
@@ -723,7 +754,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
         <div class="sc-shot"><div class="win" role="img" aria-label="The Ask screen in Candor: an attorney asks the firm's own model to draft a demand letter; the reply is tagged as screened and logged to the matter.">
           <div class="win-top" aria-hidden="true"><i></i><i></i><i></i><span class="win-url"><svg><use href="#i-lock"/></svg>app.candor.legal / ask</span><span class="win-model">on your firm's model</span></div>
           <div class="win-grid" aria-hidden="true"><div class="sb"><div class="wm">Candor<span>.</span></div><div class="it">Overview</div><div class="g">Daily</div><div class="it on">Ask</div><div class="it">Verification</div><div class="it">AI Use Log</div><div class="it">Matters</div></div>
-            <div class="pane on"><div class="ph"><h4>Ask</h4><span>MATTER 2026-0142</span></div><div class="box" style="align-self:flex-end;max-width:80%;background:linear-gradient(160deg,#2A3F60,#1B2A41);color:#fff;border-color:#1B2A41">Draft a demand letter for the Roe matter on the denied roof claim.</div><div class="box"><span class="lab">Your model &middot; screened &middot; matter 2026-0142</span>Re: Roe, demand for settlement. This firm represents the policyholder regarding the denial of the claim for roof damage. We write to demand&hellip;</div><div class="row2"><span class="chip ok"><svg><use href="#i-check"/></svg>Logged to the matter</span><span class="bt">Send</span></div></div></div>
+            <div class="pane on"><div class="ph"><h4>Ask</h4><span>MATTER 2026-0142</span></div><div class="box me" style="align-self:flex-end;max-width:80%">Draft a demand letter for the Roe matter on the denied roof claim.</div><div class="box"><span class="lab">Your model &middot; screened &middot; matter 2026-0142</span>Re: Roe, demand for settlement. This firm represents the policyholder regarding the denial of the claim for roof damage. We write to demand&hellip;</div><div class="row2"><span class="chip ok"><svg><use href="#i-check"/></svg>Logged to the matter</span><span class="bt">Send</span></div></div></div>
         </div></div>
       </div>
       <div class="scp" id="scp-2" role="tabpanel" hidden>
@@ -808,18 +839,18 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 document.documentElement.classList.add('js');
 var RM=matchMedia('(prefers-reduced-motion: reduce)').matches,STILL=/still/.test(location.search);
 // Hero: each quote speaks while the app beneath it handles that risk.
-(function(){var q=document.getElementById('vq'),win=document.getElementById('heroWin');
-var lines=['&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;','&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;','&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;'];
+(function(){var qs=[].slice.call(document.querySelectorAll('#vq .q')),win=document.getElementById('heroWin');
+var ps=[].slice.call(document.querySelectorAll('#pillSet>span'));
 var panes=[].slice.call(win.querySelectorAll('.pane')),items=[].slice.call(win.querySelectorAll('.sb .it[data-p]')),bars=[].slice.call(document.querySelectorAll('.bars span')),bb=document.querySelector('.bars');
 function show(i){panes.forEach(function(p){p.classList.toggle('on',+p.dataset.p===i)});items.forEach(function(it){it.classList.toggle('on',+it.dataset.p===i)});bars.forEach(function(d,k){d.classList.remove('on');void d.offsetWidth;d.classList.toggle('on',k===i);d.classList.toggle('done',k<i)})}
-var i=0,t=null,paused=false;function step(){q.classList.add('out');setTimeout(function(){q.innerHTML=lines[i];q.classList.remove('out')},450);show(i)}
+var i=0,pk=0,t=null,half=null,paused=false,BEAT=6200;
+function quote(n){qs.forEach(function(x,k){x.classList.toggle('on',k===n)});show(n)}
+function pill(n){ps.forEach(function(x,k){x.classList.toggle('gone',k===pk&&k!==n);x.classList.toggle('on',k===n)});pk=n;setTimeout(function(){ps.forEach(function(x){x.classList.remove('gone')})},520)}
 if(RM||STILL){win.classList.remove('anim');show(0);document.getElementById('heroPause').hidden=true;return}
-var pill=document.getElementById('pill'),pt=document.getElementById('pillT'),pk=0,pt0=null;
-var news=[['The browser panel on Eve, Harvey, CoCounsel and Lexis+ AI','/changelog#2026-10-01'],['Share your renewal questionnaire with an underwriter by link','/changelog#2026-10-01'],['Log an AI agent run as one use, step by step','/changelog#2026-10-01'],['A public AI trust page your firm can link to','/changelog#2026-10-01']];
-var pSw=null;function pillNext(){var n=(pk+1)%news.length;pill.classList.add('out');pSw=setTimeout(function(){pk=n;pt.textContent=news[pk][0];pill.href=news[pk][1];pill.classList.remove('out');pSw=null},350)}
-function pillPlay(){clearInterval(pt0);pt0=setInterval(pillNext,4400)}
-function play(){step();t=setInterval(function(){i=(i+1)%3;step()},6200)}
-var b=document.getElementById('heroPause');b.addEventListener('click',function(){paused=!paused;b.textContent=paused?'Play':'Pause';bb.classList.toggle('paused',paused);if(paused){clearInterval(t);clearInterval(pt0);clearTimeout(pSw);pill.classList.remove('out')}else{i=(i+1)%3;play();pillPlay()}});play();pillPlay()})();
+function tick(){i=(i+1)%qs.length;quote(i);clearTimeout(half);half=setTimeout(function(){pill((pk+1)%ps.length)},BEAT/2)}
+function play(){clearInterval(t);t=setInterval(tick,BEAT)}
+var b=document.getElementById('heroPause');b.addEventListener('click',function(){paused=!paused;b.textContent=paused?'Play':'Pause';bb.classList.toggle('paused',paused);if(paused){clearInterval(t);clearTimeout(half)}else{tick();play()}});
+show(0);play()})();
 
 // Screen cell: live screener. Runs only in this page; nothing is sent.
 (function(){var inp=document.getElementById('scrIn'),out=document.getElementById('scrOut'),chips=document.getElementById('scrChips');
