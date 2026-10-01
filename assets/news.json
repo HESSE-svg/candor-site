@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-01T06:06:46.883Z",
+  "builtAt": "2026-10-01T13:29:27.971Z",
   "count": 10,
   "items": [
     {
@@ -40,7 +40,7 @@
       "ts": 1790764884000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -124,7 +124,7 @@
       "ts": 1790686817000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -138,7 +138,7 @@
       "ts": 1790679609000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     }
