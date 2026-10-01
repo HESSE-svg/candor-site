@@ -40,13 +40,15 @@ never promise more than the software does. Run every draft through this list.
 ## Brand look (web and reports)
 **New look, 2026-10-01 (Jesse's decision):** near-black "Ink". Background
 #09090B, cards #111114 / #16161A, lines #1F1F23 / #2A2A30, text #FAFAF9 /
-#A8A8B0 / #8B8B94, warm red accent #C4523F, rose #F2C4B5, gilt #E3B866, mint
-#86CDB4. Gradients and glows are allowed; no grid-line backgrounds. Serif
-headlines (Instrument Serif), Inter for body, IBM Plex Mono for labels. The
-homepage and the walkthrough use it now; other pages, the app and reports
-move over later. Pictures of the app keep the app's current colors.
+#A8A8B0 / #8B8B94, warm red accent #C4523F (#B54835 behind white button
+text, for contrast), red text/links #E07A63, rose #F2C4B5, gilt #E3B866,
+mint #86CDB4. Primary buttons are white pills. Gradients and glows are
+allowed; no grid-line backgrounds. Serif headlines (Instrument Serif), Inter
+for body, IBM Plex Mono for labels. The whole website uses it (2026-10-01),
+and pictures of the app are drawn in it too; the app itself and its reports
+move over later. Paper-colored "document" drawings (the Paste Warning card,
+statement of account, record cards) stay light on purpose.
 
-Old look (still on the other pages until they move): navy #1B2A41, paper
-#FAF8F5, ink #22201D, oxblood #7A2E2E (accent and buttons only), seal green
-#2F5D50 (success), brass #9A6B1F (warnings, never bright red), no gradients,
-no drop shadows. Either way: no stock gavels or scales.
+Old look (the app and reports, until they move): navy #1B2A41, paper
+#FAF8F5, ink #22201D, oxblood #7A2E2E, seal green #2F5D50, brass #9A6B1F.
+Either way: no stock gavels or scales.

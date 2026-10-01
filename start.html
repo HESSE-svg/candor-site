@@ -7,7 +7,7 @@
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#1B2A41">
+<meta name="theme-color" content="#09090B">
 <meta property="og:title" content="Start your firm · Candor">
 <meta property="og:description" content="One month free, then a flat annual fee by attorney count.">
 <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=14">
+<link rel="stylesheet" href="/assets/styles.css?v=15">
 <style>
   .checkout{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;margin-top:var(--s3);align-items:start}
   @media(max-width:820px){.checkout{grid-template-columns:1fr;gap:24px}}
@@ -27,7 +27,7 @@
   .field .hint{font-size:12.5px;color:var(--faint);margin-top:5px}
   .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   @media(max-width:520px){.two{grid-template-columns:1fr}}
-  .summary{border:1px solid var(--navy);border-top:3px solid var(--ox);background:var(--soft);border-radius:8px;padding:24px 24px 26px;position:sticky;top:16px}
+  .summary{border:1px solid var(--line-2);border-top:3px solid var(--ox);background:var(--soft);border-radius:8px;padding:24px 24px 26px;position:sticky;top:16px}
   .summary .tname{font-family:var(--f-serif);font-size:26px;color:var(--navy);line-height:1}
   .summary .trange{font-family:var(--f-mono);font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-top:5px}
   .sumrow{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:15px}
@@ -36,10 +36,10 @@
   .sumrow.free .amt{color:var(--seal);font-weight:600}
   .sumrow.big .amt{font-size:24px}
   .duenow{font-family:var(--f-mono);font-size:12px;color:var(--seal);margin-top:12px;letter-spacing:.02em}
-  .startbtn{display:block;width:100%;text-align:center;margin-top:18px;font-family:var(--f-sans);font-weight:600;font-size:15.5px;color:var(--paper);background:var(--ox);border:1px solid var(--ox);border-radius:6px;padding:14px 18px;cursor:pointer;transition:background .15s,color .15s}
+  .startbtn{display:block;width:100%;text-align:center;margin-top:18px;font-family:var(--f-sans);font-weight:600;font-size:15.5px;color:#FAFAF9;background:var(--accent);border:1px solid var(--ox);border-radius:6px;padding:14px 18px;cursor:pointer;transition:background .15s,color .15s}
   .startbtn:hover{background:transparent;color:var(--ox)}
-  .paybtn{display:block;width:100%;text-align:center;margin-top:10px;font-family:var(--f-sans);font-weight:500;font-size:14.5px;color:var(--navy);background:transparent;border:1px solid var(--navy);border-radius:6px;padding:12px 18px;cursor:pointer}
-  .paybtn:hover{background:var(--navy);color:var(--paper)}
+  .paybtn{display:block;width:100%;text-align:center;margin-top:10px;font-family:var(--f-sans);font-weight:500;font-size:14.5px;color:var(--navy);background:transparent;border:1px solid var(--line-2);border-radius:6px;padding:12px 18px;cursor:pointer}
+  .paybtn:hover{background:var(--surface);color:#FAFAF9}
   .paynote{font-size:12px;color:var(--faint);margin-top:8px;text-align:center;line-height:1.45}
   .formerr{color:var(--ox);font-size:13.5px;margin-top:6px;min-height:1px}
   .field input.bad{border-color:var(--ox);border-left:4px solid var(--ox)}
@@ -58,9 +58,10 @@
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
-  <a class="brand" href="/" aria-label="Candor home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#1B2A41"/><circle cx="50" cy="50" r="39" fill="none" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/><text x="50" y="52" font-family="Instrument Serif,Georgia,serif" font-size="58" fill="#FAF8F5" text-anchor="middle" dominant-baseline="central">C</text></svg><span class="name">Candor<span>.</span></span></a>
-  <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
-  <nav class="navlinks"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/start">Start free</a></nav>
+  <a class="brand" href="/" aria-label="Candor home"><span class="mk" aria-hidden="true">C</span><span class="name">Candor<span>.</span></span></a>
+  <nav class="navlinks" aria-label="Primary"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="m-cta" href="/start">Start free</a></nav>
+  <div class="nav-r"><a class="btn" href="/start">Start free</a></div>
+  <button type="button" class="navtoggle" aria-label="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
 </div></header>
 
 <main id="main">

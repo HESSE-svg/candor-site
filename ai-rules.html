@@ -7,7 +7,7 @@
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#1B2A41">
+<meta name="theme-color" content="#09090B">
 <meta property="og:title" content="AI ethics rules by jurisdiction">
 <meta property="og:description" content="Pick your jurisdiction and see the AI-related professional duties that apply, each with a link to the authority.">
 <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=14">
+<link rel="stylesheet" href="/assets/styles.css?v=15">
 <style>
   .jall{border:1px solid var(--rule);border-radius:8px;padding:12px 16px;margin:10px 0;background:var(--paper)}
   .jall summary{cursor:pointer}
@@ -30,13 +30,13 @@
   .jhead h2{font-family:var(--f-serif);font-size:24px;color:var(--navy);margin:0}
   .jhead .auth{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);margin-top:6px}
   .jhead .flag{display:inline-block;font-family:var(--f-mono);font-size:10px;text-transform:uppercase;letter-spacing:.08em;border-radius:999px;padding:3px 9px;margin-left:6px}
-  .flag.current{color:var(--seal);border:1px solid rgba(47,93,80,.4)}
-  .flag.pending{color:var(--ox);border:1px solid rgba(122,46,46,.4)}
+  .flag.current{color:var(--seal);border:1px solid rgba(134,205,180,.4)}
+  .flag.pending{color:var(--ox);border:1px solid rgba(196,82,63,.4)}
   .duty{border:1px solid var(--rule);border-radius:8px;padding:18px 20px;margin-top:14px}
   .duty .dtop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px}
   .duty h3{font-family:var(--f-serif);font-size:18px;color:var(--navy);margin:0}
   .duty .verdict{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:3px 9px;border-radius:999px;white-space:nowrap}
-  .verdict.req{color:#fff;background:var(--ox)}
+  .verdict.req{color:#fff;background:var(--accent)}
   .verdict.some{color:var(--ox);border:1px solid var(--ox)}
   .verdict.no{color:var(--muted);border:1px solid var(--rule)}
   .duty p{margin:10px 0 0;color:var(--ink);line-height:1.55;font-size:15px}
@@ -47,9 +47,10 @@
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
-  <a class="brand" href="/" aria-label="Candor home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#1B2A41"/><circle cx="50" cy="50" r="39" fill="none" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/><text x="50" y="52" font-family="Instrument Serif,Georgia,serif" font-size="58" fill="#FAF8F5" text-anchor="middle" dominant-baseline="central">C</text></svg><span class="name">Candor<span>.</span></span></a>
-  <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
-  <nav class="navlinks"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources" aria-current="page">Free tools</a><a href="/guides">Guides</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/start">Start free</a></nav>
+  <a class="brand" href="/" aria-label="Candor home"><span class="mk" aria-hidden="true">C</span><span class="name">Candor<span>.</span></span></a>
+  <nav class="navlinks" aria-label="Primary"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources" aria-current="page">Free tools</a><a href="/guides">Guides</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="m-cta" href="/start">Start free</a></nav>
+  <div class="nav-r"><a class="btn" href="/start">Start free</a></div>
+  <button type="button" class="navtoggle" aria-label="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
 </div></header>
 
 <main id="main">
@@ -99,7 +100,7 @@
 </section>
 
 <section class="wrap" id="intro">
-  <div class="jdisc" style="border-left-color:var(--navy)">
+  <div class="jdisc" style="border-left-color:var(--line-2)">
     <b>Coverage so far: Florida and the national ABA baseline.</b> More states are being added, each from its own bar opinion, statute, or court rule with the source linked. If your state has not issued specific AI guidance, most firms follow the ABA baseline (Formal Opinion 512) as the starting point. Select it above to see it.
   </div>
 </section>
