@@ -17,11 +17,16 @@ Static HTML, one shared stylesheet and script, deployed by Vercel from
   /sanctions/*, /ai-rules, /rules* → Free tools; /guides/* → Guides.
 - **Page head**: `<section class="wrap pagehead"><div class="mono eyebrow">`
   names the nav section first (e.g. "Guides · ABA guidance"), then the `h1`.
-- **Homepage order** (decided 2026-09-29, keep it short): hero (rotating
-  quote + one illustration) → the problem ("Anything you paste can and will
-  be used against you" card) → one loop (Screen · Work · Prove) → works-with
-  strip → 90-second video → Learn more cards → close. Detail belongs on
-  its own page behind a Learn more link, not on the homepage.
+- **Homepage** (redesigned 2026-10-01 from draft J, the near-black look in
+  `candor-copy`): a standalone page with its own styles; it loads `site.js`
+  but not `styles.css`, so class names don't collide. Order: hero (record
+  cube, a "New" pill that rotates through recent changelog items, the three
+  rotating quotes, the app acting out each one) → works-with → "Candor
+  catches all three" demos → browser panel by tool → the problem (Paste
+  Warning) → How it works (Screen · Work · Prove) → the walkthrough video,
+  playable in the page → Learn more grid → close. The hero Pause button
+  stops both the quotes and the pill. Keep the pill to items in
+  `changelog.html`. Detail belongs on its own page behind a Learn more link.
 - Animations: pausable if they loop longer than 5 seconds, and still under
   `prefers-reduced-motion`. Fictional details are labeled as invented.
 
