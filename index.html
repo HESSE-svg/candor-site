@@ -91,26 +91,24 @@ html.fs-lock,html.fs-lock body{overflow:hidden;touch-action:none}
 .disc a{color:var(--text-2)}
 
 /* ---------- hero ---------- */
+/* the seal: the record, signed. The ring of words turns slowly; the Pause button stops it. */
+.seal{position:relative;width:168px;height:168px;margin:0 auto}
+.seal::after{content:"";position:absolute;left:-70px;right:-70px;bottom:-50px;height:90px;z-index:-1;background:radial-gradient(closest-side,rgba(196,82,63,.5),transparent);filter:blur(18px)}
+.seal svg{display:block;width:100%;height:100%;overflow:visible}
+.seal .ring{transform-origin:100px 100px;animation:sealTurn 48s linear infinite}
+.seal.paused .ring{animation-play-state:paused}
+@keyframes sealTurn{to{transform:rotate(360deg)}}
+.close .seal{width:148px;height:148px;margin-bottom:40px}
 .hero{position:relative;overflow:hidden;text-align:center;padding:40px 0 0;isolation:isolate}
 .hero::before{content:"";position:absolute;left:50%;top:-260px;width:1100px;height:700px;transform:translateX(-50%);z-index:-1;background:radial-gradient(closest-side,rgba(196,82,63,.22),rgba(227,184,102,.06) 55%,transparent)}
 /* the record, as an object (Resend's cube, in Candor's terms) */
-.obj{position:relative;width:108px;height:108px;margin:0 auto;perspective:900px}
-.obj::after{content:"";position:absolute;left:-60px;right:-60px;bottom:-60px;height:80px;background:radial-gradient(closest-side,rgba(196,82,63,.55),transparent);filter:blur(18px);z-index:-1}
-.cube{position:absolute;inset:0;transform-style:preserve-3d;animation:turn 22s linear infinite;transform:rotateX(-22deg) rotateY(0)}
-@keyframes turn{to{transform:rotateX(-22deg) rotateY(360deg)}}
-.cube i{position:absolute;inset:0;display:grid;place-items:center;font-style:normal;border-radius:16px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(145deg,#2A2A30 0%,#121215 55%,#0B0B0D 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 0 40px rgba(196,82,63,.12);backface-visibility:hidden}
-.cube i::before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(120deg,rgba(255,255,255,.14),transparent 40%)}
-.cube .f1{transform:translateZ(54px)}.cube .f2{transform:rotateY(90deg) translateZ(54px)}.cube .f3{transform:rotateY(180deg) translateZ(54px)}.cube .f4{transform:rotateY(-90deg) translateZ(54px)}
-.cube .f5{transform:rotateX(90deg) translateZ(54px);background:linear-gradient(145deg,#3A3A42,#1A1A1E)}.cube .f6{transform:rotateX(-90deg) translateZ(54px)}
-.cube .c{font-family:var(--f-serif);font-size:54px;line-height:1;background:linear-gradient(180deg,#fff,#9b9ba3);-webkit-background-clip:text;background-clip:text;color:transparent}
-.cube .t{font-family:var(--f-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt)}
 .pill{display:inline-flex;align-items:center;gap:10px;margin-top:30px;padding:5px 6px 5px 14px;border-radius:999px;font-size:13px;color:var(--text-2);text-decoration:none;background:var(--card);border:1px solid var(--line-2);transition:border-color .2s}
 .pill:hover{border-color:#3A3A42}
 .pill b{font-weight:500;color:var(--text)}
 .pill i{font-style:normal;display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--text);background:var(--card-2);border:1px solid var(--line-2);border-radius:999px;padding:2px 10px}
 .eyebrow{display:block;margin-top:20px;color:var(--text-3)}
-.vq{font-family:var(--f-serif);font-size:clamp(46px,5.4vw,78px);line-height:.98;letter-spacing:-.03em;margin:12px auto 0;max-width:17ch;display:grid;text-wrap:balance}
-.vq .q{grid-area:1/1;align-self:center;opacity:0;transition:opacity .7s ease}
+.vq{font-family:var(--f-serif);font-size:clamp(46px,5.4vw,78px);line-height:1.1;letter-spacing:-.025em;margin:14px auto 0;max-width:21ch;display:grid;text-wrap:balance}
+.vq .q{grid-area:1/1;align-self:center;padding:.04em 0;opacity:0;transition:opacity .7s ease}
 .vq .q.on{opacity:1}
 .vq .q{padding-bottom:.08em;background:linear-gradient(180deg,#FFFFFF 30%,#8E8E96 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .vq em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(--gilt));-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.06em}
@@ -388,10 +386,7 @@ html.fs-lock,html.fs-lock body{overflow:hidden;touch-action:none}
 .mw-foot{position:relative;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--navy);padding-top:12px;margin-top:6px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 
 /* ---------- watch ---------- */
-.frame-beam{position:relative;max-width:1040px;margin:48px auto 0;border-radius:22px;padding:1px;overflow:hidden;background:var(--line-2)}
-@property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
-.frame-beam::before{content:"";position:absolute;inset:-60%;background:conic-gradient(from var(--a),transparent 0 72%,var(--rose) 82%,var(--gilt) 88%,transparent 96%);animation:spinA 7s linear infinite}
-@keyframes spinA{to{--a:360deg}}
+.frame-beam{position:relative;max-width:1040px;margin:48px auto 0;border-radius:22px;padding:1px;overflow:hidden;background:linear-gradient(135deg,rgba(242,196,181,.55),#2A2A30 35%,#2A2A30 65%,rgba(227,184,102,.45))}
 .frame{position:relative;aspect-ratio:16/9;border-radius:21px;overflow:hidden;background:radial-gradient(600px 300px at 30% 20%,rgba(196,82,63,.3),transparent 70%),radial-gradient(600px 300px at 80% 90%,rgba(227,184,102,.12),transparent 70%),#0C0C0F;display:grid;place-items:center;text-decoration:none;color:#fff}
 .frame .pb{width:82px;height:82px;border-radius:50%;background:#FAFAF9;color:#09090B;display:grid;place-items:center;transition:transform .25s}
 .frame:hover .pb{transform:scale(1.08)}
@@ -440,10 +435,6 @@ html.fs-lock,html.fs-lock body{overflow:hidden;touch-action:none}
 /* ---------- close ---------- */
 .close{position:relative;margin-top:160px;padding:120px 0 140px;text-align:center;overflow:hidden;border-top:1px solid var(--line);isolation:isolate}
 .close::before{content:"";position:absolute;left:50%;bottom:-300px;width:1200px;height:700px;transform:translateX(-50%);z-index:-1;background:radial-gradient(closest-side,rgba(196,82,63,.32),rgba(227,184,102,.08) 55%,transparent)}
-.close .obj{width:96px;height:96px;margin-bottom:40px}
-.close .cube i{border-radius:12px}
-.close .cube .f1{transform:translateZ(48px)}.close .cube .f2{transform:rotateY(90deg) translateZ(48px)}.close .cube .f3{transform:rotateY(180deg) translateZ(48px)}.close .cube .f4{transform:rotateY(-90deg) translateZ(48px)}.close .cube .f5{transform:rotateX(90deg) translateZ(48px)}.close .cube .f6{transform:rotateX(-90deg) translateZ(48px)}
-.close .cube .c{font-size:46px}
 .close h2{font-size:clamp(50px,7.4vw,120px);line-height:.92;letter-spacing:-.04em;max-width:13ch;margin:0 auto 40px;text-wrap:balance}
 .close .btn{min-height:50px;padding:0 26px;font-size:15.5px}
 footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);font-size:13.5px}
@@ -476,6 +467,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
   .cpanel{border-left:0;border-top:1px solid var(--line)}
 }
 @media(max-width:640px){
+  .seal{width:136px;height:136px}.close .seal{width:120px;height:120px}
   .wrap{padding:0 16px}
   .nav-r .btn{display:none}
   .vq{font-size:40px}
@@ -494,7 +486,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 }
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.001s!important;animation-delay:0s!important;transition-duration:.001s!important}
-  .cube{animation:none;transform:rotateX(-22deg) rotateY(-28deg)}
+  .seal .ring{animation:none}
+  .vq .q,.pill-set>span,#heroWin .pane{transition:opacity .6s ease!important;transform:none!important}
   .prob h2 .w{opacity:1}
   .js .rv{opacity:1;transform:none;filter:none}
 }
@@ -604,7 +597,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 <main id="main">
 <section class="hero">
   <div class="wrap">
-    <div class="obj" aria-hidden="true"><div class="cube"><i class="f1"><span class="c">C</span></i><i class="f2"><span class="t">Screened</span></i><i class="f3"><span class="t">Checked</span></i><i class="f4"><span class="t">Signed off</span></i><i class="f5"></i><i class="f6"></i></div></div>
+    <div class="seal" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><radialGradient id="sd1" cx="36%" cy="30%" r="78%"><stop offset="0" stop-color="#34343C"/><stop offset=".55" stop-color="#151518"/><stop offset="1" stop-color="#0B0B0D"/></radialGradient><linearGradient id="sw1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2C4B5"/><stop offset="1" stop-color="#E3B866"/></linearGradient><path id="sp1" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><circle cx="100" cy="100" r="97" fill="none" stroke="url(#sw1)" stroke-opacity=".45"/><circle cx="100" cy="100" r="88" fill="rgba(255,255,255,.015)" stroke="#2A2A30"/><g class="ring"><text font-family="IBM Plex Mono,monospace" font-size="13" letter-spacing="1.5" fill="#C9C9CF"><textPath href="#sp1" textLength="470" lengthAdjust="spacing">SCREENED · CHECKED · SIGNED OFF · ON THE RECORD ·</textPath></text></g><circle cx="100" cy="100" r="60" fill="url(#sd1)" stroke="#2A2A30"/><circle cx="100" cy="100" r="53" fill="none" stroke="url(#sw1)" stroke-opacity=".4" stroke-dasharray="1.5 4"/><text x="100" y="104" text-anchor="middle" dominant-baseline="middle" font-family="Instrument Serif,Georgia,serif" font-size="70" fill="url(#sw1)">C</text></svg></div>
     <a class="pill" id="pill" href="/changelog#2026-10-01"><b>New</b> <span class="pill-set" id="pillSet"><span class="on">The browser panel on Eve, Harvey, CoCounsel and Lexis+ AI</span><span>Share your renewal questionnaire with an underwriter by link</span><span>Log an AI agent run as one use, step by step</span><span>A public AI trust page your firm can link to</span></span> <i>Read <svg width="10" height="10" aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
     <span class="mono eyebrow">AI governance software for law firms</span>
     <h1 class="sr-only">Candor catches the client details, doubtful citations and unlogged AI use that put a firm at risk.</h1>
@@ -816,7 +809,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 
 <section class="close">
   <div class="wrap rv">
-    <div class="obj" aria-hidden="true"><div class="cube"><i class="f1"><span class="c">C</span></i><i class="f2"><span class="t">Screened</span></i><i class="f3"><span class="t">Checked</span></i><i class="f4"><span class="t">Signed off</span></i><i class="f5"></i><i class="f6"></i></div></div>
+    <div class="seal" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><radialGradient id="sd2" cx="36%" cy="30%" r="78%"><stop offset="0" stop-color="#34343C"/><stop offset=".55" stop-color="#151518"/><stop offset="1" stop-color="#0B0B0D"/></radialGradient><linearGradient id="sw2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2C4B5"/><stop offset="1" stop-color="#E3B866"/></linearGradient><path id="sp2" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><circle cx="100" cy="100" r="97" fill="none" stroke="url(#sw2)" stroke-opacity=".45"/><circle cx="100" cy="100" r="88" fill="rgba(255,255,255,.015)" stroke="#2A2A30"/><g class="ring"><text font-family="IBM Plex Mono,monospace" font-size="13" letter-spacing="1.5" fill="#C9C9CF"><textPath href="#sp2" textLength="470" lengthAdjust="spacing">SCREENED · CHECKED · SIGNED OFF · ON THE RECORD ·</textPath></text></g><circle cx="100" cy="100" r="60" fill="url(#sd2)" stroke="#2A2A30"/><circle cx="100" cy="100" r="53" fill="none" stroke="url(#sw2)" stroke-opacity=".4" stroke-dasharray="1.5 4"/><text x="100" y="104" text-anchor="middle" dominant-baseline="middle" font-family="Instrument Serif,Georgia,serif" font-size="70" fill="url(#sw2)">C</text></svg></div>
     <h2 class="silver">Put the record in place before you need it.</h2>
     <a class="btn btn-w" href="/start">Start your free month<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </div>
@@ -846,10 +839,11 @@ function show(i){panes.forEach(function(p){p.classList.toggle('on',+p.dataset.p=
 var i=0,pk=0,t=null,half=null,paused=false,BEAT=6200;
 function quote(n){qs.forEach(function(x,k){x.classList.toggle('on',k===n)});show(n)}
 function pill(n){ps.forEach(function(x,k){x.classList.toggle('gone',k===pk&&k!==n);x.classList.toggle('on',k===n)});pk=n;setTimeout(function(){ps.forEach(function(x){x.classList.remove('gone')})},520)}
-if(RM||STILL){win.classList.remove('anim');show(0);document.getElementById('heroPause').hidden=true;return}
+if(RM)win.classList.remove('anim');
+if(STILL){win.classList.remove('anim');show(0);document.getElementById('heroPause').hidden=true;return}
 function tick(){i=(i+1)%qs.length;quote(i);clearTimeout(half);half=setTimeout(function(){pill((pk+1)%ps.length)},BEAT/2)}
 function play(){clearInterval(t);t=setInterval(tick,BEAT)}
-var b=document.getElementById('heroPause');b.addEventListener('click',function(){paused=!paused;b.textContent=paused?'Play':'Pause';bb.classList.toggle('paused',paused);if(paused){clearInterval(t);clearTimeout(half)}else{tick();play()}});
+var b=document.getElementById('heroPause');b.addEventListener('click',function(){paused=!paused;b.textContent=paused?'Play':'Pause';bb.classList.toggle('paused',paused);[].forEach.call(document.querySelectorAll('.seal'),function(x){x.classList.toggle('paused',paused)});if(paused){clearInterval(t);clearTimeout(half)}else{tick();play()}});
 show(0);play()})();
 
 // Screen cell: live screener. Runs only in this page; nothing is sent.
