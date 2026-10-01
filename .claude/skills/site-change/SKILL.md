@@ -9,9 +9,16 @@ Static HTML, one shared stylesheet and script, deployed by Vercel from
 `main`. Copy follows the `candor-copy` skill.
 
 ## Structure to keep
+- **Look**: the near-black "Ink" look in `candor-copy`, everywhere. Pages
+  share `assets/styles.css`, whose old token names now mean: `--navy`
+  heading/strong text (light), `--paper` page background, `--surface` and
+  `--soft` cards, `--accent` button red. Never use `var(--navy)` as a
+  background or `var(--paper)` as text; use `--surface` and `#FAFAF9`.
 - **Nav** is identical on every page (and in `tools/fetch-news.mjs`, which
-  rebuilds news.html daily): Product, Our plan, Why now, Free tools, Guides,
-  News, Pricing, Security, Start free. The current section's link carries
+  rebuilds news.html daily): brand mark, then Product, Our plan, Why now, Free
+  tools, Guides, News, Pricing, Security, a white "Start free" button, and the
+  phone menu button (the menu repeats Start free as `.m-cta`). The homepage
+  carries its own copy of the same header. The current section's link carries
   `aria-current="page"`: /vs/*, /ai-governance-software, /pattern-capture,
   /review-demo → Product; /international → Our plan; /ai-sanctions,
   /sanctions/*, /ai-rules, /rules* → Free tools; /guides/* → Guides.

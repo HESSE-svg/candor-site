@@ -7,7 +7,7 @@
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#1B2A41">
+<meta name="theme-color" content="#09090B">
 <meta property="og:title" content="Our plan: one toolkit, every profession that must prove its work">
 <meta property="og:description" content="Candor started with law. The same governed workspace fits insurance, financial advice, accounting, and healthcare. Here's the road.">
 <meta property="og:type" content="website">
@@ -16,11 +16,11 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/styles.css?v=14">
+<link rel="stylesheet" href="/assets/styles.css?v=15">
 <style>
   .planwrap{max-width:1180px;margin:0 auto;padding:0 20px}
   /* futuristic hero graphic, luminous brand hues on deep navy */
-  .plan-graphic{position:relative;margin:var(--s4) 0 0;border:1px solid #263a5c;border-radius:12px;overflow:hidden;background:#0c1526}
+  .plan-graphic{position:relative;margin:var(--s4) 0 0;border:1px solid #2A2A30;border-radius:12px;overflow:hidden;background:var(--surface)}
   .plan-graphic svg{width:100%;height:auto;display:block}
   .plan-cap{margin-top:12px;font-size:13px;color:var(--faint);font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.08em}
   .climb{stroke-dasharray:470;stroke-dashoffset:470;animation:pl-draw 1.8s cubic-bezier(.4,0,.2,1) .3s forwards}
@@ -31,25 +31,25 @@
   @keyframes pl-glow{0%,100%{opacity:.3}50%{opacity:.85}}
   /* mobile stacked version, dark glass to match */
   .plan-stack{display:none;margin-top:var(--s4)}
-  .pind{border:1px solid #263a5c;border-radius:12px;background:#0c1526;margin-bottom:14px;overflow:hidden}
+  .pind{border:1px solid #2A2A30;border-radius:12px;background:var(--surface);margin-bottom:14px;overflow:hidden}
   .pind.live{border-color:#2f6d5c}
-  .pind-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid #1c2c45}
-  .pind-head h3{font-size:20px;margin:0;color:#f3efea;font-family:var(--f-serif);font-weight:400}
+  .pind-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border-bottom:1px solid #1F1F23}
+  .pind-head h3{font-size:20px;margin:0;color:#FAFAF9;font-family:var(--f-serif);font-weight:400}
   .pstat{font-family:var(--f-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;padding:3px 9px;border-radius:999px;white-space:nowrap}
-  .pstat.on{color:#5cc7a8;border:1px solid #2f6d5c}
-  .pstat.off{color:#9fb0c9;border:1px solid #2c3d58}
+  .pstat.on{color:#86CDB4;border:1px solid #2f6d5c}
+  .pstat.off{color:#A8A8B0;border:1px solid var(--line-2)}
   .ptools{list-style:none;margin:0;padding:12px 16px;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px}
-  .ptools li{padding:8px 0;font-size:14px;color:#d3dcea;display:flex;align-items:center;gap:9px;border-bottom:1px solid #16233a}
+  .ptools li{padding:8px 0;font-size:14px;color:#D4D4D8;display:flex;align-items:center;gap:9px;border-bottom:1px solid #1F1F23}
   .ptools li:last-child,.ptools li:nth-last-child(2){border-bottom:0}
   .ptools .dot{width:7px;height:7px;border-radius:50%;flex:0 0 auto}
-  .pind.live .ptools .dot{background:#5cc7a8;box-shadow:0 0 7px #5cc7a8}
-  .pind.soon .ptools .dot{background:none;border:1.5px solid #6b7d99}
-  .pind.soon .ptools li{color:#9fb0c9}
+  .pind.live .ptools .dot{background:#86CDB4;box-shadow:0 0 7px #86CDB4}
+  .pind.soon .ptools .dot{background:none;border:1.5px solid #6E6E77}
+  .pind.soon .ptools li{color:#A8A8B0}
   @media(max-width:760px){
     .plan-graphic{display:none}
     .plan-stack{display:block}
     .ptools{grid-template-columns:1fr}
-    .ptools li:nth-last-child(2){border-bottom:1px solid #16233a}
+    .ptools li:nth-last-child(2){border-bottom:1px solid #1F1F23}
   }
   @media(prefers-reduced-motion:reduce){
     .climb{stroke-dashoffset:0;animation:none}
@@ -61,9 +61,10 @@
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
-  <a class="brand" href="/" aria-label="Candor home"><svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="16" fill="#1B2A41"/><circle cx="50" cy="50" r="39" fill="none" stroke="#FAF8F5" stroke-opacity="0.22" stroke-width="2"/><text x="50" y="52" font-family="Instrument Serif,Georgia,serif" font-size="58" fill="#FAF8F5" text-anchor="middle" dominant-baseline="central">C</text></svg><span class="name">Candor<span>.</span></span></a>
-  <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
-  <nav class="navlinks"><a href="/product">Product</a><a href="/plan" aria-current="page">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="cta" href="/start">Start free</a></nav>
+  <a class="brand" href="/" aria-label="Candor home"><span class="mk" aria-hidden="true">C</span><span class="name">Candor<span>.</span></span></a>
+  <nav class="navlinks" aria-label="Primary"><a href="/product">Product</a><a href="/plan" aria-current="page">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="m-cta" href="/start">Start free</a></nav>
+  <div class="nav-r"><a class="btn" href="/start">Start free</a></div>
+  <button type="button" class="navtoggle" aria-label="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
 </div></header>
 
 <main id="main">
@@ -80,25 +81,25 @@
       <desc id="plandesc">The Candor wordmark, a glowing line climbing into a horizontal rail of five industries (law, insurance, financial advice, accounting, and healthcare) with the same six-tool toolkit shown above each. Law is live; the rest are planned.</desc>
       <defs>
         <radialGradient id="pl-ground" cx="50%" cy="104%" r="95%">
-          <stop offset="0%" stop-color="#183050"/>
-          <stop offset="48%" stop-color="#101f38"/>
-          <stop offset="100%" stop-color="#0a1223"/>
+          <stop offset="0%" stop-color="#2A1714"/>
+          <stop offset="48%" stop-color="#161012"/>
+          <stop offset="100%" stop-color="#0B0B0D"/>
         </radialGradient>
         <radialGradient id="pl-horizon" cx="15%" cy="100%" r="55%">
-          <stop offset="0%" stop-color="#2f6d5c" stop-opacity="0.45"/>
-          <stop offset="100%" stop-color="#2f6d5c" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#C4523F" stop-opacity="0.40"/>
+          <stop offset="100%" stop-color="#C4523F" stop-opacity="0"/>
         </radialGradient>
         <linearGradient id="pl-railg" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="#5cc7a8"/>
-          <stop offset="16%" stop-color="#9db6d6"/>
-          <stop offset="100%" stop-color="#3a5074"/>
+          <stop offset="0%" stop-color="#86CDB4"/>
+          <stop offset="16%" stop-color="#E3B866"/>
+          <stop offset="100%" stop-color="#3A3A42"/>
         </linearGradient>
         <radialGradient id="pl-nodehalo" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#5cc7a8" stop-opacity="0.6"/>
-          <stop offset="100%" stop-color="#5cc7a8" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#86CDB4" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="#86CDB4" stop-opacity="0"/>
         </radialGradient>
         <pattern id="pl-grid" width="48" height="48" patternUnits="userSpaceOnUse">
-          <path d="M48 0H0V48" fill="none" stroke="#2b4066" stroke-opacity="0.30" stroke-width="1"/>
+          <path d="M48 0H0V48" fill="none" stroke="#2A2A30" stroke-opacity="0.30" stroke-width="1"/>
         </pattern>
         <filter id="pl-glow" x="-60%" y="-60%" width="220%" height="220%">
           <feGaussianBlur stdDeviation="3" result="b"/>
@@ -110,103 +111,103 @@
         </filter>
       </defs>
 
-      <!-- ground + blueprint grid + horizon glow -->
+      <!-- ground + horizon glow -->
       <rect width="1200" height="800" fill="url(#pl-ground)"/>
-      <rect width="1200" height="800" fill="url(#pl-grid)"/>
+      
       <rect y="440" width="1200" height="360" fill="url(#pl-horizon)"/>
 
       <!-- top statement -->
-      <text x="600" y="48" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="12" letter-spacing="3.5" fill="#5cc7a8">THE SAME GOVERNED TOOLKIT</text>
-      <text x="600" y="92" text-anchor="middle" font-family="Instrument Serif,Georgia,serif" font-size="31" fill="#f3efea">Every profession that has to prove its work</text>
-      <text x="600" y="122" text-anchor="middle" font-family="Instrument Serif,Georgia,serif" font-size="31" fill="#f3efea">gets all six of the same tools.</text>
+      <text x="600" y="48" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="12" letter-spacing="3.5" fill="#86CDB4">THE SAME GOVERNED TOOLKIT</text>
+      <text x="600" y="92" text-anchor="middle" font-family="Instrument Serif,Georgia,serif" font-size="31" fill="#FAFAF9">Every profession that has to prove its work</text>
+      <text x="600" y="122" text-anchor="middle" font-family="Instrument Serif,Georgia,serif" font-size="31" fill="#FAFAF9">gets all six of the same tools.</text>
 
       <!-- ================= TOOLKIT CARDS ================= -->
       <!-- LAW · live -->
       <g class="fx" style="animation-delay:.15s">
-        <rect x="78" y="150" width="196" height="356" rx="7" fill="#5cc7a8" fill-opacity="0.05" stroke="#3f8f79" stroke-width="1.3"/>
+        <rect x="78" y="150" width="196" height="356" rx="7" fill="#86CDB4" fill-opacity="0.05" stroke="#5FA48C" stroke-width="1.3"/>
         <rect x="79" y="151" width="194" height="32" rx="6" fill="#2f6d5c" fill-opacity="0.85"/>
         <text x="176" y="172" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" letter-spacing="1.5" fill="#eafaf4">THE FULL TOOLKIT</text>
-        <path d="M92 202 h6 M92 202 v6" stroke="#5cc7a8" stroke-width="1.5" opacity="0.7"/>
-        <path d="M260 202 h-6 M260 202 v6" stroke="#5cc7a8" stroke-width="1.5" opacity="0.7"/>
-        <path d="M92 454 h6 M92 454 v-6" stroke="#5cc7a8" stroke-width="1.5" opacity="0.7"/>
-        <path d="M260 454 h-6 M260 454 v-6" stroke="#5cc7a8" stroke-width="1.5" opacity="0.7"/>
-        <g font-family="Inter,sans-serif" font-size="13" fill="#e9eff8">
-          <path d="M96 209 l4 4 l8 -9" fill="none" stroke="#5cc7a8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="214">Confidentiality screen</text>
-          <path d="M96 257 l4 4 l8 -9" fill="none" stroke="#5cc7a8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="262">AI use log</text>
-          <path d="M96 305 l4 4 l8 -9" fill="none" stroke="#5cc7a8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="310">Verification checks</text>
-          <path d="M96 353 l4 4 l8 -9" fill="none" stroke="#5cc7a8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="358">Review &amp; sign-off</text>
-          <path d="M96 401 l4 4 l8 -9" fill="none" stroke="#5cc7a8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="406">Reports</text>
-          <path d="M96 449 l4 4 l8 -9" fill="none" stroke="#5cc7a8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="454">Policy management</text>
+        <path d="M92 202 h6 M92 202 v6" stroke="#86CDB4" stroke-width="1.5" opacity="0.7"/>
+        <path d="M260 202 h-6 M260 202 v6" stroke="#86CDB4" stroke-width="1.5" opacity="0.7"/>
+        <path d="M92 454 h6 M92 454 v-6" stroke="#86CDB4" stroke-width="1.5" opacity="0.7"/>
+        <path d="M260 454 h-6 M260 454 v-6" stroke="#86CDB4" stroke-width="1.5" opacity="0.7"/>
+        <g font-family="Inter,sans-serif" font-size="13" fill="#FAFAF9">
+          <path d="M96 209 l4 4 l8 -9" fill="none" stroke="#86CDB4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="214">Confidentiality screen</text>
+          <path d="M96 257 l4 4 l8 -9" fill="none" stroke="#86CDB4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="262">AI use log</text>
+          <path d="M96 305 l4 4 l8 -9" fill="none" stroke="#86CDB4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="310">Verification checks</text>
+          <path d="M96 353 l4 4 l8 -9" fill="none" stroke="#86CDB4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="358">Review &amp; sign-off</text>
+          <path d="M96 401 l4 4 l8 -9" fill="none" stroke="#86CDB4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="406">Reports</text>
+          <path d="M96 449 l4 4 l8 -9" fill="none" stroke="#86CDB4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#pl-glow)"/><text x="116" y="454">Policy management</text>
         </g>
       </g>
-      <line x1="176" y1="506" x2="176" y2="552" stroke="#3f8f79" stroke-width="1.5"/>
+      <line x1="176" y1="506" x2="176" y2="552" stroke="#5FA48C" stroke-width="1.5"/>
 
       <!-- INSURANCE · planned -->
       <g class="fx" style="animation-delay:.28s">
-        <rect x="290" y="150" width="196" height="356" rx="7" fill="#9db6d6" fill-opacity="0.03" stroke="#2c3d58" stroke-width="1" stroke-dasharray="3 4"/>
-        <rect x="291" y="151" width="194" height="32" rx="6" fill="#1a2b45"/>
-        <text x="388" y="172" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" letter-spacing="1.5" fill="#9fb0c9">THE SAME TOOLKIT</text>
-        <g font-family="Inter,sans-serif" font-size="13" fill="#9fb0c9">
-          <circle cx="311" cy="210" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="324" y="214">Confidentiality screen</text>
-          <circle cx="311" cy="258" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="324" y="262">AI use log</text>
-          <circle cx="311" cy="306" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="324" y="310">Verification checks</text>
-          <circle cx="311" cy="354" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="324" y="358">Review &amp; sign-off</text>
-          <circle cx="311" cy="402" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="324" y="406">Reports</text>
-          <circle cx="311" cy="450" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="324" y="454">Policy management</text>
+        <rect x="290" y="150" width="196" height="356" rx="7" fill="#E3B866" fill-opacity="0.03" stroke="#2A2A30" stroke-width="1" stroke-dasharray="3 4"/>
+        <rect x="291" y="151" width="194" height="32" rx="6" fill="#16161A"/>
+        <text x="388" y="172" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" letter-spacing="1.5" fill="#A8A8B0">THE SAME TOOLKIT</text>
+        <g font-family="Inter,sans-serif" font-size="13" fill="#A8A8B0">
+          <circle cx="311" cy="210" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="324" y="214">Confidentiality screen</text>
+          <circle cx="311" cy="258" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="324" y="262">AI use log</text>
+          <circle cx="311" cy="306" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="324" y="310">Verification checks</text>
+          <circle cx="311" cy="354" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="324" y="358">Review &amp; sign-off</text>
+          <circle cx="311" cy="402" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="324" y="406">Reports</text>
+          <circle cx="311" cy="450" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="324" y="454">Policy management</text>
         </g>
       </g>
-      <line x1="388" y1="506" x2="388" y2="552" stroke="#2c3d58" stroke-width="1"/>
+      <line x1="388" y1="506" x2="388" y2="552" stroke="#2A2A30" stroke-width="1"/>
 
       <!-- FINANCIAL ADVICE · planned -->
       <g class="fx" style="animation-delay:.40s">
-        <rect x="502" y="150" width="196" height="356" rx="7" fill="#9db6d6" fill-opacity="0.03" stroke="#2c3d58" stroke-width="1" stroke-dasharray="3 4"/>
-        <rect x="503" y="151" width="194" height="32" rx="6" fill="#1a2b45"/>
-        <text x="600" y="172" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" letter-spacing="1.5" fill="#9fb0c9">THE SAME TOOLKIT</text>
-        <g font-family="Inter,sans-serif" font-size="13" fill="#9fb0c9">
-          <circle cx="523" cy="210" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="536" y="214">Confidentiality screen</text>
-          <circle cx="523" cy="258" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="536" y="262">AI use log</text>
-          <circle cx="523" cy="306" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="536" y="310">Verification checks</text>
-          <circle cx="523" cy="354" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="536" y="358">Review &amp; sign-off</text>
-          <circle cx="523" cy="402" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="536" y="406">Reports</text>
-          <circle cx="523" cy="450" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="536" y="454">Policy management</text>
+        <rect x="502" y="150" width="196" height="356" rx="7" fill="#E3B866" fill-opacity="0.03" stroke="#2A2A30" stroke-width="1" stroke-dasharray="3 4"/>
+        <rect x="503" y="151" width="194" height="32" rx="6" fill="#16161A"/>
+        <text x="600" y="172" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" letter-spacing="1.5" fill="#A8A8B0">THE SAME TOOLKIT</text>
+        <g font-family="Inter,sans-serif" font-size="13" fill="#A8A8B0">
+          <circle cx="523" cy="210" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="536" y="214">Confidentiality screen</text>
+          <circle cx="523" cy="258" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="536" y="262">AI use log</text>
+          <circle cx="523" cy="306" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="536" y="310">Verification checks</text>
+          <circle cx="523" cy="354" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="536" y="358">Review &amp; sign-off</text>
+          <circle cx="523" cy="402" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="536" y="406">Reports</text>
+          <circle cx="523" cy="450" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="536" y="454">Policy management</text>
         </g>
       </g>
-      <line x1="600" y1="506" x2="600" y2="552" stroke="#2c3d58" stroke-width="1"/>
+      <line x1="600" y1="506" x2="600" y2="552" stroke="#2A2A30" stroke-width="1"/>
 
       <!-- ACCOUNTING · planned -->
       <g class="fx" style="animation-delay:.52s">
-        <rect x="714" y="150" width="196" height="356" rx="7" fill="#9db6d6" fill-opacity="0.03" stroke="#2c3d58" stroke-width="1" stroke-dasharray="3 4"/>
-        <rect x="715" y="151" width="194" height="32" rx="6" fill="#1a2b45"/>
-        <text x="812" y="172" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" letter-spacing="1.5" fill="#9fb0c9">THE SAME TOOLKIT</text>
-        <g font-family="Inter,sans-serif" font-size="13" fill="#9fb0c9">
-          <circle cx="735" cy="210" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="748" y="214">Confidentiality screen</text>
-          <circle cx="735" cy="258" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="748" y="262">AI use log</text>
-          <circle cx="735" cy="306" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="748" y="310">Verification checks</text>
-          <circle cx="735" cy="354" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="748" y="358">Review &amp; sign-off</text>
-          <circle cx="735" cy="402" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="748" y="406">Reports</text>
-          <circle cx="735" cy="450" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="748" y="454">Policy management</text>
+        <rect x="714" y="150" width="196" height="356" rx="7" fill="#E3B866" fill-opacity="0.03" stroke="#2A2A30" stroke-width="1" stroke-dasharray="3 4"/>
+        <rect x="715" y="151" width="194" height="32" rx="6" fill="#16161A"/>
+        <text x="812" y="172" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" letter-spacing="1.5" fill="#A8A8B0">THE SAME TOOLKIT</text>
+        <g font-family="Inter,sans-serif" font-size="13" fill="#A8A8B0">
+          <circle cx="735" cy="210" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="748" y="214">Confidentiality screen</text>
+          <circle cx="735" cy="258" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="748" y="262">AI use log</text>
+          <circle cx="735" cy="306" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="748" y="310">Verification checks</text>
+          <circle cx="735" cy="354" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="748" y="358">Review &amp; sign-off</text>
+          <circle cx="735" cy="402" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="748" y="406">Reports</text>
+          <circle cx="735" cy="450" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="748" y="454">Policy management</text>
         </g>
       </g>
-      <line x1="812" y1="506" x2="812" y2="552" stroke="#2c3d58" stroke-width="1"/>
+      <line x1="812" y1="506" x2="812" y2="552" stroke="#2A2A30" stroke-width="1"/>
 
       <!-- HEALTHCARE · planned -->
       <g class="fx" style="animation-delay:.64s">
-        <rect x="926" y="150" width="196" height="356" rx="7" fill="#9db6d6" fill-opacity="0.03" stroke="#2c3d58" stroke-width="1" stroke-dasharray="3 4"/>
-        <rect x="927" y="151" width="194" height="32" rx="6" fill="#1a2b45"/>
-        <text x="1024" y="172" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" letter-spacing="1.5" fill="#9fb0c9">THE SAME TOOLKIT</text>
-        <g font-family="Inter,sans-serif" font-size="13" fill="#9fb0c9">
-          <circle cx="947" cy="210" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="960" y="214">Confidentiality screen</text>
-          <circle cx="947" cy="258" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="960" y="262">AI use log</text>
-          <circle cx="947" cy="306" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="960" y="310">Verification checks</text>
-          <circle cx="947" cy="354" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="960" y="358">Review &amp; sign-off</text>
-          <circle cx="947" cy="402" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="960" y="406">Reports</text>
-          <circle cx="947" cy="450" r="4" fill="none" stroke="#6b7d99" stroke-width="1.5"/><text x="960" y="454">Policy management</text>
+        <rect x="926" y="150" width="196" height="356" rx="7" fill="#E3B866" fill-opacity="0.03" stroke="#2A2A30" stroke-width="1" stroke-dasharray="3 4"/>
+        <rect x="927" y="151" width="194" height="32" rx="6" fill="#16161A"/>
+        <text x="1024" y="172" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" letter-spacing="1.5" fill="#A8A8B0">THE SAME TOOLKIT</text>
+        <g font-family="Inter,sans-serif" font-size="13" fill="#A8A8B0">
+          <circle cx="947" cy="210" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="960" y="214">Confidentiality screen</text>
+          <circle cx="947" cy="258" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="960" y="262">AI use log</text>
+          <circle cx="947" cy="306" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="960" y="310">Verification checks</text>
+          <circle cx="947" cy="354" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="960" y="358">Review &amp; sign-off</text>
+          <circle cx="947" cy="402" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="960" y="406">Reports</text>
+          <circle cx="947" cy="450" r="4" fill="none" stroke="#6E6E77" stroke-width="1.5"/><text x="960" y="454">Policy management</text>
         </g>
       </g>
-      <line x1="1024" y1="506" x2="1024" y2="552" stroke="#2c3d58" stroke-width="1"/>
+      <line x1="1024" y1="506" x2="1024" y2="552" stroke="#2A2A30" stroke-width="1"/>
 
       <!-- ================= THE RAIL ================= -->
-      <line x1="150" y1="560" x2="1050" y2="560" stroke="#22344f" stroke-width="5"/>
+      <line x1="150" y1="560" x2="1050" y2="560" stroke="#1F1F23" stroke-width="5"/>
       <line x1="176" y1="560" x2="1024" y2="560" stroke="url(#pl-railg)" stroke-width="2" filter="url(#pl-glow)"/>
       <!-- traveling pulse -->
       <circle r="4.5" fill="#eafaf4" filter="url(#pl-glow2)">
@@ -215,34 +216,34 @@
 
       <!-- station nodes -->
       <circle cx="176" cy="560" r="24" fill="url(#pl-nodehalo)" class="halo"/>
-      <circle cx="176" cy="560" r="8" fill="#5cc7a8" stroke="#eafaf4" stroke-width="1.5" filter="url(#pl-glow2)"/>
-      <circle cx="388" cy="560" r="7" fill="#0c1526" stroke="#6b7d99" stroke-width="1.6"/>
-      <circle cx="600" cy="560" r="7" fill="#0c1526" stroke="#6b7d99" stroke-width="1.6"/>
-      <circle cx="812" cy="560" r="7" fill="#0c1526" stroke="#6b7d99" stroke-width="1.6"/>
-      <circle cx="1024" cy="560" r="7" fill="#0c1526" stroke="#6b7d99" stroke-width="1.6"/>
+      <circle cx="176" cy="560" r="8" fill="#86CDB4" stroke="#eafaf4" stroke-width="1.5" filter="url(#pl-glow2)"/>
+      <circle cx="388" cy="560" r="7" fill="#0E0E11" stroke="#6E6E77" stroke-width="1.6"/>
+      <circle cx="600" cy="560" r="7" fill="#0E0E11" stroke="#6E6E77" stroke-width="1.6"/>
+      <circle cx="812" cy="560" r="7" fill="#0E0E11" stroke="#6E6E77" stroke-width="1.6"/>
+      <circle cx="1024" cy="560" r="7" fill="#0E0E11" stroke="#6E6E77" stroke-width="1.6"/>
 
       <!-- industry names + status, below the rail -->
       <g class="fx" style="animation-delay:.7s" text-anchor="middle">
-        <text x="176" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#f3efea">Law firms</text>
-        <rect x="146" y="604" width="60" height="20" rx="10" fill="none" stroke="#3f8f79"/><text x="176" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#5cc7a8">LIVE</text>
+        <text x="176" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#FAFAF9">Law firms</text>
+        <rect x="146" y="604" width="60" height="20" rx="10" fill="none" stroke="#5FA48C"/><text x="176" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#86CDB4">LIVE</text>
 
-        <text x="388" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#f3efea">Insurance</text>
-        <rect x="349" y="604" width="78" height="20" rx="10" fill="none" stroke="#b98a3e"/><text x="388" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#d7a94e">NEXT</text>
+        <text x="388" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#FAFAF9">Insurance</text>
+        <rect x="349" y="604" width="78" height="20" rx="10" fill="none" stroke="#E3B866"/><text x="388" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#E3B866">NEXT</text>
 
-        <text x="600" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#f3efea">Financial advice</text>
-        <rect x="561" y="604" width="78" height="20" rx="10" fill="none" stroke="#b98a3e"/><text x="600" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#d7a94e">NEXT</text>
+        <text x="600" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#FAFAF9">Financial advice</text>
+        <rect x="561" y="604" width="78" height="20" rx="10" fill="none" stroke="#E3B866"/><text x="600" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#E3B866">NEXT</text>
 
-        <text x="812" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#f3efea">Accounting &amp; tax</text>
-        <rect x="765" y="604" width="94" height="20" rx="10" fill="none" stroke="#33496b"/><text x="812" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#9fb0c9">PLANNED</text>
+        <text x="812" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#FAFAF9">Accounting &amp; tax</text>
+        <rect x="765" y="604" width="94" height="20" rx="10" fill="none" stroke="#2A2A30"/><text x="812" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#A8A8B0">PLANNED</text>
 
-        <text x="1024" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#f3efea">Healthcare</text>
-        <rect x="977" y="604" width="94" height="20" rx="10" fill="none" stroke="#33496b"/><text x="1024" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#9fb0c9">PLANNED</text>
+        <text x="1024" y="594" font-family="Instrument Serif,Georgia,serif" font-size="21" fill="#FAFAF9">Healthcare</text>
+        <rect x="977" y="604" width="94" height="20" rx="10" fill="none" stroke="#2A2A30"/><text x="1024" y="618" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1" fill="#A8A8B0">PLANNED</text>
       </g>
 
       <!-- ================= THE CLIMB + BANNER LOGO ================= -->
-      <path class="climb" d="M150 706 C170 648 168 600 176 566" fill="none" stroke="#d0665e" stroke-width="2.5" stroke-linecap="round" filter="url(#pl-glow)"/>
-      <text x="48" y="744" font-family="Instrument Serif,Georgia,serif" font-size="46" fill="#f3efea">Candor<tspan fill="#d0665e">.</tspan></text>
-      <text x="51" y="768" font-family="Inter,sans-serif" font-size="10" letter-spacing="1.6" fill="#8496b0">PROOF YOUR FIRM DID THE WORK</text>
+      <path class="climb" d="M150 706 C170 648 168 600 176 566" fill="none" stroke="#C4523F" stroke-width="2.5" stroke-linecap="round" filter="url(#pl-glow)"/>
+      <text x="48" y="744" font-family="Instrument Serif,Georgia,serif" font-size="46" fill="#FAFAF9">Candor<tspan fill="#C4523F">.</tspan></text>
+      <text x="51" y="768" font-family="Inter,sans-serif" font-size="10" letter-spacing="1.6" fill="#8B8B94">PROOF YOUR FIRM DID THE WORK</text>
     </svg>
   </div>
   <p class="plan-cap">Live now: law firms · Planned: insurance, financial advice, accounting, healthcare</p>
