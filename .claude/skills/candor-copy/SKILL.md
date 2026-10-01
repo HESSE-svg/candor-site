@@ -38,7 +38,15 @@ never promise more than the software does. Run every draft through this list.
 - Tagline: "Proof your firm did the work."
 
 ## Brand look (web and reports)
-Navy #1B2A41, paper #FAF8F5, ink #22201D, oxblood #7A2E2E (accent and
-buttons only), seal green #2F5D50 (success), brass #9A6B1F (warnings, never
-bright red). Serif headlines, Inter for body. No gradients, no drop shadows,
-no stock gavels or scales.
+**New look, 2026-10-01 (Jesse's decision):** near-black "Ink". Background
+#09090B, cards #111114 / #16161A, lines #1F1F23 / #2A2A30, text #FAFAF9 /
+#A8A8B0 / #8B8B94, warm red accent #C4523F, rose #F2C4B5, gilt #E3B866, mint
+#86CDB4. Gradients and glows are allowed; no grid-line backgrounds. Serif
+headlines (Instrument Serif), Inter for body, IBM Plex Mono for labels. The
+homepage and the walkthrough use it now; other pages, the app and reports
+move over later. Pictures of the app keep the app's current colors.
+
+Old look (still on the other pages until they move): navy #1B2A41, paper
+#FAF8F5, ink #22201D, oxblood #7A2E2E (accent and buttons only), seal green
+#2F5D50 (success), brass #9A6B1F (warnings, never bright red), no gradients,
+no drop shadows. Either way: no stock gavels or scales.
