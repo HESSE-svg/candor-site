@@ -220,3 +220,8 @@ html,body{overflow-x:clip}
 @media(max-width:480px){.ab{padding:8px 40px 8px 14px;font-size:12.5px}.ab button{right:4px}}
 .ab .ab-short{display:none}
 @media(max-width:480px){.ab .ab-long{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.ab .ab-short{display:inline}}
+/* phones: while the pinned bar shows, its Start free is the only one */
+@media(max-width:860px){
+  header.nav .nav-r .btn{transition:opacity .2s,visibility .2s}
+  html.dock-on header.nav .nav-r .btn{opacity:0;visibility:hidden}
+}
