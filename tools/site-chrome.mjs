@@ -80,6 +80,43 @@ ${COLS.map(([h, links]) => `    <div><h2>${h}</h2><ul>${links.map(([href, t]) =>
 
 const NAV_CONTACT = '<a class="nav-contact" href="/contact">Contact</a>'
 
+// The top menu: three groups that open, then two plain links. The phone menu
+// (assets/site.js) is built from this same markup, so there is one list.
+const NAV = [
+  ['Product', [
+    ['/product', 'How Candor works', 'Screening, the AI log, sign-off and reports'],
+    ['/ai-governance-software', 'AI governance software', 'What the category is, and where Candor fits'],
+    ['/review-demo', 'Click through a review', 'An attorney sign-off, start to finish'],
+    ['/pattern-capture', 'Pattern Capture', 'How your firm corrects AI, metadata only'],
+    ['/renewal-packet', 'Carrier renewal packet', 'The AI questions carriers ask, from your record'],
+    ['/changelog', 'What’s new', 'Every release, dated'],
+  ]],
+  ['Resources', [
+    ['/resources', 'Free tools', 'An AI policy template and a readiness checklist'],
+    ['/guides', 'Guides', 'ABA Opinion 512, firm AI policy, carrier questions'],
+    ['/rules', 'AI rules by state', 'Consent, billing, verification and filing duties'],
+    ['/ai-rules', 'AI ethics rules', 'Pick a jurisdiction, see its duties'],
+    ['/ai-sanctions', 'AI sanctions tracker', 'Courts that sanctioned AI-made citations'],
+    ['/news', 'News', 'AI and the legal profession, tracked'],
+  ]],
+  ['Company', [
+    ['/about', 'About', 'Why Candor exists'],
+    ['/plan', 'Our plan', 'Law firms first, then other professions'],
+    ['/why-now', 'Why now', 'Carriers, regulators and courts are asking'],
+    ['/international', 'International', 'Where Candor is headed outside the U.S.'],
+    ['/contact', 'Contact', 'Questions, a walkthrough or a security review'],
+  ]],
+  ['/pricing', 'Pricing'],
+  ['/security', 'Security'],
+]
+const CHEV = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+export const NAV_HTML = '<nav class="navlinks" aria-label="Primary">' + NAV.map((it) => {
+  if (typeof it[1] === 'string') return `<a href="${it[0]}">${it[1]}</a>`
+  const id = 'nd-' + it[0].toLowerCase()
+  return `<div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="${id}">${it[0]}${CHEV}</button>` +
+    `<div class="nd-p" id="${id}"><ul>${it[1].map(([href, t, d]) => `<li><a href="${href}"><b>${amp(t)}</b><small>${amp(d)}</small></a></li>`).join('')}</ul></div></div>`
+}).join('') + '<a class="m-cta" href="/start">Start free</a></nav>'
+
 /** Apply the shared chrome to one page's HTML. Idempotent. */
 export function applyChrome(html) {
   let s = html
@@ -88,6 +125,7 @@ export function applyChrome(html) {
   s = s.replace(/<script src="\/assets\/site\.js(?:\?v=\d+)?"><\/script>/, SITE_JS)
   if (!s.includes('/assets/site.js')) s = s.replace('</body>', SITE_JS + '\n</body>')
   if (!s.includes('class="nav-contact"')) s = s.replace('<div class="nav-r">', '<div class="nav-r">' + NAV_CONTACT)
+  s = s.replace(/<nav class="(?:nav-links )?navlinks"[^>]*>[\s\S]*?<\/nav>\s*(?=\n?\s*<div class="nav-r">)/, NAV_HTML + '\n  ')
   s = s.replace(/<footer[\s\S]*?<\/footer>/, FOOTER)
   if (!s.includes('<footer')) s = s.replace(SITE_JS, FOOTER + '\n' + SITE_JS)
   return s

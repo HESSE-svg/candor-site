@@ -572,6 +572,48 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 .head.overview h2{font-size:clamp(40px,5vw,68px);text-wrap:balance}
 .head.overview p{max-width:66ch}
 .head .try{font-size:14px;color:var(--text-3);margin-top:14px}
+
+/* price up front (hero) */
+.price-line{margin:16px auto 0;font-size:14px;color:var(--text-3);letter-spacing:.01em}
+.price-line b{color:var(--text);font-weight:500}
+.price-line a{color:var(--text-2);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+/* numbers */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin:84px auto 0;max-width:1000px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats div{padding:28px 22px;border-right:1px solid var(--line);text-align:left}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-family:var(--f-serif);font-weight:400;font-size:clamp(44px,5vw,64px);line-height:1;letter-spacing:-.03em;color:var(--text)}
+.stats span{display:block;margin-top:10px;font-size:13.5px;line-height:1.45;color:var(--text-2)}
+@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+/* the real app, on video */
+.real{position:relative;margin:56px auto 0;max-width:1100px;border-radius:16px;overflow:hidden;border:1px solid var(--line-2);background:#0A0A0B;aspect-ratio:1280/730}
+.real video,.real img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.real-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);background:#111114;font-family:var(--f-mono);font-size:11px;color:var(--text-3)}
+.real-bar i{width:9px;height:9px;border-radius:50%;background:#2A2A30}
+.real-bar span{margin-left:8px}
+.real-wrap{max-width:1100px;margin:56px auto 0}
+.real-wrap .real{margin:0;border-radius:0 0 16px 16px;border-top:0}
+.real-wrap .real-bar{border:1px solid var(--line-2);border-bottom:1px solid var(--line);border-radius:16px 16px 0 0}
+.real-cap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:14px;font-size:13px;color:var(--text-3)}
+.real-cap button{background:none;border:1px solid var(--line-2);color:var(--text-2);border-radius:999px;padding:5px 14px;font:13px var(--f-sans);cursor:pointer}
+.real-cap button:hover{color:var(--text);border-color:#3A3A42}
+/* who it's for */
+.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
+.role{padding:26px 24px 28px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,#111114,#0C0C0E)}
+.role .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt)}
+.role h3{margin:14px 0 10px;font-family:var(--f-serif);font-weight:400;font-size:27px;line-height:1.08;color:var(--text)}
+.role p{margin:0;font-size:14.5px;line-height:1.6;color:var(--text-2)}
+@media(max-width:1000px){.roles{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.roles{grid-template-columns:1fr}}
+/* two ways in */
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:1000px;margin:0 auto;text-align:left}
+.path{display:flex;flex-direction:column;padding:34px 32px 30px;border:1px solid var(--line-2);border-radius:18px;background:rgba(17,17,20,.82)}
+.path h3{font-family:var(--f-serif);font-weight:400;font-size:34px;line-height:1.05;letter-spacing:-.02em;color:var(--text);margin:0 0 10px}
+.path>p{margin:0 0 22px;color:var(--text-2);font-size:15.5px;line-height:1.55}
+.path ul{list-style:none;margin:0 0 28px;padding:20px 0 0;border-top:1px solid var(--line);display:grid;gap:11px}
+.path li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--text-2)}
+.path li svg{flex:none;width:15px;height:15px;margin-top:3px;color:var(--mint)}
+.path .btn{margin-top:auto;width:100%}
+@media(max-width:760px){.paths{grid-template-columns:1fr}.path{padding:28px 22px 24px}.path h3{font-size:30px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Candor","url":"https://candor.legal","logo":"https://candor.legal/og.png","description":"AI governance software for law firms: confidentiality screening before AI, a per-matter AI use log, citation flags, attorney sign-off, and a tamper-evident record for carriers and courts. Built by Jesse Hollar, a former claims adjuster.","founder":{"@type":"Person","name":"Jesse Hollar","description":"Former claims adjuster"},"knowsAbout":["AI governance software for law firms","Legal AI risk","Malpractice carrier AI questionnaires"],"sameAs":["https://www.instagram.com/candor.legal","https://www.linkedin.com/in/jesse-hollar-084999283"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Candor","url":"https://candor.legal/ai-governance-software","description":"AI governance software for U.S. law firms: screen client data before it reaches a model, log every AI use to the matter, check citations, capture attorney sign-off, apply the firm's own AI-use rules before each use, keep a profile and review date for every AI vendor, record incidents, train staff, and produce the record a malpractice carrier asks for at renewal. Runs on the firm's own model.","audience":{"@type":"Audience","audienceType":"U.S. law firms"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"3000","highPrice":"20000","offerCount":"5","url":"https://candor.legal/pricing"},"serviceType":"AI governance software for law firms","provider":{"@type":"Organization","name":"Candor","url":"https://candor.legal"},"areaServed":"US"}</script>
@@ -596,7 +638,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 
 <header class="nav"><div class="wrap nav-in">
   <a class="brand" href="/" aria-label="Candor home"><img class="mk" src="/assets/icon.svg" alt="" width="26" height="26"><b>Candor<span>.</span></b></a>
-  <nav class="nav-links navlinks" aria-label="Primary"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="m-cta" href="/start">Start free</a></nav>
+  <nav class="navlinks" aria-label="Primary"><div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="nd-product">Product<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nd-p" id="nd-product"><ul><li><a href="/product"><b>How Candor works</b><small>Screening, the AI log, sign-off and reports</small></a></li><li><a href="/ai-governance-software"><b>AI governance software</b><small>What the category is, and where Candor fits</small></a></li><li><a href="/review-demo"><b>Click through a review</b><small>An attorney sign-off, start to finish</small></a></li><li><a href="/pattern-capture"><b>Pattern Capture</b><small>How your firm corrects AI, metadata only</small></a></li><li><a href="/renewal-packet"><b>Carrier renewal packet</b><small>The AI questions carriers ask, from your record</small></a></li><li><a href="/changelog"><b>What&rsquo;s new</b><small>Every release, dated</small></a></li></ul></div></div><div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="nd-resources">Resources<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nd-p" id="nd-resources"><ul><li><a href="/resources"><b>Free tools</b><small>An AI policy template and a readiness checklist</small></a></li><li><a href="/guides"><b>Guides</b><small>ABA Opinion 512, firm AI policy, carrier questions</small></a></li><li><a href="/rules"><b>AI rules by state</b><small>Consent, billing, verification and filing duties</small></a></li><li><a href="/ai-rules"><b>AI ethics rules</b><small>Pick a jurisdiction, see its duties</small></a></li><li><a href="/ai-sanctions"><b>AI sanctions tracker</b><small>Courts that sanctioned AI-made citations</small></a></li><li><a href="/news"><b>News</b><small>AI and the legal profession, tracked</small></a></li></ul></div></div><div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="nd-company">Company<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nd-p" id="nd-company"><ul><li><a href="/about"><b>About</b><small>Why Candor exists</small></a></li><li><a href="/plan"><b>Our plan</b><small>Law firms first, then other professions</small></a></li><li><a href="/why-now"><b>Why now</b><small>Carriers, regulators and courts are asking</small></a></li><li><a href="/international"><b>International</b><small>Where Candor is headed outside the U.S.</small></a></li><li><a href="/contact"><b>Contact</b><small>Questions, a walkthrough or a security review</small></a></li></ul></div></div><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="m-cta" href="/start">Start free</a></nav>
   <div class="nav-r"><a class="nav-contact" href="/contact">Contact</a><a class="btn btn-w" href="/start">Start free</a></div>
   <button type="button" class="navtoggle" aria-label="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
 </div></header>
@@ -611,6 +653,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
     <p class="vq" id="vq" aria-hidden="true"><span class="q on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span class="q">&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span class="q">&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
     <p class="lede"><strong>Candor gives your firm one place to work with AI, and a record of every use.</strong> Prompts are screened before they&rsquo;re sent, answers are checked before anyone relies on them, and each use is signed off on its matter.</p>
     <div class="cta"><a class="btn btn-w" href="/start">Start free for a month<svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-g" href="#watch"><span class="play" aria-hidden="true"><svg><use href="#i-play"/></svg></span>Watch it in 90 seconds</a></div>
+    <p class="price-line">From <b>$250 a month</b>, billed yearly. First month free, staff seats included. <a href="/pricing">See pricing</a></p>
     <p class="origin"><span class="sig" aria-hidden="true">J</span>Built by Jesse Hollar, a former claims adjuster: the person who opens the file after something goes wrong.</p>
 
     <figure class="rv" style="margin:0" aria-label="Illustration of the Candor app: it swaps a client's name and Social Security number out of a prompt before it is sent, flags an unfamiliar citation for a second look, and files the AI use to its matter with the attorney's sign-off.">
@@ -685,6 +728,23 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
             <div class="entry" id="signEntry">Entry 0412 &middot; waiting for the attorney&rsquo;s sign-off</div>
           </div>
         </div></div>
+    </div>
+
+    <div class="stats rv" role="list" aria-label="Candor in numbers">
+      <div role="listitem"><b>16</b><span>AI tools the browser panel works in, from ChatGPT to Harvey</span></div>
+      <div role="listitem"><b>8</b><span>AI providers your firm can connect its own account from</span></div>
+      <div role="listitem"><b>0</b><span>words of screened client text kept by default</span></div>
+      <div role="listitem"><b>30</b><span>days free for every firm that signs up</span></div>
+    </div>
+    <div class="real-wrap rv">
+      <div class="real-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.candor.legal &middot; the real app</span></div>
+      <div class="real">
+        <video id="realVid" muted loop playsinline preload="none" poster="/assets/video/app-tour.jpg" aria-label="A screen recording of the Candor app: the AI use log, review and sign-off, matters and reports, filled with an invented demo firm.">
+          <source src="/assets/video/app-tour.webm" type="video/webm">
+          <source src="/assets/video/app-tour.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="real-cap"><span>The real Candor app, recorded with an invented demo firm. No real client or matter appears.</span><button type="button" id="realBtn" aria-pressed="false">Pause</button></div>
     </div>
   </div>
 </section>
@@ -799,6 +859,18 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
   </div>
 </section>
 
+<section class="sec" aria-labelledby="who-h">
+  <div class="wrap">
+    <div class="head rv"><div class="mono">Who it&rsquo;s for</div><h2 id="who-h" class="silver">Everyone who answers for the work.</h2><p>One record, read four ways. Each person sees what they are responsible for.</p></div>
+    <div class="roles rv">
+      <div class="role"><span class="k">Managing partner</span><h3>Know how the firm uses AI</h3><p>Which tools, on which matters, by whom, and whether an attorney signed off. The answer exists before anyone asks.</p></div>
+      <div class="role"><span class="k">Attorneys and staff</span><h3>Use AI without a second system</h3><p>Screen, check and log from inside the AI tool already open. Logging takes one click, and the sign-off sits on the matter.</p></div>
+      <div class="role"><span class="k">Risk and IT</span><h3>Rules that apply themselves</h3><p>Approved tools, data labels and pre-flight checks the firm sets once. Vendor profiles, incidents and training sit on the same record.</p></div>
+      <div class="role"><span class="k">Your carrier</span><h3>A packet, not a promise</h3><p>The renewal questions about AI, answered from the firm&rsquo;s own record for any dates you choose, and shareable by link.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="sec" aria-labelledby="more-h">
   <div class="wrap">
     <div class="head rv"><h2 id="more-h" class="silver">Learn more</h2></div>
@@ -818,7 +890,14 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
   <div class="wrap rv">
     <div class="seal" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><radialGradient id="sd2" cx="36%" cy="30%" r="78%"><stop offset="0" stop-color="#34343C"/><stop offset=".55" stop-color="#151518"/><stop offset="1" stop-color="#0B0B0D"/></radialGradient><linearGradient id="sw2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2C4B5"/><stop offset="1" stop-color="#E3B866"/></linearGradient><path id="sp2" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><circle cx="100" cy="100" r="97" fill="none" stroke="url(#sw2)" stroke-opacity=".45"/><circle cx="100" cy="100" r="88" fill="rgba(255,255,255,.015)" stroke="#2A2A30"/><g class="ring"><text font-family="IBM Plex Mono,monospace" font-size="13" letter-spacing="1.5" fill="#C9C9CF"><textPath href="#sp2" textLength="470" lengthAdjust="spacing">SCREENED · CHECKED · SIGNED OFF · ON THE RECORD ·</textPath></text></g><circle cx="100" cy="100" r="60" fill="url(#sd2)" stroke="#2A2A30"/><circle cx="100" cy="100" r="53" fill="none" stroke="url(#sw2)" stroke-opacity=".4" stroke-dasharray="1.5 4"/><text x="100" y="104" text-anchor="middle" dominant-baseline="middle" font-family="Instrument Serif,Georgia,serif" font-size="70" fill="url(#sw2)">C</text></svg></div>
     <h2 class="silver">Put the record in place before you need it.</h2>
-    <a class="btn btn-w" href="/start">Start your free month<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <div class="paths">
+      <div class="path"><h3>Start on your own</h3><p>Set Candor up across the firm today, on your own AI account.</p>
+        <ul><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>A full month free, with no card to start</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Every attorney and staff seat included</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Your record stays yours to export, whatever you decide</li></ul>
+        <a class="btn btn-w" href="/start">Start free<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      <div class="path"><h3>Ask first</h3><p>Questions about pricing, security or setup before your firm commits.</p>
+        <ul><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>A walkthrough on a sample matter</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Security and vendor review answers</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Pricing for firms over 60 attorneys</li></ul>
+        <a class="btn btn-g" href="/contact">Contact Candor</a></div>
+    </div>
   </div>
 </section>
 </main>
@@ -864,6 +943,16 @@ function tick(){i=(i+1)%qs.length;quote(i);clearTimeout(half);half=setTimeout(fu
 function play(){clearInterval(t);t=setInterval(tick,BEAT)}
 var b=document.getElementById('heroPause');b.addEventListener('click',function(){paused=!paused;b.textContent=paused?'Play':'Pause';bb.classList.toggle('paused',paused);[].forEach.call(document.querySelectorAll('.seal'),function(x){x.classList.toggle('paused',paused)});if(paused){clearInterval(t);clearTimeout(half)}else{tick();play()}});
 show(0);play()})();
+
+
+// The real app on video: plays only while on screen; still for reduced motion.
+(function(){var v=document.getElementById('realVid'),b=document.getElementById('realBtn');if(!v||!b)return;
+var want=!RM&&!STILL,seen=false;
+function sync(){b.textContent=v.paused?'Play':'Pause';b.setAttribute('aria-pressed',v.paused?'true':'false')}
+b.addEventListener('click',function(){want=v.paused;if(v.paused){v.play().catch(function(){})}else{v.pause()}});
+v.addEventListener('play',sync);v.addEventListener('pause',sync);sync();
+if(!want){b.textContent='Play';}
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){seen=es[0].isIntersecting;if(seen&&want){v.preload='auto';v.play().catch(function(){})}else if(!seen&&!v.paused){v.pause();}},{threshold:.35}).observe(v)}})();
 
 // Screen cell: live screener. Runs only in this page; nothing is sent.
 (function(){var inp=document.getElementById('scrIn'),out=document.getElementById('scrOut'),chips=document.getElementById('scrChips');
