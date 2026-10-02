@@ -161,7 +161,7 @@
   // Rows that would stack into a long column become a row you swipe, with
   // dots and arrows underneath. Only while the row actually scrolls.
   var usedLabels = {}
-  var SWIPE = '.trio, .roles, .grid6, .paths, .cards, .tiers.six, .newsgrid'
+  var SWIPE = '.trio, .roles, .grid6, .cards, .tiers.six, .newsgrid'
   var ARROW = function (d) { return '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="' + (d < 0 ? 'M10 3L5 8l5 5' : 'M6 3l5 5-5 5') + '" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>' }
   document.querySelectorAll(SWIPE).forEach(function (row, n) {
     var items = [].filter.call(row.children, function (c) { return !c.classList.contains('plus') })
