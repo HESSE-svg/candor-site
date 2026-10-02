@@ -10,8 +10,8 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=4">'
-export const SITE_JS = '<script src="/assets/site.js?v=13"></script>'
+export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=6">'
+export const SITE_JS = '<script src="/assets/site.js?v=15"></script>'
 
 const COLS = [
   ['Product', [
@@ -38,12 +38,8 @@ const COLS = [
   ]],
   ['Compare', [
     ['/vs/manual-tracking', 'vs manual tracking'],
-    ['/vs/ai-dlp', 'vs AI data-loss tools'],
-    ['/vs/claire', 'vs Claire'],
     ['/vs/credo-ai', 'vs Credo AI'],
     ['/vs/intapp-celeste', 'vs Intapp Celeste'],
-    ['/vs/lenavix', 'vs Lenavix'],
-    ['/vs/roval', 'vs Roval'],
   ]],
   ['Company', [
     ['/about', 'About'],
@@ -63,7 +59,6 @@ export const FOOTER = `<footer class="sf"><div class="sf-in">
   <div class="sf-top">
     <div><a class="sf-brand" href="/" aria-label="Candor home"><img src="/assets/icon.svg" alt="" width="28" height="28"><b>Candor<span>.</span></b></a>
       <p class="sf-tag">The AI your firm works in, with the record built in.</p></div>
-    <div class="sf-act"><a class="sf-start" href="/start">Start free</a><a href="/contact">Contact us</a></div>
   </div>
   <nav class="sf-cols" aria-label="Footer">
 ${COLS.map(([h, links]) => `    <div><h2>${h}</h2><ul>${links.map(([href, t]) => `<li><a href="${href}">${amp(t)}</a></li>`).join('')}</ul></div>`).join('\n')}
