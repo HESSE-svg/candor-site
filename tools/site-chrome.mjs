@@ -10,8 +10,8 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=1">'
-export const SITE_JS = '<script src="/assets/site.js?v=10"></script>'
+export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=2">'
+export const SITE_JS = '<script src="/assets/site.js?v=11"></script>'
 
 const COLS = [
   ['Product', [
@@ -71,7 +71,6 @@ ${COLS.map(([h, links]) => `    <div><h2>${h}</h2><ul>${links.map(([href, t]) =>
   <div class="sf-bot">
     <p class="sf-copy">&copy; 2026 Candor &middot; <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
     <div class="sf-social">
-      <a href="https://www.linkedin.com/in/jesse-hollar-084999283" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
       <a href="https://www.instagram.com/candor.legal" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
     </div>
   </div>

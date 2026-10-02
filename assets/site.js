@@ -139,7 +139,8 @@
   // Shows after the first screen, hides over the footer, and is left off
   // the pages that are already the form.
   if (!/^\/(start|contact|welcome)$/.test(here)) {
-    var dock = document.createElement('div')
+    var dock = document.createElement('nav')
+    dock.setAttribute('aria-label', 'Get started')
     dock.className = 'dock'
     dock.innerHTML = '<a class="dock-go" href="/start">Start free</a><a class="dock-alt" href="/contact">Contact</a>'
     document.body.appendChild(dock)
@@ -228,7 +229,7 @@
 
   // ---- Contact form: a dialog from any /contact link, inline on /contact ----
   //
-  // Sent to app.candor.legal, which emails it to Jesse (reply-to the sender)
+  // Sent to app.candor.legal, which emails it to Candor (reply-to the sender)
   // and stores nothing (app/server/siteContactApi.mjs). Client identifiers are
   // refused there; the note under the form asks people to leave them out.
   var CONTACT_URL = 'https://app.candor.legal/api/site/contact'
@@ -254,7 +255,7 @@
       // On /contact the page itself carries the heading and introduction.
       wrap.innerHTML = close + (inDialog
         ? '<h2 id="' + id('h') + '">Talk to Candor</h2>' +
-          '<p class="cf-intro">Questions about the product, a walkthrough on your own matters, pricing, or a security review. Jesse reads every message and writes back himself.</p>'
+          '<p class="cf-intro">Questions about the product, a walkthrough on your own matters, pricing, or a security review.</p>'
         : '') +
         '<form novalidate>' +
         '<div class="cf-field"><label for="' + id('email') + '">Work email<i aria-hidden="true">*</i></label>' +
@@ -296,7 +297,7 @@
         '<span class="cf-err" id="' + id('send-e') + '" role="alert"></span>' +
         '<button class="cf-go" type="submit">Send message <span aria-hidden="true">&rarr;</span></button>' +
         '<button class="cf-back" type="button">&larr; Back</button>' +
-        '<p class="cf-fine">Please leave out anything about a client: no names, numbers or case details. Your message is emailed to Jesse and not stored by Candor. <a href="/privacy">Privacy</a></p>' +
+        '<p class="cf-fine">Please leave out anything about a client: no names, numbers or case details. Your message is delivered by email and not stored in Candor. <a href="/privacy">Privacy</a></p>' +
         '</form>'
       var f = wrap.querySelector('form')
       var err = wrap.querySelector('#' + id('send-e'))
@@ -332,7 +333,7 @@
       wrap.innerHTML = close +
         '<div class="cf-done"><div class="cf-tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>' +
         '<h2 id="' + id('h') + '" tabindex="-1">Message sent</h2>' +
-        '<p class="cf-intro">Thanks. Jesse will reply to <strong>' + esc(email) + '</strong>. While you wait, you can see the product in 90 seconds.</p>' +
+        '<p class="cf-intro">Thanks. The answer will go to <strong>' + esc(email) + '</strong>. In the meantime, you can see the product in 90 seconds.</p>' +
         '<a class="cf-go" href="/#watch" style="text-decoration:none">Watch the walkthrough</a></div>'
       var h = wrap.querySelector('h2'); if (h) h.focus()
     }

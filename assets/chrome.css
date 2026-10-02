@@ -171,3 +171,9 @@ footer.sf .disc a{color:#A8A8B0}
   .cf-two{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){.sm,.sm-sub,.sm-row>button svg{transition:none}.cf-dlg[open]{animation:none}}
+
+/* phones: Start free sits next to the menu button */
+@media(max-width:860px){
+  header.nav .nav-r .btn{display:inline-flex;min-height:40px;padding:0 16px;font-size:14px}
+  header.nav .nav-r{gap:0}
+}
