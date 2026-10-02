@@ -115,13 +115,13 @@
   }
 
   // ---- announcement bar: the latest release, dismissible ----
-  // One line across the top of every page except the homepage, which has its
-  // own "New" pill. Dismissing it hides this message only; a new one shows.
+  // One line across the top of every page. Dismissing it hides this
+  // message only; a new one shows.
   var NEWS = { id: '2026-10-01', text: 'New: the browser panel now works in Eve, Harvey, CoCounsel and Lexis+ AI', href: '/changelog#2026-10-01' }
   var header = document.querySelector('header.nav')
   var dismissed = false
   try { dismissed = localStorage.getItem('candor-bar') === NEWS.id } catch (e) { /* storage blocked */ }
-  if (header && here !== '/' && !dismissed) {
+  if (header && !dismissed) {
     var bar = document.createElement('div')
     bar.className = 'ab'
     bar.setAttribute('role', 'region')
@@ -161,7 +161,7 @@
   // Rows that would stack into a long column become a row you swipe, with
   // dots and arrows underneath. Only while the row actually scrolls.
   var usedLabels = {}
-  var SWIPE = '.trio, .roles, .grid6, .paths, .cards, .tiers.six, .newsgrid'
+  var SWIPE = '.trio, .roles, .grid6, .cards, .tiers.six, .newsgrid'
   var ARROW = function (d) { return '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="' + (d < 0 ? 'M10 3L5 8l5 5' : 'M6 3l5 5-5 5') + '" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>' }
   document.querySelectorAll(SWIPE).forEach(function (row, n) {
     var items = [].filter.call(row.children, function (c) { return !c.classList.contains('plus') })
