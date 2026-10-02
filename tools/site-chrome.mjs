@@ -10,8 +10,8 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=2">'
-export const SITE_JS = '<script src="/assets/site.js?v=11"></script>'
+export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=3">'
+export const SITE_JS = '<script src="/assets/site.js?v=12"></script>'
 
 const COLS = [
   ['Product', [

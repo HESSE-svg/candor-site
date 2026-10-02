@@ -177,3 +177,35 @@ footer.sf .disc a{color:#A8A8B0}
   header.nav .nav-r .btn{display:inline-flex;min-height:40px;padding:0 16px;font-size:14px}
   header.nav .nav-r{gap:0}
 }
+
+/* ---------- side by side, swipe through (site.js adds .swipe) ----------
+   Card rows that would otherwise stack into a long column on phones. The
+   next card peeks in from the right so it is clear there is more. */
+@media(max-width:860px){
+  .swipe{display:flex!important;gap:14px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{flex:0 0 min(84%,420px);scroll-snap-align:start;min-width:0}
+  .swipe>.plus{display:none}
+  .grid6.swipe{border:0}
+  .grid6.swipe>.g6{border:1px solid #1F1F23;border-radius:16px;min-height:0}
+  .sec-trio{padding-top:72px}
+}
+@media(min-width:861px) and (max-width:1060px){
+  .trio.swipe{display:flex!important;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .trio.swipe::-webkit-scrollbar{display:none}
+  .trio.swipe>*{flex:0 0 min(60%,460px);scroll-snap-align:start;min-width:0}
+}
+.swipe-nav{display:none;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}
+.swipe-nav.on{display:flex}
+.swipe-dots{display:flex;gap:6px;flex-wrap:wrap}
+.swipe-dots button{width:8px;height:8px;padding:0;border-radius:999px;border:0;background:#2A2A30;cursor:pointer;transition:width .2s,background .2s}
+.swipe-dots button[aria-current="true"]{width:22px;background:#FAFAF9}
+.swipe-arrows{display:flex;gap:8px}
+.swipe-arrows button{width:40px;height:40px;border-radius:50%;border:1px solid #2A2A30;background:#111114;color:#FAFAF9;display:grid;place-items:center;cursor:pointer}
+.swipe-arrows button:hover{background:#1A1A1E}
+.swipe-arrows button[disabled]{opacity:.35;cursor:default}
+.swipe-arrows svg{width:14px;height:14px}
+.swipe-count{font:12px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#8B8B94;margin-left:10px}
+@media(prefers-reduced-motion:reduce){.swipe{scroll-behavior:auto}}
+
+@media(max-width:860px){.tiers.six.swipe{padding-top:14px}}

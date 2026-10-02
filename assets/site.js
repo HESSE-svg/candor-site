@@ -155,8 +155,65 @@
     onScroll()
   }
 
-  // ---- phone menu: full screen, sections open in place ----
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }) }
+
+  // ---- card rows: side by side, swipe through (phones) ----
+  // Rows that would stack into a long column become a row you swipe, with
+  // dots and arrows underneath. Only while the row actually scrolls.
+  var usedLabels = {}
+  var SWIPE = '.trio, .roles, .grid6, .paths, .cards, .tiers.six, .newsgrid'
+  var ARROW = function (d) { return '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="' + (d < 0 ? 'M10 3L5 8l5 5' : 'M6 3l5 5-5 5') + '" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>' }
+  document.querySelectorAll(SWIPE).forEach(function (row, n) {
+    var items = [].filter.call(row.children, function (c) { return !c.classList.contains('plus') })
+    if (items.length < 2) return
+    row.classList.add('swipe')
+    if (!row.id) row.id = 'swipe-' + n
+    var sec = row.closest('section'), hd = sec && sec.querySelector('h2')
+    var label = (hd && hd.textContent.trim()) || 'Cards'
+    usedLabels[label] = (usedLabels[label] || 0) + 1
+    if (usedLabels[label] > 1) label += ' (' + usedLabels[label] + ')'
+    var nav = document.createElement('div')
+    nav.className = 'swipe-nav'
+    nav.innerHTML = '<div class="swipe-dots" role="group" aria-label="' + esc(label) + ': choose a card">' +
+      items.map(function (_, i) { return '<button type="button" aria-label="Show card ' + (i + 1) + ' of ' + items.length + '" aria-controls="' + row.id + '"></button>' }).join('') +
+      '</div><div class="swipe-arrows"><button type="button" aria-label="Previous card" aria-controls="' + row.id + '">' + ARROW(-1) + '</button><button type="button" aria-label="Next card" aria-controls="' + row.id + '">' + ARROW(1) + '</button></div>'
+    row.parentNode.insertBefore(nav, row.nextSibling)
+    var dots = [].slice.call(nav.querySelectorAll('.swipe-dots button'))
+    var prev = nav.querySelector('.swipe-arrows button:first-child'), next = nav.querySelector('.swipe-arrows button:last-child')
+    var current = function () {
+      var x = row.scrollLeft, best = 0, bestD = Infinity
+      items.forEach(function (it, i) { var d = Math.abs(it.offsetLeft - row.offsetLeft - x - (parseFloat(getComputedStyle(row).paddingLeft) || 0)); if (d < bestD) { bestD = d; best = i } })
+      if (row.scrollLeft + row.clientWidth >= row.scrollWidth - 4) best = items.length - 1
+      return best
+    }
+    var go = function (i) {
+      i = Math.max(0, Math.min(items.length - 1, i))
+      row.scrollTo({ left: items[i].offsetLeft - items[0].offsetLeft, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' })
+    }
+    var sync = function () {
+      var on = getComputedStyle(row).display === 'flex' && row.scrollWidth > row.clientWidth + 4
+      nav.classList.toggle('on', on)
+      // A row that scrolls can be reached and scrolled from the keyboard.
+      if (on) { row.setAttribute('tabindex', '0'); row.setAttribute('role', 'region'); row.setAttribute('aria-label', label + ', cards') }
+      else { row.removeAttribute('tabindex'); row.removeAttribute('role'); row.removeAttribute('aria-label') }
+      if (!on) return
+      var i = current()
+      dots.forEach(function (d, j) { d.setAttribute('aria-current', i === j ? 'true' : 'false') })
+      prev.disabled = row.scrollLeft <= 2
+      next.disabled = row.scrollLeft + row.clientWidth >= row.scrollWidth - 4
+    }
+    dots.forEach(function (d, i) { d.addEventListener('click', function () { go(i) }) })
+    prev.addEventListener('click', function () { go(current() - 1) })
+    next.addEventListener('click', function () { go(current() + 1) })
+    var raf = 0
+    row.addEventListener('scroll', function () { cancelAnimationFrame(raf); raf = requestAnimationFrame(sync) }, { passive: true })
+    window.addEventListener('resize', sync)
+    // Keyboard users tabbing into a card off to the side bring it into view.
+    row.addEventListener('focusin', function (e) { var it = items.filter(function (c) { return c.contains(e.target) })[0]; if (it && nav.classList.contains('on')) go(items.indexOf(it)) })
+    sync()
+  })
+
+  // ---- phone menu: full screen, sections open in place ----
   var cur = function (href) { return href === here ? ' aria-current="page"' : '' }
   var CHEV = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
   var XICON = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>'
