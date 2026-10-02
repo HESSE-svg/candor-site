@@ -19,6 +19,7 @@
 import { writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { applyChrome } from './site-chrome.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const UA = 'Mozilla/5.0 (compatible; CandorNewsBot/1.0; +https://candor.legal)'
@@ -266,22 +267,8 @@ function page(items, builtAt) {
 </div></section>
 </main>
 
-<footer><div class="wrap">
-  <div class="foot-grid">
-    <div>
-      <span class="name" style="font-family:var(--f-serif);font-size:22px;color:var(--navy)">Candor<span style="color:var(--ox)">.</span></span>
-      <p style="margin-top:10px;max-width:22em">The AI your firm works in, with the record built in.</p>
-      <div class="social">
-        <a href="https://www.instagram.com/candor.legal" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-        <a href="#" aria-label="TikTok" title="TikTok (coming soon)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2 1.6 3.6 3.6 3.9v2.5c-1.3 0-2.6-.4-3.6-1.1v6.1c0 3-2.4 5.4-5.4 5.4S5.2 17.4 5.2 14.4 7.6 9 10.6 9c.3 0 .6 0 .9.1v2.6c-.3-.1-.6-.2-.9-.2-1.5 0-2.8 1.2-2.8 2.8s1.2 2.8 2.8 2.8 2.8-1.2 2.8-2.8V3H16z"/></svg></a>
-        <a href="https://www.linkedin.com/in/jesse-hollar-084999283" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
-      </div>
-    </div>
-    <div class="foot-links"><a href="/product">Product</a><a href="/ai-governance-software">AI governance software</a><a href="/plan">Our plan</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/changelog">Changelog</a><a href="/about">About</a><a href="/demo">Contact</a><a href="/privacy">Privacy</a><a href="/accessibility">Accessibility</a></div>
-  </div>
-  <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. &copy; 2026 Candor &middot; <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
-</div></footer>
-<script src="/assets/site.js?v=9"></script>
+<footer></footer>
+<script src="/assets/site.js?v=10"></script>
 </body></html>
 `
 }
@@ -342,7 +329,7 @@ async function main() {
   console.log(`resolved images for ${items.filter((i) => i.img).length}/${items.length}`)
 
   const builtAt = new Date()
-  writeFileSync(join(ROOT, 'news.html'), page(items, builtAt))
+  writeFileSync(join(ROOT, 'news.html'), applyChrome(page(items, builtAt)))
   mkdirSync(join(ROOT, 'assets'), { recursive: true })
   writeFileSync(
     join(ROOT, 'assets', 'news.json'),
