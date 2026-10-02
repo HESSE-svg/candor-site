@@ -3,12 +3,56 @@
    Colors are written out (not page tokens) because the homepage and the
    other pages name their tokens differently. */
 
-/* ---------- header: Contact link and the round menu button ---------- */
+/* ---------- header: five items, three of them open ---------- */
+header.nav .navlinks{position:static;display:flex;flex-direction:row;align-items:center;gap:2px;padding:0;background:none;border:0;max-height:none;overflow:visible}
+header.nav .navlinks>a,.nd-b{font:400 14px 'Inter',system-ui,sans-serif;color:#A8A8B0;text-decoration:none;padding:6px 11px;border-radius:999px;white-space:nowrap;background:none;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:5px;transition:color .2s,background .2s}
+header.nav .navlinks>a:hover,.nd-b:hover,.nd.open .nd-b{color:#FAFAF9;background:#16161A;text-decoration:none}
+header.nav .navlinks>a[aria-current="page"],.nd.cur .nd-b{color:#FAFAF9}
+header.nav .navlinks .m-cta{display:none}
+.nd{position:relative}
+.nd-b svg{width:11px;height:11px;opacity:.7;transition:transform .2s}
+.nd.open .nd-b svg{transform:rotate(180deg)}
+.nd-p{position:absolute;top:calc(100% + 10px);left:-8px;z-index:70;width:340px;padding:8px;background:#111114;border:1px solid #2A2A30;border-radius:14px;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity .16s,transform .16s,visibility 0s linear .16s}
+.nd-p::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
+.nd.open .nd-p,html:not(.js) .nd:hover .nd-p,html:not(.js) .nd:focus-within .nd-p{opacity:1;visibility:visible;transform:none;transition:opacity .16s,transform .16s}
+.nd-p ul{list-style:none;margin:0;padding:0}
+.nd-p a{display:block;padding:10px 12px;border-radius:9px;text-decoration:none}
+.nd-p a:hover,.nd-p a:focus-visible{background:#1A1A1E;text-decoration:none}
+.nd-p a b{display:block;font:500 14px/1.3 'Inter',system-ui,sans-serif;color:#FAFAF9}
+.nd-p a small{display:block;margin-top:2px;font-size:12.5px;line-height:1.4;color:#8B8B94}
+.nd-p a[aria-current="page"] b{color:#F2C4B5}
+
+/* ---------- header: Contact link, Start free, the round menu button ---------- */
 .nav-r .nav-contact{font-size:14px;color:#A8A8B0;text-decoration:none;padding:6px 12px;border-radius:999px;transition:color .2s,background .2s}
 .nav-r .nav-contact:hover{color:#FAFAF9;background:#16161A;text-decoration:none}
-.navtoggle{width:44px;height:44px;border-radius:50%;border:0;background:#1A1A1E;color:#FAFAF9;transition:background .2s}
+.navtoggle{display:none;width:44px;height:44px;border-radius:50%;border:0;background:#1A1A1E;color:#FAFAF9;align-items:center;justify-content:center;cursor:pointer;transition:background .2s}
 .navtoggle:hover{background:#26262B}
-@media(max-width:900px){.nav-r .nav-contact{display:none}}
+@media(max-width:1060px){header.nav .navlinks{display:flex}.nav-r{margin-left:auto}.navtoggle{display:none}}
+@media(max-width:860px){
+  header.nav .navlinks{display:none}
+  .nav-r{margin-left:auto}
+  .nav-r .nav-contact{display:none}
+  .navtoggle{display:inline-flex;margin-left:10px}
+}
+
+/* ---------- announcement bar (not on the homepage) ---------- */
+.ab{position:relative;display:flex;align-items:center;justify-content:center;min-height:38px;padding:8px 48px;background:linear-gradient(90deg,#1A0F0D,#2A1511 50%,#1A0F0D);border-bottom:1px solid #2A2A30;font:13px/1.4 'Inter',system-ui,sans-serif;text-align:center}
+.ab a{color:#F2C4B5;text-decoration:none}
+.ab a:hover{color:#FAFAF9;text-decoration:underline}
+.ab button{position:absolute;right:10px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;border:0;background:none;color:#A8A8B0;display:grid;place-items:center;cursor:pointer}
+.ab button:hover{background:#26262B;color:#FAFAF9}
+.ab svg{width:14px;height:14px}
+
+/* ---------- phones: Start free and Contact pinned to the bottom ---------- */
+.dock{display:none}
+@media(max-width:860px){
+  .dock{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:90;display:flex;gap:8px;padding:8px;background:rgba(17,17,20,.88);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid #2A2A30;border-radius:999px;transform:translateY(140%);opacity:0;transition:transform .28s ease,opacity .28s ease;pointer-events:none}
+  .dock.on{transform:none;opacity:1;pointer-events:auto}
+  .dock a{flex:1;display:flex;align-items:center;justify-content:center;min-height:46px;border-radius:999px;font:500 15px 'Inter',system-ui,sans-serif;text-decoration:none}
+  .dock-go{background:#FAFAF9;color:#09090B}
+  .dock-alt{color:#FAFAF9;border:1px solid #2A2A30}
+  html.sm-lock .dock{display:none}
+}
 
 /* ---------- phone menu: full screen, sections that open in place ---------- */
 .sm{position:fixed;inset:0;z-index:200;background:#0A0A0B;display:flex;flex-direction:column;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .22s ease,transform .22s ease,visibility 0s linear .22s}
@@ -41,7 +85,7 @@
 .sm-links a{color:#8B8B94;text-decoration:none}
 .sm-links a:hover{color:#FAFAF9}
 html.sm-lock,html.sm-lock body{overflow:hidden}
-@media(min-width:901px){.sm{display:none}}
+@media(min-width:861px){.sm{display:none}}
 
 /* ---------- footer: grouped and stacked ---------- */
 footer.sf{margin-top:80px;border-top:1px solid #1F1F23;padding:56px 0 40px;color:#8B8B94;font-size:14px;line-height:1.6;background:#09090B}
@@ -127,3 +171,9 @@ footer.sf .disc a{color:#A8A8B0}
   .cf-two{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){.sm,.sm-sub,.sm-row>button svg{transition:none}.cf-dlg[open]{animation:none}}
+
+/* phones: Start free sits next to the menu button */
+@media(max-width:860px){
+  header.nav .nav-r .btn{display:inline-flex;min-height:40px;padding:0 16px;font-size:14px}
+  header.nav .nav-r{gap:0}
+}

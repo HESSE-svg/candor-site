@@ -15,6 +15,12 @@ never promise more than the software does. Run every draft through this list.
   keeps "the record your firm uses to show how it used AI."
 - Anything that sounds like **legal advice**, or that Candor is a **law firm**.
 - That **Jesse is an attorney**. He is a former claims adjuster.
+- **Jesse's name, photo or signature** anywhere on the public site, and no
+  line saying a named or real person reads or answers messages (Jesse,
+  2026-10-02). Write as Candor ("Contact Candor", "the answer goes to your
+  email"). Drawn signatures in illustrations use invented names (A. Park).
+  The only exception for now is the address jesse@candor.legal where a
+  working inbox is needed.
 - **"Candor Legal"**. An unrelated firm uses that name. The brand is "Candor".
 - Anything about **fee sharing**. Candor is a flat-fee software subscription.
 - Invented quotes, customers, press or numbers. Every figure needs a source.

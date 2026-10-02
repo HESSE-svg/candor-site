@@ -70,34 +70,92 @@
   if (page === '/start') window.candorTrack('start_view')
   if (page === '/welcome') window.candorTrack('welcome_view')
 
-  // ---- phone menu: full screen, sections open in place ----
-  var MENU = [
-    ['Product', [
-      ['/product', 'How Candor works'],
-      ['/ai-governance-software', 'AI governance software'],
-      ['/review-demo', 'Click through a review'],
-      ['/pattern-capture', 'Pattern Capture'],
-      ['/renewal-packet', 'Carrier renewal packet'],
-      ['/changelog', 'What’s new'],
-    ]],
-    ['Resources', [
-      ['/resources', 'Free tools'],
-      ['/guides', 'Guides'],
-      ['/rules', 'AI rules by state'],
-      ['/ai-sanctions', 'AI sanctions tracker'],
-      ['/news', 'News'],
-    ]],
-    ['Company', [
-      ['/about', 'About'],
-      ['/plan', 'Our plan'],
-      ['/why-now', 'Why now'],
-      ['/international', 'International'],
-      ['/contact', 'Contact'],
-    ]],
-    ['/pricing', 'Pricing'],
-    ['/security', 'Security'],
-  ]
   var here = location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/'
+  document.documentElement.classList.add('js')
+  var navEl = document.querySelector('.navlinks')
+
+  // ---- top menu: groups that open (Product, Resources, Company) ----
+  // The markup comes from tools/site-chrome.mjs. Hover opens a group on a
+  // mouse; a click or Enter opens it for touch and keyboard.
+  var MENU = []
+  if (navEl) {
+    [].forEach.call(navEl.children, function (el) {
+      if (el.classList.contains('nd')) {
+        var b = el.querySelector('.nd-b')
+        MENU.push([b.textContent.trim(), [].map.call(el.querySelectorAll('.nd-p a'), function (a) {
+          return [a.getAttribute('href'), (a.querySelector('b') || a).textContent.trim()]
+        })])
+      } else if (el.tagName === 'A' && !el.classList.contains('m-cta')) MENU.push([el.getAttribute('href'), el.textContent.trim()])
+    })
+    navEl.querySelectorAll('a').forEach(function (a) {
+      if (a.getAttribute('href') === here) {
+        a.setAttribute('aria-current', 'page')
+        var g = a.closest('.nd'); if (g) g.classList.add('cur')
+      }
+    })
+    var groups = [].slice.call(navEl.querySelectorAll('.nd'))
+    var shut = function (except) {
+      groups.forEach(function (g) { if (g !== except) { g.classList.remove('open'); g.querySelector('.nd-b').setAttribute('aria-expanded', 'false') } })
+    }
+    groups.forEach(function (g) {
+      var b = g.querySelector('.nd-b')
+      var t = null
+      b.addEventListener('click', function () {
+        var open = !g.classList.contains('open')
+        shut(g)
+        g.classList.toggle('open', open)
+        b.setAttribute('aria-expanded', open ? 'true' : 'false')
+      })
+      g.addEventListener('pointerenter', function (e) { if (e.pointerType !== 'mouse') return; clearTimeout(t); shut(g); g.classList.add('open'); b.setAttribute('aria-expanded', 'true') })
+      g.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'mouse') return; t = setTimeout(function () { g.classList.remove('open'); b.setAttribute('aria-expanded', 'false') }, 140) })
+      g.addEventListener('focusout', function (e) { if (!g.contains(e.relatedTarget)) { g.classList.remove('open'); b.setAttribute('aria-expanded', 'false') } })
+      g.addEventListener('keydown', function (e) { if (e.key === 'Escape' && g.classList.contains('open')) { shut(); b.focus() } })
+    })
+    document.addEventListener('click', function (e) { if (!e.target.closest || !e.target.closest('.nd')) shut() })
+  }
+
+  // ---- announcement bar: the latest release, dismissible ----
+  // One line across the top of every page except the homepage, which has its
+  // own "New" pill. Dismissing it hides this message only; a new one shows.
+  var NEWS = { id: '2026-10-01', text: 'New: the browser panel now works in Eve, Harvey, CoCounsel and Lexis+ AI', href: '/changelog#2026-10-01' }
+  var header = document.querySelector('header.nav')
+  var dismissed = false
+  try { dismissed = localStorage.getItem('candor-bar') === NEWS.id } catch (e) { /* storage blocked */ }
+  if (header && here !== '/' && !dismissed) {
+    var bar = document.createElement('div')
+    bar.className = 'ab'
+    bar.setAttribute('role', 'region')
+    bar.setAttribute('aria-label', 'Announcement')
+    bar.innerHTML = '<a href="' + NEWS.href + '">' + NEWS.text.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c] }) + ' <span aria-hidden="true">&rarr;</span></a>' +
+      '<button type="button" aria-label="Dismiss announcement"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>'
+    header.parentNode.insertBefore(bar, header)
+    bar.querySelector('button').addEventListener('click', function () {
+      bar.remove()
+      try { localStorage.setItem('candor-bar', NEWS.id) } catch (e) { /* storage blocked */ }
+    })
+  }
+
+  // ---- phones: Start free and Contact stay within reach ----
+  // Shows after the first screen, hides over the footer, and is left off
+  // the pages that are already the form.
+  if (!/^\/(start|contact|welcome)$/.test(here)) {
+    var dock = document.createElement('nav')
+    dock.setAttribute('aria-label', 'Get started')
+    dock.className = 'dock'
+    dock.innerHTML = '<a class="dock-go" href="/start">Start free</a><a class="dock-alt" href="/contact">Contact</a>'
+    document.body.appendChild(dock)
+    var foot = document.querySelector('footer')
+    var onScroll = function () {
+      var y = window.scrollY || 0
+      var footTop = foot ? foot.getBoundingClientRect().top : Infinity
+      dock.classList.toggle('on', y > window.innerHeight * 0.75 && footTop > window.innerHeight - 20)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    onScroll()
+  }
+
+  // ---- phone menu: full screen, sections open in place ----
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }) }
   var cur = function (href) { return href === here ? ' aria-current="page"' : '' }
   var CHEV = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -166,12 +224,12 @@
       else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus() }
     })
     // Widening past the phone layout closes it.
-    if (window.matchMedia) matchMedia('(min-width:901px)').addEventListener('change', function (q) { if (q.matches) closeMenu(false) })
+    if (window.matchMedia) matchMedia('(min-width:861px)').addEventListener('change', function (q) { if (q.matches) closeMenu(false) })
   }
 
   // ---- Contact form: a dialog from any /contact link, inline on /contact ----
   //
-  // Sent to app.candor.legal, which emails it to Jesse (reply-to the sender)
+  // Sent to app.candor.legal, which emails it to Candor (reply-to the sender)
   // and stores nothing (app/server/siteContactApi.mjs). Client identifiers are
   // refused there; the note under the form asks people to leave them out.
   var CONTACT_URL = 'https://app.candor.legal/api/site/contact'
@@ -197,7 +255,7 @@
       // On /contact the page itself carries the heading and introduction.
       wrap.innerHTML = close + (inDialog
         ? '<h2 id="' + id('h') + '">Talk to Candor</h2>' +
-          '<p class="cf-intro">Questions about the product, a walkthrough on your own matters, pricing, or a security review. Jesse reads every message and writes back himself.</p>'
+          '<p class="cf-intro">Questions about the product, a walkthrough on your own matters, pricing, or a security review.</p>'
         : '') +
         '<form novalidate>' +
         '<div class="cf-field"><label for="' + id('email') + '">Work email<i aria-hidden="true">*</i></label>' +
@@ -239,7 +297,7 @@
         '<span class="cf-err" id="' + id('send-e') + '" role="alert"></span>' +
         '<button class="cf-go" type="submit">Send message <span aria-hidden="true">&rarr;</span></button>' +
         '<button class="cf-back" type="button">&larr; Back</button>' +
-        '<p class="cf-fine">Please leave out anything about a client: no names, numbers or case details. Your message is emailed to Jesse and not stored by Candor. <a href="/privacy">Privacy</a></p>' +
+        '<p class="cf-fine">Please leave out anything about a client: no names, numbers or case details. Your message is delivered by email and not stored in Candor. <a href="/privacy">Privacy</a></p>' +
         '</form>'
       var f = wrap.querySelector('form')
       var err = wrap.querySelector('#' + id('send-e'))
@@ -275,7 +333,7 @@
       wrap.innerHTML = close +
         '<div class="cf-done"><div class="cf-tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>' +
         '<h2 id="' + id('h') + '" tabindex="-1">Message sent</h2>' +
-        '<p class="cf-intro">Thanks. Jesse will reply to <strong>' + esc(email) + '</strong>. While you wait, you can see the product in 90 seconds.</p>' +
+        '<p class="cf-intro">Thanks. The answer will go to <strong>' + esc(email) + '</strong>. In the meantime, you can see the product in 90 seconds.</p>' +
         '<a class="cf-go" href="/#watch" style="text-decoration:none">Watch the walkthrough</a></div>'
       var h = wrap.querySelector('h2'); if (h) h.focus()
     }

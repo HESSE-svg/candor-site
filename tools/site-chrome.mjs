@@ -10,8 +10,8 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=1">'
-export const SITE_JS = '<script src="/assets/site.js?v=10"></script>'
+export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=2">'
+export const SITE_JS = '<script src="/assets/site.js?v=11"></script>'
 
 const COLS = [
   ['Product', [
@@ -71,7 +71,6 @@ ${COLS.map(([h, links]) => `    <div><h2>${h}</h2><ul>${links.map(([href, t]) =>
   <div class="sf-bot">
     <p class="sf-copy">&copy; 2026 Candor &middot; <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
     <div class="sf-social">
-      <a href="https://www.linkedin.com/in/jesse-hollar-084999283" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
       <a href="https://www.instagram.com/candor.legal" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
     </div>
   </div>
@@ -79,6 +78,43 @@ ${COLS.map(([h, links]) => `    <div><h2>${h}</h2><ul>${links.map(([href, t]) =>
 </div></footer>`
 
 const NAV_CONTACT = '<a class="nav-contact" href="/contact">Contact</a>'
+
+// The top menu: three groups that open, then two plain links. The phone menu
+// (assets/site.js) is built from this same markup, so there is one list.
+const NAV = [
+  ['Product', [
+    ['/product', 'How Candor works', 'Screening, the AI log, sign-off and reports'],
+    ['/ai-governance-software', 'AI governance software', 'What the category is, and where Candor fits'],
+    ['/review-demo', 'Click through a review', 'An attorney sign-off, start to finish'],
+    ['/pattern-capture', 'Pattern Capture', 'How your firm corrects AI, metadata only'],
+    ['/renewal-packet', 'Carrier renewal packet', 'The AI questions carriers ask, from your record'],
+    ['/changelog', 'What’s new', 'Every release, dated'],
+  ]],
+  ['Resources', [
+    ['/resources', 'Free tools', 'An AI policy template and a readiness checklist'],
+    ['/guides', 'Guides', 'ABA Opinion 512, firm AI policy, carrier questions'],
+    ['/rules', 'AI rules by state', 'Consent, billing, verification and filing duties'],
+    ['/ai-rules', 'AI ethics rules', 'Pick a jurisdiction, see its duties'],
+    ['/ai-sanctions', 'AI sanctions tracker', 'Courts that sanctioned AI-made citations'],
+    ['/news', 'News', 'AI and the legal profession, tracked'],
+  ]],
+  ['Company', [
+    ['/about', 'About', 'Why Candor exists'],
+    ['/plan', 'Our plan', 'Law firms first, then other professions'],
+    ['/why-now', 'Why now', 'Carriers, regulators and courts are asking'],
+    ['/international', 'International', 'Where Candor is headed outside the U.S.'],
+    ['/contact', 'Contact', 'Questions, a walkthrough or a security review'],
+  ]],
+  ['/pricing', 'Pricing'],
+  ['/security', 'Security'],
+]
+const CHEV = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+export const NAV_HTML = '<nav class="navlinks" aria-label="Primary">' + NAV.map((it) => {
+  if (typeof it[1] === 'string') return `<a href="${it[0]}">${it[1]}</a>`
+  const id = 'nd-' + it[0].toLowerCase()
+  return `<div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="${id}">${it[0]}${CHEV}</button>` +
+    `<div class="nd-p" id="${id}"><ul>${it[1].map(([href, t, d]) => `<li><a href="${href}"><b>${amp(t)}</b><small>${amp(d)}</small></a></li>`).join('')}</ul></div></div>`
+}).join('') + '<a class="m-cta" href="/start">Start free</a></nav>'
 
 /** Apply the shared chrome to one page's HTML. Idempotent. */
 export function applyChrome(html) {
@@ -88,6 +124,7 @@ export function applyChrome(html) {
   s = s.replace(/<script src="\/assets\/site\.js(?:\?v=\d+)?"><\/script>/, SITE_JS)
   if (!s.includes('/assets/site.js')) s = s.replace('</body>', SITE_JS + '\n</body>')
   if (!s.includes('class="nav-contact"')) s = s.replace('<div class="nav-r">', '<div class="nav-r">' + NAV_CONTACT)
+  s = s.replace(/<nav class="(?:nav-links )?navlinks"[^>]*>[\s\S]*?<\/nav>\s*(?=\n?\s*<div class="nav-r">)/, NAV_HTML + '\n  ')
   s = s.replace(/<footer[\s\S]*?<\/footer>/, FOOTER)
   if (!s.includes('<footer')) s = s.replace(SITE_JS, FOOTER + '\n' + SITE_JS)
   return s

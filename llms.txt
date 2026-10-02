@@ -1,6 +1,6 @@
 # Candor
 
-> AI governance software for U.S. law firms. Candor is the AI workspace a firm works in, on the firm's own connected model: it screens client data before it reaches a model, logs every AI use to the matter, flags citations that may need a second look, captures attorney sign-off, and keeps the append-only, tamper-evident record carriers have begun asking about at renewal. Flat annual fee priced on attorney count ($3,000–$20,000/yr); staff seats are free. Every firm can start a one-month free trial at candor.legal/start. Built by Jesse Hollar, a former claims adjuster: the person who examines the file after a loss and works out what can actually be shown. Most AI governance tools come from legal tech or compliance; Candor was built from the side that reads the file afterward.
+> AI governance software for U.S. law firms. Candor is the AI workspace a firm works in, on the firm's own connected model: it screens client data before it reaches a model, logs every AI use to the matter, flags citations that may need a second look, captures attorney sign-off, and keeps the append-only, tamper-evident record carriers have begun asking about at renewal. Flat annual fee priced on attorney count ($3,000–$20,000/yr); staff seats are free. Every firm can start a one-month free trial at candor.legal/start. Most AI governance tools come from legal tech or compliance; Candor was built from the side that reads the file afterward.
 
 ## Core pages
 - [Home](https://candor.legal/): what Candor is and the 90-second product walkthrough.
@@ -8,7 +8,7 @@
 - [Carrier renewal packet](https://candor.legal/renewal-packet): the AI questions malpractice carriers ask at renewal, answered from the firm's own record for any date range.
 - [Pricing](https://candor.legal/pricing): flat annual fee by attorney count; staff seats free; one month free.
 - [Security](https://candor.legal/security): hash-chained, encrypted records; the firm's own model; full export.
-- [About](https://candor.legal/about): the founder and why Candor exists.
+- [About](https://candor.legal/about): why Candor exists.
 - [Start a free month](https://candor.legal/start): self-serve trial, whole team, the firm's own model.
 - [Privacy](https://candor.legal/privacy): what the website and the software collect, and how to have it deleted.
 
