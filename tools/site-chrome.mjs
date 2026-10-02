@@ -10,8 +10,8 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=6">'
-export const SITE_JS = '<script src="/assets/site.js?v=15"></script>'
+export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=7">'
+export const SITE_JS = '<script src="/assets/site.js?v=16"></script>'
 
 const COLS = [
   ['Product', [
@@ -91,7 +91,6 @@ const NAV = [
     ['/rules', 'AI rules by state', 'Consent, billing, verification and filing duties'],
     ['/ai-rules', 'AI ethics rules', 'Pick a jurisdiction, see its duties'],
     ['/ai-sanctions', 'AI sanctions tracker', 'Courts that sanctioned AI-made citations'],
-    ['/news', 'News', 'AI and the legal profession, tracked'],
   ]],
   ['Company', [
     ['/about', 'About', 'Why Candor exists'],
@@ -102,6 +101,7 @@ const NAV = [
   ]],
   ['/pricing', 'Pricing'],
   ['/security', 'Security'],
+  ['/news', 'News'],
 ]
 const CHEV = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 export const NAV_HTML = '<nav class="navlinks" aria-label="Primary">' + NAV.map((it) => {

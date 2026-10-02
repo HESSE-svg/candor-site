@@ -137,6 +137,29 @@
     })
   }
 
+  // ---- phones: Start free and Contact stay within reach ----
+  // Shows after the first screen, hides over the footer, and is left off
+  // the pages that are already the form.
+  if (!/^\/(start|contact|welcome)$/.test(here)) {
+    var dock = document.createElement('nav')
+    dock.setAttribute('aria-label', 'Get started')
+    dock.className = 'dock'
+    dock.innerHTML = '<a class="dock-go" href="/start">Start free</a><a class="dock-alt" href="/contact">Contact</a>'
+    document.body.appendChild(dock)
+    var foot = document.querySelector('footer')
+    var onScroll = function () {
+      var y = window.scrollY || 0
+      var footTop = foot ? foot.getBoundingClientRect().top : Infinity
+      var on = y > window.innerHeight * 0.75 && footTop > window.innerHeight - 20
+      dock.classList.toggle('on', on)
+      // One Start free at a time: the header's steps aside while the bar shows.
+      document.documentElement.classList.toggle('dock-on', on)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    onScroll()
+  }
+
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }) }
 
   // ---- card rows: side by side, swipe through (phones) ----
