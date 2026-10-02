@@ -70,18 +70,247 @@
   if (page === '/start') window.candorTrack('start_view')
   if (page === '/welcome') window.candorTrack('welcome_view')
 
-  // mobile nav
+  // ---- phone menu: full screen, sections open in place ----
+  var MENU = [
+    ['Product', [
+      ['/product', 'How Candor works'],
+      ['/ai-governance-software', 'AI governance software'],
+      ['/review-demo', 'Click through a review'],
+      ['/pattern-capture', 'Pattern Capture'],
+      ['/renewal-packet', 'Carrier renewal packet'],
+      ['/changelog', 'What’s new'],
+    ]],
+    ['Resources', [
+      ['/resources', 'Free tools'],
+      ['/guides', 'Guides'],
+      ['/rules', 'AI rules by state'],
+      ['/ai-sanctions', 'AI sanctions tracker'],
+      ['/news', 'News'],
+    ]],
+    ['Company', [
+      ['/about', 'About'],
+      ['/plan', 'Our plan'],
+      ['/why-now', 'Why now'],
+      ['/international', 'International'],
+      ['/contact', 'Contact'],
+    ]],
+    ['/pricing', 'Pricing'],
+    ['/security', 'Security'],
+  ]
+  var here = location.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/'
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }) }
+  var cur = function (href) { return href === here ? ' aria-current="page"' : '' }
+  var CHEV = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  var XICON = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>'
   var toggle = document.querySelector('.navtoggle')
-  var links = document.querySelector('.navlinks')
-  if (toggle && links) {
-    if (!links.id) links.id = 'site-nav'
-    toggle.setAttribute('aria-controls', links.id)
-    toggle.setAttribute('aria-expanded', 'false')
-    toggle.addEventListener('click', function () {
-      var open = links.classList.toggle('open')
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false')
+  if (toggle) {
+    var sm = document.createElement('div')
+    sm.className = 'sm'
+    sm.id = 'site-menu'
+    sm.setAttribute('role', 'dialog')
+    sm.setAttribute('aria-modal', 'true')
+    sm.setAttribute('aria-label', 'Menu')
+    sm.hidden = true
+    var rows = MENU.map(function (it, n) {
+      if (typeof it[1] === 'string') return '<div class="sm-row"><a href="' + it[0] + '"' + cur(it[0]) + '>' + esc(it[1]) + '</a></div>'
+      var open = it[1].some(function (l) { return l[0] === here })
+      return '<div class="sm-row"><button type="button" aria-expanded="' + open + '" aria-controls="sm-sub-' + n + '">' + esc(it[0]) + CHEV + '</button>' +
+        '<div class="sm-sub" id="sm-sub-' + n + '"><div><ul>' + it[1].map(function (l) { return '<li><a href="' + l[0] + '"' + cur(l[0]) + '>' + esc(l[1]) + '</a></li>' }).join('') + '</ul></div></div></div>'
+    }).join('')
+    sm.innerHTML = '<div class="sm-top"><a class="brand" href="/" aria-label="Candor home"><img src="/assets/icon.svg" alt="" width="26" height="26"><b>Candor<span>.</span></b></a>' +
+      '<button type="button" class="sm-x" aria-label="Close menu">' + XICON + '</button></div>' +
+      '<nav class="sm-list" aria-label="Site">' + rows + '</nav>' +
+      '<div class="sm-bot"><a class="sm-cta" href="/start">Start free for a month</a>' +
+      '<div class="sm-links"><a href="/contact">Contact</a><span aria-hidden="true">&middot;</span><a href="/demo">Get a look</a><span aria-hidden="true">&middot;</span><a href="/privacy">Privacy</a></div></div>'
+    document.body.appendChild(sm)
+    // Collapsed sections stay out of the tab order.
+    var syncSub = function (b) {
+      var sub = document.getElementById(b.getAttribute('aria-controls'))
+      if (sub) sub.querySelectorAll('a').forEach(function (a) { a.tabIndex = b.getAttribute('aria-expanded') === 'true' ? 0 : -1 })
+    }
+    sm.querySelectorAll('.sm-row>button').forEach(function (b) {
+      syncSub(b)
+      b.addEventListener('click', function () {
+        b.setAttribute('aria-expanded', b.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')
+        syncSub(b)
+      })
     })
+    var openMenu = function () {
+      sm.hidden = false
+      void sm.offsetWidth // start the fade from the closed state
+      sm.classList.add('open')
+      document.documentElement.classList.add('sm-lock')
+      toggle.setAttribute('aria-expanded', 'true')
+      sm.querySelector('.sm-x').focus()
+    }
+    var closeMenu = function (back) {
+      if (!sm.classList.contains('open')) return
+      sm.classList.remove('open')
+      document.documentElement.classList.remove('sm-lock')
+      toggle.setAttribute('aria-expanded', 'false')
+      setTimeout(function () { if (!sm.classList.contains('open')) sm.hidden = true }, 230)
+      if (back !== false) toggle.focus()
+    }
+    toggle.setAttribute('aria-controls', 'site-menu')
+    toggle.setAttribute('aria-expanded', 'false')
+    toggle.addEventListener('click', openMenu)
+    sm.querySelector('.sm-x').addEventListener('click', function () { closeMenu() })
+    sm.addEventListener('click', function (e) { if (e.target.closest('a')) closeMenu(false) })
+    sm.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { closeMenu(); return }
+      if (e.key !== 'Tab') return
+      // Keep focus inside the menu while it is open.
+      var f = [].filter.call(sm.querySelectorAll('a,button'), function (el) { return el.tabIndex >= 0 && el.offsetParent !== null })
+      if (!f.length) return
+      if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus() }
+      else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus() }
+    })
+    // Widening past the phone layout closes it.
+    if (window.matchMedia) matchMedia('(min-width:901px)').addEventListener('change', function (q) { if (q.matches) closeMenu(false) })
   }
+
+  // ---- Contact form: a dialog from any /contact link, inline on /contact ----
+  //
+  // Sent to app.candor.legal, which emails it to Jesse (reply-to the sender)
+  // and stores nothing (app/server/siteContactApi.mjs). Client identifiers are
+  // refused there; the note under the form asks people to leave them out.
+  var CONTACT_URL = 'https://app.candor.legal/api/site/contact'
+  var TOPICS = [
+    ['walkthrough', 'A walkthrough of Candor'],
+    ['trial', 'Starting a free trial'],
+    ['pricing', 'Pricing and plans'],
+    ['security', 'Security or a vendor review'],
+    ['carrier', 'Carriers, brokers and partnerships'],
+    ['other', 'Something else'],
+  ]
+  var SIZES = [['', 'Choose one'], ['1', 'Just me'], ['2-5', '2 to 5'], ['6-20', '6 to 20'], ['21-50', '21 to 50'], ['51+', 'More than 50']]
+  var EMAILISH = /^[^\s@]{1,64}@[^\s@]+\.[a-z]{2,24}$/i
+  var formN = 0
+  function contactForm(inDialog) {
+    var n = ++formN
+    var id = function (s) { return 'cf' + n + '-' + s }
+    var wrap = document.createElement('div')
+    wrap.className = 'cf'
+    var opts = function (list, sel) { return list.map(function (o) { return '<option value="' + o[0] + '"' + (o[0] === sel ? ' selected' : '') + '>' + esc(o[1]) + '</option>' }).join('') }
+    var close = inDialog ? '<button type="button" class="cf-close" aria-label="Close">' + XICON + '</button>' : ''
+    function step1(v) {
+      // On /contact the page itself carries the heading and introduction.
+      wrap.innerHTML = close + (inDialog
+        ? '<h2 id="' + id('h') + '">Talk to Candor</h2>' +
+          '<p class="cf-intro">Questions about the product, a walkthrough on your own matters, pricing, or a security review. Jesse reads every message and writes back himself.</p>'
+        : '') +
+        '<form novalidate>' +
+        '<div class="cf-field"><label for="' + id('email') + '">Work email<i aria-hidden="true">*</i></label>' +
+        '<input id="' + id('email') + '" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@yourfirm.com" required aria-describedby="' + id('email-e') + '" value="' + esc(v.email || '') + '">' +
+        '<span class="cf-err" id="' + id('email-e') + '" role="alert"></span></div>' +
+        '<div class="cf-field"><label for="' + id('topic') + '">What can we help you with?<i aria-hidden="true">*</i></label>' +
+        '<select id="' + id('topic') + '" name="topic">' + opts(TOPICS, v.topic || 'walkthrough') + '</select></div>' +
+        '<button class="cf-go" type="submit">Continue <span aria-hidden="true">&rarr;</span></button>' +
+        '</form>'
+      var f = wrap.querySelector('form')
+      f.addEventListener('submit', function (e) {
+        e.preventDefault()
+        var email = f.email.value.trim()
+        var err = wrap.querySelector('#' + id('email-e'))
+        if (!EMAILISH.test(email)) {
+          err.textContent = 'Please enter a valid work email address'
+          f.email.setAttribute('aria-invalid', 'true')
+          f.email.focus()
+          return
+        }
+        step2({ email: email, topic: f.topic.value })
+      })
+      f.email.addEventListener('input', function () { f.email.removeAttribute('aria-invalid'); wrap.querySelector('#' + id('email-e')).textContent = '' })
+    }
+    function step2(v) {
+      wrap.innerHTML = close +
+        '<h2 id="' + id('h') + '">A little about you</h2>' +
+        '<p class="cf-intro">The reply goes to <strong>' + esc(v.email) + '</strong>.</p>' +
+        '<form novalidate>' +
+        '<div class="cf-two"><div class="cf-field"><label for="' + id('name') + '">Your name<i aria-hidden="true">*</i></label>' +
+        '<input id="' + id('name') + '" name="name" type="text" autocomplete="name" maxlength="100" required value="' + esc(v.name || '') + '"></div>' +
+        '<div class="cf-field"><label for="' + id('firm') + '">Firm<small>optional</small></label>' +
+        '<input id="' + id('firm') + '" name="firm" type="text" autocomplete="organization" maxlength="150" value="' + esc(v.firm || '') + '"></div></div>' +
+        '<div class="cf-field"><label for="' + id('size') + '">Attorneys at the firm<small>optional</small></label>' +
+        '<select id="' + id('size') + '" name="size">' + opts(SIZES, v.size || '') + '</select></div>' +
+        '<div class="cf-field"><label for="' + id('msg') + '">Message<i aria-hidden="true">*</i></label>' +
+        '<textarea id="' + id('msg') + '" name="message" maxlength="2000" required placeholder="How your firm uses AI today, and what you would like to see."></textarea></div>' +
+        '<div class="cf-hp" aria-hidden="true"><label>Leave this empty<input name="hp" tabindex="-1" autocomplete="off"></label></div>' +
+        '<span class="cf-err" id="' + id('send-e') + '" role="alert"></span>' +
+        '<button class="cf-go" type="submit">Send message <span aria-hidden="true">&rarr;</span></button>' +
+        '<button class="cf-back" type="button">&larr; Back</button>' +
+        '<p class="cf-fine">Please leave out anything about a client: no names, numbers or case details. Your message is emailed to Jesse and not stored by Candor. <a href="/privacy">Privacy</a></p>' +
+        '</form>'
+      var f = wrap.querySelector('form')
+      var err = wrap.querySelector('#' + id('send-e'))
+      if (v.message) f.message.value = v.message
+      wrap.querySelector('.cf-back').addEventListener('click', function () { step1(v) })
+      f.addEventListener('submit', function (e) {
+        e.preventDefault()
+        var body = { email: v.email, topic: v.topic, name: f.name.value.trim(), firm: f.firm.value.trim(), size: f.size.value, message: f.message.value.trim(), hp: f.hp.value }
+        f.name.removeAttribute('aria-invalid'); f.message.removeAttribute('aria-invalid')
+        if (!body.name) { err.textContent = 'Please add your name.'; f.name.setAttribute('aria-invalid', 'true'); f.name.focus(); return }
+        if (!body.message) { err.textContent = 'Please write a short message.'; f.message.setAttribute('aria-invalid', 'true'); f.message.focus(); return }
+        err.textContent = ''
+        var go = f.querySelector('.cf-go')
+        go.disabled = true
+        go.firstChild.textContent = 'Sending… '
+        var fail = function (msg) {
+          go.disabled = false
+          go.firstChild.textContent = 'Send message '
+          err.innerHTML = esc(msg || 'Your message could not be sent just now.') + (/jesse@candor\.legal/.test(msg || '') ? '' : ' You can also write to <a href="mailto:jesse@candor.legal">jesse@candor.legal</a>.')
+        }
+        // text/plain keeps this a simple request (no preflight).
+        fetch(CONTACT_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(body) })
+          .then(function (r) { return r.json().catch(function () { return {} }).then(function (j) { return { ok: r.ok && j.ok, j: j } }) })
+          .then(function (res) {
+            if (!res.ok) return fail(res.j && res.j.error)
+            done(v.email)
+          }, function () { fail('Your message could not be sent just now.') })
+        v.name = body.name; v.firm = body.firm; v.size = body.size; v.message = body.message
+      })
+      f.name.focus()
+    }
+    function done(email) {
+      wrap.innerHTML = close +
+        '<div class="cf-done"><div class="cf-tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>' +
+        '<h2 id="' + id('h') + '" tabindex="-1">Message sent</h2>' +
+        '<p class="cf-intro">Thanks. Jesse will reply to <strong>' + esc(email) + '</strong>. While you wait, you can see the product in 90 seconds.</p>' +
+        '<a class="cf-go" href="/#watch" style="text-decoration:none">Watch the walkthrough</a></div>'
+      var h = wrap.querySelector('h2'); if (h) h.focus()
+    }
+    step1({})
+    return { el: wrap, labelId: id('h') }
+  }
+
+  var host = document.getElementById('contact-form')
+  if (host) host.appendChild(contactForm(false).el)
+
+  var dlg = null
+  function openContact() {
+    if (!window.HTMLDialogElement) { location.href = '/contact'; return }
+    if (dlg) dlg.remove()
+    dlg = document.createElement('dialog')
+    dlg.className = 'cf-dlg'
+    var form = contactForm(true)
+    dlg.setAttribute('aria-labelledby', form.labelId)
+    dlg.appendChild(form.el)
+    document.body.appendChild(dlg)
+    dlg.addEventListener('click', function (e) {
+      if (e.target === dlg || e.target.closest('.cf-close')) dlg.close()
+    })
+    dlg.addEventListener('close', function () { document.documentElement.classList.remove('sm-lock') })
+    document.documentElement.classList.add('sm-lock')
+    dlg.showModal()
+    var first = dlg.querySelector('input'); if (first) first.focus()
+  }
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+    var a = e.target.closest ? e.target.closest('a[href="/contact"],[data-contact]') : null
+    if (!a || host) return
+    e.preventDefault()
+    openContact()
+  })
 
   // Moving content can be paused (WCAG 2.2.2): a button on each scrolling strip.
   document.querySelectorAll('.works-track').forEach(function (track) {

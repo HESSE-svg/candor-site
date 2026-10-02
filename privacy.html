@@ -28,12 +28,13 @@
   .lead-in{border-left:4px solid var(--seal);background:var(--soft);border-radius:8px;padding:14px 18px;font-size:14.5px;margin-top:var(--s3)}
 </style>
 <link rel="canonical" href="https://candor.legal/privacy">
+<link rel="stylesheet" href="/assets/chrome.css?v=1">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
   <a class="brand" href="/" aria-label="Candor home"><img class="mk" src="/assets/icon.svg" alt="" width="26" height="26"><span class="name">Candor<span>.</span></span></a>
   <nav class="navlinks" aria-label="Primary"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/news">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="m-cta" href="/start">Start free</a></nav>
-  <div class="nav-r"><a class="btn" href="/start">Start free</a></div>
+  <div class="nav-r"><a class="nav-contact" href="/contact">Contact</a><a class="btn" href="/start">Start free</a></div>
   <button type="button" class="navtoggle" aria-label="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
 </div></header>
 
@@ -55,6 +56,7 @@
     <li><b>Fonts.</b> Pages load their typefaces from Google Fonts, so your browser contacts Google when a page opens.</li>
     <li><b>Our own step counter.</b> To see where firms lose interest, the site counts four steps: a visit, opening the start page, clicking through to checkout, and reaching the welcome page after checkout. Your browser sends only the name of the step. We keep a total per step per day and nothing else: no cookie from us, no visitor ID, no IP address, no record of which pages you read.</li>
     <li><b>Advertising measurement.</b> If we advertise on Google, the site loads Google's tag, which uses cookies to tell Google when an ad led to a checkout or a trial. It is not loaded for browsers that send a Global Privacy Control or Do Not Track signal. When it is active, Google's own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a> applies to what it collects.</li>
+    <li><b>The Contact form.</b> A message you send from the Contact form, with the name, firm, firm size and email address you give, is emailed to Jesse at jesse@candor.legal so he can reply. Candor does not store it. A copy stays in our email provider's sent log for its usual retention period and in Jesse's inbox. Messages that look like they contain client details are refused and not sent. We use your IP address only for a few minutes to stop abuse, and never store it.</li>
     <li><b>Tracker updates.</b> If you sign up on the AI sanctions tracker for updates, we keep your email address, that you asked for tracker updates, and when you signed up, confirmed or unsubscribed. We email you once to confirm, and nothing more unless you press Confirm. Every update has a one-click unsubscribe link. We use your IP address only for a few minutes to stop abuse, and never store it.</li>
     <li><b>Starting a trial.</b> The start page passes the plan you choose, your firm name, attorney count and email to Stripe, which runs the checkout. The form's contents are never sent to our step counter.</li>
   </ul>
@@ -96,7 +98,7 @@
     <li><b>Render</b>: hosts the Candor software and its database, in the United States.</li>
     <li><b>Clerk</b>: sign-in, and the invitation emails a firm administrator sends to add people to the firm.</li>
     <li><b>Stripe</b>: payments.</li>
-    <li><b>Resend</b>: delivers Candor's email. It sends our own internal note that a firm has signed up (the firm name as entered at signup, plan, attorney count, signup time, whether the workspace was set up automatically, and Candor's and Stripe's reference numbers for the signup; never the buyer's name or email), the welcome email and setup, trial and billing reminders to the person who signed up, which carry their email address and the sign-in link, nothing else, the confirmation email to anyone who asks for AI sanctions tracker updates, and messages people send us from the app's Help page (delivered to our inbox).</li>
+    <li><b>Resend</b>: delivers Candor's email. It sends our own internal note that a firm has signed up (the firm name as entered at signup, plan, attorney count, signup time, whether the workspace was set up automatically, and Candor's and Stripe's reference numbers for the signup; never the buyer's name or email), the welcome email and setup, trial and billing reminders to the person who signed up, which carry their email address and the sign-in link, nothing else, the confirmation email to anyone who asks for AI sanctions tracker updates, messages people send us from the app's Help page, and messages from the site's Contact form (both delivered to our inbox).</li>
     <li><b>Google</b>: our email, the website's fonts, and advertising measurement when we advertise.</li>
     <li><b>Free Law Project (CourtListener)</b>: case citation lookups, as described above.</li>
     <li><b>Legal Information Institute (Cornell Law School)</b> and the <b>U.S. Government Publishing Office</b> (govinfo, when enabled): statute lookups, as described above.</li>
@@ -130,19 +132,28 @@
 </section>
 </main>
 
-<footer><div class="wrap">
-  <div class="foot-grid">
-    <div>
-      <span class="brand-seal" aria-hidden="true"></span><span class="name" style="font-family:var(--f-serif);font-size:22px;color:var(--navy)">Candor<span style="color:var(--ox)">.</span></span>
-      <p style="margin-top:10px;max-width:22em">The AI your firm works in, with the record built in.</p>
-      <div class="social">
-        <a href="https://www.instagram.com/candor.legal" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-        <a href="https://www.linkedin.com/in/jesse-hollar-084999283" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
-      </div>
-    </div>
-    <div class="foot-links"><a href="/product">Product</a><a href="/ai-governance-software">AI governance software</a><a href="/plan">Our plan</a><a href="/pattern-capture">Pattern Capture</a><a href="/why-now">Why now</a><a href="/news">News</a><a href="/resources">Free tools</a><a href="/pricing">Pricing</a><a href="/renewal-packet">Renewal packet</a><a href="/security">Security</a><a href="/international">International</a><a href="/changelog">Changelog</a><a href="/about">About</a><a href="/demo">Contact</a><a href="/privacy">Privacy</a><a href="/accessibility">Accessibility</a></div>
+<footer class="sf"><div class="sf-in">
+  <div class="sf-top">
+    <div><a class="sf-brand" href="/" aria-label="Candor home"><img src="/assets/icon.svg" alt="" width="28" height="28"><b>Candor<span>.</span></b></a>
+      <p class="sf-tag">The AI your firm works in, with the record built in.</p></div>
+    <div class="sf-act"><a class="sf-start" href="/start">Start free</a><a href="/contact">Contact us</a></div>
   </div>
-  <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm's attorneys use to make that judgment themselves. © 2026 Candor · <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
+  <nav class="sf-cols" aria-label="Footer">
+    <div><h2>Product</h2><ul><li><a href="/product">How Candor works</a></li><li><a href="/ai-governance-software">AI governance software</a></li><li><a href="/review-demo">Click through a review</a></li><li><a href="/pattern-capture">Pattern Capture</a></li><li><a href="/renewal-packet">Carrier renewal packet</a></li><li><a href="/changelog">What&rsquo;s new</a></li></ul></div>
+    <div><h2>Get started</h2><ul><li><a href="/start">Start free for a month</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/demo">Get a look</a></li><li><a href="/contact">Contact</a></li></ul></div>
+    <div><h2>Resources</h2><ul><li><a href="/resources">Free tools</a></li><li><a href="/guides">Guides</a></li><li><a href="/rules">AI rules by state</a></li><li><a href="/ai-rules">AI ethics rules</a></li><li><a href="/ai-sanctions">AI sanctions tracker</a></li><li><a href="/news">News</a></li></ul></div>
+    <div><h2>Compare</h2><ul><li><a href="/vs/manual-tracking">vs manual tracking</a></li><li><a href="/vs/ai-dlp">vs AI data-loss tools</a></li><li><a href="/vs/claire">vs Claire</a></li><li><a href="/vs/credo-ai">vs Credo AI</a></li><li><a href="/vs/intapp-celeste">vs Intapp Celeste</a></li><li><a href="/vs/lenavix">vs Lenavix</a></li><li><a href="/vs/roval">vs Roval</a></li></ul></div>
+    <div><h2>Company</h2><ul><li><a href="/about">About</a></li><li><a href="/plan">Our plan</a></li><li><a href="/why-now">Why now</a></li><li><a href="/international">International</a></li></ul></div>
+    <div><h2>Trust</h2><ul><li><a href="/security">Security</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/accessibility">Accessibility</a></li></ul></div>
+  </nav>
+  <div class="sf-bot">
+    <p class="sf-copy">&copy; 2026 Candor &middot; <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
+    <div class="sf-social">
+      <a href="https://www.linkedin.com/in/jesse-hollar-084999283" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
+      <a href="https://www.instagram.com/candor.legal" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+    </div>
+  </div>
+  <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm&rsquo;s attorneys use to make that judgment themselves.</p>
 </div></footer>
-<script src="/assets/site.js?v=9"></script>
+<script src="/assets/site.js?v=10"></script>
 </body></html>

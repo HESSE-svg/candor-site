@@ -1,0 +1,129 @@
+/* Candor: the parts every page shares, loaded after each page's own styles.
+   The full-screen phone menu, the grouped footer, and the Contact form.
+   Colors are written out (not page tokens) because the homepage and the
+   other pages name their tokens differently. */
+
+/* ---------- header: Contact link and the round menu button ---------- */
+.nav-r .nav-contact{font-size:14px;color:#A8A8B0;text-decoration:none;padding:6px 12px;border-radius:999px;transition:color .2s,background .2s}
+.nav-r .nav-contact:hover{color:#FAFAF9;background:#16161A;text-decoration:none}
+.navtoggle{width:44px;height:44px;border-radius:50%;border:0;background:#1A1A1E;color:#FAFAF9;transition:background .2s}
+.navtoggle:hover{background:#26262B}
+@media(max-width:900px){.nav-r .nav-contact{display:none}}
+
+/* ---------- phone menu: full screen, sections that open in place ---------- */
+.sm{position:fixed;inset:0;z-index:200;background:#0A0A0B;display:flex;flex-direction:column;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .22s ease,transform .22s ease,visibility 0s linear .22s}
+.sm.open{opacity:1;visibility:visible;transform:none;transition:opacity .22s ease,transform .22s ease}
+.sm-top{display:flex;align-items:center;justify-content:space-between;height:62px;padding:0 16px;flex:none}
+.sm-top .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.sm-top .brand img{width:26px;height:26px;border-radius:7px;display:block}
+.sm-top .brand b{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:23px;color:#FAFAF9;line-height:1}
+.sm-top .brand b span{color:#C4523F}
+.sm-x{width:44px;height:44px;border-radius:50%;border:0;background:#1A1A1E;color:#FAFAF9;display:grid;place-items:center;cursor:pointer}
+.sm-x:hover{background:#26262B}
+.sm-x svg{width:16px;height:16px}
+.sm-list{flex:1;overflow-y:auto;padding:22px 20px 8px;overscroll-behavior:contain}
+.sm-row{border-bottom:1px solid #1F1F23}
+.sm-row>a,.sm-row>button{display:flex;width:100%;align-items:center;justify-content:space-between;padding:18px 0;background:none;border:0;font:500 24px/1.15 'Inter',system-ui,sans-serif;letter-spacing:-.01em;color:#FAFAF9;text-decoration:none;cursor:pointer;text-align:left}
+.sm-row>a:hover{text-decoration:none}
+.sm-row>button svg{width:16px;height:16px;color:#8B8B94;transition:transform .25s ease}
+.sm-row>button[aria-expanded="true"] svg{transform:rotate(180deg)}
+.sm-sub{display:grid;grid-template-rows:0fr;transition:grid-template-rows .28s ease}
+.sm-row>button[aria-expanded="true"]+.sm-sub{grid-template-rows:1fr}
+.sm-sub>div{overflow:hidden}
+.sm-sub ul{list-style:none;margin:0;padding:0 0 16px}
+.sm-sub a{display:block;padding:9px 0;font-size:17px;color:#A8A8B0;text-decoration:none}
+.sm-sub a:hover,.sm-sub a[aria-current="page"]{color:#FAFAF9;text-decoration:none}
+.sm-sub a small{display:block;font-size:13px;color:#6E6E78;margin-top:2px}
+.sm-bot{flex:none;padding:16px 20px calc(18px + env(safe-area-inset-bottom))}
+.sm-cta{display:flex;align-items:center;justify-content:center;min-height:54px;border-radius:999px;background:#FAFAF9;color:#09090B;font:500 17px 'Inter',system-ui,sans-serif;text-decoration:none}
+.sm-cta:hover{background:#E4E4E7;text-decoration:none}
+.sm-links{display:flex;justify-content:center;gap:14px;margin-top:16px;font-size:14px;color:#3A3A42}
+.sm-links a{color:#8B8B94;text-decoration:none}
+.sm-links a:hover{color:#FAFAF9}
+html.sm-lock,html.sm-lock body{overflow:hidden}
+@media(min-width:901px){.sm{display:none}}
+
+/* ---------- footer: grouped and stacked ---------- */
+footer.sf{margin-top:80px;border-top:1px solid #1F1F23;padding:56px 0 40px;color:#8B8B94;font-size:14px;line-height:1.6;background:#09090B}
+.sf-in{max-width:1180px;margin:0 auto;padding:0 28px}
+.sf-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid #1F1F23}
+.sf-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.sf-brand:hover{text-decoration:none}
+.sf-brand img{width:28px;height:28px;border-radius:7px;display:block}
+.sf-brand b{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:26px;color:#FAFAF9;line-height:1}
+.sf-brand b span{color:#C4523F}
+.sf-tag{margin:12px 0 0;color:#A8A8B0;max-width:26em}
+.sf-act{display:flex;gap:10px;flex-wrap:wrap}
+.sf-act a{display:inline-flex;align-items:center;min-height:42px;padding:0 20px;border-radius:999px;font-size:14.5px;font-weight:500;text-decoration:none;border:1px solid #2A2A30;color:#FAFAF9}
+.sf-act a:hover{background:#16161A;text-decoration:none}
+.sf-act a.sf-start{background:#FAFAF9;border-color:#FAFAF9;color:#09090B}
+.sf-act a.sf-start:hover{background:#E4E4E7}
+.sf-cols{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:36px 24px;padding:40px 0}
+.sf-cols h2{font:500 14px/1.3 'Inter',system-ui,sans-serif;letter-spacing:0;color:#FAFAF9;margin:0 0 14px}
+.sf-cols ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+footer.sf .sf-cols a{color:#A8A8B0;text-decoration:none;font-size:14px}
+footer.sf .sf-cols a:hover{color:#FAFAF9;text-decoration:none}
+.sf-bot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid #1F1F23;padding-top:24px}
+.sf-copy{margin:0;color:#8B8B94}
+footer.sf .sf-copy a{color:#A8A8B0;text-decoration:none}
+footer.sf .sf-copy a:hover{color:#FAFAF9}
+.sf-social{display:flex;gap:16px}
+.sf-social a{color:#8B8B94;display:inline-flex}
+.sf-social a:hover{color:#FAFAF9}
+.sf-social svg{width:19px;height:19px;display:block}
+footer.sf .disc{margin:20px 0 0;font-size:12.5px;line-height:1.6;color:#8B8B94;max-width:90ch}
+footer.sf .disc a{color:#A8A8B0}
+@media(max-width:1000px){.sf-cols{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:640px){
+  footer.sf{padding-top:44px}
+  .sf-in{padding:0 20px}
+  .sf-act{width:100%}.sf-act a{flex:1;justify-content:center}
+  .sf-cols{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 20px}
+  footer.sf .sf-cols a{font-size:16px}
+  .sf-cols ul{gap:12px}
+  .sf-cols h2{font-size:16px}
+}
+
+/* ---------- Contact form (a dialog, and inline on /contact) ---------- */
+.cf-dlg{border:0;padding:0;margin:auto;background:transparent;max-width:min(560px,calc(100vw - 24px));width:100%;color:#E4E4E7}
+.cf-dlg::backdrop{background:rgba(5,5,7,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.cf-dlg[open]{animation:cfIn .22s ease}
+@keyframes cfIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.cf{position:relative;background:#111114;border:1px solid #2A2A30;border-radius:18px;padding:32px 28px 28px;font-family:'Inter',system-ui,sans-serif;text-align:left}
+.cf-close{position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:50%;border:0;background:#1A1A1E;color:#FAFAF9;display:grid;place-items:center;cursor:pointer}
+.cf-close:hover{background:#26262B}
+.cf-close svg{width:14px;height:14px}
+.cf h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:36px;line-height:1.05;letter-spacing:-.02em;color:#FAFAF9;margin:0 40px 12px 0}
+.cf-intro{font-size:15.5px;line-height:1.6;color:#A8A8B0;margin:0 0 22px}
+.cf-field{margin:0 0 18px}
+.cf-field label{display:block;font-size:14px;font-weight:500;color:#E4E4E7;margin:0 0 8px}
+.cf-field label i{color:#E07A63;font-style:normal;margin-left:2px}
+.cf-field label small{font-weight:400;color:#8B8B94;margin-left:6px}
+.cf input,.cf select,.cf textarea{display:block;width:100%;font:16px/1.4 'Inter',system-ui,sans-serif;color:#FAFAF9;background:#0C0C0E;border:1px solid #2A2A30;border-radius:10px;padding:13px 14px;outline:none;transition:border-color .15s,box-shadow .15s}
+.cf textarea{min-height:130px;resize:vertical}
+.cf select{appearance:none;-webkit-appearance:none;padding-right:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4.5l4 4 4-4' fill='none' stroke='%238B8B94' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center}
+.cf input::placeholder,.cf textarea::placeholder{color:#5C5C66}
+.cf input:focus,.cf select:focus,.cf textarea:focus{border-color:#6E6E78;box-shadow:0 0 0 3px rgba(250,250,249,.08)}
+.cf [aria-invalid="true"]{border-color:#E07A63}
+.cf-err{display:block;font-size:14px;color:#E07A63;margin-top:8px;min-height:0}
+.cf-err:empty{display:none}
+.cf-two{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.cf-go{display:flex;width:100%;align-items:center;justify-content:center;gap:8px;min-height:54px;margin-top:6px;border:0;border-radius:999px;background:#FAFAF9;color:#09090B;font:500 17px 'Inter',system-ui,sans-serif;cursor:pointer;transition:background .15s}
+.cf-go:hover{background:#E4E4E7}
+.cf-go[disabled]{opacity:.6;cursor:default}
+.cf-back{display:inline-block;margin-top:14px;background:none;border:0;color:#8B8B94;font:14px 'Inter',system-ui,sans-serif;cursor:pointer;padding:4px 0}
+.cf-back:hover{color:#FAFAF9}
+.cf-fine{font-size:12.5px;line-height:1.55;color:#8B8B94;margin:16px 0 0}
+.cf-fine a{color:#A8A8B0}
+.cf-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.cf-done{text-align:center;padding:12px 0 4px}
+.cf-done .cf-tick{width:52px;height:52px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:rgba(134,205,180,.12);color:#86CDB4}
+.cf-done .cf-tick svg{width:22px;height:22px}
+.cf-done h2{margin:0 0 10px}
+.cf-inline .cf{max-width:560px;margin:0 auto}
+@media(max-width:560px){
+  .cf{padding:28px 20px 22px;border-radius:16px}
+  .cf h2{font-size:31px}
+  .cf-two{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){.sm,.sm-sub,.sm-row>button svg{transition:none}.cf-dlg[open]{animation:none}}
