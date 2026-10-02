@@ -1,8 +1,8 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Candor: AI governance software for law firms, built by a claims adjuster</title>
-<meta name="description" content="Built by a former claims adjuster: Candor logs each AI use to its matter, screens client details and keeps a tamper-evident record a carrier can read.">
+<title>Candor: AI governance software for law firms</title>
+<meta name="description" content="Candor screens client details before they reach an AI tool, flags citations that may need a second look, and files every AI use to its matter with the attorney's sign-off. From $250 a month, first month free.">
 <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png?v=2" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/icon-192.png?v=2" sizes="192x192" type="image/png">
@@ -10,8 +10,8 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=2">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#09090B">
-<meta property="og:title" content="Candor: built by the side that reads the file afterward">
-<meta property="og:description" content="Built by a former claims adjuster, where a firm's records count for more than its word. Every AI use on its matter, signed off, on a record that shows if anyone changes it.">
+<meta property="og:title" content="Candor: proof your firm did the work">
+<meta property="og:description" content="Every AI use on its matter, screened, checked and signed off. The record a carrier or court asks for, already written.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://candor.legal/">
 <meta property="og:image" content="https://candor.legal/og.png">
@@ -19,605 +19,161 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ===== Draft J: H with I's product scene, numbered catches and step line ===== */
+/* Homepage, 2026-10-02: full-screen panels, one statement each, the real
+   product beside it (the SpaceX / Starlink setup) in the Ink look. */
 :root{
-  --f-serif:'Instrument Serif',Georgia,serif;--f-sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--f-mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
-  --bg:#09090B;--bg-2:#0E0E11;--card:#111114;--card-2:#16161A;--line:#1F1F23;--line-2:#2A2A30;
+  --bg:#09090B;--card:#111114;--card-2:#16161A;--line:#1F1F23;--line-2:#2A2A30;
   --text:#FAFAF9;--text-2:#A8A8B0;--text-3:#8B8B94;
-  --accent:#C4523F;--accent-2:#8E3A30;--rose:#F2C4B5;--gilt:#E3B866;--mint:#86CDB4;
-  /* product mock-up colours */
-  --navy:#1B2A41;--paper:#FAF8F5;--ink:#22201D;--muted:#5F5A52;--ox:#7A2E2E;--seal:#2F5D50;--brass:#9A6B1F;--rule:#E3DED6;--soft:#F2EEE7;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f-sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-h1,h2,h3,h4{font-family:var(--f-serif);font-weight:400;margin:0}
+  --accent:#C4523F;--red:#E07A63;--rose:#F2C4B5;--gilt:#E3B866;--mint:#86CDB4;
+  --f-serif:'Instrument Serif',Georgia,serif;--f-sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--f-mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+  color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--f-sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img,video{display:block}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 .skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:100;background:#fff;color:#000;padding:8px 12px}
 :focus-visible{outline:2px solid var(--gilt);outline-offset:3px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-.mono{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-.silver{background:linear-gradient(180deg,#FFFFFF 25%,#8E8E96 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.1em}
-.warm{background:linear-gradient(100deg,var(--rose),var(--gilt));-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.06em}
 
-/* buttons: white primary, as Vercel does */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:0 20px;border-radius:999px;font-size:14.5px;font-weight:500;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s;white-space:nowrap;font-family:inherit}
-.btn svg{width:14px;height:14px;transition:transform .2s}
-.btn:hover svg{transform:translateX(3px)}
-.btn-w{background:#FAFAF9;color:#09090B}
-.btn-w:hover{background:#E4E4E7}
-.btn-g{background:transparent;color:var(--text);border-color:var(--line-2)}
-.btn-g:hover{background:var(--card-2);border-color:#3A3A42}
-.btn-r{background:var(--accent);color:#fff}
-.btn-r:hover{background:#D25E4A}
-.btn .play{width:20px;height:20px;border-radius:50%;background:var(--text);color:var(--bg);display:grid;place-items:center}
-.btn .play svg{width:7px;height:7px;margin-left:2px}
-
-/* nav */
-.nav{position:sticky;top:0;z-index:50;background:rgba(9,9,11,.72);backdrop-filter:blur(14px) saturate(160%);border-bottom:1px solid var(--line)}
-.nav-in{display:flex;align-items:center;gap:26px;height:62px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.brand .mk{width:26px;height:26px;border-radius:7px;display:block;flex:none}
+/* header (menu, dropdowns and phone menu come from chrome.css + site.js) */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(9,9,11,.74);-webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:26px;height:62px;max-width:1280px;margin:0 auto;padding:0 28px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .mk{width:26px;height:26px;border-radius:7px;flex:none}
 .brand b{font-family:var(--f-serif);font-weight:400;font-size:23px}
 .brand b span{color:var(--accent)}
-.nav-links{display:flex;gap:2px}
-.nav-links a{font-size:14px;color:var(--text-2);text-decoration:none;padding:6px 11px;border-radius:999px;transition:color .2s,background .2s}
-.nav-links a:hover{color:var(--text);background:var(--card-2)}
 .nav-r{margin-left:auto;display:flex;align-items:center;gap:8px}
-.nav .btn{min-height:34px;padding:0 14px;font-size:13.5px}
-
-/* mobile menu (site.js toggles .open) */
-.nav-links .m-cta{display:none}
-.navtoggle{display:none;margin-left:auto;align-items:center;justify-content:center;width:40px;height:36px;border-radius:10px;border:1px solid var(--line-2);background:transparent;color:var(--text);cursor:pointer}
 .navtoggle svg{width:18px;height:18px}
-/* rotating announcement pill */
-.pill-set{display:inline-grid;text-align:left;overflow:hidden}
-.pill-set>span{grid-area:1/1;opacity:0;transform:translateY(70%);transition:opacity .5s ease,transform .5s cubic-bezier(.2,.8,.2,1);white-space:nowrap}
-.pill-set>span.on{opacity:1;transform:none}
-.pill-set>span.gone{transform:translateY(-70%)}
-/* video */
-.frame{display:block}
-.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
-.fs-btn{position:absolute;bottom:14px;right:14px;z-index:2;display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:12.5px;font-weight:500;line-height:1;color:var(--text);background:rgba(9,9,11,.7);border:1px solid var(--line-2);border-radius:999px;padding:9px 13px;cursor:pointer;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:0 26px;border-radius:999px;border:1px solid var(--line-2);font-size:15.5px;font-weight:500;color:var(--text);background:transparent;transition:background .2s,border-color .2s;cursor:pointer}
+.btn:hover{background:var(--card-2);border-color:#3A3A42}
+.btn-w{background:var(--text);border-color:var(--text);color:#09090B}
+.btn-w:hover{background:#E4E4E7;border-color:#E4E4E7}
+.btn svg{width:15px;height:15px;transition:transform .2s}
+.btn:hover svg{transform:translateX(3px)}
+header.nav .btn{min-height:36px;padding:0 15px;font-size:14px}
+
+/* type */
+.eyebrow{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt)}
+.num{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3)}
+.num b{color:var(--red);font-weight:500}
+h1,h2{font-family:var(--f-serif);font-weight:400;letter-spacing:-.03em;line-height:.95;background:linear-gradient(180deg,#FFFFFF 30%,#9C9CA4 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+h1{font-size:clamp(60px,8.2vw,132px);max-width:9.5ch;margin-top:18px}
+h2{font-size:clamp(50px,6.4vw,100px);max-width:9ch;margin-top:16px}
+h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(--gilt));-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.06em}
+.lead{margin-top:22px;max-width:30em;font-size:17.5px;line-height:1.6;color:var(--text-2)}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}
+
+/* panels: words left, the real screen bleeding off the right */
+.panel{position:relative;min-height:calc(100vh - 62px);min-height:calc(100svh - 62px);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:40px;padding:90px 0 80px 6vw;overflow:hidden;isolation:isolate}
+.panel+.panel{border-top:1px solid var(--line)}
+.copy{position:relative;z-index:2}
+.vis{position:relative;margin-right:-8vw}
+.shot{position:relative;border:1px solid var(--line-2);border-radius:14px;overflow:hidden;background:#0A0A0B;box-shadow:0 50px 140px -40px rgba(196,82,63,.35)}
+.shot-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);background:var(--card);font-family:var(--f-mono);font-size:11px;color:var(--text-3)}
+.shot-bar i{width:9px;height:9px;border-radius:50%;background:var(--line-2)}
+.shot-bar span{margin-left:8px}
+.shot img,.shot video{width:100%;height:auto}
+.glow::before{content:"";position:absolute;z-index:-1;inset:auto -10% -40% 30%;height:90%;background:radial-gradient(closest-side,rgba(196,82,63,.28),rgba(227,184,102,.06) 60%,transparent)}
+
+/* full screen (hero recording and walkthrough) */
+.fs-btn{position:absolute;bottom:14px;right:14px;z-index:3;display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:12.5px;font-weight:500;line-height:1;color:var(--text);background:rgba(9,9,11,.72);border:1px solid var(--line-2);border-radius:999px;padding:8px 12px;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .fs-btn:hover{background:rgba(9,9,11,.92)}
-.fs-btn svg{width:14px;height:14px;display:block}
-.frame:fullscreen,.frame:-webkit-full-screen{width:100vw;height:100vh;aspect-ratio:auto;border-radius:0}
-.frame.faux-fs{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:9999;border-radius:0;aspect-ratio:auto}
-.frame.faux-fs .fs-btn{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+.fs-btn svg{width:14px;height:14px}
+.vid:fullscreen,.vid.faux-fs{border:0;border-radius:0;background:#000;display:flex;align-items:center;justify-content:center}
+.vid.faux-fs{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:9999}
+.vid:fullscreen video,.vid.faux-fs video{width:100%;height:100%;object-fit:contain}
+.vid:fullscreen .shot-bar,.vid.faux-fs .shot-bar{display:none}
+.vid.faux-fs .fs-btn,.frame.faux-fs .fs-btn{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 html.fs-lock,html.fs-lock body{overflow:hidden;touch-action:none}
-.social{display:flex;gap:16px;margin-top:16px}
-.social a{color:var(--text-3);display:inline-flex}
-.social a:hover{color:var(--text)}
-.social svg{width:19px;height:19px;display:block}
-.disc a{color:var(--text-2)}
 
-/* ---------- hero ---------- */
-/* the seal: the record, signed. The ring of words turns slowly; the Pause button stops it. */
-.seal{position:relative;width:168px;height:168px;margin:0 auto}
-.seal::after{content:"";position:absolute;left:-70px;right:-70px;bottom:-50px;height:90px;z-index:-1;background:radial-gradient(closest-side,rgba(196,82,63,.5),transparent);filter:blur(18px)}
-.seal svg{display:block;width:100%;height:100%;overflow:visible}
-.seal .ring{transform-origin:100px 100px;animation:sealTurn 48s linear infinite}
-.seal.paused .ring{animation-play-state:paused}
-@keyframes sealTurn{to{transform:rotate(360deg)}}
-.close .seal{width:148px;height:148px;margin-bottom:40px}
-.hero{position:relative;overflow:hidden;text-align:center;padding:40px 0 0;isolation:isolate}
-.hero::before{content:"";position:absolute;left:50%;top:-260px;width:1100px;height:700px;transform:translateX(-50%);z-index:-1;background:radial-gradient(closest-side,rgba(196,82,63,.22),rgba(227,184,102,.06) 55%,transparent)}
-/* the record, as an object (Resend's cube, in Candor's terms) */
-.pill{display:inline-flex;align-items:center;gap:10px;margin-top:30px;padding:5px 6px 5px 14px;border-radius:999px;font-size:13px;color:var(--text-2);text-decoration:none;background:var(--card);border:1px solid var(--line-2);transition:border-color .2s}
-.pill:hover{border-color:#3A3A42}
-.pill b{font-weight:500;color:var(--text)}
-.pill i{font-style:normal;display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--text);background:var(--card-2);border:1px solid var(--line-2);border-radius:999px;padding:2px 10px}
-.eyebrow{display:block;margin-top:20px;color:var(--text-3)}
-.vq{font-family:var(--f-serif);font-size:clamp(46px,5.4vw,78px);line-height:1.1;letter-spacing:-.025em;margin:14px auto 0;max-width:21ch;display:grid;text-wrap:balance}
-.vq .q{grid-area:1/1;align-self:center;padding:.04em 0;opacity:0;transition:opacity .7s ease}
-.vq .q.on{opacity:1}
-.vq .q{padding-bottom:.08em;background:linear-gradient(180deg,#FFFFFF 30%,#8E8E96 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.vq em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(--gilt));-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.06em}
-.lede{font-size:18.5px;line-height:1.6;color:var(--text-2);max-width:58ch;margin:20px auto 0}
-.lede strong{color:var(--text);font-weight:600}
-.cta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:28px}
-.origin{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-size:13px;color:var(--text-3)}
-.origin .sig{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line-2);font-family:var(--f-serif);font-size:15px;color:var(--gilt)}
+/* hero */
+.hero::after{content:"";position:absolute;z-index:-1;left:-10%;top:-30%;width:80%;height:90%;background:radial-gradient(closest-side,rgba(196,82,63,.2),rgba(227,184,102,.05) 55%,transparent)}
+.quote{position:relative;margin-top:24px;min-height:3.3em;max-width:27em;font-size:19px;line-height:1.55;color:var(--text-2)}
+.quote span{position:absolute;inset:0 auto auto 0;opacity:0;transition:opacity .8s}
+.quote span.on{opacity:1}
+.quote em{font-style:normal;color:var(--rose)}
+.price{margin-top:28px;display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.price .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3)}
+.price b{display:block;margin-top:4px;font-family:var(--f-serif);font-weight:400;font-size:62px;line-height:.9;letter-spacing:-.02em}
+.price b i{font-style:normal;font-family:var(--f-sans);font-size:17px;color:var(--text-2);letter-spacing:0;margin-left:3px}
+.price small{font-size:13.5px;color:var(--text-3);padding-bottom:6px}
+.cap{margin-top:12px;font-size:12.5px;color:var(--text-3)}
 
-/* framed product, with Vercel corner marks */
-.framed{position:relative;margin:64px auto 0;max-width:1180px;padding:14px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.025),transparent 40%)}
-.framed::before{content:"";position:absolute;left:10%;right:10%;top:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--rose),var(--gilt),transparent)}
-.plus{position:absolute;width:13px;height:13px;color:var(--text-3)}
-.plus::before,.plus::after{content:"";position:absolute;background:currentColor}
-.plus::before{left:6px;top:0;width:1px;height:13px}.plus::after{top:6px;left:0;height:1px;width:13px}
-.p-tl{left:-7px;top:-7px}.p-tr{right:-7px;top:-7px}.p-bl{left:-7px;bottom:-7px}.p-br{right:-7px;bottom:-7px}
-.cap{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:16px;font-size:12px;color:var(--text-3)}
-.bars{display:flex;gap:5px}
-.bars span{position:relative;width:36px;height:2px;border-radius:2px;background:var(--line-2);overflow:hidden}
-.bars span::after{content:"";position:absolute;inset:0;background:var(--text);transform:scaleX(0);transform-origin:left}
-.bars span.done::after{transform:scaleX(1)}
-.bars span.on::after{animation:fill 6.2s linear forwards}
-.bars.paused span.on::after{animation-play-state:paused}
-@keyframes fill{to{transform:scaleX(1)}}
-.tiny{display:inline-flex;align-items:center;min-height:30px;font:inherit;font-size:12px;color:var(--text-2);background:transparent;border:1px solid var(--line-2);border-radius:999px;padding:0 12px;cursor:pointer}
-.tiny:hover{color:var(--text)}
+/* screening, drawn */
+.sv{font-family:var(--f-mono);font-size:clamp(14px,1.3vw,19px);line-height:1.95;margin-right:6vw}
+.sv .l{font-size:11px;letter-spacing:.16em;color:var(--text-3);margin:0 0 10px}
+.sv .t{padding:24px 26px;border:1px solid var(--line-2);border-radius:14px;background:var(--card)}
+.sv .t+.l{margin-top:22px}
+.sv .t.out{border-color:rgba(134,205,180,.25)}
+.raw{background:rgba(196,82,63,.22);color:#fff;border-radius:4px;padding:0 5px}
+.rep{color:var(--mint);border:1px solid rgba(134,205,180,.4);border-radius:5px;padding:0 6px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;font-family:var(--f-sans)}
+.chips span{font-size:12.5px;border:1px solid var(--line-2);border-radius:999px;padding:5px 12px;color:var(--text-2)}
+.chips span:first-child{color:var(--mint);border-color:rgba(134,205,180,.4)}
 
-/* app window (shared) */
-.win{position:relative;background:var(--paper);color:var(--ink);border-radius:12px;overflow:hidden;text-align:left;font-family:var(--f-sans)}
-.win-top{display:flex;align-items:center;gap:7px;padding:10px 14px;background:linear-gradient(180deg,#F3EFE8,#ECE6DC);border-bottom:1px solid var(--rule)}
-.win-top i{width:11px;height:11px;border-radius:50%;background:#D68A7A}.win-top i+i{background:#E2C27C}.win-top i+i+i{background:#8FBFA9}
-.win-url{margin:0 auto;display:flex;align-items:center;justify-content:center;gap:6px;font-family:var(--f-mono);font-size:11px;color:var(--muted);background:#fff;border:1px solid var(--rule);border-radius:999px;padding:4px 14px;width:min(300px,46%)}
-.win-url svg{width:10px;height:10px}
-.win-model{font-family:var(--f-mono);font-size:10px;color:var(--seal);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
-.win-model::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--seal);animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{50%{opacity:.35}}
-.win-grid{display:grid;grid-template-columns:200px minmax(0,1fr);min-height:470px}
-.sb{background:linear-gradient(180deg,#1E2F49,#16243A);padding:18px 12px;font-size:13px;color:#C7CFDA;display:flex;flex-direction:column;gap:1px}
-.sb .wm{font-family:var(--f-serif);font-size:23px;color:#fff;padding:0 10px 16px}
-.sb .wm span{color:#E9B8A8}
-.sb .g{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#8D9AAD;padding:12px 10px 5px}
-.sb .it{position:relative;padding:8px 12px;border-radius:9px;transition:background .3s,color .3s}
-.sb .it.on{background:linear-gradient(90deg,rgba(233,184,168,.2),rgba(233,184,168,.04));color:#fff;font-weight:600}
-.sb .it.on::before{content:"";position:absolute;left:-12px;top:8px;bottom:8px;width:3px;background:linear-gradient(#E9B8A8,#D9B26A);border-radius:0 3px 3px 0}
-.sb .cnt{float:right;font-family:var(--f-mono);font-size:10px;color:#fff;background:var(--ox);border-radius:999px;padding:0 6px}
-.pane-wrap{display:grid}
-.pane{grid-area:1/1;padding:24px 26px;opacity:0;visibility:hidden;transition:opacity .45s,visibility .45s;display:flex;flex-direction:column;gap:13px}
-.pane.on{opacity:1;visibility:visible}
-.ph{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.ph h4{font-size:30px;color:var(--navy);line-height:1}
-.ph span{font-family:var(--f-mono);font-size:10.5px;color:var(--muted);letter-spacing:.06em}
-.box{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:13px 15px;font-size:14px;line-height:1.6}
-.box .lab{display:flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.sw{border-radius:3px;padding:0 2px}
-.tok{background:linear-gradient(180deg,#22385A,var(--navy));color:#fff;font-family:var(--f-mono);font-size:11.5px;border-radius:5px;padding:1px 7px;white-space:nowrap;display:inline-block}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;line-height:1.4;border-radius:999px;padding:3px 10px;white-space:nowrap}
-.chip svg{width:11px;height:11px}
-.chip.ok{background:rgba(47,93,80,.12);color:var(--seal)}
-.chip.fl{background:rgba(154,107,31,.15);color:#7A5512}
-.chip.mu,.chip.wait{background:var(--soft);color:var(--muted)}
-.row2{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.bt{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(180deg,#9A3B33,#7A2E2E);color:#fff;font-size:12.5px;font-weight:600;border-radius:999px;padding:8px 16px}
-.bt.gh{background:transparent;color:var(--navy);border:1px solid var(--rule)}
-.cl{display:flex;flex-direction:column}
-.cl>div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule);font-size:13.5px}
-.cl>div:last-child{border-bottom:0}
-.cl small{display:block;color:var(--muted);font-size:11.5px}
-.tbl{width:100%;border-collapse:collapse;font-size:13px}
-.tbl th{font-family:var(--f-mono);font-size:9.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule)}
-.tbl td{padding:11px 8px;border-bottom:1px solid var(--rule)}
-.att{display:flex;gap:9px;font-size:12.5px;line-height:1.45;padding:11px 13px;border:1px dashed var(--rule);border-radius:12px;background:#fff}
-.att i{flex:none;width:16px;height:16px;border-radius:4px;border:1.5px solid var(--navy);font-style:normal;font-size:10px;display:grid;place-items:center;margin-top:1px;color:transparent}
-.att.done i{background:var(--navy);color:#fff}
-.anim .pane.on .sw{animation:mark .5s ease-out forwards}
-.anim .pane.on .sw:nth-of-type(2){animation-delay:.35s}
-@keyframes mark{from{background:transparent;box-shadow:inset 0 -2px 0 transparent}to{background:rgba(154,107,31,.18);box-shadow:inset 0 -2px 0 var(--brass)}}
-.anim .pane.on .reveal{animation:rise .5s ease-out both}
-.anim .pane.on .d1{animation-delay:.9s}.anim .pane.on .d3{animation-delay:1.9s}.anim .pane.on .d4{animation-delay:2.4s}
-@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.anim .pane.on .tok{animation:flip .45s ease-out both;animation-delay:1.25s}
-.anim .pane.on .tok.t2{animation-delay:1.5s}
-@keyframes flip{from{opacity:0;transform:rotateX(90deg)}to{opacity:1;transform:none}}
-.scan .res{display:inline-grid}.scan .res>*{grid-area:1/1}
-.scan .spin{width:14px;height:14px;border-radius:50%;border:2px solid var(--rule);border-top-color:var(--ox);justify-self:end;align-self:center;opacity:0}
-.anim .pane.on .scan .spin{opacity:1;animation:spin .7s linear infinite,gone .01s linear forwards}
-.anim .pane.on .scan .chip{animation:rise .35s ease-out both}
-.anim .pane.on .scan>div:nth-child(1) .spin{animation-delay:0s,1s}.anim .pane.on .scan>div:nth-child(1) .chip{animation-delay:1s}
-.anim .pane.on .scan>div:nth-child(2) .spin{animation-delay:0s,1.6s}.anim .pane.on .scan>div:nth-child(2) .chip{animation-delay:1.6s}
-.anim .pane.on .scan>div:nth-child(3) .spin{animation-delay:0s,2.2s}.anim .pane.on .scan>div:nth-child(3) .chip{animation-delay:2.2s}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes gone{to{opacity:0;visibility:hidden}}
-.newrow td{background:rgba(47,93,80,.07)}
-.anim .pane.on .newrow td{animation:rowin .6s ease-out both;animation-delay:.4s}
-@keyframes rowin{from{opacity:0;background:rgba(47,93,80,.22)}to{opacity:1;background:rgba(47,93,80,.07)}}
-.swap{display:inline-grid}.swap>*{grid-area:1/1}
-.swap .chip.wait{visibility:hidden}
-.anim .pane.on .swap .chip.wait{visibility:visible;animation:gone .01s linear forwards;animation-delay:2.2s}
-.anim .pane.on .swap .chip.ok{animation:rise .35s ease-out both;animation-delay:2.2s}
-.anim .pane.on .att i{animation:tick .3s ease-out forwards;animation-delay:1.4s}
-@keyframes tick{to{background:var(--navy);color:#fff}}
-.stamp{position:absolute;right:26px;bottom:62px;width:110px;height:110px;border-radius:50%;border:2px solid var(--seal);color:var(--seal);display:grid;place-items:center;text-align:center;font-family:var(--f-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;line-height:1.5;opacity:.92;transform:rotate(-14deg);pointer-events:none}
-.stamp b{display:block;font-family:var(--f-serif);font-weight:400;font-size:21px;letter-spacing:0;text-transform:none}
-.stamp::before{content:"";position:absolute;inset:5px;border-radius:50%;border:1px solid var(--seal)}
-.anim .stamp{opacity:0;transform:rotate(-14deg) scale(1.6)}
-.anim .pane.on .stamp{animation:stamp .35s cubic-bezier(.2,1.6,.4,1) forwards;animation-delay:2.6s}
-@keyframes stamp{to{opacity:.92;transform:rotate(-14deg) scale(1)}}
+/* walkthrough */
+.watch{display:block;text-align:center;padding:120px 6vw;border-top:1px solid var(--line)}
+.watch h2{margin:16px auto 0;max-width:12ch}
+.frame{position:relative;max-width:1080px;margin:48px auto 0;aspect-ratio:16/9;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:#0A0A0B}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.frame.faux-fs{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;max-width:none;margin:0;z-index:9999;border-radius:0;aspect-ratio:auto}
 
-/* logos */
-.logos{padding:72px 0 0;text-align:center}
-.logos .mono{color:var(--text-3)}
-.logo-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 44px;margin-top:22px;font-family:var(--f-serif);font-size:24px;color:#6E6E77}
-.logo-row span{transition:color .2s}
-.logo-row span:hover{color:var(--text)}
+/* tools */
+.tools{padding:90px 0;border-top:1px solid var(--line);overflow:hidden}
+.tools .eyebrow{padding:0 6vw;margin-bottom:26px}
+.track{display:flex;gap:56px;width:max-content;animation:slide 55s linear infinite;font-family:var(--f-serif);font-size:clamp(40px,5vw,76px);letter-spacing:-.02em;color:#6E6E78;white-space:nowrap}
+.track span:nth-child(3n+1){color:var(--text)}
+.track span:nth-child(3n+2){font-style:italic}
+.tools:hover .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
 
-/* section heads, Resend-style centered */
-.sec{padding:150px 0 0}
-.head{text-align:center;max-width:780px;margin:0 auto}
-.head .mono{color:var(--gilt)}
-.head h2{font-size:clamp(44px,5.6vw,80px);line-height:.98;letter-spacing:-.03em;margin-top:14px}
-.head p{font-size:18px;color:var(--text-2);margin:18px auto 0;max-width:58ch}
+/* price */
+.band{position:relative;padding:140px 6vw;border-top:1px solid var(--line);overflow:hidden;isolation:isolate}
+.band::before{content:"";position:absolute;z-index:-1;right:-10%;bottom:-40%;width:70%;height:100%;background:radial-gradient(closest-side,rgba(196,82,63,.22),transparent)}
+.band h2{max-width:13ch}
+.seg{display:inline-flex;flex-wrap:wrap;gap:4px;margin-top:40px;padding:4px;border:1px solid var(--line-2);border-radius:999px;background:#0A0A0B}
+.seg button{font:500 14px var(--f-sans);color:var(--text-2);background:none;border:0;border-radius:999px;padding:10px 18px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--text);color:#09090B}
+.big{margin-top:36px;display:flex;align-items:flex-end;gap:36px;flex-wrap:wrap}
+.big b{font-family:var(--f-serif);font-weight:400;font-size:clamp(88px,12vw,190px);line-height:.85;letter-spacing:-.03em}
+.big b i{font-style:normal;font-family:var(--f-sans);font-size:22px;letter-spacing:0;color:var(--text-2);margin-left:4px}
+.big .meta{font-size:15px;line-height:1.7;color:var(--text-2);padding-bottom:12px}
+.big .meta strong{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt)}
+.fine{margin-top:20px;font-size:13.5px;color:var(--text-3)}
 
-/* ---------- Vercel-style feature cells ---------- */
-.cells{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:64px;border:1px solid var(--line)}
-.cell{position:relative;padding:36px 36px 32px;display:flex;flex-direction:column;gap:6px;min-height:520px;overflow:hidden}
-.cell:nth-child(odd){border-right:1px solid var(--line)}
-.cell:nth-child(-n+2){border-bottom:1px solid var(--line)}
-.cell .k{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--text-2)}
-.cell .k svg{width:16px;height:16px;color:var(--text)}
-.cell h3{font-size:30px;line-height:1.1;letter-spacing:-.01em;margin-top:4px}
-.cell h3 span{color:var(--text-3)}
-.cell .stage{margin-top:auto;padding-top:28px}
-.cells .plus{z-index:2}
-.cells .p-mid{left:calc(50% - 6.5px);top:calc(50% - 6.5px)}
-/* dark mini-ui inside cells */
-.mini{background:var(--card);border:1px solid var(--line-2);border-radius:14px;overflow:hidden}
-.mini-h{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
-.mini-h .live{display:inline-flex;align-items:center;gap:6px;color:var(--mint)}
-.mini-h .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--mint);animation:pulse 1.6s infinite}
-.mini-b{padding:14px}
-.mini textarea{width:100%;min-height:96px;resize:none;border:1px solid var(--line-2);border-radius:10px;padding:11px 12px;font:inherit;font-size:14px;line-height:1.6;color:var(--text);background:var(--bg-2)}
-.mini textarea:focus{outline:1px solid var(--gilt);border-color:var(--gilt)}
-.arrow{display:flex;align-items:center;gap:10px;margin:10px 2px;font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
-.arrow::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line-2),transparent)}
-.out{min-height:96px;border:1px solid var(--line-2);border-radius:10px;padding:11px 12px;font-size:14px;line-height:1.75;color:var(--text-2);background:var(--bg-2);white-space:pre-wrap;word-break:break-word}
-.out .tk{font-family:var(--f-mono);font-size:11.5px;color:var(--rose);background:rgba(196,82,63,.14);border:1px solid rgba(196,82,63,.35);border-radius:5px;padding:1px 6px;animation:flip .3s ease-out both;white-space:nowrap}
-.dchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-.dchip{font-size:11.5px;font-weight:500;color:var(--text-2);border:1px solid var(--line-2);border-radius:999px;padding:3px 10px}
-.dchip.ok{color:var(--mint);border-color:rgba(134,205,180,.35);background:rgba(134,205,180,.08)}
-.note{font-size:12px;color:var(--text-3);margin-top:10px}
-.crow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--text)}
-.crow:last-child{border-bottom:0}
-.crow small{display:block;color:var(--text-3);font-size:12px}
-.crow .res{display:inline-grid;justify-items:end}.crow .res>*{grid-area:1/1}
-.crow .spin{width:15px;height:15px;border-radius:50%;border:2px solid var(--line-2);border-top-color:var(--gilt);animation:spin .7s linear infinite}
-.crow .st{opacity:0;font-size:11.5px;font-weight:600;border-radius:999px;padding:3px 10px}
-.st.flag{color:var(--gilt);background:rgba(227,184,102,.12);border:1px solid rgba(227,184,102,.3)}
-.st.found{color:var(--mint);background:rgba(134,205,180,.1);border:1px solid rgba(134,205,180,.3)}
-.st.noted{color:var(--text-2);background:var(--card-2);border:1px solid var(--line-2)}
-.crow.done .spin{display:none}
-.crow.done .st{opacity:1;animation:rise .3s ease-out}
-.wire{display:flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:11px;color:var(--text-3);padding:9px 12px;border:1px dashed var(--line-2);border-radius:10px;margin-bottom:6px}
-.wire b{font-weight:500;color:var(--text)}
-.wire .dot{width:7px;height:7px;border-radius:50%;background:var(--gilt);flex:none;animation:pulse 1.2s infinite}
-.attd{display:flex;gap:10px;font-size:13px;color:var(--text-2);padding:12px;border:1px dashed var(--line-2);border-radius:10px;cursor:pointer;line-height:1.45}
-.attd i{flex:none;width:17px;height:17px;border-radius:5px;border:1.5px solid var(--text-2);display:grid;place-items:center;color:transparent;font-style:normal;font-size:11px;margin-top:1px;transition:all .2s}
-.attd.on i{background:var(--text);border-color:var(--text);color:var(--bg)}
-.signrow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;flex-wrap:wrap}
-.sigline{font-family:var(--f-serif);font-style:italic;font-size:28px;color:var(--text);border-bottom:1px solid var(--line-2);padding:0 18px 2px 4px;min-width:150px;min-height:40px}
-.sigline span{display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:bottom;width:0;transition:width 1.1s steps(12)}
-.signed .sigline span{width:6.4em}
-.signed .sigline{border-color:var(--mint)}
-.entry{display:flex;align-items:center;gap:10px;margin-top:12px;padding:10px 12px;border-radius:10px;background:var(--bg-2);border:1px solid var(--line);font-family:var(--f-mono);font-size:11px;color:var(--text-3);opacity:.4;transition:opacity .3s,border-color .3s}
-.signed .entry{opacity:1;border-color:rgba(134,205,180,.35);color:var(--mint)}
-.rep-mini .rq{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:var(--text-2)}
-.rep-mini .rq:last-of-type{border-bottom:0}
-.rep-mini .rq b{font-weight:500;color:var(--text)}
-.rep-mini .rq em{font-style:normal;font-family:var(--f-mono);font-size:11px;color:var(--mint)}
-.dates{display:flex;gap:6px;margin-bottom:8px}
-.dates span{font-family:var(--f-mono);font-size:11px;color:var(--text-2);border:1px solid var(--line-2);border-radius:8px;padding:5px 10px}
-.share{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding:10px 12px;border-radius:10px;border:1px solid var(--line-2);background:var(--bg-2);font-family:var(--f-mono);font-size:11px;color:var(--text-2)}
-.share b{font-weight:500;color:var(--gilt)}
-
-/* ---------- works-with: tool tabs (Resend's language tabs) ---------- */
-.tabs-bar{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:44px}
-.tt{font:inherit;font-size:14px;color:var(--text-2);background:transparent;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;min-height:36px;transition:all .2s}
-.tt:hover{color:var(--text);border-color:var(--line-2)}
-.tt[aria-selected="true"]{color:var(--bg);background:var(--text);border-color:var(--text)}
-.host{position:relative;max-width:980px;margin:22px auto 0;border-radius:18px;border:1px solid var(--line-2);background:var(--card);overflow:hidden}
-.host-top{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);background:var(--card-2)}
-.host-top i{width:10px;height:10px;border-radius:50%;background:#2E2E34}
-.host-url{margin:0 auto;font-family:var(--f-mono);font-size:11.5px;color:var(--text-2);background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:5px 16px;min-width:240px;text-align:center}
-.host-body{display:grid;grid-template-columns:minmax(0,1fr) 280px;min-height:400px}
-.chat{padding:26px 28px;display:flex;flex-direction:column;gap:14px}
-.chat .who{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}
-.chat .q{align-self:flex-end;max-width:78%;background:var(--card-2);border:1px solid var(--line);border-radius:16px;padding:12px 15px;font-size:14.5px;color:var(--text)}
-.chat .q .tk{font-family:var(--f-mono);font-size:11.5px;color:var(--rose);background:rgba(196,82,63,.14);border:1px solid rgba(196,82,63,.35);border-radius:5px;padding:1px 6px}
-.chat .a{max-width:90%;font-size:14.5px;line-height:1.65;color:var(--text-2)}
-.chat .a .cite{color:var(--text);border-bottom:1px dashed var(--gilt)}
-.cpanel{border-left:1px solid var(--line);background:linear-gradient(180deg,#16161A,#101013);padding:18px;display:flex;flex-direction:column;gap:9px}
-.cpanel .wm{font-family:var(--f-serif);font-size:22px;margin-bottom:6px}
-.cpanel .wm span{color:var(--accent)}
-.cact{display:flex;align-items:center;gap:9px;padding:10px 12px;border-radius:11px;border:1px solid var(--line-2);font-size:13px;color:var(--text);transition:all .3s}
-.cact svg{width:14px;height:14px;flex:none;color:var(--text-2)}
-.cact.on{background:var(--accent);border-color:var(--accent);color:#fff}
-.cact.on svg{color:#fff}
-.cnote{margin-top:auto;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--mint);line-height:1.5}
-.cnote span{display:block;color:var(--text-3);font-size:11px;margin-top:4px}
-.works-cap{max-width:62ch;margin:24px auto 0;text-align:center;color:var(--text-2);font-size:15px}
-.works-tm{text-align:center;color:var(--text-3);font-size:11.5px;margin-top:6px}
-
-/* ---------- big product showcase (5 screens) ---------- */
-.show-tabs{display:flex;justify-content:center;gap:0;margin:44px auto 0;border:1px solid var(--line);border-radius:999px;padding:4px;width:max-content;max-width:100%;overflow-x:auto;background:var(--card)}
-.st-b{font:inherit;font-size:14px;color:var(--text-2);background:transparent;border:0;border-radius:999px;padding:8px 18px;cursor:pointer;white-space:nowrap;min-height:38px;transition:all .25s}
-.st-b:hover{color:var(--text)}
-.st-b[aria-selected="true"]{background:var(--card-2);color:var(--text);box-shadow:inset 0 0 0 1px var(--line-2)}
-.st-b b{font-family:var(--f-mono);font-weight:400;font-size:10.5px;color:var(--text-3);margin-right:8px}
-.showcase{position:relative;margin-top:28px;display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:0;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--card)}
-.sc-text{padding:40px 36px;border-right:1px solid var(--line);display:flex;flex-direction:column}
-.sc-text .stg{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt)}
-.sc-text h3{font-size:34px;line-height:1.05;letter-spacing:-.015em;margin:12px 0 12px}
-.sc-text p{color:var(--text-2);margin:0;font-size:15.5px}
-.sc-text ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
-.sc-text li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:8px;font-size:14.5px;color:var(--text-2)}
-.sc-text li svg{width:15px;height:15px;margin-top:3px;color:var(--mint)}
-.sc-text .more{margin-top:auto;padding-top:28px;font-size:14px;color:var(--text);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
-.sc-text .more svg{width:14px;height:14px}
-.sc-shot{position:relative;padding:40px;display:grid;place-items:center;background:radial-gradient(500px 300px at 80% 10%,rgba(196,82,63,.35),transparent 70%),radial-gradient(500px 320px at 10% 100%,rgba(227,184,102,.16),transparent 70%),var(--bg-2);overflow:hidden}
-.sc-shot .win{width:100%;box-shadow:0 40px 90px -30px rgba(0,0,0,.9)}
-.sc-shot .win-grid{min-height:360px;grid-template-columns:168px minmax(0,1fr)}
-.sc-shot .pane{grid-area:auto;opacity:1;visibility:visible}
-.scp{display:none}.scp.on{display:contents}
-.scp.on .sc-text,.scp.on .sc-shot>*{animation:rise .45s ease-out}
-.ext{display:grid;grid-template-columns:minmax(0,1fr) 216px;min-height:360px}
-.ext-chat{padding:18px;display:flex;flex-direction:column;gap:10px;background:#fff}
-.ext-chat .tool{font-family:var(--f-mono);font-size:10px;color:var(--muted);letter-spacing:.08em}
-.ext-chat .q{align-self:flex-end;max-width:85%;background:var(--soft);border-radius:14px;padding:10px 13px;font-size:13px}
-.ext-chat .a{max-width:92%;font-size:13px;line-height:1.6}
-.ext-panel{background:linear-gradient(180deg,#1E2F49,#16243A);color:#D6DCE5;padding:15px;display:flex;flex-direction:column;gap:8px;font-size:12px}
-.ext-panel .wm{font-family:var(--f-serif);font-size:19px;color:#fff;margin-bottom:4px}
-.ext-panel .wm span{color:#E9B8A8}
-.ext-panel .act{display:flex;align-items:center;gap:8px;border:1px solid rgba(250,248,245,.2);border-radius:10px;padding:8px 10px;color:#fff}
-.ext-panel .act svg{width:13px;height:13px;flex:none}
-.ext-panel .act.on{background:linear-gradient(180deg,#A0413A,#7A2E2E);border-color:rgba(233,184,168,.4);font-weight:600}
-.ext-panel .note{margin-top:auto;font-size:11px;color:#7FC4AC;border-top:1px solid rgba(250,248,245,.14);padding-top:10px}
-.rep{background:#fff;padding:22px 24px;min-height:360px;font-size:13px}
-.rep-h{display:flex;justify-content:space-between;align-items:end;gap:10px;border-bottom:3px double var(--navy);padding-bottom:10px}
-.rep-h b{font-family:var(--f-serif);font-weight:400;font-size:24px;color:var(--navy);line-height:1.05}
-.rep-h span{font-family:var(--f-mono);font-size:10px;color:var(--muted);white-space:nowrap}
-.qa{display:grid;grid-template-columns:22px minmax(0,1fr);gap:3px 8px;padding:10px 0;border-bottom:1px solid var(--rule)}
-.qa>svg{grid-row:span 2;width:15px;height:15px;margin-top:2px;color:#fff;background:var(--seal);border-radius:50%;padding:3px}
-.qa .q{font-weight:600;color:var(--navy)}
-.qa .a{color:var(--muted)}
-
-/* ---------- problem ---------- */
-.prob{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:center}
-.prob h2{font-size:clamp(46px,6.2vw,96px);line-height:.95;letter-spacing:-.03em;margin-top:16px}
-.prob h2 .w{opacity:var(--o,.14);transition:opacity .25s linear}
-.prob h2 em{font-style:italic}
-.prob .mono{color:var(--accent)}
-.mw-scene{perspective:1200px}
-.mw{position:relative;background:linear-gradient(160deg,#fff,#F6F1E9);color:var(--ink);border-radius:22px;padding:30px 32px 24px;transform:rotateY(var(--ry,-7deg)) rotateX(var(--rx,4deg));transition:transform .3s;box-shadow:0 50px 120px -30px rgba(196,82,63,.35),0 30px 80px -30px rgba(0,0,0,.9);overflow:hidden}
-.mw::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(233,184,168,.4) 48%,rgba(217,178,106,.3) 52%,transparent 65%);transform:translateX(-100%);animation:sheen 5.5s ease-in-out infinite;pointer-events:none}
-@keyframes sheen{0%,55%{transform:translateX(-100%)}85%,100%{transform:translateX(100%)}}
-.mw-head{position:relative;display:flex;gap:14px;align-items:center;border-bottom:2px solid var(--navy);padding-bottom:16px}
-.mw-head b{display:block;font-family:var(--f-serif);font-weight:400;font-size:33px;color:var(--navy);line-height:1}
-.mw-head small{display:block;margin-top:6px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.mw-mark{flex:none;width:46px;height:46px;border-radius:12px;display:block}
-.mw-list{position:relative;list-style:none;counter-reset:mw;margin:14px 0 0;padding:0;font-family:var(--f-serif);font-size:22px;line-height:1.35;color:var(--navy)}
-.mw-list li{position:relative;counter-increment:mw;padding:11px 0 11px 38px;border-bottom:1px solid var(--rule)}
-.mw-list li:last-child{border-bottom:0}
-.mw-list li::before{content:counter(mw,upper-roman)".";position:absolute;left:0;top:19px;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
-.mw-list li.hot,.mw-list em{color:var(--ox)}
-.mw-list em{font-style:italic}
-.mw-foot{position:relative;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--navy);padding-top:12px;margin-top:6px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-
-/* ---------- watch ---------- */
-.frame-beam{position:relative;max-width:1040px;margin:48px auto 0;border-radius:22px;padding:1px;overflow:hidden;background:linear-gradient(135deg,rgba(242,196,181,.55),#2A2A30 35%,#2A2A30 65%,rgba(227,184,102,.45))}
-.frame{position:relative;aspect-ratio:16/9;border-radius:21px;overflow:hidden;background:radial-gradient(600px 300px at 30% 20%,rgba(196,82,63,.3),transparent 70%),radial-gradient(600px 300px at 80% 90%,rgba(227,184,102,.12),transparent 70%),#0C0C0F;display:grid;place-items:center;text-decoration:none;color:#fff}
-.frame .pb{width:82px;height:82px;border-radius:50%;background:#FAFAF9;color:#09090B;display:grid;place-items:center;transition:transform .25s}
-.frame:hover .pb{transform:scale(1.08)}
-.frame .pb svg{width:22px;height:22px;margin-left:4px}
-.frame .loop{position:absolute;left:24px;bottom:22px;display:flex;gap:8px}
-.frame .loop span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line-2);border-radius:999px;padding:5px 12px;color:var(--text-2)}
-.frame .dur{position:absolute;right:24px;bottom:22px;font-family:var(--f-mono);font-size:11px;color:var(--text-3)}
-.center-cta{display:flex;justify-content:center;gap:10px;margin-top:32px;flex-wrap:wrap}
-
-/* ---------- learn more: bordered grid ---------- */
-.grid6{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:64px;border:1px solid var(--line)}
-.g6{position:relative;display:flex;flex-direction:column;gap:8px;padding:30px 30px 28px;text-decoration:none;color:var(--text);min-height:300px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .25s;isolation:isolate;overflow:hidden}
-.g6:nth-child(3n+3){border-right:0}
-.g6:nth-last-child(-n+3){border-bottom:0}
-.g6::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .3s;background:radial-gradient(360px circle at var(--x,50%) var(--y,50%),rgba(242,196,181,.09),transparent 60%)}
-.g6:hover::before{opacity:1}
-.g6 .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
-.g6 b{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-family:var(--f-serif);font-weight:400;font-size:27px;line-height:1.08}
-.g6 b svg{flex:none;width:18px;height:18px;color:var(--text-3);transition:transform .2s,color .2s}
-.g6:hover b svg{transform:translate(3px,-3px);color:var(--text)}
-.g6 .d{font-size:14.5px;color:var(--text-2);line-height:1.55}
-.g6 .viz{margin-top:auto;padding-top:20px}
-.chain{display:grid;gap:7px}
-.blk{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--card);font-size:12.5px}
-.blk .h{font-family:var(--f-mono);font-size:10px;color:var(--text-3)}
-.blk em{font-style:normal;font-family:var(--f-mono);font-size:10px;color:var(--mint)}
-.blk.corr{border-style:dashed}.blk.corr em{color:var(--text-3)}
-.fee{font-family:var(--f-serif);font-size:68px;line-height:.95;letter-spacing:-.03em}
-.fee small{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--text-3);text-transform:uppercase;margin-left:8px;-webkit-text-fill-color:var(--text-3)}
-.ack .bar{height:6px;border-radius:999px;background:var(--card-2);overflow:hidden}
-.ack .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--mint),var(--gilt));transform-origin:left;transform:scaleX(.06);transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
-.ack.in .bar i{transform:scaleX(1)}
-.ack .lbl{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--f-mono);font-size:10.5px;color:var(--text-3)}
-.vsl{display:grid;gap:6px;font-size:12.5px}
-.vsl div{display:flex;justify-content:space-between;padding:7px 10px;border:1px solid var(--line);border-radius:8px;color:var(--text-3)}
-.vsl div:last-child{color:var(--text);border-color:rgba(196,82,63,.5);background:rgba(196,82,63,.1)}
-.mq{display:grid;gap:6px}
-.mq div{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--text-2);padding:7px 10px;border:1px solid var(--line);border-radius:8px}
-.mq svg{width:13px;height:13px;color:var(--mint)}
-.who{display:flex;align-items:center;gap:12px}
-.who .av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-serif);font-size:22px;color:var(--gilt);background:radial-gradient(circle at 30% 30%,rgba(227,184,102,.2),transparent 70%);border:1px solid var(--line-2)}
-.who span{font-size:13px;color:var(--text-2)}
-.who b{font-family:var(--f-sans);font-size:14px;font-weight:600;display:block}
-.grid6 .plus{z-index:2}
-
-/* ---------- close ---------- */
-.close{position:relative;margin-top:160px;padding:120px 0 140px;text-align:center;overflow:hidden;border-top:1px solid var(--line);isolation:isolate}
-.close::before{content:"";position:absolute;left:50%;bottom:-300px;width:1200px;height:700px;transform:translateX(-50%);z-index:-1;background:radial-gradient(closest-side,rgba(196,82,63,.32),rgba(227,184,102,.08) 55%,transparent)}
-.close h2{font-size:clamp(50px,7.4vw,120px);line-height:.92;letter-spacing:-.04em;max-width:13ch;margin:0 auto 40px;text-wrap:balance}
-.close .btn{min-height:50px;padding:0 26px;font-size:15.5px}
-footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);font-size:13.5px}
-.foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
-.foot-links{display:flex;flex-wrap:wrap;gap:6px 22px;max-width:640px}
-.foot-links a{text-decoration:none;color:var(--text-2)}
-.foot-links a:hover{color:var(--text)}
-.disc{margin-top:28px;font-size:12.5px;line-height:1.6;max-width:90ch}
-
-.js .rv{opacity:0;transform:translateY(24px);filter:blur(6px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1),filter .8s}
-.js .rv.in{opacity:1;transform:none;filter:none}
-
-@media(max-width:1060px){
-  .navtoggle{display:inline-flex}
-  .nav-r{margin-left:0}
-  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:8px 16px 14px;background:#09090B;border-bottom:1px solid var(--line);z-index:60;max-height:calc(100vh - 62px);overflow-y:auto}
-  .nav-links .m-cta{display:flex;justify-content:center;margin-top:8px;background:#FAFAF9;color:#09090B;font-weight:500}
-  .nav-links .m-cta:hover{background:#E4E4E7;color:#09090B}
-  .nav-links.open{display:flex}
-  .nav-links a{padding:12px 10px;border-radius:10px;font-size:15px}
-  .cells,.grid6{grid-template-columns:minmax(0,1fr)}
-  .cell{border-right:0!important;border-bottom:1px solid var(--line);min-height:0}
-  .cell:last-child{border-bottom:0}
-  .cells .p-mid{display:none}
-  .g6{border-right:0;border-bottom:1px solid var(--line)!important;min-height:0}
-  .g6:last-child{border-bottom:0!important}
-  .showcase,.prob{grid-template-columns:minmax(0,1fr)}
-  .sc-text{border-right:0;border-bottom:1px solid var(--line)}
-  .host-body{grid-template-columns:minmax(0,1fr)}
-  .cpanel{border-left:0;border-top:1px solid var(--line)}
-}
-@media(max-width:640px){
-  .seal{width:136px;height:136px}.close .seal{width:120px;height:120px}
-  .wrap{padding:0 16px}
-  .nav-r .btn{display:none}
-  .vq{font-size:40px}
-  .pill-set>span{white-space:normal}
-  .cta .btn{flex:1 1 100%}
-  .win-grid,.sc-shot .win-grid{grid-template-columns:minmax(0,1fr);min-height:0}
-  .sb,.win-url{display:none}.win-model{margin-left:auto}
-  .pane{padding:18px}
-  .stamp{width:86px;height:86px;right:12px;bottom:70px}
-  .cell{padding:24px 18px}
-  .sc-shot{padding:14px}.sc-text{padding:26px 20px}
-  .ext{grid-template-columns:minmax(0,1fr)}.ext-panel{order:-1}
-  .tbl th:nth-child(3),.tbl td:nth-child(3){display:none}
-  .frame .loop{display:none}
-  .close .btn{width:100%}
-}
-@media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:.001s!important;animation-delay:0s!important;transition-duration:.001s!important}
-  .seal .ring{animation:none}
-  .vq .q,.pill-set>span,#heroWin .pane{transition:opacity .6s ease!important;transform:none!important}
-  .prob h2 .w{opacity:1}
-  .js .rv{opacity:1;transform:none;filter:none}
-}
-
-/* ===== Draft J: parts taken from I ===== */
-.scene{position:relative;margin-top:56px;border-radius:24px;overflow:hidden;padding:64px 64px 0;isolation:isolate;
-  background:
-    radial-gradient(120% 70% at 50% 120%,rgba(227,184,102,.55),transparent 60%),
-    radial-gradient(80% 60% at 15% 85%,rgba(196,82,63,.65),transparent 65%),
-    radial-gradient(70% 50% at 90% 70%,rgba(142,58,48,.55),transparent 65%),
-    radial-gradient(60% 40% at 70% 10%,rgba(80,70,90,.35),transparent 70%),
-    linear-gradient(180deg,#0E0D10 0%,#1B1214 38%,#3A1C18 70%,#6B2E22 100%);
-  border:1px solid var(--line)}
-.scene::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.12;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.scene .win{border-radius:14px 14px 0 0;box-shadow:0 -10px 80px -20px rgba(0,0,0,.6);max-width:1040px;margin:0 auto}
-.scene .win-grid{min-height:430px}
-.scene-cap{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:14px;font-size:12px;color:var(--text-3)}
-.scene-cap .lft{display:flex;align-items:center;gap:14px}
-.follow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:56px;border-top:1px solid var(--line)}
-.fstep{position:relative;text-align:left;font:inherit;color:var(--text-3);background:none;border:0;padding:18px 20px 4px 0;cursor:pointer}
-.fstep::before{content:"";position:absolute;left:0;top:-1px;height:2px;width:0;background:linear-gradient(90deg,var(--rose),var(--gilt));transition:width .5s ease}
-.fstep[aria-selected="true"]::before{width:100%}
-.fstep.past::before{width:100%;background:var(--line-2)}
-.fstep b{display:block;font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.12em;color:var(--text-3)}
-.fstep span{display:block;margin-top:8px;font-family:var(--f-serif);font-size:22px;line-height:1.15;color:var(--text-2);transition:color .25s}
-.fstep[aria-selected="true"] span,.fstep:hover span{color:var(--text)}
-.fstep[aria-selected="true"] b{color:var(--gilt)}
-.fstep small{display:block;margin-top:6px;font-size:13px;line-height:1.45;color:var(--text-3)}
-.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:0}
-.sec-trio{padding-top:110px}
-.tcard{display:flex;flex-direction:column}
-.tcard .n{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--text-3)}
-.tcard h3{font-size:24px;line-height:1.15;margin-top:8px}
-.tcard p{font-size:14.5px;color:var(--text-2);margin:8px 0 18px;line-height:1.5;min-height:3em}
-.tcard .mini{flex:1;display:flex;flex-direction:column}
-.tcard .mini-b{flex:1;display:flex;flex-direction:column}
-.tcard .mini textarea{min-height:118px;font-size:13.5px}
-.tcard .wire{display:block;line-height:1.6}
-.tcard .wire .dot{display:inline-block;margin-right:8px;vertical-align:middle}
-.tcard .out{min-height:84px;font-size:13.5px}
-.tcard .crow{font-size:13px}
-.tcard .attd{font-size:12.5px}
-.tcard .sigline{font-size:24px;min-width:120px}
-.scene{margin-top:64px;text-align:left}
-.follow+.showcase{margin-top:28px}
-.tcard .n{display:block}
-.tcard h3{font-size:25px}
-@media(max-width:1060px){.follow{grid-template-columns:repeat(5,minmax(140px,1fr));overflow-x:auto}.scene{padding:28px 20px 0}}
-.prob .mono{color:#DE6B55}
-.entry{opacity:1;color:var(--text-3);border-style:dashed}
-.signed .entry{border-style:solid}
-
-/* ===== Product pictures in the Ink look (2026-10-01). Colours scoped to the app windows,
-   so the Paste Warning card keeps its own. ===== */
-.win,.ext,.rep{--paper:#111114;--ink:#E4E4E7;--navy:#FAFAF9;--muted:#8B8B94;--rule:#2A2A30;--soft:#1F1F23;--seal:#86CDB4;--brass:#E3B866;--ox:#C4523F}
-.win{border:1px solid #2A2A30}
-.win-top{background:#16161A;border-bottom-color:#1F1F23}
-.win-url{background:#0E0E11;border-color:#2A2A30;color:#A8A8B0}
-.sb{background:#0C0C0E;border-right:1px solid #1F1F23;color:#A8A8B0}
-.sb .g{color:#8B8B94}
-.sb .it.on{background:linear-gradient(90deg,rgba(242,196,181,.14),rgba(242,196,181,.03))}
-.box{background:#16161A}
-.tok{background:rgba(196,82,63,.16);color:#F2C4B5;border:1px solid rgba(196,82,63,.4)}
-.chip.ok{background:rgba(134,205,180,.12)}
-.chip.fl{background:rgba(227,184,102,.13);color:#E3B866}
-.bt{background:#C4523F}
-.bt.gh{background:transparent;color:#FAFAF9;border-color:#2A2A30}
-.att{background:#16161A}
-.att.done i{color:#09090B}
-.anim .pane.on .att i{animation-name:tickInk}
-@keyframes tickInk{to{background:#FAFAF9;color:#09090B}}
-.newrow td{background:rgba(134,205,180,.08)}
-.ext-chat{background:#111114}
-.ext-panel{background:#0C0C0E;border-left:1px solid #1F1F23}
-.ext-panel .act.on{background:#C4523F;border-color:#C4523F}
-.ext-panel .note{color:#86CDB4}
-.rep{background:#111114}
-.qa>svg{color:#09090B}
-.sc-shot .win .box.me{background:#1F1F23;color:#FAFAF9;border-color:#2A2A30}
-.head.overview{max-width:860px}
-.head.overview h2{font-size:clamp(40px,5vw,68px);text-wrap:balance}
-.head.overview p{max-width:66ch}
-.head .try{font-size:14px;color:var(--text-3);margin-top:14px}
-
-/* price up front (hero) */
-.price-line{margin:16px auto 0;font-size:14px;color:var(--text-3);letter-spacing:.01em}
-.price-line b{color:var(--text);font-weight:500}
-.price-line a{color:var(--text-2);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
-/* numbers */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);margin:84px auto 0;max-width:1000px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stats div{padding:28px 22px;border-right:1px solid var(--line);text-align:left}
-.stats div:last-child{border-right:0}
-.stats b{display:block;font-family:var(--f-serif);font-weight:400;font-size:clamp(44px,5vw,64px);line-height:1;letter-spacing:-.03em;color:var(--text)}
-.stats span{display:block;margin-top:10px;font-size:13.5px;line-height:1.45;color:var(--text-2)}
-@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
-/* the real app, on video */
-.real{position:relative;margin:56px auto 0;max-width:1100px;border-radius:16px;overflow:hidden;border:1px solid var(--line-2);background:#0A0A0B;aspect-ratio:1280/730}
-.real:fullscreen{border-radius:0;border:0;aspect-ratio:auto;background:#000}
-.real:fullscreen video{object-fit:contain;object-position:center}
-.real:fullscreen .fs-btn{bottom:calc(18px + env(safe-area-inset-bottom,0px))}
-.real video,.real img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
-.real-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);background:#111114;font-family:var(--f-mono);font-size:11px;color:var(--text-3)}
-.real-bar i{width:9px;height:9px;border-radius:50%;background:#2A2A30}
-.real-bar span{margin-left:8px}
-.real-wrap{max-width:1100px;margin:56px auto 0}
-.real-wrap .real{margin:0;border-radius:0 0 16px 16px;border-top:0}
-.real-wrap .real-bar{border:1px solid var(--line-2);border-bottom:1px solid var(--line);border-radius:16px 16px 0 0}
-.real-cap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:14px;font-size:13px;color:var(--text-3)}
-.real-cap button{background:none;border:1px solid var(--line-2);color:var(--text-2);border-radius:999px;padding:5px 14px;font:13px var(--f-sans);cursor:pointer}
-.real-cap button:hover{color:var(--text);border-color:#3A3A42}
-/* who it's for */
-.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
-.role{padding:26px 24px 28px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,#111114,#0C0C0E)}
-.role .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt)}
-.role h3{margin:14px 0 10px;font-family:var(--f-serif);font-weight:400;font-size:27px;line-height:1.08;color:var(--text)}
-.role p{margin:0;font-size:14.5px;line-height:1.6;color:var(--text-2)}
-@media(max-width:1000px){.roles{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.roles{grid-template-columns:1fr}}
-/* two ways in */
+/* close: two ways in */
+.close{position:relative;padding:140px 6vw 150px;border-top:1px solid var(--line);text-align:center;overflow:hidden;isolation:isolate}
+.close::before{content:"";position:absolute;z-index:-1;left:50%;bottom:-320px;width:1200px;height:720px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(196,82,63,.34),rgba(227,184,102,.08) 55%,transparent)}
+.close h2{margin:0 auto 56px;max-width:12ch;font-size:clamp(56px,7.4vw,120px)}
 .paths{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:1000px;margin:0 auto;text-align:left}
 .path{display:flex;flex-direction:column;padding:34px 32px 30px;border:1px solid var(--line-2);border-radius:18px;background:rgba(17,17,20,.82)}
-.path h3{font-family:var(--f-serif);font-weight:400;font-size:34px;line-height:1.05;letter-spacing:-.02em;color:var(--text);margin:0 0 10px}
+.path h3{font-family:var(--f-serif);font-weight:400;font-size:34px;line-height:1.05;letter-spacing:-.02em;margin:0 0 10px}
 .path>p{margin:0 0 22px;color:var(--text-2);font-size:15.5px;line-height:1.55}
 .path ul{list-style:none;margin:0 0 28px;padding:20px 0 0;border-top:1px solid var(--line);display:grid;gap:11px}
 .path li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--text-2)}
 .path li svg{flex:none;width:15px;height:15px;margin-top:3px;color:var(--mint)}
 .path .btn{margin-top:auto;width:100%}
-@media(max-width:760px){.paths{grid-template-columns:1fr}.path{padding:28px 22px 24px}.path h3{font-size:30px}}
+
+@media(max-width:900px){
+  .nav-in{padding:0 16px}
+  .panel{display:flex;flex-direction:column;align-items:stretch;gap:36px;padding:64px 20px 72px;min-height:0}
+  .vis{margin-right:-20px}
+  .sv{margin-right:0;font-size:14px}
+  .sv .t{padding:16px 18px}
+  h1{font-size:clamp(54px,15vw,84px)}
+  h2{font-size:clamp(46px,13vw,72px)}
+  .lead{font-size:16.5px}
+  .quote{font-size:17px;min-height:4.2em}
+  .row .btn{flex:1 1 100%}
+  .watch,.band,.close{padding:88px 20px}
+  .seg{border-radius:18px;width:100%}.seg button{flex:1 1 30%}
+  .tools{padding:64px 0}
+  .paths{grid-template-columns:1fr}.path{padding:28px 22px 24px}.path h3{font-size:30px}
+}
+@media(prefers-reduced-motion:reduce){.track{animation:none}.quote span{transition:none}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Candor","url":"https://candor.legal","logo":"https://candor.legal/og.png","description":"AI governance software for law firms: confidentiality screening before AI, a per-matter AI use log, citation flags, attorney sign-off, and a tamper-evident record for carriers and courts.","knowsAbout":["AI governance software for law firms","Legal AI risk","Malpractice carrier AI questionnaires"],"sameAs":["https://www.instagram.com/candor.legal"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Candor","url":"https://candor.legal/ai-governance-software","description":"AI governance software for U.S. law firms: screen client data before it reaches a model, log every AI use to the matter, check citations, capture attorney sign-off, apply the firm's own AI-use rules before each use, keep a profile and review date for every AI vendor, record incidents, train staff, and produce the record a malpractice carrier asks for at renewal. Runs on the firm's own model.","audience":{"@type":"Audience","audienceType":"U.S. law firms"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"3000","highPrice":"20000","offerCount":"5","url":"https://candor.legal/pricing"},"serviceType":"AI governance software for law firms","provider":{"@type":"Organization","name":"Candor","url":"https://candor.legal"},"areaServed":"US"}</script>
@@ -627,19 +183,6 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-check" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-ne" viewBox="0 0 20 20"><path d="M6 14L14 6M7 6h7v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-play" viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor"/></symbol>
-  <symbol id="i-lock" viewBox="0 0 12 12"><rect x="2.5" y="5.5" width="7" height="5" rx="1" fill="none" stroke="currentColor"/><path d="M4 5.5V4a2 2 0 014 0v1.5" fill="none" stroke="currentColor"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 16 16"><path d="M8 1.5l5 2v4c0 3.2-2.2 5.6-5 7-2.8-1.4-5-3.8-5-7v-4z" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
-  <symbol id="i-search" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
-  <symbol id="i-book" viewBox="0 0 16 16"><path d="M3 2.5h7.5a2 2 0 012 2v9H5a2 2 0 01-2-2z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M3 11.5a2 2 0 012-2h7.5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
-  <symbol id="i-pen" viewBox="0 0 16 16"><path d="M11 2.5l2.5 2.5L6 12.5H3.5V10z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
-  <symbol id="i-doc" viewBox="0 0 16 16"><path d="M4 1.5h5.5L12.5 4.5v10h-8.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M6 8h4.5M6 10.5h4.5" stroke="currentColor" stroke-width="1.4"/></symbol>
-</svg>
-
 <header class="nav"><div class="wrap nav-in">
   <a class="brand" href="/" aria-label="Candor home"><img class="mk" src="/assets/icon.svg" alt="" width="26" height="26"><b>Candor<span>.</span></b></a>
   <nav class="navlinks" aria-label="Primary"><div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="nd-product">Product<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nd-p" id="nd-product"><ul><li><a href="/product"><b>How Candor works</b><small>Screening, the AI log, sign-off and reports</small></a></li><li><a href="/ai-governance-software"><b>AI governance software</b><small>What the category is, and where Candor fits</small></a></li><li><a href="/review-demo"><b>Click through a review</b><small>An attorney sign-off, start to finish</small></a></li><li><a href="/pattern-capture"><b>Pattern Capture</b><small>How your firm corrects AI, metadata only</small></a></li><li><a href="/renewal-packet"><b>Carrier renewal packet</b><small>The AI questions carriers ask, from your record</small></a></li><li><a href="/changelog"><b>What&rsquo;s new</b><small>Every release, dated</small></a></li></ul></div></div><div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="nd-resources">Resources<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nd-p" id="nd-resources"><ul><li><a href="/resources"><b>Free tools</b><small>An AI policy template and a readiness checklist</small></a></li><li><a href="/guides"><b>Guides</b><small>ABA Opinion 512, firm AI policy, carrier questions</small></a></li><li><a href="/rules"><b>AI rules by state</b><small>Consent, billing, verification and filing duties</small></a></li><li><a href="/ai-rules"><b>AI ethics rules</b><small>Pick a jurisdiction, see its duties</small></a></li><li><a href="/ai-sanctions"><b>AI sanctions tracker</b><small>Courts that sanctioned AI-made citations</small></a></li><li><a href="/news"><b>News</b><small>AI and the legal profession, tracked</small></a></li></ul></div></div><div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="nd-company">Company<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nd-p" id="nd-company"><ul><li><a href="/about"><b>About</b><small>Why Candor exists</small></a></li><li><a href="/plan"><b>Our plan</b><small>Law firms first, then other professions</small></a></li><li><a href="/why-now"><b>Why now</b><small>Carriers, regulators and courts are asking</small></a></li><li><a href="/international"><b>International</b><small>Where Candor is headed outside the U.S.</small></a></li><li><a href="/contact"><b>Contact</b><small>Questions, a walkthrough or a security review</small></a></li></ul></div></div><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="m-cta" href="/start">Start free</a></nav>
@@ -648,259 +191,102 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 </div></header>
 
 <main id="main">
-<section class="hero">
-  <div class="wrap">
-    <div class="seal" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><radialGradient id="sd1" cx="36%" cy="30%" r="78%"><stop offset="0" stop-color="#34343C"/><stop offset=".55" stop-color="#151518"/><stop offset="1" stop-color="#0B0B0D"/></radialGradient><linearGradient id="sw1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2C4B5"/><stop offset="1" stop-color="#E3B866"/></linearGradient><path id="sp1" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><circle cx="100" cy="100" r="97" fill="none" stroke="url(#sw1)" stroke-opacity=".45"/><circle cx="100" cy="100" r="88" fill="rgba(255,255,255,.015)" stroke="#2A2A30"/><g class="ring"><text font-family="IBM Plex Mono,monospace" font-size="13" letter-spacing="1.5" fill="#C9C9CF"><textPath href="#sp1" textLength="470" lengthAdjust="spacing">SCREENED · CHECKED · SIGNED OFF · ON THE RECORD ·</textPath></text></g><circle cx="100" cy="100" r="60" fill="url(#sd1)" stroke="#2A2A30"/><circle cx="100" cy="100" r="53" fill="none" stroke="url(#sw1)" stroke-opacity=".4" stroke-dasharray="1.5 4"/><text x="100" y="104" text-anchor="middle" dominant-baseline="middle" font-family="Instrument Serif,Georgia,serif" font-size="70" fill="url(#sw1)">C</text></svg></div>
-    <a class="pill" id="pill" href="/changelog#2026-10-01"><b>New</b> <span class="pill-set" id="pillSet"><span class="on">The browser panel on Eve, Harvey, CoCounsel and Lexis+ AI</span><span>Share your renewal questionnaire with an underwriter by link</span><span>Log an AI agent run as one use, step by step</span><span>A public AI trust page your firm can link to</span></span> <i>Read <svg width="10" height="10" aria-hidden="true"><use href="#i-arrow"/></svg></i></a>
-    <span class="mono eyebrow">AI governance software for law firms</span>
-    <h1 class="sr-only">Candor catches the client details, doubtful citations and unlogged AI use that put a firm at risk.</h1>
-    <p class="vq" id="vq" aria-hidden="true"><span class="q on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span class="q">&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span class="q">&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
-    <div class="cta"><a class="btn btn-g" href="#watch"><span class="play" aria-hidden="true"><svg><use href="#i-play"/></svg></span>Watch it in 90 seconds</a></div>
-    <p class="price-line">From <b>$250 a month</b>, billed yearly. First month free, staff seats included. <a href="/pricing">See pricing</a></p>
-
-    <figure class="rv" style="margin:0" aria-label="Illustration of the Candor app: it swaps a client's name and Social Security number out of a prompt before it is sent, flags an unfamiliar citation for a second look, and files the AI use to its matter with the attorney's sign-off.">
-      <div class="scene" aria-hidden="true">
-        <div class="win anim" id="heroWin" aria-hidden="true">
-        <div class="win-top"><i></i><i></i><i></i><span class="win-url"><svg><use href="#i-lock"/></svg>app.candor.legal</span><span class="win-model">on your firm's model</span></div>
-        <div class="win-grid">
-          <div class="sb"><div class="wm">Candor<span>.</span></div><div class="it">Overview</div><div class="g">Daily</div><div class="it" data-p="0">Ask</div><div class="it" data-p="1">Verification <span class="cnt">1</span></div><div class="it" data-p="2">AI Use Log</div><div class="it">Matters</div><div class="g">Oversight</div><div class="it">Reports</div><div class="it">AI Policy</div></div>
-          <div class="pane-wrap">
-            <div class="pane" data-p="0"><div class="ph"><h4>Ask</h4><span>MATTER 2026-0142</span></div>
-              <div class="box"><span class="lab">Your prompt</span>Summarize this privileged email from <span class="sw">Jane Roe</span>, SSN <span class="sw">000-12-3456</span>, about her denied roof claim.</div>
-              <div class="box reveal d1"><span class="lab"><svg width="11" height="11" style="color:var(--seal)"><use href="#i-shield"/></svg>What the model receives</span>Summarize this privileged email from <span class="tok">[CLIENT_1]</span>, SSN <span class="tok t2">[SSN_1]</span>, about her denied roof claim.</div>
-              <div class="row2 reveal d3"><div class="chips"><span class="chip ok"><svg><use href="#i-check"/></svg>2 details caught</span><span class="chip mu">Name &middot; SSN</span></div><span class="bt">Send screened</span></div></div>
-            <div class="pane" data-p="1"><div class="ph"><h4>Verification</h4><span>DRAFT &middot; DEMAND LETTER</span></div>
-              <div class="box cl scan">
-                <div><span>Hargrove v. Delmont, 512 F.3d 1104<small>No matching case found. May need a second look.</small></span><span class="res"><i class="spin"></i><span class="chip fl">Flagged</span></span></div>
-                <div><span>Berges v. Infinity Ins. Co., 896 So. 2d 665<small>Matching case found in the public record</small></span><span class="res"><i class="spin"></i><span class="chip ok">Found</span></span></div>
-                <div><span>&ldquo;the insurer <u>likely</u> acted in bad faith&rdquo;<small>Hedge language the AI used</small></span><span class="res"><i class="spin"></i><span class="chip mu">Noted</span></span></div></div>
-              <div class="row2 reveal d4"><span style="font-size:12px;color:var(--muted)">Shown to the attorney before sign-off</span><span class="bt gh">Open in review</span></div></div>
-            <div class="pane" data-p="2" style="position:relative"><div class="ph"><h4>AI Use Log</h4><span>ROE V. DELMONT</span></div>
-              <table class="tbl"><thead><tr><th>When</th><th>Task</th><th>Tool</th><th>Status</th></tr></thead><tbody>
-                <tr class="newrow"><td>Today 10:42</td><td>Drafting</td><td>ChatGPT</td><td><span class="swap"><span class="chip wait">Awaiting</span><span class="chip ok">Signed off</span></span></td></tr>
-                <tr><td>Sep 29</td><td>Research</td><td>Claude</td><td><span class="chip ok">Signed off</span></td></tr>
-                <tr><td>Sep 26</td><td>Summary</td><td>Copilot</td><td><span class="chip ok">Signed off</span></td></tr></tbody></table>
-              <div class="att"><i>&#10003;</i>I have independently verified all citations and factual assertions in this output.</div>
-              <div class="row2"><span style="font-family:var(--f-mono);font-size:10.5px;color:var(--seal)">&#10003; Record unchanged since entry</span><span style="font-size:12px;color:var(--muted)">A. Park, attorney</span></div>
-              <div class="stamp"><span>Filed<b>Signed off</b>Matter 0142</span></div></div>
-          </div>
-        </div>
-      </div>
-      </div>
-      <figcaption class="scene-cap"><span class="lft"><span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>Illustration. The client and the case are invented.</span><button type="button" class="tiny" id="heroPause">Pause</button></figcaption>
-    </figure>
-
-    <div class="logos rv">
-      <div class="mono">Works with the AI your firm already uses</div>
-      <div class="logo-row"><span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Microsoft Copilot</span><span>Microsoft 365 Copilot</span><span>Azure OpenAI</span><span>Perplexity</span><span>Grok</span><span>Meta AI</span><span>DeepSeek</span><span>Mistral</span><span>Poe</span><span>Clio</span></div>
+<section class="panel hero glow" aria-labelledby="hero-h">
+  <div class="copy">
+    <div class="eyebrow">AI governance software for law firms</div>
+    <h1 id="hero-h">Proof your firm <em>did the work.</em></h1>
+    <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
+    <div class="price"><div><span class="k">Starting at</span><b>$250<i>/mo</i></b></div><small>Billed yearly &middot; first month free</small></div>
+    <div class="row"><a class="btn btn-w" href="/start">Start free <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="#watch">Watch it work</a></div>
+  </div>
+  <div class="vis">
+    <div class="shot vid" id="heroVid"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.candor.legal</span></div>
+      <video id="realVid" muted loop playsinline preload="metadata" poster="/assets/video/app-tour.jpg" aria-label="A screen recording of the Candor app with an invented demo firm: the AI use log, review and sign-off, and the carrier report."><source src="/assets/video/app-tour.mp4" type="video/mp4"></video>
+      <button type="button" class="fs-btn" aria-label="Play the app recording full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg><span class="fs-label">Full screen</span></button>
     </div>
+    <p class="cap">The real app, recorded with an invented demo firm.</p>
   </div>
 </section>
 
-<!-- Vercel-style: four bordered cells, each a working piece of the product -->
-<section class="sec sec-trio" aria-labelledby="three-h">
-  <div class="wrap">
-    <h2 id="three-h" class="sr-only">Screen, check and sign off</h2>
-    <div class="trio rv">
-      <div class="tcard"><span class="n">01 &middot; SCREEN</span><h3>The client detail, before it&rsquo;s sent</h3><p>Names, Social Security numbers, policy and account numbers are swapped for placeholders before a prompt reaches the model.</p><div class="mini">
-          <div class="mini-h"><span>Your prompt &middot; type here</span><span class="live">Screening</span></div>
-          <div class="mini-b">
-            <label class="sr-only" for="scrIn">Type a prompt to screen</label>
-            <textarea id="scrIn" spellcheck="false">Summarize this privileged email from Jane Roe, SSN 000-12-3456, about her denied roof claim. Policy HO-4417-2290, demand of $48,500.</textarea>
-            <div class="arrow">What the model receives</div>
-            <div class="out" id="scrOut" aria-live="polite"></div>
-            <div class="dchips" id="scrChips"></div>
-            <p class="note">Runs in this page. Nothing you type here is sent anywhere.</p>
-          </div>
-        </div></div>
-      <div class="tcard"><span class="n">02 &middot; CHECK</span><h3>The citation that needs a second look</h3><p>Candor looks up each cited case in the public record and marks the ones it cannot find, along with the AI&rsquo;s own hedges.</p><div class="mini">
-          <div class="mini-h"><span>Verification &middot; demand letter</span><button type="button" class="tiny" id="reCheck" style="min-height:24px;font-size:10.5px">Run again</button></div>
-          <div class="mini-b">
-            <div class="wire"><span class="dot"></span>Only the bare citation leaves your firm: <b>512 F.3d 1104</b></div>
-            <div class="crow"><span>Hargrove v. Delmont, 512 F.3d 1104<small>No matching case found. May need a second look.</small></span><span class="res"><i class="spin"></i><span class="st flag">Flagged</span></span></div>
-            <div class="crow"><span>Berges v. Infinity Ins. Co., 896 So. 2d 665<small>Matching case found in the public record</small></span><span class="res"><i class="spin"></i><span class="st found">Found</span></span></div>
-            <div class="crow"><span>&ldquo;the insurer <u>likely</u> acted in bad faith&rdquo;<small>Hedge language the AI used</small></span><span class="res"><i class="spin"></i><span class="st noted">Noted</span></span></div>
-          </div>
-        </div></div>
-      <div class="tcard"><span class="n">03 &middot; SIGN OFF</span><h3>The AI use nobody wrote down</h3><p>Every use is filed to its matter with the attorney&rsquo;s sign-off.</p><div class="mini" id="signCard">
-          <div class="mini-h"><span>Review &amp; Sign-off &middot; drafting</span><span>Matter 2026-0142</span></div>
-          <div class="mini-b">
-            <label class="attd" id="attBox"><input type="checkbox" id="attChk" class="sr-only"><i aria-hidden="true">&#10003;</i>I have independently verified all citations and factual assertions in this output.</label>
-            <div class="signrow"><span class="sigline" aria-hidden="true"><span>A. Park</span></span><button type="button" class="btn btn-w" id="signBtn" style="min-height:36px;font-size:13px">Sign off</button></div>
-            <div class="entry" id="signEntry">Entry 0412 &middot; waiting for the attorney&rsquo;s sign-off</div>
-          </div>
-        </div></div>
-    </div>
-
-    <div class="stats rv" role="list" aria-label="Candor in numbers">
-      <div role="listitem"><b>16</b><span>AI tools the browser panel works in, from ChatGPT to Harvey</span></div>
-      <div role="listitem"><b>8</b><span>AI providers your firm can connect its own account from</span></div>
-      <div role="listitem"><b>0</b><span>words of screened client text kept by default</span></div>
-      <div role="listitem"><b>30</b><span>days free for every firm that signs up</span></div>
-    </div>
-    <div class="real-wrap rv">
-      <div class="real-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.candor.legal &middot; the real app</span></div>
-      <div class="real" id="realBox">
-        <button type="button" class="fs-btn" id="realFs" aria-label="Play the app recording full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg><span class="fs-label">Full screen</span></button>
-        <video id="realVid" muted loop playsinline preload="none" poster="/assets/video/app-tour.jpg" aria-label="A screen recording of the Candor app: the AI use log, review and sign-off, matters and reports, filled with an invented demo firm.">
-          <source src="/assets/video/app-tour.webm" type="video/webm">
-          <source src="/assets/video/app-tour.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="real-cap"><span>The real Candor app, recorded with an invented demo firm. No real client or matter appears.</span><button type="button" id="realBtn" aria-pressed="false">Pause</button></div>
-    </div>
+<section class="panel" id="screen" aria-labelledby="s1">
+  <div class="copy">
+    <div class="num"><b>01</b> &nbsp;/&nbsp; Screen</div>
+    <h2 id="s1">Caught before it&rsquo;s <em>sent.</em></h2>
+    <p class="lead">Names, Social Security numbers, policy and account numbers are swapped for placeholders before a prompt reaches the model. The screened text is never stored.</p>
+    <div class="row"><a class="btn" href="/product">How screening works <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a></div>
+  </div>
+  <div class="sv" aria-hidden="true">
+    <div class="l">YOUR PROMPT</div>
+    <div class="t">Summarize the email from <span class="raw">Jane Roe</span>, SSN <span class="raw">000-12-3456</span>, about her denied roof claim, policy <span class="raw">HO-4417-2290</span>.</div>
+    <div class="l">WHAT THE MODEL RECEIVES</div>
+    <div class="t out">Summarize the email from <span class="rep">[CLIENT_1]</span>, SSN <span class="rep">[SSN_1]</span>, about her denied roof claim, policy <span class="rep">[POLICY_1]</span>.
+      <div class="chips"><span>3 details caught</span><span>Name</span><span>SSN</span><span>Policy no.</span></div></div>
   </div>
 </section>
 
-<!-- Resend-style: one product, tabbed by the tool your staff already use -->
-<section class="sec" aria-labelledby="works-h">
-  <div class="wrap">
-    <div class="head rv"><div class="mono">Browser panel</div><h2 id="works-h" class="silver">Works with the AI your firm already uses.</h2></div>
-    <div class="tabs-bar rv" role="tablist" aria-label="AI tools">
-      <button class="tt" role="tab" aria-selected="true" data-u="chatgpt.com" data-n="ChatGPT">ChatGPT</button>
-      <button class="tt" role="tab" aria-selected="false" data-u="claude.ai" data-n="Claude" tabindex="-1">Claude</button>
-      <button class="tt" role="tab" aria-selected="false" data-u="gemini.google.com" data-n="Gemini" tabindex="-1">Gemini</button>
-      <button class="tt" role="tab" aria-selected="false" data-u="copilot.microsoft.com" data-n="Microsoft Copilot" tabindex="-1">Microsoft Copilot</button>
-      <button class="tt" role="tab" aria-selected="false" data-u="perplexity.ai" data-n="Perplexity" tabindex="-1">Perplexity</button>
-    </div>
-    <div class="host rv" role="tabpanel" aria-label="The Candor panel open beside an AI chat tool">
-      <div class="host-top" aria-hidden="true"><i></i><i></i><i></i><span class="host-url" id="hostUrl">chatgpt.com</span></div>
-      <div class="host-body" aria-hidden="true">
-        <div class="chat">
-          <span class="who" id="hostName">ChatGPT</span>
-          <div class="q">Summarize the email from <span class="tk">[CLIENT_1]</span>, SSN <span class="tk">[SSN_1]</span>, about the denied claim.</div>
-          <div class="a">Here is a summary of the email. The policyholder reports that the claim for roof damage was denied on&hellip; Under <span class="cite">Hargrove v. Delmont, 512 F.3d 1104</span>, the insurer likely acted in bad faith.</div>
-        </div>
-        <div class="cpanel">
-          <span class="wm">Candor<span>.</span></span>
-          <span class="cact" data-a="0"><svg><use href="#i-shield"/></svg>Screen before you paste</span>
-          <span class="cact" data-a="1"><svg><use href="#i-search"/></svg>Check the AI&rsquo;s answer</span>
-          <span class="cact" data-a="2"><svg><use href="#i-book"/></svg>Log this AI use</span>
-          <div class="cnote" id="cNote">&#10003; 2 details caught<span>Matter: Roe v. Delmont</span></div>
-        </div>
-      </div>
-    </div>
-    <p class="works-cap">No switching, no lost history. Candor sits on the AI tools your staff already open, and its own workspace runs on your firm&rsquo;s account with most of them. Anything else can still be logged by hand.</p>
-    <p class="works-tm">Product names are trademarks of their owners. Candor is not affiliated with or endorsed by them.</p>
+<section class="panel glow" aria-labelledby="s2">
+  <div class="copy">
+    <div class="num"><b>02</b> &nbsp;/&nbsp; Check</div>
+    <h2 id="s2">A second look, <em>flagged.</em></h2>
+    <p class="lead">Every cited case is looked up in the public record. The ones that can&rsquo;t be found, and the AI&rsquo;s own hedges, sit in front of the attorney before sign-off.</p>
+    <div class="row"><a class="btn" href="/review-demo">Click through a review <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a></div>
+  </div>
+  <div class="vis"><div class="shot"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>Review &amp; Sign-off</span></div><img src="/assets/home/signoff.jpg" width="2000" height="1250" alt="Candor's review screen: AI uses awaiting attorney sign-off, with citations and hedge phrases flagged" loading="lazy"></div></div>
+</section>
+
+<section class="panel" aria-labelledby="s3">
+  <div class="copy">
+    <div class="num"><b>03</b> &nbsp;/&nbsp; Sign off</div>
+    <h2 id="s3">Every use, on its <em>matter.</em></h2>
+    <p class="lead">Tool, task, who and when, filed to the matter with the attorney&rsquo;s sign-off. A correction is a new entry. Nothing is quietly edited.</p>
+    <div class="row"><a class="btn" href="/product">See the AI use log <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a></div>
+  </div>
+  <div class="vis"><div class="shot"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>AI Use Log</span></div><img src="/assets/home/log.jpg" width="2000" height="1250" alt="Candor's AI use log: each use with its matter, tool, task, person and verification" loading="lazy"></div></div>
+</section>
+
+<section class="panel glow" aria-labelledby="s4">
+  <div class="copy">
+    <div class="num"><b>04</b> &nbsp;/&nbsp; Prove</div>
+    <h2 id="s4">The answer, <em>already written.</em></h2>
+    <p class="lead">When a carrier, a court or a client asks how the firm uses AI, the record is ready for any dates you pick, and shareable by link.</p>
+    <div class="row"><a class="btn" href="/renewal-packet">The renewal packet <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a></div>
+  </div>
+  <div class="vis"><div class="shot"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>Reports</span></div><img src="/assets/home/reports.jpg" width="2000" height="1250" alt="Candor's firm summary report: uses logged, attorney review coverage and tools used" loading="lazy"></div></div>
+</section>
+
+<section class="watch" id="watch" aria-labelledby="watch-h">
+  <div class="eyebrow">90 seconds</div>
+  <h2 id="watch-h">Watch the whole <em>loop.</em></h2>
+  <div class="frame vid-frame" id="wtFrame">
+    <iframe src="/walkthrough?v=5" title="Candor product walkthrough" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <button type="button" class="fs-btn" aria-label="Play the walkthrough full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg><span class="fs-label">Full screen</span></button>
   </div>
 </section>
 
-<section class="sec" aria-labelledby="warn-h">
-  <div class="wrap prob">
-    <div><div class="mono">The problem</div>
-      <h2 id="warn-h"><span class="w">Anything</span> <span class="w">you</span> <span class="w">paste</span> <span class="w">can</span> <span class="w">and</span> <span class="w">will</span> <span class="w">be</span> <span class="w">used</span> <em class="w warm">against</em> <em class="w warm">you</em><span class="w">.</span></h2></div>
-    <figure class="mw-scene rv" style="margin:0" aria-label="Illustration: a wallet card titled The Paste Warning, reading: you have the right to use AI at the firm; anything you paste leaves the firm the moment you send it; you have the right to have client details caught first; if you cannot afford an IT department, one will be provided.">
-      <div class="mw" aria-hidden="true">
-        <div class="mw-head"><img class="mw-mark" src="/assets/icon.svg" alt="" width="46" height="46"><span><b>The Paste Warning</b><small>Read before every prompt</small></span></div>
-        <ol class="mw-list"><li>You have the right to use AI at the firm.</li><li class="hot">Anything you paste leaves the firm the moment you send it.</li><li>You have the right to have client details caught first.</li><li>If you cannot afford an IT department, <em>one will be provided.</em></li></ol>
-        <div class="mw-foot"><span>Candor &middot; from $3,000 a year</span><span>Screened &middot; Logged &middot; Signed off</span></div>
-      </div>
-    </figure>
-  </div>
+<section class="tools" aria-label="Works with">
+  <div class="eyebrow">Works inside 16 AI tools your firm already uses</div>
+  <div class="track" aria-hidden="true"><span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Copilot</span><span>Perplexity</span><span>Harvey</span><span>CoCounsel</span><span>Lexis+ AI</span><span>Eve</span><span>Grok</span><span>Clio</span><span>Mistral</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Copilot</span><span>Perplexity</span><span>Harvey</span><span>CoCounsel</span><span>Lexis+ AI</span><span>Eve</span><span>Grok</span><span>Clio</span><span>Mistral</span></div>
+  <p class="sr-only">Including ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity, Harvey, CoCounsel, Lexis+ AI, Eve, Grok, Clio and Mistral. Product names are trademarks of their owners.</p>
 </section>
 
-<!-- Resend-style: the editor shown big, switched by tabs -->
-<section class="sec" aria-labelledby="loop-h">
-  <div class="wrap">
-    <div class="head rv"><div class="mono">How it works</div><h2 id="loop-h">Screen. Work. <em class="warm">Prove.</em></h2><p>Each step matches a screen in Candor, simplified. Click through them; the details shown are invented.</p></div>
-    <div class="follow rv" role="tablist" aria-label="Candor screens"><button class="fstep" role="tab" aria-selected="true" aria-controls="scp-0"><b>01</b><span>Screen</span><small>Client details are caught before they leave.</small></button><button class="fstep" role="tab" aria-selected="false" aria-controls="scp-1" tabindex="-1"><b>02</b><span>Work</span><small>Draft and research on your firm&rsquo;s own AI account.</small></button><button class="fstep" role="tab" aria-selected="false" aria-controls="scp-2" tabindex="-1"><b>03</b><span>Check</span><small>Citations that may need a second look, flagged.</small></button><button class="fstep" role="tab" aria-selected="false" aria-controls="scp-3" tabindex="-1"><b>04</b><span>Sign off</span><small>An attorney reviews, attests and signs.</small></button><button class="fstep" role="tab" aria-selected="false" aria-controls="scp-4" tabindex="-1"><b>05</b><span>Prove</span><small>The record your carrier asks for, ready at renewal.</small></button></div>
-    <div class="showcase rv">
-      <div class="scp on" id="scp-0" role="tabpanel">
-        <div class="sc-text"><div class="stg">Screen</div><h3>Client details are caught before they leave.</h3><p>Names, Social Security numbers, policy and account numbers are swapped for placeholders before a prompt reaches the model.</p><ul><li><svg><use href="#i-check"/></svg>Runs on the page; the text you screen is not stored</li><li><svg><use href="#i-check"/></svg>The record keeps only that a check ran and what kind of detail it caught</li><li><svg><use href="#i-check"/></svg>One tap copies the screened version</li></ul><a class="more" href="/product">Everything Candor does<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-        <div class="sc-shot"><div class="win" role="img" aria-label="The Candor browser panel open beside a chat tool, offering to screen a prompt before it is pasted, log the use, or check the AI's answer.">
-          <div class="win-top" aria-hidden="true"><i></i><i></i><i></i><span class="win-url"><svg><use href="#i-lock"/></svg>chatgpt.com</span><span class="win-model">Candor panel</span></div>
-          <div class="ext" aria-hidden="true"><div class="ext-chat"><span class="tool">AI CHAT TOOL</span><div class="q">Summarize the email from <span class="tok">[CLIENT_1]</span>, SSN <span class="tok">[SSN_1]</span>, about the denied claim.</div><div class="a">Here is a summary of the email. The policyholder reports that the claim for roof damage was denied on&hellip;</div></div><div class="ext-panel"><span class="wm">Candor<span>.</span></span><span class="act on"><svg><use href="#i-shield"/></svg>Screen before you paste</span><span class="act"><svg><use href="#i-search"/></svg>Check the AI&rsquo;s answer</span><span class="act"><svg><use href="#i-book"/></svg>Log this AI use</span><span class="note">&#10003; 2 details caught. Matter: Roe v. Delmont</span></div></div>
-        </div></div>
-      </div>
-      <div class="scp" id="scp-1" role="tabpanel" hidden>
-        <div class="sc-text"><div class="stg">Work</div><h3>Draft and research on your firm&rsquo;s own AI account.</h3><p>Work in Candor, or keep the tool your staff already open. Either way the use is captured on the matter as it happens.</p><ul><li><svg><use href="#i-check"/></svg>No AI markup: Candor runs on your firm&rsquo;s account</li><li><svg><use href="#i-check"/></svg>Every prompt is screened first</li><li><svg><use href="#i-check"/></svg>Your firm&rsquo;s approved-tools list flags anything off it</li></ul><a class="more" href="/product">Everything Candor does<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-        <div class="sc-shot"><div class="win" role="img" aria-label="The Ask screen in Candor: an attorney asks the firm's own model to draft a demand letter; the reply is tagged as screened and logged to the matter.">
-          <div class="win-top" aria-hidden="true"><i></i><i></i><i></i><span class="win-url"><svg><use href="#i-lock"/></svg>app.candor.legal / ask</span><span class="win-model">on your firm's model</span></div>
-          <div class="win-grid" aria-hidden="true"><div class="sb"><div class="wm">Candor<span>.</span></div><div class="it">Overview</div><div class="g">Daily</div><div class="it on">Ask</div><div class="it">Verification</div><div class="it">AI Use Log</div><div class="it">Matters</div></div>
-            <div class="pane on"><div class="ph"><h4>Ask</h4><span>MATTER 2026-0142</span></div><div class="box me" style="align-self:flex-end;max-width:80%">Draft a demand letter for the Roe matter on the denied roof claim.</div><div class="box"><span class="lab">Your model &middot; screened &middot; matter 2026-0142</span>Re: Roe, demand for settlement. This firm represents the policyholder regarding the denial of the claim for roof damage. We write to demand&hellip;</div><div class="row2"><span class="chip ok"><svg><use href="#i-check"/></svg>Logged to the matter</span><span class="bt">Send</span></div></div></div>
-        </div></div>
-      </div>
-      <div class="scp" id="scp-2" role="tabpanel" hidden>
-        <div class="sc-text"><div class="stg">Check</div><h3>Citations that may need a second look, flagged.</h3><p>Candor looks up each cited case in the public record and marks the ones it cannot find, along with the AI&rsquo;s own hedges.</p><ul><li><svg><use href="#i-check"/></svg>Only the bare citation leaves your firm</li><li><svg><use href="#i-check"/></svg>Hedge words like &ldquo;likely&rdquo; are surfaced for scrutiny</li><li><svg><use href="#i-check"/></svg>An assist for the attorney, never a substitute</li></ul><a class="more" href="/product">Everything Candor does<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-        <div class="sc-shot"><div class="win" role="img" aria-label="The Verification screen: one citation flagged because no matching case was found, a case found in the public record, and a hedge word noted.">
-          <div class="win-top" aria-hidden="true"><i></i><i></i><i></i><span class="win-url"><svg><use href="#i-lock"/></svg>app.candor.legal / verification</span><span class="win-model">on your firm's model</span></div>
-          <div class="win-grid" aria-hidden="true"><div class="sb"><div class="wm">Candor<span>.</span></div><div class="it">Overview</div><div class="g">Daily</div><div class="it">Review &amp; Sign-off</div><div class="it on">Verification</div><div class="it">AI Use Log</div><div class="it">Matters</div></div>
-            <div class="pane on"><div class="ph"><h4>Verification</h4><span>DRAFT &middot; DEMAND LETTER</span></div><div class="box cl"><div><span>Hargrove v. Delmont, 512 F.3d 1104<small>No matching case found. May need a second look.</small></span><span class="chip fl">Flagged</span></div><div><span>Berges v. Infinity Ins. Co., 896 So. 2d 665<small>Matching case found in the public record</small></span><span class="chip ok">Found</span></div><div><span>&ldquo;the insurer <u>likely</u> acted in bad faith&rdquo;<small>Hedge language the AI used</small></span><span class="chip mu">Noted</span></div></div></div></div>
-        </div></div>
-      </div>
-      <div class="scp" id="scp-3" role="tabpanel" hidden>
-        <div class="sc-text"><div class="stg">Sign off</div><h3>An attorney reviews, attests and signs.</h3><p>The flags sit in front of the reviewing attorney, who confirms the work before the entry is filed to its matter.</p><ul><li><svg><use href="#i-check"/></svg>Attestation required on research and drafting</li><li><svg><use href="#i-check"/></svg>Marks uses that affect what the client is billed</li><li><svg><use href="#i-check"/></svg>Corrections are new entries; nothing is overwritten</li></ul><a class="more" href="/product">Everything Candor does<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-        <div class="sc-shot"><div class="win" role="img" aria-label="The Review and Sign-off screen: a drafting entry with one flagged citation and two screened details, the attorney's attestation checkbox, and a Sign off button.">
-          <div class="win-top" aria-hidden="true"><i></i><i></i><i></i><span class="win-url"><svg><use href="#i-lock"/></svg>app.candor.legal / review</span><span class="win-model">on your firm's model</span></div>
-          <div class="win-grid" aria-hidden="true"><div class="sb"><div class="wm">Candor<span>.</span></div><div class="it">Overview</div><div class="g">Daily</div><div class="it on">Review &amp; Sign-off</div><div class="it">Verification</div><div class="it">AI Use Log</div><div class="it">Matters</div></div>
-            <div class="pane on"><div class="ph"><h4>Review &amp; Sign-off</h4><span>DRAFTING &middot; CHATGPT</span></div><div class="chips"><span class="chip fl">1 citation flagged</span><span class="chip ok">2 details caught</span><span class="chip mu">Not billed to client</span></div><div class="box" style="font-size:13px">Re: Roe, demand for settlement. This firm represents the policyholder regarding the denial of the claim&hellip;</div><div class="att done"><i>&#10003;</i>I have independently verified all citations and factual assertions in this output.</div><div class="row2"><span style="font-size:12px;color:var(--muted)">A. Park, attorney</span><span class="bt">Sign off</span></div></div></div>
-        </div></div>
-      </div>
-      <div class="scp" id="scp-4" role="tabpanel" hidden>
-        <div class="sc-text"><div class="stg">Prove</div><h3>The record your carrier asks for, ready at renewal.</h3><p>Pick any dates and Candor answers the AI questions carriers ask from your own record, on a record that shows if anyone changes it.</p><ul><li><svg><use href="#i-check"/></svg>Per-matter files and a firm-wide summary</li><li><svg><use href="#i-check"/></svg>Same data in, same report out</li><li><svg><use href="#i-check"/></svg>Share a frozen, expiring link with an underwriter</li></ul><a class="more" href="/product">Everything Candor does<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-        <div class="sc-shot"><div class="win" role="img" aria-label="A carrier renewal report from Candor, answering questions such as whether the firm has a written AI policy, how client data is protected, and how AI output is reviewed, from the firm's own record.">
-          <div class="win-top" aria-hidden="true"><i></i><i></i><i></i><span class="win-url"><svg><use href="#i-lock"/></svg>app.candor.legal / reports</span><span class="win-model">PDF</span></div>
-          <div class="rep" aria-hidden="true"><div class="rep-h"><b>Carrier renewal questionnaire</b><span>JAN 1 &ndash; SEP 30, 2026</span></div>
-            <div class="qa"><svg><use href="#i-check"/></svg><div class="q">Does the firm have a written AI-use policy?</div><div class="a">Yes. Adopted Mar 3; acknowledged by 14 of 14 staff.</div></div>
-            <div class="qa"><svg><use href="#i-check"/></svg><div class="q">How is client information kept out of AI tools?</div><div class="a">Every prompt screened first. 312 checks; 96 caught details.</div></div>
-            <div class="qa"><svg><use href="#i-check"/></svg><div class="q">How is AI output reviewed before use?</div><div class="a">Attorney sign-off on 100% of research and drafting entries.</div></div>
-            <div class="qa" style="border-bottom:0"><svg><use href="#i-check"/></svg><div class="q">Can the record be altered after the fact?</div><div class="a">Entries are chained; any change shows. Record unchanged.</div></div></div>
-        </div></div>
-      </div>
-    </div>
-  </div>
+<section class="band" id="price" aria-labelledby="price-h">
+  <div class="eyebrow">Pricing</div>
+  <h2 id="price-h">One flat fee, priced on <em>attorneys.</em></h2>
+  <div class="seg" role="group" aria-label="Attorneys at your firm"></div>
+  <div class="big" aria-live="polite"><b id="pp">$14,000<i>/yr</i></b><div class="meta" id="pm"></div></div>
+  <div class="row"><a class="btn btn-w" href="/start">Start free <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="/pricing">View pricing</a></div>
+  <p class="fine">Staff seats included at every tier. First month free. Runs on your firm&rsquo;s own AI account, so there is no AI markup.</p>
 </section>
 
-<section class="sec" id="watch" aria-labelledby="watch-h">
-  <div class="wrap">
-    <div class="head rv"><div class="mono">See it in 90 seconds</div><h2 id="watch-h" class="silver">Watch Candor work.</h2><p>Screen, draft, check, log: the whole loop on your firm's own model, in ninety seconds.</p></div>
-    <div class="frame-beam rv"><div class="frame" id="wtFrame">
-      <iframe src="/walkthrough?v=5" title="Candor product walkthrough" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <button type="button" class="fs-btn" aria-label="Play the walkthrough full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg><span class="fs-label">Full screen</span></button>
-    </div></div>
-    <div class="center-cta rv"><a class="btn btn-w" href="/start">Start free for a month<svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-g" href="/review-demo">Click through a review</a></div>
-  </div>
-</section>
-
-<section class="sec" aria-labelledby="who-h">
-  <div class="wrap">
-    <div class="head rv"><div class="mono">Who it&rsquo;s for</div><h2 id="who-h" class="silver">Everyone who answers for the work.</h2><p>One record, read four ways. Each person sees what they are responsible for.</p></div>
-    <div class="roles rv">
-      <div class="role"><span class="k">Managing partner</span><h3>Know how the firm uses AI</h3><p>Which tools, on which matters, by whom, and whether an attorney signed off. The answer exists before anyone asks.</p></div>
-      <div class="role"><span class="k">Attorneys and staff</span><h3>Use AI without a second system</h3><p>Screen, check and log from inside the AI tool already open. Logging takes one click, and the sign-off sits on the matter.</p></div>
-      <div class="role"><span class="k">Risk and IT</span><h3>Rules that apply themselves</h3><p>Approved tools, data labels and pre-flight checks the firm sets once. Vendor profiles, incidents and training sit on the same record.</p></div>
-      <div class="role"><span class="k">Your carrier</span><h3>A packet, not a promise</h3><p>The renewal questions about AI, answered from the firm&rsquo;s own record for any dates you choose, and shareable by link.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="sec" aria-labelledby="more-h">
-  <div class="wrap">
-    <div class="head rv"><h2 id="more-h" class="silver">Learn more</h2></div>
-    <div class="grid6 rv">
-      <span class="plus p-tl"></span><span class="plus p-tr"></span><span class="plus p-bl"></span><span class="plus p-br"></span>
-      <a class="g6" href="/product#governance"><span class="k">Governance</span><b>Your AI policy, applied<svg aria-hidden="true"><use href="#i-ne"/></svg></b><span class="d">Rules and pre-flight checks, vendor profiles, incidents, consent and training, all on the same record.</span><div class="viz ack" aria-hidden="true"><div class="bar"><i></i></div><div class="lbl"><span>Policy acknowledged</span><span>14 of 14 staff</span></div></div></a>
-      <a class="g6" href="/security"><span class="k">Security</span><b>A record that holds up<svg aria-hidden="true"><use href="#i-ne"/></svg></b><span class="d">Hash-chained and encrypted, and your firm can export all of it at any time.</span><div class="viz chain" aria-hidden="true"><div class="blk"><span class="h">#0410</span><span>Research &middot; Claude</span><em>signed</em></div><div class="blk corr"><span class="h">#0411</span><span>Correction &middot; refs 0410</span><em>new entry</em></div><div class="blk"><span class="h">#0412</span><span>Drafting &middot; ChatGPT</span><em>signed</em></div></div></a>
-      <a class="g6" href="/renewal-packet"><span class="k">Renewal</span><b>Your carrier renewal packet<svg aria-hidden="true"><use href="#i-ne"/></svg></b><span class="d">The AI questions carriers ask, answered from your own record for any dates you pick.</span><div class="viz mq" aria-hidden="true"><div><svg><use href="#i-check"/></svg>Written AI-use policy?</div><div><svg><use href="#i-check"/></svg>Client data kept out?</div><div><svg><use href="#i-check"/></svg>Output reviewed?</div></div></a>
-      <a class="g6" href="/pricing"><span class="k">Pricing</span><b>One flat fee a year<svg aria-hidden="true"><use href="#i-ne"/></svg></b><span class="d">From $3,000, priced on attorneys. Staff included, and no markup on your AI account.</span><div class="viz" aria-hidden="true"><div class="fee warm">$3,000<small>from / yr</small></div></div></a>
-      <a class="g6" href="/vs/manual-tracking"><span class="k">Compare</span><b>How Candor compares<svg aria-hidden="true"><use href="#i-ne"/></svg></b><span class="d">Against spreadsheets, enterprise governance suites and vendor-diligence tools.</span><div class="viz vsl" aria-hidden="true"><div><span>Spreadsheets</span><span>vs</span></div><div><span>Enterprise governance suites</span><span>vs</span></div><div><span>Vendor-diligence tools</span><span>vs</span></div><div><span>Candor</span><span>&rarr;</span></div></div></a>
-      <a class="g6" href="/resources"><span class="k">Free tools</span><b>Start with the free tools<svg aria-hidden="true"><use href="#i-ne"/></svg></b><span class="d">An AI-use policy template, a readiness checklist, and the AI rules for your state.</span><div class="viz mq" aria-hidden="true"><div><svg><use href="#i-check"/></svg>AI-use policy template</div><div><svg><use href="#i-check"/></svg>Readiness checklist</div><div><svg><use href="#i-check"/></svg>AI rules by state</div></div></a>
-    </div>
-  </div>
-</section>
-
-<section class="close">
-  <div class="wrap rv">
-    <div class="seal" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><radialGradient id="sd2" cx="36%" cy="30%" r="78%"><stop offset="0" stop-color="#34343C"/><stop offset=".55" stop-color="#151518"/><stop offset="1" stop-color="#0B0B0D"/></radialGradient><linearGradient id="sw2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2C4B5"/><stop offset="1" stop-color="#E3B866"/></linearGradient><path id="sp2" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><circle cx="100" cy="100" r="97" fill="none" stroke="url(#sw2)" stroke-opacity=".45"/><circle cx="100" cy="100" r="88" fill="rgba(255,255,255,.015)" stroke="#2A2A30"/><g class="ring"><text font-family="IBM Plex Mono,monospace" font-size="13" letter-spacing="1.5" fill="#C9C9CF"><textPath href="#sp2" textLength="470" lengthAdjust="spacing">SCREENED · CHECKED · SIGNED OFF · ON THE RECORD ·</textPath></text></g><circle cx="100" cy="100" r="60" fill="url(#sd2)" stroke="#2A2A30"/><circle cx="100" cy="100" r="53" fill="none" stroke="url(#sw2)" stroke-opacity=".4" stroke-dasharray="1.5 4"/><text x="100" y="104" text-anchor="middle" dominant-baseline="middle" font-family="Instrument Serif,Georgia,serif" font-size="70" fill="url(#sw2)">C</text></svg></div>
-    <h2 class="silver">Put the record in place before you need it.</h2>
-    <div class="paths">
-      <div class="path"><h3>Start on your own</h3><p>Set Candor up across the firm today, on your own AI account.</p>
-        <ul><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>A full month free, with no card to start</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Every attorney and staff seat included</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Your record stays yours to export, whatever you decide</li></ul>
-        <a class="btn btn-w" href="/start">Start free<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-      <div class="path"><h3>Ask first</h3><p>Questions about pricing, security or setup before your firm commits.</p>
-        <ul><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>A walkthrough on a sample matter</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Security and vendor review answers</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Pricing for firms over 60 attorneys</li></ul>
-        <a class="btn btn-g" href="/contact">Contact Candor</a></div>
-    </div>
+<section class="close" aria-labelledby="close-h">
+  <h2 id="close-h">Put the record in place before you <em>need it.</em></h2>
+  <div class="paths">
+    <div class="path"><h3>Start on your own</h3><p>Set Candor up across the firm today, on your own AI account.</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>A full month free, with no card to start</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Every attorney and staff seat included</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Your record stays yours to export, whatever you decide</li></ul>
+      <a class="btn btn-w" href="/start">Start free <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a></div>
+    <div class="path"><h3>Ask first</h3><p>Questions about pricing, security or setup before your firm commits.</p>
+      <ul><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>A walkthrough on a sample matter</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Security and vendor review answers</li><li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Pricing for firms over 60 attorneys</li></ul>
+      <a class="btn" href="/contact">Contact Candor</a></div>
   </div>
 </section>
 </main>
@@ -929,100 +315,30 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 </div></footer>
 
 <script>
-document.documentElement.classList.add('js');
-var RM=matchMedia('(prefers-reduced-motion: reduce)').matches,STILL=/still/.test(location.search);
-// Hero: each quote speaks while the app beneath it handles that risk.
-(function(){var qs=[].slice.call(document.querySelectorAll('#vq .q')),win=document.getElementById('heroWin');
-var ps=[].slice.call(document.querySelectorAll('#pillSet>span'));
-var panes=[].slice.call(win.querySelectorAll('.pane')),items=[].slice.call(win.querySelectorAll('.sb .it[data-p]')),bars=[].slice.call(document.querySelectorAll('.bars span')),bb=document.querySelector('.bars');
-function show(i){panes.forEach(function(p){p.classList.toggle('on',+p.dataset.p===i)});items.forEach(function(it){it.classList.toggle('on',+it.dataset.p===i)});bars.forEach(function(d,k){d.classList.remove('on');void d.offsetWidth;d.classList.toggle('on',k===i);d.classList.toggle('done',k<i)})}
-var i=0,pk=0,t=null,half=null,paused=false,BEAT=6200;
-function quote(n){qs.forEach(function(x,k){x.classList.toggle('on',k===n)});show(n)}
-function pill(n){ps.forEach(function(x,k){x.classList.toggle('gone',k===pk&&k!==n);x.classList.toggle('on',k===n)});pk=n;setTimeout(function(){ps.forEach(function(x){x.classList.remove('gone')})},520)}
-if(RM)win.classList.remove('anim');
-if(STILL){win.classList.remove('anim');show(0);document.getElementById('heroPause').hidden=true;return}
-function tick(){i=(i+1)%qs.length;quote(i);clearTimeout(half);half=setTimeout(function(){pill((pk+1)%ps.length)},BEAT/2)}
-function play(){clearInterval(t);t=setInterval(tick,BEAT)}
-var b=document.getElementById('heroPause');b.addEventListener('click',function(){paused=!paused;b.textContent=paused?'Play':'Pause';bb.classList.toggle('paused',paused);[].forEach.call(document.querySelectorAll('.seal'),function(x){x.classList.toggle('paused',paused)});if(paused){clearInterval(t);clearTimeout(half)}else{tick();play()}});
-show(0);play()})();
-
-
-// The real app on video: plays only while on screen; still for reduced motion.
-(function(){var v=document.getElementById('realVid'),b=document.getElementById('realBtn');if(!v||!b)return;
-var want=!RM&&!STILL,seen=false;
-function sync(){b.textContent=v.paused?'Play':'Pause';b.setAttribute('aria-pressed',v.paused?'true':'false')}
-b.addEventListener('click',function(){want=v.paused;if(v.paused){v.play().catch(function(){})}else{v.pause()}});
-v.addEventListener('play',sync);v.addEventListener('pause',sync);sync();
-if(!want){b.textContent='Play';}
-var box=document.getElementById('realBox'),fs=document.getElementById('realFs'),fsl=fs&&fs.querySelector('.fs-label');
-function isFs(){return document.fullscreenElement===box||document.webkitFullscreenElement===box}
-if(fs)fs.addEventListener('click',function(){
-  if(isFs()){(document.exitFullscreen||document.webkitExitFullscreen).call(document);return}
-  want=true;v.preload='auto';v.play().catch(function(){});
-  if(box.requestFullscreen){box.requestFullscreen().catch(function(){})}
-  else if(box.webkitRequestFullscreen){box.webkitRequestFullscreen()}
-  else if(v.webkitEnterFullscreen){v.webkitEnterFullscreen()} // iPhone: the video itself goes full screen
-});
-function onFs(){var on=isFs();if(fsl)fsl.textContent=on?'Exit full screen':'Full screen';fs.setAttribute('aria-label',on?'Exit full screen':'Play the app recording full screen')}
-document.addEventListener('fullscreenchange',onFs);document.addEventListener('webkitfullscreenchange',onFs);
-if('IntersectionObserver' in window){new IntersectionObserver(function(es){seen=es[0].isIntersecting||isFs();if(seen&&want){v.preload='auto';v.play().catch(function(){})}else if(!seen&&!v.paused){v.pause();}},{threshold:.35}).observe(v)}})();
-
-// Screen cell: live screener. Runs only in this page; nothing is sent.
-(function(){var inp=document.getElementById('scrIn'),out=document.getElementById('scrOut'),chips=document.getElementById('scrChips');
-var STOP=/^(Summarize|Please|Draft|The|This|Re|Dear|Policy|Matter|Client|Email|Infinity|Supreme|Court|Florida|United|States)$/;
-var rules=[['SSN',/\b\d{3}-\d{2}-\d{4}\b/g],['EMAIL',/\b[\w.+-]+@[\w-]+\.[\w.]+\b/g],['POLICY',/\b[A-Z]{2,3}-\d{3,}-\d{3,}\b/g],['ACCOUNT',/\b\d{8,17}\b/g],['DOB',/\b\d{1,2}\/\d{1,2}\/\d{2,4}\b/g],['AMOUNT',/\$\s?\d[\d,]*(?:\.\d{2})?/g],['PHONE',/\(?\b\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}\b/g],['CLIENT',/\b(?:Mr\.|Ms\.|Mrs\.|Dr\.)?\s?[A-Z][a-z]+(?:\s[A-Z]\.)?\s[A-Z][a-z]+(?:-[A-Z][a-z]+)?\b/g]];
-var LAB={SSN:'SSN',EMAIL:'Email',POLICY:'Policy no.',ACCOUNT:'Account no.',DOB:'Date of birth',AMOUNT:'Dollar figure',PHONE:'Phone',CLIENT:'Name'};
-function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
-function run(){var t=inp.value,hits=[];rules.forEach(function(r){r[1].lastIndex=0;var m;while((m=r[1].exec(t))){var s=m.index,e=s+m[0].length,x=m[0];if(r[0]==='CLIENT'){if(/^\s/.test(x)){s++;x=x.slice(1)}if(STOP.test(x.replace(/^(Mr\.|Ms\.|Mrs\.|Dr\.)\s?/,'').split(/\s/)[0]))continue}if(!hits.some(function(h){return s<h.e&&e>h.s}))hits.push({s:s,e:e,k:r[0],v:x})}});
-hits.sort(function(a,b){return a.s-b.s});var cnt={},seen={},html='',p=0;hits.forEach(function(h){var key=h.k+'|'+h.v;if(!seen[key]){cnt[h.k]=(cnt[h.k]||0)+1;seen[key]=h.k+'_'+cnt[h.k]}html+=esc(t.slice(p,h.s))+'<span class="tk">['+seen[key]+']</span>';p=h.e});out.innerHTML=html+esc(t.slice(p));
-var tot=Object.keys(cnt).reduce(function(a,k){return a+cnt[k]},0);chips.innerHTML=tot?'<span class="dchip ok">'+tot+' detail'+(tot>1?'s':'')+' caught</span>'+Object.keys(cnt).map(function(k){return '<span class="dchip">'+LAB[k]+(cnt[k]>1?' ×'+cnt[k]:'')+'</span>'}).join(''):'<span class="dchip">Nothing caught</span>'}
-inp.addEventListener('input',run);run()})();
-
-// Check cell: lookups resolve one by one when it comes into view.
-function runCheck(){var rows=[].slice.call(document.querySelectorAll('.crow'));rows.forEach(function(r){r.classList.remove('done')});rows.forEach(function(r,k){setTimeout(function(){r.classList.add('done')},RM||STILL?0:700+k*650)})}
-document.getElementById('reCheck').addEventListener('click',runCheck);
-(function(){var c=document.querySelector('.crow');if(!('IntersectionObserver' in window)){runCheck();return}var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){runCheck();io.disconnect()}},{threshold:.5});io.observe(c)})();
-// Sign-off cell.
-(function(){var card=document.getElementById('signCard'),chk=document.getElementById('attChk'),box=document.getElementById('attBox'),b=document.getElementById('signBtn');
-chk.addEventListener('change',function(){box.classList.toggle('on',chk.checked)});
-b.addEventListener('click',function(){if(!chk.checked){box.style.borderColor='var(--gilt)';chk.focus();return}card.classList.add('signed');document.getElementById('signEntry').innerHTML='&#10003; Entry 0412 filed to the matter &middot; record unchanged since entry';b.textContent='Signed off';b.disabled=true});
-if(STILL){chk.checked=true;box.classList.add('on');card.classList.add('signed');document.getElementById('signEntry').innerHTML='&#10003; Entry 0412 filed to the matter &middot; record unchanged since entry';b.textContent='Signed off'}})();
-
-// Browser panel: switch the AI tool; the panel walks through its three actions.
-(function(){var tabs=[].slice.call(document.querySelectorAll('.tt')),url=document.getElementById('hostUrl'),nm=document.getElementById('hostName'),acts=[].slice.call(document.querySelectorAll('.cact')),note=document.getElementById('cNote'),k=0;
-var notes=['&#10003; 2 details caught<span>Matter: Roe v. Delmont</span>','1 citation may need a second look<span>Only the bare citation was looked up</span>','&#10003; Logged to Roe v. Delmont<span>Awaiting the attorney&rsquo;s sign-off</span>'];
-function sel(t,f){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1});url.textContent=t.dataset.u;nm.textContent=t.dataset.n;if(f)t.focus()}
-tabs.forEach(function(t,j){t.addEventListener('click',function(){sel(t)});t.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;e.preventDefault();sel(tabs[(j+d+tabs.length)%tabs.length],true)})});
-function act(){acts.forEach(function(a,j){a.classList.toggle('on',j===k)});note.innerHTML=notes[k]}
-act();if(!RM&&!STILL)setInterval(function(){k=(k+1)%3;act()},2600)})();
-
-// How it works: the step line drives the panel; advances on its own until someone clicks.
-(function(){var st=[].slice.call(document.querySelectorAll('.fstep')),k=0,t=null,user=false;
-function sel(j,f){k=j;st.forEach(function(x,n){var on=n===j;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;x.classList.toggle('past',n<j);var p=document.getElementById(x.getAttribute('aria-controls'));p.hidden=!on;p.classList.toggle('on',on)});if(f)st[j].focus()}
-function auto(){clearInterval(t);if(RM||STILL||user)return;t=setInterval(function(){sel((k+1)%st.length)},5600)}
-st.forEach(function(x,n){x.addEventListener('click',function(){user=true;clearInterval(t);sel(n)});x.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;e.preventDefault();user=true;clearInterval(t);sel((k+d+5)%5,true)})});
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)auto();else clearInterval(t)})},{threshold:.3});io.observe(document.querySelector('.follow'));sel(0)})();
-// Problem headline lights word by word; the card leans toward the pointer.
-(function(){var ws=[].slice.call(document.querySelectorAll('.prob h2 .w')),h=document.querySelector('.prob h2');
-if(RM||STILL)ws.forEach(function(w){w.style.setProperty('--o',1)});else{var u=function(){var r=h.getBoundingClientRect(),vh=innerHeight,p=Math.min(1,Math.max(0,(vh*.85-r.top)/(vh*.5))),n=p*ws.length;ws.forEach(function(w,k){w.style.setProperty('--o',Math.max(.14,Math.min(1,n-k)).toFixed(2))})};addEventListener('scroll',u,{passive:true});u()}
-var s=document.querySelector('.mw-scene'),c=document.querySelector('.mw');if(RM)return;
-s.addEventListener('pointermove',function(e){var r=s.getBoundingClientRect();c.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*14+'deg');c.style.setProperty('--rx',-((e.clientY-r.top)/r.height-.5)*10+'deg')});
-s.addEventListener('pointerleave',function(){c.style.removeProperty('--ry');c.style.removeProperty('--rx')})})();
-// Walkthrough: full screen, with a fallback for iOS Safari.
-(function(){var frame=document.getElementById('wtFrame');if(!frame)return;var btn=frame.querySelector('.fs-btn'),label=btn.querySelector('.fs-label'),root=document.documentElement,faux=false;
+var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+// The rotating quote.
+(function(){var q=[].slice.call(document.querySelectorAll('#q span')),i=0;setInterval(function(){q[i].classList.remove('on');i=(i+1)%q.length;q[i].classList.add('on')},6200)})();
+// Full screen, with a fallback for iOS Safari.
+function fsify(frame,name,onEnter){if(!frame)return;var btn=frame.querySelector('.fs-btn'),label=btn.querySelector('.fs-label'),root=document.documentElement,faux=false;
 function nEl(){return document.fullscreenElement||document.webkitFullscreenElement}function nReq(){return frame.requestFullscreen||frame.webkitRequestFullscreen}
 function nOk(){return (document.fullscreenEnabled||document.webkitFullscreenEnabled)&&!!nReq()}function active(){return faux||nEl()===frame}
-function sync(){var on=active();label.textContent=on?'Exit full screen':'Full screen';btn.setAttribute('aria-label',on?'Exit full screen':'Play the walkthrough full screen')}
+function sync(){var on=active();label.textContent=on?'Exit full screen':'Full screen';btn.setAttribute('aria-label',on?'Exit full screen':'Play '+name+' full screen')}
 function enterFaux(){faux=true;frame.classList.add('faux-fs');root.classList.add('fs-lock');sync()}function exitFaux(){faux=false;frame.classList.remove('faux-fs');root.classList.remove('fs-lock');sync()}
-btn.addEventListener('click',function(){if(active()){if(faux)exitFaux();else{try{(document.exitFullscreen||document.webkitExitFullscreen).call(document)}catch(e){}}return}
+btn.addEventListener('click',function(){if(!active()&&onEnter)onEnter();if(active()){if(faux)exitFaux();else{try{(document.exitFullscreen||document.webkitExitFullscreen).call(document)}catch(e){}}return}
 if(nOk()){try{var p=nReq().call(frame);if(p&&p.catch)p.catch(enterFaux)}catch(e){enterFaux()}}else enterFaux()});
-document.addEventListener('fullscreenchange',sync);document.addEventListener('webkitfullscreenchange',sync);document.addEventListener('keydown',function(e){if(faux&&e.key==='Escape')exitFaux()})})();
-// Grid spotlight.
-document.querySelectorAll('.g6').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')})});
-// Reveal on scroll.
-(function(){var els=[].slice.call(document.querySelectorAll('.rv,.ack'));if(RM||STILL||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})})();
+document.addEventListener('fullscreenchange',sync);document.addEventListener('webkitfullscreenchange',sync);document.addEventListener('keydown',function(e){if(faux&&e.key==='Escape')exitFaux()})}
+// The app recording: plays while on screen (still for reduced motion until asked).
+(function(){var v=document.getElementById('realVid');if(!v)return;var want=!RM;
+function go(){v.play().catch(function(){})}
+fsify(document.getElementById('heroVid'),'the app recording',function(){want=true;v.preload='auto';go()});
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){var on=es[0].isIntersecting||document.fullscreenElement;if(on&&want){v.preload='auto';go()}else if(!on&&!v.paused)v.pause()},{threshold:.3}).observe(v)}else if(want)go()})();
+fsify(document.getElementById('wtFrame'),'the walkthrough');
+// Firm-size price switch (figures from /pricing).
+(function(){var T=[['Just me','$3,000','Solo \u00b7 1 attorney','$250 a month'],['2\u20135','$6,000','Small \u00b7 2 to 5 attorneys','$500 a month'],['6\u201315','$10,000','Mid \u00b7 6 to 15 attorneys','$833 a month'],['16\u201330','$14,000','Standard \u00b7 16 to 30 attorneys','$1,167 a month'],['31\u201360','$20,000','Large \u00b7 31 to 60 attorneys','$1,667 a month']];
+var seg=document.querySelector('.seg'),pp=document.getElementById('pp'),pm=document.getElementById('pm');
+T.forEach(function(t,i){var b=document.createElement('button');b.type='button';b.textContent=t[0];b.addEventListener('click',function(){pick(i)});seg.appendChild(b)});
+function pick(i){[].forEach.call(seg.children,function(b,j){b.setAttribute('aria-pressed',i===j?'true':'false')});pp.innerHTML=T[i][1]+'<i>/yr</i>';pm.innerHTML='<strong>'+T[i][2]+'</strong>'+T[i][3]+' &middot; staff included'}
+pick(3)})();
 </script>
 <script src="/assets/site.js?v=13"></script>
-</body>
-</html>
+</body></html>

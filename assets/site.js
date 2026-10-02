@@ -115,13 +115,13 @@
   }
 
   // ---- announcement bar: the latest release, dismissible ----
-  // One line across the top of every page except the homepage, which has its
-  // own "New" pill. Dismissing it hides this message only; a new one shows.
+  // One line across the top of every page. Dismissing it hides this
+  // message only; a new one shows.
   var NEWS = { id: '2026-10-01', text: 'New: the browser panel now works in Eve, Harvey, CoCounsel and Lexis+ AI', href: '/changelog#2026-10-01' }
   var header = document.querySelector('header.nav')
   var dismissed = false
   try { dismissed = localStorage.getItem('candor-bar') === NEWS.id } catch (e) { /* storage blocked */ }
-  if (header && here !== '/' && !dismissed) {
+  if (header && !dismissed) {
     var bar = document.createElement('div')
     bar.className = 'ab'
     bar.setAttribute('role', 'region')
