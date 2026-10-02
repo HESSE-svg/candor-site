@@ -125,9 +125,7 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
 /* tools */
 .tools{padding:90px 0;border-top:1px solid var(--line);overflow:hidden}
 .tools .eyebrow{padding:0 6vw;margin-bottom:26px}
-.track{display:flex;gap:56px;width:max-content;animation:slide 55s linear infinite;font-family:var(--f-serif);font-size:clamp(40px,5vw,76px);letter-spacing:-.02em;color:#6E6E78;white-space:nowrap}
-.track span:nth-child(3n+1){color:var(--text)}
-.track span:nth-child(3n+2){font-style:italic}
+.track{display:flex;gap:56px;width:max-content;animation:slide 55s linear infinite;font-family:var(--f-serif);font-size:clamp(40px,5vw,76px);letter-spacing:-.02em;color:#A8A8B0;white-space:nowrap}
 .tools:hover .track{animation-play-state:paused}
 @keyframes slide{to{transform:translateX(-50%)}}
 
@@ -230,7 +228,7 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Candor","url":"https://candor.legal/ai-governance-software","description":"AI governance software for U.S. law firms: screen client data before it reaches a model, log every AI use to the matter, check citations, capture attorney sign-off, apply the firm's own AI-use rules before each use, keep a profile and review date for every AI vendor, record incidents, train staff, and produce the record a malpractice carrier asks for at renewal. Runs on the firm's own model.","audience":{"@type":"Audience","audienceType":"U.S. law firms"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"3000","highPrice":"20000","offerCount":"5","url":"https://candor.legal/pricing"},"serviceType":"AI governance software for law firms","provider":{"@type":"Organization","name":"Candor","url":"https://candor.legal"},"areaServed":"US"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Candor product walkthrough","description":"Ninety seconds of Candor: screening, drafting on the firm's own model, citation checks and the per-matter record, then the firm's AI rules, vendor profiles, the risk radar, matter files and receipts, incidents, client consent and training.","thumbnailUrl":"https://candor.legal/og.png","uploadDate":"2026-09-27","duration":"PT1M30S","embedUrl":"https://candor.legal/walkthrough","publisher":{"@type":"Organization","name":"Candor","logo":{"@type":"ImageObject","url":"https://candor.legal/og.png"}}}</script>
 <link rel="canonical" href="https://candor.legal/">
-<link rel="stylesheet" href="/assets/chrome.css?v=4">
+<link rel="stylesheet" href="/assets/chrome.css?v=6">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -247,7 +245,6 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
     <div class="eyebrow">AI governance software for law firms</div>
     <h1 id="hero-h">Proof your firm <em>did the work.</em></h1>
     <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
-    <div class="price"><div><span class="k">Starting at</span><b>$250<i>/mo</i></b></div><small>Billed yearly &middot; first month free</small></div>
     <div class="row"><a class="btn btn-w" href="/start">Start free <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="#watch">Watch it work</a></div>
   </div>
   <div class="vis">
@@ -336,7 +333,7 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
   <h2 id="price-h">One flat fee, priced on <em>attorneys.</em></h2>
   <div class="seg" role="group" aria-label="Attorneys at your firm"></div>
   <div class="big" aria-live="polite"><b id="pp">$14,000<i>/yr</i></b><div class="meta" id="pm"></div></div>
-  <div class="row"><a class="btn btn-w" href="/start">Start free <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="/pricing">View pricing</a></div>
+  <div class="row"><a class="btn" href="/pricing">View pricing</a></div>
   <p class="fine">Staff seats included at every tier. First month free. Runs on your firm&rsquo;s own AI account, so there is no AI markup.</p>
 </section>
 
@@ -357,13 +354,12 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
   <div class="sf-top">
     <div><a class="sf-brand" href="/" aria-label="Candor home"><img src="/assets/icon.svg" alt="" width="28" height="28"><b>Candor<span>.</span></b></a>
       <p class="sf-tag">The AI your firm works in, with the record built in.</p></div>
-    <div class="sf-act"><a class="sf-start" href="/start">Start free</a><a href="/contact">Contact us</a></div>
   </div>
   <nav class="sf-cols" aria-label="Footer">
     <div><h2>Product</h2><ul><li><a href="/product">How Candor works</a></li><li><a href="/ai-governance-software">AI governance software</a></li><li><a href="/review-demo">Click through a review</a></li><li><a href="/pattern-capture">Pattern Capture</a></li><li><a href="/renewal-packet">Carrier renewal packet</a></li><li><a href="/changelog">What&rsquo;s new</a></li></ul></div>
     <div><h2>Get started</h2><ul><li><a href="/start">Start free for a month</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/demo">Get a look</a></li><li><a href="/contact">Contact</a></li></ul></div>
     <div><h2>Resources</h2><ul><li><a href="/resources">Free tools</a></li><li><a href="/guides">Guides</a></li><li><a href="/rules">AI rules by state</a></li><li><a href="/ai-rules">AI ethics rules</a></li><li><a href="/ai-sanctions">AI sanctions tracker</a></li><li><a href="/news">News</a></li></ul></div>
-    <div><h2>Compare</h2><ul><li><a href="/vs/manual-tracking">vs manual tracking</a></li><li><a href="/vs/ai-dlp">vs AI data-loss tools</a></li><li><a href="/vs/claire">vs Claire</a></li><li><a href="/vs/credo-ai">vs Credo AI</a></li><li><a href="/vs/intapp-celeste">vs Intapp Celeste</a></li><li><a href="/vs/lenavix">vs Lenavix</a></li><li><a href="/vs/roval">vs Roval</a></li></ul></div>
+    <div><h2>Compare</h2><ul><li><a href="/vs/manual-tracking">vs manual tracking</a></li><li><a href="/vs/credo-ai">vs Credo AI</a></li><li><a href="/vs/intapp-celeste">vs Intapp Celeste</a></li></ul></div>
     <div><h2>Company</h2><ul><li><a href="/about">About</a></li><li><a href="/plan">Our plan</a></li><li><a href="/why-now">Why now</a></li><li><a href="/international">International</a></li></ul></div>
     <div><h2>Trust</h2><ul><li><a href="/security">Security</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/accessibility">Accessibility</a></li></ul></div>
   </nav>
@@ -423,5 +419,5 @@ T.forEach(function(t,i){var b=document.createElement('button');b.type='button';b
 function pick(i){[].forEach.call(seg.children,function(b,j){b.setAttribute('aria-pressed',i===j?'true':'false')});pp.innerHTML=T[i][1]+'<i>/yr</i>';pm.innerHTML='<strong>'+T[i][2]+'</strong>'+T[i][3]+' &middot; staff included'}
 pick(3)})();
 </script>
-<script src="/assets/site.js?v=13"></script>
+<script src="/assets/site.js?v=15"></script>
 </body></html>

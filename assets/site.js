@@ -117,7 +117,7 @@
   // ---- announcement bar: the latest release, dismissible ----
   // One line across the top of every page. Dismissing it hides this
   // message only; a new one shows.
-  var NEWS = { id: '2026-10-01', text: 'New: the browser panel now works in Eve, Harvey, CoCounsel and Lexis+ AI', href: '/changelog#2026-10-01' }
+  var NEWS = { id: '2026-10-01', text: 'New: the browser panel now works in Harvey, Eve, CoCounsel and Lexis+ AI', short: 'New: Harvey, Eve, CoCounsel, Lexis+ AI', href: '/changelog#2026-10-01' }
   var header = document.querySelector('header.nav')
   var dismissed = false
   try { dismissed = localStorage.getItem('candor-bar') === NEWS.id } catch (e) { /* storage blocked */ }
@@ -126,33 +126,15 @@
     bar.className = 'ab'
     bar.setAttribute('role', 'region')
     bar.setAttribute('aria-label', 'Announcement')
-    bar.innerHTML = '<a href="' + NEWS.href + '">' + NEWS.text.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c] }) + ' <span aria-hidden="true">&rarr;</span></a>' +
+    var safe = function (t) { return t.replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c] }) }
+    // The short line is for small phones; screen readers always get the full one.
+    bar.innerHTML = '<a href="' + NEWS.href + '"><span class="ab-long">' + safe(NEWS.text) + '</span><span class="ab-short" aria-hidden="true">' + safe(NEWS.short) + '</span> <span aria-hidden="true">&rarr;</span></a>' +
       '<button type="button" aria-label="Dismiss announcement"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>'
     header.parentNode.insertBefore(bar, header)
     bar.querySelector('button').addEventListener('click', function () {
       bar.remove()
       try { localStorage.setItem('candor-bar', NEWS.id) } catch (e) { /* storage blocked */ }
     })
-  }
-
-  // ---- phones: Start free and Contact stay within reach ----
-  // Shows after the first screen, hides over the footer, and is left off
-  // the pages that are already the form.
-  if (!/^\/(start|contact|welcome)$/.test(here)) {
-    var dock = document.createElement('nav')
-    dock.setAttribute('aria-label', 'Get started')
-    dock.className = 'dock'
-    dock.innerHTML = '<a class="dock-go" href="/start">Start free</a><a class="dock-alt" href="/contact">Contact</a>'
-    document.body.appendChild(dock)
-    var foot = document.querySelector('footer')
-    var onScroll = function () {
-      var y = window.scrollY || 0
-      var footTop = foot ? foot.getBoundingClientRect().top : Infinity
-      dock.classList.toggle('on', y > window.innerHeight * 0.75 && footTop > window.innerHeight - 20)
-    }
-    window.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onScroll)
-    onScroll()
   }
 
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }) }

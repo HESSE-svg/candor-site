@@ -216,3 +216,7 @@ footer.sf .disc a{color:#A8A8B0}
 html,body{overflow-x:clip}
 /* long button labels wrap on narrow phones instead of running off the edge */
 @media(max-width:420px){main .btn{max-width:100%;white-space:normal;text-align:center;line-height:1.3;padding-top:10px;padding-bottom:10px}}
+
+@media(max-width:480px){.ab{padding:8px 40px 8px 14px;font-size:12.5px}.ab button{right:4px}}
+.ab .ab-short{display:none}
+@media(max-width:480px){.ab .ab-long{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.ab .ab-short{display:inline}}
