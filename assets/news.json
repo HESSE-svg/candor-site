@@ -1,7 +1,49 @@
 {
-  "builtAt": "2026-10-02T12:48:11.968Z",
+  "builtAt": "2026-10-02T22:19:57.276Z",
   "count": 10,
   "items": [
+    {
+      "title": "Relativity CEO Says 2028 Server Deadline Stands; Will Prioritize Partnering with Frontier Labs Over Legal AI Companies",
+      "link": "https://www.lawnext.com/2026/10/relativity-ceo-says-2028-server-deadline-stands-will-prioritize-partnering-with-frontier-labs-over-legal-ai-companies.html",
+      "desc": "Relativity is holding firm on its plan to require that all new matters be hosted in the cloud beginning Jan. 1, 2028, CEO Phil Saunders said Thursday, and he had a blunt message for partners who…",
+      "date": "Fri, 02 Oct 2026 15:49:38 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/Saunders-and-Brown-Relativity-Briefing.jpg",
+      "source": "LawNext",
+      "ts": 1790956178000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Trump’s ‘Morally Binding’ New AI Guardrails Are Meaningless Pudding",
+      "link": "https://abovethelaw.com/2026/10/trumps-morally-binding-new-ai-guardrails-are-meaningless-pudding/",
+      "desc": "From the performative-gibberish dept The post Trump’s ‘Morally Binding’ New AI Guardrails Are Meaningless Pudding appeared first on Above the Law .",
+      "date": "Fri, 02 Oct 2026 14:48:26 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/01/GettyImages-2215972994.jpg",
+      "source": "Above the Law",
+      "ts": 1790952506000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Smarter corporate investigations Part 3: Modernizing commercial due diligence with AI-powered risk assessment",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/smarter-corporate-investigations-part-3-modernizing-commercial-due-diligence-with-ai-powered-risk-assessment/",
+      "desc": "Commercial lending has entered a new era of complexity and competition powered by artificial intelligence and advanced analytics. Commercial The post Smarter corporate investigations Part 3:…",
+      "date": "Fri, 02 Oct 2026 13:16:54 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/03/AdobeStock_609823371-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1790947014000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Freedom, AI and security: Are law firms able to enable innovation without losing control?",
       "link": "https://legaltechnology.com/freedom-ai-and-security-are-law-firms-able-to-enable-innovation-without-losing-control/",
@@ -40,7 +82,7 @@
       "ts": 1790882100000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +96,7 @@
       "ts": 1790873344000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +110,7 @@
       "ts": 1790868780000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": true
     },
@@ -82,23 +124,9 @@
       "ts": 1790866349000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": true
-    },
-    {
-      "title": "AI Can Read Between The Redacted Lines",
-      "link": "https://abovethelaw.com/2026/09/ai-can-read-between-the-redacted-lines/",
-      "desc": "Our very own investigation into Judge Elanor Ross shows how quickly artificial intelligence can uncover what courts tried to conceal. The post AI Can Read Between The Redacted Lines appeared first…",
-      "date": "Wed, 30 Sep 2026 20:44:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/12/GettyImages-1465926877-e1734032437874.jpg",
-      "source": "Above the Law",
-      "ts": 1790801040000,
-      "topic": "courts",
-      "topicLabel": "Courts & sanctions",
       "when": "Yesterday",
       "strong": true,
-      "promo": false
+      "promo": true
     },
     {
       "title": "What agencies should look for before buying an AI investigation solution",
@@ -108,34 +136,6 @@
       "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2023/03/TR3030867_01A_2500x1406-jpg-400x225.webp",
       "source": "Thomson Reuters",
       "ts": 1790791095000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Meet Thomson: The LLM built by Thomson Reuters",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/meet-thomson-the-llm-built-by-thomson-reuters/",
-      "desc": "Meet Thomson, the large language model from Thomson Reuters, trained specifically on the legal, tax, and compliance content the The post Meet Thomson: The LLM built by Thomson Reuters appeared…",
-      "date": "Tue, 29 Sep 2026 19:27:38 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/09/AdobeStock_1202061968-2-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1790710058000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Built for Corporate Restructuring: The Case for Purpose-Built AI",
-      "link": "https://www.lawnext.com/2026/09/built-for-corporate-restructuring-the-case-for-purpose-built-ai.html",
-      "desc": "Section 1: Five Realities Reshaping How Corporate Restructuring Gets Done Corporate restructuring operates at the intersection of legal precision and financial complexity, with stakeholder…",
-      "date": "Tue, 29 Sep 2026 16:29:13 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Intelligence-WhitePaper-FeatureImage-02-1.png",
-      "source": "LawNext",
-      "ts": 1790699353000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "2 days ago",
