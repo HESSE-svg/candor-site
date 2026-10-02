@@ -86,8 +86,9 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
 .vid.faux-fs{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:9999}
 .vid:fullscreen video,.vid.faux-fs video{width:100%;height:100%;object-fit:contain}
 .vid:fullscreen .shot-bar,.vid.faux-fs .shot-bar{display:none}
-.vid.faux-fs .fs-btn,.frame.faux-fs .fs-btn{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 html.fs-lock,html.fs-lock body{overflow:hidden;touch-action:none}
+html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!important}
+.vid.faux-fs .fs-btn,.frame.faux-fs .fs-btn{top:calc(14px + env(safe-area-inset-top,0px));bottom:auto;right:14px;font-size:14px;padding:10px 14px}
 
 /* hero */
 .hero::after{content:"";position:absolute;z-index:-1;left:-10%;top:-30%;width:80%;height:90%;background:radial-gradient(closest-side,rgba(196,82,63,.2),rgba(227,184,102,.05) 55%,transparent)}
@@ -323,9 +324,12 @@ function fsify(frame,name,onEnter){if(!frame)return;var btn=frame.querySelector(
 function nEl(){return document.fullscreenElement||document.webkitFullscreenElement}function nReq(){return frame.requestFullscreen||frame.webkitRequestFullscreen}
 function nOk(){return (document.fullscreenEnabled||document.webkitFullscreenEnabled)&&!!nReq()}function active(){return faux||nEl()===frame}
 function sync(){var on=active();label.textContent=on?'Exit full screen':'Full screen';btn.setAttribute('aria-label',on?'Exit full screen':'Play '+name+' full screen')}
-function enterFaux(){faux=true;frame.classList.add('faux-fs');root.classList.add('fs-lock');sync()}function exitFaux(){faux=false;frame.classList.remove('faux-fs');root.classList.remove('fs-lock');sync()}
+// The fallback lifts the player out of its section to the top of the page, so nothing on the page can sit over it or its exit button.
+var home=null;function enterFaux(){faux=true;home={p:frame.parentNode,n:frame.nextSibling};document.body.appendChild(frame);frame.classList.add('faux-fs');root.classList.add('fs-lock');sync();btn.focus()}function exitFaux(){faux=false;frame.classList.remove('faux-fs');root.classList.remove('fs-lock');if(home){home.p.insertBefore(frame,home.n);home=null}sync();btn.focus()}
 btn.addEventListener('click',function(){if(!active()&&onEnter)onEnter();if(active()){if(faux)exitFaux();else{try{(document.exitFullscreen||document.webkitExitFullscreen).call(document)}catch(e){}}return}
-if(nOk()){try{var p=nReq().call(frame);if(p&&p.catch)p.catch(enterFaux)}catch(e){enterFaux()}}else enterFaux()});
+if(nOk()){try{var p=nReq().call(frame);if(p&&p.catch)p.catch(enterFaux)}catch(e){enterFaux()}return}
+// iPhone: a video goes full screen in the phone's own player, which has its own Done button.
+var vid=frame.querySelector('video');if(vid&&vid.webkitEnterFullscreen){try{vid.webkitEnterFullscreen();return}catch(e){}}enterFaux()});
 document.addEventListener('fullscreenchange',sync);document.addEventListener('webkitfullscreenchange',sync);document.addEventListener('keydown',function(e){if(faux&&e.key==='Escape')exitFaux()})}
 // The app recording: plays while on screen (still for reduced motion until asked).
 (function(){var v=document.getElementById('realVid');if(!v)return;var want=!RM;
