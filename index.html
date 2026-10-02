@@ -518,7 +518,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 .fstep[aria-selected="true"] span,.fstep:hover span{color:var(--text)}
 .fstep[aria-selected="true"] b{color:var(--gilt)}
 .fstep small{display:block;margin-top:6px;font-size:13px;line-height:1.45;color:var(--text-3)}
-.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:64px}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:0}
+.sec-trio{padding-top:110px}
 .tcard{display:flex;flex-direction:column}
 .tcard .n{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--text-3)}
 .tcard h3{font-size:24px;line-height:1.15;margin-top:8px}
@@ -536,7 +537,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 .follow+.showcase{margin-top:28px}
 .tcard .n{display:block}
 .tcard h3{font-size:25px}
-@media(max-width:1060px){.follow{grid-template-columns:repeat(5,minmax(140px,1fr));overflow-x:auto}.trio{grid-template-columns:minmax(0,1fr)}.scene{padding:28px 20px 0}}
+@media(max-width:1060px){.follow{grid-template-columns:repeat(5,minmax(140px,1fr));overflow-x:auto}.scene{padding:28px 20px 0}}
 .prob .mono{color:#DE6B55}
 .entry{opacity:1;color:var(--text-3);border-style:dashed}
 .signed .entry{border-style:solid}
@@ -586,6 +587,9 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 @media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 /* the real app, on video */
 .real{position:relative;margin:56px auto 0;max-width:1100px;border-radius:16px;overflow:hidden;border:1px solid var(--line-2);background:#0A0A0B;aspect-ratio:1280/730}
+.real:fullscreen{border-radius:0;border:0;aspect-ratio:auto;background:#000}
+.real:fullscreen video{object-fit:contain;object-position:center}
+.real:fullscreen .fs-btn{bottom:calc(18px + env(safe-area-inset-bottom,0px))}
 .real video,.real img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
 .real-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);background:#111114;font-family:var(--f-mono);font-size:11px;color:var(--text-3)}
 .real-bar i{width:9px;height:9px;border-radius:50%;background:#2A2A30}
@@ -619,7 +623,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Candor","url":"https://candor.legal/ai-governance-software","description":"AI governance software for U.S. law firms: screen client data before it reaches a model, log every AI use to the matter, check citations, capture attorney sign-off, apply the firm's own AI-use rules before each use, keep a profile and review date for every AI vendor, record incidents, train staff, and produce the record a malpractice carrier asks for at renewal. Runs on the firm's own model.","audience":{"@type":"Audience","audienceType":"U.S. law firms"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"3000","highPrice":"20000","offerCount":"5","url":"https://candor.legal/pricing"},"serviceType":"AI governance software for law firms","provider":{"@type":"Organization","name":"Candor","url":"https://candor.legal"},"areaServed":"US"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Candor product walkthrough","description":"Ninety seconds of Candor: screening, drafting on the firm's own model, citation checks and the per-matter record, then the firm's AI rules, vendor profiles, the risk radar, matter files and receipts, incidents, client consent and training.","thumbnailUrl":"https://candor.legal/og.png","uploadDate":"2026-09-27","duration":"PT1M30S","embedUrl":"https://candor.legal/walkthrough","publisher":{"@type":"Organization","name":"Candor","logo":{"@type":"ImageObject","url":"https://candor.legal/og.png"}}}</script>
 <link rel="canonical" href="https://candor.legal/">
-<link rel="stylesheet" href="/assets/chrome.css?v=2">
+<link rel="stylesheet" href="/assets/chrome.css?v=3">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -694,9 +698,9 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
 </section>
 
 <!-- Vercel-style: four bordered cells, each a working piece of the product -->
-<section class="sec" aria-labelledby="three-h">
+<section class="sec sec-trio" aria-labelledby="three-h">
   <div class="wrap">
-    <div class="head rv overview"><div class="mono">What Candor is</div><h2 id="three-h" class="silver">One place to use AI, and the record of how you used it.</h2><p>Candor is AI governance software for law firms. Staff draft and research on the firm&rsquo;s own AI account, in Candor or in the tools they already open. Client details are swapped out before a prompt is sent, citations that may need a second look are flagged, and each use is filed to its matter with the attorney&rsquo;s sign-off, in a record no one can quietly edit. When a carrier or a court asks how the firm uses AI, the answer is already written down.</p><p class="try">Try the three pieces below. The details shown are invented.</p></div>
+    <h2 id="three-h" class="sr-only">Screen, check and sign off</h2>
     <div class="trio rv">
       <div class="tcard"><span class="n">01 &middot; SCREEN</span><h3>The client detail, before it&rsquo;s sent</h3><p>Names, Social Security numbers, policy and account numbers are swapped for placeholders before a prompt reaches the model.</p><div class="mini">
           <div class="mini-h"><span>Your prompt &middot; type here</span><span class="live">Screening</span></div>
@@ -736,7 +740,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 40px;color:var(--text-3);
     </div>
     <div class="real-wrap rv">
       <div class="real-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.candor.legal &middot; the real app</span></div>
-      <div class="real">
+      <div class="real" id="realBox">
+        <button type="button" class="fs-btn" id="realFs" aria-label="Play the app recording full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg><span class="fs-label">Full screen</span></button>
         <video id="realVid" muted loop playsinline preload="none" poster="/assets/video/app-tour.jpg" aria-label="A screen recording of the Candor app: the AI use log, review and sign-off, matters and reports, filled with an invented demo firm.">
           <source src="/assets/video/app-tour.webm" type="video/webm">
           <source src="/assets/video/app-tour.mp4" type="video/mp4">
@@ -949,7 +954,18 @@ function sync(){b.textContent=v.paused?'Play':'Pause';b.setAttribute('aria-press
 b.addEventListener('click',function(){want=v.paused;if(v.paused){v.play().catch(function(){})}else{v.pause()}});
 v.addEventListener('play',sync);v.addEventListener('pause',sync);sync();
 if(!want){b.textContent='Play';}
-if('IntersectionObserver' in window){new IntersectionObserver(function(es){seen=es[0].isIntersecting;if(seen&&want){v.preload='auto';v.play().catch(function(){})}else if(!seen&&!v.paused){v.pause();}},{threshold:.35}).observe(v)}})();
+var box=document.getElementById('realBox'),fs=document.getElementById('realFs'),fsl=fs&&fs.querySelector('.fs-label');
+function isFs(){return document.fullscreenElement===box||document.webkitFullscreenElement===box}
+if(fs)fs.addEventListener('click',function(){
+  if(isFs()){(document.exitFullscreen||document.webkitExitFullscreen).call(document);return}
+  want=true;v.preload='auto';v.play().catch(function(){});
+  if(box.requestFullscreen){box.requestFullscreen().catch(function(){})}
+  else if(box.webkitRequestFullscreen){box.webkitRequestFullscreen()}
+  else if(v.webkitEnterFullscreen){v.webkitEnterFullscreen()} // iPhone: the video itself goes full screen
+});
+function onFs(){var on=isFs();if(fsl)fsl.textContent=on?'Exit full screen':'Full screen';fs.setAttribute('aria-label',on?'Exit full screen':'Play the app recording full screen')}
+document.addEventListener('fullscreenchange',onFs);document.addEventListener('webkitfullscreenchange',onFs);
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){seen=es[0].isIntersecting||isFs();if(seen&&want){v.preload='auto';v.play().catch(function(){})}else if(!seen&&!v.paused){v.pause();}},{threshold:.35}).observe(v)}})();
 
 // Screen cell: live screener. Runs only in this page; nothing is sent.
 (function(){var inp=document.getElementById('scrIn'),out=document.getElementById('scrOut'),chips=document.getElementById('scrChips');
@@ -1007,6 +1023,6 @@ document.querySelectorAll('.g6').forEach(function(c){c.addEventListener('pointer
 (function(){var els=[].slice.call(document.querySelectorAll('.rv,.ack'));if(RM||STILL||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})})();
 </script>
-<script src="/assets/site.js?v=11"></script>
+<script src="/assets/site.js?v=12"></script>
 </body>
 </html>

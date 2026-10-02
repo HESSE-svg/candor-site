@@ -89,7 +89,7 @@
   @media(max-width:640px){.tally li{flex-wrap:wrap;gap:4px 10px;font-size:16px}.t-dots{display:none}.t-amt{width:100%}}
   @media(prefers-reduced-motion:reduce){.tally li{opacity:1;transform:none;transition:none}}
 </style>
-<link rel="stylesheet" href="/assets/chrome.css?v=2">
+<link rel="stylesheet" href="/assets/chrome.css?v=3">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
@@ -319,5 +319,5 @@ function show(){li.forEach(function(x,i){setTimeout(function(){x.classList.add('
 if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){li.forEach(function(x){x.classList.add('on')});return}
 var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();show()}},{threshold:.4});io.observe(document.querySelector('.tally'))})()
 </script>
-<script src="/assets/site.js?v=11"></script>
+<script src="/assets/site.js?v=12"></script>
 </body></html>
