@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-02T05:49:40.623Z",
+  "builtAt": "2026-10-02T12:48:11.968Z",
   "count": 10,
   "items": [
+    {
+      "title": "Freedom, AI and security: Are law firms able to enable innovation without losing control?",
+      "link": "https://legaltechnology.com/freedom-ai-and-security-are-law-firms-able-to-enable-innovation-without-losing-control/",
+      "desc": "Lawyers today expect the freedom to work from anywhere, access information instantly, collaborate seamlessly and take advantage of AI-powered tools that help them work faster and smarter. For the…",
+      "date": "Fri, 02 Oct 2026 12:01:17 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Feature-image-webinar-4-scaled.png",
+      "source": "Legal IT Insider",
+      "ts": 1790942477000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Former Allen Overy senior partner Wim Dejonghe co-founds native AI firm",
+      "link": "https://legaltechnology.com/former-allen-overy-senior-partner-wim-dejonghe-co-founds-native-ai-firm/",
+      "desc": "Wim Dejonghe, former global senior partner of Allen Overy, has teamed up with the technology entrepreneurs behind Belgium HR-tech scaleup Mbrella and a former Freshfields lawyer to co-found…",
+      "date": "Fri, 02 Oct 2026 08:12:10 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Trumper-7.png",
+      "source": "Legal IT Insider",
+      "ts": 1790928730000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI, And Experts, And Hallucinations, Oh My!",
       "link": "https://abovethelaw.com/2026/10/ai-and-experts-and-hallucinations-oh-my/",
@@ -87,20 +115,6 @@
       "promo": false
     },
     {
-      "title": "Thomson Reuters wins AI copyright appeal against Ross Intelligence, Reuters says",
-      "link": "https://legaltechnology.com/thomson-reuters-wins-ai-copyright-appeal-against-ross-intelligence-reuters-says/",
-      "desc": "The 3rd Circuit Court of Appeals yesterday (29 September) upheld a ruling for Thomson Reuters in its copyright dispute with former legal-research rival Ross Intelligence over Ross' alleged misuse…",
-      "date": "Wed, 30 Sep 2026 10:41:24 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2025/11/Trumper-2025-11-13T120037.490.png",
-      "source": "Legal IT Insider",
-      "ts": 1790764884000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Meet Thomson: The LLM built by Thomson Reuters",
       "link": "https://blogs.thomsonreuters.com/legal-blog/meet-thomson-the-llm-built-by-thomson-reuters/",
       "desc": "Meet Thomson, the large language model from Thomson Reuters, trained specifically on the legal, tax, and compliance content the The post Meet Thomson: The LLM built by Thomson Reuters appeared…",
@@ -122,20 +136,6 @@
       "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Intelligence-WhitePaper-FeatureImage-02-1.png",
       "source": "LawNext",
       "ts": 1790699353000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Product Demo: Morae unveils AI-powered spend management platform",
-      "link": "https://legaltechnology.com/product-demo-morae-unveils-ai-powered-spend-management-platform/",
-      "desc": "In our latest TalkingTech product demo, Legal IT Insider's editor Caroline Hill sat down with Peter Fisher, chief product officer at Morae, for a first look at MorAI Spend, the [] The post Product…",
-      "date": "Tue, 29 Sep 2026 13:00:17 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/09/StartUp-Corner-5.png",
-      "source": "Legal IT Insider",
-      "ts": 1790686817000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "2 days ago",
