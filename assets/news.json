@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-10-05T05:51:32.168Z",
+  "builtAt": "2026-10-05T14:54:40.842Z",
   "count": 10,
   "items": [
+    {
+      "title": "Flank launches senior legal advisory board to shape agentic AI strategy",
+      "link": "https://legaltechnology.com/flank-launches-senior-legal-advisory-board-to-shape-agentic-ai-strategy/",
+      "desc": "Berlin-founded legal AI company Flank is set to unveil a heavyweight senior advisory board that it calls 'The Orchestration Layer,' bringing together general counsel, legal operations leaders,…",
+      "date": "Mon, 05 Oct 2026 12:12:37 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/flank-board-2.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1791202357000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Relativity CEO Says 2028 Server Deadline Stands; Will Prioritize Partnering with Frontier Labs Over Legal AI Companies",
       "link": "https://www.lawnext.com/2026/10/relativity-ceo-says-2028-server-deadline-stands-will-prioritize-partnering-with-frontier-labs-over-legal-ai-companies.html",
@@ -26,7 +40,7 @@
       "ts": 1790952506000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -40,7 +54,7 @@
       "ts": 1790947014000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -49,12 +63,12 @@
       "link": "https://legaltechnology.com/freedom-ai-and-security-are-law-firms-able-to-enable-innovation-without-losing-control/",
       "desc": "Lawyers today expect the freedom to work from anywhere, access information instantly, collaborate seamlessly and take advantage of AI-powered tools that help them work faster and smarter. For the…",
       "date": "Fri, 02 Oct 2026 12:01:17 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Feature-image-webinar-4-scaled.png",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Bluefort-webinar-1024x280.png",
       "source": "Legal IT Insider",
       "ts": 1790942477000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -68,7 +82,7 @@
       "ts": 1790928730000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -101,34 +115,6 @@
       "promo": false
     },
     {
-      "title": "The Billable Hour, Legal Tech, And The ‘AI Efficiency Trap’",
-      "link": "https://abovethelaw.com/2026/10/the-billable-hour-legal-tech-and-the-ai-efficiency-trap/",
-      "desc": "[Sponsored] Lessons from ILTACON for the business of Biglaw. The post The Billable Hour, Legal Tech, And The ‘AI Efficiency Trap’ appeared first on Above the Law .",
-      "date": "Thu, 01 Oct 2026 15:33:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/09/cdd20-direction-6839518-scaled.jpg",
-      "source": "Above the Law",
-      "ts": 1790868780000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": true
-    },
-    {
-      "title": "Webinar Replay: Agentic AI, hype, reality or both? What legal professionals need to know next.",
-      "link": "https://legaltechnology.com/webinar-replay-agentic-ai-hype-reality-or-both-what-legal-professionals-need-to-know-next/",
-      "desc": "While vendors are racing ahead with ambitious visions of autonomous AI agents, the reality for most legal organisations is very different. Governance, security, permissions, data quality and trust…",
-      "date": "Thu, 01 Oct 2026 14:52:29 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Feature-image-webinar-2-1-scaled.png",
-      "source": "Legal IT Insider",
-      "ts": 1790866349000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": true
-    },
-    {
       "title": "What agencies should look for before buying an AI investigation solution",
       "link": "https://blogs.thomsonreuters.com/legal-blog/ai-investigation-solution-law-enforcement/",
       "desc": "Artificial intelligence has moved fast into everyday life, and law enforcement is no exception. Automated tools with machine learning features The post What agencies should look for before buying…",
@@ -139,6 +125,20 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "4 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Built for Corporate Restructuring: The Case for Purpose-Built AI",
+      "link": "https://www.lawnext.com/2026/09/built-for-corporate-restructuring-the-case-for-purpose-built-ai.html",
+      "desc": "Section 1: Five Realities Reshaping How Corporate Restructuring Gets Done Corporate restructuring operates at the intersection of legal precision and financial complexity, with stakeholder…",
+      "date": "Tue, 29 Sep 2026 16:29:13 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Intelligence-WhitePaper-FeatureImage-02-1.png",
+      "source": "LawNext",
+      "ts": 1790699353000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     }
