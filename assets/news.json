@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-06T06:30:34.492Z",
+  "builtAt": "2026-10-06T18:28:11.294Z",
   "count": 10,
   "items": [
+    {
+      "title": "AI In The Courtroom: The Rules Are Coming, Just Not How Lawyers Expect",
+      "link": "https://abovethelaw.com/2026/10/ai-in-the-courtroom-the-rules-are-coming-just-not-how-lawyers-expect/",
+      "desc": "The question isn’t when courts will 'catch up.' It’s whether lawyers understand that, in many ways, they already have. The post AI In The Courtroom: The Rules Are Coming, Just Not How Lawyers…",
+      "date": "Tue, 06 Oct 2026 15:32:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2017/06/legal-technology-legal-tech-law-gavel-digital-300x199.jpg",
+      "source": "Above the Law",
+      "ts": 1791300720000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Legal IT Insider Security Report: Beyond the perimeter , AI is rewriting the rules",
+      "link": "https://legaltechnology.com/legal-it-insider-security-report-beyond-the-perimeter-ai-is-rewriting-the-rules/",
+      "desc": "In this seminal report from Legal IT Insider, our lead analyst Neil Cameron looks at how the security foundations of the law firm are being rewritten, as AI becomes embedded [] The post Legal IT…",
+      "date": "Tue, 06 Oct 2026 12:24:45 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Orange-Rag-Is-Here-1-1024x280.png",
+      "source": "Legal IT Insider",
+      "ts": 1791289485000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI Can Never Give Lawyers All Their Time Back",
       "link": "https://abovethelaw.com/2026/10/ai-can-never-give-lawyers-all-their-time-back/",
@@ -31,20 +59,6 @@
       "promo": false
     },
     {
-      "title": "Who Owns The Rules For An AI Agent?",
-      "link": "https://abovethelaw.com/2026/10/who-owns-the-rules-for-an-ai-agent/",
-      "desc": "Agentic commerce will not eliminate internal governance. It will make vague governance harder to hide. The post Who Owns The Rules For An AI Agent? appeared first on Above the Law .",
-      "date": "Mon, 05 Oct 2026 15:32:46 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/06/GettyImages-2215793111.jpg",
-      "source": "Above the Law",
-      "ts": 1791214366000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Flank launches senior legal advisory board to shape agentic AI strategy",
       "link": "https://legaltechnology.com/flank-launches-senior-legal-advisory-board-to-shape-agentic-ai-strategy/",
       "desc": "Berlin-founded legal AI company Flank is set to unveil a heavyweight senior advisory board that it calls 'The Orchestration Layer,' bringing together general counsel, legal operations leaders,…",
@@ -54,7 +68,7 @@
       "ts": 1791202357000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +82,7 @@
       "ts": 1790956178000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -82,7 +96,7 @@
       "ts": 1790947014000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -91,26 +105,12 @@
       "link": "https://legaltechnology.com/freedom-ai-and-security-are-law-firms-able-to-enable-innovation-without-losing-control/",
       "desc": "Lawyers today expect the freedom to work from anywhere, access information instantly, collaborate seamlessly and take advantage of AI-powered tools that help them work faster and smarter. For the…",
       "date": "Fri, 02 Oct 2026 12:01:17 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Bluefort-webinar-1024x280.png",
+      "img": "",
       "source": "Legal IT Insider",
       "ts": 1790942477000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Former Allen Overy senior partner Wim Dejonghe co-founds native AI firm",
-      "link": "https://legaltechnology.com/former-allen-overy-senior-partner-wim-dejonghe-co-founds-native-ai-firm/",
-      "desc": "Wim Dejonghe, former global senior partner of Allen Overy, has teamed up with the technology entrepreneurs behind Belgium HR-tech scaleup Mbrella and a former Freshfields lawyer to co-found…",
-      "date": "Fri, 02 Oct 2026 08:12:10 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Trumper-7.png",
-      "source": "Legal IT Insider",
-      "ts": 1790928730000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,7 +124,7 @@
       "ts": 1790873344000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
@@ -138,7 +138,7 @@
       "ts": 1790791095000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
+      "when": "6 days ago",
       "strong": true,
       "promo": false
     }
