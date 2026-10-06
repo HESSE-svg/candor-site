@@ -259,5 +259,5 @@ function show(){li.forEach(function(x,i){setTimeout(function(){x.classList.add('
 if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){li.forEach(function(x){x.classList.add('on')});return}
 var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();show()}},{threshold:.4});io.observe(document.querySelector('.tally'))})()
 </script>
-<script src="/assets/site.js?v=16"></script>
+<script src="/assets/site.js?v=17"></script>
 </body></html>

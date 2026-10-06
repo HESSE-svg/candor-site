@@ -100,14 +100,17 @@
     groups.forEach(function (g) {
       var b = g.querySelector('.nd-b')
       var t = null
+      var hovered = false // opened by the mouse arriving, not yet clicked
       b.addEventListener('click', function () {
-        var open = !g.classList.contains('open')
+        // A click on a group the mouse just opened keeps it open; otherwise it toggles.
+        var open = hovered || !g.classList.contains('open')
+        hovered = false
         shut(g)
         g.classList.toggle('open', open)
         b.setAttribute('aria-expanded', open ? 'true' : 'false')
       })
-      g.addEventListener('pointerenter', function (e) { if (e.pointerType !== 'mouse') return; clearTimeout(t); shut(g); g.classList.add('open'); b.setAttribute('aria-expanded', 'true') })
-      g.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'mouse') return; t = setTimeout(function () { g.classList.remove('open'); b.setAttribute('aria-expanded', 'false') }, 140) })
+      g.addEventListener('pointerenter', function (e) { if (e.pointerType !== 'mouse') return; clearTimeout(t); if (!g.classList.contains('open')) hovered = true; shut(g); g.classList.add('open'); b.setAttribute('aria-expanded', 'true') })
+      g.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'mouse') return; hovered = false; t = setTimeout(function () { g.classList.remove('open'); b.setAttribute('aria-expanded', 'false') }, 140) })
       g.addEventListener('focusout', function (e) { if (!g.contains(e.relatedTarget)) { g.classList.remove('open'); b.setAttribute('aria-expanded', 'false') } })
       g.addEventListener('keydown', function (e) { if (e.key === 'Escape' && g.classList.contains('open')) { shut(); b.focus() } })
     })
@@ -417,7 +420,10 @@
     dlg.appendChild(form.el)
     document.body.appendChild(dlg)
     dlg.addEventListener('click', function (e) {
-      if (e.target === dlg || e.target.closest('.cf-close')) dlg.close()
+      if (e.target === dlg || e.target.closest('.cf-close')) { dlg.close(); return }
+      // A link inside the dialog (Watch the walkthrough, Privacy) closes it
+      // first, so a jump on this same page isn't hidden behind the dialog.
+      if (e.target.closest('a[href]')) dlg.close()
     })
     dlg.addEventListener('close', function () { document.documentElement.classList.remove('sm-lock') })
     document.documentElement.classList.add('sm-lock')
