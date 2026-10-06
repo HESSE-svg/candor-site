@@ -223,7 +223,7 @@ function page(items, builtAt) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>News · Candor</title>
 <meta name="description" content="AI in the legal sector, tracked: court sanctions, bar guidance, firm adoption, and the business of legal technology. Updated automatically.">
-<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="/assets/mark.svg?v=3" type="image/svg+xml">
 <meta property="og:title" content="AI and the legal profession, tracked">
 <meta property="og:description" content="Court rulings, ethics guidance, firm adoption, and legal tech business news, gathered in one place.">
 <meta property="og:type" content="website">
@@ -237,7 +237,7 @@ function page(items, builtAt) {
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="nav-in">
-  <a class="brand" href="/" aria-label="Candor home"><img class="mk" src="/assets/icon.svg" alt="" width="26" height="26"><span class="name">Candor<span>.</span></span></a>
+  <a class="brand" href="/" aria-label="Candor home"><img class="mk" src="/assets/mark.svg" alt="" width="26" height="26"><span class="name">Candor<span>.</span></span></a>
   ${nav}
   <div class="nav-r"><a class="btn" href="/start">Start free</a></div>
   <button type="button" class="navtoggle" aria-label="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
@@ -268,7 +268,7 @@ function page(items, builtAt) {
 </main>
 
 <footer></footer>
-<script src="/assets/site.js?v=17"></script>
+<script src="/assets/site.js?v=18"></script>
 </body></html>
 `
 }

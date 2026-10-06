@@ -240,7 +240,7 @@
       return '<div class="sm-row"><button type="button" aria-expanded="' + open + '" aria-controls="sm-sub-' + n + '">' + esc(it[0]) + CHEV + '</button>' +
         '<div class="sm-sub" id="sm-sub-' + n + '"><div><ul>' + it[1].map(function (l) { return '<li><a href="' + l[0] + '"' + cur(l[0]) + '>' + esc(l[1]) + '</a></li>' }).join('') + '</ul></div></div></div>'
     }).join('')
-    sm.innerHTML = '<div class="sm-top"><a class="brand" href="/" aria-label="Candor home"><img src="/assets/icon.svg" alt="" width="26" height="26"><b>Candor<span>.</span></b></a>' +
+    sm.innerHTML = '<div class="sm-top"><a class="brand" href="/" aria-label="Candor home"><img src="/assets/mark.svg" alt="" width="26" height="26"><b>Candor<span>.</span></b></a>' +
       '<button type="button" class="sm-x" aria-label="Close menu">' + XICON + '</button></div>' +
       '<nav class="sm-list" aria-label="Site">' + rows + '</nav>' +
       '<div class="sm-bot"><a class="sm-cta" href="/start">Start free for a month</a>' +
