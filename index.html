@@ -410,10 +410,15 @@ prev.addEventListener('click',function(){go(cur-1)});next.addEventListener('clic
 cards.forEach(function(c,j){c.addEventListener('click',function(e){if(j!==cur){e.preventDefault();go(j)}})});
 addEventListener('resize',function(){rail.scrollTo({left:center(cur),behavior:'auto'})});
 mark(0)})();
-// The closing mark builds itself once, when it comes into view.
+// The closing mark builds itself each time it comes into view: when it has
+// fully left the screen it rewinds, so scrolling back plays it again.
 (function(){var m=document.getElementById('closeMark');if(!m)return;
 if(!('IntersectionObserver' in window)){m.classList.add('play');return}
-var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){m.classList.add('play');io.disconnect()}},{threshold:.6});io.observe(m)})();
+var anims=function(){return m.querySelector('svg').getAnimations({subtree:true})};
+new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.intersectionRatio>=.6){if(!m.classList.contains('play')){m.classList.add('play');anims().forEach(function(a){a.currentTime=0;a.play()})}}
+  else if(!e.isIntersecting&&m.classList.contains('play')){m.classList.remove('play');anims().forEach(function(a){a.pause();a.currentTime=0})}
+})},{threshold:[0,.6]}).observe(m)})();
 // Full screen, with a fallback for iOS Safari.
 function fsify(frame,name,onEnter){if(!frame)return;var btn=frame.querySelector('.fs-btn'),label=btn.querySelector('.fs-label'),root=document.documentElement,faux=false;
 function nEl(){return document.fullscreenElement||document.webkitFullscreenElement}function nReq(){return frame.requestFullscreen||frame.webkitRequestFullscreen}
