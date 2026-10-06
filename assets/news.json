@@ -1,7 +1,49 @@
 {
-  "builtAt": "2026-10-05T14:54:40.842Z",
+  "builtAt": "2026-10-06T00:08:13.095Z",
   "count": 10,
   "items": [
+    {
+      "title": "AI Can Never Give Lawyers All Their Time Back",
+      "link": "https://abovethelaw.com/2026/10/ai-can-never-give-lawyers-all-their-time-back/",
+      "desc": "8am's Kaleidoscope conference taught me that lawyers will just redistribute their time anyway. The post AI Can Never Give Lawyers All Their Time Back appeared first on Above the Law .",
+      "date": "Mon, 05 Oct 2026 22:52:28 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/09/GettyImages-1218283510-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1791240748000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Law School In The Age Of AI: Rethinking It From The Ground Up",
+      "link": "https://abovethelaw.com/2026/10/law-school-in-the-age-of-ai-rethinking-it-from-the-ground-up/",
+      "desc": "We could be on the eve of better lawyers sooner. The post Law School In The Age Of AI: Rethinking It From The Ground Up appeared first on Above the Law .",
+      "date": "Mon, 05 Oct 2026 21:34:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2015/04/the-paper-chase-john-houseman.jpg",
+      "source": "Above the Law",
+      "ts": 1791236040000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Who Owns The Rules For An AI Agent?",
+      "link": "https://abovethelaw.com/2026/10/who-owns-the-rules-for-an-ai-agent/",
+      "desc": "Agentic commerce will not eliminate internal governance. It will make vague governance harder to hide. The post Who Owns The Rules For An AI Agent? appeared first on Above the Law .",
+      "date": "Mon, 05 Oct 2026 15:32:46 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/06/GettyImages-2215793111.jpg",
+      "source": "Above the Law",
+      "ts": 1791214366000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Flank launches senior legal advisory board to shape agentic AI strategy",
       "link": "https://legaltechnology.com/flank-launches-senior-legal-advisory-board-to-shape-agentic-ai-strategy/",
@@ -26,20 +68,6 @@
       "ts": 1790956178000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Trump’s ‘Morally Binding’ New AI Guardrails Are Meaningless Pudding",
-      "link": "https://abovethelaw.com/2026/10/trumps-morally-binding-new-ai-guardrails-are-meaningless-pudding/",
-      "desc": "From the performative-gibberish dept The post Trump’s ‘Morally Binding’ New AI Guardrails Are Meaningless Pudding appeared first on Above the Law .",
-      "date": "Fri, 02 Oct 2026 14:48:26 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/01/GettyImages-2215972994.jpg",
-      "source": "Above the Law",
-      "ts": 1790952506000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "3 days ago",
       "strong": true,
       "promo": false
@@ -87,20 +115,6 @@
       "promo": false
     },
     {
-      "title": "AI, And Experts, And Hallucinations, Oh My!",
-      "link": "https://abovethelaw.com/2026/10/ai-and-experts-and-hallucinations-oh-my/",
-      "desc": "While the technology is new, the duty to understand how it works is not. The post AI, And Experts, And Hallucinations, Oh My! appeared first on Above the Law .",
-      "date": "Thu, 01 Oct 2026 19:15:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/02/artificial-intelligence-4389372_1280.jpg",
-      "source": "Above the Law",
-      "ts": 1790882100000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Smarter corporate investigations Part 2: How AI is transforming third-party risk investigations",
       "link": "https://blogs.thomsonreuters.com/legal-blog/smarter-corporate-investigations-part-2-how-ai-is-transforming-third-party-risk-investigations/",
       "desc": "The third-party risk management landscape has reached a critical inflection point. While a lot of US organizations have adopted The post Smarter corporate investigations Part 2: How AI is…",
@@ -110,7 +124,7 @@
       "ts": 1790873344000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -122,20 +136,6 @@
       "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2023/03/TR3030867_01A_2500x1406-jpg-400x225.webp",
       "source": "Thomson Reuters",
       "ts": 1790791095000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Built for Corporate Restructuring: The Case for Purpose-Built AI",
-      "link": "https://www.lawnext.com/2026/09/built-for-corporate-restructuring-the-case-for-purpose-built-ai.html",
-      "desc": "Section 1: Five Realities Reshaping How Corporate Restructuring Gets Done Corporate restructuring operates at the intersection of legal precision and financial complexity, with stakeholder…",
-      "date": "Tue, 29 Sep 2026 16:29:13 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/09/Intelligence-WhitePaper-FeatureImage-02-1.png",
-      "source": "LawNext",
-      "ts": 1790699353000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "5 days ago",
