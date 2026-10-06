@@ -11,7 +11,7 @@ import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=7">'
-export const SITE_JS = '<script src="/assets/site.js?v=17"></script>'
+export const SITE_JS = '<script src="/assets/site.js?v=18"></script>'
 
 const COLS = [
   ['Product', [
@@ -57,7 +57,7 @@ const amp = (s) => s.replace(/&/g, '&amp;').replace(/’/g, '&rsquo;')
 
 export const FOOTER = `<footer class="sf"><div class="sf-in">
   <div class="sf-top">
-    <div><a class="sf-brand" href="/" aria-label="Candor home"><img src="/assets/icon.svg" alt="" width="28" height="28"><b>Candor<span>.</span></b></a>
+    <div><a class="sf-brand" href="/" aria-label="Candor home"><img src="/assets/mark.svg" alt="" width="28" height="28"><b>Candor<span>.</span></b></a>
       <p class="sf-tag">The AI your firm works in, with the record built in.</p></div>
   </div>
   <nav class="sf-cols" aria-label="Footer">
@@ -111,9 +111,27 @@ export const NAV_HTML = '<nav class="navlinks" aria-label="Primary">' + NAV.map(
     `<div class="nd-p" id="${id}"><ul>${it[1].map(([href, t, d]) => `<li><a href="${href}"><b>${amp(t)}</b><small>${amp(d)}</small></a></li>`).join('')}</ul></div></div>`
 }).join('') + '<a class="m-cta" href="/start">Start free</a></nav>'
 
+// The tab, Google and home-screen icons, the same on every page. New file
+// names (2026-10-06) so search engines and browsers fetch the new mark rather
+// than a copy they already hold.
+export const ICONS = [
+  '<link rel="icon" href="/assets/mark.svg?v=3" type="image/svg+xml">',
+  '<link rel="icon" href="/assets/mark-48.png?v=3" sizes="48x48" type="image/png">',
+  '<link rel="icon" href="/assets/mark-96.png?v=3" sizes="96x96" type="image/png">',
+  '<link rel="icon" href="/assets/mark-192.png?v=3" sizes="192x192" type="image/png">',
+  '<link rel="shortcut icon" href="/favicon.ico?v=3">',
+  '<link rel="apple-touch-icon" href="/assets/mark-180.png?v=3">',
+].join('\n')
+
 /** Apply the shared chrome to one page's HTML. Idempotent. */
 export function applyChrome(html) {
   let s = html
+  // icons: drop whatever the page had, put the shared set in one place
+  s = s.replace(/^[ \t]*<link rel="(?:icon|shortcut icon|apple-touch-icon)"[^>]*>\r?\n/gm, '')
+  if (/<link rel="manifest"/.test(s)) s = s.replace(/<link rel="manifest"/, ICONS + '\n<link rel="manifest"')
+  else s = s.replace(/(<meta name="viewport"[^>]*>\r?\n)/, '$1' + ICONS + '\n')
+  s = s.split('/assets/icon.svg').join('/assets/mark.svg')
+  s = s.replace(/(https:\/\/candor\.legal\/og\.png)(?!\?)/g, '$1?v=3')
   if (!s.includes('/assets/chrome.css')) s = s.replace('</head>', CHROME_CSS + '\n</head>')
   else s = s.replace(/<link rel="stylesheet" href="\/assets\/chrome\.css[^"]*">/, CHROME_CSS)
   s = s.replace(/<script src="\/assets\/site\.js(?:\?v=\d+)?"><\/script>/, SITE_JS)
