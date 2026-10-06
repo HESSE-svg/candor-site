@@ -25,6 +25,7 @@
 
 ## Reference: AI hallucination sanctions
 - [Sanctions tracker](https://candor.legal/ai-sanctions): court decisions sanctioning lawyers for AI-fabricated citations, with penalties and sources.
+- [Whiting v. City of Athens (6th Cir. 2026)](https://candor.legal/sanctions/whiting-v-city-of-athens): $15,000 from each of two lawyers plus fees and double costs, for more than two dozen fake citations.
 - [Couvrette v. Wisnovsky (D. Or. 2026)](https://candor.legal/sanctions/couvrette-v-wisnovsky): the $110,204 sanction, the largest U.S. AI-hallucination penalty on record.
 - [Mata v. Avianca (S.D.N.Y. 2023)](https://candor.legal/sanctions/mata-v-avianca): the first widely reported case of ChatGPT-fabricated citations.
 
