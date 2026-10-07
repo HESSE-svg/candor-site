@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-10-07T06:09:23.725Z",
+  "builtAt": "2026-10-07T13:35:00.535Z",
   "count": 10,
   "items": [
+    {
+      "title": "Pilot5 Launches Adversarial AI for Lawyers",
+      "link": "https://www.artificiallawyer.com/2026/10/07/pilot5-launches-adversarial-ai-for-lawyers/",
+      "desc": "Although a number of legal tech companies use LLM consensus and multiple model strategies already, Pilot5 and its new adversarial Legal AI product specifically taps",
+      "date": "Wed, 07 Oct 2026 11:55:51 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-07-at-12.36.18.png",
+      "source": "Artificial Lawyer",
+      "ts": 1791374151000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Protecting confidentiality in government legal work and AI adoption",
       "link": "https://blogs.thomsonreuters.com/legal-blog/protecting-confidentiality-in-government-legal-work-and-ai-adoption/",
@@ -54,7 +68,7 @@
       "ts": 1791289485000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,7 +96,7 @@
       "ts": 1791202357000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -110,7 +124,7 @@
       "ts": 1790947014000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,20 +138,6 @@
       "ts": 1790942477000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Smarter corporate investigations Part 2: How AI is transforming third-party risk investigations",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/smarter-corporate-investigations-part-2-how-ai-is-transforming-third-party-risk-investigations/",
-      "desc": "The third-party risk management landscape has reached a critical inflection point. While a lot of US organizations have adopted The post Smarter corporate investigations Part 2: How AI is…",
-      "date": "Thu, 01 Oct 2026 16:49:04 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/02/AdobeStock_991898838-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1790873344000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "5 days ago",
       "strong": true,
       "promo": false
