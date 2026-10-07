@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-06T18:28:11.294Z",
+  "builtAt": "2026-10-07T06:09:23.725Z",
   "count": 10,
   "items": [
+    {
+      "title": "Protecting confidentiality in government legal work and AI adoption",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/protecting-confidentiality-in-government-legal-work-and-ai-adoption/",
+      "desc": "Limited staffing is motivating government legal organizations to adopt AI tools to automate time-consuming tasks and work more efficiently. Not The post Protecting confidentiality in government…",
+      "date": "Tue, 06 Oct 2026 22:00:04 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/09/240742_615407129_11zon-scaled-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1791324004000,
+      "topic": "rules",
+      "topicLabel": "Rules & ethics",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Department Of Justice Ordered To Call Artificial Intelligence 'SI' To Satisfy Donald Trump Fever Dreams",
+      "link": "https://abovethelaw.com/2026/10/department-of-justice-ordered-to-call-artificial-intelligence-si-to-satisfy-donald-trump-fever-dreams/",
+      "desc": "Are you ready for the next litmus test of Biglaw cowardice? The post Department Of Justice Ordered To Call Artificial Intelligence 'SI' To Satisfy Donald Trump Fever Dreams appeared first on Above…",
+      "date": "Tue, 06 Oct 2026 20:44:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2023/07/GettyImages-1413923549.jpg",
+      "source": "Above the Law",
+      "ts": 1791319440000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI In The Courtroom: The Rules Are Coming, Just Not How Lawyers Expect",
       "link": "https://abovethelaw.com/2026/10/ai-in-the-courtroom-the-rules-are-coming-just-not-how-lawyers-expect/",
@@ -40,21 +68,7 @@
       "ts": 1791240748000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Law School In The Age Of AI: Rethinking It From The Ground Up",
-      "link": "https://abovethelaw.com/2026/10/law-school-in-the-age-of-ai-rethinking-it-from-the-ground-up/",
-      "desc": "We could be on the eve of better lawyers sooner. The post Law School In The Age Of AI: Rethinking It From The Ground Up appeared first on Above the Law .",
-      "date": "Mon, 05 Oct 2026 21:34:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2015/04/the-paper-chase-john-houseman.jpg",
-      "source": "Above the Law",
-      "ts": 1791236040000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -105,7 +119,7 @@
       "link": "https://legaltechnology.com/freedom-ai-and-security-are-law-firms-able-to-enable-innovation-without-losing-control/",
       "desc": "Lawyers today expect the freedom to work from anywhere, access information instantly, collaborate seamlessly and take advantage of AI-powered tools that help them work faster and smarter. For the…",
       "date": "Fri, 02 Oct 2026 12:01:17 +0000",
-      "img": "",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Bluefort-webinar-1024x280.png",
       "source": "Legal IT Insider",
       "ts": 1790942477000,
       "topic": "firms",
@@ -125,20 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "5 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "What agencies should look for before buying an AI investigation solution",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/ai-investigation-solution-law-enforcement/",
-      "desc": "Artificial intelligence has moved fast into everyday life, and law enforcement is no exception. Automated tools with machine learning features The post What agencies should look for before buying…",
-      "date": "Wed, 30 Sep 2026 17:58:15 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2023/03/TR3030867_01A_2500x1406-jpg-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1790791095000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "6 days ago",
       "strong": true,
       "promo": false
     }
