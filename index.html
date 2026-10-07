@@ -83,6 +83,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
 .fs-btn{position:absolute;bottom:14px;right:14px;z-index:3;display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:12.5px;font-weight:500;line-height:1;color:var(--text);background:rgba(9,9,11,.72);border:1px solid var(--line-2);border-radius:999px;padding:8px 12px;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .fs-btn:hover{background:rgba(9,9,11,.92)}
 .fs-btn svg{width:14px;height:14px}
+.frame .fs-btn{top:14px;bottom:auto}
 .vid:fullscreen,.vid.faux-fs{border:0;border-radius:0;background:#000;display:flex;align-items:center;justify-content:center}
 .vid.faux-fs{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:9999}
 .vid:fullscreen video,.vid.faux-fs video{width:100%;height:100%;object-fit:contain}
@@ -320,7 +321,7 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
   <div class="eyebrow">90 seconds</div>
   <h2 id="watch-h">Watch the whole <em>loop.</em></h2>
   <div class="frame vid-frame" id="wtFrame">
-    <iframe src="/walkthrough?v=5" title="Candor product walkthrough" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <iframe src="/walkthrough?v=6" title="Candor product walkthrough" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
     <button type="button" class="fs-btn" aria-label="Play the walkthrough full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg><span class="fs-label">Full screen</span></button>
   </div>
 </section>

@@ -255,6 +255,18 @@
   .wrap{gap:0;width:auto}
   .stage{width:min(100vw,177.7vh);max-width:100%;border-radius:0;border:none;box-shadow:none}
   .bar,.dotrow,.hint{display:none!important}
+  /* player controls, over the bottom of the stage */
+  .stage{position:relative}
+  .pc{position:absolute;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;gap:10px;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(9,9,11,.88) 45%);font:500 12px/1 'IBM Plex Mono',ui-monospace,monospace;color:#E4E4E7;opacity:0;transition:opacity .25s}
+  .stage:hover .pc,.stage.paused .pc,.stage.touched .pc,.pc:focus-within{opacity:1}
+  .pc button{display:grid;place-items:center;width:34px;height:34px;flex:none;border:0;border-radius:999px;background:transparent;color:#FAFAF9;cursor:pointer}
+  .pc button:hover,.pc button:focus-visible{background:rgba(255,255,255,.12);outline:none}
+  .pc button:focus-visible{box-shadow:0 0 0 2px #E07A63}
+  .pc svg{width:18px;height:18px}
+  .pc .sp{width:auto;padding:0 10px;font:inherit}
+  .pc input[type=range]{flex:1;min-width:60px;height:4px;accent-color:#C4523F;cursor:pointer}
+  .pc .tm{flex:none;color:#A8A8B0;font-variant-numeric:tabular-nums}
+  @media (max-width:520px){.pc{gap:4px;padding:22px 8px 8px}.pc .tm{display:none}.pc button{width:30px;height:30px}}
 </style>
 <link rel="canonical" href="https://candor.legal/walkthrough">
 </head><body>
@@ -583,7 +595,41 @@
     else{t0+=performance.now()-pauseAt;playBtn.textContent='⏸ Pause';}}
   function jump(k){t0=performance.now()-starts[k];prevT=starts[k];paused=false;playBtn.textContent='⏸ Pause';show(k);last=k;}
   function replay(){jump(0);}
-  stage.addEventListener('click',toggle);
+  // Player controls over the stage: play/pause, back, forward, a scrubber,
+  // time and speed, so a viewer can stop on a scene or go back to it.
+  var ICON={play:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>',
+    pause:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>',
+    back:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg>',
+    next:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg>'};
+  var pc=document.createElement('div');pc.className='pc';pc.setAttribute('role','group');pc.setAttribute('aria-label','Video controls');
+  pc.innerHTML='<button type="button" data-a="back" aria-label="Previous section">'+ICON.back+'</button>'+
+    '<button type="button" data-a="play" aria-label="Pause">'+ICON.pause+'</button>'+
+    '<button type="button" data-a="next" aria-label="Next section">'+ICON.next+'</button>'+
+    '<input type="range" min="0" max="'+total+'" step="100" value="0" aria-label="Seek">'+
+    '<span class="tm">0:00 / '+fmt(total)+'</span>'+
+    '<button type="button" class="sp" data-a="speed" aria-label="Playback speed">1×</button>';
+  stage.appendChild(pc);
+  var pBtn=pc.querySelector('[data-a=play]'),seek=pc.querySelector('input'),tm=pc.querySelector('.tm'),spBtn=pc.querySelector('[data-a=speed]'),dragging=false;
+  function fmt(ms){var s=Math.floor(ms/1000);return Math.floor(s/60)+':'+('0'+s%60).slice(-2)}
+  function now(){return paused?((pauseAt-t0)*speed)%total:((performance.now()-t0)*speed)%total}
+  function sync(){pBtn.innerHTML=paused?ICON.play:ICON.pause;pBtn.setAttribute('aria-label',paused?'Play':'Pause');stage.classList.toggle('paused',paused)}
+  function seekTo(t){t=Math.max(0,Math.min(total-1,t));var k=idxAt(t);t0=(paused?pauseAt:performance.now())-t/speed;prevT=t;if(k!==last){show(k);last=k}}
+  (function tick(){if(!dragging){var t=now();seek.value=t;tm.textContent=fmt(t)+' / '+fmt(total)}requestAnimationFrame(tick)})();
+  var _toggle=toggle;toggle=function(){_toggle();sync()};
+  pc.addEventListener('click',function(e){e.stopPropagation();var a=e.target.closest('button');if(!a)return;var w=a.getAttribute('data-a');
+    if(w==='play')toggle();
+    else if(w==='back'){var k=idxAt(now());seekTo(now()-starts[k]>1500?starts[k]:starts[Math.max(0,k-1)])}
+    else if(w==='next'){var k2=idxAt(now());seekTo(starts[Math.min(n-1,k2+1)])}
+    else if(w==='speed'){var s=[1,1.5,.75],cur=now();speed=s[(s.indexOf(speed)+1)%s.length];a.textContent=speed+'×';seekTo(cur)}});
+  seek.addEventListener('input',function(){dragging=true;seekTo(+seek.value);tm.textContent=fmt(+seek.value)+' / '+fmt(total)});
+  seek.addEventListener('change',function(){dragging=false});
+  document.addEventListener('keydown',function(e){if(e.target.tagName==='INPUT'&&e.key!==' ')return;
+    if(e.key===' '||e.key==='k'){e.preventDefault();toggle()}
+    else if(e.key==='ArrowLeft'){e.preventDefault();seekTo(now()-5000)}
+    else if(e.key==='ArrowRight'){e.preventDefault();seekTo(now()+5000)}});
+  stage.addEventListener('touchstart',function(){stage.classList.add('touched');clearTimeout(stage._tt);stage._tt=setTimeout(function(){stage.classList.remove('touched')},3000)},{passive:true});
+  var _jump=jump;jump=function(k){_jump(k);sync()};
+  stage.addEventListener('click',function(){toggle()});
   playBtn.addEventListener('click',function(e){e.stopPropagation();toggle();});
   document.getElementById('replayBtn').addEventListener('click',function(e){e.stopPropagation();replay();});
   document.getElementById('speedBtn').addEventListener('click',function(e){e.stopPropagation();
