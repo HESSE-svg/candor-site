@@ -50,6 +50,13 @@
   .btnerr:empty{display:none}
   .btnerr a{color:var(--ox)}
   .startbtn[disabled]{opacity:.7;cursor:progress}
+  .startbtn[disabled]:hover{background:var(--accent);color:#FAFAF9}
+  .startbtn.locked{opacity:.5;cursor:not-allowed}
+  .agree{display:flex;gap:10px;align-items:flex-start;margin-top:18px;font-size:14px;line-height:1.5;color:var(--ink)}
+  .agree input{flex:none;width:18px;height:18px;margin:2px 0 0;accent-color:var(--accent);cursor:pointer}
+  .agree label{cursor:pointer}
+  .agree a{color:var(--ox);text-decoration:underline;text-underline-offset:2px}
+  .agreenote{font-size:12.5px;color:var(--muted);margin-top:8px;text-align:center}
   .steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:var(--s2)}
   @media(max-width:680px){.steps3{grid-template-columns:1fr;gap:16px}}
   .step3 .n{font-family:var(--f-mono);font-size:12px;color:var(--ox);letter-spacing:.06em}
@@ -130,7 +137,12 @@
       </div>
       <div class="duenow">✓ No card needed to start · 30 days free · your own AI model</div>
 
-      <button class="startbtn" id="startbtn" type="button">Start my free month →</button>
+      <div class="agree">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the Candor <a href="/terms" target="_blank" rel="noopener">Terms<span class="sr-only"> (opens in a new tab)</span></a> and <a href="/dpa" target="_blank" rel="noopener">Data Processing Agreement<span class="sr-only"> (opens in a new tab)</span></a> on behalf of my firm.</label>
+      </div>
+      <button class="startbtn locked" id="startbtn" type="button" disabled aria-describedby="agreeNote">Start my free month →</button>
+      <div class="agreenote" id="agreeNote">Tick the box above to continue.</div>
       <div class="btnerr" id="btnerr" role="alert"></div>
       <div class="paynote" id="paynote">Secure signup by Stripe · $0 today, no card required · add one any time before the month ends to keep going.</div>
 
@@ -161,7 +173,7 @@
     <div><h2>Resources</h2><ul><li><a href="/resources">Free tools</a></li><li><a href="/guides">Guides</a></li><li><a href="/rules">AI rules by state</a></li><li><a href="/ai-rules">AI ethics rules</a></li><li><a href="/ai-sanctions">AI sanctions tracker</a></li><li><a href="/news">News</a></li></ul></div>
     <div><h2>Compare</h2><ul><li><a href="/vs/manual-tracking">vs manual tracking</a></li><li><a href="/vs/credo-ai">vs Credo AI</a></li><li><a href="/vs/intapp-celeste">vs Intapp Celeste</a></li></ul></div>
     <div><h2>Company</h2><ul><li><a href="/about">About</a></li><li><a href="/plan">Our plan</a></li><li><a href="/why-now">Why now</a></li><li><a href="/international">International</a></li></ul></div>
-    <div><h2>Trust</h2><ul><li><a href="/security">Security</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/accessibility">Accessibility</a></li></ul></div>
+    <div><h2>Trust</h2><ul><li><a href="/security">Security</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/terms">Terms</a></li><li><a href="/dpa">DPA</a></li><li><a href="/accessibility">Accessibility</a></li></ul></div>
   </nav>
   <div class="sf-bot">
     <p class="sf-copy">&copy; 2026 Candor &middot; <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
@@ -267,6 +279,15 @@
   // looks like it did nothing.
   var btn = document.getElementById("startbtn");
   var btnerr = document.getElementById("btnerr");
+  // The button stays disabled until the firm agrees to the Terms and DPA.
+  var agree = document.getElementById("agree"), agreeNote = document.getElementById("agreeNote");
+  function syncAgree(){
+    btn.disabled = !agree.checked;
+    btn.classList.toggle("locked", !agree.checked);
+    agreeNote.hidden = agree.checked;
+  }
+  agree.addEventListener("change", syncAgree);
+  syncAgree();
   function showErr(msg, field){
     document.getElementById("err").textContent = msg;
     btnerr.textContent = msg;
@@ -279,13 +300,14 @@
   }
   // Coming Back from Stripe restores the page as it was left: reset the button.
   window.addEventListener("pageshow", function(e){
-    if (e.persisted){ btn.disabled = false; btn.textContent = "Start my free month →"; btnerr.textContent = ""; }
+    if (e.persisted){ btn.textContent = "Start my free month →"; btnerr.textContent = ""; syncAgree(); }
   });
   ["firm","name","email"].forEach(function(id){
     document.getElementById(id).addEventListener("input", function(){ this.classList.remove("bad"); });
   });
 
   btn.addEventListener("click", function(){
+    if (!agree.checked){ syncAgree(); return; }
     var d = collect(), bad = validate(d);
     document.getElementById("err").textContent = ""; btnerr.textContent = "";
     if (bad) return showErr(bad.msg, bad.field);
@@ -311,7 +333,7 @@
     // If the browser has not left for Stripe after a few seconds (an in-app
     // browser or a blocker), say so and offer the link directly.
     setTimeout(function(){
-      btn.disabled = false;
+      syncAgree();
       btn.textContent = "Start my free month →";
       btnerr.textContent = "";
       btnerr.appendChild(document.createTextNode("If Stripe didn't open, "));

@@ -11,6 +11,8 @@
 - [About](https://candor.legal/about): why Candor exists.
 - [Start a free month](https://candor.legal/start): self-serve trial, whole team, the firm's own model.
 - [Privacy](https://candor.legal/privacy): what the website and the software collect, and how to have it deleted.
+- [Terms](https://candor.legal/terms): the Candor Cloud Service Agreement, built on Common Paper's standard terms.
+- [Data Processing Agreement](https://candor.legal/dpa): how Candor processes the personal data in a firm's record, and its approved subprocessors.
 
 ## Context
 - [Why now](https://candor.legal/why-now): carriers, bar regulators, and courts are all beginning to ask how firms use AI (ABA Formal Opinion 512; the $110,204 Oregon sanction for fabricated citations).
