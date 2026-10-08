@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-10-08T06:16:08.491Z",
+  "builtAt": "2026-10-08T13:44:22.624Z",
   "count": 10,
   "items": [
+    {
+      "title": "Law Commission proposes sweeping product liability reforms to bring AI and software within scope",
+      "link": "https://legaltechnology.com/law-commission-proposes-sweeping-product-liability-reforms-to-bring-ai-and-software-within-scope/",
+      "desc": "The UK Law Commission today (8 October) launched a consultation on major reform to bring product liability law up to date, including expanding the definition of \"product\" to include software []…",
+      "date": "Thu, 08 Oct 2026 10:42:48 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/law-commission.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1791456168000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Everlaw’s 2026 AI Report: A Glass Half Full Or Half Empty?",
       "link": "https://abovethelaw.com/2026/10/everlaws-2026-ai-report-a-glass-half-full-or-half-empty/",
@@ -54,7 +68,7 @@
       "ts": 1791374151000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -108,20 +122,6 @@
       "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Orange-Rag-Is-Here-1-1024x280.png",
       "source": "Legal IT Insider",
       "ts": 1791289485000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Flank launches senior legal advisory board to shape agentic AI strategy",
-      "link": "https://legaltechnology.com/flank-launches-senior-legal-advisory-board-to-shape-agentic-ai-strategy/",
-      "desc": "Berlin-founded legal AI company Flank is set to unveil a heavyweight senior advisory board that it calls 'The Orchestration Layer,' bringing together general counsel, legal operations leaders,…",
-      "date": "Mon, 05 Oct 2026 12:12:37 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/flank-board-2.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1791202357000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "2 days ago",
