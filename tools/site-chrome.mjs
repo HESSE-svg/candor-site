@@ -50,6 +50,8 @@ const COLS = [
   ['Trust', [
     ['/security', 'Security'],
     ['/privacy', 'Privacy'],
+    ['/terms', 'Terms'],
+    ['/dpa', 'DPA'],
     ['/accessibility', 'Accessibility'],
   ]],
 ]
