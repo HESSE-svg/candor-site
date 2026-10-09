@@ -30,6 +30,7 @@ const COLS = [
   ]],
   ['Resources', [
     ['/resources', 'Free tools'],
+    ['/check', 'Free citation check'],
     ['/guides', 'Guides'],
     ['/rules', 'AI rules by state'],
     ['/ai-rules', 'AI ethics rules'],
@@ -90,6 +91,7 @@ const NAV = [
   ]],
   ['Resources', [
     ['/resources', 'Free tools', 'An AI policy template and a readiness checklist'],
+    ['/check', 'Free citation check', 'Paste a brief, see which citations need a second look'],
     ['/guides', 'Guides', 'ABA Opinion 512, firm AI policy, carrier questions'],
     ['/rules', 'AI rules by state', 'Consent, billing, verification and filing duties'],
     ['/ai-rules', 'AI ethics rules', 'Pick a jurisdiction, see its duties'],
