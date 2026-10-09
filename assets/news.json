@@ -1,7 +1,49 @@
 {
-  "builtAt": "2026-10-09T06:18:35.703Z",
+  "builtAt": "2026-10-09T18:24:41.062Z",
   "count": 10,
   "items": [
+    {
+      "title": "Webinar replay: Legal AI has a trust problem – Is disconnected data to blame?",
+      "link": "https://legaltechnology.com/webinar-replay-legal-ai-has-a-trust-problem-is-disconnected-data-to-blame/",
+      "desc": "AI is everywhere in legal. Trust is another matter. Nearly half of legal organisations have now embedded AI into their workflows. Yet just 33% of senior professionals trust the results according…",
+      "date": "Fri, 09 Oct 2026 16:26:09 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Spotify-2-1024x280.png",
+      "source": "Legal IT Insider",
+      "ts": 1791563169000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
+    {
+      "title": "Biglaw Firm Will Pay Associates To Be Bad At AI For A While (100 Hours, To Be Precise)",
+      "link": "https://abovethelaw.com/2026/10/biglaw-firm-will-pay-associates-to-be-bad-at-ai-for-a-while-100-hours-to-be-precise/",
+      "desc": "It's the only way to learn AI, and this firm has figured that out. The post Biglaw Firm Will Pay Associates To Be Bad At AI For A While (100 Hours, To Be Precise) appeared first on Above the Law .",
+      "date": "Fri, 09 Oct 2026 16:14:31 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2020/08/GettyImages-1208598245.jpg",
+      "source": "Above the Law",
+      "ts": 1791562471000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Startup Corner: Meet iDealLegal.ai, a new legal AI team",
+      "link": "https://legaltechnology.com/startup-corner-meet-ideallegal-ai-a-new-legal-ai-team/",
+      "desc": "Founded in January 2026, bootstrapped legal tech startup iDealLegal.ai is targeting small law firms and lean in-house legal teams with an AI legal team trained on playbooks and contract…",
+      "date": "Fri, 09 Oct 2026 12:30:43 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/StartUp-Corner-9.png",
+      "source": "Legal IT Insider",
+      "ts": 1791549043000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Donald Trump Has Declared All Of You Still Calling It 'Artificial Intelligence' Enemies Of The State",
       "link": "https://abovethelaw.com/2026/10/donald-trump-has-declared-all-of-you-still-calling-it-artificial-intelligence-enemies-of-the-state/",
@@ -31,20 +73,6 @@
       "promo": false
     },
     {
-      "title": "Contracts Are Becoming Infrastructure For AI Agents",
-      "link": "https://abovethelaw.com/2026/10/contracts-are-becoming-infrastructure-for-ai-agents/",
-      "desc": "In-house lawyers should prepare for a world in which contracts are not merely documents that explain what happened. The post Contracts Are Becoming Infrastructure For AI Agents appeared first on…",
-      "date": "Thu, 08 Oct 2026 18:32:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2019/01/artificial-intelligence-3382507__340.jpg",
-      "source": "Above the Law",
-      "ts": 1791484320000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "ATT + OpenAI Partner for Legal AI Workflows",
       "link": "https://www.artificiallawyer.com/2026/10/08/att-openai-partner-for-legal-ai-workflows/",
       "desc": "ATT LegalEdge, the telecom giant’s new inhouse legal agency, is partnering with OpenAI to develop AI-enabled legal workflows. Jason Boehmig, GM Legal Industry at OpenAI,",
@@ -54,7 +82,7 @@
       "ts": 1791477391000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +96,7 @@
       "ts": 1791456168000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -87,20 +115,6 @@
       "promo": false
     },
     {
-      "title": "Orange Rag Insights: Reshaping legal , What GCs are prioritising as AI scales",
-      "link": "https://legaltechnology.com/orange-rag-insights-reshaping-legal-what-gcs-are-prioritising-as-ai-scales/",
-      "desc": "Tom Saunders shares some behind-the scenes data on what senior in-house leaders are thinking about when it comes to the return on investment from AI and whether radical restructuring is [] The…",
-      "date": "Wed, 07 Oct 2026 15:16:55 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/GC-1-1024x280.png",
-      "source": "Legal IT Insider",
-      "ts": 1791386215000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Pilot5 Launches Adversarial AI for Lawyers",
       "link": "https://www.artificiallawyer.com/2026/10/07/pilot5-launches-adversarial-ai-for-lawyers/",
       "desc": "Although a number of legal tech companies use LLM consensus and multiple model strategies already, Pilot5 and its new adversarial Legal AI product specifically taps",
@@ -110,7 +124,7 @@
       "ts": 1791374151000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,20 +138,6 @@
       "ts": 1791324004000,
       "topic": "rules",
       "topicLabel": "Rules & ethics",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Legal IT Insider Security Report: Beyond the perimeter , AI is rewriting the rules",
-      "link": "https://legaltechnology.com/legal-it-insider-security-report-beyond-the-perimeter-ai-is-rewriting-the-rules/",
-      "desc": "In this seminal report from Legal IT Insider, our lead analyst Neil Cameron looks at how the security foundations of the law firm are being rewritten, as AI becomes embedded [] The post Legal IT…",
-      "date": "Tue, 06 Oct 2026 12:24:45 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Orange-Rag-Is-Here-1-1024x280.png",
-      "source": "Legal IT Insider",
-      "ts": 1791289485000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "2 days ago",
       "strong": true,
       "promo": false
