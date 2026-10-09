@@ -25,7 +25,10 @@
   }
   var ENDPOINT = 'https://app.candor.legal/api/site/event'
   var optedOut = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1'
-  var adsOn = !!ADS.id && !optedOut
+  // Never on the free citation check: a visitor pastes text from a brief
+  // there, so no third-party script runs on that page (its CSP blocks it too).
+  var onCheck = /^\/check(?:\.html)?\/?$/.test(location.pathname)
+  var adsOn = !!ADS.id && !optedOut && !onCheck
 
   function beacon(step) {
     try {

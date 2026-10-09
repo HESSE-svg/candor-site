@@ -1,9 +1,8 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI rules for lawyers, by state · Candor</title>
-<meta name="description" content="AI ethics duties for lawyers, state by state: consent, billing, verification and court disclosure, each tied to the rule that says so. Not legal advice.">
-<link rel="canonical" href="https://candor.legal/rules">
+<title>Free citation check for briefs · Candor</title>
+<meta name="description" content="Paste text from a brief and see which case citations CourtListener can't find. Free, no signup. The text stays in your browser; only the citations are sent.">
 <link rel="icon" href="/assets/mark.svg?v=3" type="image/svg+xml">
 <link rel="icon" href="/assets/mark-48.png?v=3" sizes="48x48" type="image/png">
 <link rel="icon" href="/assets/mark-96.png?v=3" sizes="96x96" type="image/png">
@@ -12,15 +11,58 @@
 <link rel="apple-touch-icon" href="/assets/mark-180.png?v=3">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#09090B">
-<meta property="og:title" content="AI rules for lawyers, by state">
-<meta property="og:description" content="AI ethics duties for lawyers, state by state, each tied to the authority that says so.">
+<meta property="og:title" content="Free citation check · Candor">
+<meta property="og:description" content="Paste a brief, see which citations may need a second look. The text stays in your browser.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://candor.legal/rules">
+<meta property="og:url" content="https://candor.legal/check">
 <meta property="og:image" content="https://candor.legal/og.png?v=3">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css?v=16">
+<link rel="canonical" href="https://candor.legal/check">
+<style>
+/* the free citation check (page-only styles, in the shared Ink tokens) */
+.cc [hidden]{display:none!important}
+.cc{margin-top:var(--s4);border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--surface)}
+.cc-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 18px;border-bottom:1px solid var(--rule);font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--faint)}
+.cc-head b{color:var(--mint);font-weight:500}
+.cc-in{padding:18px}
+.cc label{display:block;font-family:var(--f-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);margin-bottom:8px}
+.cc textarea{width:100%;min-height:200px;resize:vertical;border:1px solid var(--line-2);border-radius:10px;padding:12px 13px;font-size:15px;line-height:1.55;font-family:var(--f-sans);background:var(--bg-2);color:var(--navy)}
+.cc textarea:focus{outline:1px solid var(--gilt);border-color:var(--gilt)}
+.cc-stays{font-size:13px;color:var(--muted);margin:10px 0 0}
+.cc-preview{margin-top:16px;padding-top:14px;border-top:1px solid var(--rule)}
+.cc-hint{font-size:13.5px;color:var(--muted);margin:0}
+.cc-chips{list-style:none;display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0;padding:0}
+.cc-chip{font-family:var(--f-mono);font-size:12px;color:var(--ink);border:1px solid var(--line-2);border-radius:999px;padding:3px 10px;overflow-wrap:anywhere}
+.cc-chip-off{color:var(--faint);border-style:dashed}
+.cc-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}
+.cc-actions .btn[disabled]{opacity:.45;cursor:not-allowed}
+.cc-status{font-size:14px;color:var(--muted);margin:14px 0 0;min-height:1em}
+.cc-status:empty{display:none}
+.cc-warn{color:var(--brass)}
+.cc-out{padding:0 18px}
+.cc-out:empty{display:none}
+.cc-sum{font-size:15px;color:var(--ink);padding:16px 0 4px;margin:0;border-top:1px solid var(--rule)}
+.cc-group{padding:14px 0 6px}
+.cc-group h3{font-size:20px;margin:0 0 8px;display:flex;align-items:center;gap:9px}
+.cc-group h3::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--faint)}
+.cc-miss h3{color:var(--brass)}
+.cc-miss h3::before{background:var(--brass)}
+.cc-found h3::before{background:var(--muted)}
+.cc-list{list-style:none;margin:0;padding:0}
+.cc-row{display:grid;grid-template-columns:minmax(0,190px) 1fr;gap:4px 18px;padding:11px 0;border-top:1px solid var(--rule);font-size:14.5px}
+.cc-cite{font-family:var(--f-mono);font-size:13px;color:var(--navy);overflow-wrap:anywhere}
+.cc-miss .cc-cite{color:var(--brass)}
+.cc-note{color:var(--muted)}
+.cc-after{margin:6px 0 18px;padding:18px;border:1px solid rgba(242,196,181,.25);border-radius:14px;background:linear-gradient(180deg,rgba(196,82,63,.10),transparent 70%),var(--soft)}
+.cc-after h3{font-size:22px;margin:0 0 6px}
+.cc-after p{font-size:15px;color:var(--muted);margin:0 0 14px;max-width:46em}
+.cc-fine{margin-top:var(--s5)}
+.cc-fine .deflist h3{font-size:19px}
+@media(max-width:600px){.cc-in{padding:14px}.cc-out{padding:0 14px}.cc-row{grid-template-columns:1fr}.cc textarea{min-height:170px}.cc-actions .btn{flex:1 1 auto}}
+</style>
 <link rel="stylesheet" href="/assets/chrome.css?v=7">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -33,36 +75,48 @@
 
 <main id="main">
 <section class="wrap pagehead">
-  <div class="mono eyebrow">Free tools · AI rules by state</div>
-  <h1>AI rules for lawyers, by state</h1>
-  <p class="lede">Which AI-related professional duties apply to your firm, and where they come from. Each summary is tied to a specific bar opinion or rule, so nothing here is asserted without an authority behind it. A reference summary of published guidance, not legal advice.</p>
+  <div class="mono eyebrow">Free tools · Citation check</div>
+  <h1>Paste a brief. See which citations need a <em>second look</em>.</h1>
+  <p class="lede">Candor picks the case citations out of your text and asks CourtListener whether each one exists. No signup, nothing to install, and your text never leaves this page.</p>
 </section>
 
 <section class="wrap">
-  <h2 class="sr-only">Rules by state</h2><div class="cards">
-    <a class="card" href="/rules/florida" style="text-decoration:none">
-      <h3>Florida</h3>
-      <p>The four duties under Florida Bar Ethics Opinion 24-1: consent, billing, verification, and court-filing disclosure.</p>
-    </a>
-    <a class="card" href="/guides/aba-opinion-512" style="text-decoration:none">
-      <h3>National baseline (ABA)</h3>
-      <p>ABA Formal Opinion 512, the reference point most firms start from where no state opinion is on point.</p>
-    </a>
-    <a class="card" href="/ai-rules" style="text-decoration:none">
-      <h3>Interactive tool</h3>
-      <p>Pick a jurisdiction and compare the duties side by side, each with its source link.</p>
-    </a>
-  </div>
-
-  <div class="band reveal" style="margin-top:var(--s5)"><div class="wrap narrow" style="padding:0">
-    <div class="mono eyebrow">Honest about coverage</div>
-    <h2 style="margin-top:6px">We add a state only when a real opinion backs it.</h2>
-    <p>Florida and the national ABA baseline are covered today. More states are added one at a time, each drawn from its own bar opinion, statute, or court rule with the source linked, never by relabeling a generic template. If your state has not issued specific AI guidance yet, most firms follow ABA Formal Opinion 512 as the starting point.</p>
-    <div class="btnrow">
-      <a class="btn" href="/product">See how Candor proves you met the duty</a>
-      <a class="btn ghost" href="/ai-sanctions">The sanctions tracker</a>
+  <div class="cc" id="cc">
+    <div class="cc-head"><span>Citation check</span><b>Text stays in your browser</b></div>
+    <div class="cc-in">
+      <label for="cc-text">Text from your brief</label>
+      <textarea id="cc-text" spellcheck="false" placeholder="Paste a paragraph or a whole brief. For example: Brown v. Board of Education, 347 U.S. 483 (1954), and a made-up one, 999 F.4th 9999 (11th Cir. 2025)."></textarea>
+      <p class="cc-stays">Nothing you paste is uploaded. Candor reads it here, finds the citations, and sends only those, one bare string each, to look up.</p>
+      <div class="cc-preview" id="cc-preview" aria-live="polite"></div>
+      <div class="cc-actions">
+        <button type="button" class="btn" id="cc-go" disabled>Check citations</button>
+        <button type="button" class="btn ghost" id="cc-next" hidden>Check the next citations</button>
+        <button type="button" class="btn ghost" id="cc-clear">Clear</button>
+      </div>
+      <p class="cc-status" id="cc-status" role="status" aria-live="polite"></p>
     </div>
-  </div></div>
+    <div class="cc-out" id="cc-results" aria-live="polite"></div>
+    <div class="cc-out" id="cc-after" hidden>
+      <div class="cc-after">
+        <h3>Want this on every AI answer, with a record of who read it?</h3>
+        <p>Candor runs the same check from a panel beside the AI tools your firm already uses, then keeps the review on the matter: what was flagged, who looked, and when they signed off. The first month is free.</p>
+        <a class="btn" href="/start">Start a free month &rarr;</a>
+      </div>
+    </div>
+    <noscript><p class="cc-in cc-hint">The check runs in your browser, so it needs JavaScript.</p></noscript>
+  </div>
+</section>
+
+<section class="wrap narrow cc-fine">
+  <div class="mono eyebrow">Before you lean on it</div>
+  <h2>What the check does, and what it doesn&rsquo;t.</h2>
+  <div class="deflist">
+    <div><h3>Your text stays with you</h3><p>The text you paste stays in your browser. Only the citation strings Candor finds (like 347 U.S. 483) go to Candor&rsquo;s server, which passes each one alone to <a href="https://www.courtlistener.com/" target="_blank" rel="noopener">CourtListener</a>, the free case-law collection run by the nonprofit Free Law Project. No names, no surrounding sentences.</p></div>
+    <div><h3>It flags; it doesn&rsquo;t clear</h3><p>&ldquo;Not found&rdquo; means CourtListener had nothing at that citation, which is worth a hard look: invented and mistyped citations both land there, and so do real cases its collection lacks. &ldquo;Found&rdquo; only means a case sits at that citation. It says nothing about whether the case holds what your brief says, whether the pin cite is right, or whether it is still good law. Read every one.</p></div>
+    <div><h3>What it picks up</h3><p>Case citations in the U.S., S. Ct., L. Ed., F., F. Supp., So., A., P., N.E., N.W., S.E., S.W., Cal. and N.Y. reporters, up to 25 per check. U.S.C. sections are listed but not looked up. Other reporters, Westlaw and Lexis cites, and citations split across lines may be missed entirely.</p></div>
+    <div><h3>What Candor keeps</h3><p>A count of how many checks ran each day. Not your text, not the citations, not your IP address, which is held only in memory to stop abuse. Like any website, the hosts keep standard request logs: Render, which runs Candor, logs each check&rsquo;s IP address, time and the address requested, as Vercel does for this page. Your pasted text never reaches either. Answers from CourtListener are held in memory for up to a day so a repeat citation needn&rsquo;t be looked up twice, unconnected to who asked. See the <a href="/privacy">privacy page</a>.</p></div>
+    <div><h3>Not legal advice</h3><p>Candor is software, not a law firm, and this check isn&rsquo;t legal advice. It lowers the odds that a bad citation slips through; it can&rsquo;t take them to zero. The attorney who signs the filing is the one who decides it is ready.</p></div>
+  </div>
 </section>
 </main>
 
@@ -88,5 +142,7 @@
   </div>
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm&rsquo;s attorneys use to make that judgment themselves.</p>
 </div></footer>
+<script src="/assets/cite-extract.js?v=1"></script>
+<script src="/assets/check.js?v=1"></script>
 <script src="/assets/site.js?v=19"></script>
 </body></html>
