@@ -11,13 +11,14 @@ import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=7">'
-export const SITE_JS = '<script src="/assets/site.js?v=19"></script>'
+export const SITE_JS = '<script src="/assets/site.js?v=20"></script>'
 
 const COLS = [
   ['Product', [
     ['/product', 'How Candor works'],
     ['/ai-governance-software', 'AI governance software'],
     ['/connectors', 'Connectors'],
+    ['/who-its-for', 'Who it’s for'],
     ['/review-demo', 'Click through a review'],
     ['/pattern-capture', 'Pattern Capture'],
     ['/renewal-packet', 'Carrier renewal packet'],
@@ -50,7 +51,9 @@ const COLS = [
     ['/international', 'International'],
   ]],
   ['Trust', [
+    ['/trust', 'Trust'],
     ['/security', 'Security'],
+    ['/sources', 'Where data goes'],
     ['/privacy', 'Privacy'],
     ['/terms', 'Terms'],
     ['/dpa', 'DPA'],
@@ -86,6 +89,7 @@ const NAV = [
     ['/product', 'How Candor works', 'Screening, the AI log, sign-off and reports'],
     ['/ai-governance-software', 'AI governance software', 'What the category is, and where Candor fits'],
     ['/connectors', 'Connectors', 'The AI tools, platforms and systems it works with'],
+    ['/who-its-for', 'Who it’s for', 'Insurance, family, estate and general practice'],
     ['/review-demo', 'Click through a review', 'An attorney sign-off, start to finish'],
     ['/pattern-capture', 'Pattern Capture', 'How your firm corrects AI, metadata only'],
     ['/renewal-packet', 'Carrier renewal packet', 'The AI questions carriers ask, from your record'],

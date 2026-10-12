@@ -1,0 +1,117 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trust: how Candor handles a law firm&rsquo;s data, in short</title>
+<meta name="description" content="The short version for a risk lead or IT reviewer: encryption, the fact and not the content, an append-only record, per-firm isolation, U.S. hosting, and where Candor stands on certifications.">
+<link rel="icon" href="/assets/mark.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="/assets/mark-48.png?v=3" sizes="48x48" type="image/png">
+<link rel="icon" href="/assets/mark-96.png?v=3" sizes="96x96" type="image/png">
+<link rel="icon" href="/assets/mark-192.png?v=3" sizes="192x192" type="image/png">
+<link rel="shortcut icon" href="/favicon.ico?v=3">
+<link rel="apple-touch-icon" href="/assets/mark-180.png?v=3">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#09090B">
+<meta property="og:title" content="Trust · Candor">
+<meta property="og:description" content="The short version for a risk lead or IT reviewer: encryption, the fact and not the content, an append-only record, per-firm isolation, U.S. hosting, and where Candor stands on certifications.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://candor.legal/trust">
+<meta property="og:image" content="https://candor.legal/og.png?v=3">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css?v=16">
+<link rel="canonical" href="https://candor.legal/trust">
+<style>
+.tp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:var(--s3)}
+.tp>div{border:1px solid var(--rule);background:var(--surface);border-radius:14px;padding:18px 20px}
+.tp h3{font-size:20px;margin-bottom:6px}
+.tp p{font-size:14.5px;color:var(--muted);margin:0}
+@media(max-width:640px){.tp{grid-template-columns:1fr}}
+.src-row dl{display:grid;grid-template-columns:8.5em 1fr;gap:4px 14px;margin:8px 0 0;font-size:15px}
+.src-row dt{color:var(--faint);font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding-top:4px}
+.src-row dd{margin:0;color:var(--muted)}
+@media(max-width:520px){.src-row dl{grid-template-columns:1fr}.src-row dt{padding-top:8px}}
+.pa-list{margin:10px 0 0;padding-left:20px;color:var(--muted);font-size:15.5px;line-height:1.6;max-width:40em}
+.pa-list li{margin:6px 0}
+</style>
+<link rel="stylesheet" href="/assets/chrome.css?v=7">
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="nav-in">
+  <a class="brand" href="/" aria-label="Candor home"><img class="mk" src="/assets/mark.svg" alt="" width="26" height="26"><span class="name">Candor<span>.</span></span></a>
+  <nav class="navlinks" aria-label="Primary"><div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="nd-product">Product<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nd-p" id="nd-product"><ul><li><a href="/product"><b>How Candor works</b><small>Screening, the AI log, sign-off and reports</small></a></li><li><a href="/ai-governance-software"><b>AI governance software</b><small>What the category is, and where Candor fits</small></a></li><li><a href="/connectors"><b>Connectors</b><small>The AI tools, platforms and systems it works with</small></a></li><li><a href="/who-its-for"><b>Who it&rsquo;s for</b><small>Insurance, family, estate and general practice</small></a></li><li><a href="/review-demo"><b>Click through a review</b><small>An attorney sign-off, start to finish</small></a></li><li><a href="/pattern-capture"><b>Pattern Capture</b><small>How your firm corrects AI, metadata only</small></a></li><li><a href="/renewal-packet"><b>Carrier renewal packet</b><small>The AI questions carriers ask, from your record</small></a></li><li><a href="/changelog"><b>What&rsquo;s new</b><small>Every release, dated</small></a></li></ul></div></div><div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="nd-resources">Resources<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nd-p" id="nd-resources"><ul><li><a href="/resources"><b>Free tools</b><small>An AI policy template and a readiness checklist</small></a></li><li><a href="/check"><b>Free citation check</b><small>Paste a brief, see which citations need a second look</small></a></li><li><a href="/guides"><b>Guides</b><small>ABA Opinion 512, firm AI policy, carrier questions</small></a></li><li><a href="/rules"><b>AI rules by state</b><small>Consent, billing, verification and filing duties</small></a></li><li><a href="/ai-rules"><b>AI ethics rules</b><small>Pick a jurisdiction, see its duties</small></a></li><li><a href="/ai-sanctions"><b>AI sanctions tracker</b><small>Courts that sanctioned AI-made citations</small></a></li></ul></div></div><div class="nd"><button type="button" class="nd-b" aria-expanded="false" aria-controls="nd-company">Company<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="nd-p" id="nd-company"><ul><li><a href="/about"><b>About</b><small>Why Candor exists</small></a></li><li><a href="/plan"><b>Our plan</b><small>Law firms first, then other professions</small></a></li><li><a href="/why-now"><b>Why now</b><small>Carriers, regulators and courts are asking</small></a></li><li><a href="/international"><b>International</b><small>Where Candor is headed outside the U.S.</small></a></li><li><a href="/contact"><b>Contact</b><small>Questions, a walkthrough or a security review</small></a></li></ul></div></div><a href="/pricing">Pricing</a><a href="/security">Security</a><a href="/news">News</a><a class="m-cta" href="/start">Start free</a></nav>
+  <div class="nav-r"><a class="nav-contact" href="/contact">Contact</a><a class="btn" href="/start">Start free</a></div>
+  <button type="button" class="navtoggle" aria-label="Menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+</div></header>
+
+
+<main id="main">
+<section class="wrap pagehead">
+  <div class="mono eyebrow">Security · Trust</div>
+  <h1>The short version, for whoever signs off on vendors.</h1>
+  <p class="lede">Ten facts about how Candor handles a firm&rsquo;s data, a straight answer on certifications, and the documents behind them. The <a href="/security">security page</a> explains the design in depth.</p>
+</section>
+
+<section class="wrap" aria-labelledby="facts-h" style="margin-bottom:var(--s5)">
+  <h2 id="facts-h">What holds today</h2>
+  <div class="tp">
+    <div><h3>Encrypted, both ways</h3><p>Data travels over TLS and is encrypted where it is stored.</p></div>
+    <div><h3>The fact, not the content</h3><p>Candor records that a screen ran and which kinds of details it flagged, never the screened text. Prompts and AI answers are not kept unless the firm turns on conversation history.</p></div>
+    <div><h3>Nothing is rewritten</h3><p>The record is append-only. A correction is a new entry that points to the original, and the chain of entries shows if anything was altered.</p></div>
+    <div><h3>One firm, one record</h3><p>Every record is scoped to the firm that owns it, so one firm&rsquo;s entries never appear in another&rsquo;s account.</p></div>
+    <div><h3>Screening on the device</h3><p>The confidentiality check runs in the browser. The text being screened is never uploaded.</p></div>
+    <div><h3>Citations travel alone</h3><p>To look up a case, only the bare citation string goes to CourtListener. Never the text around it, a client name or a matter name.</p></div>
+    <div><h3>A click, not a watcher</h3><p>The browser extension acts when someone asks it to. It never intercepts traffic, watches a session or records which sites people visit.</p></div>
+    <div><h3>Walls from your own Clio</h3><p>With matter walls on, each person sees only the matters their own Clio login can see. No connection means no matters.</p></div>
+    <div><h3>Your firm&rsquo;s AI account</h3><p>Candor&rsquo;s workspace runs on the model your firm connects, with its own key, stored encrypted and used only for the firm&rsquo;s calls.</p></div>
+    <div><h3>Hosted in the United States</h3><p>The Candor software and its database run in the United States.</p></div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="cert-h"><div class="wrap narrow">
+  <h2 id="cert-h">Certifications</h2>
+  <p>Candor does not yet hold a SOC 2 report or an ISO 27001 certification. The first audit we plan is SOC 2 Type I; no date is set. Until then, we would rather say so plainly than imply otherwise, and we are glad to walk your IT or risk lead through the architecture.</p>
+</div></section>
+
+<section class="band" aria-labelledby="docs-h"><div class="wrap narrow">
+  <h2 id="docs-h">The documents</h2>
+  <div class="deflist">
+    <div><h3><a href="/dpa">Data Processing Agreement</a></h3><p>How Candor processes the personal data in a firm&rsquo;s record. Annex III lists the approved subprocessors, and firms get 30 days&rsquo; notice before one is added or replaced.</p></div>
+    <div><h3><a href="/sources">Where data goes</a></h3><p>Each outside service Candor or its extension talks to, what is sent, and when.</p></div>
+    <div><h3><a href="/privacy">Privacy</a></h3><p>What the website and the software collect, how long it is kept, and how to have it deleted.</p></div>
+    <div><h3><a href="/terms">Terms</a></h3><p>The Cloud Service Agreement a firm signs.</p></div>
+    <div><h3><a href="/security">Security</a></h3><p>The design choices behind the record, in more detail.</p></div>
+  </div>
+  <p style="margin-top:22px">Security questions, or a vulnerability to report: <a href="mailto:jesse@candor.legal">jesse@candor.legal</a>, or the <a href="/contact">contact page</a>.</p>
+</div></section>
+
+<section class="band reveal"><div class="wrap narrow center">
+  <h2>See it on your own matters.</h2>
+  <div class="btnrow" style="justify-content:center"><a class="btn" href="/start">Start free</a><a class="btn ghost" href="/check">Free citation check</a></div>
+</div></section>
+</main>
+
+<footer class="sf"><div class="sf-in">
+  <div class="sf-top">
+    <div><a class="sf-brand" href="/" aria-label="Candor home"><img src="/assets/mark.svg" alt="" width="28" height="28"><b>Candor<span>.</span></b></a>
+      <p class="sf-tag">The AI your firm works in, with the record built in.</p></div>
+  </div>
+  <nav class="sf-cols" aria-label="Footer">
+    <div><h2>Product</h2><ul><li><a href="/product">How Candor works</a></li><li><a href="/ai-governance-software">AI governance software</a></li><li><a href="/connectors">Connectors</a></li><li><a href="/who-its-for">Who it&rsquo;s for</a></li><li><a href="/review-demo">Click through a review</a></li><li><a href="/pattern-capture">Pattern Capture</a></li><li><a href="/renewal-packet">Carrier renewal packet</a></li><li><a href="/changelog">What&rsquo;s new</a></li></ul></div>
+    <div><h2>Get started</h2><ul><li><a href="/start">Start free for a month</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/demo">Get a look</a></li><li><a href="/contact">Contact</a></li></ul></div>
+    <div><h2>Resources</h2><ul><li><a href="/resources">Free tools</a></li><li><a href="/check">Free citation check</a></li><li><a href="/guides">Guides</a></li><li><a href="/rules">AI rules by state</a></li><li><a href="/ai-rules">AI ethics rules</a></li><li><a href="/ai-sanctions">AI sanctions tracker</a></li><li><a href="/news">News</a></li></ul></div>
+    <div><h2>Compare</h2><ul><li><a href="/vs/manual-tracking">vs manual tracking</a></li><li><a href="/vs/credo-ai">vs Credo AI</a></li><li><a href="/vs/intapp-celeste">vs Intapp Celeste</a></li></ul></div>
+    <div><h2>Company</h2><ul><li><a href="/about">About</a></li><li><a href="/plan">Our plan</a></li><li><a href="/why-now">Why now</a></li><li><a href="/international">International</a></li></ul></div>
+    <div><h2>Trust</h2><ul><li><a href="/trust">Trust</a></li><li><a href="/security">Security</a></li><li><a href="/sources">Where data goes</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/terms">Terms</a></li><li><a href="/dpa">DPA</a></li><li><a href="/accessibility">Accessibility</a></li></ul></div>
+  </nav>
+  <div class="sf-bot">
+    <p class="sf-copy">&copy; 2026 Candor &middot; <a href="mailto:jesse@candor.legal">jesse@candor.legal</a></p>
+    <div class="sf-social">
+      <a href="https://www.instagram.com/candor.legal" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.linkedin.com/company/candor-legal" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V16M8 7.5v.01M11.5 16v-3.2a2.2 2.2 0 0 1 4.4 0V16M11.5 10.5V16"/></svg></a>
+    </div>
+  </div>
+  <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm&rsquo;s attorneys use to make that judgment themselves.</p>
+</div></footer>
+<script src="/assets/site.js?v=20"></script>
+</body></html>

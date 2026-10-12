@@ -268,7 +268,7 @@ function page(items, builtAt) {
 </main>
 
 <footer></footer>
-<script src="/assets/site.js?v=19"></script>
+<script src="/assets/site.js?v=20"></script>
 </body></html>
 `
 }

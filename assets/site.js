@@ -123,7 +123,7 @@
   // ---- announcement bar: the latest release, dismissible ----
   // One line across the top of every page. Dismissing it hides this
   // message only; a new one shows.
-  var NEWS = { id: '2026-10-01', text: 'New: the browser panel now works in Harvey, Eve, CoCounsel and Lexis+ AI', short: 'New: Harvey, Eve, CoCounsel, Lexis+ AI', href: '/changelog#2026-10-01' }
+  var NEWS = { id: '2026-10-01', text: 'New: the browser panel now works in Harvey, Eve and Lexis+ AI, plus highlight-to-check on CoCounsel', short: 'New: Harvey, Eve, Lexis+ AI', href: '/changelog#2026-10-01' }
   var header = document.querySelector('header.nav')
   var dismissed = false
   try { dismissed = localStorage.getItem('candor-bar') === NEWS.id } catch (e) { /* storage blocked */ }
