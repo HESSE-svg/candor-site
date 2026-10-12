@@ -9,6 +9,9 @@
 - [Carrier renewal packet](https://candor.legal/renewal-packet): the AI questions malpractice carriers ask at renewal, answered from the firm's own record for any date range.
 - [Pricing](https://candor.legal/pricing): flat annual fee by attorney count; staff seats free; one month free.
 - [Security](https://candor.legal/security): hash-chained, encrypted records; the firm's own model; full export.
+- [Trust](https://candor.legal/trust): the short version for a vendor reviewer: encryption in transit and at rest, the fact of each action and not its content, an append-only record, per-firm isolation, U.S. hosting; Candor holds no SOC 2 report or ISO 27001 certification yet, and SOC 2 Type I is the first audit planned.
+- [Where data goes](https://candor.legal/sources): each outside service the Candor software and extension send anything to (CourtListener, Cornell LII, govinfo, the firm's own AI provider, Clio, Render, Clerk, Stripe, Resend, Google Workspace), what is sent and when.
+- [Who it's for](https://candor.legal/who-its-for): Candor in insurance and property, family law, estate planning and general practice firms.
 - [About](https://candor.legal/about): why Candor exists.
 - [Start a free month](https://candor.legal/start): self-serve trial, whole team, the firm's own model.
 - [Privacy](https://candor.legal/privacy): what the website and the software collect, and how to have it deleted.
