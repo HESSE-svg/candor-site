@@ -17,6 +17,7 @@ const COLS = [
   ['Product', [
     ['/product', 'How Candor works'],
     ['/ai-governance-software', 'AI governance software'],
+    ['/connectors', 'Connectors'],
     ['/review-demo', 'Click through a review'],
     ['/pattern-capture', 'Pattern Capture'],
     ['/renewal-packet', 'Carrier renewal packet'],
@@ -84,6 +85,7 @@ const NAV = [
   ['Product', [
     ['/product', 'How Candor works', 'Screening, the AI log, sign-off and reports'],
     ['/ai-governance-software', 'AI governance software', 'What the category is, and where Candor fits'],
+    ['/connectors', 'Connectors', 'The AI tools, platforms and systems it works with'],
     ['/review-demo', 'Click through a review', 'An attorney sign-off, start to finish'],
     ['/pattern-capture', 'Pattern Capture', 'How your firm corrects AI, metadata only'],
     ['/renewal-packet', 'Carrier renewal packet', 'The AI questions carriers ask, from your record'],
