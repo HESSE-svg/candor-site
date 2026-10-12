@@ -103,7 +103,7 @@
 <main id="main">
 <section class="wrap pagehead">
   <div class="mono eyebrow">Pricing</div>
-  <h1>One flat fee a year. Priced on attorneys, not seats.</h1>
+  <h1>One flat fee, billed yearly. Priced on attorneys, not seats.</h1>
   <p class="lede">Staff included at every tier. Candor runs on your firm&rsquo;s own AI account, so there is no AI markup.</p>
 </section>
 
@@ -129,6 +129,14 @@
 </section>
 
 <section class="wrap">
+  <div class="card" style="margin-top:22px;border-left:3px solid var(--ox)">
+    <div class="mono eyebrow" style="color:var(--ox)">Founding firms</div>
+    <h3 style="margin:6px 0 8px">The first ten firms keep today&rsquo;s price for three years.</h3>
+    <p style="margin:0">Sign on as one of Candor&rsquo;s first ten firms and your tier&rsquo;s price is locked for three years, with hands-on setup for your team included. Same product, same free month to start.</p>
+  </div>
+</section>
+
+<section class="wrap">
   <div class="psw" id="psw">
     <div class="psw-q" id="psw-l">How many attorneys are at your firm?</div>
     <div class="seg" role="radiogroup" aria-labelledby="psw-l"></div>
@@ -138,37 +146,37 @@
     <div class="tier">
       <h3>Solo</h3>
       <div class="tmeta">1 attorney</div>
-      <div class="price">$3,000<small> /yr</small></div>
-      <div class="tmo">$250 a month</div>
+      <div class="price">$250<small> /mo</small></div>
+      <div class="tmo">$3,000 a year, billed yearly</div>
       <a class="tstart" href="/start?tier=solo">Start free</a>
     </div>
     <div class="tier">
       <h3>Small</h3>
       <div class="tmeta">2 to 5 attorneys</div>
-      <div class="price">$6,000<small> /yr</small></div>
-      <div class="tmo">$500 a month</div>
+      <div class="price">$500<small> /mo</small></div>
+      <div class="tmo">$6,000 a year, billed yearly</div>
       <a class="tstart" href="/start?tier=small">Start free</a>
     </div>
     <div class="tier">
       <h3>Mid</h3>
       <div class="tmeta">6 to 15 attorneys</div>
-      <div class="price">$10,000<small> /yr</small></div>
-      <div class="tmo">$833 a month</div>
+      <div class="price">$833<small> /mo</small></div>
+      <div class="tmo">$10,000 a year, billed yearly</div>
       <a class="tstart" href="/start?tier=mid">Start free</a>
     </div>
     <div class="tier feature">
       <span class="tbadge">Most firms</span>
       <h3>Standard</h3>
       <div class="tmeta">16 to 30 attorneys</div>
-      <div class="price">$14,000<small> /yr</small></div>
-      <div class="tmo">$1,167 a month</div>
+      <div class="price">$1,167<small> /mo</small></div>
+      <div class="tmo">$14,000 a year, billed yearly</div>
       <a class="tstart" href="/start?tier=standard">Start free</a>
     </div>
     <div class="tier">
       <h3>Large</h3>
       <div class="tmeta">31 to 60 attorneys</div>
-      <div class="price">$20,000<small> /yr</small></div>
-      <div class="tmo">$1,667 a month</div>
+      <div class="price">$1,667<small> /mo</small></div>
+      <div class="tmo">$20,000 a year, billed yearly</div>
       <a class="tstart" href="/start?tier=large">Start free</a>
     </div>
     <div class="tier">
@@ -201,7 +209,7 @@
   <details><summary>Any per use or token charges?</summary><p>No. One predictable annual fee for the firm. Your AI tools bill you separately for their own usage; Candor doesn't meter on top of that.</p></details>
   <details><summary>Does it connect to Clio or MyCase?</summary><p>Yes. Clio, MyCase, Filevine, PracticePanther, and Smokeball. Your administrator authorises the connection on the platform's own site, and Candor reads the matter list when it needs it rather than copying your client list into our storage. Private integrations need a mid tier plan or above at most platforms.</p></details>
   <details><summary>Can we get our record out?</summary><p>Any time, in full, without asking. A sealed export restores exactly with the hash chain intact. A readable export can be opened years from now with no Candor at all, and still carries the hashes so the chain can be checked. We would rather you never feel locked in.</p></details>
-  <details><summary>Does it work inside ChatGPT and Claude?</summary><p>Yes. An optional browser companion puts the screening, the citation check, and one click logging inside ChatGPT, Claude, Gemini, and Copilot, so your team does not have to open a separate app. It reads only the answer on the page, and sends out only the bare citations it needs to check.</p></details>
+  <details><summary>Does it work inside ChatGPT and Claude?</summary><p>Yes. An optional browser companion puts the screening, the citation check, and one click logging inside ChatGPT, Claude and Gemini, so your team does not have to open a separate app. On Microsoft Copilot you highlight or paste the text you want checked. It reads an answer only when someone clicks Check, and sends out only the bare citations it needs to check.</p></details>
   <details><summary>Do we pay per user?</summary><p>No. Price is set by attorney count alone, and staff seats are unlimited at every tier. Paralegals, legal assistants and office managers cost nothing to add, which matters because they are often the people pasting text into an AI tool in the first place.</p></details>
   <details><summary>How much setup is there on our end?</summary><p>An account, and one button. Someone signs in, opens settings, and presses it, and the browser companion is paired on that machine. No code to copy, no server to run, no IT department. Each machine is named in the record and can be switched off on its own, which matters the day a laptop leaves the firm.</p></details>
   <details><summary>What's the commitment?</summary><p>A year, billed once, so it sits in a budget rather than arriving twelve times. Monthly is available if your firm needs it. Every firm starts with a free month before any of that begins.</p></details>
@@ -224,7 +232,7 @@ var tiers=cards.map(function(c){var a=c.querySelector('.tstart');return{card:c,n
 var label=function(t){return t.who.replace(/ attorneys?$/,'').replace(/^1$/,'Just me').replace(/ to /,'\u2013')};
 function pick(i,focus){tiers.forEach(function(t,j){var b=seg.children[j];b.setAttribute('aria-checked',i===j?'true':'false');b.tabIndex=i===j?0:-1;t.card.classList.toggle('picked',i===j)});
 var t=tiers[i],num=/^\$/.test(t.price);
-out.innerHTML='<div><span class="psw-tier">'+esc(t.name)+' &middot; '+esc(t.who)+'</span><div class="psw-price">'+esc(t.price)+(num?'<small>/yr</small>':'')+'</div><div class="psw-sub">'+esc(t.mo)+(num?' &middot; staff included &middot; first month free':'')+'</div></div><a class="btn" href="'+esc(t.href)+'">'+esc(num?'Start free':t.cta)+' &rarr;</a>';
+out.innerHTML='<div><span class="psw-tier">'+esc(t.name)+' &middot; '+esc(t.who)+'</span><div class="psw-price">'+esc(t.price)+(num?'<small>/mo</small>':'')+'</div><div class="psw-sub">'+esc(t.mo)+(num?' &middot; staff included &middot; first month free':'')+'</div></div><a class="btn" href="'+esc(t.href)+'">'+esc(num?'Start free':t.cta)+' &rarr;</a>';
 if(focus)seg.children[i].focus()}
 tiers.forEach(function(t,i){var b=document.createElement('button');b.type='button';b.setAttribute('role','radio');b.textContent=label(t);b.addEventListener('click',function(){pick(i)});seg.appendChild(b)});
 seg.addEventListener('keydown',function(e){var i=[].indexOf.call(seg.children,document.activeElement);if(i<0)return;
