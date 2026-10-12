@@ -5,6 +5,7 @@
 ## Core pages
 - [Home](https://candor.legal/): what Candor is and the 90-second product walkthrough.
 - [Product](https://candor.legal/product): how it works, covering screen, log, verify, sign off, report, policy, and the governance around them: the firm's own AI rules with a pre-flight check, approved tools and vendor profiles, a risk radar, matter files and receipts, facts-only incident records, an in-browser engagement-letter consent check, and Candor Academy training.
+- [Connectors](https://candor.legal/connectors): what Candor works with: a browser panel in ChatGPT, Claude, Gemini and other AI tools; highlight or paste to check on Microsoft Copilot, CoCounsel and any other tool; legal AI platforms (Harvey, Lexis+ AI, Eve); Clio matter permissions and optional write-back notes; a Word add-in; Chrome and Edge; the firm's own AI account (Anthropic, OpenAI, Google, Azure OpenAI, Mistral, xAI, DeepSeek, Perplexity); and CourtListener, which receives only bare citation strings.
 - [Carrier renewal packet](https://candor.legal/renewal-packet): the AI questions malpractice carriers ask at renewal, answered from the firm's own record for any date range.
 - [Pricing](https://candor.legal/pricing): flat annual fee by attorney count; staff seats free; one month free.
 - [Security](https://candor.legal/security): hash-chained, encrypted records; the firm's own model; full export.
