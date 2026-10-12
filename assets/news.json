@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-10-12T06:08:47.651Z",
+  "builtAt": "2026-10-12T15:41:27.709Z",
   "count": 10,
   "items": [
+    {
+      "title": "Legal AI vs The Adversarial Incentive",
+      "link": "https://www.artificiallawyer.com/2026/10/12/legal-ai-vs-the-adversarial-incentive/",
+      "desc": "Most major law firms use legal AI tools, yet there has been little significant change to how those firms operate. Why is that? The answer",
+      "date": "Mon, 12 Oct 2026 07:29:40 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-12-at-07.45.22.png",
+      "source": "Artificial Lawyer",
+      "ts": 1791790180000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Webinar replay: Legal AI has a trust problem – Is disconnected data to blame?",
       "link": "https://legaltechnology.com/webinar-replay-legal-ai-has-a-trust-problem-is-disconnected-data-to-blame/",
@@ -40,7 +54,7 @@
       "ts": 1791549043000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -96,7 +110,7 @@
       "ts": 1791456168000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,20 +138,6 @@
       "ts": 1791374151000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Protecting confidentiality in government legal work and AI adoption",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/protecting-confidentiality-in-government-legal-work-and-ai-adoption/",
-      "desc": "Limited staffing is motivating government legal organizations to adopt AI tools to automate time-consuming tasks and work more efficiently. Not The post Protecting confidentiality in government…",
-      "date": "Tue, 06 Oct 2026 22:00:04 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/09/240742_615407129_11zon-scaled-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1791324004000,
-      "topic": "rules",
-      "topicLabel": "Rules & ethics",
       "when": "5 days ago",
       "strong": true,
       "promo": false
