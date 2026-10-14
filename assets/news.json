@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-14T05:02:10.433Z",
+  "builtAt": "2026-10-14T12:04:10.281Z",
   "count": 10,
   "items": [
+    {
+      "title": "Goodwin Partner Launches US AI-Native Law Firm Arm",
+      "link": "https://www.artificiallawyer.com/2026/10/14/goodwin-partner-launches-us-ai-native-law-firm-arm/",
+      "desc": "Leon Johnson, most recently a partner at Goodwin in San Francisco and previously a partner at Kirkland Ellis, is joining Omnilex, an AI-native law",
+      "date": "Wed, 14 Oct 2026 10:02:03 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-14-at-10.32.56.png",
+      "source": "Artificial Lawyer",
+      "ts": 1791972123000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "From AI Tools to Agentic AI – A Roadmap",
+      "link": "https://www.artificiallawyer.com/2026/10/14/from-ai-tools-to-agentic-ai-a-roadmap/",
+      "desc": "By Paul Walker, Global Solutions Director, iManage. Law firms have always delegated work to those with less experience, lower billing rates, and narrower scope: partners",
+      "date": "Wed, 14 Oct 2026 06:43:41 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-13-at-17.37.42.png",
+      "source": "Artificial Lawyer",
+      "ts": 1791960221000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "‘Adventures In Legal Tech’: Where Knowledge Management Meets AI",
       "link": "https://abovethelaw.com/2026/10/adventures-in-legal-tech-where-knowledge-management-meets-ai/",
@@ -110,35 +138,7 @@
       "ts": 1791891031000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Partners Want AI to Help Them Find New Business, But Most Are Running It on Data They Can't Use, Introhive Survey Finds",
-      "link": "https://www.lawnext.com/2026/10/partners-want-ai-to-help-them-find-new-business-but-most-are-running-it-on-data-they-cant-use-introhive-survey-finds.html",
-      "desc": "Partners at law and accounting firms say the one thing they most want from business-development technology is help finding new business in relationships their firms already have. But 78% say the…",
-      "date": "Tue, 13 Oct 2026 11:00:42 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/IntrohivePartnerReportCover.png",
-      "source": "LawNext",
-      "ts": 1791889242000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "How Legal Teams Govern AI-Driven Contracting",
-      "link": "https://www.artificiallawyer.com/2026/10/13/how-legal-teams-govern-ai-driven-contracting/",
-      "desc": "By Megan Bradley, Senior Legal Counsel, Docusign. In-house legal teams share some common pressure points: more contracts, more stakeholders, more urgency, all without additional headcount.",
-      "date": "Tue, 13 Oct 2026 06:40:15 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-13-at-07.29.18.png",
-      "source": "Artificial Lawyer",
-      "ts": 1791873615000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     }
