@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-10-14T17:19:36.195Z",
+  "builtAt": "2026-10-14T21:47:18.243Z",
   "count": 10,
   "items": [
+    {
+      "title": "AI Use In Law Firms: There’s Reality. And There’s What Management Wants It To Be.",
+      "link": "https://abovethelaw.com/2026/10/ai-use-in-law-firms-theres-reality-and-theres-what-management-wants-it-to-be/",
+      "desc": "Visier sees a pattern of visible compliance over real AI adoption and integration. The post AI Use In Law Firms: There’s Reality. And There’s What Management Wants It To Be. appeared first on…",
+      "date": "Wed, 14 Oct 2026 20:06:16 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/07/GettyImages-2164326361.jpg",
+      "source": "Above the Law",
+      "ts": 1792008376000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Goodwin Partner Launches US AI-Native Law Firm Arm",
       "link": "https://www.artificiallawyer.com/2026/10/14/goodwin-partner-launches-us-ai-native-law-firm-arm/",
@@ -40,7 +54,7 @@
       "ts": 1791927120000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,21 +68,7 @@
       "ts": 1791924240000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "ChatGPT's Anti-Trump Slogans",
-      "link": "https://abovethelaw.com/2026/10/chatgpts-anti-trump-slogans/",
-      "desc": "The good thing about artificial intelligence is that its imagination never runs out. The post ChatGPT's Anti-Trump Slogans appeared first on Above the Law .",
-      "date": "Tue, 13 Oct 2026 20:04:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/01/donald-trump-GettyImages-1152627372.jpg",
-      "source": "Above the Law",
-      "ts": 1791921840000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
