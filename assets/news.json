@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-15T17:08:44.480Z",
+  "builtAt": "2026-10-15T21:30:31.963Z",
   "count": 10,
   "items": [
+    {
+      "title": "Finally, A Way To Measure AI ROI: Be Careful What You Ask For",
+      "link": "https://abovethelaw.com/2026/10/finally-a-way-to-measure-ai-roi-be-careful-what-you-ask-for/",
+      "desc": "Once you start measuring AI’s value, the next question is who gets to keep it. The post Finally, A Way To Measure AI ROI: Be Careful What You Ask For appeared first on Above the Law .",
+      "date": "Thu, 15 Oct 2026 20:04:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2018/10/GettyImages-851956480-620x413.jpg",
+      "source": "Above the Law",
+      "ts": 1792094640000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Microsoft Launches Copilot for Legal, Becoming the Fourth AI Giant in Five Months to Build Out a Legal Vertical",
+      "link": "https://www.lawnext.com/2026/10/microsoft-launches-copilot-for-legal-becoming-the-fourth-ai-giant-in-five-months-to-build-out-a-legal-vertical.html",
+      "desc": "Microsoft today launched Copilot for Legal, offering more than 20 legal-specific skills in Microsoft Copilot, bringing contract review, drafting, obligations tracking and other legal workflows…",
+      "date": "Thu, 15 Oct 2026 17:56:34 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/MS-Copilot-for-Legal-Featured.png",
+      "source": "LawNext",
+      "ts": 1792086994000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Microsoft Copilot for Legal: What Will Be the Fallout?",
       "link": "https://www.artificiallawyer.com/2026/10/15/microsoft-copilot-for-legal-what-will-be-the-fallout/",
@@ -68,7 +96,7 @@
       "ts": 1792008376000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -101,20 +129,6 @@
       "promo": false
     },
     {
-      "title": "AI And Front-End Loading: The Highest And Best Use",
-      "link": "https://abovethelaw.com/2026/10/ai-and-front-end-loading-the-highest-and-best-use/",
-      "desc": "Front-end loading is the most important thing you will do in litigation -- and now there's a tool that will do most of the work at a fraction of the time and cost. The post AI And Front-End…",
-      "date": "Tue, 13 Oct 2026 20:44:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/01/GettyImages-1413923549.jpg",
-      "source": "Above the Law",
-      "ts": 1791924240000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "When time is money: A smarter AI stack for personal injury firms",
       "link": "https://blogs.thomsonreuters.com/legal-blog/time-is-money-why-professional-grade-ai-is-the-competitive-edge-personal-injury-firms-need/",
       "desc": "How connecting case intelligence to legal research helps plaintiff firms move faster without cutting corners Personal injury plaintiff attorneys The post When time is money: A smarter AI stack for…",
@@ -124,20 +138,6 @@
       "ts": 1791908925000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "How to evaluate AI technology for investigations",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/how-to-evaluate-ai-technology-for-investigations/",
-      "desc": "Artificial intelligence isn't a future consideration for law enforcement anymore. It's already inside the tools officers use every day to The post How to evaluate AI technology for investigations…",
-      "date": "Tue, 13 Oct 2026 15:32:57 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/10/Untitled-May-07-2026-at-13.53.26-3-1-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1791905577000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "2 days ago",
       "strong": true,
       "promo": false
