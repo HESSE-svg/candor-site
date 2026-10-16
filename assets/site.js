@@ -9,6 +9,14 @@
   // no cookie and sends no visitor id, and the app keeps only per-day totals
   // (app/server/siteEventApi.mjs).
   //
+  // Channel tag: links Candor shares carry ?s=<code> (li, lip, ig, g2, cb,
+  // cap, em, msp). On landing this reads it once, keeps ONLY an allowlisted
+  // code (anything else becomes 'other') in sessionStorage for this tab, and
+  // removes it from the address bar. Each step then sends the code with its
+  // name, so the app can count per day and channel. The query string,
+  // referrer and URL are never sent. The list is fixed in the app too
+  // (app/server/channels.mjs); keep the two in step.
+  //
   // Google Ads stays OFF until ADS.id is filled in. When on, it loads Google's
   // tag (which does set cookies) and reports the two conversions below, except
   // for visitors whose browser sends Global Privacy Control or Do Not Track.
@@ -30,10 +38,30 @@
   var onCheck = /^\/check(?:\.html)?\/?$/.test(location.pathname)
   var adsOn = !!ADS.id && !optedOut && !onCheck
 
+  var CHANNELS = ['li', 'lip', 'ig', 'g2', 'cb', 'cap', 'em', 'msp']
+  var channel = ''
+  try {
+    var q = new URLSearchParams(location.search)
+    if (q.has('s')) {
+      var raw = String(q.get('s') || '').trim().toLowerCase()
+      var code = CHANNELS.indexOf(raw) >= 0 ? raw : 'other'
+      // First tag in this tab wins; a later tagged link doesn't re-credit it.
+      try { if (!sessionStorage.getItem('candor-ch')) sessionStorage.setItem('candor-ch', code) } catch (e) { channel = code }
+      q.delete('s')
+      var rest = q.toString()
+      history.replaceState(history.state, '', location.pathname + (rest ? '?' + rest : '') + location.hash)
+    }
+  } catch (e) { /* an old browser: no channel, counted as direct */ }
+  try { channel = sessionStorage.getItem('candor-ch') || channel } catch (e) { /* keep this page's code */ }
+  if (CHANNELS.indexOf(channel) < 0 && channel !== 'other') channel = ''
+  // For the citation check and the lead form on /check (assets/check.js).
+  window.candorChannel = function () { return channel }
+
   function beacon(step) {
+    var body = channel ? JSON.stringify({ e: step, s: channel }) : step
     try {
-      if (navigator.sendBeacon) navigator.sendBeacon(ENDPOINT, new Blob([step], { type: 'text/plain' }))
-      else fetch(ENDPOINT, { method: 'POST', body: step, keepalive: true, mode: 'no-cors' })
+      if (navigator.sendBeacon) navigator.sendBeacon(ENDPOINT, new Blob([body], { type: 'text/plain' }))
+      else fetch(ENDPOINT, { method: 'POST', body: body, keepalive: true, mode: 'no-cors' })
     } catch (e) { /* counting must never break the page */ }
   }
 
