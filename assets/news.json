@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-16T11:34:43.769Z",
+  "builtAt": "2026-10-16T16:45:41.121Z",
   "count": 10,
   "items": [
+    {
+      "title": "Is 'ROT' Data Thwarting Your Firm's AI Adoption?",
+      "link": "https://abovethelaw.com/2026/10/is-rot-data-thwarting-your-firms-ai-adoption/",
+      "desc": "[Sponsored] If you're like most lawyers, redundant, obsolete, and trivial data is probably playing an unwelcome role in your AI outputs. Here's why. The post Is 'ROT' Data Thwarting Your Firm's AI…",
+      "date": "Fri, 16 Oct 2026 15:30:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/10/Image-2-scaled.jpeg",
+      "source": "Above the Law",
+      "ts": 1792164600000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
+    {
+      "title": "Hogan Lovells Cadwalader unveils firmwide AI strategy, signs with Harvey and Legora",
+      "link": "https://legaltechnology.com/hogan-lovells-cadwalader-unveils-firmwide-ai-strategy-signs-with-harvey-and-legora/",
+      "desc": "Hogan Lovells Cadwalader has today (16 October) unveiled a firmwide AI strategy that brings together new senior leadership, an AI board and commercial unit, alongside agreements with Harvey and…",
+      "date": "Fri, 16 Oct 2026 12:58:47 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/hogal-lovells-cadwalader.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1792155527000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Finally, A Way To Measure AI ROI: Be Careful What You Ask For",
       "link": "https://abovethelaw.com/2026/10/finally-a-way-to-measure-ai-roi-be-careful-what-you-ask-for/",
@@ -40,7 +68,7 @@
       "ts": 1792078333000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +82,7 @@
       "ts": 1792076438000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +96,7 @@
       "ts": 1792076416000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,7 +110,7 @@
       "ts": 1792064657000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -110,34 +138,6 @@
       "ts": 1791972123000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "When time is money: A smarter AI stack for personal injury firms",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/time-is-money-why-professional-grade-ai-is-the-competitive-edge-personal-injury-firms-need/",
-      "desc": "How connecting case intelligence to legal research helps plaintiff firms move faster without cutting corners Personal injury plaintiff attorneys The post When time is money: A smarter AI stack for…",
-      "date": "Tue, 13 Oct 2026 16:28:45 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2025/11/AdobeStock_1405784592-min-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1791908925000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "How to evaluate AI technology for investigations",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/how-to-evaluate-ai-technology-for-investigations/",
-      "desc": "Artificial intelligence isn't a future consideration for law enforcement anymore. It's already inside the tools officers use every day to The post How to evaluate AI technology for investigations…",
-      "date": "Tue, 13 Oct 2026 15:32:57 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/10/Untitled-May-07-2026-at-13.53.26-3-1-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1791905577000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "2 days ago",
       "strong": true,
       "promo": false
