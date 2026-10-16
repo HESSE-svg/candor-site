@@ -87,6 +87,8 @@
   .t-last{border-bottom:0}
   .t-note{max-width:880px;margin:16px auto 0;font-size:13px;color:#AEB8C6;line-height:1.5}
   .t-note a{color:#E9B8A8}
+  .t-why{max-width:880px;margin:10px auto 0;font-size:14px;color:#D9DEE6;line-height:1.55}
+  .t-why a{color:#E9B8A8}
   @media(max-width:640px){.tally li{flex-wrap:wrap;gap:4px 10px;font-size:16px}.t-dots{display:none}.t-amt{width:100%}}
   @media(prefers-reduced-motion:reduce){.tally li{opacity:1;transform:none;transition:none}}
 </style>
@@ -115,6 +117,7 @@
     <li class="t-last"><span class="t-what">A record that shows your firm did the work</span><span class="t-dots" aria-hidden="true"></span><span class="t-amt"><em>Yours to keep.</em></span></li>
   </ol>
   <p class="t-note">The sanction is the one imposed in <a href="/sanctions/couvrette-v-wisnovsky">Couvrette v. Wisnovsky</a> (D. Or. 2026). Candor does not prevent sanctions; it keeps the record of how your firm used AI, and you can export all of it at any time.</p>
+  <p class="t-why">That Oregon case is one of more than 1,600 court decisions on AI-fabricated material worldwide in Damien Charlotin&rsquo;s database (mid-2026), and malpractice carriers have begun asking about AI use at renewal. <a href="/why-now">Why the record matters now</a>.</p>
 </section>
 
 <section class="wrap">
@@ -261,5 +264,5 @@ function show(){li.forEach(function(x,i){setTimeout(function(){x.classList.add('
 if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){li.forEach(function(x){x.classList.add('on')});return}
 var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();show()}},{threshold:.4});io.observe(document.querySelector('.tally'))})()
 </script>
-<script src="/assets/site.js?v=20"></script>
+<script src="/assets/site.js?v=21"></script>
 </body></html>

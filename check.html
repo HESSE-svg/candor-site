@@ -59,6 +59,21 @@
 .cc-after{margin:6px 0 18px;padding:18px;border:1px solid rgba(242,196,181,.25);border-radius:14px;background:linear-gradient(180deg,rgba(196,82,63,.10),transparent 70%),var(--soft)}
 .cc-after h3{font-size:22px;margin:0 0 6px}
 .cc-after p{font-size:15px;color:var(--muted);margin:0 0 14px;max-width:46em}
+.cc-after .cc-why{color:var(--ink);font-size:15.5px}
+.cc-btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.cc-copied{font-size:13.5px;color:var(--mint)}
+.cc-lead{margin:0 0 18px;padding:18px;border:1px solid var(--line-2);border-radius:14px;background:var(--bg-2)}
+.cc-lead h3{font-size:20px;margin:0 0 6px;letter-spacing:0;word-spacing:.08em}
+.cc-lead p{font-size:14px;color:var(--muted);margin:0 0 12px;max-width:46em}
+.cc-lead-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.cc-lead input[type=email]{flex:1 1 240px;min-width:0;font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line-2);border-radius:10px;background:var(--surface);color:var(--navy)}
+.cc-lead input[type=email]:focus{outline:1px solid var(--gilt);border-color:var(--gilt)}
+.cc .cc-lead label.cc-check{display:flex;gap:10px;align-items:flex-start;margin:12px 0 0;font-family:var(--f-sans);font-size:14px;text-transform:none;letter-spacing:0;color:var(--ink);cursor:pointer}
+.cc-check input{margin-top:3px;flex:none;width:16px;height:16px;accent-color:var(--accent)}
+.cc-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.cc-lead-msg{font-size:14px;margin:10px 0 0;color:var(--muted)}
+.cc-lead-msg:empty{display:none}
+.cc-lead small{display:block;margin-top:10px;font-size:12.5px;color:var(--faint)}
 .cc-fine{margin-top:var(--s5)}
 .cc-fine .deflist h3{font-size:19px}
 @media(max-width:600px){.cc-in{padding:14px}.cc-out{padding:0 14px}.cc-row{grid-template-columns:1fr}.cc textarea{min-height:170px}.cc-actions .btn{flex:1 1 auto}}
@@ -98,10 +113,24 @@
     <div class="cc-out" id="cc-results" aria-live="polite"></div>
     <div class="cc-out" id="cc-after" hidden>
       <div class="cc-after">
-        <h3>Want this on every AI answer, with a record of who read it?</h3>
-        <p>Candor runs the same check from a panel beside the AI tools your firm already uses, then keeps the review on the matter: what was flagged, who looked, and when they signed off. The first month is free.</p>
-        <a class="btn" href="/start">Start a free month &rarr;</a>
+        <h3>Catch it here, not after it&rsquo;s filed.</h3>
+        <p class="cc-why">A citation that needs a second look is cheaper to catch now than after filing. The Sixth Circuit ordered $15,000 from each attorney over briefs with more than two dozen fabricated or misrepresented citations, and its point holds whatever wrote them: nothing goes in a filing until the lawyer has read it.</p>
+        <p>Candor runs the same check from a panel beside the AI tools your firm already uses, then keeps the review on the matter: what was flagged, who looked, and when they signed off.</p>
+        <div class="cc-btns"><a class="btn" href="/start">Try Candor at your firm &rarr;</a><button type="button" class="btn ghost" id="cc-copy">Copy results</button><span class="cc-copied" id="cc-copied" role="status" aria-live="polite"></span></div>
       </div>
+      <form class="cc-lead" id="cc-lead" novalidate>
+        <h3>Not ready yet?</h3>
+        <p>Leave a work email and keep Candor in mind. Candor emails you a link to confirm. Once you confirm, Candor may follow up about trying it at your firm. Every email has a one-click unsubscribe.</p>
+        <div class="cc-lead-row">
+          <label for="cc-lead-email" class="sr-only">Work email</label>
+          <input id="cc-lead-email" type="email" autocomplete="email" placeholder="you@yourfirm.com" required>
+          <button type="submit" class="btn ghost" id="cc-lead-go">Keep me posted</button>
+        </div>
+        <label class="cc-check" for="cc-lead-notes"><input type="checkbox" id="cc-lead-notes"> <span>Also send me occasional notes from Candor: new AI sanctions, rule changes and product news.</span></label>
+        <div class="cc-hp" aria-hidden="true"><label for="cc-lead-hp">Leave this empty</label><input type="text" id="cc-lead-hp" tabindex="-1" autocomplete="off"></div>
+        <p class="cc-lead-msg" id="cc-lead-msg" role="status" aria-live="polite"></p>
+        <small>Only the address is sent. Your text, the citations and these results stay in this browser. See the <a href="/privacy#check-leads">privacy page</a>.</small>
+      </form>
     </div>
     <noscript><p class="cc-in cc-hint">The check runs in your browser, so it needs JavaScript.</p></noscript>
   </div>
@@ -114,7 +143,7 @@
     <div><h3>Your text stays with you</h3><p>The text you paste stays in your browser. Only the citation strings Candor finds (like 347 U.S. 483) go to Candor&rsquo;s server, which passes each one alone to <a href="https://www.courtlistener.com/" target="_blank" rel="noopener">CourtListener</a>, the free case-law collection run by the nonprofit Free Law Project. No names, no surrounding sentences.</p></div>
     <div><h3>It flags; it doesn&rsquo;t clear</h3><p>&ldquo;Not found&rdquo; means CourtListener had nothing at that citation, which is worth a hard look: invented and mistyped citations both land there, and so do real cases its collection lacks. &ldquo;Found&rdquo; only means a case sits at that citation. It says nothing about whether the case holds what your brief says, whether the pin cite is right, or whether it is still good law. Read every one.</p></div>
     <div><h3>What it picks up</h3><p>Case citations in the U.S., S. Ct., L. Ed., F., F. Supp., So., A., P., N.E., N.W., S.E., S.W., Cal. and N.Y. reporters, up to 25 per check. U.S.C. sections are listed but not looked up. Other reporters, Westlaw and Lexis cites, and citations split across lines may be missed entirely.</p></div>
-    <div><h3>What Candor keeps</h3><p>A count of how many checks ran each day. Not your text, not the citations, not your IP address, which is held only in memory to stop abuse. Like any website, the hosts keep standard request logs: Render, which runs Candor, logs each check&rsquo;s IP address, time and the address requested, as Vercel does for this page. Your pasted text never reaches either. Answers from CourtListener are held in memory for up to a day so a repeat citation needn&rsquo;t be looked up twice, unconnected to who asked. See the <a href="/privacy">privacy page</a>.</p></div>
+    <div><h3>What Candor keeps</h3><p>A count of how many checks ran each day (split by the link tag you arrived with, if any). Not your text, not the citations, not your IP address, which is held only in memory to stop abuse. Like any website, the hosts keep standard request logs: Render, which runs Candor, logs each check&rsquo;s IP address, time and the address requested, as Vercel does for this page. Your pasted text never reaches either. Answers from CourtListener are held in memory for up to a day so a repeat citation needn&rsquo;t be looked up twice, unconnected to who asked. See the <a href="/privacy">privacy page</a>.</p></div>
     <div><h3>Not legal advice</h3><p>Candor is software, not a law firm, and this check isn&rsquo;t legal advice. It lowers the odds that a bad citation slips through; it can&rsquo;t take them to zero. The attorney who signs the filing is the one who decides it is ready.</p></div>
   </div>
 </section>
@@ -143,6 +172,6 @@
   <p class="disc">Candor is software. It does not provide legal advice, and it does not determine whether a firm complies with any rule of professional conduct. It produces the record a firm&rsquo;s attorneys use to make that judgment themselves.</p>
 </div></footer>
 <script src="/assets/cite-extract.js?v=1"></script>
-<script src="/assets/check.js?v=1"></script>
-<script src="/assets/site.js?v=20"></script>
+<script src="/assets/check.js?v=2"></script>
+<script src="/assets/site.js?v=21"></script>
 </body></html>

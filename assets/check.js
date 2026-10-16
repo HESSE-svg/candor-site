@@ -7,12 +7,21 @@
 // CourtListener about each one. The page then sorts what came back into
 // "didn't find", "found" and "not looked up". It never says a citation is
 // good: a found citation still has to be read.
+//
+// Under the results, an optional "Not ready yet?" form sends ONLY a work email,
+// the notes yes/no, and the visitor's channel code (app/server/leadApi.mjs).
+// Never the text, the citations or the results; "Copy results" copies them to
+// the visitor's own clipboard and nowhere else.
 (function () {
   var root = document.getElementById('cc')
   if (!root || !window.CandorCite) return
 
   var local = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
-  var ENDPOINT = (local ? 'http://localhost:5173' : 'https://app.candor.legal') + '/api/public/citation-check'
+  var API = local ? 'http://localhost:5173' : 'https://app.candor.legal'
+  var ENDPOINT = API + '/api/public/citation-check'
+  var LEAD = API + '/api/site/lead'
+  // The allowlisted channel code site.js kept for this tab ('' if none).
+  var channel = function () { try { return (window.candorChannel && window.candorChannel()) || '' } catch (e) { return '' } }
   var BATCH = 25
 
   var $ = function (id) { return document.getElementById(id) }
@@ -125,8 +134,11 @@
     go.disabled = true
     next.hidden = true
     say('Asking CourtListener about ' + plural(batch.length, 'citation', 'citations') + '. A long list can take half a minute.', 'wait')
-    // Exactly one key, an array of bare citation strings. Nothing else.
-    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify({ citations: batch }) })
+    // An array of bare citation strings and, if the visitor came from a tagged
+    // link, its short channel code. Nothing else.
+    var payload = { citations: batch }
+    if (channel()) payload.s = channel()
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(payload) })
       .then(function (r) { return r.json().catch(function () { return {} }).then(function (j) { return { status: r.status, body: j } }) })
       .then(function (r) {
         if (r.status === 200 && r.body && r.body.ok) {
@@ -149,6 +161,54 @@
       .then(function () { busy = false; go.disabled = !cases.length; })
   }
 
+  // ---- Copy results: to the visitor's clipboard only ----
+  var copyBtn = $('cc-copy'), copied = $('cc-copied')
+  function resultsText() {
+    var lines = ['Candor free citation check (CourtListener). Flags only; read every citation yourself.', '']
+    var add = function (title, list) { if (!list.length) return; lines.push(title); list.forEach(function (x) { lines.push('  ' + x) }); lines.push('') }
+    add('Not found:', shown.results.filter(function (r) { return r.status === 'not_found' }).map(function (r) { return r.citation }))
+    add('Found (read them before relying on them):', shown.results.filter(function (r) { return r.status === 'found' }).map(function (r) { return r.citation + (r.name ? ' (' + r.name + ')' : '') }))
+    add('Not looked up:', shown.results.filter(function (r) { return r.status !== 'found' && r.status !== 'not_found' }).map(function (r) { return r.citation }).concat(shown.statutes))
+    return lines.join('\n').trim()
+  }
+  if (copyBtn) copyBtn.addEventListener('click', function () {
+    var t = resultsText()
+    var ok = function () { copied.textContent = 'Copied.' }
+    var fallback = function () {
+      var ta = document.createElement('textarea')
+      ta.value = t; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0'
+      document.body.appendChild(ta); ta.select()
+      var done = false
+      try { done = document.execCommand('copy') } catch (e) { done = false }
+      ta.remove()
+      copied.textContent = done ? 'Copied.' : 'Couldn’t copy. Select the results and copy them by hand.'
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(ok, fallback)
+    else fallback()
+  })
+
+  // ---- "Not ready yet?": a work email, double opt-in ----
+  var lead = $('cc-lead')
+  if (lead) lead.addEventListener('submit', function (e) {
+    e.preventDefault()
+    var msg = $('cc-lead-msg'), btn = $('cc-lead-go')
+    var email = String($('cc-lead-email').value || '').trim()
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { msg.textContent = 'Please enter a work email address.'; return }
+    btn.disabled = true
+    msg.textContent = 'Sending…'
+    // Only these four keys. The server refuses anything else.
+    var body = { email: email, notes: !!$('cc-lead-notes').checked, hp: $('cc-lead-hp').value || '' }
+    if (channel()) body.s = channel()
+    fetch(LEAD, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(body) })
+      .then(function (r) { return r.json().catch(function () { return {} }) })
+      .then(function (j) {
+        if (j && j.ok) { msg.textContent = (j.message || 'Check your inbox for a link to confirm.'); $('cc-lead-email').value = '' }
+        else msg.textContent = (j && j.error) || 'That didn’t go through. Try again in a minute.'
+      })
+      .catch(function () { msg.textContent = 'Couldn’t reach Candor just now. Try again in a minute.' })
+      .then(function () { btn.disabled = false })
+  })
+
   var t = 0
   text.addEventListener('input', function () { clearTimeout(t); t = setTimeout(scan, 150) })
   go.addEventListener('click', function () { sent = 0; shown = { results: [], statutes: statutes.slice() }; check() })
@@ -157,6 +217,7 @@
     text.value = ''
     out.textContent = ''
     after.hidden = true
+    if (copied) copied.textContent = ''
     say('')
     scan()
     text.focus()

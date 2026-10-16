@@ -98,6 +98,10 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
 .quote span{position:absolute;inset:0 auto auto 0;opacity:0;transition:opacity .8s}
 .quote span.on{opacity:1}
 .quote em{font-style:normal;color:var(--rose)}
+.fact{margin-top:20px;max-width:33em;padding-left:14px;border-left:2px solid var(--accent);font-size:15px;line-height:1.6;color:var(--text-2)}
+.fact b{color:var(--text);font-weight:500}
+.fact a{color:var(--rose);text-decoration:underline;text-underline-offset:3px}
+.fact small{display:block;margin-top:4px;font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;color:var(--text-3)}
 .price{margin-top:28px;display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
 .price .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3)}
 .price b{display:block;margin-top:4px;font-family:var(--f-serif);font-weight:400;font-size:62px;line-height:.9;letter-spacing:-.02em}
@@ -170,6 +174,7 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
   h2{font-size:clamp(46px,13vw,72px)}
   .lead{font-size:16.5px}
   .quote{font-size:17px;min-height:4.2em}
+  .fact{font-size:14.5px}
   .row .btn{flex:1 1 100%}
   .watch,.band,.close{padding:88px 20px}
   .seg{border-radius:18px;width:100%}.seg button{flex:1 1 30%}
@@ -249,7 +254,8 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
     <div class="eyebrow">AI governance software for law firms</div>
     <h1 id="hero-h">Proof your firm <em>did the work.</em></h1>
     <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
-    <div class="row"><a class="btn btn-w" href="/start">Start free <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="#watch">Watch it work</a></div>
+    <p class="fact">Courts worldwide have now issued <b>more than 1,600 decisions</b> on AI-fabricated material in filings, and one Oregon brief cost two lawyers <a href="/sanctions/couvrette-v-wisnovsky">$110,204</a>. Carriers have begun asking about AI use at renewal. <small>Damien Charlotin&rsquo;s database, mid-2026 &middot; Couvrette v. Wisnovsky, D. Or., April 2026</small></p>
+    <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="#watch">Watch it work</a></div>
   </div>
   <div class="vis">
     <div class="shot vid" id="heroVid"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.candor.legal</span></div>
@@ -446,5 +452,5 @@ T.forEach(function(t,i){var b=document.createElement('button');b.type='button';b
 function pick(i){[].forEach.call(seg.children,function(b,j){b.setAttribute('aria-pressed',i===j?'true':'false')});pp.innerHTML=T[i][1]+'<i>/yr</i>';pm.innerHTML='<strong>'+T[i][2]+'</strong>'+T[i][3]+' &middot; staff included'}
 pick(3)})();
 </script>
-<script src="/assets/site.js?v=20"></script>
+<script src="/assets/site.js?v=21"></script>
 </body></html>
