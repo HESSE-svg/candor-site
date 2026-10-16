@@ -10,7 +10,7 @@
   // (app/server/siteEventApi.mjs).
   //
   // Channel tag: links Candor shares carry ?s=<code> (li, lip, ig, g2, cb,
-  // cap, em, msp). On landing this reads it once, keeps ONLY an allowlisted
+  // cap, msp; never one-to-one email). On landing this reads it once, keeps ONLY an allowlisted
   // code (anything else becomes 'other') in sessionStorage for this tab, and
   // removes it from the address bar. Each step then sends the code with its
   // name, so the app can count per day and channel. The query string,
@@ -38,7 +38,7 @@
   var onCheck = /^\/check(?:\.html)?\/?$/.test(location.pathname)
   var adsOn = !!ADS.id && !optedOut && !onCheck
 
-  var CHANNELS = ['li', 'lip', 'ig', 'g2', 'cb', 'cap', 'em', 'msp']
+  var CHANNELS = ['li', 'lip', 'ig', 'g2', 'cb', 'cap', 'msp']
   var channel = ''
   try {
     var q = new URLSearchParams(location.search)
