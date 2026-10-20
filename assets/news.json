@@ -1,19 +1,19 @@
 {
-  "builtAt": "2026-10-20T17:17:53.866Z",
+  "builtAt": "2026-10-20T21:42:38.670Z",
   "count": 10,
   "items": [
     {
-      "title": "Smarter corporate investigations Part 4: From alerts to answers",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/smarter-corporate-investigations-part-4-from-alerts-to-answers/",
-      "desc": "How financial institutions can accelerate financial crime investigations with AI intelligence. Financial crime investigation has become exponentially more complex. The post Smarter corporate…",
-      "date": "Tue, 20 Oct 2026 17:06:35 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/05/TR7977040_03A_2880x1100-scaled-e1782231584105-400x225.webp",
+      "title": "AI takes the bench: Highlights from the Judicial AI Summit",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/ai-takes-the-bench-highlights-from-the-judicial-ai-summit/",
+      "desc": "On October 8, judges, academics, government officials, and legal technology leaders gathered at Thomson Reuters headquarters in Times Square for The post AI takes the bench: Highlights from the…",
+      "date": "Tue, 20 Oct 2026 19:55:24 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/10/Untitled-May-07-2026-at-13.53.26-4-400x225.webp",
       "source": "Thomson Reuters",
-      "ts": 1792515995000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
+      "ts": 1792526124000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
       "when": "Today",
-      "strong": false,
+      "strong": true,
       "promo": false
     },
     {
@@ -54,7 +54,7 @@
       "ts": 1792442640000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +68,7 @@
       "ts": 1792440240000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -96,7 +96,7 @@
       "ts": 1792086994000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
