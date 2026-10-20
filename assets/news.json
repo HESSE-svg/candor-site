@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-19T22:27:32.720Z",
+  "builtAt": "2026-10-20T04:59:59.261Z",
   "count": 10,
   "items": [
     {
@@ -45,20 +45,6 @@
       "promo": false
     },
     {
-      "title": "Legora adds Blue J to growing ecosystem",
-      "link": "https://legaltechnology.com/legora-adds-blue-j-to-growing-ecosystem/",
-      "desc": "Legora today (19 October) announced a partnership with Blue J, bringing the latter's AI-powered tax research capabilities into Legora. The announcement follows last week’s launch of Legora’s…",
-      "date": "Mon, 19 Oct 2026 15:43:26 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Puzzle-1-1024x280.png",
-      "source": "Legal IT Insider",
-      "ts": 1792424606000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": false,
-      "promo": false
-    },
-    {
       "title": "Hogan Lovells Cadwalader unveils firmwide AI strategy, signs with Harvey and Legora",
       "link": "https://legaltechnology.com/hogan-lovells-cadwalader-unveils-firmwide-ai-strategy-signs-with-harvey-and-legora/",
       "desc": "Hogan Lovells Cadwalader has today (16 October) unveiled a firmwide AI strategy that brings together new senior leadership, an AI board and commercial unit, alongside agreements with Harvey and…",
@@ -87,6 +73,20 @@
       "promo": false
     },
     {
+      "title": "Microsoft Copilot for Legal: What Will Be the Fallout?",
+      "link": "https://www.artificiallawyer.com/2026/10/15/microsoft-copilot-for-legal-what-will-be-the-fallout/",
+      "desc": "Microsoft has fully launched itself into the legal vertical with Copilot for Legal, an AI-powered venture with over 20 skills that overlap with plenty of",
+      "date": "Thu, 15 Oct 2026 15:32:13 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-15-at-15.30.07.png",
+      "source": "Artificial Lawyer",
+      "ts": 1792078333000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "4 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
       "title": "Microsoft introduces Copilot for legal with circa 20 purpose-built legal skills",
       "link": "https://legaltechnology.com/microsoft-introduces-copilot-for-legal-with-circa-20-purpose-built-legal-skills/",
       "desc": "In an announcement that will be viewed with interest by the in-house legal sector in particular, Microsoft today (15 October) announced Copilot for legal, with more than 20 purpose-built legal…",
@@ -96,6 +96,20 @@
       "ts": 1792076438000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
+      "when": "4 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Microsoft Launches Copilot for Legal – Brace for Impact!",
+      "link": "https://www.artificiallawyer.com/2026/10/15/microsoft-launches-copilot-for-legal-brace-for-impact/",
+      "desc": "Microsoft – the software company the world’s lawyers rely upon because of Word – has gone nuclear and launched Copilot for Legal, its own multi-capability",
+      "date": "Thu, 15 Oct 2026 15:00:16 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-15-at-14.01.12.png",
+      "source": "Artificial Lawyer",
+      "ts": 1792076416000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
       "when": "4 days ago",
       "strong": true,
       "promo": false
@@ -122,20 +136,6 @@
       "img": "https://www.lawnext.com/wp-content/uploads/2026/10/useABI-issueslist-featured.png",
       "source": "LawNext",
       "ts": 1791900079000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "6 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Partners Want AI to Help Them Find New Business, But Most Are Running It on Data They Can't Use, Introhive Survey Finds",
-      "link": "https://www.lawnext.com/2026/10/partners-want-ai-to-help-them-find-new-business-but-most-are-running-it-on-data-they-cant-use-introhive-survey-finds.html",
-      "desc": "Partners at law and accounting firms say the one thing they most want from business-development technology is help finding new business in relationships their firms already have. But 78% say the…",
-      "date": "Tue, 13 Oct 2026 11:00:42 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/IntrohivePartnerReportCover.png",
-      "source": "LawNext",
-      "ts": 1791889242000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "6 days ago",
