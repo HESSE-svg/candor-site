@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-21T12:01:05.522Z",
+  "builtAt": "2026-10-21T17:20:42.532Z",
   "count": 10,
   "items": [
+    {
+      "title": "Who Will Control The AI Relationship: In-House Or Outside Counsel?",
+      "link": "https://abovethelaw.com/2026/10/who-will-control-the-ai-relationship-in-house-or-outside-counsel/",
+      "desc": "Everyone here should care. The post Who Will Control The AI Relationship: In-House Or Outside Counsel? appeared first on Above the Law .",
+      "date": "Wed, 21 Oct 2026 17:00:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2016/12/business-leadership-leader-lawyer-team-teamwork-diverse-diversity-300x200.jpg",
+      "source": "Above the Law",
+      "ts": 1792602000000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "For many state courts, the time for AI planning is over",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/for-many-state-courts-the-time-for-ai-planning-is-over/",
+      "desc": "State courts are at critical crossroads. On one hand, they are facing heavier workloads and persistent staffing shortages, while managing The post For many state courts, the time for AI planning…",
+      "date": "Wed, 21 Oct 2026 16:51:46 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2023/07/What-is-a-LA-scaled-jpeg-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1792601506000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "‘AI Is Not A Legal Entity’ Says Law Society",
       "link": "https://www.artificiallawyer.com/2026/10/21/ai-is-not-a-legal-entity-says-law-society/",
@@ -40,7 +68,7 @@
       "ts": 1792515660000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +82,7 @@
       "ts": 1792508653000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -69,34 +97,6 @@
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
       "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "The Defense Bar In The Age Of AI: Running A Red Queen’s Race?",
-      "link": "https://abovethelaw.com/2026/10/the-defense-bar-in-the-age-of-ai-running-a-red-queens-race/",
-      "desc": "The mismatch between the talent and resources of plaintiffs' firms and those of defense firms is widening. The post The Defense Bar In The Age Of AI: Running A Red Queen’s Race? appeared first on…",
-      "date": "Mon, 19 Oct 2026 20:04:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2017/03/woman-lawyer-female-attorney-running-ahead-of-men.jpg",
-      "source": "Above the Law",
-      "ts": 1792440240000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Hogan Lovells Cadwalader unveils firmwide AI strategy, signs with Harvey and Legora",
-      "link": "https://legaltechnology.com/hogan-lovells-cadwalader-unveils-firmwide-ai-strategy-signs-with-harvey-and-legora/",
-      "desc": "Hogan Lovells Cadwalader has today (16 October) unveiled a firmwide AI strategy that brings together new senior leadership, an AI board and commercial unit, alongside agreements with Harvey and…",
-      "date": "Fri, 16 Oct 2026 12:58:47 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/hogal-lovells-cadwalader.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1792155527000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
