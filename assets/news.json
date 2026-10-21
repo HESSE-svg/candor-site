@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-10-21T04:58:57.715Z",
+  "builtAt": "2026-10-21T12:01:05.522Z",
   "count": 10,
   "items": [
+    {
+      "title": "‘AI Is Not A Legal Entity’ Says Law Society",
+      "link": "https://www.artificiallawyer.com/2026/10/21/ai-is-not-a-legal-entity-says-law-society/",
+      "desc": "The Law Society of England Wales has sent out a practice note to remind everyone that 'AI is not a legal entity' and so",
+      "date": "Wed, 21 Oct 2026 10:03:06 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-21-at-10.42.47.png",
+      "source": "Artificial Lawyer",
+      "ts": 1792576986000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI takes the bench: Highlights from the Judicial AI Summit",
       "link": "https://blogs.thomsonreuters.com/legal-blog/ai-takes-the-bench-highlights-from-the-judicial-ai-summit/",
@@ -96,20 +110,6 @@
       "ts": 1792086994000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "5 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Microsoft Copilot for Legal: What Will Be the Fallout?",
-      "link": "https://www.artificiallawyer.com/2026/10/15/microsoft-copilot-for-legal-what-will-be-the-fallout/",
-      "desc": "Microsoft has fully launched itself into the legal vertical with Copilot for Legal, an AI-powered venture with over 20 skills that overlap with plenty of",
-      "date": "Thu, 15 Oct 2026 15:32:13 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-15-at-15.30.07.png",
-      "source": "Artificial Lawyer",
-      "ts": 1792078333000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "5 days ago",
       "strong": true,
       "promo": false
