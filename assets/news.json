@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-10-22T12:03:36.042Z",
+  "builtAt": "2026-10-22T17:18:04.903Z",
   "count": 10,
   "items": [
+    {
+      "title": "FDA Official Believes GenAI-Enabled Tools Will Need To Be Assessed Like A Physician",
+      "link": "https://medcitynews.com/2026/10/fda-official-believes-genai-enabled-tools-will-need-to-be-assessed-like-a-physician/",
+      "desc": "Rick Abramson, a radiologist by training and the director of FDA's Digital Health Center of Excellence said, ‘We ended up putting out this idea that maybe these devices are starting to behave a…",
+      "date": "Thu, 22 Oct 2026 14:04:00 +0000",
+      "img": "https://medcitynews.com/wp-content/uploads/sites/7/2023/09/GettyImages-1377896928.jpg",
+      "source": "Above the Law",
+      "ts": 1792677840000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Webinar Replay: Beyond the bill , Visibility, platforms and the AI opportunity",
       "link": "https://legaltechnology.com/webinar-replay-beyond-the-bill-visibility-platforms-and-the-ai-opportunity/",
@@ -54,7 +68,7 @@
       "ts": 1792602000000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +82,7 @@
       "ts": 1792601506000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -110,7 +124,7 @@
       "ts": 1792515660000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,21 +138,7 @@
       "ts": 1792508653000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Microsoft Launches Copilot for Legal, Becoming the Fourth AI Giant in Five Months to Build Out a Legal Vertical",
-      "link": "https://www.lawnext.com/2026/10/microsoft-launches-copilot-for-legal-becoming-the-fourth-ai-giant-in-five-months-to-build-out-a-legal-vertical.html",
-      "desc": "Microsoft today launched Copilot for Legal, offering more than 20 legal-specific skills in Microsoft Copilot, bringing contract review, drafting, obligations tracking and other legal workflows…",
-      "date": "Thu, 15 Oct 2026 17:56:34 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/MS-Copilot-for-Legal-Featured.png",
-      "source": "LawNext",
-      "ts": 1792086994000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "6 days ago",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     }
