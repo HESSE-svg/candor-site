@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-22T17:18:04.903Z",
+  "builtAt": "2026-10-22T21:43:32.904Z",
   "count": 10,
   "items": [
+    {
+      "title": "Leveling Up With AI In Civil Defense: A Dungeons And Dragons Adventure For The Defense Team",
+      "link": "https://abovethelaw.com/2026/10/leveling-up-with-ai-in-civil-defense-a-dungeons-and-dragons-adventure-for-the-defense-team/",
+      "desc": "Learning AI can seem like standing outside a dungeon while everyone else knows the way through. You can learn the game one encounter at a time. The post Leveling Up With AI In Civil Defense: A…",
+      "date": "Thu, 22 Oct 2026 19:03:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2019/12/GettyImages-454085585-620x321.jpg",
+      "source": "Above the Law",
+      "ts": 1792695780000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "How LexisNexis And Its Customers Are Building The Next Generation Of Legal AI Together",
+      "link": "https://abovethelaw.com/2026/10/how-lexisnexis-and-its-customers-are-building-the-next-generation-of-legal-ai-together/",
+      "desc": "[Sponsored] A conversation with Greg Dickason, chief technology officer and head of the LexisNexis Customer Innovation Lab. The post How LexisNexis And Its Customers Are Building The Next…",
+      "date": "Thu, 22 Oct 2026 17:44:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/10/Greg-Dickason-Headshot-Landscape-Close-up-Color-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1792691040000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
     {
       "title": "FDA Official Believes GenAI-Enabled Tools Will Need To Be Assessed Like A Physician",
       "link": "https://medcitynews.com/2026/10/fda-official-believes-genai-enabled-tools-will-need-to-be-assessed-like-a-physician/",
@@ -54,20 +82,6 @@
       "ts": 1792612392000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Who Will Control The AI Relationship: In-House Or Outside Counsel?",
-      "link": "https://abovethelaw.com/2026/10/who-will-control-the-ai-relationship-in-house-or-outside-counsel/",
-      "desc": "Everyone here should care. The post Who Will Control The AI Relationship: In-House Or Outside Counsel? appeared first on Above the Law .",
-      "date": "Wed, 21 Oct 2026 17:00:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2016/12/business-leadership-leader-lawyer-team-teamwork-diverse-diversity-300x200.jpg",
-      "source": "Above the Law",
-      "ts": 1792602000000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "Yesterday",
       "strong": true,
       "promo": false
@@ -110,20 +124,6 @@
       "ts": 1792526124000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "AI Innovation On Trial",
-      "link": "https://abovethelaw.com/2026/10/ai-innovation-on-trial/",
-      "desc": "RelFest asked the key question -- who is doing the innovating. The post AI Innovation On Trial appeared first on Above the Law .",
-      "date": "Tue, 20 Oct 2026 17:01:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/08/GettyImages-2192183415.jpg",
-      "source": "Above the Law",
-      "ts": 1792515660000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "2 days ago",
       "strong": true,
       "promo": false
