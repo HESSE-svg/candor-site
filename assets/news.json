@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-22T05:00:20.991Z",
+  "builtAt": "2026-10-22T12:03:36.042Z",
   "count": 10,
   "items": [
+    {
+      "title": "Webinar Replay: Beyond the bill , Visibility, platforms and the AI opportunity",
+      "link": "https://legaltechnology.com/webinar-replay-beyond-the-bill-visibility-platforms-and-the-ai-opportunity/",
+      "desc": "In this latest TalkingTech webinar, I sat down with Milan Bobde, CEO and co-founder of AI invoice-to-cash platform Oddr, for deep dive into how law firms are rethinking the billing [] The post…",
+      "date": "Thu, 22 Oct 2026 11:31:43 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Trumper.png",
+      "source": "Legal IT Insider",
+      "ts": 1792668703000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
+    {
+      "title": "PHP2Shell – \"AI is changing what we consider exploitable\"",
+      "link": "https://legaltechnology.com/php2shell-ai-is-changing-what-we-consider-exploitable/",
+      "desc": "Ismael Valenzuela, vice president of labs, threat research and intelligence at cybersecurity company Arctic Wolf shares some of the most important lessons and next steps from the PHP2Shell…",
+      "date": "Thu, 22 Oct 2026 09:14:50 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/08/Security.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1792660490000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Trusted legal AI tools to power research, drafting, and analysis",
       "link": "https://blogs.thomsonreuters.com/legal-blog/legal-ai-tools-essential-for-attorneys/",
@@ -54,7 +82,7 @@
       "ts": 1792576986000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -111,34 +139,6 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "6 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Former Big Law MA Lawyer Launches useABI, an AI 'Associate' That Produces Deal Docs Without Prompting",
-      "link": "https://www.lawnext.com/2026/10/former-big-law-ma-lawyer-launches-useabi-an-ai-associate-that-produces-deal-docs-without-prompting.html",
-      "desc": "A former mergers-and-acquisitions lawyer at Greenberg Traurig today launched useABI, a legal AI platform for MA lawyers that is designed to function not as just another AI assistant but as…",
-      "date": "Tue, 13 Oct 2026 14:01:19 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/useABI-issueslist-featured.png",
-      "source": "LawNext",
-      "ts": 1791900079000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Oct 13, 2026",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Partners Want AI to Help Them Find New Business, But Most Are Running It on Data They Can't Use, Introhive Survey Finds",
-      "link": "https://www.lawnext.com/2026/10/partners-want-ai-to-help-them-find-new-business-but-most-are-running-it-on-data-they-cant-use-introhive-survey-finds.html",
-      "desc": "Partners at law and accounting firms say the one thing they most want from business-development technology is help finding new business in relationships their firms already have. But 78% say the…",
-      "date": "Tue, 13 Oct 2026 11:00:42 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/IntrohivePartnerReportCover.png",
-      "source": "LawNext",
-      "ts": 1791889242000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Oct 13, 2026",
       "strong": true,
       "promo": false
     }
