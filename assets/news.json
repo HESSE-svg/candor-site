@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-10-23T05:01:26.127Z",
+  "builtAt": "2026-10-23T11:48:49.725Z",
   "count": 10,
   "items": [
+    {
+      "title": "Startup Corner: IamVERA brings a 'second pair of eyes' for AI output",
+      "link": "https://legaltechnology.com/startup-corner-iamvera-brings-a-second-pair-of-eyes-for-ai-output/",
+      "desc": "Founded this year, IamVERA is described by its founder as 'a second pair of eyes for AI', leveraging different AI models to check and challenge AI output. It is also [] The post Startup Corner:…",
+      "date": "Fri, 23 Oct 2026 11:32:53 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/StartUp-Corner.png",
+      "source": "Legal IT Insider",
+      "ts": 1792755173000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Leveling Up With AI In Civil Defense: A Dungeons And Dragons Adventure For The Defense Team",
       "link": "https://abovethelaw.com/2026/10/leveling-up-with-ai-in-civil-defense-a-dungeons-and-dragons-adventure-for-the-defense-team/",
@@ -54,7 +68,7 @@
       "ts": 1792668703000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": true
     },
@@ -68,7 +82,7 @@
       "ts": 1792660490000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -110,7 +124,7 @@
       "ts": 1792576986000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,20 +138,6 @@
       "ts": 1792526124000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Womble Bond Dickinson Launches ‘AI Labs’",
-      "link": "https://www.artificiallawyer.com/2026/10/20/womble-bond-dickinson-launches-ai-labs/",
-      "desc": "Transatlantic law firm Womble Bond Dickinson has launched ‘Womble AI Labs', which will build AI solutions for the firm and its clients. It is led",
-      "date": "Tue, 20 Oct 2026 15:04:13 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-20-at-16.08.15.png",
-      "source": "Artificial Lawyer",
-      "ts": 1792508653000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "2 days ago",
       "strong": true,
       "promo": false
