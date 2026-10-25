@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-25T11:44:14.070Z",
+  "builtAt": "2026-10-25T16:32:18.623Z",
   "count": 10,
   "items": [
     {
@@ -54,7 +54,7 @@
       "ts": 1792677840000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
