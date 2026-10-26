@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-10-26T13:16:36.725Z",
+  "builtAt": "2026-10-26T22:44:58.439Z",
   "count": 10,
   "items": [
+    {
+      "title": "Fortune 500 Healthcare Company Asks For AI To Negotiate Contracts With No Human Lawyers",
+      "link": "https://abovethelaw.com/2026/10/fortune-500-healthcare-company-asks-for-ai-to-negotiate-contracts-with-no-human-lawyers/",
+      "desc": "In other news, Fortune 500 healthcare company about to be in all kinds of legal trouble. The post Fortune 500 Healthcare Company Asks For AI To Negotiate Contracts With No Human Lawyers appeared…",
+      "date": "Mon, 26 Oct 2026 17:42:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/09/GettyImages-2211086231-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1793036520000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Clio unveils unified platform with agentic workflows, AI phone system and new DMS",
+      "link": "https://legaltechnology.com/clio-unveils-unified-platform-with-agentic-workflows-ai-phone-system-and-new-dms/",
+      "desc": "Legal practice management system provider Clio today (26 October) unveiled a significant expansion of its platform, including an AI-native business phone system, agentic workflows, automated time…",
+      "date": "Mon, 26 Oct 2026 13:30:53 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Trumper-2.png",
+      "source": "Legal IT Insider",
+      "ts": 1793021453000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Startup Corner: IamVERA brings a 'second pair of eyes' for AI output",
       "link": "https://legaltechnology.com/startup-corner-iamvera-brings-a-second-pair-of-eyes-for-ai-output/",
@@ -15,34 +43,6 @@
       "when": "3 days ago",
       "strong": true,
       "promo": false
-    },
-    {
-      "title": "Leveling Up With AI In Civil Defense: A Dungeons And Dragons Adventure For The Defense Team",
-      "link": "https://abovethelaw.com/2026/10/leveling-up-with-ai-in-civil-defense-a-dungeons-and-dragons-adventure-for-the-defense-team/",
-      "desc": "Learning AI can seem like standing outside a dungeon while everyone else knows the way through. You can learn the game one encounter at a time. The post Leveling Up With AI In Civil Defense: A…",
-      "date": "Thu, 22 Oct 2026 19:03:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2019/12/GettyImages-454085585-620x321.jpg",
-      "source": "Above the Law",
-      "ts": 1792695780000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "How LexisNexis And Its Customers Are Building The Next Generation Of Legal AI Together",
-      "link": "https://abovethelaw.com/2026/10/how-lexisnexis-and-its-customers-are-building-the-next-generation-of-legal-ai-together/",
-      "desc": "[Sponsored] A conversation with Greg Dickason, chief technology officer and head of the LexisNexis Customer Innovation Lab. The post How LexisNexis And Its Customers Are Building The Next…",
-      "date": "Thu, 22 Oct 2026 17:44:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/10/Greg-Dickason-Headshot-Landscape-Close-up-Color-scaled.jpg",
-      "source": "Above the Law",
-      "ts": 1792691040000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": true
     },
     {
       "title": "Webinar Replay: Beyond the bill , Visibility, platforms and the AI opportunity",
@@ -59,20 +59,6 @@
       "promo": true
     },
     {
-      "title": "PHP2Shell – \"AI is changing what we consider exploitable\"",
-      "link": "https://legaltechnology.com/php2shell-ai-is-changing-what-we-consider-exploitable/",
-      "desc": "Ismael Valenzuela, vice president of labs, threat research and intelligence at cybersecurity company Arctic Wolf shares some of the most important lessons and next steps from the PHP2Shell…",
-      "date": "Thu, 22 Oct 2026 09:14:50 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/08/Security.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1792660490000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Trusted legal AI tools to power research, drafting, and analysis",
       "link": "https://blogs.thomsonreuters.com/legal-blog/legal-ai-tools-essential-for-attorneys/",
       "desc": "AI is not a magic wand. The skills and knowledge you’ve built as a lawyer are still your most The post Trusted legal AI tools to power research, drafting, and analysis appeared first on Thomson…",
@@ -82,7 +68,7 @@
       "ts": 1792612392000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
@@ -96,7 +82,7 @@
       "ts": 1792601506000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,7 +110,7 @@
       "ts": 1792526124000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "5 days ago",
+      "when": "6 days ago",
       "strong": true,
       "promo": false
     },
@@ -138,7 +124,21 @@
       "ts": 1792508653000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "5 days ago",
+      "when": "6 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Microsoft Launches Copilot for Legal, Becoming the Fourth AI Giant in Five Months to Build Out a Legal Vertical",
+      "link": "https://www.lawnext.com/2026/10/microsoft-launches-copilot-for-legal-becoming-the-fourth-ai-giant-in-five-months-to-build-out-a-legal-vertical.html",
+      "desc": "Microsoft today launched Copilot for Legal, offering more than 20 legal-specific skills in Microsoft Copilot, bringing contract review, drafting, obligations tracking and other legal workflows…",
+      "date": "Thu, 15 Oct 2026 17:56:34 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/MS-Copilot-for-Legal-Featured.png",
+      "source": "LawNext",
+      "ts": 1792086994000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Oct 15, 2026",
       "strong": true,
       "promo": false
     }
