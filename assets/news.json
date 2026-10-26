@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-25T20:57:16.373Z",
+  "builtAt": "2026-10-26T04:57:28.176Z",
   "count": 10,
   "items": [
     {
@@ -43,20 +43,6 @@
       "when": "3 days ago",
       "strong": true,
       "promo": true
-    },
-    {
-      "title": "FDA Official Believes GenAI-Enabled Tools Will Need To Be Assessed Like A Physician",
-      "link": "https://medcitynews.com/2026/10/fda-official-believes-genai-enabled-tools-will-need-to-be-assessed-like-a-physician/",
-      "desc": "Rick Abramson, a radiologist by training and the director of FDA's Digital Health Center of Excellence said, ‘We ended up putting out this idea that maybe these devices are starting to behave a…",
-      "date": "Thu, 22 Oct 2026 14:04:00 +0000",
-      "img": "https://medcitynews.com/wp-content/uploads/sites/7/2023/09/GettyImages-1377896928.jpg",
-      "source": "Above the Law",
-      "ts": 1792677840000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
     },
     {
       "title": "Webinar Replay: Beyond the bill , Visibility, platforms and the AI opportunity",
@@ -138,6 +124,20 @@
       "ts": 1792526124000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
+      "when": "5 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Womble Bond Dickinson Launches ‘AI Labs’",
+      "link": "https://www.artificiallawyer.com/2026/10/20/womble-bond-dickinson-launches-ai-labs/",
+      "desc": "Transatlantic law firm Womble Bond Dickinson has launched ‘Womble AI Labs', which will build AI solutions for the firm and its clients. It is led",
+      "date": "Tue, 20 Oct 2026 15:04:13 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-20-at-16.08.15.png",
+      "source": "Artificial Lawyer",
+      "ts": 1792508653000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
       "when": "5 days ago",
       "strong": true,
       "promo": false
