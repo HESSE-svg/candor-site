@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-27T05:14:59.097Z",
+  "builtAt": "2026-10-27T12:24:23.721Z",
   "count": 10,
   "items": [
     {
@@ -40,7 +40,7 @@
       "ts": 1792755173000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -54,7 +54,7 @@
       "ts": 1792668703000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": true
     },
@@ -87,20 +87,6 @@
       "promo": false
     },
     {
-      "title": "‘AI Is Not A Legal Entity’ Says Law Society",
-      "link": "https://www.artificiallawyer.com/2026/10/21/ai-is-not-a-legal-entity-says-law-society/",
-      "desc": "The Law Society of England Wales has sent out a practice note to remind everyone that 'AI is not a legal entity' and so",
-      "date": "Wed, 21 Oct 2026 10:03:06 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-21-at-10.42.47.png",
-      "source": "Artificial Lawyer",
-      "ts": 1792576986000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "AI takes the bench: Highlights from the Judicial AI Summit",
       "link": "https://blogs.thomsonreuters.com/legal-blog/ai-takes-the-bench-highlights-from-the-judicial-ai-summit/",
       "desc": "On October 8, judges, academics, government officials, and legal technology leaders gathered at Thomson Reuters headquarters in Times Square for The post AI takes the bench: Highlights from the…",
@@ -110,20 +96,6 @@
       "ts": 1792526124000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "6 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Womble Bond Dickinson Launches ‘AI Labs’",
-      "link": "https://www.artificiallawyer.com/2026/10/20/womble-bond-dickinson-launches-ai-labs/",
-      "desc": "Transatlantic law firm Womble Bond Dickinson has launched ‘Womble AI Labs', which will build AI solutions for the firm and its clients. It is led",
-      "date": "Tue, 20 Oct 2026 15:04:13 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-20-at-16.08.15.png",
-      "source": "Artificial Lawyer",
-      "ts": 1792508653000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "6 days ago",
       "strong": true,
       "promo": false
@@ -139,6 +111,34 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "Oct 15, 2026",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Former Big Law MA Lawyer Launches useABI, an AI 'Associate' That Produces Deal Docs Without Prompting",
+      "link": "https://www.lawnext.com/2026/10/former-big-law-ma-lawyer-launches-useabi-an-ai-associate-that-produces-deal-docs-without-prompting.html",
+      "desc": "A former mergers-and-acquisitions lawyer at Greenberg Traurig today launched useABI, a legal AI platform for MA lawyers that is designed to function not as just another AI assistant but as…",
+      "date": "Tue, 13 Oct 2026 14:01:19 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/useABI-issueslist-featured.png",
+      "source": "LawNext",
+      "ts": 1791900079000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Oct 13, 2026",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Partners Want AI to Help Them Find New Business, But Most Are Running It on Data They Can't Use, Introhive Survey Finds",
+      "link": "https://www.lawnext.com/2026/10/partners-want-ai-to-help-them-find-new-business-but-most-are-running-it-on-data-they-cant-use-introhive-survey-finds.html",
+      "desc": "Partners at law and accounting firms say the one thing they most want from business-development technology is help finding new business in relationships their firms already have. But 78% say the…",
+      "date": "Tue, 13 Oct 2026 11:00:42 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/IntrohivePartnerReportCover.png",
+      "source": "LawNext",
+      "ts": 1791889242000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Oct 13, 2026",
       "strong": true,
       "promo": false
     }
