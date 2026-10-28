@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-27T22:23:06.537Z",
+  "builtAt": "2026-10-28T05:53:43.181Z",
   "count": 10,
   "items": [
     {
@@ -17,6 +17,20 @@
       "promo": false
     },
     {
+      "title": "LexisNexis tackles AI fragmentation with Protégé expansion",
+      "link": "https://legaltechnology.com/lexisnexis-tackles-ai-fragmentation-with-protege-expansion/",
+      "desc": "LexisNexis Legal Professional today unveiled an expansion of Lexis+ with Protégé, bringing together a wider range of its legal data and analytics products, firm knowledge and AI capabilities…",
+      "date": "Tue, 27 Oct 2026 14:52:31 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/07/LexisNexis-results.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1793112751000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
       "title": "Fortune 500 Healthcare Company Asks For AI To Negotiate Contracts With No Human Lawyers",
       "link": "https://abovethelaw.com/2026/10/fortune-500-healthcare-company-asks-for-ai-to-negotiate-contracts-with-no-human-lawyers/",
       "desc": "In other news, Fortune 500 healthcare company about to be in all kinds of legal trouble. The post Fortune 500 Healthcare Company Asks For AI To Negotiate Contracts With No Human Lawyers appeared…",
@@ -27,6 +41,34 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Yesterday",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Clio unveils unified platform with agentic workflows, AI phone system and new DMS",
+      "link": "https://legaltechnology.com/clio-unveils-unified-platform-with-agentic-workflows-ai-phone-system-and-new-dms/",
+      "desc": "Legal practice management system provider Clio today (26 October) unveiled a significant expansion of its platform, including an AI-native business phone system, agentic workflows, automated time…",
+      "date": "Mon, 26 Oct 2026 13:30:53 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Trumper-2.png",
+      "source": "Legal IT Insider",
+      "ts": 1793021453000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Yesterday",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Startup Corner: IamVERA brings a 'second pair of eyes' for AI output",
+      "link": "https://legaltechnology.com/startup-corner-iamvera-brings-a-second-pair-of-eyes-for-ai-output/",
+      "desc": "Founded this year, IamVERA is described by its founder as 'a second pair of eyes for AI', leveraging different AI models to check and challenge AI output. It is also [] The post Startup Corner:…",
+      "date": "Fri, 23 Oct 2026 11:32:53 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/StartUp-Corner.png",
+      "source": "Legal IT Insider",
+      "ts": 1792755173000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -97,48 +139,6 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "Oct 20, 2026",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Microsoft Launches Copilot for Legal, Becoming the Fourth AI Giant in Five Months to Build Out a Legal Vertical",
-      "link": "https://www.lawnext.com/2026/10/microsoft-launches-copilot-for-legal-becoming-the-fourth-ai-giant-in-five-months-to-build-out-a-legal-vertical.html",
-      "desc": "Microsoft today launched Copilot for Legal, offering more than 20 legal-specific skills in Microsoft Copilot, bringing contract review, drafting, obligations tracking and other legal workflows…",
-      "date": "Thu, 15 Oct 2026 17:56:34 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/MS-Copilot-for-Legal-Featured.png",
-      "source": "LawNext",
-      "ts": 1792086994000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Oct 15, 2026",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Former Big Law MA Lawyer Launches useABI, an AI 'Associate' That Produces Deal Docs Without Prompting",
-      "link": "https://www.lawnext.com/2026/10/former-big-law-ma-lawyer-launches-useabi-an-ai-associate-that-produces-deal-docs-without-prompting.html",
-      "desc": "A former mergers-and-acquisitions lawyer at Greenberg Traurig today launched useABI, a legal AI platform for MA lawyers that is designed to function not as just another AI assistant but as…",
-      "date": "Tue, 13 Oct 2026 14:01:19 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/useABI-issueslist-featured.png",
-      "source": "LawNext",
-      "ts": 1791900079000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Oct 13, 2026",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Partners Want AI to Help Them Find New Business, But Most Are Running It on Data They Can't Use, Introhive Survey Finds",
-      "link": "https://www.lawnext.com/2026/10/partners-want-ai-to-help-them-find-new-business-but-most-are-running-it-on-data-they-cant-use-introhive-survey-finds.html",
-      "desc": "Partners at law and accounting firms say the one thing they most want from business-development technology is help finding new business in relationships their firms already have. But 78% say the…",
-      "date": "Tue, 13 Oct 2026 11:00:42 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/IntrohivePartnerReportCover.png",
-      "source": "LawNext",
-      "ts": 1791889242000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Oct 13, 2026",
       "strong": true,
       "promo": false
     }
