@@ -37,6 +37,7 @@
 - [Mata v. Avianca (S.D.N.Y. 2023)](https://candor.legal/sanctions/mata-v-avianca): the first widely reported case of ChatGPT-fabricated citations.
 
 ## Guides
+- [California SB 574: AI rules for lawyers from 2027](https://candor.legal/guides/california-sb-574): what the new law covers, effective January 1, 2027.
 - [The Florida Bar’s free Clio Work: what to record](https://candor.legal/guides/florida-bar-clio-work): the 2026 member benefit, the Florida rules that still apply, and what a firm should be able to show.
 - [ABA Formal Opinion 512, explained](https://candor.legal/guides/aba-opinion-512): the six duties it applies to generative AI.
 - [Law firm AI policy](https://candor.legal/guides/law-firm-ai-policy): what a firm AI-use policy should cover.
