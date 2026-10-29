@@ -1,7 +1,49 @@
 {
-  "builtAt": "2026-10-29T13:16:55.438Z",
+  "builtAt": "2026-10-29T22:50:46.832Z",
   "count": 10,
   "items": [
+    {
+      "title": "Content And Context Matter When Your Clients Use AI",
+      "link": "https://abovethelaw.com/2026/10/content-and-context-matter-when-your-clients-use-ai/",
+      "desc": "Make that conversation part of your intake process. The post Content And Context Matter When Your Clients Use AI appeared first on Above the Law .",
+      "date": "Thu, 29 Oct 2026 20:04:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/01/artificial-intelligence-6767502_1280.jpg",
+      "source": "Above the Law",
+      "ts": 1793304240000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "At ClioCon, Legal’s AI Future Is Already Here, Along with 3,000 People Eager to Shape It",
+      "link": "https://www.lawnext.com/2026/10/at-cliocon-legals-ai-future-is-already-here-along-with-3000-people-eager-to-shape-it.html",
+      "desc": "Within the span of 48 hours this week, I was an in-person witness to the legal profession’s divide on AI. Through a bit of karmic coincidence, I was in a room one day dominated by people who fear…",
+      "date": "Thu, 29 Oct 2026 13:56:04 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/IMG_0226.jpg",
+      "source": "LawNext",
+      "ts": 1793282164000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Context really is king when it comes to AI",
+      "link": "https://legaltechnology.com/context-really-is-king-when-it-comes-to-ai/",
+      "desc": "This first appeared in the October Orange Rag newsletter On 21 October, Legal IT Insider brought together a group of senior knowledge, innovation and AI professionals at South Place Hotel [] The…",
+      "date": "Thu, 29 Oct 2026 13:18:30 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/ND-round-table-1024x280.png",
+      "source": "Legal IT Insider",
+      "ts": 1793279910000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Guest Post: Your AI bill meters the draft. Nobody meters the re-read against it",
       "link": "https://legaltechnology.com/guest-post-your-ai-bill-meters-the-draft-nobody-meters-the-re-read-against-it/",
@@ -68,7 +110,7 @@
       "ts": 1793214780000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -82,7 +124,7 @@
       "ts": 1793212320000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -96,51 +138,9 @@
       "ts": 1793204356000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": true
-    },
-    {
-      "title": "Anthropic moves further up the legal tech stack with launch of Claude for Legal Artifacts",
-      "link": "https://legaltechnology.com/anthropic-moves-further-up-the-legal-tech-stack-with-launch-of-claude-for-legal-artifacts/",
-      "desc": "Legal IT Insider spoke with Anthropic’s associate general counsel Mark Pike and Claude for Legal head Robert Mahari, who discussed how the company is using Artifacts and explained why it [] The…",
-      "date": "Wed, 28 Oct 2026 15:15:49 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/10/Anthropic.png",
-      "source": "Legal IT Insider",
-      "ts": 1793200549000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Trust but verify: Using agentic AI tools for investigations",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/trust-but-verify-using-agentic-ai-tools-for-investigations/",
-      "desc": "Most professionals see AI as an opportunity to work faster. Corporate investigators see it as an arms race they The post Trust but verify: Using agentic AI tools for investigations appeared first…",
-      "date": "Wed, 28 Oct 2026 15:08:30 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/02/AdobeStock_503697906-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1793200110000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "The Age Of The Orchestrator Arrives As AI Tokengeddon Looms",
-      "link": "https://abovethelaw.com/2026/10/the-age-of-the-orchestrator-arrives-as-ai-tokengeddon-looms/",
-      "desc": "As AI models proliferate and costs rise, it's all about the AI point guard distributing the work. The post The Age Of The Orchestrator Arrives As AI Tokengeddon Looms appeared first on Above the Law .",
-      "date": "Tue, 27 Oct 2026 16:13:33 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/10/GettyImages-2211086079.jpg",
-      "source": "Above the Law",
-      "ts": 1793117613000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "Yesterday",
       "strong": true,
-      "promo": false
+      "promo": true
     }
   ]
 }
