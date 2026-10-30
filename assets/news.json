@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-30T13:08:47.811Z",
+  "builtAt": "2026-10-30T22:27:45.525Z",
   "count": 10,
   "items": [
     {
@@ -26,7 +26,7 @@
       "ts": 1793304240000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -40,7 +40,7 @@
       "ts": 1793282164000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +54,7 @@
       "ts": 1793279910000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -101,34 +101,6 @@
       "promo": false
     },
     {
-      "title": "Clio Says AI Is Boosting Billable Hours: Maybe I Was Wrong. Or Maybe Not.",
-      "link": "https://abovethelaw.com/2026/10/clio-says-ai-is-boosting-billable-hours-maybe-i-was-wrong-or-maybe-not/",
-      "desc": "It's complicated. The post Clio Says AI Is Boosting Billable Hours: Maybe I Was Wrong. Or Maybe Not. appeared first on Above the Law .",
-      "date": "Wed, 28 Oct 2026 19:13:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2017/09/overtime-weekly-time-sheet-billable-hours-billing-hours.jpg",
-      "source": "Above the Law",
-      "ts": 1793214780000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Weil’s New AI Summer Program Has One Small Problem: Weil’s Future",
-      "link": "https://abovethelaw.com/2026/10/weils-new-ai-summer-program-has-one-small-problem-weils-future/",
-      "desc": "The firm is recruiting 1Ls to build legal AI tools while it weighs its options amid partner exits and a collapsed merger. The post Weil’s New AI Summer Program Has One Small Problem: Weil’s Future…",
-      "date": "Wed, 28 Oct 2026 18:32:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2023/07/GettyImages-1380874448.jpg",
-      "source": "Above the Law",
-      "ts": 1793212320000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Webinar Replay , Freedom, AI and security: Are law firms able to enable innovation without losing control?",
       "link": "https://legaltechnology.com/webinar-replay-freedom-ai-and-security-are-law-firms-able-to-enable-innovation-without-losing-control/",
       "desc": "Legal and security teams are facing a perfect storm: hybrid working is now the norm, AI adoption is accelerating at pace, and the traditional network perimeter has all but disappeared. [] The post…",
@@ -138,9 +110,37 @@
       "ts": 1793204356000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": true
+    },
+    {
+      "title": "Trust but verify: Using agentic AI tools for investigations",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/trust-but-verify-using-agentic-ai-tools-for-investigations/",
+      "desc": "Most professionals see AI as an opportunity to work faster. Corporate investigators see it as an arms race they The post Trust but verify: Using agentic AI tools for investigations appeared first…",
+      "date": "Wed, 28 Oct 2026 15:08:30 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/02/AdobeStock_503697906-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1793200110000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "2 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Trusted legal AI tools to power research, drafting, and analysis",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/legal-ai-tools-essential-for-attorneys/",
+      "desc": "AI is not a magic wand. The skills and knowledge you’ve built as a lawyer are still your most The post Trusted legal AI tools to power research, drafting, and analysis appeared first on Thomson…",
+      "date": "Wed, 21 Oct 2026 19:53:12 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/03/AdobeStock_524560520_GH-scaled-jpg-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1792612392000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Oct 21, 2026",
+      "strong": true,
+      "promo": false
     }
   ]
 }
