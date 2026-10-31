@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-10-30T22:27:45.525Z",
+  "builtAt": "2026-10-31T05:54:46.114Z",
   "count": 10,
   "items": [
+    {
+      "title": "Redline comparison guide for legal AI software",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/redline-comparison-guide-for-legal-ai-software/",
+      "desc": "In beta testing ahead of launch, lawyers stopped comparing CoCounsel Legal to other AI solutions. They started comparing it The post Redline comparison guide for legal AI software appeared first…",
+      "date": "Sat, 31 Oct 2026 01:01:16 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/01/AdobeStock_134837868_resized-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1793408476000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "What Real AI Adoption Looks Like",
       "link": "https://www.artificiallawyer.com/2026/10/30/what-real-ai-adoption-looks-like/",
@@ -125,20 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Trusted legal AI tools to power research, drafting, and analysis",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/legal-ai-tools-essential-for-attorneys/",
-      "desc": "AI is not a magic wand. The skills and knowledge you’ve built as a lawyer are still your most The post Trusted legal AI tools to power research, drafting, and analysis appeared first on Thomson…",
-      "date": "Wed, 21 Oct 2026 19:53:12 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2024/03/AdobeStock_524560520_GH-scaled-jpg-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1792612392000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Oct 21, 2026",
       "strong": true,
       "promo": false
     }
