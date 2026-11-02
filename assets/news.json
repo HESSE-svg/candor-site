@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-11-01T22:09:47.643Z",
+  "builtAt": "2026-11-02T06:23:14.157Z",
   "count": 10,
   "items": [
+    {
+      "title": "Last Weil And Testament , See Generally",
+      "link": "https://abovethelaw.com/2026/11/last-weil-and-testament-see-generally/",
+      "desc": "Last Weil And Testament: Weil Gotshal will close up shop after 95 years, following a partner exodus and a failed merger. The farewell message to associates promises up to 90 days of salary and…",
+      "date": "Mon, 02 Nov 2026 00:41:45 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2018/01/grave-rose.jpg",
+      "source": "Above the Law",
+      "ts": 1793580105000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
+      "when": "Today",
+      "strong": false,
+      "promo": false
+    },
     {
       "title": "Redline comparison guide for legal AI software",
       "link": "https://blogs.thomsonreuters.com/legal-blog/redline-comparison-guide-for-legal-ai-software/",
@@ -12,20 +26,6 @@
       "ts": 1793408476000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "What Real AI Adoption Looks Like",
-      "link": "https://www.artificiallawyer.com/2026/10/30/what-real-ai-adoption-looks-like/",
-      "desc": "For Brian Kennedy, Director of Innovation, Real Estate, at BCLP , and who is one of many expert speakers appearing at Legal Innovators UK next",
-      "date": "Fri, 30 Oct 2026 08:37:44 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-30-at-08.24.11.png",
-      "source": "Artificial Lawyer",
-      "ts": 1793349464000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "2 days ago",
       "strong": true,
       "promo": false
@@ -87,34 +87,6 @@
       "promo": false
     },
     {
-      "title": "AI Didn’t Cause the Weil Crisis",
-      "link": "https://www.artificiallawyer.com/2026/10/29/ai-didnt-cause-the-weil-crisis/",
-      "desc": "Some have suggested that Weil’s impending dissolution has been caused by AI’s impact. Artificial Lawyer has got to say: technology is the least of the",
-      "date": "Thu, 29 Oct 2026 10:15:26 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-29-at-09.56.52.png",
-      "source": "Artificial Lawyer",
-      "ts": 1793268926000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "The 4 Es Inhouse AI Framework – Emily Bull",
-      "link": "https://www.artificiallawyer.com/2026/10/29/the-4-es-inhouse-ai-framework-emily-bull/",
-      "desc": "For Emily Bull, Director of Legal, Property, Planning and Consenting at SSE , and a speaker at Legal Innovators UK on Inhouse Day, November 5th,",
-      "date": "Thu, 29 Oct 2026 09:02:28 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/10/Screenshot-2026-10-29-at-08.51.26.png",
-      "source": "Artificial Lawyer",
-      "ts": 1793264548000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Webinar Replay , Freedom, AI and security: Are law firms able to enable innovation without losing control?",
       "link": "https://legaltechnology.com/webinar-replay-freedom-ai-and-security-are-law-firms-able-to-enable-innovation-without-losing-control/",
       "desc": "Legal and security teams are facing a perfect storm: hybrid working is now the norm, AI adoption is accelerating at pace, and the traditional network perimeter has all but disappeared. [] The post…",
@@ -139,6 +111,34 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "4 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Microsoft Launches Copilot for Legal, Becoming the Fourth AI Giant in Five Months to Build Out a Legal Vertical",
+      "link": "https://www.lawnext.com/2026/10/microsoft-launches-copilot-for-legal-becoming-the-fourth-ai-giant-in-five-months-to-build-out-a-legal-vertical.html",
+      "desc": "Microsoft today launched Copilot for Legal, offering more than 20 legal-specific skills in Microsoft Copilot, bringing contract review, drafting, obligations tracking and other legal workflows…",
+      "date": "Thu, 15 Oct 2026 17:56:34 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/MS-Copilot-for-Legal-Featured.png",
+      "source": "LawNext",
+      "ts": 1792086994000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Oct 15, 2026",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Former Big Law MA Lawyer Launches useABI, an AI 'Associate' That Produces Deal Docs Without Prompting",
+      "link": "https://www.lawnext.com/2026/10/former-big-law-ma-lawyer-launches-useabi-an-ai-associate-that-produces-deal-docs-without-prompting.html",
+      "desc": "A former mergers-and-acquisitions lawyer at Greenberg Traurig today launched useABI, a legal AI platform for MA lawyers that is designed to function not as just another AI assistant but as…",
+      "date": "Tue, 13 Oct 2026 14:01:19 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/useABI-issueslist-featured.png",
+      "source": "LawNext",
+      "ts": 1791900079000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Oct 13, 2026",
       "strong": true,
       "promo": false
     }
