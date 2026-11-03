@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-11-02T21:46:21.629Z",
+  "builtAt": "2026-11-03T06:57:45.086Z",
   "count": 10,
   "items": [
+    {
+      "title": "Legal Ethics Roundup: Can AI Be Ethical?, DOJ Lawyers Under Scrutiny, Weil Gotshal Implodes, ‘Rogue Activist Judges,’ Reading Recommendations, Jobs More",
+      "link": "https://abovethelaw.com/2026/11/legal-ethics-roundup-can-ai-be-ethical-doj-lawyers-under-scrutiny-weil-gotshal-implodes-rogue-activist-judges-reading-recommendations-jobs-more/",
+      "desc": "Your tour of all things related to lawyer and judicial ethics, with University of Houston law professor Renee Knake Jefferson. The post Legal Ethics Roundup: Can AI Be Ethical?, DOJ Lawyers Under…",
+      "date": "Mon, 02 Nov 2026 23:34:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2021/03/iStock-484137638-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1793662440000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Build, Buy, Integrate, Or Wait: The AI Decision Legal Leaders Need To Own",
+      "link": "https://abovethelaw.com/2026/11/build-buy-integrate-or-wait-the-ai-decision-legal-leaders-need-to-own/",
+      "desc": "The deep-dish pizza that is enterprise technology meetings. The post Build, Buy, Integrate, Or Wait: The AI Decision Legal Leaders Need To Own appeared first on Above the Law .",
+      "date": "Mon, 02 Nov 2026 23:02:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/01/artificial-intelligence-6767502_1280.jpg",
+      "source": "Above the Law",
+      "ts": 1793660520000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "The Content Layer Wins: Why Treatises Matter More In The Age Of Agentic AI",
       "link": "https://bit.ly/4iNAQTR",
@@ -68,7 +96,7 @@
       "ts": 1793408476000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -111,34 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Trust but verify: Using agentic AI tools for investigations",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/trust-but-verify-using-agentic-ai-tools-for-investigations/",
-      "desc": "Most professionals see AI as an opportunity to work faster. Corporate investigators see it as an arms race they The post Trust but verify: Using agentic AI tools for investigations appeared first…",
-      "date": "Wed, 28 Oct 2026 15:08:30 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/02/AdobeStock_503697906-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1793200110000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Microsoft Launches Copilot for Legal, Becoming the Fourth AI Giant in Five Months to Build Out a Legal Vertical",
-      "link": "https://www.lawnext.com/2026/10/microsoft-launches-copilot-for-legal-becoming-the-fourth-ai-giant-in-five-months-to-build-out-a-legal-vertical.html",
-      "desc": "Microsoft today launched Copilot for Legal, offering more than 20 legal-specific skills in Microsoft Copilot, bringing contract review, drafting, obligations tracking and other legal workflows…",
-      "date": "Thu, 15 Oct 2026 17:56:34 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/10/MS-Copilot-for-Legal-Featured.png",
-      "source": "LawNext",
-      "ts": 1792086994000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Oct 15, 2026",
       "strong": true,
       "promo": false
     }
