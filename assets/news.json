@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-11-04T06:39:32.686Z",
+  "builtAt": "2026-11-04T19:52:16.641Z",
   "count": 10,
   "items": [
+    {
+      "title": "A Brief History of Generative Legal AI",
+      "link": "https://www.artificiallawyer.com/2026/11/04/a-brief-history-of-generative-legal-ai/",
+      "desc": "It’s Legal Innovators UK today and tomorrow, so here are some reference notes. As Conference Chair I’ll be referring to this chart in my comments",
+      "date": "Wed, 04 Nov 2026 07:40:00 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-03-at-17.25.41.png",
+      "source": "Artificial Lawyer",
+      "ts": 1793778000000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Law Firms Need An AI Strategy, Not Another AI Subscription",
       "link": "https://abovethelaw.com/2026/11/law-firms-need-an-ai-strategy-not-another-ai-subscription/",
@@ -12,7 +26,7 @@
       "ts": 1793728860000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -26,7 +40,7 @@
       "ts": 1793724240000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -40,7 +54,7 @@
       "ts": 1793715867000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +68,7 @@
       "ts": 1793712347000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +82,7 @@
       "ts": 1793694091000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -96,21 +110,7 @@
       "ts": 1793634813000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Will AI Change the Identity of Law Firm Partners?",
-      "link": "https://www.artificiallawyer.com/2026/11/02/will-ai-change-the-identity-of-law-firm-partners/",
-      "desc": "Will law firm partners need to change their professional identity, their sense of what they are and what they really do, for this sector to",
-      "date": "Mon, 02 Nov 2026 12:59:14 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-02-at-12.40.52.png",
-      "source": "Artificial Lawyer",
-      "ts": 1793624354000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -138,7 +138,7 @@
       "ts": 1793282164000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
+      "when": "6 days ago",
       "strong": true,
       "promo": false
     }
