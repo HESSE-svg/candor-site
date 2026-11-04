@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-03T19:35:16.335Z",
+  "builtAt": "2026-11-04T06:39:32.686Z",
   "count": 10,
   "items": [
     {
@@ -82,7 +82,7 @@
       "ts": 1793662440000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -124,7 +124,7 @@
       "ts": 1793408476000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
