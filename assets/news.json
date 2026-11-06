@@ -1,7 +1,49 @@
 {
-  "builtAt": "2026-11-06T06:58:06.357Z",
+  "builtAt": "2026-11-06T19:30:08.942Z",
   "count": 10,
   "items": [
+    {
+      "title": "iManage Puts A Firm’s Institutional Knowledge To Work For Agentic AI",
+      "link": "https://abovethelaw.com/2026/11/imanage-puts-a-firms-institutional-knowledge-to-work-for-agentic-ai/",
+      "desc": "[Sponsored] The company’s next-generation platform builds on the iManage foundation with AI capabilities and connections to tools that firms are already using. The post iManage Puts A Firm’s…",
+      "date": "Fri, 06 Nov 2026 18:01:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/11/iM_logoStrapline_rgb@4x.png",
+      "source": "Above the Law",
+      "ts": 1793988060000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
+    {
+      "title": "Startup Corner: Lawfecta looks to AI to solve law firms’ legal talent needs",
+      "link": "https://legaltechnology.com/startup-corner-lawfecta-looks-to-ai-to-solve-law-firms-legal-talent-needs/",
+      "desc": "Founded as a virtual paralegal agency before pivoting to legal tech in 2025, Lawfecta is building an AI-powered legal talent marketplace. Founder Stacey M. Lake tells us how her own [] The post…",
+      "date": "Fri, 06 Nov 2026 13:21:15 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/StartUp-Corner-2.png",
+      "source": "Legal IT Insider",
+      "ts": 1793971275000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Introducing SimpleDocs 360: AI-Native Contract Lifecycle Management",
+      "link": "https://www.lawnext.com/2026/11/introducing-simpledocs-360-ai-native-contract-lifecycle-management.html",
+      "desc": "The promise of CLM, without the complexity. MIAMI, FL — November 2026 — SimpleDocs, an award-winning provider of AI-powered contract solutions and parent company of Law Insider, today announced…",
+      "date": "Fri, 06 Nov 2026 13:00:00 +0000",
+      "img": "https://www.lawnext.com/wp-content/uploads/2026/11/simpledocs-lawnextpr.png",
+      "source": "LawNext",
+      "ts": 1793970000000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Making Yourself AI-Proof",
       "link": "https://abovethelaw.com/2026/11/making-yourself-ai-proof/",
@@ -26,7 +68,7 @@
       "ts": 1793899080000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": true
     },
@@ -40,7 +82,7 @@
       "ts": 1793897821000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -59,20 +101,6 @@
       "promo": false
     },
     {
-      "title": "AI Connectors For E-Discovery: Great To Drive, But There Are Speed Limits",
-      "link": "https://abovethelaw.com/2026/11/ai-connectors-for-e-discovery-great-to-drive-but-there-are-speed-limits/",
-      "desc": "Employees don’t understand that whatever they put in Claude could be discoverable. The post AI Connectors For E-Discovery: Great To Drive, But There Are Speed Limits appeared first on Above the Law .",
-      "date": "Wed, 04 Nov 2026 21:44:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2024/02/artificial-intelligence-4389372_1280.jpg",
-      "source": "Above the Law",
-      "ts": 1793828640000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "A Brief History of Generative Legal AI",
       "link": "https://www.artificiallawyer.com/2026/11/04/a-brief-history-of-generative-legal-ai/",
       "desc": "It’s Legal Innovators UK today and tomorrow, so here are some reference notes. As Conference Chair I’ll be referring to this chart in my comments",
@@ -82,7 +110,7 @@
       "ts": 1793778000000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -96,7 +124,7 @@
       "ts": 1793715867000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -108,34 +136,6 @@
       "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/11/Untitled-May-07-2026-at-13.53.26-4-1-400x225.webp",
       "source": "Thomson Reuters",
       "ts": 1793712347000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Copilot for Legal – AL Interview: Carina Negreanu, Microsoft",
-      "link": "https://www.artificiallawyer.com/2026/11/03/copilot-for-legal-al-interview-carina-negreanu-microsoft/",
-      "desc": "Microsoft’s new Copilot for Legal is here for the long term and eventually will be available to potentially 100,000s of lawyers worldwide, Legal Vertical leader",
-      "date": "Tue, 03 Nov 2026 08:21:31 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-03-at-07.59.13.png",
-      "source": "Artificial Lawyer",
-      "ts": 1793694091000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Jus Mundi opens private beta for AI-powered arbitrator search",
-      "link": "https://legaltechnology.com/jus-mundi-opens-private-beta-for-ai-powered-arbitrator-search/",
-      "desc": "By Rory Higgins Arbitration intelligence platform Jus Mundi has launched a private beta of arbitrator search in its agentic AI platform Jus AI, extending it beyond research and drafting into []…",
-      "date": "Mon, 02 Nov 2026 15:53:33 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/jus-mundi.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1793634813000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "3 days ago",
