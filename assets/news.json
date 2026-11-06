@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-11-05T20:04:06.949Z",
+  "builtAt": "2026-11-06T06:58:06.357Z",
   "count": 10,
   "items": [
+    {
+      "title": "Making Yourself AI-Proof",
+      "link": "https://abovethelaw.com/2026/11/making-yourself-ai-proof/",
+      "desc": "Developing the judgment to evaluate AI. The post Making Yourself AI-Proof appeared first on Above the Law .",
+      "date": "Thu, 05 Nov 2026 20:13:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/08/GettyImages-1475813704-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1793909580000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "AI Does Wonders. But Keep Humans In The Loop",
       "link": "https://abovethelaw.com/2026/11/ai-does-wonders-but-keep-humans-in-the-loop/",
@@ -40,7 +54,7 @@
       "ts": 1793833944000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,21 +68,7 @@
       "ts": 1793828640000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "AI May Speed Up Legal Research, But That Doesn’t Automatically Shrink The Bill",
-      "link": "https://abovethelaw.com/2026/11/ai-may-speed-up-legal-research-but-that-doesnt-automatically-shrink-the-bill/",
-      "desc": "The Tenth Circuit upheld a six-figure fee award after finding no evidence that defense counsel’s AI use made its hours unreasonable. The post AI May Speed Up Legal Research, But That Doesn’t…",
-      "date": "Wed, 04 Nov 2026 21:00:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/08/GettyImages-2192183415.jpg",
-      "source": "Above the Law",
-      "ts": 1793826000000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
