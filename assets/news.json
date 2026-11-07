@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-06T19:30:08.942Z",
+  "builtAt": "2026-11-07T06:11:33.798Z",
   "count": 10,
   "items": [
     {
@@ -31,20 +31,6 @@
       "promo": false
     },
     {
-      "title": "Introducing SimpleDocs 360: AI-Native Contract Lifecycle Management",
-      "link": "https://www.lawnext.com/2026/11/introducing-simpledocs-360-ai-native-contract-lifecycle-management.html",
-      "desc": "The promise of CLM, without the complexity. MIAMI, FL — November 2026 — SimpleDocs, an award-winning provider of AI-powered contract solutions and parent company of Law Insider, today announced…",
-      "date": "Fri, 06 Nov 2026 13:00:00 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/11/simpledocs-lawnextpr.png",
-      "source": "LawNext",
-      "ts": 1793970000000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Making Yourself AI-Proof",
       "link": "https://abovethelaw.com/2026/11/making-yourself-ai-proof/",
       "desc": "Developing the judgment to evaluate AI. The post Making Yourself AI-Proof appeared first on Above the Law .",
@@ -54,7 +40,7 @@
       "ts": 1793909580000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -96,7 +82,7 @@
       "ts": 1793833944000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -136,6 +122,20 @@
       "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/11/Untitled-May-07-2026-at-13.53.26-4-1-400x225.webp",
       "source": "Thomson Reuters",
       "ts": 1793712347000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "3 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Copilot for Legal – AL Interview: Carina Negreanu, Microsoft",
+      "link": "https://www.artificiallawyer.com/2026/11/03/copilot-for-legal-al-interview-carina-negreanu-microsoft/",
+      "desc": "Microsoft’s new Copilot for Legal is here for the long term and eventually will be available to potentially 100,000s of lawyers worldwide, Legal Vertical leader",
+      "date": "Tue, 03 Nov 2026 08:21:31 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-03-at-07.59.13.png",
+      "source": "Artificial Lawyer",
+      "ts": 1793694091000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "3 days ago",
