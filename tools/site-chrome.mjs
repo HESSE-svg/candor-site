@@ -26,6 +26,7 @@ const COLS = [
   ]],
   ['Get started', [
     ['/start', 'Start free for a month'],
+    ['https://app.candor.legal/demo', 'Try the app'],
     ['/pricing', 'Pricing'],
     ['/demo', 'Get a look'],
     ['/contact', 'Contact'],
@@ -87,6 +88,7 @@ const NAV_CONTACT = '<a class="nav-contact" href="/contact">Contact</a>'
 const NAV = [
   ['Product', [
     ['/product', 'How Candor works', 'Screening, the AI log, sign-off and reports'],
+    ['https://app.candor.legal/demo', 'Try the app', 'An invented firm to click through, no sign-up'],
     ['/ai-governance-software', 'AI governance software', 'What the category is, and where Candor fits'],
     ['/connectors', 'Connectors', 'The AI tools, platforms and systems it works with'],
     ['/who-its-for', 'Who it’s for', 'Insurance, family, estate and general practice'],
