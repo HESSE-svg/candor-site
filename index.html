@@ -76,21 +76,12 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
 .shot-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);background:var(--card);font-family:var(--f-mono);font-size:11px;color:var(--text-3)}
 .shot-bar i{width:9px;height:9px;border-radius:50%;background:var(--line-2)}
 .shot-bar span{margin-left:8px}
-.shot img,.shot video{width:100%;height:auto}
+.shot img{width:100%;height:auto;display:block}
+.shot-link{display:block;transition:border-color .2s}
+.shot-link:hover{border-color:#3A3A42}
 .glow::before{content:"";position:absolute;z-index:-1;inset:auto -10% -40% 30%;height:90%;background:radial-gradient(closest-side,rgba(196,82,63,.28),rgba(227,184,102,.06) 60%,transparent)}
 
 /* full screen (hero recording and walkthrough) */
-.fs-btn{position:absolute;bottom:14px;right:14px;z-index:3;display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:12.5px;font-weight:500;line-height:1;color:var(--text);background:rgba(9,9,11,.72);border:1px solid var(--line-2);border-radius:999px;padding:8px 12px;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-.fs-btn:hover{background:rgba(9,9,11,.92)}
-.fs-btn svg{width:14px;height:14px}
-.frame .fs-btn{top:14px;bottom:auto}
-.vid:fullscreen,.vid.faux-fs{border:0;border-radius:0;background:#000;display:flex;align-items:center;justify-content:center}
-.vid.faux-fs{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:9999}
-.vid:fullscreen video,.vid.faux-fs video{width:100%;height:100%;object-fit:contain}
-.vid:fullscreen .shot-bar,.vid.faux-fs .shot-bar{display:none}
-html.fs-lock,html.fs-lock body{overflow:hidden;touch-action:none}
-html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!important}
-.vid.faux-fs .fs-btn,.frame.faux-fs .fs-btn{top:calc(14px + env(safe-area-inset-top,0px));bottom:auto;right:14px;font-size:14px;padding:10px 14px}
 
 /* hero */
 .hero::after{content:"";position:absolute;z-index:-1;left:-10%;top:-30%;width:80%;height:90%;background:radial-gradient(closest-side,rgba(196,82,63,.2),rgba(227,184,102,.05) 55%,transparent)}
@@ -122,9 +113,6 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
 .chips span:first-child{color:var(--mint);border-color:rgba(134,205,180,.4)}
 
 /* walkthrough */
-.frame{position:relative;max-width:1080px;margin:48px auto 0;aspect-ratio:16/9;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:#0A0A0B}
-.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.frame.faux-fs{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;max-width:none;margin:0;z-index:9999;border-radius:0;aspect-ratio:auto}
 
 /* tools */
 .tools{padding:90px 0;border-top:1px solid var(--line);overflow:hidden}
@@ -165,7 +153,7 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
 @media(max-width:900px){
   .nav-in{padding:0 16px}
   .panel{display:flex;flex-direction:column;align-items:stretch;gap:36px;padding:64px 20px 72px;min-height:0}
-  .vis{margin-right:-20px}
+  .vis{display:none}
   .sv{margin-right:0;font-size:14px}
   .sv .t{padding:16px 18px}
   h1{font-size:clamp(54px,15vw,84px)}
@@ -250,11 +238,9 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
     <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="https://app.candor.legal/demo">Try the app</a></div>
   </div>
   <div class="vis">
-    <div class="shot vid" id="heroVid"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.candor.legal</span></div>
-      <video id="realVid" muted loop playsinline preload="metadata" poster="/assets/video/app-tour.jpg" aria-label="A screen recording of the Candor app with an invented demo firm: the AI use log, review and sign-off, and the carrier report."><source src="/assets/video/app-tour.mp4" type="video/mp4"></video>
-      <button type="button" class="fs-btn" aria-label="Play the app recording full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg><span class="fs-label">Full screen</span></button>
-    </div>
-    <p class="cap">The real app, recorded with an invented demo firm.</p>
+    <a class="shot shot-link" href="https://app.candor.legal/demo"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.candor.legal/demo</span></div>
+      <img src="/assets/video/app-tour.jpg" width="1280" height="800" alt="Candor&rsquo;s review and sign-off screen, on an invented demo firm. Opens the demo."></a>
+    <p class="cap">The real app on an invented firm. Click in and try it.</p>
   </div>
 </section>
 
@@ -403,23 +389,6 @@ new IntersectionObserver(function(es){es.forEach(function(e){
   if(e.intersectionRatio>=.6){if(!m.classList.contains('play')){m.classList.add('play');anims().forEach(function(a){a.currentTime=0;a.play()})}}
   else if(!e.isIntersecting&&m.classList.contains('play')){m.classList.remove('play');anims().forEach(function(a){a.pause();a.currentTime=0})}
 })},{threshold:[0,.6]}).observe(m)})();
-// Full screen, with a fallback for iOS Safari.
-function fsify(frame,name,onEnter){if(!frame)return;var btn=frame.querySelector('.fs-btn'),label=btn.querySelector('.fs-label'),root=document.documentElement,faux=false;
-function nEl(){return document.fullscreenElement||document.webkitFullscreenElement}function nReq(){return frame.requestFullscreen||frame.webkitRequestFullscreen}
-function nOk(){return (document.fullscreenEnabled||document.webkitFullscreenEnabled)&&!!nReq()}function active(){return faux||nEl()===frame}
-function sync(){var on=active();label.textContent=on?'Exit full screen':'Full screen';btn.setAttribute('aria-label',on?'Exit full screen':'Play '+name+' full screen')}
-// The fallback lifts the player out of its section to the top of the page, so nothing on the page can sit over it or its exit button.
-var home=null;function enterFaux(){faux=true;home={p:frame.parentNode,n:frame.nextSibling};document.body.appendChild(frame);frame.classList.add('faux-fs');root.classList.add('fs-lock');sync();btn.focus()}function exitFaux(){faux=false;frame.classList.remove('faux-fs');root.classList.remove('fs-lock');if(home){home.p.insertBefore(frame,home.n);home=null}sync();btn.focus()}
-btn.addEventListener('click',function(){if(!active()&&onEnter)onEnter();if(active()){if(faux)exitFaux();else{try{(document.exitFullscreen||document.webkitExitFullscreen).call(document)}catch(e){}}return}
-if(nOk()){try{var p=nReq().call(frame);if(p&&p.catch)p.catch(enterFaux)}catch(e){enterFaux()}return}
-// iPhone: a video goes full screen in the phone's own player, which has its own Done button.
-var vid=frame.querySelector('video');if(vid&&vid.webkitEnterFullscreen){try{vid.webkitEnterFullscreen();return}catch(e){}}enterFaux()});
-document.addEventListener('fullscreenchange',sync);document.addEventListener('webkitfullscreenchange',sync);document.addEventListener('keydown',function(e){if(faux&&e.key==='Escape')exitFaux()})}
-// The app recording: plays while on screen (still for reduced motion until asked).
-(function(){var v=document.getElementById('realVid');if(!v)return;var want=!RM;
-function go(){v.play().catch(function(){})}
-fsify(document.getElementById('heroVid'),'the app recording',function(){want=true;v.preload='auto';go()});
-if('IntersectionObserver' in window){new IntersectionObserver(function(es){var on=es[0].isIntersecting||document.fullscreenElement;if(on&&want){v.preload='auto';go()}else if(!on&&!v.paused)v.pause()},{threshold:.3}).observe(v)}else if(want)go()})();
 // Firm-size price switch (figures from /pricing).
 (function(){var T=[['Just me','$3,000','Solo \u00b7 1 attorney','$250 a month'],['2\u20135','$6,000','Small \u00b7 2 to 5 attorneys','$500 a month'],['6\u201315','$10,000','Mid \u00b7 6 to 15 attorneys','$833 a month'],['16\u201330','$14,000','Standard \u00b7 16 to 30 attorneys','$1,167 a month'],['31\u201360','$20,000','Large \u00b7 31 to 60 attorneys','$1,667 a month']];
 var seg=document.querySelector('.seg'),pp=document.getElementById('pp'),pm=document.getElementById('pm');
