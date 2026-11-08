@@ -429,8 +429,8 @@
       wrap.innerHTML = close +
         '<div class="cf-done"><div class="cf-tick"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>' +
         '<h2 id="' + id('h') + '" tabindex="-1">Message sent</h2>' +
-        '<p class="cf-intro">Thanks. The answer will go to <strong>' + esc(email) + '</strong>. In the meantime, you can see the product in 90 seconds.</p>' +
-        '<a class="cf-go" href="/#watch" style="text-decoration:none">Watch the walkthrough</a></div>'
+        '<p class="cf-intro">Thanks. The answer will go to <strong>' + esc(email) + '</strong>. In the meantime, you can click through the app on an invented firm.</p>' +
+        '<a class="cf-go" href="https://app.candor.legal/demo" style="text-decoration:none">Try the app</a></div>'
       var h = wrap.querySelector('h2'); if (h) h.focus()
     }
     step1({})
