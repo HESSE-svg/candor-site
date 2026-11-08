@@ -19,7 +19,7 @@
 import { writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { applyChrome } from './site-chrome.mjs'
+import { applyChrome, NAV_HTML } from './site-chrome.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const UA = 'Mozilla/5.0 (compatible; CandorNewsBot/1.0; +https://candor.legal)'
@@ -217,7 +217,8 @@ function card(it, big = false) {
 function page(items, builtAt) {
   const [hero, ...rest] = items
   const stamp = builtAt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
-  const nav = `<nav class="navlinks" aria-label="Primary"><a href="/product">Product</a><a href="/plan">Our plan</a><a href="/why-now">Why now</a><a href="/resources">Free tools</a><a href="/guides">Guides</a><a href="/news" aria-current="page">News</a><a href="/pricing">Pricing</a><a href="/security">Security</a><a class="m-cta" href="/start">Start free</a></nav>`
+  // The shared menu; applyChrome also swaps it in, so the two can't drift.
+  const nav = NAV_HTML
   return `<!doctype html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
