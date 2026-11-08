@@ -122,8 +122,6 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
 .chips span:first-child{color:var(--mint);border-color:rgba(134,205,180,.4)}
 
 /* walkthrough */
-.watch{display:block;text-align:center;padding:120px 6vw;border-top:1px solid var(--line)}
-.watch h2{margin:16px auto 0;max-width:12ch}
 .frame{position:relative;max-width:1080px;margin:48px auto 0;aspect-ratio:16/9;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:#0A0A0B}
 .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .frame.faux-fs{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;max-width:none;margin:0;z-index:9999;border-radius:0;aspect-ratio:auto}
@@ -176,24 +174,18 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
   .quote{font-size:17px;min-height:4.2em}
   .fact{font-size:14.5px}
   .row .btn{flex:1 1 100%}
-  .watch,.band,.close{padding:88px 20px}
+  .band,.close{padding:88px 20px}
   .seg{border-radius:18px;width:100%}.seg button{flex:1 1 30%}
   .tools{padding:64px 0}
   .paths{grid-template-columns:1fr}.path{padding:28px 22px 24px}.path h3{font-size:30px}
 }
 @media(prefers-reduced-motion:reduce){.track{animation:none}.quote span{transition:none}}
 
-/* how it works: pills on top, four equal cards that slide */
+/* how it works: four equal cards that slide; each names its own step */
 .steps{padding:120px 0 110px;border-top:1px solid var(--line);overflow:hidden}
 .steps-head{text-align:center;padding:0 20px}
 .steps-head h2{margin:16px auto 0;max-width:none}
-.pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:36px auto 0;max-width:760px}
-.pills button{display:inline-flex;align-items:center;gap:10px;font:500 16px var(--f-sans);color:var(--text-2);background:transparent;border:1px solid var(--line-2);border-radius:999px;padding:10px 20px 10px 10px;cursor:pointer;transition:color .2s,background .2s,border-color .2s}
-.pills button:hover{color:var(--text);border-color:#3A3A42}
-.pills .dot{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--card-2);font:500 11px var(--f-mono);color:var(--text-3);transition:background .2s,color .2s}
-.pills button[aria-selected="true"]{color:var(--rose);border-color:rgba(242,196,181,.45);background:rgba(196,82,63,.12)}
-.pills button[aria-selected="true"] .dot{background:linear-gradient(135deg,var(--rose),var(--gilt));color:#09090B}
-.rail{--cw:min(860px,80vw);display:flex;gap:28px;margin-top:56px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:6px calc((100% - var(--cw)) / 2) 10px;overscroll-behavior-x:contain}
+.rail{--cw:min(860px,80vw);display:flex;gap:28px;margin-top:48px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:6px calc((100% - var(--cw)) / 2) 10px;overscroll-behavior-x:contain}
 .rail::-webkit-scrollbar{display:none}
 .scard{flex:0 0 var(--cw);scroll-snap-align:center;display:flex;flex-direction:column;border:1px solid var(--line-2);border-radius:26px;background:linear-gradient(180deg,#121215,#0C0C0E);overflow:hidden;opacity:.4;transform:scale(.96);transition:opacity .35s,transform .35s}
 .scard.on{opacity:1;transform:none;box-shadow:0 40px 120px -50px rgba(196,82,63,.45)}
@@ -205,7 +197,8 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
 .scard-vis .sv .t+.l{margin-top:12px}
 .scard-vis .sv .l{margin-bottom:6px}
 .scard-copy{flex:1;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"num num" "h btn" "p btn";column-gap:32px;align-items:end;padding:28px 34px 32px}
-.scard-copy .num{grid-area:num}
+.scard-copy .num{grid-area:num;display:flex;align-items:center;gap:12px;font:500 17px var(--f-sans);letter-spacing:0;text-transform:none;color:var(--rose)}
+.scard-copy .num b{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--rose),var(--gilt));font:500 11.5px var(--f-mono);color:#09090B}
 .scard-copy h3{grid-area:h;margin-top:10px;font-family:var(--f-serif);font-weight:400;font-size:clamp(34px,3.6vw,52px);line-height:1;letter-spacing:-.025em}
 .scard-copy h3 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(--gilt));-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.05em}
 .scard-copy p{grid-area:p;margin-top:12px;max-width:38em;font-size:15.5px;line-height:1.6;color:var(--text-2)}
@@ -217,7 +210,6 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
 .rail-btn svg{width:15px;height:15px}
 @media(max-width:900px){
   .steps{padding:88px 0 80px}
-  .pills button{font-size:15px;padding:8px 16px 8px 8px}.pills .dot{width:26px;height:26px}
   .rail{--cw:86vw;gap:14px;margin-top:40px}
   .scard{border-radius:20px}
   .scard-vis{aspect-ratio:4/3}
@@ -255,7 +247,7 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
     <h1 id="hero-h">Proof your firm <em>did the work.</em></h1>
     <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
     <p class="fact">Courts worldwide have now issued <b>more than 1,600 decisions</b> on AI-fabricated material in filings, and one Oregon brief cost two lawyers <a href="/sanctions/couvrette-v-wisnovsky">$110,204</a>. Carriers have begun asking about AI use at renewal. <small>Damien Charlotin&rsquo;s database, mid-2026 &middot; Couvrette v. Wisnovsky, D. Or., April 2026</small></p>
-    <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="https://app.candor.legal/demo">Try the app</a><a class="btn" href="#watch">Watch it work</a></div>
+    <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="https://app.candor.legal/demo">Try the app</a></div>
   </div>
   <div class="vis">
     <div class="shot vid" id="heroVid"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.candor.legal</span></div>
@@ -270,15 +262,9 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
   <div class="steps-head">
     <div class="eyebrow">How it works</div>
     <h2 id="steps-h">Four steps. <em>One record.</em></h2>
-    <div class="pills" role="tablist" aria-label="Steps">
-      <button type="button" role="tab" id="pill-screen" aria-controls="card-screen" aria-selected="true" tabindex="0"><span class="dot" aria-hidden="true">01</span>Screen</button>
-      <button type="button" role="tab" id="pill-check" aria-controls="card-check" aria-selected="false" tabindex="-1"><span class="dot" aria-hidden="true">02</span>Check</button>
-      <button type="button" role="tab" id="pill-signoff" aria-controls="card-signoff" aria-selected="false" tabindex="-1"><span class="dot" aria-hidden="true">03</span>Sign off</button>
-      <button type="button" role="tab" id="pill-prove" aria-controls="card-prove" aria-selected="false" tabindex="-1"><span class="dot" aria-hidden="true">04</span>Prove</button>
-    </div>
   </div>
   <div class="rail" id="rail">
-    <div class="scard on" id="card-screen" role="tabpanel" aria-labelledby="pill-screen">
+    <div class="scard on" id="card-screen" role="group" aria-roledescription="step" aria-label="Step 1 of 4: Screen">
       <div class="scard-vis draw"><div class="sv" aria-hidden="true">
           <div class="l">YOUR PROMPT</div>
           <div class="t">Summarize the email from <span class="raw">Jane Roe</span>, SSN <span class="raw">000-12-3456</span>, about her denied roof claim, policy <span class="raw">HO-4417-2290</span>.</div>
@@ -286,34 +272,34 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
           <div class="t out">Summarize the email from <span class="rep">[CLIENT_1]</span>, SSN <span class="rep">[SSN_1]</span>, about her denied roof claim, policy <span class="rep">[POLICY_1]</span>.<div class="chips"><span>3 details caught</span><span>Name</span><span>SSN</span><span>Policy no.</span></div></div>
         </div></div>
       <div class="scard-copy">
-        <div class="num"><b>01</b> &nbsp;/&nbsp; Screen</div>
+        <div class="num"><b>01</b>Screen</div>
         <h3>Caught before it&rsquo;s <em>sent.</em></h3>
         <p>Names, Social Security numbers, policy and account numbers are swapped for placeholders before a prompt reaches the model. The screened text is never stored.</p>
         <a class="btn" href="/product">How screening works <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
       </div>
     </div>
-    <div class="scard" id="card-check" role="tabpanel" aria-labelledby="pill-check">
+    <div class="scard" id="card-check" role="group" aria-roledescription="step" aria-label="Step 2 of 4: Check">
       <div class="scard-vis"><img src="/assets/home/signoff.jpg" width="2000" height="1250" alt="Candor&rsquo;s review screen: AI uses awaiting attorney sign-off, with citations and hedge phrases flagged" loading="lazy"></div>
       <div class="scard-copy">
-        <div class="num"><b>02</b> &nbsp;/&nbsp; Check</div>
+        <div class="num"><b>02</b>Check</div>
         <h3>A second look, <em>flagged.</em></h3>
         <p>Every cited case is looked up in the public record. The ones that can&rsquo;t be found, and the AI&rsquo;s own hedges, sit in front of the attorney before sign-off.</p>
         <a class="btn" href="/review-demo">Click through a review <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
       </div>
     </div>
-    <div class="scard" id="card-signoff" role="tabpanel" aria-labelledby="pill-signoff">
+    <div class="scard" id="card-signoff" role="group" aria-roledescription="step" aria-label="Step 3 of 4: Sign off">
       <div class="scard-vis"><img src="/assets/home/log.jpg" width="2000" height="1250" alt="Candor&rsquo;s AI use log: each use with its matter, tool, task, person and verification" loading="lazy"></div>
       <div class="scard-copy">
-        <div class="num"><b>03</b> &nbsp;/&nbsp; Sign off</div>
+        <div class="num"><b>03</b>Sign off</div>
         <h3>Every use, on its <em>matter.</em></h3>
         <p>Tool, task, who and when, filed to the matter with the attorney&rsquo;s sign-off. A correction is a new entry. Nothing is quietly edited.</p>
         <a class="btn" href="/product">See the AI use log <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
       </div>
     </div>
-    <div class="scard" id="card-prove" role="tabpanel" aria-labelledby="pill-prove">
+    <div class="scard" id="card-prove" role="group" aria-roledescription="step" aria-label="Step 4 of 4: Prove">
       <div class="scard-vis"><img src="/assets/home/reports.jpg" width="2000" height="1250" alt="Candor&rsquo;s firm summary report: uses logged, attorney review coverage and tools used" loading="lazy"></div>
       <div class="scard-copy">
-        <div class="num"><b>04</b> &nbsp;/&nbsp; Prove</div>
+        <div class="num"><b>04</b>Prove</div>
         <h3>The answer, <em>already written.</em></h3>
         <p>When a carrier, a court or a client asks how the firm uses AI, the record is ready for any dates you pick, and shareable by link.</p>
         <a class="btn" href="/renewal-packet">The renewal packet <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
@@ -321,15 +307,6 @@ html.fs-lock header.nav,html.fs-lock .dock,html.fs-lock .ab{display:none!importa
     </div>
   </div>
   <div class="rail-nav"><button type="button" class="rail-btn" id="railPrev" aria-label="Previous step"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button type="button" class="rail-btn" id="railNext" aria-label="Next step"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
-</section>
-
-<section class="watch" id="watch" aria-labelledby="watch-h">
-  <div class="eyebrow">90 seconds</div>
-  <h2 id="watch-h">Watch the whole <em>loop.</em></h2>
-  <div class="frame vid-frame" id="wtFrame">
-    <iframe src="/walkthrough?v=7" title="Candor product walkthrough" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    <button type="button" class="fs-btn" aria-label="Play the walkthrough full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg><span class="fs-label">Full screen</span></button>
-  </div>
 </section>
 
 <section class="tools" aria-label="Works with">
@@ -401,18 +378,17 @@ var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 // The rotating quote.
 (function(){var q=[].slice.call(document.querySelectorAll('#q span')),i=0;setInterval(function(){q[i].classList.remove('on');i=(i+1)%q.length;q[i].classList.add('on')},6200)})();
 
-// How it works: the pills and the sliding cards follow each other.
+// How it works: swipe, the arrows, or the keyboard arrows move between the cards.
 (function(){var rail=document.getElementById('rail');if(!rail)return;
-var cards=[].slice.call(rail.querySelectorAll('.scard')),pills=[].slice.call(document.querySelectorAll('.pills button'));
+var cards=[].slice.call(rail.querySelectorAll('.scard'));
 var prev=document.getElementById('railPrev'),next=document.getElementById('railNext'),cur=0,raf=0;
 function center(i){var c=cards[i];return c.offsetLeft-(rail.clientWidth-c.offsetWidth)/2}
-function go(i,focusPill){i=Math.max(0,Math.min(cards.length-1,i));rail.scrollTo({left:center(i),behavior:RM?'auto':'smooth'});mark(i);if(focusPill)pills[i].focus()}
+function go(i){i=Math.max(0,Math.min(cards.length-1,i));rail.scrollTo({left:center(i),behavior:RM?'auto':'smooth'});mark(i)}
 function mark(i){cur=i;cards.forEach(function(c,j){c.classList.toggle('on',j===i);c.setAttribute('aria-hidden',j===i?'false':'true');c.querySelectorAll('a,button').forEach(function(el){el.tabIndex=j===i?0:-1})});
-pills.forEach(function(p,j){p.setAttribute('aria-selected',j===i?'true':'false');p.tabIndex=j===i?0:-1});prev.disabled=i===0;next.disabled=i===cards.length-1}
+prev.disabled=i===0;next.disabled=i===cards.length-1}
 function nearest(){var mid=rail.scrollLeft+rail.clientWidth/2,best=0,d=1e9;cards.forEach(function(c,j){var x=Math.abs(c.offsetLeft+c.offsetWidth/2-mid);if(x<d){d=x;best=j}});return best}
 rail.addEventListener('scroll',function(){cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){var n=nearest();if(n!==cur)mark(n)})},{passive:true});
-pills.forEach(function(p,j){p.addEventListener('click',function(){go(j)})});
-document.querySelector('.pills').addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(cur+1,true)}if(e.key==='ArrowLeft'){e.preventDefault();go(cur-1,true)}if(e.key==='Home'){e.preventDefault();go(0,true)}if(e.key==='End'){e.preventDefault();go(cards.length-1,true)}});
+rail.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(cur+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(cur-1)}if(e.key==='Home'){e.preventDefault();go(0)}if(e.key==='End'){e.preventDefault();go(cards.length-1)}});
 prev.addEventListener('click',function(){go(cur-1)});next.addEventListener('click',function(){go(cur+1)});
 // a tap on a side card brings it to the middle
 cards.forEach(function(c,j){c.addEventListener('click',function(e){if(j!==cur){e.preventDefault();go(j)}})});
@@ -444,7 +420,6 @@ document.addEventListener('fullscreenchange',sync);document.addEventListener('we
 function go(){v.play().catch(function(){})}
 fsify(document.getElementById('heroVid'),'the app recording',function(){want=true;v.preload='auto';go()});
 if('IntersectionObserver' in window){new IntersectionObserver(function(es){var on=es[0].isIntersecting||document.fullscreenElement;if(on&&want){v.preload='auto';go()}else if(!on&&!v.paused)v.pause()},{threshold:.3}).observe(v)}else if(want)go()})();
-fsify(document.getElementById('wtFrame'),'the walkthrough');
 // Firm-size price switch (figures from /pricing).
 (function(){var T=[['Just me','$3,000','Solo \u00b7 1 attorney','$250 a month'],['2\u20135','$6,000','Small \u00b7 2 to 5 attorneys','$500 a month'],['6\u201315','$10,000','Mid \u00b7 6 to 15 attorneys','$833 a month'],['16\u201330','$14,000','Standard \u00b7 16 to 30 attorneys','$1,167 a month'],['31\u201360','$20,000','Large \u00b7 31 to 60 attorneys','$1,667 a month']];
 var seg=document.querySelector('.seg'),pp=document.getElementById('pp'),pm=document.getElementById('pm');
@@ -452,5 +427,5 @@ T.forEach(function(t,i){var b=document.createElement('button');b.type='button';b
 function pick(i){[].forEach.call(seg.children,function(b,j){b.setAttribute('aria-pressed',i===j?'true':'false')});pp.innerHTML=T[i][1]+'<i>/yr</i>';pm.innerHTML='<strong>'+T[i][2]+'</strong>'+T[i][3]+' &middot; staff included'}
 pick(3)})();
 </script>
-<script src="/assets/site.js?v=21"></script>
+<script src="/assets/site.js?v=22"></script>
 </body></html>
