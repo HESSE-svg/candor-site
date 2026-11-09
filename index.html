@@ -214,6 +214,10 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
 @media(prefers-reduced-motion:reduce){.rail{scroll-behavior:auto}.scard{transition:none}}
 /* hero: words only; the demo is behind Try the app */
 .hero{grid-template-columns:minmax(0,1fr)}
+/* pricing: one starting price */
+.big{display:block}
+.big .from{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px}
+.band .fine{font-size:15px;color:var(--text-2)}
 /* what stays private */
 .say{margin-top:18px;max-width:31em;font-size:17.5px;line-height:1.6;color:var(--text-2)}
 .say b{color:var(--text);font-weight:500}
@@ -329,10 +333,9 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
 <section class="band" id="price" aria-labelledby="price-h">
   <div class="eyebrow">Pricing</div>
   <h2 id="price-h">One flat fee, priced on <em>attorneys.</em></h2>
-  <div class="seg" role="group" aria-label="Attorneys at your firm"></div>
-  <div class="big" aria-live="polite"><b id="pp">$14,000<i>/yr</i></b><div class="meta" id="pm"></div></div>
-  <div class="row"><a class="btn" href="/pricing">View pricing</a></div>
-  <p class="fine">Staff seats included at every tier. First month free. Runs on your firm&rsquo;s own AI account, so there is no AI markup.</p>
+  <div class="big"><div class="from">Starting at</div><b>$250<i>/mo</i></b></div>
+  <p class="fine">Billed yearly, by attorney count. Staff included. First month free.</p>
+  <div class="row"><a class="btn" href="/pricing">See every tier</a></div>
 </section>
 
 <section class="close" aria-labelledby="close-h">
@@ -414,12 +417,6 @@ new IntersectionObserver(function(es){es.forEach(function(e){
   if(e.intersectionRatio>=.6){if(!m.classList.contains('play')){m.classList.add('play');anims().forEach(function(a){a.currentTime=0;a.play()})}}
   else if(!e.isIntersecting&&m.classList.contains('play')){m.classList.remove('play');anims().forEach(function(a){a.pause();a.currentTime=0})}
 })},{threshold:[0,.6]}).observe(m)})();
-// Firm-size price switch (figures from /pricing).
-(function(){var T=[['Just me','$3,000','Solo \u00b7 1 attorney','$250 a month'],['2\u20135','$6,000','Small \u00b7 2 to 5 attorneys','$500 a month'],['6\u201315','$10,000','Mid \u00b7 6 to 15 attorneys','$833 a month'],['16\u201330','$14,000','Standard \u00b7 16 to 30 attorneys','$1,167 a month'],['31\u201360','$20,000','Large \u00b7 31 to 60 attorneys','$1,667 a month']];
-var seg=document.querySelector('.seg'),pp=document.getElementById('pp'),pm=document.getElementById('pm');
-T.forEach(function(t,i){var b=document.createElement('button');b.type='button';b.textContent=t[0];b.addEventListener('click',function(){pick(i)});seg.appendChild(b)});
-function pick(i){[].forEach.call(seg.children,function(b,j){b.setAttribute('aria-pressed',i===j?'true':'false')});pp.innerHTML=T[i][1]+'<i>/yr</i>';pm.innerHTML='<strong>'+T[i][2]+'</strong>'+T[i][3]+' &middot; staff included'}
-pick(3)})();
 </script>
 <script src="/assets/site.js?v=22"></script>
 </body></html>
