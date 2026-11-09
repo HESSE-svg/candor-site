@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-11-09T06:49:21.496Z",
+  "builtAt": "2026-11-09T22:29:16.091Z",
   "count": 10,
   "items": [
+    {
+      "title": "Nikki Shaver departs Legaltech Hub to become Davis Polk’s chief AI officer",
+      "link": "https://legaltechnology.com/nikki-shaver-departs-legaltech-hub-to-become-davis-polks-chief-ai-officer/",
+      "desc": "Legaltech Hub also announces a new strategy partnership with Baretz+Brunelle Legaltech Hub’s CEO and co-founder Nikki Shaver is departing the intelligence company to join Davis Polk Wardwell LLP…",
+      "date": "Mon, 09 Nov 2026 14:00:19 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/Lgaltech-hub-1024x280.png",
+      "source": "Legal IT Insider",
+      "ts": 1794232819000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "iManage Puts A Firm’s Institutional Knowledge To Work For Agentic AI",
       "link": "https://abovethelaw.com/2026/11/imanage-puts-a-firms-institutional-knowledge-to-work-for-agentic-ai/",
@@ -12,7 +26,7 @@
       "ts": 1793988060000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": true
     },
@@ -26,37 +40,9 @@
       "ts": 1793971275000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Making Yourself AI-Proof",
-      "link": "https://abovethelaw.com/2026/11/making-yourself-ai-proof/",
-      "desc": "Developing the judgment to evaluate AI. The post Making Yourself AI-Proof appeared first on Above the Law .",
-      "date": "Thu, 05 Nov 2026 20:13:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2025/08/GettyImages-1475813704-scaled.jpg",
-      "source": "Above the Law",
-      "ts": 1793909580000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "3 days ago",
       "strong": true,
       "promo": false
-    },
-    {
-      "title": "AI Does Wonders. But Keep Humans In The Loop",
-      "link": "https://abovethelaw.com/2026/11/ai-does-wonders-but-keep-humans-in-the-loop/",
-      "desc": "[Sponsored] While trust in AI will grow, the challenges will scale with the stakes. The post AI Does Wonders. But Keep Humans In The Loop appeared first on Above the Law .",
-      "date": "Thu, 05 Nov 2026 17:18:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/11/IMG_3292.jpg",
-      "source": "Above the Law",
-      "ts": 1793899080000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": true
     },
     {
       "title": "Clio Wants To Bring AI to the Judiciary, But 50-State Survey Reveals Policies Differ in Whether They Allow It",
@@ -68,7 +54,7 @@
       "ts": 1793897821000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -96,7 +82,7 @@
       "ts": 1793778000000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
@@ -110,7 +96,7 @@
       "ts": 1793715867000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
+      "when": "6 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,7 +110,7 @@
       "ts": 1793712347000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
+      "when": "6 days ago",
       "strong": true,
       "promo": false
     },
@@ -138,7 +124,21 @@
       "ts": 1793694091000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "5 days ago",
+      "when": "6 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Redline comparison guide for legal AI software",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/redline-comparison-guide-for-legal-ai-software/",
+      "desc": "In beta testing ahead of launch, lawyers stopped comparing CoCounsel Legal to other AI solutions. They started comparing it The post Redline comparison guide for legal AI software appeared first…",
+      "date": "Sat, 31 Oct 2026 01:01:16 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/01/AdobeStock_134837868_resized-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1793408476000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Oct 31, 2026",
       "strong": true,
       "promo": false
     }
