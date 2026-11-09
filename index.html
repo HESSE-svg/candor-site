@@ -212,6 +212,8 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   .scard-copy .btn{margin-top:20px;width:100%}
 }
 @media(prefers-reduced-motion:reduce){.rail{scroll-behavior:auto}.scard{transition:none}}
+/* hero: words only; the demo is behind Try the app */
+.hero{grid-template-columns:minmax(0,1fr)}
 /* what stays private */
 .say{margin-top:18px;max-width:31em;font-size:17.5px;line-height:1.6;color:var(--text-2)}
 .say b{color:var(--text);font-weight:500}
@@ -225,8 +227,6 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
 .keep p{margin-top:6px;font-size:15px;line-height:1.6;color:var(--text-2)}
 .keeps .row{margin-top:36px}
 @media(max-width:900px){
-  .hero .vis{display:block;margin:0}
-  .hero .shot-bar span{display:none}
   .say{font-size:16.5px;margin-top:4px}
   .keeps{padding:88px 20px}
   .keeps-grid{grid-template-columns:1fr}
@@ -253,14 +253,8 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
     <div class="eyebrow">AI governance software for law firms</div>
     <h1 id="hero-h">Proof your firm <em>did the work.</em></h1>
     <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
-    <p class="say">Each time someone at your firm uses AI, Candor files it to the matter: <b>screened for client details, citations flagged for a second look, signed off by an attorney.</b> When your malpractice carrier asks how the firm uses AI, you hand them the record.</p>
-    <p class="fact">Courts worldwide have now issued <b>more than 1,600 decisions</b> on AI-fabricated material in filings, and one Oregon brief cost two lawyers <a href="/sanctions/couvrette-v-wisnovsky">$110,204</a>. Carriers have begun asking about AI use at renewal. <small>Damien Charlotin&rsquo;s database, mid-2026 &middot; Couvrette v. Wisnovsky, D. Or., April 2026</small></p>
+    <p class="say">Candor files every AI use to its matter, <b>checked and signed off.</b> When your carrier asks, you hand them the record.</p>
     <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="https://app.candor.legal/demo">Try the app</a></div>
-  </div>
-  <div class="vis">
-    <a class="shot shot-link" href="https://app.candor.legal/demo"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.candor.legal/demo</span></div>
-      <img src="/assets/video/app-tour.jpg" width="1280" height="800" alt="Candor&rsquo;s review and sign-off screen, on an invented demo firm. Opens the demo."></a>
-    <p class="cap">The real app on an invented firm. Click in and try it.</p>
   </div>
 </section>
 
@@ -325,10 +319,10 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   <div class="eyebrow">Built for privileged work</div>
   <h2 id="keeps-h">What stays <em>private.</em></h2>
   <div class="keeps-grid">
-    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>The text you screen</h3><p>Checked in the moment, then gone. Candor keeps that a check ran and which kinds of detail it caught.</p></div></div>
-    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Prompts and answers</h3><p>Not kept, unless your firm&rsquo;s admin turns on history. That choice is recorded, and history can be switched off and purged.</p></div></div>
-    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Your documents</h3><p>Read in your browser when an attorney checks a draft against them. Only counts and fingerprints are stored.</p></div></div>
-    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>A look inside your record</h3><p>Only at your admin&rsquo;s written request, for a security incident, or when the law requires it. Your firm is told each time, unless the law forbids it.</p></div></div>
+    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>The text you screen</h3><p>Checked, then gone. Only the fact of the check is kept.</p></div></div>
+    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Prompts and answers</h3><p>Not kept, unless your admin turns on history.</p></div></div>
+    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Your documents</h3><p>Checked in your browser, never stored.</p></div></div>
+    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>A look inside your record</h3><p>Only if your admin asks in writing, an incident needs it, or the law requires it.</p></div></div>
   </div>
   <div class="row"><a class="btn" href="/security#access">How Candor handles your data <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a></div>
 </section>
