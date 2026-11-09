@@ -55,7 +55,14 @@
     <div class="reveal"><h3>Honest about what we are</h3><p>Candor is software, not counsel. It doesn't provide legal advice, decide whether you're compliant, or guarantee that any AI output is accurate. It gives your attorneys the record they use to make those calls.</p></div>
   </div>
 
-  <div class="card reveal" style="margin-top:34px">
+  <div class="card reveal" id="access" style="margin-top:34px">
+    <h3>Who at Candor can see your data</h3>
+    <p>No one at Candor opens a firm&rsquo;s record without one of three reasons: an admin at the firm asks in writing, a security incident needs investigating, or the law requires it. Bug fixes, testing, demos, sales and model training are never reasons. Development and testing use invented data only.</p>
+    <p style="margin-top:12px">When access does happen, it is read-only and limited to what the request needs. Nothing is copied out, and nothing is handed to a contractor or an AI tool. Each access is written into Candor&rsquo;s access register, and the firm is told within two business days what was viewed and why, unless the law forbids telling it.</p>
+    <p style="margin-top:12px">To be plain about the rest: firm data is encrypted at rest, and the people who run Candor&rsquo;s hosting could technically reach it. These rules, not the encryption, are what keep that from happening today. Next on the roadmap: holding the encryption key in a separate key service, and recording any Candor access in the firm&rsquo;s own record, where its admins can see it.</p>
+  </div>
+
+  <div class="card reveal" style="margin-top:16px">
     <h3>Where we are</h3>
     <p>We complete a security review before any firm&rsquo;s real client data is onboarded, and we&rsquo;re glad to walk your IT or risk lead through the architecture. Questions: <a href="mailto:jesse@candor.legal">jesse@candor.legal</a>. The <a href="/trust">trust page</a> has the short version and where we stand on certifications, and <a href="/sources">where data goes</a> lists the outside services the software and its extension send anything to.</p>
   </div>
@@ -66,7 +73,7 @@
   <h2>Security, in plain terms</h2>
   <div class="deflist">
     <div><h3>How is the record tamper-evident?</h3><p>Every entry carries a cryptographic fingerprint of the entry before it. Change one line, by editing, deleting, or reordering, and the chain no longer verifies. A one-click integrity check rechecks the whole record.</p></div>
-    <div><h3>Can Candor read our client data?</h3><p>The confidentiality screen runs on your device, and by default Candor records that an action happened, not its contents. Retaining underlying content is a choice a firm turns on, never a silent default.</p></div>
+    <div><h3>Can Candor read our client data?</h3><p>The confidentiality screen runs on your device, and by default Candor records that an action happened, not its contents. Retaining underlying content is a choice a firm turns on, never a silent default. No one at Candor opens a firm&rsquo;s record except at an admin&rsquo;s written request, for a security incident, or when the law requires it, and the firm is told each time; see <a href="#access">who at Candor can see your data</a>.</p></div>
     <div><h3>Can we get our data out?</h3><p>Any firm can export everything Candor holds for it, at any time. A sealed export restores exactly with the hash chain intact; a readable export can be opened and verified by hand years from now with no software of ours.</p></div>
   </div>
 </section>

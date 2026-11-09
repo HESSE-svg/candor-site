@@ -212,6 +212,25 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   .scard-copy .btn{margin-top:20px;width:100%}
 }
 @media(prefers-reduced-motion:reduce){.rail{scroll-behavior:auto}.scard{transition:none}}
+/* what stays private */
+.say{margin-top:18px;max-width:31em;font-size:17.5px;line-height:1.6;color:var(--text-2)}
+.say b{color:var(--text);font-weight:500}
+.keeps{padding:120px 6vw;border-top:1px solid var(--line)}
+.keeps>*{max-width:1100px;margin-left:auto;margin-right:auto}
+.keeps h2{max-width:none}
+.keeps-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;margin-top:48px}
+.keep{display:flex;gap:16px;padding:24px 0;border-top:1px solid var(--line)}
+.keep svg{flex:none;width:20px;height:20px;margin-top:4px;color:var(--mint)}
+.keep h3{font-size:17px;font-weight:500;color:var(--text)}
+.keep p{margin-top:6px;font-size:15px;line-height:1.6;color:var(--text-2)}
+.keeps .row{margin-top:36px}
+@media(max-width:900px){
+  .hero .vis{display:block;margin:0}
+  .hero .shot-bar span{display:none}
+  .say{font-size:16.5px;margin-top:4px}
+  .keeps{padding:88px 20px}
+  .keeps-grid{grid-template-columns:1fr}
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://candor.legal/#org","name":"Candor","legalName":"Candor Software LLC","foundingDate":"2026","address":{"@type":"PostalAddress","addressLocality":"Palm City","addressRegion":"FL","addressCountry":"US"},"url":"https://candor.legal","logo":"https://candor.legal/assets/mark-512.png?v=3","image":"https://candor.legal/og.png?v=3","description":"AI governance software for law firms: confidentiality screening before AI, a per-matter AI use log, citation flags, attorney sign-off, and a tamper-evident record for carriers and courts.","knowsAbout":["AI governance software for law firms","Legal AI risk","Malpractice carrier AI questionnaires"],"founder":{"@type":"Person","@id":"https://candor.legal/#founder","name":"Jesse Hollar","jobTitle":"Founder","description":"Founder of Candor, AI audit-trail software for law firms. Former claims adjuster on hurricane property claims in Florida.","disambiguatingDescription":"Florida legal-technology founder (Candor, candor.legal).","worksFor":{"@id":"https://candor.legal/#org"},"knowsAbout":["AI governance for law firms","Property insurance claims"],"url":"https://jesse-hollar.com/","image":"https://jesse-hollar.com/jesse-hollar.jpg","sameAs":["https://jesse-hollar.com/","https://www.linkedin.com/in/jesse-hollar-084999283","https://github.com/HESSE-svg","https://www.crunchbase.com/person/jesse-hollar-e079"]},"sameAs":["https://www.linkedin.com/company/candor-legal","https://www.crunchbase.com/organization/candor-77e0","https://www.g2.com/products/candor-2026-10-09/reviews","https://www.instagram.com/candor.legal"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Candor","url":"https://candor.legal/ai-governance-software","description":"AI governance software for U.S. law firms: screen client data before it reaches a model, log every AI use to the matter, check citations, capture attorney sign-off, apply the firm's own AI-use rules before each use, keep a profile and review date for every AI vendor, record incidents, train staff, and produce the record a malpractice carrier asks for at renewal. Runs on the firm's own model.","audience":{"@type":"Audience","audienceType":"U.S. law firms"},"offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"3000","highPrice":"20000","offerCount":"5","url":"https://candor.legal/pricing"},"serviceType":"AI governance software for law firms","provider":{"@type":"Organization","name":"Candor","url":"https://candor.legal"},"areaServed":"US"}</script>
@@ -234,6 +253,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
     <div class="eyebrow">AI governance software for law firms</div>
     <h1 id="hero-h">Proof your firm <em>did the work.</em></h1>
     <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
+    <p class="say">Each time someone at your firm uses AI, Candor files it to the matter: <b>screened for client details, citations flagged for a second look, signed off by an attorney.</b> When your malpractice carrier asks how the firm uses AI, you hand them the record.</p>
     <p class="fact">Courts worldwide have now issued <b>more than 1,600 decisions</b> on AI-fabricated material in filings, and one Oregon brief cost two lawyers <a href="/sanctions/couvrette-v-wisnovsky">$110,204</a>. Carriers have begun asking about AI use at renewal. <small>Damien Charlotin&rsquo;s database, mid-2026 &middot; Couvrette v. Wisnovsky, D. Or., April 2026</small></p>
     <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="https://app.candor.legal/demo">Try the app</a></div>
   </div>
@@ -301,6 +321,17 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   <p class="sr-only">Including ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity, Harvey, CoCounsel, Lexis+ AI, Eve, Grok, Clio and Mistral. Product names are trademarks of their owners.</p>
 </section>
 
+<section class="keeps" aria-labelledby="keeps-h">
+  <div class="eyebrow">Built for privileged work</div>
+  <h2 id="keeps-h">What stays <em>private.</em></h2>
+  <div class="keeps-grid">
+    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>The text you screen</h3><p>Checked in the moment, then gone. Candor keeps that a check ran and which kinds of detail it caught.</p></div></div>
+    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Prompts and answers</h3><p>Not kept, unless your firm&rsquo;s admin turns on history. That choice is recorded, and history can be switched off and purged.</p></div></div>
+    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Your documents</h3><p>Read in your browser when an attorney checks a draft against them. Only counts and fingerprints are stored.</p></div></div>
+    <div class="keep"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>A look inside your record</h3><p>Only at your admin&rsquo;s written request, for a security incident, or when the law requires it. Your firm is told each time, unless the law forbids it.</p></div></div>
+  </div>
+  <div class="row"><a class="btn" href="/security#access">How Candor handles your data <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a></div>
+</section>
 <section class="band" id="price" aria-labelledby="price-h">
   <div class="eyebrow">Pricing</div>
   <h2 id="price-h">One flat fee, priced on <em>attorneys.</em></h2>
