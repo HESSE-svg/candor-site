@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-11-09T22:29:16.091Z",
+  "builtAt": "2026-11-10T07:28:27.656Z",
   "count": 10,
   "items": [
+    {
+      "title": "Legal Ethics Roundup: DOJ Ethics Probe, Bar Exam Tampering, AI Billing Limits, TX Reconsiders ABA Accreditation Council, Biglaw Shakeup, AI Privilege More",
+      "link": "https://abovethelaw.com/2026/11/legal-ethics-roundup-doj-ethics-probe-bar-exam-tampering-ai-billing-limits-tx-reconsiders-aba-accreditation-council-biglaw-shakeup-ai-privilege-more/",
+      "desc": "Your tour of all things related to lawyer and judicial ethics, with University of Houston law professor Renee Knake Jefferson. The post Legal Ethics Roundup: DOJ Ethics Probe, Bar Exam Tampering,…",
+      "date": "Mon, 09 Nov 2026 22:34:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2021/03/iStock-484137638-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1794263640000,
+      "topic": "rules",
+      "topicLabel": "Rules & ethics",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Nikki Shaver departs Legaltech Hub to become Davis Polk’s chief AI officer",
       "link": "https://legaltechnology.com/nikki-shaver-departs-legaltech-hub-to-become-davis-polks-chief-ai-officer/",
@@ -68,7 +82,7 @@
       "ts": 1793833944000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
@@ -125,20 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "6 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Redline comparison guide for legal AI software",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/redline-comparison-guide-for-legal-ai-software/",
-      "desc": "In beta testing ahead of launch, lawyers stopped comparing CoCounsel Legal to other AI solutions. They started comparing it The post Redline comparison guide for legal AI software appeared first…",
-      "date": "Sat, 31 Oct 2026 01:01:16 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/01/AdobeStock_134837868_resized-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1793408476000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Oct 31, 2026",
       "strong": true,
       "promo": false
     }
