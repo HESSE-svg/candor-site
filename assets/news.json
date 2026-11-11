@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-11-11T06:42:13.826Z",
+  "builtAt": "2026-11-11T19:42:18.898Z",
   "count": 10,
   "items": [
+    {
+      "title": "Keystone’s AI funds tool – “We’re solving a problem using tech in the right way”",
+      "link": "https://legaltechnology.com/keystones-ai-funds-tool-were-solving-a-problem-using-tech-in-the-right-way/",
+      "desc": "Keystone Law has launched Origin, a purpose-built AI-powered source-of-funds enquiry tool that aims to tackle a longstanding challenge in anti-money laundering compliance: the subjectivity…",
+      "date": "Wed, 11 Nov 2026 11:32:51 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/Trumper-2.gif",
+      "source": "Legal IT Insider",
+      "ts": 1794396771000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Mercedes Lawyer Joins AI Native Compound Law",
+      "link": "https://www.artificiallawyer.com/2026/11/11/mercedes-lawyer-joins-ai-native-compound-law/",
+      "desc": "Compound Law, an AI‐native firm based in Berlin, and co-founded by the former General Counsel of Zenjob, has hired Marc Schuba, a White Case",
+      "date": "Wed, 11 Nov 2026 08:16:42 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-11-at-08.06.39.png",
+      "source": "Artificial Lawyer",
+      "ts": 1794385002000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Tax Research Platform Blue J Raises $176M to Expand Its Agentic AI and Reach New Markets",
       "link": "https://www.lawnext.com/2026/11/tax-research-platform-blue-j-raises-176m-to-expand-its-agentic-ai-and-reach-new-markets.html",
@@ -12,7 +40,7 @@
       "ts": 1794320327000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -26,7 +54,7 @@
       "ts": 1794318190000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -40,7 +68,7 @@
       "ts": 1794317476000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,21 +96,7 @@
       "ts": 1794232819000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Startup Corner: Lawfecta looks to AI to solve law firms’ legal talent needs",
-      "link": "https://legaltechnology.com/startup-corner-lawfecta-looks-to-ai-to-solve-law-firms-legal-talent-needs/",
-      "desc": "Founded as a virtual paralegal agency before pivoting to legal tech in 2025, Lawfecta is building an AI-powered legal talent marketplace. Founder Stacey M. Lake tells us how her own [] The post…",
-      "date": "Fri, 06 Nov 2026 13:21:15 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/StartUp-Corner-2.png",
-      "source": "Legal IT Insider",
-      "ts": 1793971275000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "4 days ago",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -96,7 +110,7 @@
       "ts": 1793897821000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "5 days ago",
+      "when": "6 days ago",
       "strong": true,
       "promo": false
     },
@@ -125,20 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Nov 3, 2026",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Redline comparison guide for legal AI software",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/redline-comparison-guide-for-legal-ai-software/",
-      "desc": "In beta testing ahead of launch, lawyers stopped comparing CoCounsel Legal to other AI solutions. They started comparing it The post Redline comparison guide for legal AI software appeared first…",
-      "date": "Sat, 31 Oct 2026 01:01:16 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/01/AdobeStock_134837868_resized-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1793408476000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Oct 31, 2026",
       "strong": true,
       "promo": false
     }
