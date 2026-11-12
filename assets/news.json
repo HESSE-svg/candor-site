@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-11-12T07:23:01.881Z",
+  "builtAt": "2026-11-12T20:05:11.472Z",
   "count": 10,
   "items": [
+    {
+      "title": "Is Big Law 'AI Gaslighting' Us?",
+      "link": "https://www.artificiallawyer.com/2026/11/12/is-big-law-ai-gaslighting-us/",
+      "desc": "Is the recent spate of grand gestures by some Big Law firms, sometimes involving 100s of millions of dollars or more, just 'AI gaslighting'? And",
+      "date": "Thu, 12 Nov 2026 08:46:39 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-12-at-08.20.25.png",
+      "source": "Artificial Lawyer",
+      "ts": 1794473199000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Keeping Legal AI Connected: Why Your Data and Case Should Work Together",
+      "link": "https://www.artificiallawyer.com/2026/11/12/keeping-legal-ai-connected-why-your-data-and-case-should-work-together/",
+      "desc": "By Marla Crawford, General Counsel, Cimplifi. There has never been a more exciting time to work in legal technology. There has also never been an",
+      "date": "Thu, 12 Nov 2026 07:47:31 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-12-at-07.50.50.png",
+      "source": "Artificial Lawyer",
+      "ts": 1794469651000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Keystone’s AI funds tool – “We’re solving a problem using tech in the right way”",
       "link": "https://legaltechnology.com/keystones-ai-funds-tool-were-solving-a-problem-using-tech-in-the-right-way/",
@@ -12,7 +40,7 @@
       "ts": 1794396771000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -26,7 +54,7 @@
       "ts": 1794385002000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -40,35 +68,7 @@
       "ts": 1794320327000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Claude on Anthropic IPO , ‘Pressure to Monetize Legal Vertical’",
-      "link": "https://www.artificiallawyer.com/2026/11/10/claude-on-anthropic-ipo-pressure-to-monetize-legal-vertical/",
-      "desc": "Anthropic has finally pressed ‘Go!’ on its IPO, even if its valuation is about half – at $1 trillion – compared to previous hopes. Artificial",
-      "date": "Tue, 10 Nov 2026 13:43:10 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-10-at-13.37.08.png",
-      "source": "Artificial Lawyer",
-      "ts": 1794318190000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Copilot for Legal Won’t Cannibalize Us – Litera",
-      "link": "https://www.artificiallawyer.com/2026/11/10/copilot-for-legal-wont-cannibalize-us-litera/",
-      "desc": "Litera has announced it will provide Litera Compare and Firm AI Search within Copilot for Legal. But, will this legal-specific Copilot with a mass of",
-      "date": "Tue, 10 Nov 2026 13:31:16 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-10-at-12.46.41.png",
-      "source": "Artificial Lawyer",
-      "ts": 1794317476000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -82,7 +82,7 @@
       "ts": 1794232819000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -96,7 +96,7 @@
       "ts": 1793897821000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "6 days ago",
+      "when": "Nov 5, 2026",
       "strong": true,
       "promo": false
     },
