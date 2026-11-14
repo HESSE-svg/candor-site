@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-11-13T19:50:57.016Z",
+  "builtAt": "2026-11-14T06:41:07.270Z",
   "count": 10,
   "items": [
+    {
+      "title": "AI In Our Courts: Useful Or A Magic 8 Ball?",
+      "link": "https://abovethelaw.com/2026/11/ai-in-our-courts-useful-or-a-magic-8-ball/",
+      "desc": "The difference between how two judges looked at AI and its use could not be more stark. The post AI In Our Courts: Useful Or A Magic 8 Ball? appeared first on Above the Law .",
+      "date": "Fri, 13 Nov 2026 22:35:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2018/03/2310618299_ccaf92a705_b.jpg",
+      "source": "Above the Law",
+      "ts": 1794609300000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "The Next Generation Of Law Students Don't Trust AI Hype",
       "link": "https://abovethelaw.com/2026/11/the-next-generation-of-law-students-dont-trust-ai-hype/",
@@ -12,7 +26,7 @@
       "ts": 1794522900000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -26,7 +40,7 @@
       "ts": 1794514320000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -125,20 +139,6 @@
       "topic": "business",
       "topicLabel": "Business of legal tech",
       "when": "Nov 4, 2026",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Prosecutor case lifecycle: How AI can support every stage of the case",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/prosecutor-case-lifecycle-how-ai-can-support-every-stage-of-the-case/",
-      "desc": "Prosecutors are under constant pressure to do more with less. Caseloads keep growing, discovery volumes are climbing, and every charging The post Prosecutor case lifecycle: How AI can support…",
-      "date": "Tue, 03 Nov 2026 13:25:47 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/11/Untitled-May-07-2026-at-13.53.26-4-1-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1793712347000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Nov 3, 2026",
       "strong": true,
       "promo": false
     }
