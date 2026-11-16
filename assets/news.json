@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-15T18:56:53.810Z",
+  "builtAt": "2026-11-16T06:44:56.143Z",
   "count": 10,
   "items": [
     {
@@ -12,7 +12,7 @@
       "ts": 1794609300000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -26,7 +26,7 @@
       "ts": 1794522900000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
@@ -40,7 +40,7 @@
       "ts": 1794514320000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
