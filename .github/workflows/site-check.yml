@@ -1,0 +1,47 @@
+name: Site check
+
+# Runs on every pull request to main: serves the site and runs
+# tools/a11y-check.cjs (accessibility on every page, plus no sideways
+# scroll) at desktop and phone width. main requires it to pass before a merge.
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  a11y:
+    name: Accessibility and layout
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install the checker (outside the site folder)
+        run: |
+          mkdir -p "$RUNNER_TEMP/check"
+          npm i --prefix "$RUNNER_TEMP/check" --no-audit --no-fund playwright@1.49.1 axe-core@4.10.2 serve@14.2.4
+          "$RUNNER_TEMP/check/node_modules/.bin/playwright" install --with-deps chromium
+
+      - name: Serve the site
+        run: |
+          "$RUNNER_TEMP/check/node_modules/.bin/serve" -l 5055 . > /dev/null 2>&1 &
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:5055/ > /dev/null && exit 0; sleep 1; done
+          echo "The site did not start." && exit 1
+
+      - name: Check every page
+        env:
+          NODE_PATH: ${{ runner.temp }}/check/node_modules
+        run: node tools/a11y-check.cjs
