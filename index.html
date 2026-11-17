@@ -212,8 +212,56 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   .scard-copy .btn{margin-top:20px;width:100%}
 }
 @media(prefers-reduced-motion:reduce){.rail{scroll-behavior:auto}.scard{transition:none}}
-/* hero: words only; the demo is behind Try the app */
-.hero{grid-template-columns:minmax(0,1fr)}
+/* hero: one line and one button on the left, screening playing out on the right (above the words on phones) */
+.hero{grid-template-columns:minmax(0,5fr) minmax(0,6fr);padding-right:6vw;min-height:0;padding-top:72px;padding-bottom:72px}
+.hero h1{max-width:8.5ch}
+.tlink{align-self:center;padding:0 6px;font-size:15px;color:var(--text-2);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line-2)}
+.tlink:hover{color:var(--text)}
+.hv{position:relative;z-index:2;border:1px solid var(--line-2);border-radius:18px;background:linear-gradient(180deg,#121215,#0C0C0E);box-shadow:0 50px 140px -50px rgba(196,82,63,.45);overflow:hidden}
+.hv-bar{display:flex;align-items:center;gap:8px;padding:12px 18px;border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--text-3)}
+.hv-bar i{width:8px;height:8px;border-radius:50%;background:var(--line-2)}
+.hv-bar span{margin-left:6px}
+.hv-bar em{margin-left:auto;font-style:normal;color:var(--mint);opacity:0;transition:opacity .5s}
+.hv.done .hv-bar em{opacity:1}
+.hv-in{padding:22px 24px 24px;font-family:var(--f-mono);font-size:clamp(13px,1.15vw,16px);line-height:1.9}
+.hv .t{padding:16px 18px;border:1px solid var(--line-2);border-radius:12px;background:var(--card);transition:border-color .6s}
+.hv.done .t{border-color:rgba(134,205,180,.3)}
+.hv .d{transition:background .35s,color .35s,border-color .35s}
+.hv .d.raw{border:1px solid transparent}
+.hv .chips{opacity:0;transform:translateY(4px);transition:opacity .5s,transform .5s}
+.hv.done .chips{opacity:1;transform:none}
+.hv-foot{margin-top:14px;font-family:var(--f-sans);font-size:13px;color:var(--text-3)}
+/* how it works: each step is what happens, then what Candor shows */
+.steps-head .quote{margin:22px auto 0;text-align:center}
+.steps-head .quote span{right:0}
+.sv .kv{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:7px 0;border-top:1px solid var(--line)}
+.sv .kv:first-child{border-top:0;padding-top:0}
+.sv .kv:last-child{padding-bottom:0}
+.sv .kv span{color:var(--text-3)}
+.sv .kv b{font-weight:400;color:var(--text);text-align:right}
+.sv .t.plain{font-family:var(--f-sans);color:var(--text-2);line-height:1.55}
+.sv .t.plain i{color:var(--text)}
+.pill{display:inline-block;font-family:var(--f-sans);font-size:.78em;line-height:1.5;border-radius:999px;padding:1px 10px;white-space:nowrap;border:1px solid}
+.pill.warn{color:var(--gilt);border-color:rgba(227,184,102,.45)}
+.pill.ok{color:var(--mint);border-color:rgba(134,205,180,.45)}
+.pill.no{color:var(--rose);border-color:rgba(242,196,181,.4)}
+.sv .note{margin-top:8px;font-family:var(--f-sans);font-size:.72em;color:var(--text-3)}
+@media(max-width:900px){
+  .hero{padding:28px 20px 56px;gap:28px}
+  .hero .hv{order:-1}
+  .hv-in{padding:14px 14px 16px;font-size:12.5px;line-height:1.75}
+  .hv .t{padding:10px 12px}
+  .hv-foot{display:none}
+  .hv-bar{padding:10px 14px;font-size:10px;letter-spacing:.1em;white-space:nowrap}
+  .hv-bar i{display:none}
+  .hv-bar span{margin-left:0}
+  .hv .chips span:not(:first-child){display:none}
+  .tlink{flex:1 1 100%;text-align:center;padding:6px 0}
+  .scard-vis.draw{aspect-ratio:auto;min-height:0;padding:16px}
+  .sv .kv{padding:5px 0;gap:10px}
+  .scard-vis .sv .note{display:none}
+}
+@media(prefers-reduced-motion:reduce){.hv *,.hv-bar em{transition:none}}
 /* pricing: one starting price */
 .big{display:block}
 .big .from{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px}
@@ -256,24 +304,33 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   <div class="copy">
     <div class="eyebrow">AI governance software for law firms</div>
     <h1 id="hero-h">Proof your firm <em>did the work.</em></h1>
-    <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
-    <p class="say">Candor files every AI use to its matter, <b>checked and signed off.</b> When your carrier asks, you hand them the record.</p>
-    <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="https://app.candor.legal/demo">Try the app</a></div>
+    <p class="say">Every AI use filed to its matter, <b>checked and signed off,</b> ready the day your carrier asks.</p>
+    <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="tlink" href="https://app.candor.legal/demo">or try the app</a></div>
   </div>
+  <figure class="hv" id="hv" role="img" aria-label="Example with invented details: a prompt naming Jane Roe, her Social Security number and her policy number. Candor replaces all three with placeholders before the prompt reaches ChatGPT.">
+    <div class="hv-bar" aria-hidden="true"><i></i><i></i><i></i><span>PROMPT TO CHATGPT</span><em>3 DETAILS SCREENED</em></div>
+    <div class="hv-in" aria-hidden="true">
+      <div class="t">Summarize the email from <span class="d raw" data-to="[CLIENT_1]">Jane Roe</span>, SSN <span class="d raw" data-to="[SSN_1]">000-12-3456</span>, about her denied roof claim, policy <span class="d raw" data-to="[POLICY_1]">HO-4417-2290</span>.</div>
+      <div class="chips"><span>Sent with placeholders</span><span>Name</span><span>SSN</span><span>Policy no.</span></div>
+      <div class="hv-foot">Invented example. The screened text is never stored.</div>
+    </div>
+  </figure>
 </section>
 
 <section class="steps" id="screen" aria-labelledby="steps-h">
   <div class="steps-head">
     <div class="eyebrow">How it works</div>
     <h2 id="steps-h">Four steps. <em>One record.</em></h2>
+    <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
   </div>
   <div class="rail" id="rail">
     <div class="scard on" id="card-screen" role="group" aria-roledescription="step" aria-label="Step 1 of 4: Screen">
-      <div class="scard-vis draw"><div class="sv" aria-hidden="true">
-          <div class="l">YOUR PROMPT</div>
-          <div class="t">Summarize the email from <span class="raw">Jane Roe</span>, SSN <span class="raw">000-12-3456</span>, about her denied roof claim, policy <span class="raw">HO-4417-2290</span>.</div>
-          <div class="l">WHAT THE MODEL RECEIVES</div>
-          <div class="t out">Summarize the email from <span class="rep">[CLIENT_1]</span>, SSN <span class="rep">[SSN_1]</span>, about her denied roof claim, policy <span class="rep">[POLICY_1]</span>.<div class="chips"><span>3 details caught</span><span>Name</span><span>SSN</span><span>Policy no.</span></div></div>
+      <div class="scard-vis draw"><div class="sv" role="img" aria-label="Invented example: staff screen a client email before pasting it into ChatGPT. Candor keeps the time of the check and which kinds of detail it caught, and does not store the email.">
+          <div class="l" aria-hidden="true">WHAT HAPPENS</div>
+          <div class="t plain" aria-hidden="true">A paralegal screens a client&rsquo;s email before pasting it into <i>ChatGPT</i>.</div>
+          <div class="l" aria-hidden="true">WHAT CANDOR KEEPS</div>
+          <div class="t out" aria-hidden="true"><div class="kv"><span>Check ran</span><b>Nov 16, 2:14 PM</b></div><div class="kv"><span>Caught</span><b>Name &middot; SSN &middot; Policy no.</b></div><div class="kv"><span>The email</span><b><span class="pill no">Not stored</span></b></div></div>
+          <div class="note" aria-hidden="true">Invented example</div>
         </div></div>
       <div class="scard-copy">
         <div class="num"><b>01</b>Screen</div>
@@ -283,7 +340,13 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
       </div>
     </div>
     <div class="scard" id="card-check" role="group" aria-roledescription="step" aria-label="Step 2 of 4: Check">
-      <div class="scard-vis"><img src="/assets/home/signoff.jpg" width="2000" height="1250" alt="Candor&rsquo;s review screen: AI uses awaiting attorney sign-off, with citations and hedge phrases flagged" loading="lazy"></div>
+      <div class="scard-vis draw"><div class="sv" role="img" aria-label="Invented example: an AI draft cites a case and hedges. Candor flags the case it could not find in the public record, and the hedge, for a second look before sign-off.">
+          <div class="l" aria-hidden="true">WHAT HAPPENS</div>
+          <div class="t plain" aria-hidden="true">ChatGPT drafts a motion citing <i>Roe v. Delmar Mutual</i>, 412 So.&nbsp;3d 88, and says the rule &ldquo;appears to&rdquo; apply.</div>
+          <div class="l" aria-hidden="true">WHAT CANDOR SHOWS</div>
+          <div class="t out" aria-hidden="true"><div class="kv"><span><i>Roe v. Delmar Mutual</i></span><b><span class="pill warn">Not found &middot; second look</span></b></div><div class="kv"><span>&ldquo;appears to&rdquo;</span><b><span class="pill warn">Hedge &middot; second look</span></b></div><div class="kv"><span>Before sign-off</span><b><span class="pill ok">Shown to the attorney</span></b></div></div>
+          <div class="note" aria-hidden="true">Invented example</div>
+        </div></div>
       <div class="scard-copy">
         <div class="num"><b>02</b>Check</div>
         <h3>A second look, <em>flagged.</em></h3>
@@ -292,7 +355,13 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
       </div>
     </div>
     <div class="scard" id="card-signoff" role="group" aria-roledescription="step" aria-label="Step 3 of 4: Sign off">
-      <div class="scard-vis"><img src="/assets/home/log.jpg" width="2000" height="1250" alt="Candor&rsquo;s AI use log: each use with its matter, tool, task, person and verification" loading="lazy"></div>
+      <div class="scard-vis draw"><div class="sv" role="img" aria-label="Invented example: an attorney signs off on an AI-assisted draft. Candor files the use to the matter with the tool, the task, the verification statement and the sign-off. A later correction becomes a new entry.">
+          <div class="l" aria-hidden="true">WHAT HAPPENS</div>
+          <div class="t plain" aria-hidden="true">A.&nbsp;Park reads the draft and the flags, then signs off.</div>
+          <div class="l" aria-hidden="true">WHAT CANDOR SHOWS</div>
+          <div class="t out" aria-hidden="true"><div class="kv"><span>Matter</span><b>00123 &middot; Roe</b></div><div class="kv"><span>Tool &middot; task</span><b>ChatGPT &middot; Drafting</b></div><div class="kv"><span>Verification statement</span><b>Made</b></div><div class="kv"><span>Signed off</span><b><span class="pill ok">A. Park, 3:02 PM</span></b></div></div>
+          <div class="note" aria-hidden="true">Invented example. A later correction is a new entry; this one stays.</div>
+        </div></div>
       <div class="scard-copy">
         <div class="num"><b>03</b>Sign off</div>
         <h3>Every use, on its <em>matter.</em></h3>
@@ -301,7 +370,13 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
       </div>
     </div>
     <div class="scard" id="card-prove" role="group" aria-roledescription="step" aria-label="Step 4 of 4: Prove">
-      <div class="scard-vis"><img src="/assets/home/reports.jpg" width="2000" height="1250" alt="Candor&rsquo;s firm summary report: uses logged, attorney review coverage and tools used" loading="lazy"></div>
+      <div class="scard-vis draw"><div class="sv" role="img" aria-label="Example figures: a carrier renewal form asks how the firm uses AI. Candor shows a firm summary for the dates picked: uses logged, the share signed off by an attorney, and the tools in use.">
+          <div class="l" aria-hidden="true">WHAT HAPPENS</div>
+          <div class="t plain" aria-hidden="true">The carrier&rsquo;s renewal form asks how the firm uses AI.</div>
+          <div class="l" aria-hidden="true">WHAT CANDOR SHOWS</div>
+          <div class="t out" aria-hidden="true"><div class="kv"><span>Dates</span><b>Jan 1 &ndash; Nov 16</b></div><div class="kv"><span>AI uses logged</span><b>214</b></div><div class="kv"><span>Signed off by an attorney</span><b>97%</b></div><div class="kv"><span>Tools in use</span><b>4, all on the approved list</b></div></div>
+          <div class="note" aria-hidden="true">Example figures</div>
+        </div></div>
       <div class="scard-copy">
         <div class="num"><b>04</b>Prove</div>
         <h3>The answer, <em>already written.</em></h3>
@@ -391,6 +466,13 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
 var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 // The rotating quote.
 (function(){var q=[].slice.call(document.querySelectorAll('#q span')),i=0;setInterval(function(){q[i].classList.remove('on');i=(i+1)%q.length;q[i].classList.add('on')},6200)})();
+
+// The hero: each client detail turns into its placeholder, once, then it stays put.
+(function(){var hv=document.getElementById('hv');if(!hv)return;
+var ds=[].slice.call(hv.querySelectorAll('.d'));
+function swap(d){d.textContent=d.getAttribute('data-to');d.classList.remove('raw');d.classList.add('rep')}
+if(RM){ds.forEach(swap);hv.classList.add('done');return}
+ds.forEach(function(d,i){setTimeout(function(){swap(d);if(i===ds.length-1)setTimeout(function(){hv.classList.add('done')},300)},1400+i*550)})})();
 
 // How it works: swipe, the arrows, or the keyboard arrows move between the cards.
 (function(){var rail=document.getElementById('rail');if(!rail)return;
