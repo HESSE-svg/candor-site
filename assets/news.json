@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-11-16T22:16:52.832Z",
+  "builtAt": "2026-11-17T08:05:30.650Z",
   "count": 10,
   "items": [
+    {
+      "title": "Legal Ethics Roundup: Solo Lawyer Well-Being Paradox, Habba Ethics Complaint, Judge Removed, Plagiarism In Judicial Application, Billable Hour Shake-Up, AI Sanctions More",
+      "link": "https://abovethelaw.com/2026/11/legal-ethics-roundup-solo-lawyer-well-being-paradox-habba-ethics-complaint-judge-removed-plagiarism-in-judicial-application-billable-hour-shake-up-ai-sanctions-more/",
+      "desc": "Your tour of all things related to lawyer and judicial ethics, with University of Houston law professor Renee Knake Jefferson. The post Legal Ethics Roundup: Solo Lawyer Well-Being Paradox, Habba…",
+      "date": "Mon, 16 Nov 2026 23:32:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2021/03/iStock-484137638-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1794871920000,
+      "topic": "courts",
+      "topicLabel": "Courts & sanctions",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "An Interview With David Pogue: AI Will Change A Lot. We’ll Cope.",
       "link": "https://abovethelaw.com/2026/11/an-interview-with-david-pogue-ai-will-change-a-lot-well-cope/",
@@ -73,20 +87,6 @@
       "promo": false
     },
     {
-      "title": "AI Slop Or Novel Arguments? A Texas Judge Goes Off The Rails",
-      "link": "https://abovethelaw.com/2026/11/ai-slop-or-novel-arguments-a-texas-judge-goes-off-the-rails/",
-      "desc": "Who made the judge an expert at calling out AI slop? The post AI Slop Or Novel Arguments? A Texas Judge Goes Off The Rails appeared first on Above the Law .",
-      "date": "Fri, 13 Nov 2026 22:35:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2020/11/artificial-intelligence-4111582_1920.jpg",
-      "source": "Above the Law",
-      "ts": 1794609300000,
-      "topic": "courts",
-      "topicLabel": "Courts & sanctions",
-      "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "Is Big Law 'AI Gaslighting' Us?",
       "link": "https://www.artificiallawyer.com/2026/11/12/is-big-law-ai-gaslighting-us/",
       "desc": "Is the recent spate of grand gestures by some Big Law firms, sometimes involving 100s of millions of dollars or more, just 'AI gaslighting'? And",
@@ -110,7 +110,7 @@
       "ts": 1794469651000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     },
