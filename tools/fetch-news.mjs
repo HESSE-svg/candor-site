@@ -67,11 +67,11 @@ const clean = (s = '') =>
     .replace(/&#8216;/g, "'")
     .replace(/&#8220;|&#8221;|&quot;/g, '"')
     .replace(/&#8211;|&#8212;/g, ', ')
-    .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&nbsp;/g, ' ')
     .replace(/&#\d+;/g, '')
+    .replace(/&amp;/g, '&') // last, so '&amp;lt;' stays the text '&lt;'
     .replace(/\s+/g, ' ')
     .trim()
 
@@ -269,7 +269,7 @@ function page(items, builtAt) {
 </main>
 
 <footer></footer>
-<script src="/assets/site.js?v=22"></script>
+<script src="/assets/site.js?v=23"></script>
 </body></html>
 `
 }

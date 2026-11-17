@@ -11,7 +11,7 @@ import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=8">'
-export const SITE_JS = '<script src="/assets/site.js?v=22"></script>'
+export const SITE_JS = '<script src="/assets/site.js?v=23"></script>'
 
 const COLS = [
   ['Product', [
