@@ -197,9 +197,9 @@ footer.sf .disc a{color:#A8A8B0}
 }
 .swipe-nav{display:none;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}
 .swipe-nav.on{display:flex}
-.swipe-dots{display:flex;gap:6px;flex-wrap:wrap}
-.swipe-dots button{width:8px;height:8px;padding:0;border-radius:999px;border:0;background:#2A2A30;cursor:pointer;transition:width .2s,background .2s}
-.swipe-dots button[aria-current="true"]{width:22px;background:#FAFAF9}
+.swipe-dots{display:flex;gap:0;flex-wrap:wrap}
+.swipe-dots button{width:24px;height:24px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center;transition:width .2s}.swipe-dots button::before{content:"";width:8px;height:8px;border-radius:999px;background:#2A2A30;transition:width .2s,background .2s}
+.swipe-dots button[aria-current="true"]{width:34px}.swipe-dots button[aria-current="true"]::before{width:22px;background:#FAFAF9}
 .swipe-arrows{display:flex;gap:8px}
 .swipe-arrows button{width:40px;height:40px;border-radius:50%;border:1px solid #2A2A30;background:#111114;color:#FAFAF9;display:grid;place-items:center;cursor:pointer}
 .swipe-arrows button:hover{background:#1A1A1E}

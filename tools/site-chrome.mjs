@@ -10,7 +10,7 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=7">'
+export const CHROME_CSS = '<link rel="stylesheet" href="/assets/chrome.css?v=8">'
 export const SITE_JS = '<script src="/assets/site.js?v=22"></script>'
 
 const COLS = [
