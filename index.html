@@ -212,8 +212,59 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   .scard-copy .btn{margin-top:20px;width:100%}
 }
 @media(prefers-reduced-motion:reduce){.rail{scroll-behavior:auto}.scard{transition:none}}
-/* hero: words only; the demo is behind Try the app */
-.hero{grid-template-columns:minmax(0,1fr)}
+/* hero: one line and one button; beside it (above it on phones) a matter's AI record, three rows */
+.hero{grid-template-columns:minmax(0,5fr) minmax(0,5fr);padding-right:6vw;min-height:0;padding-top:72px;padding-bottom:72px}
+.hero h1{max-width:8.5ch}
+.tlink{align-self:center;padding:0 6px;font-size:15px;color:var(--text-2);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line-2)}
+.tlink:hover{color:var(--text)}
+.hv{position:relative;z-index:2;max-width:520px;justify-self:end;width:100%;border:1px solid var(--line-2);border-radius:22px;background:linear-gradient(180deg,#131316,#0C0C0E);box-shadow:0 50px 140px -50px rgba(196,82,63,.45);padding:26px 30px 22px}
+.hv-head{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3);padding-bottom:16px;border-bottom:1px solid var(--line)}
+.hv-head span:first-child{color:var(--text)}
+.rec{list-style:none}
+.rec li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);opacity:0;animation:recin .6s cubic-bezier(.2,.7,.2,1) forwards}
+.rec li:nth-child(1){animation-delay:.3s}.rec li:nth-child(2){animation-delay:.6s}.rec li:nth-child(3){animation-delay:.9s}
+.rec li span{font-family:var(--f-serif);font-size:30px;line-height:1;color:var(--text)}
+.rec li small{display:block;margin-top:6px;font-family:var(--f-sans);font-size:13.5px;color:var(--text-3)}
+.hv-k{margin-top:14px;font-size:12px;color:var(--text-3)}
+@keyframes recin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.pill{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-sans);font-size:13px;font-weight:500;line-height:1;border-radius:999px;padding:8px 14px;white-space:nowrap;border:1px solid}
+.pill svg{width:14px;height:14px}
+.pill.ok{color:var(--mint);border-color:rgba(134,205,180,.45)}
+.pill.warn{color:var(--gilt);border-color:rgba(227,184,102,.5)}
+/* how it works: one picture per step, a few words at most */
+.steps-head .quote{margin:22px auto 0;text-align:center}
+.steps-head .quote span{right:0}
+.scard-vis.draw{justify-content:center}
+.viz{width:100%}
+.viz-in{display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+.viz-k{position:absolute;right:20px;bottom:14px;font-size:11.5px;color:var(--text-3)}
+.swap{display:flex;align-items:center;gap:18px;font-family:var(--f-mono);font-size:clamp(20px,2.3vw,32px)}
+.swap .raw,.swap .rep{padding:6px 14px}
+.swap .ar{width:30px;height:30px;color:var(--text-3)}
+.cap{font-size:15px;color:var(--text-2)}
+.cap b{color:var(--mint);font-weight:500}
+.cite{font-family:var(--f-serif);font-size:clamp(30px,3.4vw,48px);line-height:1.05;color:var(--text)}
+.cite small{display:block;margin-top:8px;font-family:var(--f-mono);font-size:14px;letter-spacing:.06em;color:var(--text-3)}
+.viz .pill{font-size:15px;padding:10px 18px}
+.seal{display:grid;place-items:center;width:96px;height:96px;border-radius:50%;border:1.5px solid rgba(134,205,180,.5);color:var(--mint);background:rgba(134,205,180,.06)}
+.seal svg{width:44px;height:44px}
+.stat{font-family:var(--f-serif);font-size:clamp(84px,9vw,132px);line-height:.9;letter-spacing:-.03em;background:linear-gradient(100deg,var(--rose),var(--gilt));-webkit-background-clip:text;background-clip:text;color:transparent}
+@media(max-width:900px){
+  .hero{padding:28px 20px 56px;gap:28px}
+  .hero .hv{order:-1;justify-self:stretch;max-width:none;padding:18px 20px 16px}
+  .rec li{padding:14px 0}
+  .rec li span{font-size:24px}
+  .tlink{flex:1 1 100%;text-align:center;padding:6px 0}
+  .scard-vis.draw{aspect-ratio:4/3;padding:16px}
+  .swap{gap:10px;font-size:17px}
+  .swap .ar{width:20px;height:20px}
+  .swap .raw,.swap .rep{padding:4px 8px}
+  .viz-in{gap:14px}
+  .seal{width:72px;height:72px}.seal svg{width:34px;height:34px}
+  .stat{font-size:84px}
+  .viz-k{right:14px;bottom:10px}
+}
+@media(prefers-reduced-motion:reduce){.rec li{animation:none;opacity:1}}
 /* pricing: one starting price */
 .big{display:block}
 .big .from{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px}
@@ -256,25 +307,29 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   <div class="copy">
     <div class="eyebrow">AI governance software for law firms</div>
     <h1 id="hero-h">Proof your firm <em>did the work.</em></h1>
-    <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
-    <p class="say">Candor files every AI use to its matter, <b>checked and signed off.</b> When your carrier asks, you hand them the record.</p>
-    <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="btn" href="https://app.candor.legal/demo">Try the app</a></div>
+    <p class="say">Every AI use filed to its matter, <b>checked and signed off,</b> ready the day your carrier asks.</p>
+    <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="tlink" href="https://app.candor.legal/demo">or try the app</a></div>
   </div>
+  <figure class="hv" role="img" aria-label="Invented example of a matter&rsquo;s AI record: three uses, each with its tool and task. Two are signed off by an attorney, one is awaiting review.">
+    <div class="hv-head" aria-hidden="true"><span>Matter 00123</span><span>AI record</span></div>
+    <ul class="rec" aria-hidden="true">
+      <li><span>ChatGPT<small>Drafting</small></span><b class="pill ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12.5l4 4L18 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Signed</b></li>
+      <li><span>Claude<small>Research</small></span><b class="pill ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12.5l4 4L18 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Signed</b></li>
+      <li><span>Copilot<small>Summary</small></span><b class="pill warn">In review</b></li>
+    </ul>
+    <div class="hv-k" aria-hidden="true">Invented example</div>
+  </figure>
 </section>
 
 <section class="steps" id="screen" aria-labelledby="steps-h">
   <div class="steps-head">
     <div class="eyebrow">How it works</div>
     <h2 id="steps-h">Four steps. <em>One record.</em></h2>
+    <p class="quote" id="q" aria-live="off"><span class="on">&ldquo;I&rsquo;m your client&rsquo;s privileged email. I&rsquo;m one paste away from <em>ChatGPT</em>.&rdquo;</span><span>&ldquo;I&rsquo;m a case that doesn&rsquo;t exist. I&rsquo;m in <em>tomorrow&rsquo;s brief</em>.&rdquo;</span><span>&ldquo;I&rsquo;m the AI use nobody logged. Your carrier is about to <em>ask about me</em>.&rdquo;</span></p>
   </div>
   <div class="rail" id="rail">
     <div class="scard on" id="card-screen" role="group" aria-roledescription="step" aria-label="Step 1 of 4: Screen">
-      <div class="scard-vis draw"><div class="sv" aria-hidden="true">
-          <div class="l">YOUR PROMPT</div>
-          <div class="t">Summarize the email from <span class="raw">Jane Roe</span>, SSN <span class="raw">000-12-3456</span>, about her denied roof claim, policy <span class="raw">HO-4417-2290</span>.</div>
-          <div class="l">WHAT THE MODEL RECEIVES</div>
-          <div class="t out">Summarize the email from <span class="rep">[CLIENT_1]</span>, SSN <span class="rep">[SSN_1]</span>, about her denied roof claim, policy <span class="rep">[POLICY_1]</span>.<div class="chips"><span>3 details caught</span><span>Name</span><span>SSN</span><span>Policy no.</span></div></div>
-        </div></div>
+      <div class="scard-vis draw"><div class="viz" role="img" aria-label="Invented example: the client name Jane Roe becomes the placeholder CLIENT_1 before the prompt is sent. The text is not stored."><div aria-hidden="true" class="viz-in"><div class="swap"><span class="raw">Jane Roe</span><svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="rep">[CLIENT_1]</span></div><div class="cap">Text not stored</div></div></div><div class="viz-k" aria-hidden="true">Invented example</div></div>
       <div class="scard-copy">
         <div class="num"><b>01</b>Screen</div>
         <h3>Caught before it&rsquo;s <em>sent.</em></h3>
@@ -283,7 +338,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
       </div>
     </div>
     <div class="scard" id="card-check" role="group" aria-roledescription="step" aria-label="Step 2 of 4: Check">
-      <div class="scard-vis"><img src="/assets/home/signoff.jpg" width="2000" height="1250" alt="Candor&rsquo;s review screen: AI uses awaiting attorney sign-off, with citations and hedge phrases flagged" loading="lazy"></div>
+      <div class="scard-vis draw"><div class="viz" role="img" aria-label="Invented example: a cited case, Roe v. Delmar Mutual, flagged for a second look."><div aria-hidden="true" class="viz-in"><div class="cite"><i>Roe v. Delmar Mutual</i><small>412 So. 3d 88</small></div><span class="pill warn">Second look</span></div></div><div class="viz-k" aria-hidden="true">Invented example</div></div>
       <div class="scard-copy">
         <div class="num"><b>02</b>Check</div>
         <h3>A second look, <em>flagged.</em></h3>
@@ -292,7 +347,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
       </div>
     </div>
     <div class="scard" id="card-signoff" role="group" aria-roledescription="step" aria-label="Step 3 of 4: Sign off">
-      <div class="scard-vis"><img src="/assets/home/log.jpg" width="2000" height="1250" alt="Candor&rsquo;s AI use log: each use with its matter, tool, task, person and verification" loading="lazy"></div>
+      <div class="scard-vis draw"><div class="viz" role="img" aria-label="Invented example: an AI use on matter 00123 signed off by A. Park."><div aria-hidden="true" class="viz-in"><div class="seal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12.5l4 4L18 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="cap"><b>Signed</b> &middot; A. Park &middot; Matter 00123</div></div></div><div class="viz-k" aria-hidden="true">Invented example</div></div>
       <div class="scard-copy">
         <div class="num"><b>03</b>Sign off</div>
         <h3>Every use, on its <em>matter.</em></h3>
@@ -301,7 +356,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
       </div>
     </div>
     <div class="scard" id="card-prove" role="group" aria-roledescription="step" aria-label="Step 4 of 4: Prove">
-      <div class="scard-vis"><img src="/assets/home/reports.jpg" width="2000" height="1250" alt="Candor&rsquo;s firm summary report: uses logged, attorney review coverage and tools used" loading="lazy"></div>
+      <div class="scard-vis draw"><div class="viz" role="img" aria-label="Example figure: 214 AI uses on record for the year, ready for the carrier."><div aria-hidden="true" class="viz-in"><div class="stat">214</div><div class="cap">AI uses on record this year</div></div></div><div class="viz-k" aria-hidden="true">Example figure</div></div>
       <div class="scard-copy">
         <div class="num"><b>04</b>Prove</div>
         <h3>The answer, <em>already written.</em></h3>
@@ -391,6 +446,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
 var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 // The rotating quote.
 (function(){var q=[].slice.call(document.querySelectorAll('#q span')),i=0;setInterval(function(){q[i].classList.remove('on');i=(i+1)%q.length;q[i].classList.add('on')},6200)})();
+
 
 // How it works: swipe, the arrows, or the keyboard arrows move between the cards.
 (function(){var rail=document.getElementById('rail');if(!rail)return;
