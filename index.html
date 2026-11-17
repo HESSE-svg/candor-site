@@ -212,56 +212,59 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   .scard-copy .btn{margin-top:20px;width:100%}
 }
 @media(prefers-reduced-motion:reduce){.rail{scroll-behavior:auto}.scard{transition:none}}
-/* hero: one line and one button on the left, screening playing out on the right (above the words on phones) */
-.hero{grid-template-columns:minmax(0,5fr) minmax(0,6fr);padding-right:6vw;min-height:0;padding-top:72px;padding-bottom:72px}
+/* hero: one line and one button; beside it (above it on phones) a matter's AI record, three rows */
+.hero{grid-template-columns:minmax(0,5fr) minmax(0,5fr);padding-right:6vw;min-height:0;padding-top:72px;padding-bottom:72px}
 .hero h1{max-width:8.5ch}
 .tlink{align-self:center;padding:0 6px;font-size:15px;color:var(--text-2);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line-2)}
 .tlink:hover{color:var(--text)}
-.hv{position:relative;z-index:2;border:1px solid var(--line-2);border-radius:18px;background:linear-gradient(180deg,#121215,#0C0C0E);box-shadow:0 50px 140px -50px rgba(196,82,63,.45);overflow:hidden}
-.hv-bar{display:flex;align-items:center;gap:8px;padding:12px 18px;border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--text-3)}
-.hv-bar i{width:8px;height:8px;border-radius:50%;background:var(--line-2)}
-.hv-bar span{margin-left:6px}
-.hv-bar em{margin-left:auto;font-style:normal;color:var(--mint);opacity:0;transition:opacity .5s}
-.hv.done .hv-bar em{opacity:1}
-.hv-in{padding:22px 24px 24px;font-family:var(--f-mono);font-size:clamp(13px,1.15vw,16px);line-height:1.9}
-.hv .t{padding:16px 18px;border:1px solid var(--line-2);border-radius:12px;background:var(--card);transition:border-color .6s}
-.hv.done .t{border-color:rgba(134,205,180,.3)}
-.hv .d{transition:background .35s,color .35s,border-color .35s}
-.hv .d.raw{border:1px solid transparent}
-.hv .chips{opacity:0;transform:translateY(4px);transition:opacity .5s,transform .5s}
-.hv.done .chips{opacity:1;transform:none}
-.hv-foot{margin-top:14px;font-family:var(--f-sans);font-size:13px;color:var(--text-3)}
-/* how it works: each step is what happens, then what Candor shows */
+.hv{position:relative;z-index:2;max-width:520px;justify-self:end;width:100%;border:1px solid var(--line-2);border-radius:22px;background:linear-gradient(180deg,#131316,#0C0C0E);box-shadow:0 50px 140px -50px rgba(196,82,63,.45);padding:26px 30px 22px}
+.hv-head{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3);padding-bottom:16px;border-bottom:1px solid var(--line)}
+.hv-head span:first-child{color:var(--text)}
+.rec{list-style:none}
+.rec li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);opacity:0;animation:recin .6s cubic-bezier(.2,.7,.2,1) forwards}
+.rec li:nth-child(1){animation-delay:.3s}.rec li:nth-child(2){animation-delay:.6s}.rec li:nth-child(3){animation-delay:.9s}
+.rec li span{font-family:var(--f-serif);font-size:30px;line-height:1;color:var(--text)}
+.rec li small{display:block;margin-top:6px;font-family:var(--f-sans);font-size:13.5px;color:var(--text-3)}
+.hv-k{margin-top:14px;font-size:12px;color:var(--text-3)}
+@keyframes recin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.pill{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-sans);font-size:13px;font-weight:500;line-height:1;border-radius:999px;padding:8px 14px;white-space:nowrap;border:1px solid}
+.pill svg{width:14px;height:14px}
+.pill.ok{color:var(--mint);border-color:rgba(134,205,180,.45)}
+.pill.warn{color:var(--gilt);border-color:rgba(227,184,102,.5)}
+/* how it works: one picture per step, a few words at most */
 .steps-head .quote{margin:22px auto 0;text-align:center}
 .steps-head .quote span{right:0}
-.sv .kv{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:7px 0;border-top:1px solid var(--line)}
-.sv .kv:first-child{border-top:0;padding-top:0}
-.sv .kv:last-child{padding-bottom:0}
-.sv .kv span{color:var(--text-3)}
-.sv .kv b{font-weight:400;color:var(--text);text-align:right}
-.sv .t.plain{font-family:var(--f-sans);color:var(--text-2);line-height:1.55}
-.sv .t.plain i{color:var(--text)}
-.pill{display:inline-block;font-family:var(--f-sans);font-size:.78em;line-height:1.5;border-radius:999px;padding:1px 10px;white-space:nowrap;border:1px solid}
-.pill.warn{color:var(--gilt);border-color:rgba(227,184,102,.45)}
-.pill.ok{color:var(--mint);border-color:rgba(134,205,180,.45)}
-.pill.no{color:var(--rose);border-color:rgba(242,196,181,.4)}
-.sv .note{margin-top:8px;font-family:var(--f-sans);font-size:.72em;color:var(--text-3)}
+.scard-vis.draw{justify-content:center}
+.viz{width:100%}
+.viz-in{display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+.viz-k{position:absolute;right:20px;bottom:14px;font-size:11.5px;color:var(--text-3)}
+.swap{display:flex;align-items:center;gap:18px;font-family:var(--f-mono);font-size:clamp(20px,2.3vw,32px)}
+.swap .raw,.swap .rep{padding:6px 14px}
+.swap .ar{width:30px;height:30px;color:var(--text-3)}
+.cap{font-size:15px;color:var(--text-2)}
+.cap b{color:var(--mint);font-weight:500}
+.cite{font-family:var(--f-serif);font-size:clamp(30px,3.4vw,48px);line-height:1.05;color:var(--text)}
+.cite small{display:block;margin-top:8px;font-family:var(--f-mono);font-size:14px;letter-spacing:.06em;color:var(--text-3)}
+.viz .pill{font-size:15px;padding:10px 18px}
+.seal{display:grid;place-items:center;width:96px;height:96px;border-radius:50%;border:1.5px solid rgba(134,205,180,.5);color:var(--mint);background:rgba(134,205,180,.06)}
+.seal svg{width:44px;height:44px}
+.stat{font-family:var(--f-serif);font-size:clamp(84px,9vw,132px);line-height:.9;letter-spacing:-.03em;background:linear-gradient(100deg,var(--rose),var(--gilt));-webkit-background-clip:text;background-clip:text;color:transparent}
 @media(max-width:900px){
   .hero{padding:28px 20px 56px;gap:28px}
-  .hero .hv{order:-1}
-  .hv-in{padding:14px 14px 16px;font-size:12.5px;line-height:1.75}
-  .hv .t{padding:10px 12px}
-  .hv-foot{display:none}
-  .hv-bar{padding:10px 14px;font-size:10px;letter-spacing:.1em;white-space:nowrap}
-  .hv-bar i{display:none}
-  .hv-bar span{margin-left:0}
-  .hv .chips span:not(:first-child){display:none}
+  .hero .hv{order:-1;justify-self:stretch;max-width:none;padding:18px 20px 16px}
+  .rec li{padding:14px 0}
+  .rec li span{font-size:24px}
   .tlink{flex:1 1 100%;text-align:center;padding:6px 0}
-  .scard-vis.draw{aspect-ratio:auto;min-height:0;padding:16px}
-  .sv .kv{padding:5px 0;gap:10px}
-  .scard-vis .sv .note{display:none}
+  .scard-vis.draw{aspect-ratio:4/3;padding:16px}
+  .swap{gap:10px;font-size:17px}
+  .swap .ar{width:20px;height:20px}
+  .swap .raw,.swap .rep{padding:4px 8px}
+  .viz-in{gap:14px}
+  .seal{width:72px;height:72px}.seal svg{width:34px;height:34px}
+  .stat{font-size:84px}
+  .viz-k{right:14px;bottom:10px}
 }
-@media(prefers-reduced-motion:reduce){.hv *,.hv-bar em{transition:none}}
+@media(prefers-reduced-motion:reduce){.rec li{animation:none;opacity:1}}
 /* pricing: one starting price */
 .big{display:block}
 .big .from{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px}
@@ -307,13 +310,14 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
     <p class="say">Every AI use filed to its matter, <b>checked and signed off,</b> ready the day your carrier asks.</p>
     <div class="row"><a class="btn btn-w" href="/start">Start your firm&rsquo;s record <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a><a class="tlink" href="https://app.candor.legal/demo">or try the app</a></div>
   </div>
-  <figure class="hv" id="hv" role="img" aria-label="Example with invented details: a prompt naming Jane Roe, her Social Security number and her policy number. Candor replaces all three with placeholders before the prompt reaches ChatGPT.">
-    <div class="hv-bar" aria-hidden="true"><i></i><i></i><i></i><span>PROMPT TO CHATGPT</span><em>3 DETAILS SCREENED</em></div>
-    <div class="hv-in" aria-hidden="true">
-      <div class="t">Summarize the email from <span class="d raw" data-to="[CLIENT_1]">Jane Roe</span>, SSN <span class="d raw" data-to="[SSN_1]">000-12-3456</span>, about her denied roof claim, policy <span class="d raw" data-to="[POLICY_1]">HO-4417-2290</span>.</div>
-      <div class="chips"><span>Sent with placeholders</span><span>Name</span><span>SSN</span><span>Policy no.</span></div>
-      <div class="hv-foot">Invented example. The screened text is never stored.</div>
-    </div>
+  <figure class="hv" role="img" aria-label="Invented example of a matter&rsquo;s AI record: three uses, each with its tool and task. Two are signed off by an attorney, one is awaiting review.">
+    <div class="hv-head" aria-hidden="true"><span>Matter 00123</span><span>AI record</span></div>
+    <ul class="rec" aria-hidden="true">
+      <li><span>ChatGPT<small>Drafting</small></span><b class="pill ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12.5l4 4L18 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Signed</b></li>
+      <li><span>Claude<small>Research</small></span><b class="pill ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12.5l4 4L18 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Signed</b></li>
+      <li><span>Copilot<small>Summary</small></span><b class="pill warn">In review</b></li>
+    </ul>
+    <div class="hv-k" aria-hidden="true">Invented example</div>
   </figure>
 </section>
 
@@ -325,13 +329,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
   </div>
   <div class="rail" id="rail">
     <div class="scard on" id="card-screen" role="group" aria-roledescription="step" aria-label="Step 1 of 4: Screen">
-      <div class="scard-vis draw"><div class="sv" role="img" aria-label="Invented example: staff screen a client email before pasting it into ChatGPT. Candor keeps the time of the check and which kinds of detail it caught, and does not store the email.">
-          <div class="l" aria-hidden="true">WHAT HAPPENS</div>
-          <div class="t plain" aria-hidden="true">A paralegal screens a client&rsquo;s email before pasting it into <i>ChatGPT</i>.</div>
-          <div class="l" aria-hidden="true">WHAT CANDOR KEEPS</div>
-          <div class="t out" aria-hidden="true"><div class="kv"><span>Check ran</span><b>Nov 16, 2:14 PM</b></div><div class="kv"><span>Caught</span><b>Name &middot; SSN &middot; Policy no.</b></div><div class="kv"><span>The email</span><b><span class="pill no">Not stored</span></b></div></div>
-          <div class="note" aria-hidden="true">Invented example</div>
-        </div></div>
+      <div class="scard-vis draw"><div class="viz" role="img" aria-label="Invented example: the client name Jane Roe becomes the placeholder CLIENT_1 before the prompt is sent. The text is not stored."><div aria-hidden="true" class="viz-in"><div class="swap"><span class="raw">Jane Roe</span><svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="rep">[CLIENT_1]</span></div><div class="cap">Text not stored</div></div></div><div class="viz-k" aria-hidden="true">Invented example</div></div>
       <div class="scard-copy">
         <div class="num"><b>01</b>Screen</div>
         <h3>Caught before it&rsquo;s <em>sent.</em></h3>
@@ -340,13 +338,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
       </div>
     </div>
     <div class="scard" id="card-check" role="group" aria-roledescription="step" aria-label="Step 2 of 4: Check">
-      <div class="scard-vis draw"><div class="sv" role="img" aria-label="Invented example: an AI draft cites a case and hedges. Candor flags the case it could not find in the public record, and the hedge, for a second look before sign-off.">
-          <div class="l" aria-hidden="true">WHAT HAPPENS</div>
-          <div class="t plain" aria-hidden="true">ChatGPT drafts a motion citing <i>Roe v. Delmar Mutual</i>, 412 So.&nbsp;3d 88, and says the rule &ldquo;appears to&rdquo; apply.</div>
-          <div class="l" aria-hidden="true">WHAT CANDOR SHOWS</div>
-          <div class="t out" aria-hidden="true"><div class="kv"><span><i>Roe v. Delmar Mutual</i></span><b><span class="pill warn">Not found &middot; second look</span></b></div><div class="kv"><span>&ldquo;appears to&rdquo;</span><b><span class="pill warn">Hedge &middot; second look</span></b></div><div class="kv"><span>Before sign-off</span><b><span class="pill ok">Shown to the attorney</span></b></div></div>
-          <div class="note" aria-hidden="true">Invented example</div>
-        </div></div>
+      <div class="scard-vis draw"><div class="viz" role="img" aria-label="Invented example: a cited case, Roe v. Delmar Mutual, flagged for a second look."><div aria-hidden="true" class="viz-in"><div class="cite"><i>Roe v. Delmar Mutual</i><small>412 So. 3d 88</small></div><span class="pill warn">Second look</span></div></div><div class="viz-k" aria-hidden="true">Invented example</div></div>
       <div class="scard-copy">
         <div class="num"><b>02</b>Check</div>
         <h3>A second look, <em>flagged.</em></h3>
@@ -355,13 +347,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
       </div>
     </div>
     <div class="scard" id="card-signoff" role="group" aria-roledescription="step" aria-label="Step 3 of 4: Sign off">
-      <div class="scard-vis draw"><div class="sv" role="img" aria-label="Invented example: an attorney signs off on an AI-assisted draft. Candor files the use to the matter with the tool, the task, the verification statement and the sign-off. A later correction becomes a new entry.">
-          <div class="l" aria-hidden="true">WHAT HAPPENS</div>
-          <div class="t plain" aria-hidden="true">A.&nbsp;Park reads the draft and the flags, then signs off.</div>
-          <div class="l" aria-hidden="true">WHAT CANDOR SHOWS</div>
-          <div class="t out" aria-hidden="true"><div class="kv"><span>Matter</span><b>00123 &middot; Roe</b></div><div class="kv"><span>Tool &middot; task</span><b>ChatGPT &middot; Drafting</b></div><div class="kv"><span>Verification statement</span><b>Made</b></div><div class="kv"><span>Signed off</span><b><span class="pill ok">A. Park, 3:02 PM</span></b></div></div>
-          <div class="note" aria-hidden="true">Invented example. A later correction is a new entry; this one stays.</div>
-        </div></div>
+      <div class="scard-vis draw"><div class="viz" role="img" aria-label="Invented example: an AI use on matter 00123 signed off by A. Park."><div aria-hidden="true" class="viz-in"><div class="seal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12.5l4 4L18 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="cap"><b>Signed</b> &middot; A. Park &middot; Matter 00123</div></div></div><div class="viz-k" aria-hidden="true">Invented example</div></div>
       <div class="scard-copy">
         <div class="num"><b>03</b>Sign off</div>
         <h3>Every use, on its <em>matter.</em></h3>
@@ -370,13 +356,7 @@ h1 em,h2 em{font-style:italic;background:linear-gradient(100deg,var(--rose),var(
       </div>
     </div>
     <div class="scard" id="card-prove" role="group" aria-roledescription="step" aria-label="Step 4 of 4: Prove">
-      <div class="scard-vis draw"><div class="sv" role="img" aria-label="Example figures: a carrier renewal form asks how the firm uses AI. Candor shows a firm summary for the dates picked: uses logged, the share signed off by an attorney, and the tools in use.">
-          <div class="l" aria-hidden="true">WHAT HAPPENS</div>
-          <div class="t plain" aria-hidden="true">The carrier&rsquo;s renewal form asks how the firm uses AI.</div>
-          <div class="l" aria-hidden="true">WHAT CANDOR SHOWS</div>
-          <div class="t out" aria-hidden="true"><div class="kv"><span>Dates</span><b>Jan 1 &ndash; Nov 16</b></div><div class="kv"><span>AI uses logged</span><b>214</b></div><div class="kv"><span>Signed off by an attorney</span><b>97%</b></div><div class="kv"><span>Tools in use</span><b>4, all on the approved list</b></div></div>
-          <div class="note" aria-hidden="true">Example figures</div>
-        </div></div>
+      <div class="scard-vis draw"><div class="viz" role="img" aria-label="Example figure: 214 AI uses on record for the year, ready for the carrier."><div aria-hidden="true" class="viz-in"><div class="stat">214</div><div class="cap">AI uses on record this year</div></div></div><div class="viz-k" aria-hidden="true">Example figure</div></div>
       <div class="scard-copy">
         <div class="num"><b>04</b>Prove</div>
         <h3>The answer, <em>already written.</em></h3>
@@ -467,12 +447,6 @@ var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 // The rotating quote.
 (function(){var q=[].slice.call(document.querySelectorAll('#q span')),i=0;setInterval(function(){q[i].classList.remove('on');i=(i+1)%q.length;q[i].classList.add('on')},6200)})();
 
-// The hero: each client detail turns into its placeholder, once, then it stays put.
-(function(){var hv=document.getElementById('hv');if(!hv)return;
-var ds=[].slice.call(hv.querySelectorAll('.d'));
-function swap(d){d.textContent=d.getAttribute('data-to');d.classList.remove('raw');d.classList.add('rep')}
-if(RM){ds.forEach(swap);hv.classList.add('done');return}
-ds.forEach(function(d,i){setTimeout(function(){swap(d);if(i===ds.length-1)setTimeout(function(){hv.classList.add('done')},300)},1400+i*550)})})();
 
 // How it works: swipe, the arrows, or the keyboard arrows move between the cards.
 (function(){var rail=document.getElementById('rail');if(!rail)return;
