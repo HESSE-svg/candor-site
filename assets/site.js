@@ -535,7 +535,7 @@
   var COMMON = {}; ('the this that there dear hi hello thanks thank please our your their court company insurance policy claim law firm office attorney client matter case united states general the').split(' ').forEach(function (w) { COMMON[w] = 1 })
   var FIRST = {}; ('jessica sarah emily michael john james david robert maria juan carlos jose ana daniel jennifer laura mark thomas anna jordan rivera').split(' ').forEach(function (w) { FIRST[w] = 1 })
 
-  function esc(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+  function escText(s){return s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
   function run(){
     var text = demoIn.value
     var spans = []
@@ -551,8 +551,8 @@
     spans.sort(function(a,b){return a[0]-b[0]||(b[1]-b[0])-(a[1]-a[0])})
     var chosen=[],last=-1; spans.forEach(function(s){ if(s[0]>=last){chosen.push(s);last=s[1]} })
     var html='',i=0,counts={}
-    chosen.forEach(function(s){ html+=esc(text.slice(i,s[0]))+'<span class="r">['+s[2]+']</span>'; counts[s[2]]=(counts[s[2]]||0)+1; i=s[1] })
-    html+=esc(text.slice(i))
+    chosen.forEach(function(s){ html+=escText(text.slice(i,s[0]))+'<span class="r">['+s[2]+']</span>'; counts[s[2]]=(counts[s[2]]||0)+1; i=s[1] })
+    html+=escText(text.slice(i))
     demoOut.innerHTML = text.trim() ? html : '<span style="color:var(--muted)">Redacted preview appears here.</span>'
     demoChips.innerHTML=''
     var total=0
