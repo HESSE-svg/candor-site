@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-18T20:40:09.987Z",
+  "builtAt": "2026-11-19T07:37:03.522Z",
   "count": 10,
   "items": [
     {
@@ -73,20 +73,6 @@
       "promo": false
     },
     {
-      "title": "How a Matter Is Staffed Decides AI’s Commercial Value",
-      "link": "https://www.artificiallawyer.com/2026/11/18/how-a-matter-is-staffed-decides-ais-commercial-value/",
-      "desc": "By Alex Tring, BigHand. Law firms are investing heavily in AI, paying more for their lawyers, and being asked by the companies that hire them",
-      "date": "Wed, 18 Nov 2026 11:54:35 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-17-at-06.38.21.png",
-      "source": "Artificial Lawyer",
-      "ts": 1795002875000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "AI In Our Courts: Useful Or A Magic 8 Ball?",
       "link": "https://abovethelaw.com/2026/11/ai-in-our-courts-useful-or-a-magic-8-ball/",
       "desc": "The difference between how two judges looked at AI and its use could not be more stark. The post AI In Our Courts: Useful Or A Magic 8 Ball? appeared first on Above the Law .",
@@ -96,7 +82,7 @@
       "ts": 1794953100000,
       "topic": "courts",
       "topicLabel": "Courts & sanctions",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -110,20 +96,6 @@
       "ts": 1794950040000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Building Legal AI for Public Service Across Borders",
-      "link": "https://www.artificiallawyer.com/2026/11/17/building-legal-ai-for-public-service-across-borders/",
-      "desc": "By Joshua McKibben, Head of Trust, Harvey. Harvey is investing in public sector legal teams across jurisdictions. Our recent FedRAMP Class D (High) certification in",
-      "date": "Tue, 17 Nov 2026 11:57:18 +0000",
-      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-17-at-06.30.16.png",
-      "source": "Artificial Lawyer",
-      "ts": 1794916638000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
       "when": "Yesterday",
       "strong": true,
       "promo": false
@@ -139,6 +111,34 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "2 days ago",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "AI in the courts: Time savings, divided opinions, and the risk of losing expertise",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/ai-in-the-courts-time-savings-divided-opinions-and-the-risk-of-losing-expertise/",
+      "desc": "It’s no surprise that AI is starting to change how courts get work done, especially by making court operations more The post AI in the courts: Time savings, divided opinions, and the risk of…",
+      "date": "Wed, 04 Nov 2026 23:12:24 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/11/Untitled-May-07-2026-at-13.53.26-9-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1793833944000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Nov 4, 2026",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "Prosecutor case lifecycle: How AI can support every stage of the case",
+      "link": "https://blogs.thomsonreuters.com/legal-blog/prosecutor-case-lifecycle-how-ai-can-support-every-stage-of-the-case/",
+      "desc": "Prosecutors are under constant pressure to do more with less. Caseloads keep growing, discovery volumes are climbing, and every charging The post Prosecutor case lifecycle: How AI can support…",
+      "date": "Tue, 03 Nov 2026 13:25:47 +0000",
+      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/11/Untitled-May-07-2026-at-13.53.26-4-1-400x225.webp",
+      "source": "Thomson Reuters",
+      "ts": 1793712347000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Nov 3, 2026",
       "strong": true,
       "promo": false
     }
