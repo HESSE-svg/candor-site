@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-11-20T20:30:10.233Z",
+  "builtAt": "2026-11-21T07:22:46.853Z",
   "count": 10,
   "items": [
+    {
+      "title": "AI Use Guidelines: It’s Complicated. It’s Also Not A Choice",
+      "link": "https://abovethelaw.com/2026/11/ai-use-guidelines-its-complicated-its-also-not-a-choice/",
+      "desc": "Having an AI policy isn't enough unless the firm makes it real. The post AI Use Guidelines: It’s Complicated. It’s Also Not A Choice appeared first on Above the Law .",
+      "date": "Fri, 20 Nov 2026 23:16:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2019/01/artificial-intelligence-3382507__340.jpg",
+      "source": "Above the Law",
+      "ts": 1795216560000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Court Tells Cops That The 4th Amendment Doesn’t Cover AI-Generated ‘Probable Cause’",
       "link": "https://abovethelaw.com/2026/11/court-tells-cops-that-the-4th-amendment-doesnt-cover-ai-generated-probable-cause/",
@@ -45,20 +59,6 @@
       "promo": false
     },
     {
-      "title": "AI For Modern Compliance: A Practical Framework For Leaders",
-      "link": "https://abovethelaw.com/2026/11/ai-for-modern-compliance-a-practical-framework-for-leaders/",
-      "desc": "[Sponsored] How AI works in practice, and its quantifiable impact on compliance operations. The post AI For Modern Compliance: A Practical Framework For Leaders appeared first on Above the Law .",
-      "date": "Fri, 20 Nov 2026 16:31:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/11/bloomberg_ai_compliance_thumb.jpg",
-      "source": "Above the Law",
-      "ts": 1795192260000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Today",
-      "strong": true,
-      "promo": true
-    },
-    {
       "title": "Startup Corner: People's Court builds an AI disputes platform",
       "link": "https://legaltechnology.com/startup-corner-peoples-court-builds-an-ai-disputes-platform/",
       "desc": "People’s Court is building an AI-powered platform for resolving disputes, particularly those that are too small to justify going to court. They are also preparing to resolve agentic AI…",
@@ -82,7 +82,7 @@
       "ts": 1795120959000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
