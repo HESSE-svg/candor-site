@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-11-24T00:01:27.742Z",
+  "builtAt": "2026-11-24T10:03:42.551Z",
   "count": 10,
   "items": [
+    {
+      "title": "Agentic AI regulatory startup Reversa raises €750k in pre-seed funding",
+      "link": "https://legaltechnology.com/agentic-ai-regulatory-startup-reversa-raises-e750k-in-pre-seed-funding/",
+      "desc": "Madrid-based agentic AI regulatory startup Reversa has raised a €750,000 pre-seed funding round, led early-stage VC fund Itnig, which was founded by the leadership team of HR software unicorn…",
+      "date": "Tue, 24 Nov 2026 08:00:39 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/reversa-team.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1795507239000,
+      "topic": "rules",
+      "topicLabel": "Rules & ethics",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "A More Measured Approach to AI Fluency",
+      "link": "https://www.artificiallawyer.com/2026/11/24/a-more-measured-approach-to-ai-fluency/",
+      "desc": "By Peter Duffy, CEO, TITANS. For years, legal tech adoption was measured in licences and logins. GenAI added prompts and tokens. This data shows who",
+      "date": "Tue, 24 Nov 2026 07:42:08 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-24-at-07.30.36.png",
+      "source": "Artificial Lawyer",
+      "ts": 1795506128000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Sam Alito Jokes About AI Brain Upload Staying On Supreme Court Forever",
       "link": "https://abovethelaw.com/2026/11/sam-alito-jokes-about-ai-brain-upload-staying-on-supreme-court-forever/",
@@ -40,7 +68,7 @@
       "ts": 1795424095000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -110,34 +138,6 @@
       "ts": 1795094664000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Simmons Simmons becomes first law firm to meet LTC4 global AI standard",
-      "link": "https://legaltechnology.com/simmons-simmons-becomes-first-law-firm-to-meet-ltc4-global-ai-standard/",
-      "desc": "International law firm Simmons Simmons announced this week that it has become the first law firm to meet the global AI industry standard set by LTC4, the Legal Technology [] The post Simmons…",
-      "date": "Thu, 19 Nov 2026 11:51:31 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/simmons-and-simmons.png",
-      "source": "Legal IT Insider",
-      "ts": 1795089091000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Closing the client-counsel divide: How AI Is reshaping collaboration",
-      "link": "https://legaltechnology.com/closing-the-client-counsel-divide-how-ai-is-reshaping-collaboration/",
-      "desc": "Register your spot HERE AI is changing how corporate legal teams and the law firms that serve them work together. Whether it’s closing the gap between them, or widening it, is [] The post Closing…",
-      "date": "Thu, 19 Nov 2026 10:56:23 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/Trumper-27.png",
-      "source": "Legal IT Insider",
-      "ts": 1795085783000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
       "when": "4 days ago",
       "strong": true,
       "promo": false
