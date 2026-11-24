@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-11-24T10:03:42.551Z",
+  "builtAt": "2026-11-24T22:34:46.458Z",
   "count": 10,
   "items": [
+    {
+      "title": "How LexisNexis Protégé Helps Attorneys Meet Emerging AI Standards",
+      "link": "https://abovethelaw.com/2026/11/how-lexisnexis-protege-helps-attorneys-meet-emerging-ai-standards/",
+      "desc": "[Sponsored] As expectations for legal AI grow, so does the importance of choosing a partner you can trust. The post How LexisNexis Protégé Helps Attorneys Meet Emerging AI Standards appeared first…",
+      "date": "Tue, 24 Nov 2026 18:48:00 +0000",
+      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2026/11/thomas-lefebvre-gp8BLyaTaA0-unsplash-scaled.jpg",
+      "source": "Above the Law",
+      "ts": 1795546080000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": true
+    },
+    {
+      "title": "OpenAI Held Talks With AI Native Law Firm",
+      "link": "https://www.artificiallawyer.com/2026/11/24/openai-held-talks-with-ai-native-law-firm/",
+      "desc": "Artificial Lawyer can reveal that OpenAI has been in talks with an AI native, new model law firm, with the intention of acquiring at least",
+      "date": "Tue, 24 Nov 2026 10:21:15 +0000",
+      "img": "https://www.artificiallawyer.com/wp-content/uploads/2026/11/Screenshot-2026-11-24-at-09.43.41.png",
+      "source": "Artificial Lawyer",
+      "ts": 1795515675000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Agentic AI regulatory startup Reversa raises €750k in pre-seed funding",
       "link": "https://legaltechnology.com/agentic-ai-regulatory-startup-reversa-raises-e750k-in-pre-seed-funding/",
@@ -40,7 +68,7 @@
       "ts": 1795460520000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +82,7 @@
       "ts": 1795451865000,
       "topic": "rules",
       "topicLabel": "Rules & ethics",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -73,20 +101,6 @@
       "promo": false
     },
     {
-      "title": "AI Use Guidelines: It’s Complicated. It’s Also Not A Choice",
-      "link": "https://abovethelaw.com/2026/11/ai-use-guidelines-its-complicated-its-also-not-a-choice/",
-      "desc": "Having an AI policy isn't enough unless the firm makes it real. The post AI Use Guidelines: It’s Complicated. It’s Also Not A Choice appeared first on Above the Law .",
-      "date": "Fri, 20 Nov 2026 23:16:00 +0000",
-      "img": "https://abovethelaw.com/wp-content/uploads/sites/4/2019/01/artificial-intelligence-3382507__340.jpg",
-      "source": "Above the Law",
-      "ts": 1795216560000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
       "title": "What Fiduciary-Grade AI™ means for Canadian firms: Four questions to ask any AI tool",
       "link": "https://blogs.thomsonreuters.com/legal-blog/what-fiduciary-grade-ai-means-for-canadian-firms/",
       "desc": "How small and midsize firms can test a legal AI tool before it touches a client file. You want The post What Fiduciary-Grade AI™ means for Canadian firms: Four questions to ask any AI tool…",
@@ -96,7 +110,7 @@
       "ts": 1795192502000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -110,7 +124,7 @@
       "ts": 1795179198000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "3 days ago",
+      "when": "4 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,21 +138,7 @@
       "ts": 1795120959000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "In Naming Its New AI Head, Litera Turns To A Proven Insider , and Shares the Metrics to Back It Up",
-      "link": "https://www.lawnext.com/2026/11/in-naming-its-new-ai-head-litera-turns-to-a-proven-insider-and-shares-the-metrics-to-back-it-up.html",
-      "desc": "While some legal technology companies in recent years have been turning to outsiders to lead their AI development, Litera has tapped a proven insider, naming Greg Ingino, its chief technology…",
-      "date": "Thu, 19 Nov 2026 13:24:24 +0000",
-      "img": "https://www.lawnext.com/wp-content/uploads/2026/11/GregIngino-Litera-Featured.jpg",
-      "source": "LawNext",
-      "ts": 1795094664000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "4 days ago",
+      "when": "5 days ago",
       "strong": true,
       "promo": false
     }
