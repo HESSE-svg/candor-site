@@ -1,7 +1,35 @@
 {
-  "builtAt": "2026-11-26T08:34:27.591Z",
+  "builtAt": "2026-11-26T21:42:11.996Z",
   "count": 10,
   "items": [
+    {
+      "title": "Macfarlanes selects Legora as a firm-wide AI partner",
+      "link": "https://legaltechnology.com/macfarlanes-selects-legora-as-a-firm-wide-ai-partner/",
+      "desc": "Macfarlanes is rolling Legora out across all of its practice areas firm wide, following a pilot and a detailed evaluation this year. The UK top 20 law firm, which officially [] The post…",
+      "date": "Thu, 26 Nov 2026 12:23:35 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/Trumper-28.png",
+      "source": "Legal IT Insider",
+      "ts": 1795695815000,
+      "topic": "firms",
+      "topicLabel": "Firms & practice",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
+    {
+      "title": "From tasks to matters: New benchmark tests the limits of frontier AI",
+      "link": "https://legaltechnology.com/from-tasks-to-matters-new-benchmark-tests-the-limits-of-frontier-ai/",
+      "desc": "By Alex Volkers Frontier AI models significantly underperform human lawyers when attempting to complete complex legal matters end to end, according to benchmarking results out in November from San…",
+      "date": "Thu, 26 Nov 2026 11:04:46 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/prysm.jpg",
+      "source": "Legal IT Insider",
+      "ts": 1795691086000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Which Is It: Do We Need To 'Protect Our Geniuses' Or Keep China From Outpacing Us On AI At All Costs?",
       "link": "https://abovethelaw.com/2026/11/which-is-it-do-we-need-to-protect-our-geniuses-or-keep-china-from-outpacing-us-on-ai-at-all-costs/",
@@ -26,7 +54,7 @@
       "ts": 1795640400000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -40,7 +68,7 @@
       "ts": 1795637580000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +82,7 @@
       "ts": 1795615344000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -68,7 +96,7 @@
       "ts": 1795608779000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -96,20 +124,6 @@
       "ts": 1795515675000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Agentic AI regulatory startup Reversa raises €750k in pre-seed funding",
-      "link": "https://legaltechnology.com/agentic-ai-regulatory-startup-reversa-raises-e750k-in-pre-seed-funding/",
-      "desc": "Madrid-based agentic AI regulatory startup Reversa has raised a €750,000 pre-seed funding round, led early-stage VC fund Itnig, which was founded by the leadership team of HR software unicorn…",
-      "date": "Tue, 24 Nov 2026 08:00:39 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/reversa-team.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1795507239000,
-      "topic": "rules",
-      "topicLabel": "Rules & ethics",
       "when": "2 days ago",
       "strong": true,
       "promo": false
@@ -125,20 +139,6 @@
       "topic": "firms",
       "topicLabel": "Firms & practice",
       "when": "2 days ago",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "What Fiduciary-Grade AI™ means for Canadian firms: Four questions to ask any AI tool",
-      "link": "https://blogs.thomsonreuters.com/legal-blog/what-fiduciary-grade-ai-means-for-canadian-firms/",
-      "desc": "How small and midsize firms can test a legal AI tool before it touches a client file. You want The post What Fiduciary-Grade AI™ means for Canadian firms: Four questions to ask any AI tool…",
-      "date": "Fri, 20 Nov 2026 16:35:02 +0000",
-      "img": "https://blogs.thomsonreuters.com/legal-blog/wp-content/uploads/sites/19/2026/11/AdobeStock_481391118-400x225.webp",
-      "source": "Thomson Reuters",
-      "ts": 1795192502000,
-      "topic": "firms",
-      "topicLabel": "Firms & practice",
-      "when": "5 days ago",
       "strong": true,
       "promo": false
     }
