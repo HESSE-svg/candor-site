@@ -1,7 +1,21 @@
 {
-  "builtAt": "2026-11-27T08:46:23.127Z",
+  "builtAt": "2026-11-27T21:26:35.934Z",
   "count": 10,
   "items": [
+    {
+      "title": "Charting Change in Legal: Why people matter more than ever in the age of AI",
+      "link": "https://legaltechnology.com/charting-change-in-legal-why-people-matter-more-than-ever-in-the-age-of-ai/",
+      "desc": "In the latest episode of Charting Change in Legal, Caroline Hill and Ari Kaplan explore one of the biggest themes shaping the legal sector today: how people, not just technology, [] The post…",
+      "date": "Fri, 27 Nov 2026 12:34:04 +0000",
+      "img": "https://legaltechnology.com/wp-content/uploads/2026/11/Charting-Change-In-Legal-9.png",
+      "source": "Legal IT Insider",
+      "ts": 1795782844000,
+      "topic": "business",
+      "topicLabel": "Business of legal tech",
+      "when": "Today",
+      "strong": true,
+      "promo": false
+    },
     {
       "title": "Macfarlanes selects Legora as a firm-wide AI partner",
       "link": "https://legaltechnology.com/macfarlanes-selects-legora-as-a-firm-wide-ai-partner/",
@@ -12,7 +26,7 @@
       "ts": 1795695815000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -26,7 +40,7 @@
       "ts": 1795691086000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Today",
+      "when": "Yesterday",
       "strong": true,
       "promo": false
     },
@@ -54,7 +68,7 @@
       "ts": 1795640400000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -68,7 +82,7 @@
       "ts": 1795637580000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -82,21 +96,7 @@
       "ts": 1795615344000,
       "topic": "business",
       "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
-      "strong": true,
-      "promo": false
-    },
-    {
-      "title": "Legaltech Latest: Clio v ROSS, OpenAI opens up Astra for Law the battle for AI talent",
-      "link": "https://legaltechnology.com/legaltech-latest-clio-v-ross-openai-opens-up-astra-for-law-the-battle-for-ai-talent/",
-      "desc": "The past few days have seen the usual raft of legal tech stories including the revelation that ROSS Intelligence is attempting a comeback (sparking legal action from former case law [] The post…",
-      "date": "Wed, 25 Nov 2026 12:12:59 +0000",
-      "img": "https://legaltechnology.com/wp-content/uploads/2025/10/Latest-news-keyboard.jpg",
-      "source": "Legal IT Insider",
-      "ts": 1795608779000,
-      "topic": "business",
-      "topicLabel": "Business of legal tech",
-      "when": "Yesterday",
+      "when": "2 days ago",
       "strong": true,
       "promo": false
     },
@@ -124,7 +124,7 @@
       "ts": 1795515675000,
       "topic": "firms",
       "topicLabel": "Firms & practice",
-      "when": "2 days ago",
+      "when": "3 days ago",
       "strong": true,
       "promo": false
     },
